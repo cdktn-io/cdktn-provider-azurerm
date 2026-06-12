@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface SubscriptionCostManagementViewConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#accumulated SubscriptionCostManagementView#accumulated}
   */
   readonly accumulated: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#chart_type SubscriptionCostManagementView#chart_type}
   */
   readonly chartType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#display_name SubscriptionCostManagementView#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#id SubscriptionCostManagementView#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#report_type SubscriptionCostManagementView#report_type}
   */
   readonly reportType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#subscription_id SubscriptionCostManagementView#subscription_id}
   */
   readonly subscriptionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#timeframe SubscriptionCostManagementView#timeframe}
   */
   readonly timeframe: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#dataset SubscriptionCostManagementView#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#dataset SubscriptionCostManagementView#dataset}
   */
   readonly dataset: SubscriptionCostManagementViewDataset;
   /**
   * kpi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#kpi SubscriptionCostManagementView#kpi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#kpi SubscriptionCostManagementView#kpi}
   */
   readonly kpi?: SubscriptionCostManagementViewKpi[] | cdktn.IResolvable;
   /**
   * pivot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#pivot SubscriptionCostManagementView#pivot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#pivot SubscriptionCostManagementView#pivot}
   */
   readonly pivot?: SubscriptionCostManagementViewPivot[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#timeouts SubscriptionCostManagementView#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#timeouts SubscriptionCostManagementView#timeouts}
   */
   readonly timeouts?: SubscriptionCostManagementViewTimeouts;
 }
 export interface SubscriptionCostManagementViewDatasetAggregation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#column_name SubscriptionCostManagementView#column_name}
   */
   readonly columnName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
   */
   readonly name: string;
 }
@@ -86,7 +86,7 @@ export interface SubscriptionCostManagementViewDatasetAggregation {
 export function subscriptionCostManagementViewDatasetAggregationToTerraform(struct?: SubscriptionCostManagementViewDatasetAggregation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column_name: cdktn.stringToTerraform(struct!.columnName),
@@ -98,7 +98,7 @@ export function subscriptionCostManagementViewDatasetAggregationToTerraform(stru
 export function subscriptionCostManagementViewDatasetAggregationToHclTerraform(struct?: SubscriptionCostManagementViewDatasetAggregation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column_name: {
@@ -217,11 +217,11 @@ export class SubscriptionCostManagementViewDatasetAggregationList extends cdktn.
 }
 export interface SubscriptionCostManagementViewDatasetGrouping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
   */
   readonly type: string;
 }
@@ -229,7 +229,7 @@ export interface SubscriptionCostManagementViewDatasetGrouping {
 export function subscriptionCostManagementViewDatasetGroupingToTerraform(struct?: SubscriptionCostManagementViewDatasetGrouping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -241,7 +241,7 @@ export function subscriptionCostManagementViewDatasetGroupingToTerraform(struct?
 export function subscriptionCostManagementViewDatasetGroupingToHclTerraform(struct?: SubscriptionCostManagementViewDatasetGrouping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -360,11 +360,11 @@ export class SubscriptionCostManagementViewDatasetGroupingList extends cdktn.Com
 }
 export interface SubscriptionCostManagementViewDatasetSorting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#direction SubscriptionCostManagementView#direction}
   */
   readonly direction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
   */
   readonly name: string;
 }
@@ -372,7 +372,7 @@ export interface SubscriptionCostManagementViewDatasetSorting {
 export function subscriptionCostManagementViewDatasetSortingToTerraform(struct?: SubscriptionCostManagementViewDatasetSorting | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     direction: cdktn.stringToTerraform(struct!.direction),
@@ -384,7 +384,7 @@ export function subscriptionCostManagementViewDatasetSortingToTerraform(struct?:
 export function subscriptionCostManagementViewDatasetSortingToHclTerraform(struct?: SubscriptionCostManagementViewDatasetSorting | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     direction: {
@@ -503,25 +503,25 @@ export class SubscriptionCostManagementViewDatasetSortingList extends cdktn.Comp
 }
 export interface SubscriptionCostManagementViewDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#granularity SubscriptionCostManagementView#granularity}
   */
   readonly granularity: string;
   /**
   * aggregation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#aggregation SubscriptionCostManagementView#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#aggregation SubscriptionCostManagementView#aggregation}
   */
   readonly aggregation: SubscriptionCostManagementViewDatasetAggregation[] | cdktn.IResolvable;
   /**
   * grouping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#grouping SubscriptionCostManagementView#grouping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#grouping SubscriptionCostManagementView#grouping}
   */
   readonly grouping?: SubscriptionCostManagementViewDatasetGrouping[] | cdktn.IResolvable;
   /**
   * sorting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#sorting SubscriptionCostManagementView#sorting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#sorting SubscriptionCostManagementView#sorting}
   */
   readonly sorting?: SubscriptionCostManagementViewDatasetSorting[] | cdktn.IResolvable;
 }
@@ -529,7 +529,7 @@ export interface SubscriptionCostManagementViewDataset {
 export function subscriptionCostManagementViewDatasetToTerraform(struct?: SubscriptionCostManagementViewDatasetOutputReference | SubscriptionCostManagementViewDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     granularity: cdktn.stringToTerraform(struct!.granularity),
@@ -543,7 +543,7 @@ export function subscriptionCostManagementViewDatasetToTerraform(struct?: Subscr
 export function subscriptionCostManagementViewDatasetToHclTerraform(struct?: SubscriptionCostManagementViewDatasetOutputReference | SubscriptionCostManagementViewDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     granularity: {
@@ -686,7 +686,7 @@ export class SubscriptionCostManagementViewDatasetOutputReference extends cdktn.
 }
 export interface SubscriptionCostManagementViewKpi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
   */
   readonly type: string;
 }
@@ -694,7 +694,7 @@ export interface SubscriptionCostManagementViewKpi {
 export function subscriptionCostManagementViewKpiToTerraform(struct?: SubscriptionCostManagementViewKpi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -705,7 +705,7 @@ export function subscriptionCostManagementViewKpiToTerraform(struct?: Subscripti
 export function subscriptionCostManagementViewKpiToHclTerraform(struct?: SubscriptionCostManagementViewKpi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -799,11 +799,11 @@ export class SubscriptionCostManagementViewKpiList extends cdktn.ComplexList {
 }
 export interface SubscriptionCostManagementViewPivot {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#name SubscriptionCostManagementView#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#type SubscriptionCostManagementView#type}
   */
   readonly type: string;
 }
@@ -811,7 +811,7 @@ export interface SubscriptionCostManagementViewPivot {
 export function subscriptionCostManagementViewPivotToTerraform(struct?: SubscriptionCostManagementViewPivot | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -823,7 +823,7 @@ export function subscriptionCostManagementViewPivotToTerraform(struct?: Subscrip
 export function subscriptionCostManagementViewPivotToHclTerraform(struct?: SubscriptionCostManagementViewPivot | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -942,19 +942,19 @@ export class SubscriptionCostManagementViewPivotList extends cdktn.ComplexList {
 }
 export interface SubscriptionCostManagementViewTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#create SubscriptionCostManagementView#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#delete SubscriptionCostManagementView#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#read SubscriptionCostManagementView#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#update SubscriptionCostManagementView#update}
   */
   readonly update?: string;
 }
@@ -962,7 +962,7 @@ export interface SubscriptionCostManagementViewTimeouts {
 export function subscriptionCostManagementViewTimeoutsToTerraform(struct?: SubscriptionCostManagementViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -976,7 +976,7 @@ export function subscriptionCostManagementViewTimeoutsToTerraform(struct?: Subsc
 export function subscriptionCostManagementViewTimeoutsToHclTerraform(struct?: SubscriptionCostManagementViewTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1135,7 +1135,7 @@ export class SubscriptionCostManagementViewTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view}
 */
 export class SubscriptionCostManagementView extends cdktn.TerraformResource {
 
@@ -1151,7 +1151,7 @@ export class SubscriptionCostManagementView extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SubscriptionCostManagementView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SubscriptionCostManagementView to import
-  * @param importFromId The id of the existing SubscriptionCostManagementView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SubscriptionCostManagementView that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SubscriptionCostManagementView to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1163,7 +1163,7 @@ export class SubscriptionCostManagementView extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/subscription_cost_management_view azurerm_subscription_cost_management_view} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1174,7 +1174,7 @@ export class SubscriptionCostManagementView extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_subscription_cost_management_view',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

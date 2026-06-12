@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermKubernetesClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
   */
   readonly timeouts?: DataAzurermKubernetesClusterTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermKubernetesClusterAciConnectorLinux {
 export function dataAzurermKubernetesClusterAciConnectorLinuxToTerraform(struct?: DataAzurermKubernetesClusterAciConnectorLinux): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermKubernetesClusterAciConnectorLinuxToTerraform(struct?
 export function dataAzurermKubernetesClusterAciConnectorLinuxToHclTerraform(struct?: DataAzurermKubernetesClusterAciConnectorLinux): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -115,7 +115,7 @@ export interface DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettings {
 export function dataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsToTerraform(struct?: DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -125,7 +125,7 @@ export function dataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsToTer
 export function dataAzurermKubernetesClusterAgentPoolProfileUpgradeSettingsToHclTerraform(struct?: DataAzurermKubernetesClusterAgentPoolProfileUpgradeSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -210,7 +210,7 @@ export interface DataAzurermKubernetesClusterAgentPoolProfile {
 export function dataAzurermKubernetesClusterAgentPoolProfileToTerraform(struct?: DataAzurermKubernetesClusterAgentPoolProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -220,7 +220,7 @@ export function dataAzurermKubernetesClusterAgentPoolProfileToTerraform(struct?:
 export function dataAzurermKubernetesClusterAgentPoolProfileToHclTerraform(struct?: DataAzurermKubernetesClusterAgentPoolProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -378,7 +378,7 @@ export interface DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccess
 export function dataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlToTerraform(struct?: DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -388,7 +388,7 @@ export function dataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessC
 export function dataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlToHclTerraform(struct?: DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -463,7 +463,7 @@ export interface DataAzurermKubernetesClusterBootstrapProfile {
 export function dataAzurermKubernetesClusterBootstrapProfileToTerraform(struct?: DataAzurermKubernetesClusterBootstrapProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -473,7 +473,7 @@ export function dataAzurermKubernetesClusterBootstrapProfileToTerraform(struct?:
 export function dataAzurermKubernetesClusterBootstrapProfileToHclTerraform(struct?: DataAzurermKubernetesClusterBootstrapProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -543,7 +543,7 @@ export interface DataAzurermKubernetesClusterIdentity {
 export function dataAzurermKubernetesClusterIdentityToTerraform(struct?: DataAzurermKubernetesClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -553,7 +553,7 @@ export function dataAzurermKubernetesClusterIdentityToTerraform(struct?: DataAzu
 export function dataAzurermKubernetesClusterIdentityToHclTerraform(struct?: DataAzurermKubernetesClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -633,7 +633,7 @@ export interface DataAzurermKubernetesClusterIngressApplicationGatewayIngressApp
 export function dataAzurermKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityToTerraform(struct?: DataAzurermKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -643,7 +643,7 @@ export function dataAzurermKubernetesClusterIngressApplicationGatewayIngressAppl
 export function dataAzurermKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityToHclTerraform(struct?: DataAzurermKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -718,7 +718,7 @@ export interface DataAzurermKubernetesClusterIngressApplicationGateway {
 export function dataAzurermKubernetesClusterIngressApplicationGatewayToTerraform(struct?: DataAzurermKubernetesClusterIngressApplicationGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -728,7 +728,7 @@ export function dataAzurermKubernetesClusterIngressApplicationGatewayToTerraform
 export function dataAzurermKubernetesClusterIngressApplicationGatewayToHclTerraform(struct?: DataAzurermKubernetesClusterIngressApplicationGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -819,7 +819,7 @@ export interface DataAzurermKubernetesClusterKeyManagementService {
 export function dataAzurermKubernetesClusterKeyManagementServiceToTerraform(struct?: DataAzurermKubernetesClusterKeyManagementService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -829,7 +829,7 @@ export function dataAzurermKubernetesClusterKeyManagementServiceToTerraform(stru
 export function dataAzurermKubernetesClusterKeyManagementServiceToHclTerraform(struct?: DataAzurermKubernetesClusterKeyManagementService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -899,7 +899,7 @@ export interface DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdenti
 export function dataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityToTerraform(struct?: DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -909,7 +909,7 @@ export function dataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentit
 export function dataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentityToHclTerraform(struct?: DataAzurermKubernetesClusterKeyVaultSecretsProviderSecretIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -984,7 +984,7 @@ export interface DataAzurermKubernetesClusterKeyVaultSecretsProvider {
 export function dataAzurermKubernetesClusterKeyVaultSecretsProviderToTerraform(struct?: DataAzurermKubernetesClusterKeyVaultSecretsProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -994,7 +994,7 @@ export function dataAzurermKubernetesClusterKeyVaultSecretsProviderToTerraform(s
 export function dataAzurermKubernetesClusterKeyVaultSecretsProviderToHclTerraform(struct?: DataAzurermKubernetesClusterKeyVaultSecretsProvider): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1070,7 +1070,7 @@ export interface DataAzurermKubernetesClusterKubeAdminConfig {
 export function dataAzurermKubernetesClusterKubeAdminConfigToTerraform(struct?: DataAzurermKubernetesClusterKubeAdminConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1080,7 +1080,7 @@ export function dataAzurermKubernetesClusterKubeAdminConfigToTerraform(struct?: 
 export function dataAzurermKubernetesClusterKubeAdminConfigToHclTerraform(struct?: DataAzurermKubernetesClusterKubeAdminConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1170,7 +1170,7 @@ export interface DataAzurermKubernetesClusterKubeConfig {
 export function dataAzurermKubernetesClusterKubeConfigToTerraform(struct?: DataAzurermKubernetesClusterKubeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1180,7 +1180,7 @@ export function dataAzurermKubernetesClusterKubeConfigToTerraform(struct?: DataA
 export function dataAzurermKubernetesClusterKubeConfigToHclTerraform(struct?: DataAzurermKubernetesClusterKubeConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1270,7 +1270,7 @@ export interface DataAzurermKubernetesClusterKubeletIdentity {
 export function dataAzurermKubernetesClusterKubeletIdentityToTerraform(struct?: DataAzurermKubernetesClusterKubeletIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1280,7 +1280,7 @@ export function dataAzurermKubernetesClusterKubeletIdentityToTerraform(struct?: 
 export function dataAzurermKubernetesClusterKubeletIdentityToHclTerraform(struct?: DataAzurermKubernetesClusterKubeletIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1355,7 +1355,7 @@ export interface DataAzurermKubernetesClusterLinuxProfileSshKey {
 export function dataAzurermKubernetesClusterLinuxProfileSshKeyToTerraform(struct?: DataAzurermKubernetesClusterLinuxProfileSshKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1365,7 +1365,7 @@ export function dataAzurermKubernetesClusterLinuxProfileSshKeyToTerraform(struct
 export function dataAzurermKubernetesClusterLinuxProfileSshKeyToHclTerraform(struct?: DataAzurermKubernetesClusterLinuxProfileSshKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1430,7 +1430,7 @@ export interface DataAzurermKubernetesClusterLinuxProfile {
 export function dataAzurermKubernetesClusterLinuxProfileToTerraform(struct?: DataAzurermKubernetesClusterLinuxProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1440,7 +1440,7 @@ export function dataAzurermKubernetesClusterLinuxProfileToTerraform(struct?: Dat
 export function dataAzurermKubernetesClusterLinuxProfileToHclTerraform(struct?: DataAzurermKubernetesClusterLinuxProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1511,7 +1511,7 @@ export interface DataAzurermKubernetesClusterMicrosoftDefender {
 export function dataAzurermKubernetesClusterMicrosoftDefenderToTerraform(struct?: DataAzurermKubernetesClusterMicrosoftDefender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1521,7 +1521,7 @@ export function dataAzurermKubernetesClusterMicrosoftDefenderToTerraform(struct?
 export function dataAzurermKubernetesClusterMicrosoftDefenderToHclTerraform(struct?: DataAzurermKubernetesClusterMicrosoftDefender): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1586,7 +1586,7 @@ export interface DataAzurermKubernetesClusterNetworkProfile {
 export function dataAzurermKubernetesClusterNetworkProfileToTerraform(struct?: DataAzurermKubernetesClusterNetworkProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1596,7 +1596,7 @@ export function dataAzurermKubernetesClusterNetworkProfileToTerraform(struct?: D
 export function dataAzurermKubernetesClusterNetworkProfileToHclTerraform(struct?: DataAzurermKubernetesClusterNetworkProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1696,7 +1696,7 @@ export interface DataAzurermKubernetesClusterOmsAgentOmsAgentIdentity {
 export function dataAzurermKubernetesClusterOmsAgentOmsAgentIdentityToTerraform(struct?: DataAzurermKubernetesClusterOmsAgentOmsAgentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1706,7 +1706,7 @@ export function dataAzurermKubernetesClusterOmsAgentOmsAgentIdentityToTerraform(
 export function dataAzurermKubernetesClusterOmsAgentOmsAgentIdentityToHclTerraform(struct?: DataAzurermKubernetesClusterOmsAgentOmsAgentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1781,7 +1781,7 @@ export interface DataAzurermKubernetesClusterOmsAgent {
 export function dataAzurermKubernetesClusterOmsAgentToTerraform(struct?: DataAzurermKubernetesClusterOmsAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1791,7 +1791,7 @@ export function dataAzurermKubernetesClusterOmsAgentToTerraform(struct?: DataAzu
 export function dataAzurermKubernetesClusterOmsAgentToHclTerraform(struct?: DataAzurermKubernetesClusterOmsAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1867,7 +1867,7 @@ export interface DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthor
 export function dataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityToTerraform(struct?: DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1877,7 +1877,7 @@ export function dataAzurermKubernetesClusterServiceMeshProfileCertificateAuthori
 export function dataAzurermKubernetesClusterServiceMeshProfileCertificateAuthorityToHclTerraform(struct?: DataAzurermKubernetesClusterServiceMeshProfileCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1962,7 +1962,7 @@ export interface DataAzurermKubernetesClusterServiceMeshProfile {
 export function dataAzurermKubernetesClusterServiceMeshProfileToTerraform(struct?: DataAzurermKubernetesClusterServiceMeshProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1972,7 +1972,7 @@ export function dataAzurermKubernetesClusterServiceMeshProfileToTerraform(struct
 export function dataAzurermKubernetesClusterServiceMeshProfileToHclTerraform(struct?: DataAzurermKubernetesClusterServiceMeshProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2058,7 +2058,7 @@ export interface DataAzurermKubernetesClusterServicePrincipal {
 export function dataAzurermKubernetesClusterServicePrincipalToTerraform(struct?: DataAzurermKubernetesClusterServicePrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2068,7 +2068,7 @@ export function dataAzurermKubernetesClusterServicePrincipalToTerraform(struct?:
 export function dataAzurermKubernetesClusterServicePrincipalToHclTerraform(struct?: DataAzurermKubernetesClusterServicePrincipal): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2133,7 +2133,7 @@ export interface DataAzurermKubernetesClusterStorageProfile {
 export function dataAzurermKubernetesClusterStorageProfileToTerraform(struct?: DataAzurermKubernetesClusterStorageProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2143,7 +2143,7 @@ export function dataAzurermKubernetesClusterStorageProfileToTerraform(struct?: D
 export function dataAzurermKubernetesClusterStorageProfileToHclTerraform(struct?: DataAzurermKubernetesClusterStorageProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2223,7 +2223,7 @@ export interface DataAzurermKubernetesClusterWindowsProfile {
 export function dataAzurermKubernetesClusterWindowsProfileToTerraform(struct?: DataAzurermKubernetesClusterWindowsProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2233,7 +2233,7 @@ export function dataAzurermKubernetesClusterWindowsProfileToTerraform(struct?: D
 export function dataAzurermKubernetesClusterWindowsProfileToHclTerraform(struct?: DataAzurermKubernetesClusterWindowsProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2294,7 +2294,7 @@ export class DataAzurermKubernetesClusterWindowsProfileList extends cdktn.Comple
 }
 export interface DataAzurermKubernetesClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
   */
   readonly read?: string;
 }
@@ -2302,7 +2302,7 @@ export interface DataAzurermKubernetesClusterTimeouts {
 export function dataAzurermKubernetesClusterTimeoutsToTerraform(struct?: DataAzurermKubernetesClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -2313,7 +2313,7 @@ export function dataAzurermKubernetesClusterTimeoutsToTerraform(struct?: DataAzu
 export function dataAzurermKubernetesClusterTimeoutsToHclTerraform(struct?: DataAzurermKubernetesClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -2388,7 +2388,7 @@ export class DataAzurermKubernetesClusterTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
 */
 export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
 
@@ -2404,7 +2404,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermKubernetesCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKubernetesCluster to import
-  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2416,7 +2416,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2427,7 +2427,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

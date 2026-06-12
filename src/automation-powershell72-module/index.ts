@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +13,44 @@ import * as cdktn from 'cdktn';
 
 export interface AutomationPowershell72ModuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#automation_account_id AutomationPowershell72Module#automation_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#automation_account_id AutomationPowershell72Module#automation_account_id}
   */
   readonly automationAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#id AutomationPowershell72Module#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#id AutomationPowershell72Module#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#name AutomationPowershell72Module#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#name AutomationPowershell72Module#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#tags AutomationPowershell72Module#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#tags AutomationPowershell72Module#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * module_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#module_link AutomationPowershell72Module#module_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#module_link AutomationPowershell72Module#module_link}
   */
   readonly moduleLink: AutomationPowershell72ModuleModuleLink;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#timeouts AutomationPowershell72Module#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#timeouts AutomationPowershell72Module#timeouts}
   */
   readonly timeouts?: AutomationPowershell72ModuleTimeouts;
 }
 export interface AutomationPowershell72ModuleModuleLinkHash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#algorithm AutomationPowershell72Module#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#algorithm AutomationPowershell72Module#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#value AutomationPowershell72Module#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#value AutomationPowershell72Module#value}
   */
   readonly value: string;
 }
@@ -58,7 +58,7 @@ export interface AutomationPowershell72ModuleModuleLinkHash {
 export function automationPowershell72ModuleModuleLinkHashToTerraform(struct?: AutomationPowershell72ModuleModuleLinkHashOutputReference | AutomationPowershell72ModuleModuleLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     algorithm: cdktn.stringToTerraform(struct!.algorithm),
@@ -70,7 +70,7 @@ export function automationPowershell72ModuleModuleLinkHashToTerraform(struct?: A
 export function automationPowershell72ModuleModuleLinkHashToHclTerraform(struct?: AutomationPowershell72ModuleModuleLinkHashOutputReference | AutomationPowershell72ModuleModuleLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     algorithm: {
@@ -157,13 +157,13 @@ export class AutomationPowershell72ModuleModuleLinkHashOutputReference extends c
 }
 export interface AutomationPowershell72ModuleModuleLink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#uri AutomationPowershell72Module#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#uri AutomationPowershell72Module#uri}
   */
   readonly uri: string;
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#hash AutomationPowershell72Module#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#hash AutomationPowershell72Module#hash}
   */
   readonly hash?: AutomationPowershell72ModuleModuleLinkHash;
 }
@@ -171,7 +171,7 @@ export interface AutomationPowershell72ModuleModuleLink {
 export function automationPowershell72ModuleModuleLinkToTerraform(struct?: AutomationPowershell72ModuleModuleLinkOutputReference | AutomationPowershell72ModuleModuleLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     uri: cdktn.stringToTerraform(struct!.uri),
@@ -183,7 +183,7 @@ export function automationPowershell72ModuleModuleLinkToTerraform(struct?: Autom
 export function automationPowershell72ModuleModuleLinkToHclTerraform(struct?: AutomationPowershell72ModuleModuleLinkOutputReference | AutomationPowershell72ModuleModuleLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     uri: {
@@ -273,19 +273,19 @@ export class AutomationPowershell72ModuleModuleLinkOutputReference extends cdktn
 }
 export interface AutomationPowershell72ModuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#create AutomationPowershell72Module#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#create AutomationPowershell72Module#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#delete AutomationPowershell72Module#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#delete AutomationPowershell72Module#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#read AutomationPowershell72Module#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#read AutomationPowershell72Module#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#update AutomationPowershell72Module#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#update AutomationPowershell72Module#update}
   */
   readonly update?: string;
 }
@@ -293,7 +293,7 @@ export interface AutomationPowershell72ModuleTimeouts {
 export function automationPowershell72ModuleTimeoutsToTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -307,7 +307,7 @@ export function automationPowershell72ModuleTimeoutsToTerraform(struct?: Automat
 export function automationPowershell72ModuleTimeoutsToHclTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -466,7 +466,7 @@ export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}
 */
 export class AutomationPowershell72Module extends cdktn.TerraformResource {
 
@@ -482,7 +482,7 @@ export class AutomationPowershell72Module extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AutomationPowershell72Module resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationPowershell72Module to import
-  * @param importFromId The id of the existing AutomationPowershell72Module that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomationPowershell72Module that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationPowershell72Module to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -494,7 +494,7 @@ export class AutomationPowershell72Module extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -505,7 +505,7 @@ export class AutomationPowershell72Module extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_automation_powershell72_module',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

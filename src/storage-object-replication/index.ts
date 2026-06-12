@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface StorageObjectReplicationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}
   */
   readonly destinationStorageAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#metrics_enabled StorageObjectReplication#metrics_enabled}
+  */
+  readonly metricsEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}
   */
   readonly sourceStorageAccountId: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#rules StorageObjectReplication#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#rules StorageObjectReplication#rules}
   */
   readonly rules: StorageObjectReplicationRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#timeouts StorageObjectReplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#timeouts StorageObjectReplication#timeouts}
   */
   readonly timeouts?: StorageObjectReplicationTimeouts;
 }
 export interface StorageObjectReplicationRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}
   */
   readonly copyBlobsCreatedAfter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}
   */
   readonly destinationContainerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}
   */
   readonly filterOutBlobsWithPrefix?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}
   */
   readonly sourceContainerName: string;
 }
@@ -62,7 +66,7 @@ export interface StorageObjectReplicationRules {
 export function storageObjectReplicationRulesToTerraform(struct?: StorageObjectReplicationRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     copy_blobs_created_after: cdktn.stringToTerraform(struct!.copyBlobsCreatedAfter),
@@ -76,7 +80,7 @@ export function storageObjectReplicationRulesToTerraform(struct?: StorageObjectR
 export function storageObjectReplicationRulesToHclTerraform(struct?: StorageObjectReplicationRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     copy_blobs_created_after: {
@@ -256,19 +260,19 @@ export class StorageObjectReplicationRulesList extends cdktn.ComplexList {
 }
 export interface StorageObjectReplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}
   */
   readonly update?: string;
 }
@@ -276,7 +280,7 @@ export interface StorageObjectReplicationTimeouts {
 export function storageObjectReplicationTimeoutsToTerraform(struct?: StorageObjectReplicationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -290,7 +294,7 @@ export function storageObjectReplicationTimeoutsToTerraform(struct?: StorageObje
 export function storageObjectReplicationTimeoutsToHclTerraform(struct?: StorageObjectReplicationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -449,7 +453,7 @@ export class StorageObjectReplicationTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication azurerm_storage_object_replication}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication azurerm_storage_object_replication}
 */
 export class StorageObjectReplication extends cdktn.TerraformResource {
 
@@ -465,7 +469,7 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageObjectReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageObjectReplication to import
-  * @param importFromId The id of the existing StorageObjectReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageObjectReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageObjectReplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -477,7 +481,7 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication azurerm_storage_object_replication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -488,7 +492,7 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_object_replication',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -501,6 +505,7 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
     });
     this._destinationStorageAccountId = config.destinationStorageAccountId;
     this._id = config.id;
+    this._metricsEnabled = config.metricsEnabled;
     this._sourceStorageAccountId = config.sourceStorageAccountId;
     this._rules.internalValue = config.rules;
     this._timeouts.internalValue = config.timeouts;
@@ -542,6 +547,22 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // metrics_enabled - computed: false, optional: true, required: false
+  private _metricsEnabled?: boolean | cdktn.IResolvable; 
+  public get metricsEnabled() {
+    return this.getBooleanAttribute('metrics_enabled');
+  }
+  public set metricsEnabled(value: boolean | cdktn.IResolvable) {
+    this._metricsEnabled = value;
+  }
+  public resetMetricsEnabled() {
+    this._metricsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsEnabledInput() {
+    return this._metricsEnabled;
   }
 
   // source_object_replication_id - computed: true, optional: false, required: false
@@ -599,6 +620,7 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
     return {
       destination_storage_account_id: cdktn.stringToTerraform(this._destinationStorageAccountId),
       id: cdktn.stringToTerraform(this._id),
+      metrics_enabled: cdktn.booleanToTerraform(this._metricsEnabled),
       source_storage_account_id: cdktn.stringToTerraform(this._sourceStorageAccountId),
       rules: cdktn.listMapper(storageObjectReplicationRulesToTerraform, true)(this._rules.internalValue),
       timeouts: storageObjectReplicationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -618,6 +640,12 @@ export class StorageObjectReplication extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      metrics_enabled: {
+        value: cdktn.booleanToHclTerraform(this._metricsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       source_storage_account_id: {
         value: cdktn.stringToHclTerraform(this._sourceStorageAccountId),

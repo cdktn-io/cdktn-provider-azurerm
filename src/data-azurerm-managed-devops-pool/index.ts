@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermManagedDevopsPoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#id DataAzurermManagedDevopsPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#id DataAzurermManagedDevopsPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#name DataAzurermManagedDevopsPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#name DataAzurermManagedDevopsPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#resource_group_name DataAzurermManagedDevopsPool#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#resource_group_name DataAzurermManagedDevopsPool#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#timeouts DataAzurermManagedDevopsPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#timeouts DataAzurermManagedDevopsPool#timeouts}
   */
   readonly timeouts?: DataAzurermManagedDevopsPoolTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganization
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganizationToTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganizationT
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganizationToHclTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationOrganization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAd
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountToTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAdm
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountToHclTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -205,7 +205,7 @@ export interface DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermission {
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionToTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermission): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -215,7 +215,7 @@ export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionToT
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationPermissionToHclTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganizationPermission): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -286,7 +286,7 @@ export interface DataAzurermManagedDevopsPoolAzureDevopsOrganization {
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationToTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -296,7 +296,7 @@ export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationToTerraform(s
 export function dataAzurermManagedDevopsPoolAzureDevopsOrganizationToHclTerraform(struct?: DataAzurermManagedDevopsPoolAzureDevopsOrganization): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -368,7 +368,7 @@ export interface DataAzurermManagedDevopsPoolIdentity {
 export function dataAzurermManagedDevopsPoolIdentityToTerraform(struct?: DataAzurermManagedDevopsPoolIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -378,7 +378,7 @@ export function dataAzurermManagedDevopsPoolIdentityToTerraform(struct?: DataAzu
 export function dataAzurermManagedDevopsPoolIdentityToHclTerraform(struct?: DataAzurermManagedDevopsPoolIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -448,7 +448,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePredi
 export function dataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePredictionToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -458,7 +458,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePredic
 export function dataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePredictionToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentAutomaticResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -523,7 +523,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -533,7 +533,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -603,7 +603,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -613,7 +613,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -683,7 +683,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -693,7 +693,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -763,7 +763,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -773,7 +773,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -843,7 +843,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -853,7 +853,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -923,7 +923,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -933,7 +933,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1003,7 +1003,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1013,7 +1013,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1083,7 +1083,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1093,7 +1093,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictio
 export function dataAzurermManagedDevopsPoolStatefulAgentManualResourcePredictionToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgentManualResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1205,7 +1205,7 @@ export interface DataAzurermManagedDevopsPoolStatefulAgent {
 export function dataAzurermManagedDevopsPoolStatefulAgentToTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1215,7 +1215,7 @@ export function dataAzurermManagedDevopsPoolStatefulAgentToTerraform(struct?: Da
 export function dataAzurermManagedDevopsPoolStatefulAgentToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatefulAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1297,7 +1297,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePred
 export function dataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePredictionToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1307,7 +1307,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePredi
 export function dataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePredictionToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentAutomaticResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1372,7 +1372,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1382,7 +1382,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1452,7 +1452,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1462,7 +1462,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1532,7 +1532,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1542,7 +1542,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1612,7 +1612,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1622,7 +1622,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1692,7 +1692,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1702,7 +1702,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1772,7 +1772,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1782,7 +1782,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1852,7 +1852,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1862,7 +1862,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1932,7 +1932,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgentManualResourcePredict
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1942,7 +1942,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredicti
 export function dataAzurermManagedDevopsPoolStatelessAgentManualResourcePredictionToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgentManualResourcePrediction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2054,7 +2054,7 @@ export interface DataAzurermManagedDevopsPoolStatelessAgent {
 export function dataAzurermManagedDevopsPoolStatelessAgentToTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2064,7 +2064,7 @@ export function dataAzurermManagedDevopsPoolStatelessAgentToTerraform(struct?: D
 export function dataAzurermManagedDevopsPoolStatelessAgentToHclTerraform(struct?: DataAzurermManagedDevopsPoolStatelessAgent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2136,7 +2136,7 @@ export interface DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImage {
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImageToTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2146,7 +2146,7 @@ export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImageToT
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImageToHclTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricImage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2226,7 +2226,7 @@ export interface DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurit
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementToTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2236,7 +2236,7 @@ export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurity
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementToHclTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2316,7 +2316,7 @@ export interface DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurit
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityToTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2326,7 +2326,7 @@ export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurity
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurityToHclTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2397,7 +2397,7 @@ export interface DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorage
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorageToTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2407,7 +2407,7 @@ export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorageT
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorageToHclTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2487,7 +2487,7 @@ export interface DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabric {
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricToTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2497,7 +2497,7 @@ export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricToTerraf
 export function dataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricToHclTerraform(struct?: DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabric): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2586,7 +2586,7 @@ export class DataAzurermManagedDevopsPoolVirtualMachineScaleSetFabricList extend
 }
 export interface DataAzurermManagedDevopsPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#read DataAzurermManagedDevopsPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#read DataAzurermManagedDevopsPool#read}
   */
   readonly read?: string;
 }
@@ -2594,7 +2594,7 @@ export interface DataAzurermManagedDevopsPoolTimeouts {
 export function dataAzurermManagedDevopsPoolTimeoutsToTerraform(struct?: DataAzurermManagedDevopsPoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -2605,7 +2605,7 @@ export function dataAzurermManagedDevopsPoolTimeoutsToTerraform(struct?: DataAzu
 export function dataAzurermManagedDevopsPoolTimeoutsToHclTerraform(struct?: DataAzurermManagedDevopsPoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -2680,7 +2680,7 @@ export class DataAzurermManagedDevopsPoolTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool azurerm_managed_devops_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool azurerm_managed_devops_pool}
 */
 export class DataAzurermManagedDevopsPool extends cdktn.TerraformDataSource {
 
@@ -2696,7 +2696,7 @@ export class DataAzurermManagedDevopsPool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermManagedDevopsPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermManagedDevopsPool to import
-  * @param importFromId The id of the existing DataAzurermManagedDevopsPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermManagedDevopsPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermManagedDevopsPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2708,7 +2708,7 @@ export class DataAzurermManagedDevopsPool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/managed_devops_pool azurerm_managed_devops_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/managed_devops_pool azurerm_managed_devops_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2719,7 +2719,7 @@ export class DataAzurermManagedDevopsPool extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_managed_devops_pool',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

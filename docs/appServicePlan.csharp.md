@@ -4,7 +4,7 @@
 
 ### AppServicePlan <a name="AppServicePlan" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan azurerm_app_service_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan azurerm_app_service_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the AppServicePlan to import.
 
 The id of the existing AppServicePlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1142,20 +1142,20 @@ new AppServicePlanConfig {
 | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#location AppServicePlan#location}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#name AppServicePlan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#resource_group_name AppServicePlan#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#location AppServicePlan#location}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#name AppServicePlan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#resource_group_name AppServicePlan#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku">AppServicePlanSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.appServiceEnvironmentId">AppServiceEnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#app_service_environment_id AppServicePlan#app_service_environment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#id AppServicePlan#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.isXenon">IsXenon</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#is_xenon AppServicePlan#is_xenon}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#kind AppServicePlan#kind}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.maximumElasticWorkerCount">MaximumElasticWorkerCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#maximum_elastic_worker_count AppServicePlan#maximum_elastic_worker_count}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.perSiteScaling">PerSiteScaling</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#per_site_scaling AppServicePlan#per_site_scaling}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.reserved">Reserved</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#reserved AppServicePlan#reserved}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#tags AppServicePlan#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.appServiceEnvironmentId">AppServiceEnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#app_service_environment_id AppServicePlan#app_service_environment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#id AppServicePlan#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.isXenon">IsXenon</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#is_xenon AppServicePlan#is_xenon}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#kind AppServicePlan#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.maximumElasticWorkerCount">MaximumElasticWorkerCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#maximum_elastic_worker_count AppServicePlan#maximum_elastic_worker_count}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.perSiteScaling">PerSiteScaling</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#per_site_scaling AppServicePlan#per_site_scaling}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.reserved">Reserved</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#reserved AppServicePlan#reserved}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#tags AppServicePlan#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts">AppServicePlanTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.zoneRedundant">ZoneRedundant</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#zone_redundant AppServicePlan#zone_redundant}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.property.zoneRedundant">ZoneRedundant</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#zone_redundant AppServicePlan#zone_redundant}. |
 
 ---
 
@@ -1237,7 +1237,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#location AppServicePlan#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#location AppServicePlan#location}.
 
 ---
 
@@ -1249,7 +1249,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#name AppServicePlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#name AppServicePlan#name}.
 
 ---
 
@@ -1261,7 +1261,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#resource_group_name AppServicePlan#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#resource_group_name AppServicePlan#resource_group_name}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public AppServicePlanSku Sku { get; set; }
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#sku AppServicePlan#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#sku AppServicePlan#sku}
 
 ---
 
@@ -1287,7 +1287,7 @@ public string AppServiceEnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#app_service_environment_id AppServicePlan#app_service_environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#app_service_environment_id AppServicePlan#app_service_environment_id}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#id AppServicePlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#id AppServicePlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1314,7 +1314,7 @@ public bool|IResolvable IsXenon { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#is_xenon AppServicePlan#is_xenon}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#is_xenon AppServicePlan#is_xenon}.
 
 ---
 
@@ -1326,7 +1326,7 @@ public string Kind { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#kind AppServicePlan#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#kind AppServicePlan#kind}.
 
 ---
 
@@ -1338,7 +1338,7 @@ public double MaximumElasticWorkerCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#maximum_elastic_worker_count AppServicePlan#maximum_elastic_worker_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#maximum_elastic_worker_count AppServicePlan#maximum_elastic_worker_count}.
 
 ---
 
@@ -1350,7 +1350,7 @@ public bool|IResolvable PerSiteScaling { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#per_site_scaling AppServicePlan#per_site_scaling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#per_site_scaling AppServicePlan#per_site_scaling}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public bool|IResolvable Reserved { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#reserved AppServicePlan#reserved}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#reserved AppServicePlan#reserved}.
 
 ---
 
@@ -1374,7 +1374,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#tags AppServicePlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#tags AppServicePlan#tags}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public AppServicePlanTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#timeouts AppServicePlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#timeouts AppServicePlan#timeouts}
 
 ---
 
@@ -1400,7 +1400,7 @@ public bool|IResolvable ZoneRedundant { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#zone_redundant AppServicePlan#zone_redundant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#zone_redundant AppServicePlan#zone_redundant}.
 
 ---
 
@@ -1422,9 +1422,9 @@ new AppServicePlanSku {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.size">Size</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#size AppServicePlan#size}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.tier">Tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#tier AppServicePlan#tier}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#capacity AppServicePlan#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.size">Size</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#size AppServicePlan#size}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.tier">Tier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#tier AppServicePlan#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#capacity AppServicePlan#capacity}. |
 
 ---
 
@@ -1436,7 +1436,7 @@ public string Size { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#size AppServicePlan#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#size AppServicePlan#size}.
 
 ---
 
@@ -1448,7 +1448,7 @@ public string Tier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#tier AppServicePlan#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#tier AppServicePlan#tier}.
 
 ---
 
@@ -1460,7 +1460,7 @@ public double Capacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#capacity AppServicePlan#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#capacity AppServicePlan#capacity}.
 
 ---
 
@@ -1483,10 +1483,10 @@ new AppServicePlanTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#create AppServicePlan#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#delete AppServicePlan#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#read AppServicePlan#read}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#update AppServicePlan#update}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#create AppServicePlan#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#delete AppServicePlan#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#read AppServicePlan#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#update AppServicePlan#update}. |
 
 ---
 
@@ -1498,7 +1498,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#create AppServicePlan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#create AppServicePlan#create}.
 
 ---
 
@@ -1510,7 +1510,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#delete AppServicePlan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#delete AppServicePlan#delete}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#read AppServicePlan#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#read AppServicePlan#read}.
 
 ---
 
@@ -1534,7 +1534,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/app_service_plan#update AppServicePlan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_plan#update AppServicePlan#update}.
 
 ---
 

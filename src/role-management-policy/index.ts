@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface RoleManagementPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#id RoleManagementPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#id RoleManagementPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface RoleManagementPolicyConfig extends cdktn.TerraformMetaArguments
   /**
   * ID of the Azure Role to which this policy is assigned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#role_definition_id RoleManagementPolicy#role_definition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#role_definition_id RoleManagementPolicy#role_definition_id}
   */
   readonly roleDefinitionId: string;
   /**
   * The scope of the role to which this policy will apply
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#scope RoleManagementPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#scope RoleManagementPolicy#scope}
   */
   readonly scope: string;
   /**
   * activation_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#activation_rules RoleManagementPolicy#activation_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#activation_rules RoleManagementPolicy#activation_rules}
   */
   readonly activationRules?: RoleManagementPolicyActivationRules;
   /**
   * active_assignment_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#active_assignment_rules RoleManagementPolicy#active_assignment_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#active_assignment_rules RoleManagementPolicy#active_assignment_rules}
   */
   readonly activeAssignmentRules?: RoleManagementPolicyActiveAssignmentRules;
   /**
   * eligible_assignment_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#eligible_assignment_rules RoleManagementPolicy#eligible_assignment_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#eligible_assignment_rules RoleManagementPolicy#eligible_assignment_rules}
   */
   readonly eligibleAssignmentRules?: RoleManagementPolicyEligibleAssignmentRules;
   /**
   * notification_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_rules RoleManagementPolicy#notification_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_rules RoleManagementPolicy#notification_rules}
   */
   readonly notificationRules?: RoleManagementPolicyNotificationRules;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#timeouts RoleManagementPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#timeouts RoleManagementPolicy#timeouts}
   */
   readonly timeouts?: RoleManagementPolicyTimeouts;
 }
@@ -66,13 +66,13 @@ export interface RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover
   /**
   * The ID of the object to act as an approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#object_id RoleManagementPolicy#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#object_id RoleManagementPolicy#object_id}
   */
   readonly objectId: string;
   /**
   * The type of object acting as an approver
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#type RoleManagementPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#type RoleManagementPolicy#type}
   */
   readonly type: string;
 }
@@ -80,7 +80,7 @@ export interface RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover
 export function roleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform(struct?: RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     object_id: cdktn.stringToTerraform(struct!.objectId),
@@ -92,7 +92,7 @@ export function roleManagementPolicyActivationRulesApprovalStagePrimaryApproverT
 export function roleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform(struct?: RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     object_id: {
@@ -213,7 +213,7 @@ export interface RoleManagementPolicyActivationRulesApprovalStage {
   /**
   * primary_approver block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#primary_approver RoleManagementPolicy#primary_approver}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#primary_approver RoleManagementPolicy#primary_approver}
   */
   readonly primaryApprover: RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover[] | cdktn.IResolvable;
 }
@@ -221,7 +221,7 @@ export interface RoleManagementPolicyActivationRulesApprovalStage {
 export function roleManagementPolicyActivationRulesApprovalStageToTerraform(struct?: RoleManagementPolicyActivationRulesApprovalStageOutputReference | RoleManagementPolicyActivationRulesApprovalStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     primary_approver: cdktn.listMapper(roleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform, true)(struct!.primaryApprover),
@@ -232,7 +232,7 @@ export function roleManagementPolicyActivationRulesApprovalStageToTerraform(stru
 export function roleManagementPolicyActivationRulesApprovalStageToHclTerraform(struct?: RoleManagementPolicyActivationRulesApprovalStageOutputReference | RoleManagementPolicyActivationRulesApprovalStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     primary_approver: {
@@ -296,43 +296,43 @@ export interface RoleManagementPolicyActivationRules {
   /**
   * The time after which the an activation can be valid for
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#maximum_duration RoleManagementPolicy#maximum_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#maximum_duration RoleManagementPolicy#maximum_duration}
   */
   readonly maximumDuration?: string;
   /**
   * Whether an approval is required for activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_approval RoleManagementPolicy#require_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_approval RoleManagementPolicy#require_approval}
   */
   readonly requireApproval?: boolean | cdktn.IResolvable;
   /**
   * Whether a justification is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
   */
   readonly requireJustification?: boolean | cdktn.IResolvable;
   /**
   * Whether multi-factor authentication is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
   */
   readonly requireMultifactorAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Whether ticket information is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
   */
   readonly requireTicketInfo?: boolean | cdktn.IResolvable;
   /**
   * Whether a conditional access context is required during activation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#required_conditional_access_authentication_context RoleManagementPolicy#required_conditional_access_authentication_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#required_conditional_access_authentication_context RoleManagementPolicy#required_conditional_access_authentication_context}
   */
   readonly requiredConditionalAccessAuthenticationContext?: string;
   /**
   * approval_stage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#approval_stage RoleManagementPolicy#approval_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#approval_stage RoleManagementPolicy#approval_stage}
   */
   readonly approvalStage?: RoleManagementPolicyActivationRulesApprovalStage;
 }
@@ -340,7 +340,7 @@ export interface RoleManagementPolicyActivationRules {
 export function roleManagementPolicyActivationRulesToTerraform(struct?: RoleManagementPolicyActivationRulesOutputReference | RoleManagementPolicyActivationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     maximum_duration: cdktn.stringToTerraform(struct!.maximumDuration),
@@ -357,7 +357,7 @@ export function roleManagementPolicyActivationRulesToTerraform(struct?: RoleMana
 export function roleManagementPolicyActivationRulesToHclTerraform(struct?: RoleManagementPolicyActivationRulesOutputReference | RoleManagementPolicyActivationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     maximum_duration: {
@@ -592,31 +592,31 @@ export interface RoleManagementPolicyActiveAssignmentRules {
   /**
   * Must the assignment have an expiry date
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
   */
   readonly expirationRequired?: boolean | cdktn.IResolvable;
   /**
   * The duration after which assignments expire
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
   */
   readonly expireAfter?: string;
   /**
   * Whether a justification is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_justification RoleManagementPolicy#require_justification}
   */
   readonly requireJustification?: boolean | cdktn.IResolvable;
   /**
   * Whether multi-factor authentication is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_multifactor_authentication RoleManagementPolicy#require_multifactor_authentication}
   */
   readonly requireMultifactorAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Whether ticket information is required to make an assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#require_ticket_info RoleManagementPolicy#require_ticket_info}
   */
   readonly requireTicketInfo?: boolean | cdktn.IResolvable;
 }
@@ -624,7 +624,7 @@ export interface RoleManagementPolicyActiveAssignmentRules {
 export function roleManagementPolicyActiveAssignmentRulesToTerraform(struct?: RoleManagementPolicyActiveAssignmentRulesOutputReference | RoleManagementPolicyActiveAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expiration_required: cdktn.booleanToTerraform(struct!.expirationRequired),
@@ -639,7 +639,7 @@ export function roleManagementPolicyActiveAssignmentRulesToTerraform(struct?: Ro
 export function roleManagementPolicyActiveAssignmentRulesToHclTerraform(struct?: RoleManagementPolicyActiveAssignmentRulesOutputReference | RoleManagementPolicyActiveAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expiration_required: {
@@ -818,13 +818,13 @@ export interface RoleManagementPolicyEligibleAssignmentRules {
   /**
   * Must the assignment have an expiry date
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#expiration_required RoleManagementPolicy#expiration_required}
   */
   readonly expirationRequired?: boolean | cdktn.IResolvable;
   /**
   * The duration after which assignments expire
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#expire_after RoleManagementPolicy#expire_after}
   */
   readonly expireAfter?: string;
 }
@@ -832,7 +832,7 @@ export interface RoleManagementPolicyEligibleAssignmentRules {
 export function roleManagementPolicyEligibleAssignmentRulesToTerraform(struct?: RoleManagementPolicyEligibleAssignmentRulesOutputReference | RoleManagementPolicyEligibleAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expiration_required: cdktn.booleanToTerraform(struct!.expirationRequired),
@@ -844,7 +844,7 @@ export function roleManagementPolicyEligibleAssignmentRulesToTerraform(struct?: 
 export function roleManagementPolicyEligibleAssignmentRulesToHclTerraform(struct?: RoleManagementPolicyEligibleAssignmentRulesOutputReference | RoleManagementPolicyEligibleAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expiration_required: {
@@ -939,19 +939,19 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNoti
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -959,7 +959,7 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNoti
 export function roleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -972,7 +972,7 @@ export function roleManagementPolicyNotificationRulesActiveAssignmentsAdminNotif
 export function roleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1089,19 +1089,19 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsApproverN
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1109,7 +1109,7 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsApproverN
 export function roleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -1122,7 +1122,7 @@ export function roleManagementPolicyNotificationRulesActiveAssignmentsApproverNo
 export function roleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1239,19 +1239,19 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeN
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1259,7 +1259,7 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeN
 export function roleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -1272,7 +1272,7 @@ export function roleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNo
 export function roleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1389,19 +1389,19 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignments {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications;
 }
@@ -1409,7 +1409,7 @@ export interface RoleManagementPolicyNotificationRulesActiveAssignments {
 export function roleManagementPolicyNotificationRulesActiveAssignmentsToTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     admin_notifications: roleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToTerraform(struct!.adminNotifications),
@@ -1422,7 +1422,7 @@ export function roleManagementPolicyNotificationRulesActiveAssignmentsToTerrafor
 export function roleManagementPolicyNotificationRulesActiveAssignmentsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference | RoleManagementPolicyNotificationRulesActiveAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     admin_notifications: {
@@ -1545,19 +1545,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsAdminNo
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1565,7 +1565,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsAdminNo
 export function roleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -1578,7 +1578,7 @@ export function roleManagementPolicyNotificationRulesEligibleActivationsAdminNot
 export function roleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1695,19 +1695,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsApprove
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1715,7 +1715,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsApprove
 export function roleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -1728,7 +1728,7 @@ export function roleManagementPolicyNotificationRulesEligibleActivationsApprover
 export function roleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1845,19 +1845,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsAssigne
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -1865,7 +1865,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivationsAssigne
 export function roleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -1878,7 +1878,7 @@ export function roleManagementPolicyNotificationRulesEligibleActivationsAssignee
 export function roleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -1995,19 +1995,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivations {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications;
 }
@@ -2015,7 +2015,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleActivations {
 export function roleManagementPolicyNotificationRulesEligibleActivationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     admin_notifications: roleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToTerraform(struct!.adminNotifications),
@@ -2028,7 +2028,7 @@ export function roleManagementPolicyNotificationRulesEligibleActivationsToTerraf
 export function roleManagementPolicyNotificationRulesEligibleActivationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference | RoleManagementPolicyNotificationRulesEligibleActivations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     admin_notifications: {
@@ -2151,19 +2151,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNo
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2171,7 +2171,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNo
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -2184,7 +2184,7 @@ export function roleManagementPolicyNotificationRulesEligibleAssignmentsAdminNot
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -2301,19 +2301,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsApprove
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2321,7 +2321,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsApprove
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -2334,7 +2334,7 @@ export function roleManagementPolicyNotificationRulesEligibleAssignmentsApprover
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -2451,19 +2451,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigne
   /**
   * The additional recipients to notify
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#additional_recipients RoleManagementPolicy#additional_recipients}
   */
   readonly additionalRecipients?: string[];
   /**
   * Whether the default recipients are notified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#default_recipients RoleManagementPolicy#default_recipients}
   */
   readonly defaultRecipients: boolean | cdktn.IResolvable;
   /**
   * What level of notifications are sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#notification_level RoleManagementPolicy#notification_level}
   */
   readonly notificationLevel: string;
 }
@@ -2471,7 +2471,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigne
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalRecipients),
@@ -2484,7 +2484,7 @@ export function roleManagementPolicyNotificationRulesEligibleAssignmentsAssignee
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_recipients: {
@@ -2601,19 +2601,19 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignments {
   /**
   * admin_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#admin_notifications RoleManagementPolicy#admin_notifications}
   */
   readonly adminNotifications?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications;
   /**
   * approver_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#approver_notifications RoleManagementPolicy#approver_notifications}
   */
   readonly approverNotifications?: RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications;
   /**
   * assignee_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#assignee_notifications RoleManagementPolicy#assignee_notifications}
   */
   readonly assigneeNotifications?: RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications;
 }
@@ -2621,7 +2621,7 @@ export interface RoleManagementPolicyNotificationRulesEligibleAssignments {
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsToTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     admin_notifications: roleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToTerraform(struct!.adminNotifications),
@@ -2634,7 +2634,7 @@ export function roleManagementPolicyNotificationRulesEligibleAssignmentsToTerraf
 export function roleManagementPolicyNotificationRulesEligibleAssignmentsToHclTerraform(struct?: RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference | RoleManagementPolicyNotificationRulesEligibleAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     admin_notifications: {
@@ -2757,19 +2757,19 @@ export interface RoleManagementPolicyNotificationRules {
   /**
   * active_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#active_assignments RoleManagementPolicy#active_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#active_assignments RoleManagementPolicy#active_assignments}
   */
   readonly activeAssignments?: RoleManagementPolicyNotificationRulesActiveAssignments;
   /**
   * eligible_activations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#eligible_activations RoleManagementPolicy#eligible_activations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#eligible_activations RoleManagementPolicy#eligible_activations}
   */
   readonly eligibleActivations?: RoleManagementPolicyNotificationRulesEligibleActivations;
   /**
   * eligible_assignments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#eligible_assignments RoleManagementPolicy#eligible_assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#eligible_assignments RoleManagementPolicy#eligible_assignments}
   */
   readonly eligibleAssignments?: RoleManagementPolicyNotificationRulesEligibleAssignments;
 }
@@ -2777,7 +2777,7 @@ export interface RoleManagementPolicyNotificationRules {
 export function roleManagementPolicyNotificationRulesToTerraform(struct?: RoleManagementPolicyNotificationRulesOutputReference | RoleManagementPolicyNotificationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     active_assignments: roleManagementPolicyNotificationRulesActiveAssignmentsToTerraform(struct!.activeAssignments),
@@ -2790,7 +2790,7 @@ export function roleManagementPolicyNotificationRulesToTerraform(struct?: RoleMa
 export function roleManagementPolicyNotificationRulesToHclTerraform(struct?: RoleManagementPolicyNotificationRulesOutputReference | RoleManagementPolicyNotificationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     active_assignments: {
@@ -2911,19 +2911,19 @@ export class RoleManagementPolicyNotificationRulesOutputReference extends cdktn.
 }
 export interface RoleManagementPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#create RoleManagementPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#create RoleManagementPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#delete RoleManagementPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#read RoleManagementPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#read RoleManagementPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#update RoleManagementPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#update RoleManagementPolicy#update}
   */
   readonly update?: string;
 }
@@ -2931,7 +2931,7 @@ export interface RoleManagementPolicyTimeouts {
 export function roleManagementPolicyTimeoutsToTerraform(struct?: RoleManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2945,7 +2945,7 @@ export function roleManagementPolicyTimeoutsToTerraform(struct?: RoleManagementP
 export function roleManagementPolicyTimeoutsToHclTerraform(struct?: RoleManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -3104,7 +3104,7 @@ export class RoleManagementPolicyTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy azurerm_role_management_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy azurerm_role_management_policy}
 */
 export class RoleManagementPolicy extends cdktn.TerraformResource {
 
@@ -3120,7 +3120,7 @@ export class RoleManagementPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RoleManagementPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleManagementPolicy to import
-  * @param importFromId The id of the existing RoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleManagementPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3132,7 +3132,7 @@ export class RoleManagementPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/role_management_policy azurerm_role_management_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/role_management_policy azurerm_role_management_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3143,7 +3143,7 @@ export class RoleManagementPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_role_management_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

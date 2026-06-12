@@ -1506,8 +1506,6 @@ The following submodules are available:
 - [vmwareExpressRouteAuthorization](./vmwareExpressRouteAuthorization.typescript.md)
 - [vmwareNetappVolumeAttachment](./vmwareNetappVolumeAttachment.typescript.md)
 - [vmwarePrivateCloud](./vmwarePrivateCloud.typescript.md)
-- [voiceServicesCommunicationsGateway](./voiceServicesCommunicationsGateway.typescript.md)
-- [voiceServicesCommunicationsGatewayTestLine](./voiceServicesCommunicationsGatewayTestLine.typescript.md)
 - [vpnGateway](./vpnGateway.typescript.md)
 - [vpnGatewayConnection](./vpnGatewayConnection.typescript.md)
 - [vpnGatewayNatRule](./vpnGatewayNatRule.typescript.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,90 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementDiagnosticConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#always_log_errors ApiManagementDiagnostic#always_log_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#always_log_errors ApiManagementDiagnostic#always_log_errors}
   */
   readonly alwaysLogErrors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#api_management_logger_id ApiManagementDiagnostic#api_management_logger_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#api_management_logger_id ApiManagementDiagnostic#api_management_logger_id}
   */
   readonly apiManagementLoggerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#api_management_name ApiManagementDiagnostic#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#api_management_name ApiManagementDiagnostic#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#http_correlation_protocol ApiManagementDiagnostic#http_correlation_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#http_correlation_protocol ApiManagementDiagnostic#http_correlation_protocol}
   */
   readonly httpCorrelationProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#id ApiManagementDiagnostic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#id ApiManagementDiagnostic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#identifier ApiManagementDiagnostic#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#identifier ApiManagementDiagnostic#identifier}
   */
   readonly identifier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#log_client_ip ApiManagementDiagnostic#log_client_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#log_client_ip ApiManagementDiagnostic#log_client_ip}
   */
   readonly logClientIp?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#operation_name_format ApiManagementDiagnostic#operation_name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#operation_name_format ApiManagementDiagnostic#operation_name_format}
   */
   readonly operationNameFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#resource_group_name ApiManagementDiagnostic#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#resource_group_name ApiManagementDiagnostic#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#sampling_percentage ApiManagementDiagnostic#sampling_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#sampling_percentage ApiManagementDiagnostic#sampling_percentage}
   */
   readonly samplingPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#verbosity ApiManagementDiagnostic#verbosity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#verbosity ApiManagementDiagnostic#verbosity}
   */
   readonly verbosity?: string;
   /**
   * backend_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#backend_request ApiManagementDiagnostic#backend_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#backend_request ApiManagementDiagnostic#backend_request}
   */
   readonly backendRequest?: ApiManagementDiagnosticBackendRequest;
   /**
   * backend_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#backend_response ApiManagementDiagnostic#backend_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#backend_response ApiManagementDiagnostic#backend_response}
   */
   readonly backendResponse?: ApiManagementDiagnosticBackendResponse;
   /**
   * frontend_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#frontend_request ApiManagementDiagnostic#frontend_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#frontend_request ApiManagementDiagnostic#frontend_request}
   */
   readonly frontendRequest?: ApiManagementDiagnosticFrontendRequest;
   /**
   * frontend_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#frontend_response ApiManagementDiagnostic#frontend_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#frontend_response ApiManagementDiagnostic#frontend_response}
   */
   readonly frontendResponse?: ApiManagementDiagnosticFrontendResponse;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#timeouts ApiManagementDiagnostic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#timeouts ApiManagementDiagnostic#timeouts}
   */
   readonly timeouts?: ApiManagementDiagnosticTimeouts;
 }
 export interface ApiManagementDiagnosticBackendRequestDataMaskingHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -104,7 +104,7 @@ export interface ApiManagementDiagnosticBackendRequestDataMaskingHeaders {
 export function apiManagementDiagnosticBackendRequestDataMaskingHeadersToTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -116,7 +116,7 @@ export function apiManagementDiagnosticBackendRequestDataMaskingHeadersToTerrafo
 export function apiManagementDiagnosticBackendRequestDataMaskingHeadersToHclTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -235,11 +235,11 @@ export class ApiManagementDiagnosticBackendRequestDataMaskingHeadersList extends
 }
 export interface ApiManagementDiagnosticBackendRequestDataMaskingQueryParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -247,7 +247,7 @@ export interface ApiManagementDiagnosticBackendRequestDataMaskingQueryParams {
 export function apiManagementDiagnosticBackendRequestDataMaskingQueryParamsToTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -259,7 +259,7 @@ export function apiManagementDiagnosticBackendRequestDataMaskingQueryParamsToTer
 export function apiManagementDiagnosticBackendRequestDataMaskingQueryParamsToHclTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -380,13 +380,13 @@ export interface ApiManagementDiagnosticBackendRequestDataMasking {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
   */
   readonly headers?: ApiManagementDiagnosticBackendRequestDataMaskingHeaders[] | cdktn.IResolvable;
   /**
   * query_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
   */
   readonly queryParams?: ApiManagementDiagnosticBackendRequestDataMaskingQueryParams[] | cdktn.IResolvable;
 }
@@ -394,7 +394,7 @@ export interface ApiManagementDiagnosticBackendRequestDataMasking {
 export function apiManagementDiagnosticBackendRequestDataMaskingToTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingOutputReference | ApiManagementDiagnosticBackendRequestDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     headers: cdktn.listMapper(apiManagementDiagnosticBackendRequestDataMaskingHeadersToTerraform, true)(struct!.headers),
@@ -406,7 +406,7 @@ export function apiManagementDiagnosticBackendRequestDataMaskingToTerraform(stru
 export function apiManagementDiagnosticBackendRequestDataMaskingToHclTerraform(struct?: ApiManagementDiagnosticBackendRequestDataMaskingOutputReference | ApiManagementDiagnosticBackendRequestDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     headers: {
@@ -499,17 +499,17 @@ export class ApiManagementDiagnosticBackendRequestDataMaskingOutputReference ext
 }
 export interface ApiManagementDiagnosticBackendRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
   */
   readonly bodyBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
   */
   readonly headersToLog?: string[];
   /**
   * data_masking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
   */
   readonly dataMasking?: ApiManagementDiagnosticBackendRequestDataMasking;
 }
@@ -517,7 +517,7 @@ export interface ApiManagementDiagnosticBackendRequest {
 export function apiManagementDiagnosticBackendRequestToTerraform(struct?: ApiManagementDiagnosticBackendRequestOutputReference | ApiManagementDiagnosticBackendRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body_bytes: cdktn.numberToTerraform(struct!.bodyBytes),
@@ -530,7 +530,7 @@ export function apiManagementDiagnosticBackendRequestToTerraform(struct?: ApiMan
 export function apiManagementDiagnosticBackendRequestToHclTerraform(struct?: ApiManagementDiagnosticBackendRequestOutputReference | ApiManagementDiagnosticBackendRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body_bytes: {
@@ -651,11 +651,11 @@ export class ApiManagementDiagnosticBackendRequestOutputReference extends cdktn.
 }
 export interface ApiManagementDiagnosticBackendResponseDataMaskingHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -663,7 +663,7 @@ export interface ApiManagementDiagnosticBackendResponseDataMaskingHeaders {
 export function apiManagementDiagnosticBackendResponseDataMaskingHeadersToTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -675,7 +675,7 @@ export function apiManagementDiagnosticBackendResponseDataMaskingHeadersToTerraf
 export function apiManagementDiagnosticBackendResponseDataMaskingHeadersToHclTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -794,11 +794,11 @@ export class ApiManagementDiagnosticBackendResponseDataMaskingHeadersList extend
 }
 export interface ApiManagementDiagnosticBackendResponseDataMaskingQueryParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -806,7 +806,7 @@ export interface ApiManagementDiagnosticBackendResponseDataMaskingQueryParams {
 export function apiManagementDiagnosticBackendResponseDataMaskingQueryParamsToTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -818,7 +818,7 @@ export function apiManagementDiagnosticBackendResponseDataMaskingQueryParamsToTe
 export function apiManagementDiagnosticBackendResponseDataMaskingQueryParamsToHclTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -939,13 +939,13 @@ export interface ApiManagementDiagnosticBackendResponseDataMasking {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
   */
   readonly headers?: ApiManagementDiagnosticBackendResponseDataMaskingHeaders[] | cdktn.IResolvable;
   /**
   * query_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
   */
   readonly queryParams?: ApiManagementDiagnosticBackendResponseDataMaskingQueryParams[] | cdktn.IResolvable;
 }
@@ -953,7 +953,7 @@ export interface ApiManagementDiagnosticBackendResponseDataMasking {
 export function apiManagementDiagnosticBackendResponseDataMaskingToTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingOutputReference | ApiManagementDiagnosticBackendResponseDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     headers: cdktn.listMapper(apiManagementDiagnosticBackendResponseDataMaskingHeadersToTerraform, true)(struct!.headers),
@@ -965,7 +965,7 @@ export function apiManagementDiagnosticBackendResponseDataMaskingToTerraform(str
 export function apiManagementDiagnosticBackendResponseDataMaskingToHclTerraform(struct?: ApiManagementDiagnosticBackendResponseDataMaskingOutputReference | ApiManagementDiagnosticBackendResponseDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     headers: {
@@ -1058,17 +1058,17 @@ export class ApiManagementDiagnosticBackendResponseDataMaskingOutputReference ex
 }
 export interface ApiManagementDiagnosticBackendResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
   */
   readonly bodyBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
   */
   readonly headersToLog?: string[];
   /**
   * data_masking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
   */
   readonly dataMasking?: ApiManagementDiagnosticBackendResponseDataMasking;
 }
@@ -1076,7 +1076,7 @@ export interface ApiManagementDiagnosticBackendResponse {
 export function apiManagementDiagnosticBackendResponseToTerraform(struct?: ApiManagementDiagnosticBackendResponseOutputReference | ApiManagementDiagnosticBackendResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body_bytes: cdktn.numberToTerraform(struct!.bodyBytes),
@@ -1089,7 +1089,7 @@ export function apiManagementDiagnosticBackendResponseToTerraform(struct?: ApiMa
 export function apiManagementDiagnosticBackendResponseToHclTerraform(struct?: ApiManagementDiagnosticBackendResponseOutputReference | ApiManagementDiagnosticBackendResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body_bytes: {
@@ -1210,11 +1210,11 @@ export class ApiManagementDiagnosticBackendResponseOutputReference extends cdktn
 }
 export interface ApiManagementDiagnosticFrontendRequestDataMaskingHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -1222,7 +1222,7 @@ export interface ApiManagementDiagnosticFrontendRequestDataMaskingHeaders {
 export function apiManagementDiagnosticFrontendRequestDataMaskingHeadersToTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -1234,7 +1234,7 @@ export function apiManagementDiagnosticFrontendRequestDataMaskingHeadersToTerraf
 export function apiManagementDiagnosticFrontendRequestDataMaskingHeadersToHclTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -1353,11 +1353,11 @@ export class ApiManagementDiagnosticFrontendRequestDataMaskingHeadersList extend
 }
 export interface ApiManagementDiagnosticFrontendRequestDataMaskingQueryParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -1365,7 +1365,7 @@ export interface ApiManagementDiagnosticFrontendRequestDataMaskingQueryParams {
 export function apiManagementDiagnosticFrontendRequestDataMaskingQueryParamsToTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -1377,7 +1377,7 @@ export function apiManagementDiagnosticFrontendRequestDataMaskingQueryParamsToTe
 export function apiManagementDiagnosticFrontendRequestDataMaskingQueryParamsToHclTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -1498,13 +1498,13 @@ export interface ApiManagementDiagnosticFrontendRequestDataMasking {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
   */
   readonly headers?: ApiManagementDiagnosticFrontendRequestDataMaskingHeaders[] | cdktn.IResolvable;
   /**
   * query_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
   */
   readonly queryParams?: ApiManagementDiagnosticFrontendRequestDataMaskingQueryParams[] | cdktn.IResolvable;
 }
@@ -1512,7 +1512,7 @@ export interface ApiManagementDiagnosticFrontendRequestDataMasking {
 export function apiManagementDiagnosticFrontendRequestDataMaskingToTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingOutputReference | ApiManagementDiagnosticFrontendRequestDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     headers: cdktn.listMapper(apiManagementDiagnosticFrontendRequestDataMaskingHeadersToTerraform, true)(struct!.headers),
@@ -1524,7 +1524,7 @@ export function apiManagementDiagnosticFrontendRequestDataMaskingToTerraform(str
 export function apiManagementDiagnosticFrontendRequestDataMaskingToHclTerraform(struct?: ApiManagementDiagnosticFrontendRequestDataMaskingOutputReference | ApiManagementDiagnosticFrontendRequestDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     headers: {
@@ -1617,17 +1617,17 @@ export class ApiManagementDiagnosticFrontendRequestDataMaskingOutputReference ex
 }
 export interface ApiManagementDiagnosticFrontendRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
   */
   readonly bodyBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
   */
   readonly headersToLog?: string[];
   /**
   * data_masking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
   */
   readonly dataMasking?: ApiManagementDiagnosticFrontendRequestDataMasking;
 }
@@ -1635,7 +1635,7 @@ export interface ApiManagementDiagnosticFrontendRequest {
 export function apiManagementDiagnosticFrontendRequestToTerraform(struct?: ApiManagementDiagnosticFrontendRequestOutputReference | ApiManagementDiagnosticFrontendRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body_bytes: cdktn.numberToTerraform(struct!.bodyBytes),
@@ -1648,7 +1648,7 @@ export function apiManagementDiagnosticFrontendRequestToTerraform(struct?: ApiMa
 export function apiManagementDiagnosticFrontendRequestToHclTerraform(struct?: ApiManagementDiagnosticFrontendRequestOutputReference | ApiManagementDiagnosticFrontendRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body_bytes: {
@@ -1769,11 +1769,11 @@ export class ApiManagementDiagnosticFrontendRequestOutputReference extends cdktn
 }
 export interface ApiManagementDiagnosticFrontendResponseDataMaskingHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -1781,7 +1781,7 @@ export interface ApiManagementDiagnosticFrontendResponseDataMaskingHeaders {
 export function apiManagementDiagnosticFrontendResponseDataMaskingHeadersToTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -1793,7 +1793,7 @@ export function apiManagementDiagnosticFrontendResponseDataMaskingHeadersToTerra
 export function apiManagementDiagnosticFrontendResponseDataMaskingHeadersToHclTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -1912,11 +1912,11 @@ export class ApiManagementDiagnosticFrontendResponseDataMaskingHeadersList exten
 }
 export interface ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#mode ApiManagementDiagnostic#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#value ApiManagementDiagnostic#value}
   */
   readonly value: string;
 }
@@ -1924,7 +1924,7 @@ export interface ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams {
 export function apiManagementDiagnosticFrontendResponseDataMaskingQueryParamsToTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -1936,7 +1936,7 @@ export function apiManagementDiagnosticFrontendResponseDataMaskingQueryParamsToT
 export function apiManagementDiagnosticFrontendResponseDataMaskingQueryParamsToHclTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -2057,13 +2057,13 @@ export interface ApiManagementDiagnosticFrontendResponseDataMasking {
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers ApiManagementDiagnostic#headers}
   */
   readonly headers?: ApiManagementDiagnosticFrontendResponseDataMaskingHeaders[] | cdktn.IResolvable;
   /**
   * query_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#query_params ApiManagementDiagnostic#query_params}
   */
   readonly queryParams?: ApiManagementDiagnosticFrontendResponseDataMaskingQueryParams[] | cdktn.IResolvable;
 }
@@ -2071,7 +2071,7 @@ export interface ApiManagementDiagnosticFrontendResponseDataMasking {
 export function apiManagementDiagnosticFrontendResponseDataMaskingToTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingOutputReference | ApiManagementDiagnosticFrontendResponseDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     headers: cdktn.listMapper(apiManagementDiagnosticFrontendResponseDataMaskingHeadersToTerraform, true)(struct!.headers),
@@ -2083,7 +2083,7 @@ export function apiManagementDiagnosticFrontendResponseDataMaskingToTerraform(st
 export function apiManagementDiagnosticFrontendResponseDataMaskingToHclTerraform(struct?: ApiManagementDiagnosticFrontendResponseDataMaskingOutputReference | ApiManagementDiagnosticFrontendResponseDataMasking): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     headers: {
@@ -2176,17 +2176,17 @@ export class ApiManagementDiagnosticFrontendResponseDataMaskingOutputReference e
 }
 export interface ApiManagementDiagnosticFrontendResponse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#body_bytes ApiManagementDiagnostic#body_bytes}
   */
   readonly bodyBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#headers_to_log ApiManagementDiagnostic#headers_to_log}
   */
   readonly headersToLog?: string[];
   /**
   * data_masking block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#data_masking ApiManagementDiagnostic#data_masking}
   */
   readonly dataMasking?: ApiManagementDiagnosticFrontendResponseDataMasking;
 }
@@ -2194,7 +2194,7 @@ export interface ApiManagementDiagnosticFrontendResponse {
 export function apiManagementDiagnosticFrontendResponseToTerraform(struct?: ApiManagementDiagnosticFrontendResponseOutputReference | ApiManagementDiagnosticFrontendResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body_bytes: cdktn.numberToTerraform(struct!.bodyBytes),
@@ -2207,7 +2207,7 @@ export function apiManagementDiagnosticFrontendResponseToTerraform(struct?: ApiM
 export function apiManagementDiagnosticFrontendResponseToHclTerraform(struct?: ApiManagementDiagnosticFrontendResponseOutputReference | ApiManagementDiagnosticFrontendResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body_bytes: {
@@ -2328,19 +2328,19 @@ export class ApiManagementDiagnosticFrontendResponseOutputReference extends cdkt
 }
 export interface ApiManagementDiagnosticTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#create ApiManagementDiagnostic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#create ApiManagementDiagnostic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#delete ApiManagementDiagnostic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#delete ApiManagementDiagnostic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#read ApiManagementDiagnostic#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#read ApiManagementDiagnostic#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#update ApiManagementDiagnostic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#update ApiManagementDiagnostic#update}
   */
   readonly update?: string;
 }
@@ -2348,7 +2348,7 @@ export interface ApiManagementDiagnosticTimeouts {
 export function apiManagementDiagnosticTimeoutsToTerraform(struct?: ApiManagementDiagnosticTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2362,7 +2362,7 @@ export function apiManagementDiagnosticTimeoutsToTerraform(struct?: ApiManagemen
 export function apiManagementDiagnosticTimeoutsToHclTerraform(struct?: ApiManagementDiagnosticTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2521,7 +2521,7 @@ export class ApiManagementDiagnosticTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic}
 */
 export class ApiManagementDiagnostic extends cdktn.TerraformResource {
 
@@ -2537,7 +2537,7 @@ export class ApiManagementDiagnostic extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementDiagnostic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementDiagnostic to import
-  * @param importFromId The id of the existing ApiManagementDiagnostic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementDiagnostic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementDiagnostic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2549,7 +2549,7 @@ export class ApiManagementDiagnostic extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_diagnostic azurerm_api_management_diagnostic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2560,7 +2560,7 @@ export class ApiManagementDiagnostic extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_diagnostic',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

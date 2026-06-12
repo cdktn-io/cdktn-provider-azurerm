@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,62 @@ import * as cdktn from 'cdktn';
 
 export interface HealthcareDicomServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#data_partitions_enabled HealthcareDicomService#data_partitions_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#data_partitions_enabled HealthcareDicomService#data_partitions_enabled}
   */
   readonly dataPartitionsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#encryption_key_url HealthcareDicomService#encryption_key_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#encryption_key_url HealthcareDicomService#encryption_key_url}
   */
   readonly encryptionKeyUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#id HealthcareDicomService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#id HealthcareDicomService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#location HealthcareDicomService#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#location HealthcareDicomService#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#name HealthcareDicomService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#name HealthcareDicomService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#public_network_access_enabled HealthcareDicomService#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#public_network_access_enabled HealthcareDicomService#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#tags HealthcareDicomService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#tags HealthcareDicomService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#workspace_id HealthcareDicomService#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#workspace_id HealthcareDicomService#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#cors HealthcareDicomService#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#cors HealthcareDicomService#cors}
   */
   readonly cors?: HealthcareDicomServiceCors;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#identity HealthcareDicomService#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#identity HealthcareDicomService#identity}
   */
   readonly identity?: HealthcareDicomServiceIdentity;
   /**
   * storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#storage HealthcareDicomService#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#storage HealthcareDicomService#storage}
   */
   readonly storage?: HealthcareDicomServiceStorage;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#timeouts HealthcareDicomService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#timeouts HealthcareDicomService#timeouts}
   */
   readonly timeouts?: HealthcareDicomServiceTimeouts;
 }
@@ -78,7 +78,7 @@ export interface HealthcareDicomServiceAuthentication {
 export function healthcareDicomServiceAuthenticationToTerraform(struct?: HealthcareDicomServiceAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -88,7 +88,7 @@ export function healthcareDicomServiceAuthenticationToTerraform(struct?: Healthc
 export function healthcareDicomServiceAuthenticationToHclTerraform(struct?: HealthcareDicomServiceAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -158,7 +158,7 @@ export interface HealthcareDicomServicePrivateEndpoint {
 export function healthcareDicomServicePrivateEndpointToTerraform(struct?: HealthcareDicomServicePrivateEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -168,7 +168,7 @@ export function healthcareDicomServicePrivateEndpointToTerraform(struct?: Health
 export function healthcareDicomServicePrivateEndpointToHclTerraform(struct?: HealthcareDicomServicePrivateEndpoint): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -234,23 +234,23 @@ export class HealthcareDicomServicePrivateEndpointList extends cdktn.ComplexList
 }
 export interface HealthcareDicomServiceCors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#allow_credentials HealthcareDicomService#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#allow_credentials HealthcareDicomService#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#allowed_headers HealthcareDicomService#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#allowed_headers HealthcareDicomService#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#allowed_methods HealthcareDicomService#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#allowed_methods HealthcareDicomService#allowed_methods}
   */
   readonly allowedMethods?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#allowed_origins HealthcareDicomService#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#allowed_origins HealthcareDicomService#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#max_age_in_seconds HealthcareDicomService#max_age_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#max_age_in_seconds HealthcareDicomService#max_age_in_seconds}
   */
   readonly maxAgeInSeconds?: number;
 }
@@ -258,7 +258,7 @@ export interface HealthcareDicomServiceCors {
 export function healthcareDicomServiceCorsToTerraform(struct?: HealthcareDicomServiceCorsOutputReference | HealthcareDicomServiceCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
@@ -273,7 +273,7 @@ export function healthcareDicomServiceCorsToTerraform(struct?: HealthcareDicomSe
 export function healthcareDicomServiceCorsToHclTerraform(struct?: HealthcareDicomServiceCorsOutputReference | HealthcareDicomServiceCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_credentials: {
@@ -450,11 +450,11 @@ export class HealthcareDicomServiceCorsOutputReference extends cdktn.ComplexObje
 }
 export interface HealthcareDicomServiceIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#identity_ids HealthcareDicomService#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#identity_ids HealthcareDicomService#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#type HealthcareDicomService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#type HealthcareDicomService#type}
   */
   readonly type: string;
 }
@@ -462,7 +462,7 @@ export interface HealthcareDicomServiceIdentity {
 export function healthcareDicomServiceIdentityToTerraform(struct?: HealthcareDicomServiceIdentityOutputReference | HealthcareDicomServiceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -474,7 +474,7 @@ export function healthcareDicomServiceIdentityToTerraform(struct?: HealthcareDic
 export function healthcareDicomServiceIdentityToHclTerraform(struct?: HealthcareDicomServiceIdentityOutputReference | HealthcareDicomServiceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -574,11 +574,11 @@ export class HealthcareDicomServiceIdentityOutputReference extends cdktn.Complex
 }
 export interface HealthcareDicomServiceStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#file_system_name HealthcareDicomService#file_system_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#file_system_name HealthcareDicomService#file_system_name}
   */
   readonly fileSystemName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#storage_account_id HealthcareDicomService#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#storage_account_id HealthcareDicomService#storage_account_id}
   */
   readonly storageAccountId: string;
 }
@@ -586,7 +586,7 @@ export interface HealthcareDicomServiceStorage {
 export function healthcareDicomServiceStorageToTerraform(struct?: HealthcareDicomServiceStorageOutputReference | HealthcareDicomServiceStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_system_name: cdktn.stringToTerraform(struct!.fileSystemName),
@@ -598,7 +598,7 @@ export function healthcareDicomServiceStorageToTerraform(struct?: HealthcareDico
 export function healthcareDicomServiceStorageToHclTerraform(struct?: HealthcareDicomServiceStorageOutputReference | HealthcareDicomServiceStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_system_name: {
@@ -685,19 +685,19 @@ export class HealthcareDicomServiceStorageOutputReference extends cdktn.ComplexO
 }
 export interface HealthcareDicomServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#create HealthcareDicomService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#create HealthcareDicomService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#delete HealthcareDicomService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#delete HealthcareDicomService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#read HealthcareDicomService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#read HealthcareDicomService#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#update HealthcareDicomService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#update HealthcareDicomService#update}
   */
   readonly update?: string;
 }
@@ -705,7 +705,7 @@ export interface HealthcareDicomServiceTimeouts {
 export function healthcareDicomServiceTimeoutsToTerraform(struct?: HealthcareDicomServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -719,7 +719,7 @@ export function healthcareDicomServiceTimeoutsToTerraform(struct?: HealthcareDic
 export function healthcareDicomServiceTimeoutsToHclTerraform(struct?: HealthcareDicomServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -878,7 +878,7 @@ export class HealthcareDicomServiceTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service}
 */
 export class HealthcareDicomService extends cdktn.TerraformResource {
 
@@ -894,7 +894,7 @@ export class HealthcareDicomService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HealthcareDicomService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareDicomService to import
-  * @param importFromId The id of the existing HealthcareDicomService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HealthcareDicomService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareDicomService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -906,7 +906,7 @@ export class HealthcareDicomService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -917,7 +917,7 @@ export class HealthcareDicomService extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_healthcare_dicom_service',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

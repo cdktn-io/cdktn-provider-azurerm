@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface FrontdoorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#friendly_name Frontdoor#friendly_name}
   */
   readonly friendlyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#id Frontdoor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#id Frontdoor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#load_balancer_enabled Frontdoor#load_balancer_enabled}
   */
   readonly loadBalancerEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#resource_group_name Frontdoor#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#tags Frontdoor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#tags Frontdoor#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * backend_pool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pool Frontdoor#backend_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pool Frontdoor#backend_pool}
   */
   readonly backendPool: FrontdoorBackendPool[] | cdktn.IResolvable;
   /**
   * backend_pool_health_probe block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pool_health_probe Frontdoor#backend_pool_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pool_health_probe Frontdoor#backend_pool_health_probe}
   */
   readonly backendPoolHealthProbe: FrontdoorBackendPoolHealthProbe[] | cdktn.IResolvable;
   /**
   * backend_pool_load_balancing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pool_load_balancing Frontdoor#backend_pool_load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pool_load_balancing Frontdoor#backend_pool_load_balancing}
   */
   readonly backendPoolLoadBalancing: FrontdoorBackendPoolLoadBalancing[] | cdktn.IResolvable;
   /**
   * backend_pool_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pool_settings Frontdoor#backend_pool_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pool_settings Frontdoor#backend_pool_settings}
   */
   readonly backendPoolSettings?: FrontdoorBackendPoolSettings[] | cdktn.IResolvable;
   /**
   * frontend_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#frontend_endpoint Frontdoor#frontend_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#frontend_endpoint Frontdoor#frontend_endpoint}
   */
   readonly frontendEndpoint: FrontdoorFrontendEndpoint[] | cdktn.IResolvable;
   /**
   * routing_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#routing_rule Frontdoor#routing_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#routing_rule Frontdoor#routing_rule}
   */
   readonly routingRule: FrontdoorRoutingRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#timeouts Frontdoor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#timeouts Frontdoor#timeouts}
   */
   readonly timeouts?: FrontdoorTimeouts;
 }
@@ -88,7 +88,7 @@ export interface FrontdoorExplicitResourceOrder {
 export function frontdoorExplicitResourceOrderToTerraform(struct?: FrontdoorExplicitResourceOrder): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -98,7 +98,7 @@ export function frontdoorExplicitResourceOrderToTerraform(struct?: FrontdoorExpl
 export function frontdoorExplicitResourceOrderToHclTerraform(struct?: FrontdoorExplicitResourceOrder): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -179,31 +179,31 @@ export class FrontdoorExplicitResourceOrderList extends cdktn.ComplexList {
 }
 export interface FrontdoorBackendPoolBackend {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#address Frontdoor#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#address Frontdoor#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#host_header Frontdoor#host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#host_header Frontdoor#host_header}
   */
   readonly hostHeader: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#http_port Frontdoor#http_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#http_port Frontdoor#http_port}
   */
   readonly httpPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#https_port Frontdoor#https_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#https_port Frontdoor#https_port}
   */
   readonly httpsPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#priority Frontdoor#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#priority Frontdoor#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#weight Frontdoor#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#weight Frontdoor#weight}
   */
   readonly weight?: number;
 }
@@ -211,7 +211,7 @@ export interface FrontdoorBackendPoolBackend {
 export function frontdoorBackendPoolBackendToTerraform(struct?: FrontdoorBackendPoolBackend | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     address: cdktn.stringToTerraform(struct!.address),
@@ -228,7 +228,7 @@ export function frontdoorBackendPoolBackendToTerraform(struct?: FrontdoorBackend
 export function frontdoorBackendPoolBackendToHclTerraform(struct?: FrontdoorBackendPoolBackend | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     address: {
@@ -481,21 +481,21 @@ export class FrontdoorBackendPoolBackendList extends cdktn.ComplexList {
 }
 export interface FrontdoorBackendPool {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#health_probe_name Frontdoor#health_probe_name}
   */
   readonly healthProbeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#load_balancing_name Frontdoor#load_balancing_name}
   */
   readonly loadBalancingName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
   * backend block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend Frontdoor#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend Frontdoor#backend}
   */
   readonly backend: FrontdoorBackendPoolBackend[] | cdktn.IResolvable;
 }
@@ -503,7 +503,7 @@ export interface FrontdoorBackendPool {
 export function frontdoorBackendPoolToTerraform(struct?: FrontdoorBackendPool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     health_probe_name: cdktn.stringToTerraform(struct!.healthProbeName),
@@ -517,7 +517,7 @@ export function frontdoorBackendPoolToTerraform(struct?: FrontdoorBackendPool | 
 export function frontdoorBackendPoolToHclTerraform(struct?: FrontdoorBackendPool | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     health_probe_name: {
@@ -691,27 +691,27 @@ export class FrontdoorBackendPoolList extends cdktn.ComplexList {
 }
 export interface FrontdoorBackendPoolHealthProbe {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#interval_in_seconds Frontdoor#interval_in_seconds}
   */
   readonly intervalInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#path Frontdoor#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#path Frontdoor#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#probe_method Frontdoor#probe_method}
   */
   readonly probeMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#protocol Frontdoor#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#protocol Frontdoor#protocol}
   */
   readonly protocol?: string;
 }
@@ -719,7 +719,7 @@ export interface FrontdoorBackendPoolHealthProbe {
 export function frontdoorBackendPoolHealthProbeToTerraform(struct?: FrontdoorBackendPoolHealthProbe | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -735,7 +735,7 @@ export function frontdoorBackendPoolHealthProbeToTerraform(struct?: FrontdoorBac
 export function frontdoorBackendPoolHealthProbeToHclTerraform(struct?: FrontdoorBackendPoolHealthProbe | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -974,19 +974,19 @@ export class FrontdoorBackendPoolHealthProbeList extends cdktn.ComplexList {
 }
 export interface FrontdoorBackendPoolLoadBalancing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#additional_latency_milliseconds Frontdoor#additional_latency_milliseconds}
   */
   readonly additionalLatencyMilliseconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#sample_size Frontdoor#sample_size}
   */
   readonly sampleSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#successful_samples_required Frontdoor#successful_samples_required}
   */
   readonly successfulSamplesRequired?: number;
 }
@@ -994,7 +994,7 @@ export interface FrontdoorBackendPoolLoadBalancing {
 export function frontdoorBackendPoolLoadBalancingToTerraform(struct?: FrontdoorBackendPoolLoadBalancing | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_latency_milliseconds: cdktn.numberToTerraform(struct!.additionalLatencyMilliseconds),
@@ -1008,7 +1008,7 @@ export function frontdoorBackendPoolLoadBalancingToTerraform(struct?: FrontdoorB
 export function frontdoorBackendPoolLoadBalancingToHclTerraform(struct?: FrontdoorBackendPoolLoadBalancing | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_latency_milliseconds: {
@@ -1191,11 +1191,11 @@ export class FrontdoorBackendPoolLoadBalancingList extends cdktn.ComplexList {
 }
 export interface FrontdoorBackendPoolSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pools_send_receive_timeout_seconds Frontdoor#backend_pools_send_receive_timeout_seconds}
   */
   readonly backendPoolsSendReceiveTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#enforce_backend_pools_certificate_name_check Frontdoor#enforce_backend_pools_certificate_name_check}
   */
   readonly enforceBackendPoolsCertificateNameCheck: boolean | cdktn.IResolvable;
 }
@@ -1203,7 +1203,7 @@ export interface FrontdoorBackendPoolSettings {
 export function frontdoorBackendPoolSettingsToTerraform(struct?: FrontdoorBackendPoolSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backend_pools_send_receive_timeout_seconds: cdktn.numberToTerraform(struct!.backendPoolsSendReceiveTimeoutSeconds),
@@ -1215,7 +1215,7 @@ export function frontdoorBackendPoolSettingsToTerraform(struct?: FrontdoorBacken
 export function frontdoorBackendPoolSettingsToHclTerraform(struct?: FrontdoorBackendPoolSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backend_pools_send_receive_timeout_seconds: {
@@ -1337,23 +1337,23 @@ export class FrontdoorBackendPoolSettingsList extends cdktn.ComplexList {
 }
 export interface FrontdoorFrontendEndpoint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#host_name Frontdoor#host_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#host_name Frontdoor#host_name}
   */
   readonly hostName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#session_affinity_enabled Frontdoor#session_affinity_enabled}
   */
   readonly sessionAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#session_affinity_ttl_seconds Frontdoor#session_affinity_ttl_seconds}
   */
   readonly sessionAffinityTtlSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#web_application_firewall_policy_link_id Frontdoor#web_application_firewall_policy_link_id}
   */
   readonly webApplicationFirewallPolicyLinkId?: string;
 }
@@ -1361,7 +1361,7 @@ export interface FrontdoorFrontendEndpoint {
 export function frontdoorFrontendEndpointToTerraform(struct?: FrontdoorFrontendEndpoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host_name: cdktn.stringToTerraform(struct!.hostName),
@@ -1376,7 +1376,7 @@ export function frontdoorFrontendEndpointToTerraform(struct?: FrontdoorFrontendE
 export function frontdoorFrontendEndpointToHclTerraform(struct?: FrontdoorFrontendEndpoint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host_name: {
@@ -1584,35 +1584,35 @@ export class FrontdoorFrontendEndpointList extends cdktn.ComplexList {
 }
 export interface FrontdoorRoutingRuleForwardingConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#backend_pool_name Frontdoor#backend_pool_name}
   */
   readonly backendPoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#cache_duration Frontdoor#cache_duration}
   */
   readonly cacheDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#cache_enabled Frontdoor#cache_enabled}
   */
   readonly cacheEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#cache_query_parameter_strip_directive Frontdoor#cache_query_parameter_strip_directive}
   */
   readonly cacheQueryParameterStripDirective?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#cache_query_parameters Frontdoor#cache_query_parameters}
   */
   readonly cacheQueryParameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#cache_use_dynamic_compression Frontdoor#cache_use_dynamic_compression}
   */
   readonly cacheUseDynamicCompression?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#custom_forwarding_path Frontdoor#custom_forwarding_path}
   */
   readonly customForwardingPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#forwarding_protocol Frontdoor#forwarding_protocol}
   */
   readonly forwardingProtocol?: string;
 }
@@ -1620,7 +1620,7 @@ export interface FrontdoorRoutingRuleForwardingConfiguration {
 export function frontdoorRoutingRuleForwardingConfigurationToTerraform(struct?: FrontdoorRoutingRuleForwardingConfigurationOutputReference | FrontdoorRoutingRuleForwardingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     backend_pool_name: cdktn.stringToTerraform(struct!.backendPoolName),
@@ -1638,7 +1638,7 @@ export function frontdoorRoutingRuleForwardingConfigurationToTerraform(struct?: 
 export function frontdoorRoutingRuleForwardingConfigurationToHclTerraform(struct?: FrontdoorRoutingRuleForwardingConfigurationOutputReference | FrontdoorRoutingRuleForwardingConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     backend_pool_name: {
@@ -1896,27 +1896,27 @@ export class FrontdoorRoutingRuleForwardingConfigurationOutputReference extends 
 }
 export interface FrontdoorRoutingRuleRedirectConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#custom_fragment Frontdoor#custom_fragment}
   */
   readonly customFragment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#custom_host Frontdoor#custom_host}
   */
   readonly customHost?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#custom_path Frontdoor#custom_path}
   */
   readonly customPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#custom_query_string Frontdoor#custom_query_string}
   */
   readonly customQueryString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#redirect_protocol Frontdoor#redirect_protocol}
   */
   readonly redirectProtocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#redirect_type Frontdoor#redirect_type}
   */
   readonly redirectType: string;
 }
@@ -1924,7 +1924,7 @@ export interface FrontdoorRoutingRuleRedirectConfiguration {
 export function frontdoorRoutingRuleRedirectConfigurationToTerraform(struct?: FrontdoorRoutingRuleRedirectConfigurationOutputReference | FrontdoorRoutingRuleRedirectConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_fragment: cdktn.stringToTerraform(struct!.customFragment),
@@ -1940,7 +1940,7 @@ export function frontdoorRoutingRuleRedirectConfigurationToTerraform(struct?: Fr
 export function frontdoorRoutingRuleRedirectConfigurationToHclTerraform(struct?: FrontdoorRoutingRuleRedirectConfigurationOutputReference | FrontdoorRoutingRuleRedirectConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_fragment: {
@@ -2139,35 +2139,35 @@ export class FrontdoorRoutingRuleRedirectConfigurationOutputReference extends cd
 }
 export interface FrontdoorRoutingRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#accepted_protocols Frontdoor#accepted_protocols}
   */
   readonly acceptedProtocols: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#enabled Frontdoor#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#frontend_endpoints Frontdoor#frontend_endpoints}
   */
   readonly frontendEndpoints: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#name Frontdoor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#name Frontdoor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#patterns_to_match Frontdoor#patterns_to_match}
   */
   readonly patternsToMatch: string[];
   /**
   * forwarding_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#forwarding_configuration Frontdoor#forwarding_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#forwarding_configuration Frontdoor#forwarding_configuration}
   */
   readonly forwardingConfiguration?: FrontdoorRoutingRuleForwardingConfiguration;
   /**
   * redirect_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#redirect_configuration Frontdoor#redirect_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#redirect_configuration Frontdoor#redirect_configuration}
   */
   readonly redirectConfiguration?: FrontdoorRoutingRuleRedirectConfiguration;
 }
@@ -2175,7 +2175,7 @@ export interface FrontdoorRoutingRule {
 export function frontdoorRoutingRuleToTerraform(struct?: FrontdoorRoutingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     accepted_protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.acceptedProtocols),
@@ -2192,7 +2192,7 @@ export function frontdoorRoutingRuleToTerraform(struct?: FrontdoorRoutingRule | 
 export function frontdoorRoutingRuleToHclTerraform(struct?: FrontdoorRoutingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     accepted_protocols: {
@@ -2450,19 +2450,19 @@ export class FrontdoorRoutingRuleList extends cdktn.ComplexList {
 }
 export interface FrontdoorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#create Frontdoor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#create Frontdoor#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#delete Frontdoor#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#delete Frontdoor#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#read Frontdoor#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#read Frontdoor#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#update Frontdoor#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#update Frontdoor#update}
   */
   readonly update?: string;
 }
@@ -2470,7 +2470,7 @@ export interface FrontdoorTimeouts {
 export function frontdoorTimeoutsToTerraform(struct?: FrontdoorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2484,7 +2484,7 @@ export function frontdoorTimeoutsToTerraform(struct?: FrontdoorTimeouts | cdktn.
 export function frontdoorTimeoutsToHclTerraform(struct?: FrontdoorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2643,7 +2643,7 @@ export class FrontdoorTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor azurerm_frontdoor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor azurerm_frontdoor}
 */
 export class Frontdoor extends cdktn.TerraformResource {
 
@@ -2659,7 +2659,7 @@ export class Frontdoor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Frontdoor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Frontdoor to import
-  * @param importFromId The id of the existing Frontdoor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Frontdoor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Frontdoor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2671,7 +2671,7 @@ export class Frontdoor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor azurerm_frontdoor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor azurerm_frontdoor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2682,7 +2682,7 @@ export class Frontdoor extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_frontdoor',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

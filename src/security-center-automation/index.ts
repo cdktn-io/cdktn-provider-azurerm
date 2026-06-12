@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,74 @@ import * as cdktn from 'cdktn';
 
 export interface SecurityCenterAutomationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#description SecurityCenterAutomation#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#enabled SecurityCenterAutomation#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#id SecurityCenterAutomation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#location SecurityCenterAutomation#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#name SecurityCenterAutomation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#resource_group_name SecurityCenterAutomation#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#scopes SecurityCenterAutomation#scopes}
   */
   readonly scopes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#tags SecurityCenterAutomation#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#action SecurityCenterAutomation#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#action SecurityCenterAutomation#action}
   */
   readonly action: SecurityCenterAutomationAction[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#source SecurityCenterAutomation#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#source SecurityCenterAutomation#source}
   */
   readonly source: SecurityCenterAutomationSource[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#timeouts SecurityCenterAutomation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#timeouts SecurityCenterAutomation#timeouts}
   */
   readonly timeouts?: SecurityCenterAutomationTimeouts;
 }
 export interface SecurityCenterAutomationAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#connection_string SecurityCenterAutomation#connection_string}
   */
   readonly connectionString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#resource_id SecurityCenterAutomation#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#trigger_url SecurityCenterAutomation#trigger_url}
   */
   readonly triggerUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#type SecurityCenterAutomation#type}
   */
   readonly type?: string;
 }
@@ -88,7 +88,7 @@ export interface SecurityCenterAutomationAction {
 export function securityCenterAutomationActionToTerraform(struct?: SecurityCenterAutomationAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_string: cdktn.stringToTerraform(struct!.connectionString),
@@ -102,7 +102,7 @@ export function securityCenterAutomationActionToTerraform(struct?: SecurityCente
 export function securityCenterAutomationActionToHclTerraform(struct?: SecurityCenterAutomationAction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_string: {
@@ -280,19 +280,19 @@ export class SecurityCenterAutomationActionList extends cdktn.ComplexList {
 }
 export interface SecurityCenterAutomationSourceRuleSetRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#expected_value SecurityCenterAutomation#expected_value}
   */
   readonly expectedValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#operator SecurityCenterAutomation#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#property_path SecurityCenterAutomation#property_path}
   */
   readonly propertyPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#property_type SecurityCenterAutomation#property_type}
   */
   readonly propertyType: string;
 }
@@ -300,7 +300,7 @@ export interface SecurityCenterAutomationSourceRuleSetRule {
 export function securityCenterAutomationSourceRuleSetRuleToTerraform(struct?: SecurityCenterAutomationSourceRuleSetRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expected_value: cdktn.stringToTerraform(struct!.expectedValue),
@@ -314,7 +314,7 @@ export function securityCenterAutomationSourceRuleSetRuleToTerraform(struct?: Se
 export function securityCenterAutomationSourceRuleSetRuleToHclTerraform(struct?: SecurityCenterAutomationSourceRuleSetRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expected_value: {
@@ -485,7 +485,7 @@ export interface SecurityCenterAutomationSourceRuleSet {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#rule SecurityCenterAutomation#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#rule SecurityCenterAutomation#rule}
   */
   readonly rule: SecurityCenterAutomationSourceRuleSetRule[] | cdktn.IResolvable;
 }
@@ -493,7 +493,7 @@ export interface SecurityCenterAutomationSourceRuleSet {
 export function securityCenterAutomationSourceRuleSetToTerraform(struct?: SecurityCenterAutomationSourceRuleSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rule: cdktn.listMapper(securityCenterAutomationSourceRuleSetRuleToTerraform, true)(struct!.rule),
@@ -504,7 +504,7 @@ export function securityCenterAutomationSourceRuleSetToTerraform(struct?: Securi
 export function securityCenterAutomationSourceRuleSetToHclTerraform(struct?: SecurityCenterAutomationSourceRuleSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rule: {
@@ -598,13 +598,13 @@ export class SecurityCenterAutomationSourceRuleSetList extends cdktn.ComplexList
 }
 export interface SecurityCenterAutomationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#event_source SecurityCenterAutomation#event_source}
   */
   readonly eventSource: string;
   /**
   * rule_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#rule_set SecurityCenterAutomation#rule_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#rule_set SecurityCenterAutomation#rule_set}
   */
   readonly ruleSet?: SecurityCenterAutomationSourceRuleSet[] | cdktn.IResolvable;
 }
@@ -612,7 +612,7 @@ export interface SecurityCenterAutomationSource {
 export function securityCenterAutomationSourceToTerraform(struct?: SecurityCenterAutomationSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event_source: cdktn.stringToTerraform(struct!.eventSource),
@@ -624,7 +624,7 @@ export function securityCenterAutomationSourceToTerraform(struct?: SecurityCente
 export function securityCenterAutomationSourceToHclTerraform(struct?: SecurityCenterAutomationSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event_source: {
@@ -746,19 +746,19 @@ export class SecurityCenterAutomationSourceList extends cdktn.ComplexList {
 }
 export interface SecurityCenterAutomationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#create SecurityCenterAutomation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#delete SecurityCenterAutomation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#read SecurityCenterAutomation#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#update SecurityCenterAutomation#update}
   */
   readonly update?: string;
 }
@@ -766,7 +766,7 @@ export interface SecurityCenterAutomationTimeouts {
 export function securityCenterAutomationTimeoutsToTerraform(struct?: SecurityCenterAutomationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -780,7 +780,7 @@ export function securityCenterAutomationTimeoutsToTerraform(struct?: SecurityCen
 export function securityCenterAutomationTimeoutsToHclTerraform(struct?: SecurityCenterAutomationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -939,7 +939,7 @@ export class SecurityCenterAutomationTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation azurerm_security_center_automation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation azurerm_security_center_automation}
 */
 export class SecurityCenterAutomation extends cdktn.TerraformResource {
 
@@ -955,7 +955,7 @@ export class SecurityCenterAutomation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityCenterAutomation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityCenterAutomation to import
-  * @param importFromId The id of the existing SecurityCenterAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityCenterAutomation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityCenterAutomation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -967,7 +967,7 @@ export class SecurityCenterAutomation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/security_center_automation azurerm_security_center_automation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -978,7 +978,7 @@ export class SecurityCenterAutomation extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_security_center_automation',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

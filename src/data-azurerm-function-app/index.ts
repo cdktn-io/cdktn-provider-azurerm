@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermFunctionAppConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#timeouts DataAzurermFunctionApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#timeouts DataAzurermFunctionApp#timeouts}
   */
   readonly timeouts?: DataAzurermFunctionAppTimeouts;
 }
@@ -44,7 +44,7 @@ export interface DataAzurermFunctionAppConnectionString {
 export function dataAzurermFunctionAppConnectionStringToTerraform(struct?: DataAzurermFunctionAppConnectionString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAzurermFunctionAppConnectionStringToTerraform(struct?: DataA
 export function dataAzurermFunctionAppConnectionStringToHclTerraform(struct?: DataAzurermFunctionAppConnectionString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -129,7 +129,7 @@ export interface DataAzurermFunctionAppIdentity {
 export function dataAzurermFunctionAppIdentityToTerraform(struct?: DataAzurermFunctionAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataAzurermFunctionAppIdentityToTerraform(struct?: DataAzurermFu
 export function dataAzurermFunctionAppIdentityToHclTerraform(struct?: DataAzurermFunctionAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -219,7 +219,7 @@ export interface DataAzurermFunctionAppSiteConfigCors {
 export function dataAzurermFunctionAppSiteConfigCorsToTerraform(struct?: DataAzurermFunctionAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -229,7 +229,7 @@ export function dataAzurermFunctionAppSiteConfigCorsToTerraform(struct?: DataAzu
 export function dataAzurermFunctionAppSiteConfigCorsToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -299,7 +299,7 @@ export interface DataAzurermFunctionAppSiteConfigIpRestrictionHeaders {
 export function dataAzurermFunctionAppSiteConfigIpRestrictionHeadersToTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -309,7 +309,7 @@ export function dataAzurermFunctionAppSiteConfigIpRestrictionHeadersToTerraform(
 export function dataAzurermFunctionAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -389,7 +389,7 @@ export interface DataAzurermFunctionAppSiteConfigIpRestriction {
 export function dataAzurermFunctionAppSiteConfigIpRestrictionToTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -399,7 +399,7 @@ export function dataAzurermFunctionAppSiteConfigIpRestrictionToTerraform(struct?
 export function dataAzurermFunctionAppSiteConfigIpRestrictionToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -495,7 +495,7 @@ export interface DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders {
 export function dataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -505,7 +505,7 @@ export function dataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersToTerrafo
 export function dataAzurermFunctionAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -585,7 +585,7 @@ export interface DataAzurermFunctionAppSiteConfigScmIpRestriction {
 export function dataAzurermFunctionAppSiteConfigScmIpRestrictionToTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -595,7 +595,7 @@ export function dataAzurermFunctionAppSiteConfigScmIpRestrictionToTerraform(stru
 export function dataAzurermFunctionAppSiteConfigScmIpRestrictionToHclTerraform(struct?: DataAzurermFunctionAppSiteConfigScmIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -691,7 +691,7 @@ export interface DataAzurermFunctionAppSiteConfig {
 export function dataAzurermFunctionAppSiteConfigToTerraform(struct?: DataAzurermFunctionAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -701,7 +701,7 @@ export function dataAzurermFunctionAppSiteConfigToTerraform(struct?: DataAzurerm
 export function dataAzurermFunctionAppSiteConfigToHclTerraform(struct?: DataAzurermFunctionAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -869,7 +869,7 @@ export interface DataAzurermFunctionAppSiteCredential {
 export function dataAzurermFunctionAppSiteCredentialToTerraform(struct?: DataAzurermFunctionAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -879,7 +879,7 @@ export function dataAzurermFunctionAppSiteCredentialToTerraform(struct?: DataAzu
 export function dataAzurermFunctionAppSiteCredentialToHclTerraform(struct?: DataAzurermFunctionAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -949,7 +949,7 @@ export interface DataAzurermFunctionAppSourceControl {
 export function dataAzurermFunctionAppSourceControlToTerraform(struct?: DataAzurermFunctionAppSourceControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -959,7 +959,7 @@ export function dataAzurermFunctionAppSourceControlToTerraform(struct?: DataAzur
 export function dataAzurermFunctionAppSourceControlToHclTerraform(struct?: DataAzurermFunctionAppSourceControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1040,7 +1040,7 @@ export class DataAzurermFunctionAppSourceControlList extends cdktn.ComplexList {
 }
 export interface DataAzurermFunctionAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}
   */
   readonly read?: string;
 }
@@ -1048,7 +1048,7 @@ export interface DataAzurermFunctionAppTimeouts {
 export function dataAzurermFunctionAppTimeoutsToTerraform(struct?: DataAzurermFunctionAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -1059,7 +1059,7 @@ export function dataAzurermFunctionAppTimeoutsToTerraform(struct?: DataAzurermFu
 export function dataAzurermFunctionAppTimeoutsToHclTerraform(struct?: DataAzurermFunctionAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -1134,7 +1134,7 @@ export class DataAzurermFunctionAppTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app azurerm_function_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app azurerm_function_app}
 */
 export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
 
@@ -1150,7 +1150,7 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermFunctionApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermFunctionApp to import
-  * @param importFromId The id of the existing DataAzurermFunctionApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermFunctionApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermFunctionApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1162,7 +1162,7 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/function_app azurerm_function_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/function_app azurerm_function_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1173,7 +1173,7 @@ export class DataAzurermFunctionApp extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_function_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

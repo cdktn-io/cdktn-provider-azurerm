@@ -1506,8 +1506,6 @@ The following submodules are available:
 - [vmwareExpressRouteAuthorization](./vmwareExpressRouteAuthorization.java.md)
 - [vmwareNetappVolumeAttachment](./vmwareNetappVolumeAttachment.java.md)
 - [vmwarePrivateCloud](./vmwarePrivateCloud.java.md)
-- [voiceServicesCommunicationsGateway](./voiceServicesCommunicationsGateway.java.md)
-- [voiceServicesCommunicationsGatewayTestLine](./voiceServicesCommunicationsGatewayTestLine.java.md)
 - [vpnGateway](./vpnGateway.java.md)
 - [vpnGatewayConnection](./vpnGatewayConnection.java.md)
 - [vpnGatewayNatRule](./vpnGatewayNatRule.java.md)

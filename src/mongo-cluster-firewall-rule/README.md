@@ -1,3 +1,3 @@
 # `azurerm_mongo_cluster_firewall_rule`
 
-Refer to the Terraform Registry for docs: [`azurerm_mongo_cluster_firewall_rule`](https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mongo_cluster_firewall_rule).
+Refer to the Terraform Registry for docs: [`azurerm_mongo_cluster_firewall_rule`](https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mongo_cluster_firewall_rule).

@@ -1506,8 +1506,6 @@ The following submodules are available:
 - [vmwareExpressRouteAuthorization](./vmwareExpressRouteAuthorization.go.md)
 - [vmwareNetappVolumeAttachment](./vmwareNetappVolumeAttachment.go.md)
 - [vmwarePrivateCloud](./vmwarePrivateCloud.go.md)
-- [voiceServicesCommunicationsGateway](./voiceServicesCommunicationsGateway.go.md)
-- [voiceServicesCommunicationsGatewayTestLine](./voiceServicesCommunicationsGatewayTestLine.go.md)
 - [vpnGateway](./vpnGateway.go.md)
 - [vpnGatewayConnection](./vpnGatewayConnection.go.md)
 - [vpnGatewayNatRule](./vpnGatewayNatRule.go.md)

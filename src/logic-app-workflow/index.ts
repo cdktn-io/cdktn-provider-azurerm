@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,78 @@ import * as cdktn from 'cdktn';
 
 export interface LogicAppWorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#enabled LogicAppWorkflow#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#enabled LogicAppWorkflow#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#id LogicAppWorkflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#id LogicAppWorkflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#integration_service_environment_id LogicAppWorkflow#integration_service_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#integration_service_environment_id LogicAppWorkflow#integration_service_environment_id}
   */
   readonly integrationServiceEnvironmentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#location LogicAppWorkflow#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#location LogicAppWorkflow#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#logic_app_integration_account_id LogicAppWorkflow#logic_app_integration_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#logic_app_integration_account_id LogicAppWorkflow#logic_app_integration_account_id}
   */
   readonly logicAppIntegrationAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#parameters LogicAppWorkflow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#parameters LogicAppWorkflow#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#resource_group_name LogicAppWorkflow#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#resource_group_name LogicAppWorkflow#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#tags LogicAppWorkflow#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#tags LogicAppWorkflow#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#workflow_parameters LogicAppWorkflow#workflow_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#workflow_parameters LogicAppWorkflow#workflow_parameters}
   */
   readonly workflowParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#workflow_schema LogicAppWorkflow#workflow_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#workflow_schema LogicAppWorkflow#workflow_schema}
   */
   readonly workflowSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#workflow_version LogicAppWorkflow#workflow_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#workflow_version LogicAppWorkflow#workflow_version}
   */
   readonly workflowVersion?: string;
   /**
   * access_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#access_control LogicAppWorkflow#access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#access_control LogicAppWorkflow#access_control}
   */
   readonly accessControl?: LogicAppWorkflowAccessControl;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#identity LogicAppWorkflow#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#identity LogicAppWorkflow#identity}
   */
   readonly identity?: LogicAppWorkflowIdentity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#timeouts LogicAppWorkflow#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#timeouts LogicAppWorkflow#timeouts}
   */
   readonly timeouts?: LogicAppWorkflowTimeouts;
 }
 export interface LogicAppWorkflowAccessControlAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
   */
   readonly allowedCallerIpAddressRange: string[];
 }
@@ -92,7 +92,7 @@ export interface LogicAppWorkflowAccessControlAction {
 export function logicAppWorkflowAccessControlActionToTerraform(struct?: LogicAppWorkflowAccessControlActionOutputReference | LogicAppWorkflowAccessControlAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_caller_ip_address_range: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCallerIpAddressRange),
@@ -103,7 +103,7 @@ export function logicAppWorkflowAccessControlActionToTerraform(struct?: LogicApp
 export function logicAppWorkflowAccessControlActionToHclTerraform(struct?: LogicAppWorkflowAccessControlActionOutputReference | LogicAppWorkflowAccessControlAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_caller_ip_address_range: {
@@ -165,7 +165,7 @@ export class LogicAppWorkflowAccessControlActionOutputReference extends cdktn.Co
 }
 export interface LogicAppWorkflowAccessControlContent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
   */
   readonly allowedCallerIpAddressRange: string[];
 }
@@ -173,7 +173,7 @@ export interface LogicAppWorkflowAccessControlContent {
 export function logicAppWorkflowAccessControlContentToTerraform(struct?: LogicAppWorkflowAccessControlContentOutputReference | LogicAppWorkflowAccessControlContent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_caller_ip_address_range: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCallerIpAddressRange),
@@ -184,7 +184,7 @@ export function logicAppWorkflowAccessControlContentToTerraform(struct?: LogicAp
 export function logicAppWorkflowAccessControlContentToHclTerraform(struct?: LogicAppWorkflowAccessControlContentOutputReference | LogicAppWorkflowAccessControlContent): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_caller_ip_address_range: {
@@ -246,11 +246,11 @@ export class LogicAppWorkflowAccessControlContentOutputReference extends cdktn.C
 }
 export interface LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#value LogicAppWorkflow#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#value LogicAppWorkflow#value}
   */
   readonly value: string;
 }
@@ -258,7 +258,7 @@ export interface LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyCla
 export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimToTerraform(struct?: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -270,7 +270,7 @@ export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClai
 export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimToHclTerraform(struct?: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -389,13 +389,13 @@ export class LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimLi
 }
 export interface LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#name LogicAppWorkflow#name}
   */
   readonly name: string;
   /**
   * claim block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#claim LogicAppWorkflow#claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#claim LogicAppWorkflow#claim}
   */
   readonly claim: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim[] | cdktn.IResolvable;
 }
@@ -403,7 +403,7 @@ export interface LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy {
 export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyToTerraform(struct?: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -415,7 +415,7 @@ export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyToTe
 export function logicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyToHclTerraform(struct?: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -534,13 +534,13 @@ export class LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList ex
 }
 export interface LogicAppWorkflowAccessControlTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
   */
   readonly allowedCallerIpAddressRange?: string[];
   /**
   * open_authentication_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#open_authentication_policy LogicAppWorkflow#open_authentication_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#open_authentication_policy LogicAppWorkflow#open_authentication_policy}
   */
   readonly openAuthenticationPolicy?: LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy[] | cdktn.IResolvable;
 }
@@ -548,7 +548,7 @@ export interface LogicAppWorkflowAccessControlTrigger {
 export function logicAppWorkflowAccessControlTriggerToTerraform(struct?: LogicAppWorkflowAccessControlTriggerOutputReference | LogicAppWorkflowAccessControlTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_caller_ip_address_range: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCallerIpAddressRange),
@@ -560,7 +560,7 @@ export function logicAppWorkflowAccessControlTriggerToTerraform(struct?: LogicAp
 export function logicAppWorkflowAccessControlTriggerToHclTerraform(struct?: LogicAppWorkflowAccessControlTriggerOutputReference | LogicAppWorkflowAccessControlTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_caller_ip_address_range: {
@@ -653,7 +653,7 @@ export class LogicAppWorkflowAccessControlTriggerOutputReference extends cdktn.C
 }
 export interface LogicAppWorkflowAccessControlWorkflowManagement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#allowed_caller_ip_address_range LogicAppWorkflow#allowed_caller_ip_address_range}
   */
   readonly allowedCallerIpAddressRange: string[];
 }
@@ -661,7 +661,7 @@ export interface LogicAppWorkflowAccessControlWorkflowManagement {
 export function logicAppWorkflowAccessControlWorkflowManagementToTerraform(struct?: LogicAppWorkflowAccessControlWorkflowManagementOutputReference | LogicAppWorkflowAccessControlWorkflowManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_caller_ip_address_range: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCallerIpAddressRange),
@@ -672,7 +672,7 @@ export function logicAppWorkflowAccessControlWorkflowManagementToTerraform(struc
 export function logicAppWorkflowAccessControlWorkflowManagementToHclTerraform(struct?: LogicAppWorkflowAccessControlWorkflowManagementOutputReference | LogicAppWorkflowAccessControlWorkflowManagement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_caller_ip_address_range: {
@@ -736,25 +736,25 @@ export interface LogicAppWorkflowAccessControl {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#action LogicAppWorkflow#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#action LogicAppWorkflow#action}
   */
   readonly action?: LogicAppWorkflowAccessControlAction;
   /**
   * content block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#content LogicAppWorkflow#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#content LogicAppWorkflow#content}
   */
   readonly content?: LogicAppWorkflowAccessControlContent;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#trigger LogicAppWorkflow#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#trigger LogicAppWorkflow#trigger}
   */
   readonly trigger?: LogicAppWorkflowAccessControlTrigger;
   /**
   * workflow_management block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#workflow_management LogicAppWorkflow#workflow_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#workflow_management LogicAppWorkflow#workflow_management}
   */
   readonly workflowManagement?: LogicAppWorkflowAccessControlWorkflowManagement;
 }
@@ -762,7 +762,7 @@ export interface LogicAppWorkflowAccessControl {
 export function logicAppWorkflowAccessControlToTerraform(struct?: LogicAppWorkflowAccessControlOutputReference | LogicAppWorkflowAccessControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: logicAppWorkflowAccessControlActionToTerraform(struct!.action),
@@ -776,7 +776,7 @@ export function logicAppWorkflowAccessControlToTerraform(struct?: LogicAppWorkfl
 export function logicAppWorkflowAccessControlToHclTerraform(struct?: LogicAppWorkflowAccessControlOutputReference | LogicAppWorkflowAccessControl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -925,11 +925,11 @@ export class LogicAppWorkflowAccessControlOutputReference extends cdktn.ComplexO
 }
 export interface LogicAppWorkflowIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#identity_ids LogicAppWorkflow#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#identity_ids LogicAppWorkflow#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#type LogicAppWorkflow#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#type LogicAppWorkflow#type}
   */
   readonly type: string;
 }
@@ -937,7 +937,7 @@ export interface LogicAppWorkflowIdentity {
 export function logicAppWorkflowIdentityToTerraform(struct?: LogicAppWorkflowIdentityOutputReference | LogicAppWorkflowIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -949,7 +949,7 @@ export function logicAppWorkflowIdentityToTerraform(struct?: LogicAppWorkflowIde
 export function logicAppWorkflowIdentityToHclTerraform(struct?: LogicAppWorkflowIdentityOutputReference | LogicAppWorkflowIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -1049,19 +1049,19 @@ export class LogicAppWorkflowIdentityOutputReference extends cdktn.ComplexObject
 }
 export interface LogicAppWorkflowTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#create LogicAppWorkflow#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#create LogicAppWorkflow#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#delete LogicAppWorkflow#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#delete LogicAppWorkflow#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#read LogicAppWorkflow#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#read LogicAppWorkflow#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#update LogicAppWorkflow#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#update LogicAppWorkflow#update}
   */
   readonly update?: string;
 }
@@ -1069,7 +1069,7 @@ export interface LogicAppWorkflowTimeouts {
 export function logicAppWorkflowTimeoutsToTerraform(struct?: LogicAppWorkflowTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1083,7 +1083,7 @@ export function logicAppWorkflowTimeoutsToTerraform(struct?: LogicAppWorkflowTim
 export function logicAppWorkflowTimeoutsToHclTerraform(struct?: LogicAppWorkflowTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1242,7 +1242,7 @@ export class LogicAppWorkflowTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow}
 */
 export class LogicAppWorkflow extends cdktn.TerraformResource {
 
@@ -1258,7 +1258,7 @@ export class LogicAppWorkflow extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogicAppWorkflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogicAppWorkflow to import
-  * @param importFromId The id of the existing LogicAppWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogicAppWorkflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogicAppWorkflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1270,7 +1270,7 @@ export class LogicAppWorkflow extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/logic_app_workflow azurerm_logic_app_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1281,7 +1281,7 @@ export class LogicAppWorkflow extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_logic_app_workflow',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

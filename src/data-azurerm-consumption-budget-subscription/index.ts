@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermConsumptionBudgetSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#timeouts DataAzurermConsumptionBudgetSubscription#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#timeouts DataAzurermConsumptionBudgetSubscription#timeouts}
   */
   readonly timeouts?: DataAzurermConsumptionBudgetSubscriptionTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilterDimension {
 export function dataAzurermConsumptionBudgetSubscriptionFilterDimensionToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterDimensionToTerrafo
 export function dataAzurermConsumptionBudgetSubscriptionFilterDimensionToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilterNotDimension {
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotDimensionToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterNotDimensionToTerr
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotDimensionToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNotDimension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -210,7 +210,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilterNotTag {
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotTagToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNotTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -220,7 +220,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterNotTagToTerraform(
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotTagToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNotTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -295,7 +295,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilterNot {
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -305,7 +305,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterNotToTerraform(str
 export function dataAzurermConsumptionBudgetSubscriptionFilterNotToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterNot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -377,7 +377,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilterTag {
 export function dataAzurermConsumptionBudgetSubscriptionFilterTagToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -387,7 +387,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterTagToTerraform(str
 export function dataAzurermConsumptionBudgetSubscriptionFilterTagToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilterTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -462,7 +462,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionFilter {
 export function dataAzurermConsumptionBudgetSubscriptionFilterToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -472,7 +472,7 @@ export function dataAzurermConsumptionBudgetSubscriptionFilterToTerraform(struct
 export function dataAzurermConsumptionBudgetSubscriptionFilterToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -550,7 +550,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionNotification {
 export function dataAzurermConsumptionBudgetSubscriptionNotificationToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionNotification): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -560,7 +560,7 @@ export function dataAzurermConsumptionBudgetSubscriptionNotificationToTerraform(
 export function dataAzurermConsumptionBudgetSubscriptionNotificationToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionNotification): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -655,7 +655,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionTimePeriod {
 export function dataAzurermConsumptionBudgetSubscriptionTimePeriodToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionTimePeriod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -665,7 +665,7 @@ export function dataAzurermConsumptionBudgetSubscriptionTimePeriodToTerraform(st
 export function dataAzurermConsumptionBudgetSubscriptionTimePeriodToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionTimePeriod): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -731,7 +731,7 @@ export class DataAzurermConsumptionBudgetSubscriptionTimePeriodList extends cdkt
 }
 export interface DataAzurermConsumptionBudgetSubscriptionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}
   */
   readonly read?: string;
 }
@@ -739,7 +739,7 @@ export interface DataAzurermConsumptionBudgetSubscriptionTimeouts {
 export function dataAzurermConsumptionBudgetSubscriptionTimeoutsToTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -750,7 +750,7 @@ export function dataAzurermConsumptionBudgetSubscriptionTimeoutsToTerraform(stru
 export function dataAzurermConsumptionBudgetSubscriptionTimeoutsToHclTerraform(struct?: DataAzurermConsumptionBudgetSubscriptionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -825,7 +825,7 @@ export class DataAzurermConsumptionBudgetSubscriptionTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}
 */
 export class DataAzurermConsumptionBudgetSubscription extends cdktn.TerraformDataSource {
 
@@ -841,7 +841,7 @@ export class DataAzurermConsumptionBudgetSubscription extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataAzurermConsumptionBudgetSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermConsumptionBudgetSubscription to import
-  * @param importFromId The id of the existing DataAzurermConsumptionBudgetSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermConsumptionBudgetSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermConsumptionBudgetSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -853,7 +853,7 @@ export class DataAzurermConsumptionBudgetSubscription extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -864,7 +864,7 @@ export class DataAzurermConsumptionBudgetSubscription extends cdktn.TerraformDat
       terraformResourceType: 'azurerm_consumption_budget_subscription',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

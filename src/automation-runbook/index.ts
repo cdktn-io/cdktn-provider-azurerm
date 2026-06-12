@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,98 +13,98 @@ import * as cdktn from 'cdktn';
 
 export interface AutomationRunbookConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#automation_account_name AutomationRunbook#automation_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#automation_account_name AutomationRunbook#automation_account_name}
   */
   readonly automationAccountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#content AutomationRunbook#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#content AutomationRunbook#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#description AutomationRunbook#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#description AutomationRunbook#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#id AutomationRunbook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#id AutomationRunbook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#job_schedule AutomationRunbook#job_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#job_schedule AutomationRunbook#job_schedule}
   */
   readonly jobSchedule?: AutomationRunbookJobSchedule[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#location AutomationRunbook#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#location AutomationRunbook#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#log_activity_trace_level AutomationRunbook#log_activity_trace_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#log_activity_trace_level AutomationRunbook#log_activity_trace_level}
   */
   readonly logActivityTraceLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#log_progress AutomationRunbook#log_progress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#log_progress AutomationRunbook#log_progress}
   */
   readonly logProgress: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#log_verbose AutomationRunbook#log_verbose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#log_verbose AutomationRunbook#log_verbose}
   */
   readonly logVerbose: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#name AutomationRunbook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#name AutomationRunbook#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#resource_group_name AutomationRunbook#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#resource_group_name AutomationRunbook#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#runbook_type AutomationRunbook#runbook_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#runbook_type AutomationRunbook#runbook_type}
   */
   readonly runbookType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#runtime_environment_name AutomationRunbook#runtime_environment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#runtime_environment_name AutomationRunbook#runtime_environment_name}
   */
   readonly runtimeEnvironmentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#tags AutomationRunbook#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#tags AutomationRunbook#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * draft block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#draft AutomationRunbook#draft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#draft AutomationRunbook#draft}
   */
   readonly draft?: AutomationRunbookDraft;
   /**
   * publish_content_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#publish_content_link AutomationRunbook#publish_content_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#publish_content_link AutomationRunbook#publish_content_link}
   */
   readonly publishContentLink?: AutomationRunbookPublishContentLink;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#timeouts AutomationRunbook#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#timeouts AutomationRunbook#timeouts}
   */
   readonly timeouts?: AutomationRunbookTimeouts;
 }
 export interface AutomationRunbookJobSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#job_schedule_id AutomationRunbook#job_schedule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#job_schedule_id AutomationRunbook#job_schedule_id}
   */
   readonly jobScheduleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#parameters AutomationRunbook#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#parameters AutomationRunbook#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#run_on AutomationRunbook#run_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#run_on AutomationRunbook#run_on}
   */
   readonly runOn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#schedule_name AutomationRunbook#schedule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#schedule_name AutomationRunbook#schedule_name}
   */
   readonly scheduleName?: string;
 }
@@ -112,7 +112,7 @@ export interface AutomationRunbookJobSchedule {
 export function automationRunbookJobScheduleToTerraform(struct?: AutomationRunbookJobSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     job_schedule_id: struct!.jobScheduleId === undefined ? null : cdktn.stringToTerraform(struct!.jobScheduleId),
@@ -126,7 +126,7 @@ export function automationRunbookJobScheduleToTerraform(struct?: AutomationRunbo
 export function automationRunbookJobScheduleToHclTerraform(struct?: AutomationRunbookJobSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     job_schedule_id: {
@@ -307,11 +307,11 @@ export class AutomationRunbookJobScheduleList extends cdktn.ComplexList {
 }
 export interface AutomationRunbookDraftContentLinkHash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#algorithm AutomationRunbook#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#algorithm AutomationRunbook#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#value AutomationRunbook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#value AutomationRunbook#value}
   */
   readonly value: string;
 }
@@ -319,7 +319,7 @@ export interface AutomationRunbookDraftContentLinkHash {
 export function automationRunbookDraftContentLinkHashToTerraform(struct?: AutomationRunbookDraftContentLinkHashOutputReference | AutomationRunbookDraftContentLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     algorithm: cdktn.stringToTerraform(struct!.algorithm),
@@ -331,7 +331,7 @@ export function automationRunbookDraftContentLinkHashToTerraform(struct?: Automa
 export function automationRunbookDraftContentLinkHashToHclTerraform(struct?: AutomationRunbookDraftContentLinkHashOutputReference | AutomationRunbookDraftContentLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     algorithm: {
@@ -418,17 +418,17 @@ export class AutomationRunbookDraftContentLinkHashOutputReference extends cdktn.
 }
 export interface AutomationRunbookDraftContentLink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#uri AutomationRunbook#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#uri AutomationRunbook#uri}
   */
   readonly uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#version AutomationRunbook#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#version AutomationRunbook#version}
   */
   readonly version?: string;
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#hash AutomationRunbook#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#hash AutomationRunbook#hash}
   */
   readonly hash?: AutomationRunbookDraftContentLinkHash;
 }
@@ -436,7 +436,7 @@ export interface AutomationRunbookDraftContentLink {
 export function automationRunbookDraftContentLinkToTerraform(struct?: AutomationRunbookDraftContentLinkOutputReference | AutomationRunbookDraftContentLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     uri: cdktn.stringToTerraform(struct!.uri),
@@ -449,7 +449,7 @@ export function automationRunbookDraftContentLinkToTerraform(struct?: Automation
 export function automationRunbookDraftContentLinkToHclTerraform(struct?: AutomationRunbookDraftContentLinkOutputReference | AutomationRunbookDraftContentLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     uri: {
@@ -567,23 +567,23 @@ export class AutomationRunbookDraftContentLinkOutputReference extends cdktn.Comp
 }
 export interface AutomationRunbookDraftParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#default_value AutomationRunbook#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#default_value AutomationRunbook#default_value}
   */
   readonly defaultValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#key AutomationRunbook#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#key AutomationRunbook#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#mandatory AutomationRunbook#mandatory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#mandatory AutomationRunbook#mandatory}
   */
   readonly mandatory?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#position AutomationRunbook#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#position AutomationRunbook#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#type AutomationRunbook#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#type AutomationRunbook#type}
   */
   readonly type: string;
 }
@@ -591,7 +591,7 @@ export interface AutomationRunbookDraftParameters {
 export function automationRunbookDraftParametersToTerraform(struct?: AutomationRunbookDraftParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_value: cdktn.stringToTerraform(struct!.defaultValue),
@@ -606,7 +606,7 @@ export function automationRunbookDraftParametersToTerraform(struct?: AutomationR
 export function automationRunbookDraftParametersToHclTerraform(struct?: AutomationRunbookDraftParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_value: {
@@ -809,23 +809,23 @@ export class AutomationRunbookDraftParametersList extends cdktn.ComplexList {
 }
 export interface AutomationRunbookDraft {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#edit_mode_enabled AutomationRunbook#edit_mode_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#edit_mode_enabled AutomationRunbook#edit_mode_enabled}
   */
   readonly editModeEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#output_types AutomationRunbook#output_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#output_types AutomationRunbook#output_types}
   */
   readonly outputTypes?: string[];
   /**
   * content_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#content_link AutomationRunbook#content_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#content_link AutomationRunbook#content_link}
   */
   readonly contentLink?: AutomationRunbookDraftContentLink;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#parameters AutomationRunbook#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#parameters AutomationRunbook#parameters}
   */
   readonly parameters?: AutomationRunbookDraftParameters[] | cdktn.IResolvable;
 }
@@ -833,7 +833,7 @@ export interface AutomationRunbookDraft {
 export function automationRunbookDraftToTerraform(struct?: AutomationRunbookDraftOutputReference | AutomationRunbookDraft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     edit_mode_enabled: cdktn.booleanToTerraform(struct!.editModeEnabled),
@@ -847,7 +847,7 @@ export function automationRunbookDraftToTerraform(struct?: AutomationRunbookDraf
 export function automationRunbookDraftToHclTerraform(struct?: AutomationRunbookDraftOutputReference | AutomationRunbookDraft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     edit_mode_enabled: {
@@ -1006,11 +1006,11 @@ export class AutomationRunbookDraftOutputReference extends cdktn.ComplexObject {
 }
 export interface AutomationRunbookPublishContentLinkHash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#algorithm AutomationRunbook#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#algorithm AutomationRunbook#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#value AutomationRunbook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#value AutomationRunbook#value}
   */
   readonly value: string;
 }
@@ -1018,7 +1018,7 @@ export interface AutomationRunbookPublishContentLinkHash {
 export function automationRunbookPublishContentLinkHashToTerraform(struct?: AutomationRunbookPublishContentLinkHashOutputReference | AutomationRunbookPublishContentLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     algorithm: cdktn.stringToTerraform(struct!.algorithm),
@@ -1030,7 +1030,7 @@ export function automationRunbookPublishContentLinkHashToTerraform(struct?: Auto
 export function automationRunbookPublishContentLinkHashToHclTerraform(struct?: AutomationRunbookPublishContentLinkHashOutputReference | AutomationRunbookPublishContentLinkHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     algorithm: {
@@ -1117,17 +1117,17 @@ export class AutomationRunbookPublishContentLinkHashOutputReference extends cdkt
 }
 export interface AutomationRunbookPublishContentLink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#uri AutomationRunbook#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#uri AutomationRunbook#uri}
   */
   readonly uri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#version AutomationRunbook#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#version AutomationRunbook#version}
   */
   readonly version?: string;
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#hash AutomationRunbook#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#hash AutomationRunbook#hash}
   */
   readonly hash?: AutomationRunbookPublishContentLinkHash;
 }
@@ -1135,7 +1135,7 @@ export interface AutomationRunbookPublishContentLink {
 export function automationRunbookPublishContentLinkToTerraform(struct?: AutomationRunbookPublishContentLinkOutputReference | AutomationRunbookPublishContentLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     uri: cdktn.stringToTerraform(struct!.uri),
@@ -1148,7 +1148,7 @@ export function automationRunbookPublishContentLinkToTerraform(struct?: Automati
 export function automationRunbookPublishContentLinkToHclTerraform(struct?: AutomationRunbookPublishContentLinkOutputReference | AutomationRunbookPublishContentLink): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     uri: {
@@ -1266,19 +1266,19 @@ export class AutomationRunbookPublishContentLinkOutputReference extends cdktn.Co
 }
 export interface AutomationRunbookTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#create AutomationRunbook#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#create AutomationRunbook#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#delete AutomationRunbook#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#delete AutomationRunbook#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#read AutomationRunbook#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#read AutomationRunbook#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#update AutomationRunbook#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#update AutomationRunbook#update}
   */
   readonly update?: string;
 }
@@ -1286,7 +1286,7 @@ export interface AutomationRunbookTimeouts {
 export function automationRunbookTimeoutsToTerraform(struct?: AutomationRunbookTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1300,7 +1300,7 @@ export function automationRunbookTimeoutsToTerraform(struct?: AutomationRunbookT
 export function automationRunbookTimeoutsToHclTerraform(struct?: AutomationRunbookTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1459,7 +1459,7 @@ export class AutomationRunbookTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook azurerm_automation_runbook}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook azurerm_automation_runbook}
 */
 export class AutomationRunbook extends cdktn.TerraformResource {
 
@@ -1475,7 +1475,7 @@ export class AutomationRunbook extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AutomationRunbook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationRunbook to import
-  * @param importFromId The id of the existing AutomationRunbook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutomationRunbook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationRunbook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1487,7 +1487,7 @@ export class AutomationRunbook extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/automation_runbook azurerm_automation_runbook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1498,7 +1498,7 @@ export class AutomationRunbook extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_automation_runbook',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

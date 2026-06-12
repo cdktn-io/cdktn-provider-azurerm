@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermAppServiceEnvironmentV3Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#id DataAzurermAppServiceEnvironmentV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#id DataAzurermAppServiceEnvironmentV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#name DataAzurermAppServiceEnvironmentV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#name DataAzurermAppServiceEnvironmentV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#resource_group_name DataAzurermAppServiceEnvironmentV3#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#resource_group_name DataAzurermAppServiceEnvironmentV3#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#timeouts DataAzurermAppServiceEnvironmentV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#timeouts DataAzurermAppServiceEnvironmentV3#timeouts}
   */
   readonly timeouts?: DataAzurermAppServiceEnvironmentV3Timeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermAppServiceEnvironmentV3ClusterSetting {
 export function dataAzurermAppServiceEnvironmentV3ClusterSettingToTerraform(struct?: DataAzurermAppServiceEnvironmentV3ClusterSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermAppServiceEnvironmentV3ClusterSettingToTerraform(stru
 export function dataAzurermAppServiceEnvironmentV3ClusterSettingToHclTerraform(struct?: DataAzurermAppServiceEnvironmentV3ClusterSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataAzurermAppServiceEnvironmentV3InboundNetworkDependencies {
 export function dataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesToTerraform(struct?: DataAzurermAppServiceEnvironmentV3InboundNetworkDependencies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesToTe
 export function dataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesToHclTerraform(struct?: DataAzurermAppServiceEnvironmentV3InboundNetworkDependencies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -201,7 +201,7 @@ export class DataAzurermAppServiceEnvironmentV3InboundNetworkDependenciesList ex
 }
 export interface DataAzurermAppServiceEnvironmentV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#read DataAzurermAppServiceEnvironmentV3#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#read DataAzurermAppServiceEnvironmentV3#read}
   */
   readonly read?: string;
 }
@@ -209,7 +209,7 @@ export interface DataAzurermAppServiceEnvironmentV3Timeouts {
 export function dataAzurermAppServiceEnvironmentV3TimeoutsToTerraform(struct?: DataAzurermAppServiceEnvironmentV3Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -220,7 +220,7 @@ export function dataAzurermAppServiceEnvironmentV3TimeoutsToTerraform(struct?: D
 export function dataAzurermAppServiceEnvironmentV3TimeoutsToHclTerraform(struct?: DataAzurermAppServiceEnvironmentV3Timeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -295,7 +295,7 @@ export class DataAzurermAppServiceEnvironmentV3TimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3}
 */
 export class DataAzurermAppServiceEnvironmentV3 extends cdktn.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataAzurermAppServiceEnvironmentV3 extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataAzurermAppServiceEnvironmentV3 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAppServiceEnvironmentV3 to import
-  * @param importFromId The id of the existing DataAzurermAppServiceEnvironmentV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermAppServiceEnvironmentV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAppServiceEnvironmentV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataAzurermAppServiceEnvironmentV3 extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/app_service_environment_v3 azurerm_app_service_environment_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataAzurermAppServiceEnvironmentV3 extends cdktn.TerraformDataSourc
       terraformResourceType: 'azurerm_app_service_environment_v3',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermVmwarePrivateCloudConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#id DataAzurermVmwarePrivateCloud#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#id DataAzurermVmwarePrivateCloud#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#name DataAzurermVmwarePrivateCloud#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#name DataAzurermVmwarePrivateCloud#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#resource_group_name DataAzurermVmwarePrivateCloud#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#resource_group_name DataAzurermVmwarePrivateCloud#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#timeouts DataAzurermVmwarePrivateCloud#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#timeouts DataAzurermVmwarePrivateCloud#timeouts}
   */
   readonly timeouts?: DataAzurermVmwarePrivateCloudTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermVmwarePrivateCloudCircuit {
 export function dataAzurermVmwarePrivateCloudCircuitToTerraform(struct?: DataAzurermVmwarePrivateCloudCircuit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermVmwarePrivateCloudCircuitToTerraform(struct?: DataAzu
 export function dataAzurermVmwarePrivateCloudCircuitToHclTerraform(struct?: DataAzurermVmwarePrivateCloudCircuit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -130,7 +130,7 @@ export interface DataAzurermVmwarePrivateCloudManagementCluster {
 export function dataAzurermVmwarePrivateCloudManagementClusterToTerraform(struct?: DataAzurermVmwarePrivateCloudManagementCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -140,7 +140,7 @@ export function dataAzurermVmwarePrivateCloudManagementClusterToTerraform(struct
 export function dataAzurermVmwarePrivateCloudManagementClusterToHclTerraform(struct?: DataAzurermVmwarePrivateCloudManagementCluster): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -211,7 +211,7 @@ export class DataAzurermVmwarePrivateCloudManagementClusterList extends cdktn.Co
 }
 export interface DataAzurermVmwarePrivateCloudTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#read DataAzurermVmwarePrivateCloud#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#read DataAzurermVmwarePrivateCloud#read}
   */
   readonly read?: string;
 }
@@ -219,7 +219,7 @@ export interface DataAzurermVmwarePrivateCloudTimeouts {
 export function dataAzurermVmwarePrivateCloudTimeoutsToTerraform(struct?: DataAzurermVmwarePrivateCloudTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -230,7 +230,7 @@ export function dataAzurermVmwarePrivateCloudTimeoutsToTerraform(struct?: DataAz
 export function dataAzurermVmwarePrivateCloudTimeoutsToHclTerraform(struct?: DataAzurermVmwarePrivateCloudTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -305,7 +305,7 @@ export class DataAzurermVmwarePrivateCloudTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud azurerm_vmware_private_cloud}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud azurerm_vmware_private_cloud}
 */
 export class DataAzurermVmwarePrivateCloud extends cdktn.TerraformDataSource {
 
@@ -321,7 +321,7 @@ export class DataAzurermVmwarePrivateCloud extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermVmwarePrivateCloud resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermVmwarePrivateCloud to import
-  * @param importFromId The id of the existing DataAzurermVmwarePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermVmwarePrivateCloud that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermVmwarePrivateCloud to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -333,7 +333,7 @@ export class DataAzurermVmwarePrivateCloud extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vmware_private_cloud azurerm_vmware_private_cloud} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vmware_private_cloud azurerm_vmware_private_cloud} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +344,7 @@ export class DataAzurermVmwarePrivateCloud extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_vmware_private_cloud',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

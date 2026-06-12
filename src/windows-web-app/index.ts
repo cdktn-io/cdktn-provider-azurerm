@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,154 +13,154 @@ import * as cdktn from 'cdktn';
 
 export interface WindowsWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_settings WindowsWebApp#app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_settings WindowsWebApp#app_settings}
   */
   readonly appSettings?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_affinity_enabled WindowsWebApp#client_affinity_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_affinity_enabled WindowsWebApp#client_affinity_enabled}
   */
   readonly clientAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_certificate_enabled WindowsWebApp#client_certificate_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_certificate_enabled WindowsWebApp#client_certificate_enabled}
   */
   readonly clientCertificateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Paths to exclude when using client certificates, separated by ;
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_certificate_exclusion_paths WindowsWebApp#client_certificate_exclusion_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_certificate_exclusion_paths WindowsWebApp#client_certificate_exclusion_paths}
   */
   readonly clientCertificateExclusionPaths?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_certificate_mode WindowsWebApp#client_certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_certificate_mode WindowsWebApp#client_certificate_mode}
   */
   readonly clientCertificateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ftp_publish_basic_authentication_enabled WindowsWebApp#ftp_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ftp_publish_basic_authentication_enabled WindowsWebApp#ftp_publish_basic_authentication_enabled}
   */
   readonly ftpPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#https_only WindowsWebApp#https_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#https_only WindowsWebApp#https_only}
   */
   readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#id WindowsWebApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#id WindowsWebApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#key_vault_reference_identity_id WindowsWebApp#key_vault_reference_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#key_vault_reference_identity_id WindowsWebApp#key_vault_reference_identity_id}
   */
   readonly keyVaultReferenceIdentityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#location WindowsWebApp#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#location WindowsWebApp#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#public_network_access_enabled WindowsWebApp#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#public_network_access_enabled WindowsWebApp#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#resource_group_name WindowsWebApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#resource_group_name WindowsWebApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#service_plan_id WindowsWebApp#service_plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#service_plan_id WindowsWebApp#service_plan_id}
   */
   readonly servicePlanId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#tags WindowsWebApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#tags WindowsWebApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_network_backup_restore_enabled WindowsWebApp#virtual_network_backup_restore_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_network_backup_restore_enabled WindowsWebApp#virtual_network_backup_restore_enabled}
   */
   readonly virtualNetworkBackupRestoreEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_network_image_pull_enabled WindowsWebApp#virtual_network_image_pull_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_network_image_pull_enabled WindowsWebApp#virtual_network_image_pull_enabled}
   */
   readonly virtualNetworkImagePullEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#webdeploy_publish_basic_authentication_enabled WindowsWebApp#webdeploy_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#webdeploy_publish_basic_authentication_enabled WindowsWebApp#webdeploy_publish_basic_authentication_enabled}
   */
   readonly webdeployPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * The local path and filename of the Zip packaged application to deploy to this Windows Web App. **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#zip_deploy_file WindowsWebApp#zip_deploy_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#zip_deploy_file WindowsWebApp#zip_deploy_file}
   */
   readonly zipDeployFile?: string;
   /**
   * auth_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#auth_settings WindowsWebApp#auth_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#auth_settings WindowsWebApp#auth_settings}
   */
   readonly authSettings?: WindowsWebAppAuthSettings;
   /**
   * auth_settings_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#auth_settings_v2 WindowsWebApp#auth_settings_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#auth_settings_v2 WindowsWebApp#auth_settings_v2}
   */
   readonly authSettingsV2?: WindowsWebAppAuthSettingsV2;
   /**
   * backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#backup WindowsWebApp#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#backup WindowsWebApp#backup}
   */
   readonly backup?: WindowsWebAppBackup;
   /**
   * connection_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#connection_string WindowsWebApp#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#connection_string WindowsWebApp#connection_string}
   */
   readonly connectionString?: WindowsWebAppConnectionString[] | cdktn.IResolvable;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#identity WindowsWebApp#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#identity WindowsWebApp#identity}
   */
   readonly identity?: WindowsWebAppIdentity;
   /**
   * logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#logs WindowsWebApp#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#logs WindowsWebApp#logs}
   */
   readonly logs?: WindowsWebAppLogs;
   /**
   * site_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#site_config WindowsWebApp#site_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#site_config WindowsWebApp#site_config}
   */
   readonly siteConfig: WindowsWebAppSiteConfig;
   /**
   * sticky_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#sticky_settings WindowsWebApp#sticky_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#sticky_settings WindowsWebApp#sticky_settings}
   */
   readonly stickySettings?: WindowsWebAppStickySettings;
   /**
   * storage_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#storage_account WindowsWebApp#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#storage_account WindowsWebApp#storage_account}
   */
   readonly storageAccount?: WindowsWebAppStorageAccount[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#timeouts WindowsWebApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#timeouts WindowsWebApp#timeouts}
   */
   readonly timeouts?: WindowsWebAppTimeouts;
 }
@@ -170,7 +170,7 @@ export interface WindowsWebAppSiteCredential {
 export function windowsWebAppSiteCredentialToTerraform(struct?: WindowsWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -180,7 +180,7 @@ export function windowsWebAppSiteCredentialToTerraform(struct?: WindowsWebAppSit
 export function windowsWebAppSiteCredentialToHclTerraform(struct?: WindowsWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -248,25 +248,25 @@ export interface WindowsWebAppAuthSettingsActiveDirectory {
   /**
   * Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The ID of the Client to use to authenticate with Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
 }
@@ -274,7 +274,7 @@ export interface WindowsWebAppAuthSettingsActiveDirectory {
 export function windowsWebAppAuthSettingsActiveDirectoryToTerraform(struct?: WindowsWebAppAuthSettingsActiveDirectoryOutputReference | WindowsWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -288,7 +288,7 @@ export function windowsWebAppAuthSettingsActiveDirectoryToTerraform(struct?: Win
 export function windowsWebAppAuthSettingsActiveDirectoryToHclTerraform(struct?: WindowsWebAppAuthSettingsActiveDirectoryOutputReference | WindowsWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -436,25 +436,25 @@ export interface WindowsWebAppAuthSettingsFacebook {
   /**
   * The App ID of the Facebook app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_id WindowsWebApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_id WindowsWebApp#app_id}
   */
   readonly appId: string;
   /**
   * The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_secret WindowsWebApp#app_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_secret WindowsWebApp#app_secret}
   */
   readonly appSecret?: string;
   /**
   * The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_secret_setting_name WindowsWebApp#app_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_secret_setting_name WindowsWebApp#app_secret_setting_name}
   */
   readonly appSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -462,7 +462,7 @@ export interface WindowsWebAppAuthSettingsFacebook {
 export function windowsWebAppAuthSettingsFacebookToTerraform(struct?: WindowsWebAppAuthSettingsFacebookOutputReference | WindowsWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_id: cdktn.stringToTerraform(struct!.appId),
@@ -476,7 +476,7 @@ export function windowsWebAppAuthSettingsFacebookToTerraform(struct?: WindowsWeb
 export function windowsWebAppAuthSettingsFacebookToHclTerraform(struct?: WindowsWebAppAuthSettingsFacebookOutputReference | WindowsWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_id: {
@@ -624,25 +624,25 @@ export interface WindowsWebAppAuthSettingsGithub {
   /**
   * The ID of the GitHub app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -650,7 +650,7 @@ export interface WindowsWebAppAuthSettingsGithub {
 export function windowsWebAppAuthSettingsGithubToTerraform(struct?: WindowsWebAppAuthSettingsGithubOutputReference | WindowsWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -664,7 +664,7 @@ export function windowsWebAppAuthSettingsGithubToTerraform(struct?: WindowsWebAp
 export function windowsWebAppAuthSettingsGithubToHclTerraform(struct?: WindowsWebAppAuthSettingsGithubOutputReference | WindowsWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -812,25 +812,25 @@ export interface WindowsWebAppAuthSettingsGoogle {
   /**
   * The OpenID Connect Client ID for the Google web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -838,7 +838,7 @@ export interface WindowsWebAppAuthSettingsGoogle {
 export function windowsWebAppAuthSettingsGoogleToTerraform(struct?: WindowsWebAppAuthSettingsGoogleOutputReference | WindowsWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -852,7 +852,7 @@ export function windowsWebAppAuthSettingsGoogleToTerraform(struct?: WindowsWebAp
 export function windowsWebAppAuthSettingsGoogleToHclTerraform(struct?: WindowsWebAppAuthSettingsGoogleOutputReference | WindowsWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1000,25 +1000,25 @@ export interface WindowsWebAppAuthSettingsMicrosoft {
   /**
   * The OAuth 2.0 client ID that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret WindowsWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#oauth_scopes WindowsWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -1026,7 +1026,7 @@ export interface WindowsWebAppAuthSettingsMicrosoft {
 export function windowsWebAppAuthSettingsMicrosoftToTerraform(struct?: WindowsWebAppAuthSettingsMicrosoftOutputReference | WindowsWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -1040,7 +1040,7 @@ export function windowsWebAppAuthSettingsMicrosoftToTerraform(struct?: WindowsWe
 export function windowsWebAppAuthSettingsMicrosoftToHclTerraform(struct?: WindowsWebAppAuthSettingsMicrosoftOutputReference | WindowsWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1188,19 +1188,19 @@ export interface WindowsWebAppAuthSettingsTwitter {
   /**
   * The OAuth 1.0a consumer key of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#consumer_key WindowsWebApp#consumer_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#consumer_key WindowsWebApp#consumer_key}
   */
   readonly consumerKey: string;
   /**
   * The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#consumer_secret WindowsWebApp#consumer_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#consumer_secret WindowsWebApp#consumer_secret}
   */
   readonly consumerSecret?: string;
   /**
   * The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#consumer_secret_setting_name WindowsWebApp#consumer_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#consumer_secret_setting_name WindowsWebApp#consumer_secret_setting_name}
   */
   readonly consumerSecretSettingName?: string;
 }
@@ -1208,7 +1208,7 @@ export interface WindowsWebAppAuthSettingsTwitter {
 export function windowsWebAppAuthSettingsTwitterToTerraform(struct?: WindowsWebAppAuthSettingsTwitterOutputReference | WindowsWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
@@ -1221,7 +1221,7 @@ export function windowsWebAppAuthSettingsTwitterToTerraform(struct?: WindowsWebA
 export function windowsWebAppAuthSettingsTwitterToHclTerraform(struct?: WindowsWebAppAuthSettingsTwitterOutputReference | WindowsWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consumer_key: {
@@ -1341,91 +1341,91 @@ export interface WindowsWebAppAuthSettings {
   /**
   * Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#additional_login_parameters WindowsWebApp#additional_login_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#additional_login_parameters WindowsWebApp#additional_login_parameters}
   */
   readonly additionalLoginParameters?: { [key: string]: string };
   /**
   * Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_external_redirect_urls WindowsWebApp#allowed_external_redirect_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_external_redirect_urls WindowsWebApp#allowed_external_redirect_urls}
   */
   readonly allowedExternalRedirectUrls?: string[];
   /**
   * The default authentication provider to use when multiple providers are configured. Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#default_provider WindowsWebApp#default_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#default_provider WindowsWebApp#default_provider}
   */
   readonly defaultProvider?: string;
   /**
   * Should the Authentication / Authorization feature be enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The OpenID Connect Issuer URI that represents the entity which issues access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#issuer WindowsWebApp#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#issuer WindowsWebApp#issuer}
   */
   readonly issuer?: string;
   /**
   * The RuntimeVersion of the Authentication / Authorization feature in use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#runtime_version WindowsWebApp#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#runtime_version WindowsWebApp#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to `72` hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_refresh_extension_hours WindowsWebApp#token_refresh_extension_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_refresh_extension_hours WindowsWebApp#token_refresh_extension_hours}
   */
   readonly tokenRefreshExtensionHours?: number;
   /**
   * Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_store_enabled WindowsWebApp#token_store_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_store_enabled WindowsWebApp#token_store_enabled}
   */
   readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#unauthenticated_client_action WindowsWebApp#unauthenticated_client_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#unauthenticated_client_action WindowsWebApp#unauthenticated_client_action}
   */
   readonly unauthenticatedClientAction?: string;
   /**
   * active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#active_directory WindowsWebApp#active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#active_directory WindowsWebApp#active_directory}
   */
   readonly activeDirectory?: WindowsWebAppAuthSettingsActiveDirectory;
   /**
   * facebook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#facebook WindowsWebApp#facebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#facebook WindowsWebApp#facebook}
   */
   readonly facebook?: WindowsWebAppAuthSettingsFacebook;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#github WindowsWebApp#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#github WindowsWebApp#github}
   */
   readonly github?: WindowsWebAppAuthSettingsGithub;
   /**
   * google block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#google WindowsWebApp#google}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#google WindowsWebApp#google}
   */
   readonly google?: WindowsWebAppAuthSettingsGoogle;
   /**
   * microsoft block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#microsoft WindowsWebApp#microsoft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#microsoft WindowsWebApp#microsoft}
   */
   readonly microsoft?: WindowsWebAppAuthSettingsMicrosoft;
   /**
   * twitter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#twitter WindowsWebApp#twitter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#twitter WindowsWebApp#twitter}
   */
   readonly twitter?: WindowsWebAppAuthSettingsTwitter;
 }
@@ -1433,7 +1433,7 @@ export interface WindowsWebAppAuthSettings {
 export function windowsWebAppAuthSettingsToTerraform(struct?: WindowsWebAppAuthSettingsOutputReference | WindowsWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_login_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalLoginParameters),
@@ -1458,7 +1458,7 @@ export function windowsWebAppAuthSettingsToTerraform(struct?: WindowsWebAppAuthS
 export function windowsWebAppAuthSettingsToHclTerraform(struct?: WindowsWebAppAuthSettingsOutputReference | WindowsWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_login_parameters: {
@@ -1914,73 +1914,73 @@ export interface WindowsWebAppAuthSettingsV2ActiveDirectoryV2 {
   /**
   * The list of allowed Applications for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_applications WindowsWebApp#allowed_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_applications WindowsWebApp#allowed_applications}
   */
   readonly allowedApplications?: string[];
   /**
   * Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The list of allowed Group Names for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_groups WindowsWebApp#allowed_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_groups WindowsWebApp#allowed_groups}
   */
   readonly allowedGroups?: string[];
   /**
   * The list of allowed Identities for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_identities WindowsWebApp#allowed_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_identities WindowsWebApp#allowed_identities}
   */
   readonly allowedIdentities?: string[];
   /**
   * The ID of the Client to use to authenticate with Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The thumbprint of the certificate used for signing purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_certificate_thumbprint WindowsWebApp#client_secret_certificate_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_certificate_thumbprint WindowsWebApp#client_secret_certificate_thumbprint}
   */
   readonly clientSecretCertificateThumbprint?: string;
   /**
   * The App Setting name that contains the client secret of the Client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * A list of Allowed Client Applications in the JWT Claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#jwt_allowed_client_applications WindowsWebApp#jwt_allowed_client_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#jwt_allowed_client_applications WindowsWebApp#jwt_allowed_client_applications}
   */
   readonly jwtAllowedClientApplications?: string[];
   /**
   * A list of Allowed Groups in the JWT Claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#jwt_allowed_groups WindowsWebApp#jwt_allowed_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#jwt_allowed_groups WindowsWebApp#jwt_allowed_groups}
   */
   readonly jwtAllowedGroups?: string[];
   /**
   * A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login_parameters WindowsWebApp#login_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login_parameters WindowsWebApp#login_parameters}
   */
   readonly loginParameters?: { [key: string]: string };
   /**
   * The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#tenant_auth_endpoint WindowsWebApp#tenant_auth_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#tenant_auth_endpoint WindowsWebApp#tenant_auth_endpoint}
   */
   readonly tenantAuthEndpoint: string;
   /**
   * Should the www-authenticate provider should be omitted from the request? Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#www_authentication_disabled WindowsWebApp#www_authentication_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#www_authentication_disabled WindowsWebApp#www_authentication_disabled}
   */
   readonly wwwAuthenticationDisabled?: boolean | cdktn.IResolvable;
 }
@@ -1988,7 +1988,7 @@ export interface WindowsWebAppAuthSettingsV2ActiveDirectoryV2 {
 export function windowsWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2ActiveDirectoryV2OutputReference | WindowsWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedApplications),
@@ -2010,7 +2010,7 @@ export function windowsWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?:
 export function windowsWebAppAuthSettingsV2ActiveDirectoryV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2ActiveDirectoryV2OutputReference | WindowsWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_applications: {
@@ -2379,13 +2379,13 @@ export interface WindowsWebAppAuthSettingsV2AppleV2 {
   /**
   * The OpenID Connect Client ID for the Apple web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for Apple Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
 }
@@ -2393,7 +2393,7 @@ export interface WindowsWebAppAuthSettingsV2AppleV2 {
 export function windowsWebAppAuthSettingsV2AppleV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2AppleV2OutputReference | WindowsWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2405,7 +2405,7 @@ export function windowsWebAppAuthSettingsV2AppleV2ToTerraform(struct?: WindowsWe
 export function windowsWebAppAuthSettingsV2AppleV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2AppleV2OutputReference | WindowsWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2499,7 +2499,7 @@ export interface WindowsWebAppAuthSettingsV2AzureStaticWebAppV2 {
   /**
   * The ID of the Client to use to authenticate with Azure Static Web App Authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
 }
@@ -2507,7 +2507,7 @@ export interface WindowsWebAppAuthSettingsV2AzureStaticWebAppV2 {
 export function windowsWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference | WindowsWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2518,7 +2518,7 @@ export function windowsWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct
 export function windowsWebAppAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference | WindowsWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2582,31 +2582,31 @@ export interface WindowsWebAppAuthSettingsV2CustomOidcV2 {
   /**
   * The ID of the Client to use to authenticate with this Custom OIDC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The name of the Custom OIDC Authentication Provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name: string;
   /**
   * The name of the claim that contains the users name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name_claim_type WindowsWebApp#name_claim_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name_claim_type WindowsWebApp#name_claim_type}
   */
   readonly nameClaimType?: string;
   /**
   * The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#openid_configuration_endpoint WindowsWebApp#openid_configuration_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#openid_configuration_endpoint WindowsWebApp#openid_configuration_endpoint}
   */
   readonly openidConfigurationEndpoint: string;
   /**
   * The list of the scopes that should be requested while authenticating.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#scopes WindowsWebApp#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#scopes WindowsWebApp#scopes}
   */
   readonly scopes?: string[];
 }
@@ -2614,7 +2614,7 @@ export interface WindowsWebAppAuthSettingsV2CustomOidcV2 {
 export function windowsWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2629,7 +2629,7 @@ export function windowsWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: Wind
 export function windowsWebAppAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2861,25 +2861,25 @@ export interface WindowsWebAppAuthSettingsV2FacebookV2 {
   /**
   * The App ID of the Facebook app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_id WindowsWebApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_id WindowsWebApp#app_id}
   */
   readonly appId: string;
   /**
   * The app setting name that contains the `app_secret` value used for Facebook Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_secret_setting_name WindowsWebApp#app_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_secret_setting_name WindowsWebApp#app_secret_setting_name}
   */
   readonly appSecretSettingName: string;
   /**
   * The version of the Facebook API to be used while logging in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#graph_api_version WindowsWebApp#graph_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#graph_api_version WindowsWebApp#graph_api_version}
   */
   readonly graphApiVersion?: string;
   /**
   * Specifies a list of scopes to be requested as part of Facebook Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -2887,7 +2887,7 @@ export interface WindowsWebAppAuthSettingsV2FacebookV2 {
 export function windowsWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2FacebookV2OutputReference | WindowsWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_id: cdktn.stringToTerraform(struct!.appId),
@@ -2901,7 +2901,7 @@ export function windowsWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: Window
 export function windowsWebAppAuthSettingsV2FacebookV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2FacebookV2OutputReference | WindowsWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_id: {
@@ -3046,19 +3046,19 @@ export interface WindowsWebAppAuthSettingsV2GithubV2 {
   /**
   * The ID of the GitHub app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for GitHub Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3066,7 +3066,7 @@ export interface WindowsWebAppAuthSettingsV2GithubV2 {
 export function windowsWebAppAuthSettingsV2GithubV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2GithubV2OutputReference | WindowsWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -3079,7 +3079,7 @@ export function windowsWebAppAuthSettingsV2GithubV2ToTerraform(struct?: WindowsW
 export function windowsWebAppAuthSettingsV2GithubV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2GithubV2OutputReference | WindowsWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -3196,25 +3196,25 @@ export interface WindowsWebAppAuthSettingsV2GoogleV2 {
   /**
   * Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The OpenID Connect Client ID for the Google web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for Google Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3222,7 +3222,7 @@ export interface WindowsWebAppAuthSettingsV2GoogleV2 {
 export function windowsWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2GoogleV2OutputReference | WindowsWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -3236,7 +3236,7 @@ export function windowsWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: WindowsW
 export function windowsWebAppAuthSettingsV2GoogleV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2GoogleV2OutputReference | WindowsWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -3381,67 +3381,67 @@ export interface WindowsWebAppAuthSettingsV2Login {
   /**
   * External URLs that can be redirected to as part of logging in or logging out of the app. This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_external_redirect_urls WindowsWebApp#allowed_external_redirect_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_external_redirect_urls WindowsWebApp#allowed_external_redirect_urls}
   */
   readonly allowedExternalRedirectUrls?: string[];
   /**
   * The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#cookie_expiration_convention WindowsWebApp#cookie_expiration_convention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#cookie_expiration_convention WindowsWebApp#cookie_expiration_convention}
   */
   readonly cookieExpirationConvention?: string;
   /**
   * The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#cookie_expiration_time WindowsWebApp#cookie_expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#cookie_expiration_time WindowsWebApp#cookie_expiration_time}
   */
   readonly cookieExpirationTime?: string;
   /**
   * The endpoint to which logout requests should be made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#logout_endpoint WindowsWebApp#logout_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#logout_endpoint WindowsWebApp#logout_endpoint}
   */
   readonly logoutEndpoint?: string;
   /**
   * The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#nonce_expiration_time WindowsWebApp#nonce_expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#nonce_expiration_time WindowsWebApp#nonce_expiration_time}
   */
   readonly nonceExpirationTime?: string;
   /**
   * Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#preserve_url_fragments_for_logins WindowsWebApp#preserve_url_fragments_for_logins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#preserve_url_fragments_for_logins WindowsWebApp#preserve_url_fragments_for_logins}
   */
   readonly preserveUrlFragmentsForLogins?: boolean | cdktn.IResolvable;
   /**
   * The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to `72` hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_refresh_extension_time WindowsWebApp#token_refresh_extension_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_refresh_extension_time WindowsWebApp#token_refresh_extension_time}
   */
   readonly tokenRefreshExtensionTime?: number;
   /**
   * Should the Token Store configuration Enabled. Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_store_enabled WindowsWebApp#token_store_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_store_enabled WindowsWebApp#token_store_enabled}
   */
   readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The directory path in the App Filesystem in which the tokens will be stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_store_path WindowsWebApp#token_store_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_store_path WindowsWebApp#token_store_path}
   */
   readonly tokenStorePath?: string;
   /**
   * The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#token_store_sas_setting_name WindowsWebApp#token_store_sas_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#token_store_sas_setting_name WindowsWebApp#token_store_sas_setting_name}
   */
   readonly tokenStoreSasSettingName?: string;
   /**
   * Should the nonce be validated while completing the login flow. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#validate_nonce WindowsWebApp#validate_nonce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#validate_nonce WindowsWebApp#validate_nonce}
   */
   readonly validateNonce?: boolean | cdktn.IResolvable;
 }
@@ -3449,7 +3449,7 @@ export interface WindowsWebAppAuthSettingsV2Login {
 export function windowsWebAppAuthSettingsV2LoginToTerraform(struct?: WindowsWebAppAuthSettingsV2LoginOutputReference | WindowsWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_external_redirect_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
@@ -3470,7 +3470,7 @@ export function windowsWebAppAuthSettingsV2LoginToTerraform(struct?: WindowsWebA
 export function windowsWebAppAuthSettingsV2LoginToHclTerraform(struct?: WindowsWebAppAuthSettingsV2LoginOutputReference | WindowsWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_external_redirect_urls: {
@@ -3817,25 +3817,25 @@ export interface WindowsWebAppAuthSettingsV2MicrosoftV2 {
   /**
   * Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_audiences WindowsWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The OAuth 2.0 client ID that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_id WindowsWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#client_secret_setting_name WindowsWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * The list of Login scopes that will be requested as part of Microsoft Account authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login_scopes WindowsWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3843,7 +3843,7 @@ export interface WindowsWebAppAuthSettingsV2MicrosoftV2 {
 export function windowsWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2MicrosoftV2OutputReference | WindowsWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -3857,7 +3857,7 @@ export function windowsWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: Windo
 export function windowsWebAppAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2MicrosoftV2OutputReference | WindowsWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -4002,13 +4002,13 @@ export interface WindowsWebAppAuthSettingsV2TwitterV2 {
   /**
   * The OAuth 1.0a consumer key of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#consumer_key WindowsWebApp#consumer_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#consumer_key WindowsWebApp#consumer_key}
   */
   readonly consumerKey: string;
   /**
   * The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#consumer_secret_setting_name WindowsWebApp#consumer_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#consumer_secret_setting_name WindowsWebApp#consumer_secret_setting_name}
   */
   readonly consumerSecretSettingName: string;
 }
@@ -4016,7 +4016,7 @@ export interface WindowsWebAppAuthSettingsV2TwitterV2 {
 export function windowsWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2TwitterV2OutputReference | WindowsWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
@@ -4028,7 +4028,7 @@ export function windowsWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: Windows
 export function windowsWebAppAuthSettingsV2TwitterV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2TwitterV2OutputReference | WindowsWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consumer_key: {
@@ -4117,133 +4117,133 @@ export interface WindowsWebAppAuthSettingsV2 {
   /**
   * Should the AuthV2 Settings be enabled. Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#auth_enabled WindowsWebApp#auth_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#auth_enabled WindowsWebApp#auth_enabled}
   */
   readonly authEnabled?: boolean | cdktn.IResolvable;
   /**
   * The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#config_file_path WindowsWebApp#config_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#config_file_path WindowsWebApp#config_file_path}
   */
   readonly configFilePath?: string;
   /**
   * The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#default_provider WindowsWebApp#default_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#default_provider WindowsWebApp#default_provider}
   */
   readonly defaultProvider?: string;
   /**
   * The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#excluded_paths WindowsWebApp#excluded_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#excluded_paths WindowsWebApp#excluded_paths}
   */
   readonly excludedPaths?: string[];
   /**
   * The convention used to determine the url of the request made. Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#forward_proxy_convention WindowsWebApp#forward_proxy_convention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#forward_proxy_convention WindowsWebApp#forward_proxy_convention}
   */
   readonly forwardProxyConvention?: string;
   /**
   * The name of the header containing the host of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#forward_proxy_custom_host_header_name WindowsWebApp#forward_proxy_custom_host_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#forward_proxy_custom_host_header_name WindowsWebApp#forward_proxy_custom_host_header_name}
   */
   readonly forwardProxyCustomHostHeaderName?: string;
   /**
   * The name of the header containing the scheme of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#forward_proxy_custom_scheme_header_name WindowsWebApp#forward_proxy_custom_scheme_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#forward_proxy_custom_scheme_header_name WindowsWebApp#forward_proxy_custom_scheme_header_name}
   */
   readonly forwardProxyCustomSchemeHeaderName?: string;
   /**
   * The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#http_route_api_prefix WindowsWebApp#http_route_api_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#http_route_api_prefix WindowsWebApp#http_route_api_prefix}
   */
   readonly httpRouteApiPrefix?: string;
   /**
   * Should the authentication flow be used for all requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#require_authentication WindowsWebApp#require_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#require_authentication WindowsWebApp#require_authentication}
   */
   readonly requireAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Should HTTPS be required on connections? Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#require_https WindowsWebApp#require_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#require_https WindowsWebApp#require_https}
   */
   readonly requireHttps?: boolean | cdktn.IResolvable;
   /**
   * The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#runtime_version WindowsWebApp#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#runtime_version WindowsWebApp#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The action to take for requests made without authentication. Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#unauthenticated_action WindowsWebApp#unauthenticated_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#unauthenticated_action WindowsWebApp#unauthenticated_action}
   */
   readonly unauthenticatedAction?: string;
   /**
   * active_directory_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#active_directory_v2 WindowsWebApp#active_directory_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#active_directory_v2 WindowsWebApp#active_directory_v2}
   */
   readonly activeDirectoryV2?: WindowsWebAppAuthSettingsV2ActiveDirectoryV2;
   /**
   * apple_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#apple_v2 WindowsWebApp#apple_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#apple_v2 WindowsWebApp#apple_v2}
   */
   readonly appleV2?: WindowsWebAppAuthSettingsV2AppleV2;
   /**
   * azure_static_web_app_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#azure_static_web_app_v2 WindowsWebApp#azure_static_web_app_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#azure_static_web_app_v2 WindowsWebApp#azure_static_web_app_v2}
   */
   readonly azureStaticWebAppV2?: WindowsWebAppAuthSettingsV2AzureStaticWebAppV2;
   /**
   * custom_oidc_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#custom_oidc_v2 WindowsWebApp#custom_oidc_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#custom_oidc_v2 WindowsWebApp#custom_oidc_v2}
   */
   readonly customOidcV2?: WindowsWebAppAuthSettingsV2CustomOidcV2[] | cdktn.IResolvable;
   /**
   * facebook_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#facebook_v2 WindowsWebApp#facebook_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#facebook_v2 WindowsWebApp#facebook_v2}
   */
   readonly facebookV2?: WindowsWebAppAuthSettingsV2FacebookV2;
   /**
   * github_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#github_v2 WindowsWebApp#github_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#github_v2 WindowsWebApp#github_v2}
   */
   readonly githubV2?: WindowsWebAppAuthSettingsV2GithubV2;
   /**
   * google_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#google_v2 WindowsWebApp#google_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#google_v2 WindowsWebApp#google_v2}
   */
   readonly googleV2?: WindowsWebAppAuthSettingsV2GoogleV2;
   /**
   * login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#login WindowsWebApp#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#login WindowsWebApp#login}
   */
   readonly login: WindowsWebAppAuthSettingsV2Login;
   /**
   * microsoft_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#microsoft_v2 WindowsWebApp#microsoft_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#microsoft_v2 WindowsWebApp#microsoft_v2}
   */
   readonly microsoftV2?: WindowsWebAppAuthSettingsV2MicrosoftV2;
   /**
   * twitter_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#twitter_v2 WindowsWebApp#twitter_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#twitter_v2 WindowsWebApp#twitter_v2}
   */
   readonly twitterV2?: WindowsWebAppAuthSettingsV2TwitterV2;
 }
@@ -4251,7 +4251,7 @@ export interface WindowsWebAppAuthSettingsV2 {
 export function windowsWebAppAuthSettingsV2ToTerraform(struct?: WindowsWebAppAuthSettingsV2OutputReference | WindowsWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auth_enabled: cdktn.booleanToTerraform(struct!.authEnabled),
@@ -4283,7 +4283,7 @@ export function windowsWebAppAuthSettingsV2ToTerraform(struct?: WindowsWebAppAut
 export function windowsWebAppAuthSettingsV2ToHclTerraform(struct?: WindowsWebAppAuthSettingsV2OutputReference | WindowsWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auth_enabled: {
@@ -4935,31 +4935,31 @@ export interface WindowsWebAppBackupSchedule {
   /**
   * How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#frequency_interval WindowsWebApp#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#frequency_interval WindowsWebApp#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
   * The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#frequency_unit WindowsWebApp#frequency_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#frequency_unit WindowsWebApp#frequency_unit}
   */
   readonly frequencyUnit: string;
   /**
   * Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#keep_at_least_one_backup WindowsWebApp#keep_at_least_one_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#keep_at_least_one_backup WindowsWebApp#keep_at_least_one_backup}
   */
   readonly keepAtLeastOneBackup?: boolean | cdktn.IResolvable;
   /**
   * After how many days backups should be deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#retention_period_days WindowsWebApp#retention_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#retention_period_days WindowsWebApp#retention_period_days}
   */
   readonly retentionPeriodDays?: number;
   /**
   * When the schedule should start working in RFC-3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#start_time WindowsWebApp#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#start_time WindowsWebApp#start_time}
   */
   readonly startTime?: string;
 }
@@ -4967,7 +4967,7 @@ export interface WindowsWebAppBackupSchedule {
 export function windowsWebAppBackupScheduleToTerraform(struct?: WindowsWebAppBackupScheduleOutputReference | WindowsWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     frequency_interval: cdktn.numberToTerraform(struct!.frequencyInterval),
@@ -4982,7 +4982,7 @@ export function windowsWebAppBackupScheduleToTerraform(struct?: WindowsWebAppBac
 export function windowsWebAppBackupScheduleToHclTerraform(struct?: WindowsWebAppBackupScheduleOutputReference | WindowsWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     frequency_interval: {
@@ -5160,25 +5160,25 @@ export interface WindowsWebAppBackup {
   /**
   * Should this backup job be enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#enabled WindowsWebApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name which should be used for this Backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name: string;
   /**
   * The SAS URL to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#storage_account_url WindowsWebApp#storage_account_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#storage_account_url WindowsWebApp#storage_account_url}
   */
   readonly storageAccountUrl: string;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#schedule WindowsWebApp#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#schedule WindowsWebApp#schedule}
   */
   readonly schedule: WindowsWebAppBackupSchedule;
 }
@@ -5186,7 +5186,7 @@ export interface WindowsWebAppBackup {
 export function windowsWebAppBackupToTerraform(struct?: WindowsWebAppBackupOutputReference | WindowsWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -5200,7 +5200,7 @@ export function windowsWebAppBackupToTerraform(struct?: WindowsWebAppBackupOutpu
 export function windowsWebAppBackupToHclTerraform(struct?: WindowsWebAppBackupOutputReference | WindowsWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -5342,19 +5342,19 @@ export interface WindowsWebAppConnectionString {
   /**
   * The name which should be used for this Connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name: string;
   /**
   * Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#type WindowsWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#type WindowsWebApp#type}
   */
   readonly type: string;
   /**
   * The connection string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#value WindowsWebApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#value WindowsWebApp#value}
   */
   readonly value: string;
 }
@@ -5362,7 +5362,7 @@ export interface WindowsWebAppConnectionString {
 export function windowsWebAppConnectionStringToTerraform(struct?: WindowsWebAppConnectionString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5375,7 +5375,7 @@ export function windowsWebAppConnectionStringToTerraform(struct?: WindowsWebAppC
 export function windowsWebAppConnectionStringToHclTerraform(struct?: WindowsWebAppConnectionString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5519,11 +5519,11 @@ export class WindowsWebAppConnectionStringList extends cdktn.ComplexList {
 }
 export interface WindowsWebAppIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#identity_ids WindowsWebApp#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#identity_ids WindowsWebApp#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#type WindowsWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#type WindowsWebApp#type}
   */
   readonly type: string;
 }
@@ -5531,7 +5531,7 @@ export interface WindowsWebAppIdentity {
 export function windowsWebAppIdentityToTerraform(struct?: WindowsWebAppIdentityOutputReference | WindowsWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -5543,7 +5543,7 @@ export function windowsWebAppIdentityToTerraform(struct?: WindowsWebAppIdentityO
 export function windowsWebAppIdentityToHclTerraform(struct?: WindowsWebAppIdentityOutputReference | WindowsWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -5643,15 +5643,15 @@ export class WindowsWebAppIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface WindowsWebAppLogsApplicationLogsAzureBlobStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#level WindowsWebApp#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#level WindowsWebApp#level}
   */
   readonly level: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
   */
   readonly retentionInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#sas_url WindowsWebApp#sas_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#sas_url WindowsWebApp#sas_url}
   */
   readonly sasUrl: string;
 }
@@ -5659,7 +5659,7 @@ export interface WindowsWebAppLogsApplicationLogsAzureBlobStorage {
 export function windowsWebAppLogsApplicationLogsAzureBlobStorageToTerraform(struct?: WindowsWebAppLogsApplicationLogsAzureBlobStorageOutputReference | WindowsWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     level: cdktn.stringToTerraform(struct!.level),
@@ -5672,7 +5672,7 @@ export function windowsWebAppLogsApplicationLogsAzureBlobStorageToTerraform(stru
 export function windowsWebAppLogsApplicationLogsAzureBlobStorageToHclTerraform(struct?: WindowsWebAppLogsApplicationLogsAzureBlobStorageOutputReference | WindowsWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     level: {
@@ -5784,13 +5784,13 @@ export class WindowsWebAppLogsApplicationLogsAzureBlobStorageOutputReference ext
 }
 export interface WindowsWebAppLogsApplicationLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#file_system_level WindowsWebApp#file_system_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#file_system_level WindowsWebApp#file_system_level}
   */
   readonly fileSystemLevel: string;
   /**
   * azure_blob_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#azure_blob_storage WindowsWebApp#azure_blob_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#azure_blob_storage WindowsWebApp#azure_blob_storage}
   */
   readonly azureBlobStorage?: WindowsWebAppLogsApplicationLogsAzureBlobStorage;
 }
@@ -5798,7 +5798,7 @@ export interface WindowsWebAppLogsApplicationLogs {
 export function windowsWebAppLogsApplicationLogsToTerraform(struct?: WindowsWebAppLogsApplicationLogsOutputReference | WindowsWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_system_level: cdktn.stringToTerraform(struct!.fileSystemLevel),
@@ -5810,7 +5810,7 @@ export function windowsWebAppLogsApplicationLogsToTerraform(struct?: WindowsWebA
 export function windowsWebAppLogsApplicationLogsToHclTerraform(struct?: WindowsWebAppLogsApplicationLogsOutputReference | WindowsWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_system_level: {
@@ -5900,11 +5900,11 @@ export class WindowsWebAppLogsApplicationLogsOutputReference extends cdktn.Compl
 }
 export interface WindowsWebAppLogsHttpLogsAzureBlobStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
   */
   readonly retentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#sas_url WindowsWebApp#sas_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#sas_url WindowsWebApp#sas_url}
   */
   readonly sasUrl: string;
 }
@@ -5912,7 +5912,7 @@ export interface WindowsWebAppLogsHttpLogsAzureBlobStorage {
 export function windowsWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: WindowsWebAppLogsHttpLogsAzureBlobStorageOutputReference | WindowsWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
@@ -5924,7 +5924,7 @@ export function windowsWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: Wi
 export function windowsWebAppLogsHttpLogsAzureBlobStorageToHclTerraform(struct?: WindowsWebAppLogsHttpLogsAzureBlobStorageOutputReference | WindowsWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retention_in_days: {
@@ -6014,11 +6014,11 @@ export class WindowsWebAppLogsHttpLogsAzureBlobStorageOutputReference extends cd
 }
 export interface WindowsWebAppLogsHttpLogsFileSystem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#retention_in_days WindowsWebApp#retention_in_days}
   */
   readonly retentionInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#retention_in_mb WindowsWebApp#retention_in_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#retention_in_mb WindowsWebApp#retention_in_mb}
   */
   readonly retentionInMb: number;
 }
@@ -6026,7 +6026,7 @@ export interface WindowsWebAppLogsHttpLogsFileSystem {
 export function windowsWebAppLogsHttpLogsFileSystemToTerraform(struct?: WindowsWebAppLogsHttpLogsFileSystemOutputReference | WindowsWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
@@ -6038,7 +6038,7 @@ export function windowsWebAppLogsHttpLogsFileSystemToTerraform(struct?: WindowsW
 export function windowsWebAppLogsHttpLogsFileSystemToHclTerraform(struct?: WindowsWebAppLogsHttpLogsFileSystemOutputReference | WindowsWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retention_in_days: {
@@ -6127,13 +6127,13 @@ export interface WindowsWebAppLogsHttpLogs {
   /**
   * azure_blob_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#azure_blob_storage WindowsWebApp#azure_blob_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#azure_blob_storage WindowsWebApp#azure_blob_storage}
   */
   readonly azureBlobStorage?: WindowsWebAppLogsHttpLogsAzureBlobStorage;
   /**
   * file_system block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#file_system WindowsWebApp#file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#file_system WindowsWebApp#file_system}
   */
   readonly fileSystem?: WindowsWebAppLogsHttpLogsFileSystem;
 }
@@ -6141,7 +6141,7 @@ export interface WindowsWebAppLogsHttpLogs {
 export function windowsWebAppLogsHttpLogsToTerraform(struct?: WindowsWebAppLogsHttpLogsOutputReference | WindowsWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_blob_storage: windowsWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct!.azureBlobStorage),
@@ -6153,7 +6153,7 @@ export function windowsWebAppLogsHttpLogsToTerraform(struct?: WindowsWebAppLogsH
 export function windowsWebAppLogsHttpLogsToHclTerraform(struct?: WindowsWebAppLogsHttpLogsOutputReference | WindowsWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_blob_storage: {
@@ -6246,23 +6246,23 @@ export class WindowsWebAppLogsHttpLogsOutputReference extends cdktn.ComplexObjec
 }
 export interface WindowsWebAppLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#detailed_error_messages WindowsWebApp#detailed_error_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#detailed_error_messages WindowsWebApp#detailed_error_messages}
   */
   readonly detailedErrorMessages?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#failed_request_tracing WindowsWebApp#failed_request_tracing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#failed_request_tracing WindowsWebApp#failed_request_tracing}
   */
   readonly failedRequestTracing?: boolean | cdktn.IResolvable;
   /**
   * application_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#application_logs WindowsWebApp#application_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#application_logs WindowsWebApp#application_logs}
   */
   readonly applicationLogs?: WindowsWebAppLogsApplicationLogs;
   /**
   * http_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#http_logs WindowsWebApp#http_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#http_logs WindowsWebApp#http_logs}
   */
   readonly httpLogs?: WindowsWebAppLogsHttpLogs;
 }
@@ -6270,7 +6270,7 @@ export interface WindowsWebAppLogs {
 export function windowsWebAppLogsToTerraform(struct?: WindowsWebAppLogsOutputReference | WindowsWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     detailed_error_messages: cdktn.booleanToTerraform(struct!.detailedErrorMessages),
@@ -6284,7 +6284,7 @@ export function windowsWebAppLogsToTerraform(struct?: WindowsWebAppLogsOutputRef
 export function windowsWebAppLogsToHclTerraform(struct?: WindowsWebAppLogsOutputReference | WindowsWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     detailed_error_messages: {
@@ -6433,67 +6433,67 @@ export class WindowsWebAppLogsOutputReference extends cdktn.ComplexObject {
 }
 export interface WindowsWebAppSiteConfigApplicationStack {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#current_stack WindowsWebApp#current_stack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#current_stack WindowsWebApp#current_stack}
   */
   readonly currentStack?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#docker_image_name WindowsWebApp#docker_image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#docker_image_name WindowsWebApp#docker_image_name}
   */
   readonly dockerImageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#docker_registry_password WindowsWebApp#docker_registry_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#docker_registry_password WindowsWebApp#docker_registry_password}
   */
   readonly dockerRegistryPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#docker_registry_url WindowsWebApp#docker_registry_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#docker_registry_url WindowsWebApp#docker_registry_url}
   */
   readonly dockerRegistryUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#docker_registry_username WindowsWebApp#docker_registry_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#docker_registry_username WindowsWebApp#docker_registry_username}
   */
   readonly dockerRegistryUsername?: string;
   /**
   * The version of DotNetCore to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#dotnet_core_version WindowsWebApp#dotnet_core_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#dotnet_core_version WindowsWebApp#dotnet_core_version}
   */
   readonly dotnetCoreVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#dotnet_version WindowsWebApp#dotnet_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#dotnet_version WindowsWebApp#dotnet_version}
   */
   readonly dotnetVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#java_container WindowsWebApp#java_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#java_container WindowsWebApp#java_container}
   */
   readonly javaContainer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#java_container_version WindowsWebApp#java_container_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#java_container_version WindowsWebApp#java_container_version}
   */
   readonly javaContainerVersion?: string;
   /**
   * Should the application use the embedded web server for the version of Java in use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#java_embedded_server_enabled WindowsWebApp#java_embedded_server_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#java_embedded_server_enabled WindowsWebApp#java_embedded_server_enabled}
   */
   readonly javaEmbeddedServerEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#java_version WindowsWebApp#java_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#java_version WindowsWebApp#java_version}
   */
   readonly javaVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#node_version WindowsWebApp#node_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#node_version WindowsWebApp#node_version}
   */
   readonly nodeVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#php_version WindowsWebApp#php_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#php_version WindowsWebApp#php_version}
   */
   readonly phpVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#python WindowsWebApp#python}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#python WindowsWebApp#python}
   */
   readonly python?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#tomcat_version WindowsWebApp#tomcat_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#tomcat_version WindowsWebApp#tomcat_version}
   */
   readonly tomcatVersion?: string;
 }
@@ -6501,7 +6501,7 @@ export interface WindowsWebAppSiteConfigApplicationStack {
 export function windowsWebAppSiteConfigApplicationStackToTerraform(struct?: WindowsWebAppSiteConfigApplicationStackOutputReference | WindowsWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     current_stack: cdktn.stringToTerraform(struct!.currentStack),
@@ -6526,7 +6526,7 @@ export function windowsWebAppSiteConfigApplicationStackToTerraform(struct?: Wind
 export function windowsWebAppSiteConfigApplicationStackToHclTerraform(struct?: WindowsWebAppSiteConfigApplicationStackOutputReference | WindowsWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     current_stack: {
@@ -6983,11 +6983,11 @@ export class WindowsWebAppSiteConfigApplicationStackOutputReference extends cdkt
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingActionCustomAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#executable WindowsWebApp#executable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#executable WindowsWebApp#executable}
   */
   readonly executable: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#parameters WindowsWebApp#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#parameters WindowsWebApp#parameters}
   */
   readonly parameters?: string;
 }
@@ -6995,7 +6995,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingActionCustomAction {
 export function windowsWebAppSiteConfigAutoHealSettingActionCustomActionToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingActionCustomActionOutputReference | WindowsWebAppSiteConfigAutoHealSettingActionCustomAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     executable: cdktn.stringToTerraform(struct!.executable),
@@ -7007,7 +7007,7 @@ export function windowsWebAppSiteConfigAutoHealSettingActionCustomActionToTerraf
 export function windowsWebAppSiteConfigAutoHealSettingActionCustomActionToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingActionCustomActionOutputReference | WindowsWebAppSiteConfigAutoHealSettingActionCustomAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     executable: {
@@ -7097,17 +7097,17 @@ export class WindowsWebAppSiteConfigAutoHealSettingActionCustomActionOutputRefer
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#action_type WindowsWebApp#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#action_type WindowsWebApp#action_type}
   */
   readonly actionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#minimum_process_execution_time WindowsWebApp#minimum_process_execution_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#minimum_process_execution_time WindowsWebApp#minimum_process_execution_time}
   */
   readonly minimumProcessExecutionTime?: string;
   /**
   * custom_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#custom_action WindowsWebApp#custom_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#custom_action WindowsWebApp#custom_action}
   */
   readonly customAction?: WindowsWebAppSiteConfigAutoHealSettingActionCustomAction;
 }
@@ -7115,7 +7115,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingAction {
 export function windowsWebAppSiteConfigAutoHealSettingActionToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingActionOutputReference | WindowsWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_type: cdktn.stringToTerraform(struct!.actionType),
@@ -7128,7 +7128,7 @@ export function windowsWebAppSiteConfigAutoHealSettingActionToTerraform(struct?:
 export function windowsWebAppSiteConfigAutoHealSettingActionToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingActionOutputReference | WindowsWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_type: {
@@ -7246,11 +7246,11 @@ export class WindowsWebAppSiteConfigAutoHealSettingActionOutputReference extends
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingTriggerRequests {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#count WindowsWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#count WindowsWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
   */
   readonly interval: string;
 }
@@ -7258,7 +7258,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingTriggerRequests {
 export function windowsWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference | WindowsWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7270,7 +7270,7 @@ export function windowsWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform
 export function windowsWebAppSiteConfigAutoHealSettingTriggerRequestsToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference | WindowsWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7357,15 +7357,15 @@ export class WindowsWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReferenc
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#count WindowsWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#count WindowsWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#time_taken WindowsWebApp#time_taken}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#time_taken WindowsWebApp#time_taken}
   */
   readonly timeTaken: string;
 }
@@ -7373,7 +7373,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest {
 export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7386,7 +7386,7 @@ export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerraf
 export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7498,19 +7498,19 @@ export class WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputRefer
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#count WindowsWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#count WindowsWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#path WindowsWebApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#path WindowsWebApp#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#time_taken WindowsWebApp#time_taken}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#time_taken WindowsWebApp#time_taken}
   */
   readonly timeTaken: string;
 }
@@ -7518,7 +7518,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPat
 export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7532,7 +7532,7 @@ export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 export function windowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7704,27 +7704,27 @@ export class WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathLis
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#count WindowsWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#count WindowsWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#interval WindowsWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#path WindowsWebApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#path WindowsWebApp#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#status_code_range WindowsWebApp#status_code_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#status_code_range WindowsWebApp#status_code_range}
   */
   readonly statusCodeRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#sub_status WindowsWebApp#sub_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#sub_status WindowsWebApp#sub_status}
   */
   readonly subStatus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#win32_status_code WindowsWebApp#win32_status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#win32_status_code WindowsWebApp#win32_status_code}
   */
   readonly win32StatusCode?: number;
 }
@@ -7732,7 +7732,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCode {
 export function windowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7748,7 +7748,7 @@ export function windowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerrafo
 export function windowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7976,31 +7976,31 @@ export class WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCodeList extends
 }
 export interface WindowsWebAppSiteConfigAutoHealSettingTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#private_memory_kb WindowsWebApp#private_memory_kb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#private_memory_kb WindowsWebApp#private_memory_kb}
   */
   readonly privateMemoryKb?: number;
   /**
   * requests block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#requests WindowsWebApp#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#requests WindowsWebApp#requests}
   */
   readonly requests?: WindowsWebAppSiteConfigAutoHealSettingTriggerRequests;
   /**
   * slow_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#slow_request WindowsWebApp#slow_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#slow_request WindowsWebApp#slow_request}
   */
   readonly slowRequest?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequest;
   /**
   * slow_request_with_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#slow_request_with_path WindowsWebApp#slow_request_with_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#slow_request_with_path WindowsWebApp#slow_request_with_path}
   */
   readonly slowRequestWithPath?: WindowsWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktn.IResolvable;
   /**
   * status_code block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#status_code WindowsWebApp#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#status_code WindowsWebApp#status_code}
   */
   readonly statusCode?: WindowsWebAppSiteConfigAutoHealSettingTriggerStatusCode[] | cdktn.IResolvable;
 }
@@ -8008,7 +8008,7 @@ export interface WindowsWebAppSiteConfigAutoHealSettingTrigger {
 export function windowsWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerOutputReference | WindowsWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     private_memory_kb: cdktn.numberToTerraform(struct!.privateMemoryKb),
@@ -8023,7 +8023,7 @@ export function windowsWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?
 export function windowsWebAppSiteConfigAutoHealSettingTriggerToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingTriggerOutputReference | WindowsWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     private_memory_kb: {
@@ -8202,13 +8202,13 @@ export interface WindowsWebAppSiteConfigAutoHealSetting {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#action WindowsWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#action WindowsWebApp#action}
   */
   readonly action: WindowsWebAppSiteConfigAutoHealSettingAction;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#trigger WindowsWebApp#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#trigger WindowsWebApp#trigger}
   */
   readonly trigger: WindowsWebAppSiteConfigAutoHealSettingTrigger;
 }
@@ -8216,7 +8216,7 @@ export interface WindowsWebAppSiteConfigAutoHealSetting {
 export function windowsWebAppSiteConfigAutoHealSettingToTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingOutputReference | WindowsWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: windowsWebAppSiteConfigAutoHealSettingActionToTerraform(struct!.action),
@@ -8228,7 +8228,7 @@ export function windowsWebAppSiteConfigAutoHealSettingToTerraform(struct?: Windo
 export function windowsWebAppSiteConfigAutoHealSettingToHclTerraform(struct?: WindowsWebAppSiteConfigAutoHealSettingOutputReference | WindowsWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -8317,13 +8317,13 @@ export interface WindowsWebAppSiteConfigCors {
   /**
   * Specifies a list of origins that should be allowed to make cross-origin calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#allowed_origins WindowsWebApp#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#allowed_origins WindowsWebApp#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Are credentials allowed in CORS requests? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#support_credentials WindowsWebApp#support_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#support_credentials WindowsWebApp#support_credentials}
   */
   readonly supportCredentials?: boolean | cdktn.IResolvable;
 }
@@ -8331,7 +8331,7 @@ export interface WindowsWebAppSiteConfigCors {
 export function windowsWebAppSiteConfigCorsToTerraform(struct?: WindowsWebAppSiteConfigCorsOutputReference | WindowsWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
@@ -8343,7 +8343,7 @@ export function windowsWebAppSiteConfigCorsToTerraform(struct?: WindowsWebAppSit
 export function windowsWebAppSiteConfigCorsToHclTerraform(struct?: WindowsWebAppSiteConfigCorsOutputReference | WindowsWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_origins: {
@@ -8436,15 +8436,15 @@ export class WindowsWebAppSiteConfigCorsOutputReference extends cdktn.ComplexObj
 }
 export interface WindowsWebAppSiteConfigHandlerMapping {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#arguments WindowsWebApp#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#arguments WindowsWebApp#arguments}
   */
   readonly arguments?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#extension WindowsWebApp#extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#extension WindowsWebApp#extension}
   */
   readonly extension: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#script_processor_path WindowsWebApp#script_processor_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#script_processor_path WindowsWebApp#script_processor_path}
   */
   readonly scriptProcessorPath: string;
 }
@@ -8452,7 +8452,7 @@ export interface WindowsWebAppSiteConfigHandlerMapping {
 export function windowsWebAppSiteConfigHandlerMappingToTerraform(struct?: WindowsWebAppSiteConfigHandlerMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arguments: cdktn.stringToTerraform(struct!.arguments),
@@ -8465,7 +8465,7 @@ export function windowsWebAppSiteConfigHandlerMappingToTerraform(struct?: Window
 export function windowsWebAppSiteConfigHandlerMappingToHclTerraform(struct?: WindowsWebAppSiteConfigHandlerMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arguments: {
@@ -8612,19 +8612,19 @@ export class WindowsWebAppSiteConfigHandlerMappingList extends cdktn.ComplexList
 }
 export interface WindowsWebAppSiteConfigIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_azure_fdid WindowsWebApp#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_azure_fdid WindowsWebApp#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_fd_health_probe WindowsWebApp#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_fd_health_probe WindowsWebApp#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_forwarded_for WindowsWebApp#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_forwarded_for WindowsWebApp#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_forwarded_host WindowsWebApp#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_forwarded_host WindowsWebApp#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -8632,7 +8632,7 @@ export interface WindowsWebAppSiteConfigIpRestrictionHeaders {
 export function windowsWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: WindowsWebAppSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
@@ -8646,7 +8646,7 @@ export function windowsWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: 
 export function windowsWebAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: WindowsWebAppSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x_azure_fdid: {
@@ -8829,47 +8829,47 @@ export interface WindowsWebAppSiteConfigIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#action WindowsWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#action WindowsWebApp#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#description WindowsWebApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#description WindowsWebApp#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#headers WindowsWebApp#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#headers WindowsWebApp#headers}
   */
   readonly headers?: WindowsWebAppSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ip_address WindowsWebApp#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ip_address WindowsWebApp#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#priority WindowsWebApp#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#priority WindowsWebApp#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#service_tag WindowsWebApp#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#service_tag WindowsWebApp#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -8877,7 +8877,7 @@ export interface WindowsWebAppSiteConfigIpRestriction {
 export function windowsWebAppSiteConfigIpRestrictionToTerraform(struct?: WindowsWebAppSiteConfigIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -8895,7 +8895,7 @@ export function windowsWebAppSiteConfigIpRestrictionToTerraform(struct?: Windows
 export function windowsWebAppSiteConfigIpRestrictionToHclTerraform(struct?: WindowsWebAppSiteConfigIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -9188,19 +9188,19 @@ export class WindowsWebAppSiteConfigIpRestrictionList extends cdktn.ComplexList 
 }
 export interface WindowsWebAppSiteConfigScmIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_azure_fdid WindowsWebApp#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_azure_fdid WindowsWebApp#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_fd_health_probe WindowsWebApp#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_fd_health_probe WindowsWebApp#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_forwarded_for WindowsWebApp#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_forwarded_for WindowsWebApp#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#x_forwarded_host WindowsWebApp#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#x_forwarded_host WindowsWebApp#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -9208,7 +9208,7 @@ export interface WindowsWebAppSiteConfigScmIpRestrictionHeaders {
 export function windowsWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: WindowsWebAppSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
@@ -9222,7 +9222,7 @@ export function windowsWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct
 export function windowsWebAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: WindowsWebAppSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x_azure_fdid: {
@@ -9405,47 +9405,47 @@ export interface WindowsWebAppSiteConfigScmIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#action WindowsWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#action WindowsWebApp#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#description WindowsWebApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#description WindowsWebApp#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#headers WindowsWebApp#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#headers WindowsWebApp#headers}
   */
   readonly headers?: WindowsWebAppSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ip_address WindowsWebApp#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ip_address WindowsWebApp#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#priority WindowsWebApp#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#priority WindowsWebApp#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#service_tag WindowsWebApp#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#service_tag WindowsWebApp#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_network_subnet_id WindowsWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -9453,7 +9453,7 @@ export interface WindowsWebAppSiteConfigScmIpRestriction {
 export function windowsWebAppSiteConfigScmIpRestrictionToTerraform(struct?: WindowsWebAppSiteConfigScmIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -9471,7 +9471,7 @@ export function windowsWebAppSiteConfigScmIpRestrictionToTerraform(struct?: Wind
 export function windowsWebAppSiteConfigScmIpRestrictionToHclTerraform(struct?: WindowsWebAppSiteConfigScmIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -9764,11 +9764,11 @@ export class WindowsWebAppSiteConfigScmIpRestrictionList extends cdktn.ComplexLi
 }
 export interface WindowsWebAppSiteConfigVirtualApplicationVirtualDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#physical_path WindowsWebApp#physical_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#physical_path WindowsWebApp#physical_path}
   */
   readonly physicalPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_path WindowsWebApp#virtual_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_path WindowsWebApp#virtual_path}
   */
   readonly virtualPath?: string;
 }
@@ -9776,7 +9776,7 @@ export interface WindowsWebAppSiteConfigVirtualApplicationVirtualDirectory {
 export function windowsWebAppSiteConfigVirtualApplicationVirtualDirectoryToTerraform(struct?: WindowsWebAppSiteConfigVirtualApplicationVirtualDirectory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     physical_path: cdktn.stringToTerraform(struct!.physicalPath),
@@ -9788,7 +9788,7 @@ export function windowsWebAppSiteConfigVirtualApplicationVirtualDirectoryToTerra
 export function windowsWebAppSiteConfigVirtualApplicationVirtualDirectoryToHclTerraform(struct?: WindowsWebAppSiteConfigVirtualApplicationVirtualDirectory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     physical_path: {
@@ -9913,21 +9913,21 @@ export class WindowsWebAppSiteConfigVirtualApplicationVirtualDirectoryList exten
 }
 export interface WindowsWebAppSiteConfigVirtualApplication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#physical_path WindowsWebApp#physical_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#physical_path WindowsWebApp#physical_path}
   */
   readonly physicalPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#preload WindowsWebApp#preload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#preload WindowsWebApp#preload}
   */
   readonly preload: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_path WindowsWebApp#virtual_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_path WindowsWebApp#virtual_path}
   */
   readonly virtualPath: string;
   /**
   * virtual_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_directory WindowsWebApp#virtual_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_directory WindowsWebApp#virtual_directory}
   */
   readonly virtualDirectory?: WindowsWebAppSiteConfigVirtualApplicationVirtualDirectory[] | cdktn.IResolvable;
 }
@@ -9935,7 +9935,7 @@ export interface WindowsWebAppSiteConfigVirtualApplication {
 export function windowsWebAppSiteConfigVirtualApplicationToTerraform(struct?: WindowsWebAppSiteConfigVirtualApplication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     physical_path: cdktn.stringToTerraform(struct!.physicalPath),
@@ -9949,7 +9949,7 @@ export function windowsWebAppSiteConfigVirtualApplicationToTerraform(struct?: Wi
 export function windowsWebAppSiteConfigVirtualApplicationToHclTerraform(struct?: WindowsWebAppSiteConfigVirtualApplication | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     physical_path: {
@@ -10121,155 +10121,155 @@ export class WindowsWebAppSiteConfigVirtualApplicationList extends cdktn.Complex
 }
 export interface WindowsWebAppSiteConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#always_on WindowsWebApp#always_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#always_on WindowsWebApp#always_on}
   */
   readonly alwaysOn?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#api_definition_url WindowsWebApp#api_definition_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#api_definition_url WindowsWebApp#api_definition_url}
   */
   readonly apiDefinitionUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#api_management_api_id WindowsWebApp#api_management_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#api_management_api_id WindowsWebApp#api_management_api_id}
   */
   readonly apiManagementApiId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_command_line WindowsWebApp#app_command_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_command_line WindowsWebApp#app_command_line}
   */
   readonly appCommandLine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#container_registry_managed_identity_client_id WindowsWebApp#container_registry_managed_identity_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#container_registry_managed_identity_client_id WindowsWebApp#container_registry_managed_identity_client_id}
   */
   readonly containerRegistryManagedIdentityClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#container_registry_use_managed_identity WindowsWebApp#container_registry_use_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#container_registry_use_managed_identity WindowsWebApp#container_registry_use_managed_identity}
   */
   readonly containerRegistryUseManagedIdentity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#default_documents WindowsWebApp#default_documents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#default_documents WindowsWebApp#default_documents}
   */
   readonly defaultDocuments?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ftps_state WindowsWebApp#ftps_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ftps_state WindowsWebApp#ftps_state}
   */
   readonly ftpsState?: string;
   /**
   * The amount of time in minutes that a node is unhealthy before being removed from the load balancer. Possible values are between `2` and `10`. Only valid in conjunction with `health_check_path`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#health_check_eviction_time_in_min WindowsWebApp#health_check_eviction_time_in_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#health_check_eviction_time_in_min WindowsWebApp#health_check_eviction_time_in_min}
   */
   readonly healthCheckEvictionTimeInMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#health_check_path WindowsWebApp#health_check_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#health_check_path WindowsWebApp#health_check_path}
   */
   readonly healthCheckPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#http2_enabled WindowsWebApp#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#http2_enabled WindowsWebApp#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ip_restriction_default_action WindowsWebApp#ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ip_restriction_default_action WindowsWebApp#ip_restriction_default_action}
   */
   readonly ipRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#load_balancing_mode WindowsWebApp#load_balancing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#load_balancing_mode WindowsWebApp#load_balancing_mode}
   */
   readonly loadBalancingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#local_mysql_enabled WindowsWebApp#local_mysql_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#local_mysql_enabled WindowsWebApp#local_mysql_enabled}
   */
   readonly localMysqlEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#managed_pipeline_mode WindowsWebApp#managed_pipeline_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#managed_pipeline_mode WindowsWebApp#managed_pipeline_mode}
   */
   readonly managedPipelineMode?: string;
   /**
   * Configures the minimum TLS cipher suite for the incoming requests to the Site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#minimum_tls_cipher_suite WindowsWebApp#minimum_tls_cipher_suite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#minimum_tls_cipher_suite WindowsWebApp#minimum_tls_cipher_suite}
   */
   readonly minimumTlsCipherSuite?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#minimum_tls_version WindowsWebApp#minimum_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#minimum_tls_version WindowsWebApp#minimum_tls_version}
   */
   readonly minimumTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#remote_debugging_enabled WindowsWebApp#remote_debugging_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#remote_debugging_enabled WindowsWebApp#remote_debugging_enabled}
   */
   readonly remoteDebuggingEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#remote_debugging_version WindowsWebApp#remote_debugging_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#remote_debugging_version WindowsWebApp#remote_debugging_version}
   */
   readonly remoteDebuggingVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#scm_ip_restriction_default_action WindowsWebApp#scm_ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#scm_ip_restriction_default_action WindowsWebApp#scm_ip_restriction_default_action}
   */
   readonly scmIpRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#scm_minimum_tls_version WindowsWebApp#scm_minimum_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#scm_minimum_tls_version WindowsWebApp#scm_minimum_tls_version}
   */
   readonly scmMinimumTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#scm_use_main_ip_restriction WindowsWebApp#scm_use_main_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#scm_use_main_ip_restriction WindowsWebApp#scm_use_main_ip_restriction}
   */
   readonly scmUseMainIpRestriction?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#use_32_bit_worker WindowsWebApp#use_32_bit_worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#use_32_bit_worker WindowsWebApp#use_32_bit_worker}
   */
   readonly use32BitWorker?: boolean | cdktn.IResolvable;
   /**
   * Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#vnet_route_all_enabled WindowsWebApp#vnet_route_all_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#vnet_route_all_enabled WindowsWebApp#vnet_route_all_enabled}
   */
   readonly vnetRouteAllEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#websockets_enabled WindowsWebApp#websockets_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#websockets_enabled WindowsWebApp#websockets_enabled}
   */
   readonly websocketsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#worker_count WindowsWebApp#worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#worker_count WindowsWebApp#worker_count}
   */
   readonly workerCount?: number;
   /**
   * application_stack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#application_stack WindowsWebApp#application_stack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#application_stack WindowsWebApp#application_stack}
   */
   readonly applicationStack?: WindowsWebAppSiteConfigApplicationStack;
   /**
   * auto_heal_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#auto_heal_setting WindowsWebApp#auto_heal_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#auto_heal_setting WindowsWebApp#auto_heal_setting}
   */
   readonly autoHealSetting?: WindowsWebAppSiteConfigAutoHealSetting;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#cors WindowsWebApp#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#cors WindowsWebApp#cors}
   */
   readonly cors?: WindowsWebAppSiteConfigCors;
   /**
   * handler_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#handler_mapping WindowsWebApp#handler_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#handler_mapping WindowsWebApp#handler_mapping}
   */
   readonly handlerMapping?: WindowsWebAppSiteConfigHandlerMapping[] | cdktn.IResolvable;
   /**
   * ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#ip_restriction WindowsWebApp#ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#ip_restriction WindowsWebApp#ip_restriction}
   */
   readonly ipRestriction?: WindowsWebAppSiteConfigIpRestriction[] | cdktn.IResolvable;
   /**
   * scm_ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#scm_ip_restriction WindowsWebApp#scm_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#scm_ip_restriction WindowsWebApp#scm_ip_restriction}
   */
   readonly scmIpRestriction?: WindowsWebAppSiteConfigScmIpRestriction[] | cdktn.IResolvable;
   /**
   * virtual_application block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#virtual_application WindowsWebApp#virtual_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#virtual_application WindowsWebApp#virtual_application}
   */
   readonly virtualApplication?: WindowsWebAppSiteConfigVirtualApplication[] | cdktn.IResolvable;
 }
@@ -10277,7 +10277,7 @@ export interface WindowsWebAppSiteConfig {
 export function windowsWebAppSiteConfigToTerraform(struct?: WindowsWebAppSiteConfigOutputReference | WindowsWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     always_on: cdktn.booleanToTerraform(struct!.alwaysOn),
@@ -10320,7 +10320,7 @@ export function windowsWebAppSiteConfigToTerraform(struct?: WindowsWebAppSiteCon
 export function windowsWebAppSiteConfigToHclTerraform(struct?: WindowsWebAppSiteConfigOutputReference | WindowsWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     always_on: {
@@ -11301,11 +11301,11 @@ export class WindowsWebAppSiteConfigOutputReference extends cdktn.ComplexObject 
 }
 export interface WindowsWebAppStickySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#app_setting_names WindowsWebApp#app_setting_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#app_setting_names WindowsWebApp#app_setting_names}
   */
   readonly appSettingNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#connection_string_names WindowsWebApp#connection_string_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#connection_string_names WindowsWebApp#connection_string_names}
   */
   readonly connectionStringNames?: string[];
 }
@@ -11313,7 +11313,7 @@ export interface WindowsWebAppStickySettings {
 export function windowsWebAppStickySettingsToTerraform(struct?: WindowsWebAppStickySettingsOutputReference | WindowsWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_setting_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.appSettingNames),
@@ -11325,7 +11325,7 @@ export function windowsWebAppStickySettingsToTerraform(struct?: WindowsWebAppSti
 export function windowsWebAppStickySettingsToHclTerraform(struct?: WindowsWebAppStickySettingsOutputReference | WindowsWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_setting_names: {
@@ -11418,27 +11418,27 @@ export class WindowsWebAppStickySettingsOutputReference extends cdktn.ComplexObj
 }
 export interface WindowsWebAppStorageAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#access_key WindowsWebApp#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#access_key WindowsWebApp#access_key}
   */
   readonly accessKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#account_name WindowsWebApp#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#account_name WindowsWebApp#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#mount_path WindowsWebApp#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#mount_path WindowsWebApp#mount_path}
   */
   readonly mountPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#name WindowsWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#name WindowsWebApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#share_name WindowsWebApp#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#share_name WindowsWebApp#share_name}
   */
   readonly shareName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#type WindowsWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#type WindowsWebApp#type}
   */
   readonly type: string;
 }
@@ -11446,7 +11446,7 @@ export interface WindowsWebAppStorageAccount {
 export function windowsWebAppStorageAccountToTerraform(struct?: WindowsWebAppStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_key: cdktn.stringToTerraform(struct!.accessKey),
@@ -11462,7 +11462,7 @@ export function windowsWebAppStorageAccountToTerraform(struct?: WindowsWebAppSto
 export function windowsWebAppStorageAccountToHclTerraform(struct?: WindowsWebAppStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_key: {
@@ -11684,19 +11684,19 @@ export class WindowsWebAppStorageAccountList extends cdktn.ComplexList {
 }
 export interface WindowsWebAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#create WindowsWebApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#create WindowsWebApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#delete WindowsWebApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#delete WindowsWebApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#read WindowsWebApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#read WindowsWebApp#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#update WindowsWebApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#update WindowsWebApp#update}
   */
   readonly update?: string;
 }
@@ -11704,7 +11704,7 @@ export interface WindowsWebAppTimeouts {
 export function windowsWebAppTimeoutsToTerraform(struct?: WindowsWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -11718,7 +11718,7 @@ export function windowsWebAppTimeoutsToTerraform(struct?: WindowsWebAppTimeouts 
 export function windowsWebAppTimeoutsToHclTerraform(struct?: WindowsWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -11877,7 +11877,7 @@ export class WindowsWebAppTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app azurerm_windows_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app azurerm_windows_web_app}
 */
 export class WindowsWebApp extends cdktn.TerraformResource {
 
@@ -11893,7 +11893,7 @@ export class WindowsWebApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WindowsWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WindowsWebApp to import
-  * @param importFromId The id of the existing WindowsWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WindowsWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WindowsWebApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -11905,7 +11905,7 @@ export class WindowsWebApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/windows_web_app azurerm_windows_web_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11916,7 +11916,7 @@ export class WindowsWebApp extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_windows_web_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ProximityPlacementGroup <a name="ProximityPlacementGroup" id="@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group azurerm_proximity_placement_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group azurerm_proximity_placement_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroup.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ProximityPlacementGroup to
 
 The id of the existing ProximityPlacementGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,14 +945,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/proximityplace
 | <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#location ProximityPlacementGroup#location}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#name ProximityPlacementGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#resource_group_name ProximityPlacementGroup#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.allowedVmSizes">AllowedVmSizes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#allowed_vm_sizes ProximityPlacementGroup#allowed_vm_sizes}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#id ProximityPlacementGroup#id}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#tags ProximityPlacementGroup#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#location ProximityPlacementGroup#location}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#name ProximityPlacementGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#resource_group_name ProximityPlacementGroup#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.allowedVmSizes">AllowedVmSizes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#allowed_vm_sizes ProximityPlacementGroup#allowed_vm_sizes}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#id ProximityPlacementGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#tags ProximityPlacementGroup#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts">ProximityPlacementGroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#zone ProximityPlacementGroup#zone}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#zone ProximityPlacementGroup#zone}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#location ProximityPlacementGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#location ProximityPlacementGroup#location}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#name ProximityPlacementGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#name ProximityPlacementGroup#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#resource_group_name ProximityPlacementGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#resource_group_name ProximityPlacementGroup#resource_group_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ AllowedVmSizes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#allowed_vm_sizes ProximityPlacementGroup#allowed_vm_sizes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#allowed_vm_sizes ProximityPlacementGroup#allowed_vm_sizes}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#id ProximityPlacementGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#id ProximityPlacementGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1097,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#tags ProximityPlacementGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#tags ProximityPlacementGroup#tags}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Timeouts ProximityPlacementGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#timeouts ProximityPlacementGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#timeouts ProximityPlacementGroup#timeouts}
 
 ---
 
@@ -1123,7 +1123,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#zone ProximityPlacementGroup#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#zone ProximityPlacementGroup#zone}.
 
 ---
 
@@ -1146,10 +1146,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/proximityplace
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#create ProximityPlacementGroup#create}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#delete ProximityPlacementGroup#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#read ProximityPlacementGroup#read}. |
-| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#update ProximityPlacementGroup#update}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#create ProximityPlacementGroup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#delete ProximityPlacementGroup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#read ProximityPlacementGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.proximityPlacementGroup.ProximityPlacementGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#update ProximityPlacementGroup#update}. |
 
 ---
 
@@ -1161,7 +1161,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#create ProximityPlacementGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#create ProximityPlacementGroup#create}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#delete ProximityPlacementGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#delete ProximityPlacementGroup#delete}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#read ProximityPlacementGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#read ProximityPlacementGroup#read}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/proximity_placement_group#update ProximityPlacementGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/proximity_placement_group#update ProximityPlacementGroup#update}.
 
 ---
 

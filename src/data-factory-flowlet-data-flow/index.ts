@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface DataFactoryFlowletDataFlowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#annotations DataFactoryFlowletDataFlow#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#annotations DataFactoryFlowletDataFlow#annotations}
   */
   readonly annotations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#data_factory_id DataFactoryFlowletDataFlow#data_factory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#data_factory_id DataFactoryFlowletDataFlow#data_factory_id}
   */
   readonly dataFactoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#folder DataFactoryFlowletDataFlow#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#folder DataFactoryFlowletDataFlow#folder}
   */
   readonly folder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#id DataFactoryFlowletDataFlow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#id DataFactoryFlowletDataFlow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#script DataFactoryFlowletDataFlow#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#script DataFactoryFlowletDataFlow#script}
   */
   readonly script?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#script_lines DataFactoryFlowletDataFlow#script_lines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#script_lines DataFactoryFlowletDataFlow#script_lines}
   */
   readonly scriptLines?: string[];
   /**
   * sink block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#sink DataFactoryFlowletDataFlow#sink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#sink DataFactoryFlowletDataFlow#sink}
   */
   readonly sink?: DataFactoryFlowletDataFlowSink[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#source DataFactoryFlowletDataFlow#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#source DataFactoryFlowletDataFlow#source}
   */
   readonly source?: DataFactoryFlowletDataFlowSource[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#timeouts DataFactoryFlowletDataFlow#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#timeouts DataFactoryFlowletDataFlow#timeouts}
   */
   readonly timeouts?: DataFactoryFlowletDataFlowTimeouts;
   /**
   * transformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#transformation DataFactoryFlowletDataFlow#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#transformation DataFactoryFlowletDataFlow#transformation}
   */
   readonly transformation?: DataFactoryFlowletDataFlowTransformation[] | cdktn.IResolvable;
 }
 export interface DataFactoryFlowletDataFlowSinkDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -86,7 +86,7 @@ export interface DataFactoryFlowletDataFlowSinkDataset {
 export function dataFactoryFlowletDataFlowSinkDatasetToTerraform(struct?: DataFactoryFlowletDataFlowSinkDatasetOutputReference | DataFactoryFlowletDataFlowSinkDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -98,7 +98,7 @@ export function dataFactoryFlowletDataFlowSinkDatasetToTerraform(struct?: DataFa
 export function dataFactoryFlowletDataFlowSinkDatasetToHclTerraform(struct?: DataFactoryFlowletDataFlowSinkDatasetOutputReference | DataFactoryFlowletDataFlowSinkDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -188,15 +188,15 @@ export class DataFactoryFlowletDataFlowSinkDatasetOutputReference extends cdktn.
 }
 export interface DataFactoryFlowletDataFlowSinkFlowlet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
   */
   readonly datasetParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -204,7 +204,7 @@ export interface DataFactoryFlowletDataFlowSinkFlowlet {
 export function dataFactoryFlowletDataFlowSinkFlowletToTerraform(struct?: DataFactoryFlowletDataFlowSinkFlowletOutputReference | DataFactoryFlowletDataFlowSinkFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataset_parameters: cdktn.stringToTerraform(struct!.datasetParameters),
@@ -217,7 +217,7 @@ export function dataFactoryFlowletDataFlowSinkFlowletToTerraform(struct?: DataFa
 export function dataFactoryFlowletDataFlowSinkFlowletToHclTerraform(struct?: DataFactoryFlowletDataFlowSinkFlowletOutputReference | DataFactoryFlowletDataFlowSinkFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataset_parameters: {
@@ -335,11 +335,11 @@ export class DataFactoryFlowletDataFlowSinkFlowletOutputReference extends cdktn.
 }
 export interface DataFactoryFlowletDataFlowSinkLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -347,7 +347,7 @@ export interface DataFactoryFlowletDataFlowSinkLinkedService {
 export function dataFactoryFlowletDataFlowSinkLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSinkLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -359,7 +359,7 @@ export function dataFactoryFlowletDataFlowSinkLinkedServiceToTerraform(struct?: 
 export function dataFactoryFlowletDataFlowSinkLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSinkLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -449,11 +449,11 @@ export class DataFactoryFlowletDataFlowSinkLinkedServiceOutputReference extends 
 }
 export interface DataFactoryFlowletDataFlowSinkRejectedLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -461,7 +461,7 @@ export interface DataFactoryFlowletDataFlowSinkRejectedLinkedService {
 export function dataFactoryFlowletDataFlowSinkRejectedLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSinkRejectedLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkRejectedLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -473,7 +473,7 @@ export function dataFactoryFlowletDataFlowSinkRejectedLinkedServiceToTerraform(s
 export function dataFactoryFlowletDataFlowSinkRejectedLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSinkRejectedLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkRejectedLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -563,11 +563,11 @@ export class DataFactoryFlowletDataFlowSinkRejectedLinkedServiceOutputReference 
 }
 export interface DataFactoryFlowletDataFlowSinkSchemaLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -575,7 +575,7 @@ export interface DataFactoryFlowletDataFlowSinkSchemaLinkedService {
 export function dataFactoryFlowletDataFlowSinkSchemaLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSinkSchemaLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkSchemaLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -587,7 +587,7 @@ export function dataFactoryFlowletDataFlowSinkSchemaLinkedServiceToTerraform(str
 export function dataFactoryFlowletDataFlowSinkSchemaLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSinkSchemaLinkedServiceOutputReference | DataFactoryFlowletDataFlowSinkSchemaLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -677,41 +677,41 @@ export class DataFactoryFlowletDataFlowSinkSchemaLinkedServiceOutputReference ex
 }
 export interface DataFactoryFlowletDataFlowSink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
   */
   readonly dataset?: DataFactoryFlowletDataFlowSinkDataset;
   /**
   * flowlet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
   */
   readonly flowlet?: DataFactoryFlowletDataFlowSinkFlowlet;
   /**
   * linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
   */
   readonly linkedService?: DataFactoryFlowletDataFlowSinkLinkedService;
   /**
   * rejected_linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#rejected_linked_service DataFactoryFlowletDataFlow#rejected_linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#rejected_linked_service DataFactoryFlowletDataFlow#rejected_linked_service}
   */
   readonly rejectedLinkedService?: DataFactoryFlowletDataFlowSinkRejectedLinkedService;
   /**
   * schema_linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#schema_linked_service DataFactoryFlowletDataFlow#schema_linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#schema_linked_service DataFactoryFlowletDataFlow#schema_linked_service}
   */
   readonly schemaLinkedService?: DataFactoryFlowletDataFlowSinkSchemaLinkedService;
 }
@@ -719,7 +719,7 @@ export interface DataFactoryFlowletDataFlowSink {
 export function dataFactoryFlowletDataFlowSinkToTerraform(struct?: DataFactoryFlowletDataFlowSink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -736,7 +736,7 @@ export function dataFactoryFlowletDataFlowSinkToTerraform(struct?: DataFactoryFl
 export function dataFactoryFlowletDataFlowSinkToHclTerraform(struct?: DataFactoryFlowletDataFlowSink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -998,11 +998,11 @@ export class DataFactoryFlowletDataFlowSinkList extends cdktn.ComplexList {
 }
 export interface DataFactoryFlowletDataFlowSourceDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1010,7 +1010,7 @@ export interface DataFactoryFlowletDataFlowSourceDataset {
 export function dataFactoryFlowletDataFlowSourceDatasetToTerraform(struct?: DataFactoryFlowletDataFlowSourceDatasetOutputReference | DataFactoryFlowletDataFlowSourceDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1022,7 +1022,7 @@ export function dataFactoryFlowletDataFlowSourceDatasetToTerraform(struct?: Data
 export function dataFactoryFlowletDataFlowSourceDatasetToHclTerraform(struct?: DataFactoryFlowletDataFlowSourceDatasetOutputReference | DataFactoryFlowletDataFlowSourceDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1112,15 +1112,15 @@ export class DataFactoryFlowletDataFlowSourceDatasetOutputReference extends cdkt
 }
 export interface DataFactoryFlowletDataFlowSourceFlowlet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
   */
   readonly datasetParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1128,7 +1128,7 @@ export interface DataFactoryFlowletDataFlowSourceFlowlet {
 export function dataFactoryFlowletDataFlowSourceFlowletToTerraform(struct?: DataFactoryFlowletDataFlowSourceFlowletOutputReference | DataFactoryFlowletDataFlowSourceFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataset_parameters: cdktn.stringToTerraform(struct!.datasetParameters),
@@ -1141,7 +1141,7 @@ export function dataFactoryFlowletDataFlowSourceFlowletToTerraform(struct?: Data
 export function dataFactoryFlowletDataFlowSourceFlowletToHclTerraform(struct?: DataFactoryFlowletDataFlowSourceFlowletOutputReference | DataFactoryFlowletDataFlowSourceFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataset_parameters: {
@@ -1259,11 +1259,11 @@ export class DataFactoryFlowletDataFlowSourceFlowletOutputReference extends cdkt
 }
 export interface DataFactoryFlowletDataFlowSourceLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1271,7 +1271,7 @@ export interface DataFactoryFlowletDataFlowSourceLinkedService {
 export function dataFactoryFlowletDataFlowSourceLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSourceLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1283,7 +1283,7 @@ export function dataFactoryFlowletDataFlowSourceLinkedServiceToTerraform(struct?
 export function dataFactoryFlowletDataFlowSourceLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSourceLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1373,11 +1373,11 @@ export class DataFactoryFlowletDataFlowSourceLinkedServiceOutputReference extend
 }
 export interface DataFactoryFlowletDataFlowSourceRejectedLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1385,7 +1385,7 @@ export interface DataFactoryFlowletDataFlowSourceRejectedLinkedService {
 export function dataFactoryFlowletDataFlowSourceRejectedLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSourceRejectedLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceRejectedLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1397,7 +1397,7 @@ export function dataFactoryFlowletDataFlowSourceRejectedLinkedServiceToTerraform
 export function dataFactoryFlowletDataFlowSourceRejectedLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSourceRejectedLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceRejectedLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1487,11 +1487,11 @@ export class DataFactoryFlowletDataFlowSourceRejectedLinkedServiceOutputReferenc
 }
 export interface DataFactoryFlowletDataFlowSourceSchemaLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1499,7 +1499,7 @@ export interface DataFactoryFlowletDataFlowSourceSchemaLinkedService {
 export function dataFactoryFlowletDataFlowSourceSchemaLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowSourceSchemaLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceSchemaLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1511,7 +1511,7 @@ export function dataFactoryFlowletDataFlowSourceSchemaLinkedServiceToTerraform(s
 export function dataFactoryFlowletDataFlowSourceSchemaLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowSourceSchemaLinkedServiceOutputReference | DataFactoryFlowletDataFlowSourceSchemaLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1601,41 +1601,41 @@ export class DataFactoryFlowletDataFlowSourceSchemaLinkedServiceOutputReference 
 }
 export interface DataFactoryFlowletDataFlowSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
   */
   readonly dataset?: DataFactoryFlowletDataFlowSourceDataset;
   /**
   * flowlet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
   */
   readonly flowlet?: DataFactoryFlowletDataFlowSourceFlowlet;
   /**
   * linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
   */
   readonly linkedService?: DataFactoryFlowletDataFlowSourceLinkedService;
   /**
   * rejected_linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#rejected_linked_service DataFactoryFlowletDataFlow#rejected_linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#rejected_linked_service DataFactoryFlowletDataFlow#rejected_linked_service}
   */
   readonly rejectedLinkedService?: DataFactoryFlowletDataFlowSourceRejectedLinkedService;
   /**
   * schema_linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#schema_linked_service DataFactoryFlowletDataFlow#schema_linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#schema_linked_service DataFactoryFlowletDataFlow#schema_linked_service}
   */
   readonly schemaLinkedService?: DataFactoryFlowletDataFlowSourceSchemaLinkedService;
 }
@@ -1643,7 +1643,7 @@ export interface DataFactoryFlowletDataFlowSource {
 export function dataFactoryFlowletDataFlowSourceToTerraform(struct?: DataFactoryFlowletDataFlowSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -1660,7 +1660,7 @@ export function dataFactoryFlowletDataFlowSourceToTerraform(struct?: DataFactory
 export function dataFactoryFlowletDataFlowSourceToHclTerraform(struct?: DataFactoryFlowletDataFlowSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -1922,19 +1922,19 @@ export class DataFactoryFlowletDataFlowSourceList extends cdktn.ComplexList {
 }
 export interface DataFactoryFlowletDataFlowTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#create DataFactoryFlowletDataFlow#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#create DataFactoryFlowletDataFlow#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#delete DataFactoryFlowletDataFlow#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#delete DataFactoryFlowletDataFlow#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#read DataFactoryFlowletDataFlow#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#read DataFactoryFlowletDataFlow#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#update DataFactoryFlowletDataFlow#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#update DataFactoryFlowletDataFlow#update}
   */
   readonly update?: string;
 }
@@ -1942,7 +1942,7 @@ export interface DataFactoryFlowletDataFlowTimeouts {
 export function dataFactoryFlowletDataFlowTimeoutsToTerraform(struct?: DataFactoryFlowletDataFlowTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1956,7 +1956,7 @@ export function dataFactoryFlowletDataFlowTimeoutsToTerraform(struct?: DataFacto
 export function dataFactoryFlowletDataFlowTimeoutsToHclTerraform(struct?: DataFactoryFlowletDataFlowTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2115,11 +2115,11 @@ export class DataFactoryFlowletDataFlowTimeoutsOutputReference extends cdktn.Com
 }
 export interface DataFactoryFlowletDataFlowTransformationDataset {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -2127,7 +2127,7 @@ export interface DataFactoryFlowletDataFlowTransformationDataset {
 export function dataFactoryFlowletDataFlowTransformationDatasetToTerraform(struct?: DataFactoryFlowletDataFlowTransformationDatasetOutputReference | DataFactoryFlowletDataFlowTransformationDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2139,7 +2139,7 @@ export function dataFactoryFlowletDataFlowTransformationDatasetToTerraform(struc
 export function dataFactoryFlowletDataFlowTransformationDatasetToHclTerraform(struct?: DataFactoryFlowletDataFlowTransformationDatasetOutputReference | DataFactoryFlowletDataFlowTransformationDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2229,15 +2229,15 @@ export class DataFactoryFlowletDataFlowTransformationDatasetOutputReference exte
 }
 export interface DataFactoryFlowletDataFlowTransformationFlowlet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset_parameters DataFactoryFlowletDataFlow#dataset_parameters}
   */
   readonly datasetParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -2245,7 +2245,7 @@ export interface DataFactoryFlowletDataFlowTransformationFlowlet {
 export function dataFactoryFlowletDataFlowTransformationFlowletToTerraform(struct?: DataFactoryFlowletDataFlowTransformationFlowletOutputReference | DataFactoryFlowletDataFlowTransformationFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dataset_parameters: cdktn.stringToTerraform(struct!.datasetParameters),
@@ -2258,7 +2258,7 @@ export function dataFactoryFlowletDataFlowTransformationFlowletToTerraform(struc
 export function dataFactoryFlowletDataFlowTransformationFlowletToHclTerraform(struct?: DataFactoryFlowletDataFlowTransformationFlowletOutputReference | DataFactoryFlowletDataFlowTransformationFlowlet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dataset_parameters: {
@@ -2376,11 +2376,11 @@ export class DataFactoryFlowletDataFlowTransformationFlowletOutputReference exte
 }
 export interface DataFactoryFlowletDataFlowTransformationLinkedService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#parameters DataFactoryFlowletDataFlow#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -2388,7 +2388,7 @@ export interface DataFactoryFlowletDataFlowTransformationLinkedService {
 export function dataFactoryFlowletDataFlowTransformationLinkedServiceToTerraform(struct?: DataFactoryFlowletDataFlowTransformationLinkedServiceOutputReference | DataFactoryFlowletDataFlowTransformationLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2400,7 +2400,7 @@ export function dataFactoryFlowletDataFlowTransformationLinkedServiceToTerraform
 export function dataFactoryFlowletDataFlowTransformationLinkedServiceToHclTerraform(struct?: DataFactoryFlowletDataFlowTransformationLinkedServiceOutputReference | DataFactoryFlowletDataFlowTransformationLinkedService): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2490,29 +2490,29 @@ export class DataFactoryFlowletDataFlowTransformationLinkedServiceOutputReferenc
 }
 export interface DataFactoryFlowletDataFlowTransformation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#description DataFactoryFlowletDataFlow#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#name DataFactoryFlowletDataFlow#name}
   */
   readonly name: string;
   /**
   * dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#dataset DataFactoryFlowletDataFlow#dataset}
   */
   readonly dataset?: DataFactoryFlowletDataFlowTransformationDataset;
   /**
   * flowlet block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#flowlet DataFactoryFlowletDataFlow#flowlet}
   */
   readonly flowlet?: DataFactoryFlowletDataFlowTransformationFlowlet;
   /**
   * linked_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#linked_service DataFactoryFlowletDataFlow#linked_service}
   */
   readonly linkedService?: DataFactoryFlowletDataFlowTransformationLinkedService;
 }
@@ -2520,7 +2520,7 @@ export interface DataFactoryFlowletDataFlowTransformation {
 export function dataFactoryFlowletDataFlowTransformationToTerraform(struct?: DataFactoryFlowletDataFlowTransformation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -2535,7 +2535,7 @@ export function dataFactoryFlowletDataFlowTransformationToTerraform(struct?: Dat
 export function dataFactoryFlowletDataFlowTransformationToHclTerraform(struct?: DataFactoryFlowletDataFlowTransformation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -2741,7 +2741,7 @@ export class DataFactoryFlowletDataFlowTransformationList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow}
 */
 export class DataFactoryFlowletDataFlow extends cdktn.TerraformResource {
 
@@ -2757,7 +2757,7 @@ export class DataFactoryFlowletDataFlow extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataFactoryFlowletDataFlow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryFlowletDataFlow to import
-  * @param importFromId The id of the existing DataFactoryFlowletDataFlow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataFactoryFlowletDataFlow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryFlowletDataFlow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2769,7 +2769,7 @@ export class DataFactoryFlowletDataFlow extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory_flowlet_data_flow azurerm_data_factory_flowlet_data_flow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2780,7 +2780,7 @@ export class DataFactoryFlowletDataFlow extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_data_factory_flowlet_data_flow',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

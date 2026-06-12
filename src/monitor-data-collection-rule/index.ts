@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,96 +13,96 @@ import * as cdktn from 'cdktn';
 
 export interface MonitorDataCollectionRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#data_collection_endpoint_id MonitorDataCollectionRule#data_collection_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#data_collection_endpoint_id MonitorDataCollectionRule#data_collection_endpoint_id}
   */
   readonly dataCollectionEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#description MonitorDataCollectionRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#description MonitorDataCollectionRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#id MonitorDataCollectionRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#id MonitorDataCollectionRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#kind MonitorDataCollectionRule#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#kind MonitorDataCollectionRule#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#location MonitorDataCollectionRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#location MonitorDataCollectionRule#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#resource_group_name MonitorDataCollectionRule#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#resource_group_name MonitorDataCollectionRule#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#tags MonitorDataCollectionRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#tags MonitorDataCollectionRule#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * data_flow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#data_flow MonitorDataCollectionRule#data_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#data_flow MonitorDataCollectionRule#data_flow}
   */
   readonly dataFlow: MonitorDataCollectionRuleDataFlow[] | cdktn.IResolvable;
   /**
   * data_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#data_sources MonitorDataCollectionRule#data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#data_sources MonitorDataCollectionRule#data_sources}
   */
   readonly dataSources?: MonitorDataCollectionRuleDataSources;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#destinations MonitorDataCollectionRule#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#destinations MonitorDataCollectionRule#destinations}
   */
   readonly destinations: MonitorDataCollectionRuleDestinations;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#identity MonitorDataCollectionRule#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#identity MonitorDataCollectionRule#identity}
   */
   readonly identity?: MonitorDataCollectionRuleIdentity;
   /**
   * stream_declaration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#stream_declaration MonitorDataCollectionRule#stream_declaration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#stream_declaration MonitorDataCollectionRule#stream_declaration}
   */
   readonly streamDeclaration?: MonitorDataCollectionRuleStreamDeclaration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#timeouts MonitorDataCollectionRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#timeouts MonitorDataCollectionRule#timeouts}
   */
   readonly timeouts?: MonitorDataCollectionRuleTimeouts;
 }
 export interface MonitorDataCollectionRuleDataFlow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#built_in_transform MonitorDataCollectionRule#built_in_transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#built_in_transform MonitorDataCollectionRule#built_in_transform}
   */
   readonly builtInTransform?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#destinations MonitorDataCollectionRule#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#destinations MonitorDataCollectionRule#destinations}
   */
   readonly destinations: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#output_stream MonitorDataCollectionRule#output_stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#output_stream MonitorDataCollectionRule#output_stream}
   */
   readonly outputStream?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#transform_kql MonitorDataCollectionRule#transform_kql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#transform_kql MonitorDataCollectionRule#transform_kql}
   */
   readonly transformKql?: string;
 }
@@ -110,7 +110,7 @@ export interface MonitorDataCollectionRuleDataFlow {
 export function monitorDataCollectionRuleDataFlowToTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     built_in_transform: cdktn.stringToTerraform(struct!.builtInTransform),
@@ -125,7 +125,7 @@ export function monitorDataCollectionRuleDataFlowToTerraform(struct?: MonitorDat
 export function monitorDataCollectionRuleDataFlowToHclTerraform(struct?: MonitorDataCollectionRuleDataFlow | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     built_in_transform: {
@@ -328,15 +328,15 @@ export class MonitorDataCollectionRuleDataFlowList extends cdktn.ComplexList {
 }
 export interface MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#consumer_group MonitorDataCollectionRule#consumer_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#consumer_group MonitorDataCollectionRule#consumer_group}
   */
   readonly consumerGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#stream MonitorDataCollectionRule#stream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#stream MonitorDataCollectionRule#stream}
   */
   readonly stream: string;
 }
@@ -344,7 +344,7 @@ export interface MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSourc
 export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consumer_group: cdktn.stringToTerraform(struct!.consumerGroup),
@@ -357,7 +357,7 @@ export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSource
 export function monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consumer_group: {
@@ -506,7 +506,7 @@ export interface MonitorDataCollectionRuleDataSourcesDataImport {
   /**
   * event_hub_data_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#event_hub_data_source MonitorDataCollectionRule#event_hub_data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#event_hub_data_source MonitorDataCollectionRule#event_hub_data_source}
   */
   readonly eventHubDataSource: MonitorDataCollectionRuleDataSourcesDataImportEventHubDataSource[] | cdktn.IResolvable;
 }
@@ -514,7 +514,7 @@ export interface MonitorDataCollectionRuleDataSourcesDataImport {
 export function monitorDataCollectionRuleDataSourcesDataImportToTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportOutputReference | MonitorDataCollectionRuleDataSourcesDataImport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event_hub_data_source: cdktn.listMapper(monitorDataCollectionRuleDataSourcesDataImportEventHubDataSourceToTerraform, true)(struct!.eventHubDataSource),
@@ -525,7 +525,7 @@ export function monitorDataCollectionRuleDataSourcesDataImportToTerraform(struct
 export function monitorDataCollectionRuleDataSourcesDataImportToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesDataImportOutputReference | MonitorDataCollectionRuleDataSourcesDataImport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event_hub_data_source: {
@@ -587,23 +587,23 @@ export class MonitorDataCollectionRuleDataSourcesDataImportOutputReference exten
 }
 export interface MonitorDataCollectionRuleDataSourcesExtension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#extension_json MonitorDataCollectionRule#extension_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#extension_json MonitorDataCollectionRule#extension_json}
   */
   readonly extensionJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#extension_name MonitorDataCollectionRule#extension_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#extension_name MonitorDataCollectionRule#extension_name}
   */
   readonly extensionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#input_data_sources MonitorDataCollectionRule#input_data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#input_data_sources MonitorDataCollectionRule#input_data_sources}
   */
   readonly inputDataSources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -611,7 +611,7 @@ export interface MonitorDataCollectionRuleDataSourcesExtension {
 export function monitorDataCollectionRuleDataSourcesExtensionToTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     extension_json: cdktn.stringToTerraform(struct!.extensionJson),
@@ -626,7 +626,7 @@ export function monitorDataCollectionRuleDataSourcesExtensionToTerraform(struct?
 export function monitorDataCollectionRuleDataSourcesExtensionToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesExtension | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     extension_json: {
@@ -826,15 +826,15 @@ export class MonitorDataCollectionRuleDataSourcesExtensionList extends cdktn.Com
 }
 export interface MonitorDataCollectionRuleDataSourcesIisLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#log_directories MonitorDataCollectionRule#log_directories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#log_directories MonitorDataCollectionRule#log_directories}
   */
   readonly logDirectories?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -842,7 +842,7 @@ export interface MonitorDataCollectionRuleDataSourcesIisLog {
 export function monitorDataCollectionRuleDataSourcesIisLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_directories: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logDirectories),
@@ -855,7 +855,7 @@ export function monitorDataCollectionRuleDataSourcesIisLogToTerraform(struct?: M
 export function monitorDataCollectionRuleDataSourcesIisLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesIisLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_directories: {
@@ -1002,7 +1002,7 @@ export class MonitorDataCollectionRuleDataSourcesIisLogList extends cdktn.Comple
 }
 export interface MonitorDataCollectionRuleDataSourcesLogFileSettingsText {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#record_start_timestamp_format MonitorDataCollectionRule#record_start_timestamp_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#record_start_timestamp_format MonitorDataCollectionRule#record_start_timestamp_format}
   */
   readonly recordStartTimestampFormat: string;
 }
@@ -1010,7 +1010,7 @@ export interface MonitorDataCollectionRuleDataSourcesLogFileSettingsText {
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettingsText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     record_start_timestamp_format: cdktn.stringToTerraform(struct!.recordStartTimestampFormat),
@@ -1021,7 +1021,7 @@ export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToTerrafo
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsTextToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsTextOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettingsText): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     record_start_timestamp_format: {
@@ -1085,7 +1085,7 @@ export interface MonitorDataCollectionRuleDataSourcesLogFileSettings {
   /**
   * text block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#text MonitorDataCollectionRule#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#text MonitorDataCollectionRule#text}
   */
   readonly text: MonitorDataCollectionRuleDataSourcesLogFileSettingsText;
 }
@@ -1093,7 +1093,7 @@ export interface MonitorDataCollectionRuleDataSourcesLogFileSettings {
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     text: monitorDataCollectionRuleDataSourcesLogFileSettingsTextToTerraform(struct!.text),
@@ -1104,7 +1104,7 @@ export function monitorDataCollectionRuleDataSourcesLogFileSettingsToTerraform(s
 export function monitorDataCollectionRuleDataSourcesLogFileSettingsToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference | MonitorDataCollectionRuleDataSourcesLogFileSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     text: {
@@ -1166,25 +1166,25 @@ export class MonitorDataCollectionRuleDataSourcesLogFileSettingsOutputReference 
 }
 export interface MonitorDataCollectionRuleDataSourcesLogFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#file_patterns MonitorDataCollectionRule#file_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#file_patterns MonitorDataCollectionRule#file_patterns}
   */
   readonly filePatterns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#format MonitorDataCollectionRule#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#format MonitorDataCollectionRule#format}
   */
   readonly format: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#settings MonitorDataCollectionRule#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#settings MonitorDataCollectionRule#settings}
   */
   readonly settings?: MonitorDataCollectionRuleDataSourcesLogFileSettings;
 }
@@ -1192,7 +1192,7 @@ export interface MonitorDataCollectionRuleDataSourcesLogFile {
 export function monitorDataCollectionRuleDataSourcesLogFileToTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filePatterns),
@@ -1207,7 +1207,7 @@ export function monitorDataCollectionRuleDataSourcesLogFileToTerraform(struct?: 
 export function monitorDataCollectionRuleDataSourcesLogFileToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesLogFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_patterns: {
@@ -1404,19 +1404,19 @@ export class MonitorDataCollectionRuleDataSourcesLogFileList extends cdktn.Compl
 }
 export interface MonitorDataCollectionRuleDataSourcesPerformanceCounter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#counter_specifiers MonitorDataCollectionRule#counter_specifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#counter_specifiers MonitorDataCollectionRule#counter_specifiers}
   */
   readonly counterSpecifiers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#sampling_frequency_in_seconds MonitorDataCollectionRule#sampling_frequency_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#sampling_frequency_in_seconds MonitorDataCollectionRule#sampling_frequency_in_seconds}
   */
   readonly samplingFrequencyInSeconds: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -1424,7 +1424,7 @@ export interface MonitorDataCollectionRuleDataSourcesPerformanceCounter {
 export function monitorDataCollectionRuleDataSourcesPerformanceCounterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     counter_specifiers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.counterSpecifiers),
@@ -1438,7 +1438,7 @@ export function monitorDataCollectionRuleDataSourcesPerformanceCounterToTerrafor
 export function monitorDataCollectionRuleDataSourcesPerformanceCounterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPerformanceCounter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     counter_specifiers: {
@@ -1607,11 +1607,11 @@ export class MonitorDataCollectionRuleDataSourcesPerformanceCounterList extends 
 }
 export interface MonitorDataCollectionRuleDataSourcesPlatformTelemetry {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -1619,7 +1619,7 @@ export interface MonitorDataCollectionRuleDataSourcesPlatformTelemetry {
 export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1631,7 +1631,7 @@ export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToTerraform
 export function monitorDataCollectionRuleDataSourcesPlatformTelemetryToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1750,11 +1750,11 @@ export class MonitorDataCollectionRuleDataSourcesPlatformTelemetryList extends c
 }
 export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#label MonitorDataCollectionRule#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#label MonitorDataCollectionRule#label}
   */
   readonly label: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#value MonitorDataCollectionRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#value MonitorDataCollectionRule#value}
   */
   readonly value: string;
 }
@@ -1762,7 +1762,7 @@ export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInc
 export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     label: cdktn.stringToTerraform(struct!.label),
@@ -1774,7 +1774,7 @@ export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncl
 export function monitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilterToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     label: {
@@ -1893,17 +1893,17 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelInclude
 }
 export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarder {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
   /**
   * label_include_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#label_include_filter MonitorDataCollectionRule#label_include_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#label_include_filter MonitorDataCollectionRule#label_include_filter}
   */
   readonly labelIncludeFilter?: MonitorDataCollectionRuleDataSourcesPrometheusForwarderLabelIncludeFilter[] | cdktn.IResolvable;
 }
@@ -1911,7 +1911,7 @@ export interface MonitorDataCollectionRuleDataSourcesPrometheusForwarder {
 export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1924,7 +1924,7 @@ export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToTerrafo
 export function monitorDataCollectionRuleDataSourcesPrometheusForwarderToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2071,19 +2071,19 @@ export class MonitorDataCollectionRuleDataSourcesPrometheusForwarderList extends
 }
 export interface MonitorDataCollectionRuleDataSourcesSyslog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#facility_names MonitorDataCollectionRule#facility_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#facility_names MonitorDataCollectionRule#facility_names}
   */
   readonly facilityNames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#log_levels MonitorDataCollectionRule#log_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#log_levels MonitorDataCollectionRule#log_levels}
   */
   readonly logLevels: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -2091,7 +2091,7 @@ export interface MonitorDataCollectionRuleDataSourcesSyslog {
 export function monitorDataCollectionRuleDataSourcesSyslogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facility_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.facilityNames),
@@ -2105,7 +2105,7 @@ export function monitorDataCollectionRuleDataSourcesSyslogToTerraform(struct?: M
 export function monitorDataCollectionRuleDataSourcesSyslogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesSyslog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facility_names: {
@@ -2274,15 +2274,15 @@ export class MonitorDataCollectionRuleDataSourcesSyslogList extends cdktn.Comple
 }
 export interface MonitorDataCollectionRuleDataSourcesWindowsEventLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#x_path_queries MonitorDataCollectionRule#x_path_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#x_path_queries MonitorDataCollectionRule#x_path_queries}
   */
   readonly xPathQueries: string[];
 }
@@ -2290,7 +2290,7 @@ export interface MonitorDataCollectionRuleDataSourcesWindowsEventLog {
 export function monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2303,7 +2303,7 @@ export function monitorDataCollectionRuleDataSourcesWindowsEventLogToTerraform(s
 export function monitorDataCollectionRuleDataSourcesWindowsEventLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsEventLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2447,11 +2447,11 @@ export class MonitorDataCollectionRuleDataSourcesWindowsEventLogList extends cdk
 }
 export interface MonitorDataCollectionRuleDataSourcesWindowsFirewallLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#streams MonitorDataCollectionRule#streams}
   */
   readonly streams: string[];
 }
@@ -2459,7 +2459,7 @@ export interface MonitorDataCollectionRuleDataSourcesWindowsFirewallLog {
 export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2471,7 +2471,7 @@ export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToTerrafor
 export function monitorDataCollectionRuleDataSourcesWindowsFirewallLogToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2592,61 +2592,61 @@ export interface MonitorDataCollectionRuleDataSources {
   /**
   * data_import block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#data_import MonitorDataCollectionRule#data_import}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#data_import MonitorDataCollectionRule#data_import}
   */
   readonly dataImport?: MonitorDataCollectionRuleDataSourcesDataImport;
   /**
   * extension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#extension MonitorDataCollectionRule#extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#extension MonitorDataCollectionRule#extension}
   */
   readonly extension?: MonitorDataCollectionRuleDataSourcesExtension[] | cdktn.IResolvable;
   /**
   * iis_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#iis_log MonitorDataCollectionRule#iis_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#iis_log MonitorDataCollectionRule#iis_log}
   */
   readonly iisLog?: MonitorDataCollectionRuleDataSourcesIisLog[] | cdktn.IResolvable;
   /**
   * log_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#log_file MonitorDataCollectionRule#log_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#log_file MonitorDataCollectionRule#log_file}
   */
   readonly logFile?: MonitorDataCollectionRuleDataSourcesLogFile[] | cdktn.IResolvable;
   /**
   * performance_counter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#performance_counter MonitorDataCollectionRule#performance_counter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#performance_counter MonitorDataCollectionRule#performance_counter}
   */
   readonly performanceCounter?: MonitorDataCollectionRuleDataSourcesPerformanceCounter[] | cdktn.IResolvable;
   /**
   * platform_telemetry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#platform_telemetry MonitorDataCollectionRule#platform_telemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#platform_telemetry MonitorDataCollectionRule#platform_telemetry}
   */
   readonly platformTelemetry?: MonitorDataCollectionRuleDataSourcesPlatformTelemetry[] | cdktn.IResolvable;
   /**
   * prometheus_forwarder block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#prometheus_forwarder MonitorDataCollectionRule#prometheus_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#prometheus_forwarder MonitorDataCollectionRule#prometheus_forwarder}
   */
   readonly prometheusForwarder?: MonitorDataCollectionRuleDataSourcesPrometheusForwarder[] | cdktn.IResolvable;
   /**
   * syslog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#syslog MonitorDataCollectionRule#syslog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#syslog MonitorDataCollectionRule#syslog}
   */
   readonly syslog?: MonitorDataCollectionRuleDataSourcesSyslog[] | cdktn.IResolvable;
   /**
   * windows_event_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#windows_event_log MonitorDataCollectionRule#windows_event_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#windows_event_log MonitorDataCollectionRule#windows_event_log}
   */
   readonly windowsEventLog?: MonitorDataCollectionRuleDataSourcesWindowsEventLog[] | cdktn.IResolvable;
   /**
   * windows_firewall_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#windows_firewall_log MonitorDataCollectionRule#windows_firewall_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#windows_firewall_log MonitorDataCollectionRule#windows_firewall_log}
   */
   readonly windowsFirewallLog?: MonitorDataCollectionRuleDataSourcesWindowsFirewallLog[] | cdktn.IResolvable;
 }
@@ -2654,7 +2654,7 @@ export interface MonitorDataCollectionRuleDataSources {
 export function monitorDataCollectionRuleDataSourcesToTerraform(struct?: MonitorDataCollectionRuleDataSourcesOutputReference | MonitorDataCollectionRuleDataSources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_import: monitorDataCollectionRuleDataSourcesDataImportToTerraform(struct!.dataImport),
@@ -2674,7 +2674,7 @@ export function monitorDataCollectionRuleDataSourcesToTerraform(struct?: Monitor
 export function monitorDataCollectionRuleDataSourcesToHclTerraform(struct?: MonitorDataCollectionRuleDataSourcesOutputReference | MonitorDataCollectionRuleDataSources): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_import: {
@@ -2991,7 +2991,7 @@ export class MonitorDataCollectionRuleDataSourcesOutputReference extends cdktn.C
 }
 export interface MonitorDataCollectionRuleDestinationsAzureMonitorMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
 }
@@ -2999,7 +2999,7 @@ export interface MonitorDataCollectionRuleDestinationsAzureMonitorMetrics {
 export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToTerraform(struct?: MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference | MonitorDataCollectionRuleDestinationsAzureMonitorMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3010,7 +3010,7 @@ export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToTerraf
 export function monitorDataCollectionRuleDestinationsAzureMonitorMetricsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputReference | MonitorDataCollectionRuleDestinationsAzureMonitorMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3072,11 +3072,11 @@ export class MonitorDataCollectionRuleDestinationsAzureMonitorMetricsOutputRefer
 }
 export interface MonitorDataCollectionRuleDestinationsEventHub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#event_hub_id MonitorDataCollectionRule#event_hub_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#event_hub_id MonitorDataCollectionRule#event_hub_id}
   */
   readonly eventHubId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
 }
@@ -3084,7 +3084,7 @@ export interface MonitorDataCollectionRuleDestinationsEventHub {
 export function monitorDataCollectionRuleDestinationsEventHubToTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubOutputReference | MonitorDataCollectionRuleDestinationsEventHub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event_hub_id: cdktn.stringToTerraform(struct!.eventHubId),
@@ -3096,7 +3096,7 @@ export function monitorDataCollectionRuleDestinationsEventHubToTerraform(struct?
 export function monitorDataCollectionRuleDestinationsEventHubToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubOutputReference | MonitorDataCollectionRuleDestinationsEventHub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event_hub_id: {
@@ -3183,11 +3183,11 @@ export class MonitorDataCollectionRuleDestinationsEventHubOutputReference extend
 }
 export interface MonitorDataCollectionRuleDestinationsEventHubDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#event_hub_id MonitorDataCollectionRule#event_hub_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#event_hub_id MonitorDataCollectionRule#event_hub_id}
   */
   readonly eventHubId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
 }
@@ -3195,7 +3195,7 @@ export interface MonitorDataCollectionRuleDestinationsEventHubDirect {
 export function monitorDataCollectionRuleDestinationsEventHubDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference | MonitorDataCollectionRuleDestinationsEventHubDirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event_hub_id: cdktn.stringToTerraform(struct!.eventHubId),
@@ -3207,7 +3207,7 @@ export function monitorDataCollectionRuleDestinationsEventHubDirectToTerraform(s
 export function monitorDataCollectionRuleDestinationsEventHubDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference | MonitorDataCollectionRuleDestinationsEventHubDirect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event_hub_id: {
@@ -3294,11 +3294,11 @@ export class MonitorDataCollectionRuleDestinationsEventHubDirectOutputReference 
 }
 export interface MonitorDataCollectionRuleDestinationsLogAnalytics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#workspace_resource_id MonitorDataCollectionRule#workspace_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#workspace_resource_id MonitorDataCollectionRule#workspace_resource_id}
   */
   readonly workspaceResourceId: string;
 }
@@ -3306,7 +3306,7 @@ export interface MonitorDataCollectionRuleDestinationsLogAnalytics {
 export function monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3318,7 +3318,7 @@ export function monitorDataCollectionRuleDestinationsLogAnalyticsToTerraform(str
 export function monitorDataCollectionRuleDestinationsLogAnalyticsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsLogAnalytics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3437,11 +3437,11 @@ export class MonitorDataCollectionRuleDestinationsLogAnalyticsList extends cdktn
 }
 export interface MonitorDataCollectionRuleDestinationsMonitorAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#monitor_account_id MonitorDataCollectionRule#monitor_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#monitor_account_id MonitorDataCollectionRule#monitor_account_id}
   */
   readonly monitorAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
 }
@@ -3449,7 +3449,7 @@ export interface MonitorDataCollectionRuleDestinationsMonitorAccount {
 export function monitorDataCollectionRuleDestinationsMonitorAccountToTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     monitor_account_id: cdktn.stringToTerraform(struct!.monitorAccountId),
@@ -3461,7 +3461,7 @@ export function monitorDataCollectionRuleDestinationsMonitorAccountToTerraform(s
 export function monitorDataCollectionRuleDestinationsMonitorAccountToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsMonitorAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     monitor_account_id: {
@@ -3580,15 +3580,15 @@ export class MonitorDataCollectionRuleDestinationsMonitorAccountList extends cdk
 }
 export interface MonitorDataCollectionRuleDestinationsStorageBlob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#container_name MonitorDataCollectionRule#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#container_name MonitorDataCollectionRule#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
   */
   readonly storageAccountId: string;
 }
@@ -3596,7 +3596,7 @@ export interface MonitorDataCollectionRuleDestinationsStorageBlob {
 export function monitorDataCollectionRuleDestinationsStorageBlobToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -3609,7 +3609,7 @@ export function monitorDataCollectionRuleDestinationsStorageBlobToTerraform(stru
 export function monitorDataCollectionRuleDestinationsStorageBlobToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlob | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -3753,15 +3753,15 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobList extends cdktn.
 }
 export interface MonitorDataCollectionRuleDestinationsStorageBlobDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#container_name MonitorDataCollectionRule#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#container_name MonitorDataCollectionRule#container_name}
   */
   readonly containerName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
   */
   readonly storageAccountId: string;
 }
@@ -3769,7 +3769,7 @@ export interface MonitorDataCollectionRuleDestinationsStorageBlobDirect {
 export function monitorDataCollectionRuleDestinationsStorageBlobDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -3782,7 +3782,7 @@ export function monitorDataCollectionRuleDestinationsStorageBlobDirectToTerrafor
 export function monitorDataCollectionRuleDestinationsStorageBlobDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageBlobDirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -3926,15 +3926,15 @@ export class MonitorDataCollectionRuleDestinationsStorageBlobDirectList extends 
 }
 export interface MonitorDataCollectionRuleDestinationsStorageTableDirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_account_id MonitorDataCollectionRule#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#table_name MonitorDataCollectionRule#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#table_name MonitorDataCollectionRule#table_name}
   */
   readonly tableName: string;
 }
@@ -3942,7 +3942,7 @@ export interface MonitorDataCollectionRuleDestinationsStorageTableDirect {
 export function monitorDataCollectionRuleDestinationsStorageTableDirectToTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3955,7 +3955,7 @@ export function monitorDataCollectionRuleDestinationsStorageTableDirectToTerrafo
 export function monitorDataCollectionRuleDestinationsStorageTableDirectToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsStorageTableDirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4101,49 +4101,49 @@ export interface MonitorDataCollectionRuleDestinations {
   /**
   * azure_monitor_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#azure_monitor_metrics MonitorDataCollectionRule#azure_monitor_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#azure_monitor_metrics MonitorDataCollectionRule#azure_monitor_metrics}
   */
   readonly azureMonitorMetrics?: MonitorDataCollectionRuleDestinationsAzureMonitorMetrics;
   /**
   * event_hub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#event_hub MonitorDataCollectionRule#event_hub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#event_hub MonitorDataCollectionRule#event_hub}
   */
   readonly eventHub?: MonitorDataCollectionRuleDestinationsEventHub;
   /**
   * event_hub_direct block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#event_hub_direct MonitorDataCollectionRule#event_hub_direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#event_hub_direct MonitorDataCollectionRule#event_hub_direct}
   */
   readonly eventHubDirect?: MonitorDataCollectionRuleDestinationsEventHubDirect;
   /**
   * log_analytics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#log_analytics MonitorDataCollectionRule#log_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#log_analytics MonitorDataCollectionRule#log_analytics}
   */
   readonly logAnalytics?: MonitorDataCollectionRuleDestinationsLogAnalytics[] | cdktn.IResolvable;
   /**
   * monitor_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#monitor_account MonitorDataCollectionRule#monitor_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#monitor_account MonitorDataCollectionRule#monitor_account}
   */
   readonly monitorAccount?: MonitorDataCollectionRuleDestinationsMonitorAccount[] | cdktn.IResolvable;
   /**
   * storage_blob block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_blob MonitorDataCollectionRule#storage_blob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_blob MonitorDataCollectionRule#storage_blob}
   */
   readonly storageBlob?: MonitorDataCollectionRuleDestinationsStorageBlob[] | cdktn.IResolvable;
   /**
   * storage_blob_direct block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_blob_direct MonitorDataCollectionRule#storage_blob_direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_blob_direct MonitorDataCollectionRule#storage_blob_direct}
   */
   readonly storageBlobDirect?: MonitorDataCollectionRuleDestinationsStorageBlobDirect[] | cdktn.IResolvable;
   /**
   * storage_table_direct block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#storage_table_direct MonitorDataCollectionRule#storage_table_direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#storage_table_direct MonitorDataCollectionRule#storage_table_direct}
   */
   readonly storageTableDirect?: MonitorDataCollectionRuleDestinationsStorageTableDirect[] | cdktn.IResolvable;
 }
@@ -4151,7 +4151,7 @@ export interface MonitorDataCollectionRuleDestinations {
 export function monitorDataCollectionRuleDestinationsToTerraform(struct?: MonitorDataCollectionRuleDestinationsOutputReference | MonitorDataCollectionRuleDestinations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_monitor_metrics: monitorDataCollectionRuleDestinationsAzureMonitorMetricsToTerraform(struct!.azureMonitorMetrics),
@@ -4169,7 +4169,7 @@ export function monitorDataCollectionRuleDestinationsToTerraform(struct?: Monito
 export function monitorDataCollectionRuleDestinationsToHclTerraform(struct?: MonitorDataCollectionRuleDestinationsOutputReference | MonitorDataCollectionRuleDestinations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_monitor_metrics: {
@@ -4430,11 +4430,11 @@ export class MonitorDataCollectionRuleDestinationsOutputReference extends cdktn.
 }
 export interface MonitorDataCollectionRuleIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#identity_ids MonitorDataCollectionRule#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#identity_ids MonitorDataCollectionRule#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#type MonitorDataCollectionRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#type MonitorDataCollectionRule#type}
   */
   readonly type: string;
 }
@@ -4442,7 +4442,7 @@ export interface MonitorDataCollectionRuleIdentity {
 export function monitorDataCollectionRuleIdentityToTerraform(struct?: MonitorDataCollectionRuleIdentityOutputReference | MonitorDataCollectionRuleIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -4454,7 +4454,7 @@ export function monitorDataCollectionRuleIdentityToTerraform(struct?: MonitorDat
 export function monitorDataCollectionRuleIdentityToHclTerraform(struct?: MonitorDataCollectionRuleIdentityOutputReference | MonitorDataCollectionRuleIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -4554,11 +4554,11 @@ export class MonitorDataCollectionRuleIdentityOutputReference extends cdktn.Comp
 }
 export interface MonitorDataCollectionRuleStreamDeclarationColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#name MonitorDataCollectionRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#type MonitorDataCollectionRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#type MonitorDataCollectionRule#type}
   */
   readonly type: string;
 }
@@ -4566,7 +4566,7 @@ export interface MonitorDataCollectionRuleStreamDeclarationColumn {
 export function monitorDataCollectionRuleStreamDeclarationColumnToTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4578,7 +4578,7 @@ export function monitorDataCollectionRuleStreamDeclarationColumnToTerraform(stru
 export function monitorDataCollectionRuleStreamDeclarationColumnToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclarationColumn | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4697,13 +4697,13 @@ export class MonitorDataCollectionRuleStreamDeclarationColumnList extends cdktn.
 }
 export interface MonitorDataCollectionRuleStreamDeclaration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#stream_name MonitorDataCollectionRule#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#stream_name MonitorDataCollectionRule#stream_name}
   */
   readonly streamName: string;
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#column MonitorDataCollectionRule#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#column MonitorDataCollectionRule#column}
   */
   readonly column: MonitorDataCollectionRuleStreamDeclarationColumn[] | cdktn.IResolvable;
 }
@@ -4711,7 +4711,7 @@ export interface MonitorDataCollectionRuleStreamDeclaration {
 export function monitorDataCollectionRuleStreamDeclarationToTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     stream_name: cdktn.stringToTerraform(struct!.streamName),
@@ -4723,7 +4723,7 @@ export function monitorDataCollectionRuleStreamDeclarationToTerraform(struct?: M
 export function monitorDataCollectionRuleStreamDeclarationToHclTerraform(struct?: MonitorDataCollectionRuleStreamDeclaration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     stream_name: {
@@ -4842,19 +4842,19 @@ export class MonitorDataCollectionRuleStreamDeclarationList extends cdktn.Comple
 }
 export interface MonitorDataCollectionRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#create MonitorDataCollectionRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#create MonitorDataCollectionRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#delete MonitorDataCollectionRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#delete MonitorDataCollectionRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#read MonitorDataCollectionRule#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#read MonitorDataCollectionRule#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#update MonitorDataCollectionRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#update MonitorDataCollectionRule#update}
   */
   readonly update?: string;
 }
@@ -4862,7 +4862,7 @@ export interface MonitorDataCollectionRuleTimeouts {
 export function monitorDataCollectionRuleTimeoutsToTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -4876,7 +4876,7 @@ export function monitorDataCollectionRuleTimeoutsToTerraform(struct?: MonitorDat
 export function monitorDataCollectionRuleTimeoutsToHclTerraform(struct?: MonitorDataCollectionRuleTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -5035,7 +5035,7 @@ export class MonitorDataCollectionRuleTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule}
 */
 export class MonitorDataCollectionRule extends cdktn.TerraformResource {
 
@@ -5051,7 +5051,7 @@ export class MonitorDataCollectionRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitorDataCollectionRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorDataCollectionRule to import
-  * @param importFromId The id of the existing MonitorDataCollectionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorDataCollectionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorDataCollectionRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5063,7 +5063,7 @@ export class MonitorDataCollectionRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_data_collection_rule azurerm_monitor_data_collection_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5074,7 +5074,7 @@ export class MonitorDataCollectionRule extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_monitor_data_collection_rule',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

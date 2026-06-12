@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface EmailCommunicationServiceDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#domain_management EmailCommunicationServiceDomain#domain_management}
   */
   readonly domainManagement: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#email_service_id EmailCommunicationServiceDomain#email_service_id}
   */
   readonly emailServiceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#id EmailCommunicationServiceDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#name EmailCommunicationServiceDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#tags EmailCommunicationServiceDomain#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#user_engagement_tracking_enabled EmailCommunicationServiceDomain#user_engagement_tracking_enabled}
   */
   readonly userEngagementTrackingEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#timeouts EmailCommunicationServiceDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#timeouts EmailCommunicationServiceDomain#timeouts}
   */
   readonly timeouts?: EmailCommunicationServiceDomainTimeouts;
 }
@@ -52,7 +52,7 @@ export interface EmailCommunicationServiceDomainVerificationRecordsDkim {
 export function emailCommunicationServiceDomainVerificationRecordsDkimToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDkim): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -62,7 +62,7 @@ export function emailCommunicationServiceDomainVerificationRecordsDkimToTerrafor
 export function emailCommunicationServiceDomainVerificationRecordsDkimToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDkim): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -142,7 +142,7 @@ export interface EmailCommunicationServiceDomainVerificationRecordsDkim2 {
 export function emailCommunicationServiceDomainVerificationRecordsDkim2ToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDkim2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -152,7 +152,7 @@ export function emailCommunicationServiceDomainVerificationRecordsDkim2ToTerrafo
 export function emailCommunicationServiceDomainVerificationRecordsDkim2ToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDkim2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -232,7 +232,7 @@ export interface EmailCommunicationServiceDomainVerificationRecordsDmarc {
 export function emailCommunicationServiceDomainVerificationRecordsDmarcToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDmarc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -242,7 +242,7 @@ export function emailCommunicationServiceDomainVerificationRecordsDmarcToTerrafo
 export function emailCommunicationServiceDomainVerificationRecordsDmarcToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDmarc): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -322,7 +322,7 @@ export interface EmailCommunicationServiceDomainVerificationRecordsDomain {
 export function emailCommunicationServiceDomainVerificationRecordsDomainToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDomain): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -332,7 +332,7 @@ export function emailCommunicationServiceDomainVerificationRecordsDomainToTerraf
 export function emailCommunicationServiceDomainVerificationRecordsDomainToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsDomain): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -412,7 +412,7 @@ export interface EmailCommunicationServiceDomainVerificationRecordsSpf {
 export function emailCommunicationServiceDomainVerificationRecordsSpfToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsSpf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -422,7 +422,7 @@ export function emailCommunicationServiceDomainVerificationRecordsSpfToTerraform
 export function emailCommunicationServiceDomainVerificationRecordsSpfToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecordsSpf): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -502,7 +502,7 @@ export interface EmailCommunicationServiceDomainVerificationRecords {
 export function emailCommunicationServiceDomainVerificationRecordsToTerraform(struct?: EmailCommunicationServiceDomainVerificationRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -512,7 +512,7 @@ export function emailCommunicationServiceDomainVerificationRecordsToTerraform(st
 export function emailCommunicationServiceDomainVerificationRecordsToHclTerraform(struct?: EmailCommunicationServiceDomainVerificationRecords): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -598,19 +598,19 @@ export class EmailCommunicationServiceDomainVerificationRecordsList extends cdkt
 }
 export interface EmailCommunicationServiceDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#create EmailCommunicationServiceDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#delete EmailCommunicationServiceDomain#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#read EmailCommunicationServiceDomain#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#update EmailCommunicationServiceDomain#update}
   */
   readonly update?: string;
 }
@@ -618,7 +618,7 @@ export interface EmailCommunicationServiceDomainTimeouts {
 export function emailCommunicationServiceDomainTimeoutsToTerraform(struct?: EmailCommunicationServiceDomainTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -632,7 +632,7 @@ export function emailCommunicationServiceDomainTimeoutsToTerraform(struct?: Emai
 export function emailCommunicationServiceDomainTimeoutsToHclTerraform(struct?: EmailCommunicationServiceDomainTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -791,7 +791,7 @@ export class EmailCommunicationServiceDomainTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain}
 */
 export class EmailCommunicationServiceDomain extends cdktn.TerraformResource {
 
@@ -807,7 +807,7 @@ export class EmailCommunicationServiceDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EmailCommunicationServiceDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailCommunicationServiceDomain to import
-  * @param importFromId The id of the existing EmailCommunicationServiceDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailCommunicationServiceDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailCommunicationServiceDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -819,7 +819,7 @@ export class EmailCommunicationServiceDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/email_communication_service_domain azurerm_email_communication_service_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -830,7 +830,7 @@ export class EmailCommunicationServiceDomain extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_email_communication_service_domain',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

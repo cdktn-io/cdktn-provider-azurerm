@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,90 @@ import * as cdktn from 'cdktn';
 
 export interface ResourceGroupPolicyAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#description ResourceGroupPolicyAssignment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#description ResourceGroupPolicyAssignment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#display_name ResourceGroupPolicyAssignment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#display_name ResourceGroupPolicyAssignment#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#enforce ResourceGroupPolicyAssignment#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#enforce ResourceGroupPolicyAssignment#enforce}
   */
   readonly enforce?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#id ResourceGroupPolicyAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#id ResourceGroupPolicyAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#location ResourceGroupPolicyAssignment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#location ResourceGroupPolicyAssignment#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#metadata ResourceGroupPolicyAssignment#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#metadata ResourceGroupPolicyAssignment#metadata}
   */
   readonly metadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#name ResourceGroupPolicyAssignment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#name ResourceGroupPolicyAssignment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#not_scopes ResourceGroupPolicyAssignment#not_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#not_scopes ResourceGroupPolicyAssignment#not_scopes}
   */
   readonly notScopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#parameters ResourceGroupPolicyAssignment#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#parameters ResourceGroupPolicyAssignment#parameters}
   */
   readonly parameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#policy_definition_id ResourceGroupPolicyAssignment#policy_definition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#policy_definition_id ResourceGroupPolicyAssignment#policy_definition_id}
   */
   readonly policyDefinitionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#resource_group_id ResourceGroupPolicyAssignment#resource_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#resource_group_id ResourceGroupPolicyAssignment#resource_group_id}
   */
   readonly resourceGroupId: string;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#identity ResourceGroupPolicyAssignment#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#identity ResourceGroupPolicyAssignment#identity}
   */
   readonly identity?: ResourceGroupPolicyAssignmentIdentity;
   /**
   * non_compliance_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#non_compliance_message ResourceGroupPolicyAssignment#non_compliance_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#non_compliance_message ResourceGroupPolicyAssignment#non_compliance_message}
   */
   readonly nonComplianceMessage?: ResourceGroupPolicyAssignmentNonComplianceMessage[] | cdktn.IResolvable;
   /**
   * overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#overrides ResourceGroupPolicyAssignment#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#overrides ResourceGroupPolicyAssignment#overrides}
   */
   readonly overrides?: ResourceGroupPolicyAssignmentOverrides[] | cdktn.IResolvable;
   /**
   * resource_selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#resource_selectors ResourceGroupPolicyAssignment#resource_selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#resource_selectors ResourceGroupPolicyAssignment#resource_selectors}
   */
   readonly resourceSelectors?: ResourceGroupPolicyAssignmentResourceSelectors[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#timeouts ResourceGroupPolicyAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#timeouts ResourceGroupPolicyAssignment#timeouts}
   */
   readonly timeouts?: ResourceGroupPolicyAssignmentTimeouts;
 }
 export interface ResourceGroupPolicyAssignmentIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#identity_ids ResourceGroupPolicyAssignment#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#identity_ids ResourceGroupPolicyAssignment#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#type ResourceGroupPolicyAssignment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#type ResourceGroupPolicyAssignment#type}
   */
   readonly type: string;
 }
@@ -104,7 +104,7 @@ export interface ResourceGroupPolicyAssignmentIdentity {
 export function resourceGroupPolicyAssignmentIdentityToTerraform(struct?: ResourceGroupPolicyAssignmentIdentityOutputReference | ResourceGroupPolicyAssignmentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -116,7 +116,7 @@ export function resourceGroupPolicyAssignmentIdentityToTerraform(struct?: Resour
 export function resourceGroupPolicyAssignmentIdentityToHclTerraform(struct?: ResourceGroupPolicyAssignmentIdentityOutputReference | ResourceGroupPolicyAssignmentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -216,11 +216,11 @@ export class ResourceGroupPolicyAssignmentIdentityOutputReference extends cdktn.
 }
 export interface ResourceGroupPolicyAssignmentNonComplianceMessage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#content ResourceGroupPolicyAssignment#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#content ResourceGroupPolicyAssignment#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#policy_definition_reference_id ResourceGroupPolicyAssignment#policy_definition_reference_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#policy_definition_reference_id ResourceGroupPolicyAssignment#policy_definition_reference_id}
   */
   readonly policyDefinitionReferenceId?: string;
 }
@@ -228,7 +228,7 @@ export interface ResourceGroupPolicyAssignmentNonComplianceMessage {
 export function resourceGroupPolicyAssignmentNonComplianceMessageToTerraform(struct?: ResourceGroupPolicyAssignmentNonComplianceMessage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -240,7 +240,7 @@ export function resourceGroupPolicyAssignmentNonComplianceMessageToTerraform(str
 export function resourceGroupPolicyAssignmentNonComplianceMessageToHclTerraform(struct?: ResourceGroupPolicyAssignmentNonComplianceMessage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -362,15 +362,15 @@ export class ResourceGroupPolicyAssignmentNonComplianceMessageList extends cdktn
 }
 export interface ResourceGroupPolicyAssignmentOverridesSelectors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}
   */
   readonly in?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}
   */
   readonly notIn?: string[];
 }
@@ -378,7 +378,7 @@ export interface ResourceGroupPolicyAssignmentOverridesSelectors {
 export function resourceGroupPolicyAssignmentOverridesSelectorsToTerraform(struct?: ResourceGroupPolicyAssignmentOverridesSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.in),
@@ -391,7 +391,7 @@ export function resourceGroupPolicyAssignmentOverridesSelectorsToTerraform(struc
 export function resourceGroupPolicyAssignmentOverridesSelectorsToHclTerraform(struct?: ResourceGroupPolicyAssignmentOverridesSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in: {
@@ -544,13 +544,13 @@ export class ResourceGroupPolicyAssignmentOverridesSelectorsList extends cdktn.C
 }
 export interface ResourceGroupPolicyAssignmentOverrides {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#value ResourceGroupPolicyAssignment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#value ResourceGroupPolicyAssignment#value}
   */
   readonly value: string;
   /**
   * selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#selectors ResourceGroupPolicyAssignment#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#selectors ResourceGroupPolicyAssignment#selectors}
   */
   readonly selectors?: ResourceGroupPolicyAssignmentOverridesSelectors[] | cdktn.IResolvable;
 }
@@ -558,7 +558,7 @@ export interface ResourceGroupPolicyAssignmentOverrides {
 export function resourceGroupPolicyAssignmentOverridesToTerraform(struct?: ResourceGroupPolicyAssignmentOverrides | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -570,7 +570,7 @@ export function resourceGroupPolicyAssignmentOverridesToTerraform(struct?: Resou
 export function resourceGroupPolicyAssignmentOverridesToHclTerraform(struct?: ResourceGroupPolicyAssignmentOverrides | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -692,15 +692,15 @@ export class ResourceGroupPolicyAssignmentOverridesList extends cdktn.ComplexLis
 }
 export interface ResourceGroupPolicyAssignmentResourceSelectorsSelectors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#in ResourceGroupPolicyAssignment#in}
   */
   readonly in?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#kind ResourceGroupPolicyAssignment#kind}
   */
   readonly kind: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#not_in ResourceGroupPolicyAssignment#not_in}
   */
   readonly notIn?: string[];
 }
@@ -708,7 +708,7 @@ export interface ResourceGroupPolicyAssignmentResourceSelectorsSelectors {
 export function resourceGroupPolicyAssignmentResourceSelectorsSelectorsToTerraform(struct?: ResourceGroupPolicyAssignmentResourceSelectorsSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.in),
@@ -721,7 +721,7 @@ export function resourceGroupPolicyAssignmentResourceSelectorsSelectorsToTerrafo
 export function resourceGroupPolicyAssignmentResourceSelectorsSelectorsToHclTerraform(struct?: ResourceGroupPolicyAssignmentResourceSelectorsSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     in: {
@@ -871,13 +871,13 @@ export class ResourceGroupPolicyAssignmentResourceSelectorsSelectorsList extends
 }
 export interface ResourceGroupPolicyAssignmentResourceSelectors {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#name ResourceGroupPolicyAssignment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#name ResourceGroupPolicyAssignment#name}
   */
   readonly name?: string;
   /**
   * selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#selectors ResourceGroupPolicyAssignment#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#selectors ResourceGroupPolicyAssignment#selectors}
   */
   readonly selectors: ResourceGroupPolicyAssignmentResourceSelectorsSelectors[] | cdktn.IResolvable;
 }
@@ -885,7 +885,7 @@ export interface ResourceGroupPolicyAssignmentResourceSelectors {
 export function resourceGroupPolicyAssignmentResourceSelectorsToTerraform(struct?: ResourceGroupPolicyAssignmentResourceSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -897,7 +897,7 @@ export function resourceGroupPolicyAssignmentResourceSelectorsToTerraform(struct
 export function resourceGroupPolicyAssignmentResourceSelectorsToHclTerraform(struct?: ResourceGroupPolicyAssignmentResourceSelectors | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1019,19 +1019,19 @@ export class ResourceGroupPolicyAssignmentResourceSelectorsList extends cdktn.Co
 }
 export interface ResourceGroupPolicyAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#create ResourceGroupPolicyAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#create ResourceGroupPolicyAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#delete ResourceGroupPolicyAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#delete ResourceGroupPolicyAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#read ResourceGroupPolicyAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#read ResourceGroupPolicyAssignment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#update ResourceGroupPolicyAssignment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#update ResourceGroupPolicyAssignment#update}
   */
   readonly update?: string;
 }
@@ -1039,7 +1039,7 @@ export interface ResourceGroupPolicyAssignmentTimeouts {
 export function resourceGroupPolicyAssignmentTimeoutsToTerraform(struct?: ResourceGroupPolicyAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1053,7 +1053,7 @@ export function resourceGroupPolicyAssignmentTimeoutsToTerraform(struct?: Resour
 export function resourceGroupPolicyAssignmentTimeoutsToHclTerraform(struct?: ResourceGroupPolicyAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1212,7 +1212,7 @@ export class ResourceGroupPolicyAssignmentTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment azurerm_resource_group_policy_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment azurerm_resource_group_policy_assignment}
 */
 export class ResourceGroupPolicyAssignment extends cdktn.TerraformResource {
 
@@ -1228,7 +1228,7 @@ export class ResourceGroupPolicyAssignment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ResourceGroupPolicyAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourceGroupPolicyAssignment to import
-  * @param importFromId The id of the existing ResourceGroupPolicyAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourceGroupPolicyAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourceGroupPolicyAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1240,7 +1240,7 @@ export class ResourceGroupPolicyAssignment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/resource_group_policy_assignment azurerm_resource_group_policy_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/resource_group_policy_assignment azurerm_resource_group_policy_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1251,7 +1251,7 @@ export class ResourceGroupPolicyAssignment extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_resource_group_policy_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

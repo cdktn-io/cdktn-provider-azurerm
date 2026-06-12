@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermMachineLearningWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#id DataAzurermMachineLearningWorkspace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#id DataAzurermMachineLearningWorkspace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#name DataAzurermMachineLearningWorkspace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#name DataAzurermMachineLearningWorkspace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#resource_group_name DataAzurermMachineLearningWorkspace#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#resource_group_name DataAzurermMachineLearningWorkspace#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#timeouts DataAzurermMachineLearningWorkspace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#timeouts DataAzurermMachineLearningWorkspace#timeouts}
   */
   readonly timeouts?: DataAzurermMachineLearningWorkspaceTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermMachineLearningWorkspaceIdentity {
 export function dataAzurermMachineLearningWorkspaceIdentityToTerraform(struct?: DataAzurermMachineLearningWorkspaceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermMachineLearningWorkspaceIdentityToTerraform(struct?: 
 export function dataAzurermMachineLearningWorkspaceIdentityToHclTerraform(struct?: DataAzurermMachineLearningWorkspaceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -126,7 +126,7 @@ export class DataAzurermMachineLearningWorkspaceIdentityList extends cdktn.Compl
 }
 export interface DataAzurermMachineLearningWorkspaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#read DataAzurermMachineLearningWorkspace#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#read DataAzurermMachineLearningWorkspace#read}
   */
   readonly read?: string;
 }
@@ -134,7 +134,7 @@ export interface DataAzurermMachineLearningWorkspaceTimeouts {
 export function dataAzurermMachineLearningWorkspaceTimeoutsToTerraform(struct?: DataAzurermMachineLearningWorkspaceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -145,7 +145,7 @@ export function dataAzurermMachineLearningWorkspaceTimeoutsToTerraform(struct?: 
 export function dataAzurermMachineLearningWorkspaceTimeoutsToHclTerraform(struct?: DataAzurermMachineLearningWorkspaceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -220,7 +220,7 @@ export class DataAzurermMachineLearningWorkspaceTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace azurerm_machine_learning_workspace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace azurerm_machine_learning_workspace}
 */
 export class DataAzurermMachineLearningWorkspace extends cdktn.TerraformDataSource {
 
@@ -236,7 +236,7 @@ export class DataAzurermMachineLearningWorkspace extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataAzurermMachineLearningWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermMachineLearningWorkspace to import
-  * @param importFromId The id of the existing DataAzurermMachineLearningWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermMachineLearningWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermMachineLearningWorkspace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -248,7 +248,7 @@ export class DataAzurermMachineLearningWorkspace extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/machine_learning_workspace azurerm_machine_learning_workspace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/machine_learning_workspace azurerm_machine_learning_workspace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -259,7 +259,7 @@ export class DataAzurermMachineLearningWorkspace extends cdktn.TerraformDataSour
       terraformResourceType: 'azurerm_machine_learning_workspace',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -331,6 +331,11 @@ export class DataAzurermMachineLearningWorkspace extends cdktn.TerraformDataSour
   // Temporarily expose input value. Use with caution.
   public get resourceGroupNameInput() {
     return this._resourceGroupName;
+  }
+
+  // storage_account_access_type - computed: true, optional: false, required: false
+  public get storageAccountAccessType() {
+    return this.getStringAttribute('storage_account_access_type');
   }
 
   // tags - computed: true, optional: false, required: false

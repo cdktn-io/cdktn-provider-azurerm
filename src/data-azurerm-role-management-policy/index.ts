@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermRoleManagementPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#id DataAzurermRoleManagementPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#id DataAzurermRoleManagementPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataAzurermRoleManagementPolicyConfig extends cdktn.TerraformMe
   /**
   * ID of the Azure Role to which this policy is assigned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#role_definition_id DataAzurermRoleManagementPolicy#role_definition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#role_definition_id DataAzurermRoleManagementPolicy#role_definition_id}
   */
   readonly roleDefinitionId: string;
   /**
   * The scope of the role to which this policy will apply
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#scope DataAzurermRoleManagementPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#scope DataAzurermRoleManagementPolicy#scope}
   */
   readonly scope: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#timeouts DataAzurermRoleManagementPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#timeouts DataAzurermRoleManagementPolicy#timeouts}
   */
   readonly timeouts?: DataAzurermRoleManagementPolicyTimeouts;
 }
@@ -44,7 +44,7 @@ export interface DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrim
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrima
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -124,7 +124,7 @@ export interface DataAzurermRoleManagementPolicyActivationRulesApprovalStage {
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -134,7 +134,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToTer
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -200,7 +200,7 @@ export interface DataAzurermRoleManagementPolicyActivationRules {
 export function dataAzurermRoleManagementPolicyActivationRulesToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -210,7 +210,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesToTerraform(struct
 export function dataAzurermRoleManagementPolicyActivationRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -306,7 +306,7 @@ export interface DataAzurermRoleManagementPolicyActiveAssignmentRules {
 export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToTerraform(struct?: DataAzurermRoleManagementPolicyActiveAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -316,7 +316,7 @@ export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToTerraform(
 export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyActiveAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -401,7 +401,7 @@ export interface DataAzurermRoleManagementPolicyEligibleAssignmentRules {
 export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToTerraform(struct?: DataAzurermRoleManagementPolicyEligibleAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -411,7 +411,7 @@ export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToTerrafor
 export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyEligibleAssignmentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -481,7 +481,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -491,7 +491,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -566,7 +566,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -576,7 +576,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -651,7 +651,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -661,7 +661,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -736,7 +736,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -746,7 +746,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -824,7 +824,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -834,7 +834,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -909,7 +909,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -919,7 +919,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -994,7 +994,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1004,7 +1004,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1079,7 +1079,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1089,7 +1089,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1167,7 +1167,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1177,7 +1177,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1252,7 +1252,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1262,7 +1262,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1337,7 +1337,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1347,7 +1347,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1422,7 +1422,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1432,7 +1432,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1510,7 +1510,7 @@ export interface DataAzurermRoleManagementPolicyNotificationRules {
 export function dataAzurermRoleManagementPolicyNotificationRulesToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1520,7 +1520,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesToTerraform(stru
 export function dataAzurermRoleManagementPolicyNotificationRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1594,7 +1594,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesList extends cdktn.
 }
 export interface DataAzurermRoleManagementPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#read DataAzurermRoleManagementPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#read DataAzurermRoleManagementPolicy#read}
   */
   readonly read?: string;
 }
@@ -1602,7 +1602,7 @@ export interface DataAzurermRoleManagementPolicyTimeouts {
 export function dataAzurermRoleManagementPolicyTimeoutsToTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -1613,7 +1613,7 @@ export function dataAzurermRoleManagementPolicyTimeoutsToTerraform(struct?: Data
 export function dataAzurermRoleManagementPolicyTimeoutsToHclTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -1688,7 +1688,7 @@ export class DataAzurermRoleManagementPolicyTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy azurerm_role_management_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy azurerm_role_management_policy}
 */
 export class DataAzurermRoleManagementPolicy extends cdktn.TerraformDataSource {
 
@@ -1704,7 +1704,7 @@ export class DataAzurermRoleManagementPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermRoleManagementPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermRoleManagementPolicy to import
-  * @param importFromId The id of the existing DataAzurermRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermRoleManagementPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1716,7 +1716,7 @@ export class DataAzurermRoleManagementPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/role_management_policy azurerm_role_management_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/role_management_policy azurerm_role_management_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1727,7 +1727,7 @@ export class DataAzurermRoleManagementPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_role_management_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

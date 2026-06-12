@@ -4,7 +4,7 @@
 
 ### KustoScript <a name="KustoScript" id="@cdktn/provider-azurerm.kustoScript.KustoScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script azurerm_kusto_script}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script azurerm_kusto_script}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer"></a>
 
@@ -44,17 +44,17 @@ KustoScript.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#database_id KustoScript#database_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#name KustoScript#name}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.continueOnErrorsEnabled">continueOnErrorsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.forceAnUpdateWhenValueChanged">forceAnUpdateWhenValueChanged</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#id KustoScript#id}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.principalPermissionsAction">principalPermissionsAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.sasToken">sasToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.scriptContent">scriptContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_content KustoScript#script_content}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.scriptLevel">scriptLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_level KustoScript#script_level}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#database_id KustoScript#database_id}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#name KustoScript#name}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.continueOnErrorsEnabled">continueOnErrorsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.forceAnUpdateWhenValueChanged">forceAnUpdateWhenValueChanged</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#id KustoScript#id}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.principalPermissionsAction">principalPermissionsAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.sasToken">sasToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.scriptContent">scriptContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_content KustoScript#script_content}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.scriptLevel">scriptLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_level KustoScript#script_level}. |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts">KustoScriptTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#url KustoScript#url}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScript.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#url KustoScript#url}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#database_id KustoScript#database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#database_id KustoScript#database_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#name KustoScript#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#name KustoScript#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#id KustoScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#id KustoScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_content KustoScript#script_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_content KustoScript#script_content}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_level KustoScript#script_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_level KustoScript#script_level}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#url KustoScript#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#url KustoScript#url}.
 
 ---
 
@@ -732,7 +732,7 @@ The construct id used in the generated config for the KustoScript to import.
 
 The id of the existing KustoScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1209,17 +1209,17 @@ KustoScriptConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#database_id KustoScript#database_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#name KustoScript#name}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.continueOnErrorsEnabled">continueOnErrorsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.forceAnUpdateWhenValueChanged">forceAnUpdateWhenValueChanged</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#id KustoScript#id}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.principalPermissionsAction">principalPermissionsAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.sasToken">sasToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.scriptContent">scriptContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_content KustoScript#script_content}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.scriptLevel">scriptLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_level KustoScript#script_level}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.databaseId">databaseId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#database_id KustoScript#database_id}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#name KustoScript#name}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.continueOnErrorsEnabled">continueOnErrorsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.forceAnUpdateWhenValueChanged">forceAnUpdateWhenValueChanged</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#id KustoScript#id}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.principalPermissionsAction">principalPermissionsAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.sasToken">sasToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.scriptContent">scriptContent</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_content KustoScript#script_content}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.scriptLevel">scriptLevel</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_level KustoScript#script_level}. |
 | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts">KustoScriptTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#url KustoScript#url}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#url KustoScript#url}. |
 
 ---
 
@@ -1301,7 +1301,7 @@ public java.lang.String getDatabaseId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#database_id KustoScript#database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#database_id KustoScript#database_id}.
 
 ---
 
@@ -1313,7 +1313,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#name KustoScript#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#name KustoScript#name}.
 
 ---
 
@@ -1325,7 +1325,7 @@ public java.lang.Boolean|IResolvable getContinueOnErrorsEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#continue_on_errors_enabled KustoScript#continue_on_errors_enabled}.
 
 ---
 
@@ -1337,7 +1337,7 @@ public java.lang.String getForceAnUpdateWhenValueChanged();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#force_an_update_when_value_changed KustoScript#force_an_update_when_value_changed}.
 
 ---
 
@@ -1349,7 +1349,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#id KustoScript#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#id KustoScript#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1364,7 +1364,7 @@ public java.lang.String getPrincipalPermissionsAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#principal_permissions_action KustoScript#principal_permissions_action}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getSasToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#sas_token KustoScript#sas_token}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getScriptContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_content KustoScript#script_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_content KustoScript#script_content}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getScriptLevel();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#script_level KustoScript#script_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#script_level KustoScript#script_level}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public KustoScriptTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#timeouts KustoScript#timeouts}
 
 ---
 
@@ -1426,7 +1426,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#url KustoScript#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#url KustoScript#url}.
 
 ---
 
@@ -1449,10 +1449,10 @@ KustoScriptTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#create KustoScript#create}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#delete KustoScript#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#read KustoScript#read}. |
-| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#update KustoScript#update}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#create KustoScript#create}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#delete KustoScript#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#read KustoScript#read}. |
+| <code><a href="#@cdktn/provider-azurerm.kustoScript.KustoScriptTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#update KustoScript#update}. |
 
 ---
 
@@ -1464,7 +1464,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#create KustoScript#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#create KustoScript#create}.
 
 ---
 
@@ -1476,7 +1476,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#delete KustoScript#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#delete KustoScript#delete}.
 
 ---
 
@@ -1488,7 +1488,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#read KustoScript#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#read KustoScript#read}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/kusto_script#update KustoScript#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/kusto_script#update KustoScript#update}.
 
 ---
 

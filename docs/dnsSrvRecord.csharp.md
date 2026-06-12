@@ -4,7 +4,7 @@
 
 ### DnsSrvRecord <a name="DnsSrvRecord" id="@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record azurerm_dns_srv_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record azurerm_dns_srv_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecord.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DnsSrvRecord to import.
 
 The id of the existing DnsSrvRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,13 +955,13 @@ new DnsSrvRecordConfig {
 | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#name DnsSrvRecord#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#name DnsSrvRecord#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.record">Record</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord">DnsSrvRecordRecord</a>[]</code> | record block. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#resource_group_name DnsSrvRecord#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#ttl DnsSrvRecord#ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.zoneName">ZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#zone_name DnsSrvRecord#zone_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#id DnsSrvRecord#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#tags DnsSrvRecord#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#resource_group_name DnsSrvRecord#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#ttl DnsSrvRecord#ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.zoneName">ZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#zone_name DnsSrvRecord#zone_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#id DnsSrvRecord#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#tags DnsSrvRecord#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts">DnsSrvRecordTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1044,7 +1044,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#name DnsSrvRecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#name DnsSrvRecord#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public IResolvable|DnsSrvRecordRecord[] Record { get; set; }
 
 record block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#record DnsSrvRecord#record}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#record DnsSrvRecord#record}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#resource_group_name DnsSrvRecord#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#resource_group_name DnsSrvRecord#resource_group_name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#ttl DnsSrvRecord#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#ttl DnsSrvRecord#ttl}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public string ZoneName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#zone_name DnsSrvRecord#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#zone_name DnsSrvRecord#zone_name}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#id DnsSrvRecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#id DnsSrvRecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1121,7 +1121,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#tags DnsSrvRecord#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#tags DnsSrvRecord#tags}.
 
 ---
 
@@ -1135,7 +1135,7 @@ public DnsSrvRecordTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#timeouts DnsSrvRecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#timeouts DnsSrvRecord#timeouts}
 
 ---
 
@@ -1158,10 +1158,10 @@ new DnsSrvRecordRecord {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#port DnsSrvRecord#port}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#priority DnsSrvRecord#priority}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#target DnsSrvRecord#target}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#weight DnsSrvRecord#weight}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#port DnsSrvRecord#port}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.priority">Priority</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#priority DnsSrvRecord#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.target">Target</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#target DnsSrvRecord#target}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordRecord.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#weight DnsSrvRecord#weight}. |
 
 ---
 
@@ -1173,7 +1173,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#port DnsSrvRecord#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#port DnsSrvRecord#port}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public double Priority { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#priority DnsSrvRecord#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#priority DnsSrvRecord#priority}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Target { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#target DnsSrvRecord#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#target DnsSrvRecord#target}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#weight DnsSrvRecord#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#weight DnsSrvRecord#weight}.
 
 ---
 
@@ -1232,10 +1232,10 @@ new DnsSrvRecordTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#create DnsSrvRecord#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#delete DnsSrvRecord#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#read DnsSrvRecord#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#update DnsSrvRecord#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#create DnsSrvRecord#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#delete DnsSrvRecord#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#read DnsSrvRecord#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dnsSrvRecord.DnsSrvRecordTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#update DnsSrvRecord#update}. |
 
 ---
 
@@ -1247,7 +1247,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#create DnsSrvRecord#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#create DnsSrvRecord#create}.
 
 ---
 
@@ -1259,7 +1259,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#delete DnsSrvRecord#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#delete DnsSrvRecord#delete}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#read DnsSrvRecord#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#read DnsSrvRecord#read}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dns_srv_record#update DnsSrvRecord#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dns_srv_record#update DnsSrvRecord#update}.
 
 ---
 

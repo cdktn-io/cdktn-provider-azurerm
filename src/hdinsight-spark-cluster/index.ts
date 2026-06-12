@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,136 +13,136 @@ import * as cdktn from 'cdktn';
 
 export interface HdinsightSparkClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#cluster_version HdinsightSparkCluster#cluster_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#cluster_version HdinsightSparkCluster#cluster_version}
   */
   readonly clusterVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#encryption_in_transit_enabled HdinsightSparkCluster#encryption_in_transit_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#encryption_in_transit_enabled HdinsightSparkCluster#encryption_in_transit_enabled}
   */
   readonly encryptionInTransitEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#id HdinsightSparkCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#id HdinsightSparkCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#location HdinsightSparkCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#location HdinsightSparkCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#resource_group_name HdinsightSparkCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#resource_group_name HdinsightSparkCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#tags HdinsightSparkCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#tags HdinsightSparkCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#tier HdinsightSparkCluster#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#tier HdinsightSparkCluster#tier}
   */
   readonly tier: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#tls_min_version HdinsightSparkCluster#tls_min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#tls_min_version HdinsightSparkCluster#tls_min_version}
   */
   readonly tlsMinVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#zones HdinsightSparkCluster#zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#zones HdinsightSparkCluster#zones}
   */
   readonly zones?: string[];
   /**
   * component_version block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#component_version HdinsightSparkCluster#component_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#component_version HdinsightSparkCluster#component_version}
   */
   readonly componentVersion: HdinsightSparkClusterComponentVersion;
   /**
   * compute_isolation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#compute_isolation HdinsightSparkCluster#compute_isolation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#compute_isolation HdinsightSparkCluster#compute_isolation}
   */
   readonly computeIsolation?: HdinsightSparkClusterComputeIsolation;
   /**
   * disk_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#disk_encryption HdinsightSparkCluster#disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#disk_encryption HdinsightSparkCluster#disk_encryption}
   */
   readonly diskEncryption?: HdinsightSparkClusterDiskEncryption[] | cdktn.IResolvable;
   /**
   * extension block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#extension HdinsightSparkCluster#extension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#extension HdinsightSparkCluster#extension}
   */
   readonly extension?: HdinsightSparkClusterExtension;
   /**
   * gateway block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#gateway HdinsightSparkCluster#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#gateway HdinsightSparkCluster#gateway}
   */
   readonly gateway: HdinsightSparkClusterGateway;
   /**
   * metastores block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#metastores HdinsightSparkCluster#metastores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#metastores HdinsightSparkCluster#metastores}
   */
   readonly metastores?: HdinsightSparkClusterMetastores;
   /**
   * monitor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#monitor HdinsightSparkCluster#monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#monitor HdinsightSparkCluster#monitor}
   */
   readonly monitor?: HdinsightSparkClusterMonitor;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#network HdinsightSparkCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#network HdinsightSparkCluster#network}
   */
   readonly network?: HdinsightSparkClusterNetwork;
   /**
   * private_link_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#private_link_configuration HdinsightSparkCluster#private_link_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#private_link_configuration HdinsightSparkCluster#private_link_configuration}
   */
   readonly privateLinkConfiguration?: HdinsightSparkClusterPrivateLinkConfiguration;
   /**
   * roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#roles HdinsightSparkCluster#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#roles HdinsightSparkCluster#roles}
   */
   readonly roles: HdinsightSparkClusterRoles;
   /**
   * security_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#security_profile HdinsightSparkCluster#security_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#security_profile HdinsightSparkCluster#security_profile}
   */
   readonly securityProfile?: HdinsightSparkClusterSecurityProfile;
   /**
   * storage_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_account HdinsightSparkCluster#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_account HdinsightSparkCluster#storage_account}
   */
   readonly storageAccount?: HdinsightSparkClusterStorageAccount[] | cdktn.IResolvable;
   /**
   * storage_account_gen2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_account_gen2 HdinsightSparkCluster#storage_account_gen2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_account_gen2 HdinsightSparkCluster#storage_account_gen2}
   */
   readonly storageAccountGen2?: HdinsightSparkClusterStorageAccountGen2;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#timeouts HdinsightSparkCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#timeouts HdinsightSparkCluster#timeouts}
   */
   readonly timeouts?: HdinsightSparkClusterTimeouts;
 }
 export interface HdinsightSparkClusterComponentVersion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#spark HdinsightSparkCluster#spark}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#spark HdinsightSparkCluster#spark}
   */
   readonly spark: string;
 }
@@ -150,7 +150,7 @@ export interface HdinsightSparkClusterComponentVersion {
 export function hdinsightSparkClusterComponentVersionToTerraform(struct?: HdinsightSparkClusterComponentVersionOutputReference | HdinsightSparkClusterComponentVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     spark: cdktn.stringToTerraform(struct!.spark),
@@ -161,7 +161,7 @@ export function hdinsightSparkClusterComponentVersionToTerraform(struct?: Hdinsi
 export function hdinsightSparkClusterComponentVersionToHclTerraform(struct?: HdinsightSparkClusterComponentVersionOutputReference | HdinsightSparkClusterComponentVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     spark: {
@@ -223,11 +223,11 @@ export class HdinsightSparkClusterComponentVersionOutputReference extends cdktn.
 }
 export interface HdinsightSparkClusterComputeIsolation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#compute_isolation_enabled HdinsightSparkCluster#compute_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#compute_isolation_enabled HdinsightSparkCluster#compute_isolation_enabled}
   */
   readonly computeIsolationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#host_sku HdinsightSparkCluster#host_sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#host_sku HdinsightSparkCluster#host_sku}
   */
   readonly hostSku?: string;
 }
@@ -235,7 +235,7 @@ export interface HdinsightSparkClusterComputeIsolation {
 export function hdinsightSparkClusterComputeIsolationToTerraform(struct?: HdinsightSparkClusterComputeIsolationOutputReference | HdinsightSparkClusterComputeIsolation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     compute_isolation_enabled: cdktn.booleanToTerraform(struct!.computeIsolationEnabled),
@@ -247,7 +247,7 @@ export function hdinsightSparkClusterComputeIsolationToTerraform(struct?: Hdinsi
 export function hdinsightSparkClusterComputeIsolationToHclTerraform(struct?: HdinsightSparkClusterComputeIsolationOutputReference | HdinsightSparkClusterComputeIsolation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     compute_isolation_enabled: {
@@ -340,19 +340,19 @@ export class HdinsightSparkClusterComputeIsolationOutputReference extends cdktn.
 }
 export interface HdinsightSparkClusterDiskEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#encryption_algorithm HdinsightSparkCluster#encryption_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#encryption_algorithm HdinsightSparkCluster#encryption_algorithm}
   */
   readonly encryptionAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#encryption_at_host_enabled HdinsightSparkCluster#encryption_at_host_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#encryption_at_host_enabled HdinsightSparkCluster#encryption_at_host_enabled}
   */
   readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#key_vault_key_id HdinsightSparkCluster#key_vault_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#key_vault_key_id HdinsightSparkCluster#key_vault_key_id}
   */
   readonly keyVaultKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#key_vault_managed_identity_id HdinsightSparkCluster#key_vault_managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#key_vault_managed_identity_id HdinsightSparkCluster#key_vault_managed_identity_id}
   */
   readonly keyVaultManagedIdentityId?: string;
 }
@@ -360,7 +360,7 @@ export interface HdinsightSparkClusterDiskEncryption {
 export function hdinsightSparkClusterDiskEncryptionToTerraform(struct?: HdinsightSparkClusterDiskEncryption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encryption_algorithm: cdktn.stringToTerraform(struct!.encryptionAlgorithm),
@@ -374,7 +374,7 @@ export function hdinsightSparkClusterDiskEncryptionToTerraform(struct?: Hdinsigh
 export function hdinsightSparkClusterDiskEncryptionToHclTerraform(struct?: HdinsightSparkClusterDiskEncryption | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encryption_algorithm: {
@@ -555,11 +555,11 @@ export class HdinsightSparkClusterDiskEncryptionList extends cdktn.ComplexList {
 }
 export interface HdinsightSparkClusterExtension {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#log_analytics_workspace_id HdinsightSparkCluster#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#log_analytics_workspace_id HdinsightSparkCluster#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#primary_key HdinsightSparkCluster#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#primary_key HdinsightSparkCluster#primary_key}
   */
   readonly primaryKey: string;
 }
@@ -567,7 +567,7 @@ export interface HdinsightSparkClusterExtension {
 export function hdinsightSparkClusterExtensionToTerraform(struct?: HdinsightSparkClusterExtensionOutputReference | HdinsightSparkClusterExtension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_analytics_workspace_id: cdktn.stringToTerraform(struct!.logAnalyticsWorkspaceId),
@@ -579,7 +579,7 @@ export function hdinsightSparkClusterExtensionToTerraform(struct?: HdinsightSpar
 export function hdinsightSparkClusterExtensionToHclTerraform(struct?: HdinsightSparkClusterExtensionOutputReference | HdinsightSparkClusterExtension): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_analytics_workspace_id: {
@@ -666,11 +666,11 @@ export class HdinsightSparkClusterExtensionOutputReference extends cdktn.Complex
 }
 export interface HdinsightSparkClusterGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
 }
@@ -678,7 +678,7 @@ export interface HdinsightSparkClusterGateway {
 export function hdinsightSparkClusterGatewayToTerraform(struct?: HdinsightSparkClusterGatewayOutputReference | HdinsightSparkClusterGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -690,7 +690,7 @@ export function hdinsightSparkClusterGatewayToTerraform(struct?: HdinsightSparkC
 export function hdinsightSparkClusterGatewayToHclTerraform(struct?: HdinsightSparkClusterGatewayOutputReference | HdinsightSparkClusterGateway): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -777,19 +777,19 @@ export class HdinsightSparkClusterGatewayOutputReference extends cdktn.ComplexOb
 }
 export interface HdinsightSparkClusterMetastoresAmbari {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
   */
   readonly server: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
 }
@@ -797,7 +797,7 @@ export interface HdinsightSparkClusterMetastoresAmbari {
 export function hdinsightSparkClusterMetastoresAmbariToTerraform(struct?: HdinsightSparkClusterMetastoresAmbariOutputReference | HdinsightSparkClusterMetastoresAmbari): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -811,7 +811,7 @@ export function hdinsightSparkClusterMetastoresAmbariToTerraform(struct?: Hdinsi
 export function hdinsightSparkClusterMetastoresAmbariToHclTerraform(struct?: HdinsightSparkClusterMetastoresAmbariOutputReference | HdinsightSparkClusterMetastoresAmbari): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -948,19 +948,19 @@ export class HdinsightSparkClusterMetastoresAmbariOutputReference extends cdktn.
 }
 export interface HdinsightSparkClusterMetastoresHive {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
   */
   readonly server: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
 }
@@ -968,7 +968,7 @@ export interface HdinsightSparkClusterMetastoresHive {
 export function hdinsightSparkClusterMetastoresHiveToTerraform(struct?: HdinsightSparkClusterMetastoresHiveOutputReference | HdinsightSparkClusterMetastoresHive): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -982,7 +982,7 @@ export function hdinsightSparkClusterMetastoresHiveToTerraform(struct?: Hdinsigh
 export function hdinsightSparkClusterMetastoresHiveToHclTerraform(struct?: HdinsightSparkClusterMetastoresHiveOutputReference | HdinsightSparkClusterMetastoresHive): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -1119,19 +1119,19 @@ export class HdinsightSparkClusterMetastoresHiveOutputReference extends cdktn.Co
 }
 export interface HdinsightSparkClusterMetastoresOozie {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#database_name HdinsightSparkCluster#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#server HdinsightSparkCluster#server}
   */
   readonly server: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
 }
@@ -1139,7 +1139,7 @@ export interface HdinsightSparkClusterMetastoresOozie {
 export function hdinsightSparkClusterMetastoresOozieToTerraform(struct?: HdinsightSparkClusterMetastoresOozieOutputReference | HdinsightSparkClusterMetastoresOozie): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     database_name: cdktn.stringToTerraform(struct!.databaseName),
@@ -1153,7 +1153,7 @@ export function hdinsightSparkClusterMetastoresOozieToTerraform(struct?: Hdinsig
 export function hdinsightSparkClusterMetastoresOozieToHclTerraform(struct?: HdinsightSparkClusterMetastoresOozieOutputReference | HdinsightSparkClusterMetastoresOozie): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     database_name: {
@@ -1292,19 +1292,19 @@ export interface HdinsightSparkClusterMetastores {
   /**
   * ambari block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ambari HdinsightSparkCluster#ambari}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ambari HdinsightSparkCluster#ambari}
   */
   readonly ambari?: HdinsightSparkClusterMetastoresAmbari;
   /**
   * hive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#hive HdinsightSparkCluster#hive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#hive HdinsightSparkCluster#hive}
   */
   readonly hive?: HdinsightSparkClusterMetastoresHive;
   /**
   * oozie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#oozie HdinsightSparkCluster#oozie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#oozie HdinsightSparkCluster#oozie}
   */
   readonly oozie?: HdinsightSparkClusterMetastoresOozie;
 }
@@ -1312,7 +1312,7 @@ export interface HdinsightSparkClusterMetastores {
 export function hdinsightSparkClusterMetastoresToTerraform(struct?: HdinsightSparkClusterMetastoresOutputReference | HdinsightSparkClusterMetastores): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ambari: hdinsightSparkClusterMetastoresAmbariToTerraform(struct!.ambari),
@@ -1325,7 +1325,7 @@ export function hdinsightSparkClusterMetastoresToTerraform(struct?: HdinsightSpa
 export function hdinsightSparkClusterMetastoresToHclTerraform(struct?: HdinsightSparkClusterMetastoresOutputReference | HdinsightSparkClusterMetastores): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ambari: {
@@ -1446,11 +1446,11 @@ export class HdinsightSparkClusterMetastoresOutputReference extends cdktn.Comple
 }
 export interface HdinsightSparkClusterMonitor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#log_analytics_workspace_id HdinsightSparkCluster#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#log_analytics_workspace_id HdinsightSparkCluster#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#primary_key HdinsightSparkCluster#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#primary_key HdinsightSparkCluster#primary_key}
   */
   readonly primaryKey: string;
 }
@@ -1458,7 +1458,7 @@ export interface HdinsightSparkClusterMonitor {
 export function hdinsightSparkClusterMonitorToTerraform(struct?: HdinsightSparkClusterMonitorOutputReference | HdinsightSparkClusterMonitor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_analytics_workspace_id: cdktn.stringToTerraform(struct!.logAnalyticsWorkspaceId),
@@ -1470,7 +1470,7 @@ export function hdinsightSparkClusterMonitorToTerraform(struct?: HdinsightSparkC
 export function hdinsightSparkClusterMonitorToHclTerraform(struct?: HdinsightSparkClusterMonitorOutputReference | HdinsightSparkClusterMonitor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_analytics_workspace_id: {
@@ -1557,11 +1557,11 @@ export class HdinsightSparkClusterMonitorOutputReference extends cdktn.ComplexOb
 }
 export interface HdinsightSparkClusterNetwork {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#connection_direction HdinsightSparkCluster#connection_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#connection_direction HdinsightSparkCluster#connection_direction}
   */
   readonly connectionDirection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#private_link_enabled HdinsightSparkCluster#private_link_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#private_link_enabled HdinsightSparkCluster#private_link_enabled}
   */
   readonly privateLinkEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1569,7 +1569,7 @@ export interface HdinsightSparkClusterNetwork {
 export function hdinsightSparkClusterNetworkToTerraform(struct?: HdinsightSparkClusterNetworkOutputReference | HdinsightSparkClusterNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connection_direction: cdktn.stringToTerraform(struct!.connectionDirection),
@@ -1581,7 +1581,7 @@ export function hdinsightSparkClusterNetworkToTerraform(struct?: HdinsightSparkC
 export function hdinsightSparkClusterNetworkToHclTerraform(struct?: HdinsightSparkClusterNetworkOutputReference | HdinsightSparkClusterNetwork): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connection_direction: {
@@ -1674,23 +1674,23 @@ export class HdinsightSparkClusterNetworkOutputReference extends cdktn.ComplexOb
 }
 export interface HdinsightSparkClusterPrivateLinkConfigurationIpConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#primary HdinsightSparkCluster#primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#primary HdinsightSparkCluster#primary}
   */
   readonly primary?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#private_ip_address HdinsightSparkCluster#private_ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#private_ip_address HdinsightSparkCluster#private_ip_address}
   */
   readonly privateIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#private_ip_allocation_method HdinsightSparkCluster#private_ip_allocation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#private_ip_allocation_method HdinsightSparkCluster#private_ip_allocation_method}
   */
   readonly privateIpAllocationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
   */
   readonly subnetId?: string;
 }
@@ -1698,7 +1698,7 @@ export interface HdinsightSparkClusterPrivateLinkConfigurationIpConfiguration {
 export function hdinsightSparkClusterPrivateLinkConfigurationIpConfigurationToTerraform(struct?: HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference | HdinsightSparkClusterPrivateLinkConfigurationIpConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1713,7 +1713,7 @@ export function hdinsightSparkClusterPrivateLinkConfigurationIpConfigurationToTe
 export function hdinsightSparkClusterPrivateLinkConfigurationIpConfigurationToHclTerraform(struct?: HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputReference | HdinsightSparkClusterPrivateLinkConfigurationIpConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1887,17 +1887,17 @@ export class HdinsightSparkClusterPrivateLinkConfigurationIpConfigurationOutputR
 }
 export interface HdinsightSparkClusterPrivateLinkConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#group_id HdinsightSparkCluster#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#group_id HdinsightSparkCluster#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
   * ip_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ip_configuration HdinsightSparkCluster#ip_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ip_configuration HdinsightSparkCluster#ip_configuration}
   */
   readonly ipConfiguration: HdinsightSparkClusterPrivateLinkConfigurationIpConfiguration;
 }
@@ -1905,7 +1905,7 @@ export interface HdinsightSparkClusterPrivateLinkConfiguration {
 export function hdinsightSparkClusterPrivateLinkConfigurationToTerraform(struct?: HdinsightSparkClusterPrivateLinkConfigurationOutputReference | HdinsightSparkClusterPrivateLinkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_id: cdktn.stringToTerraform(struct!.groupId),
@@ -1918,7 +1918,7 @@ export function hdinsightSparkClusterPrivateLinkConfigurationToTerraform(struct?
 export function hdinsightSparkClusterPrivateLinkConfigurationToHclTerraform(struct?: HdinsightSparkClusterPrivateLinkConfigurationOutputReference | HdinsightSparkClusterPrivateLinkConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_id: {
@@ -2030,15 +2030,15 @@ export class HdinsightSparkClusterPrivateLinkConfigurationOutputReference extend
 }
 export interface HdinsightSparkClusterRolesHeadNodeScriptActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
   */
   readonly parameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
   */
   readonly uri: string;
 }
@@ -2046,7 +2046,7 @@ export interface HdinsightSparkClusterRolesHeadNodeScriptActions {
 export function hdinsightSparkClusterRolesHeadNodeScriptActionsToTerraform(struct?: HdinsightSparkClusterRolesHeadNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2059,7 +2059,7 @@ export function hdinsightSparkClusterRolesHeadNodeScriptActionsToTerraform(struc
 export function hdinsightSparkClusterRolesHeadNodeScriptActionsToHclTerraform(struct?: HdinsightSparkClusterRolesHeadNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2206,33 +2206,33 @@ export class HdinsightSparkClusterRolesHeadNodeScriptActionsList extends cdktn.C
 }
 export interface HdinsightSparkClusterRolesHeadNode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
   */
   readonly vmSize: string;
   /**
   * script_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
   */
   readonly scriptActions?: HdinsightSparkClusterRolesHeadNodeScriptActions[] | cdktn.IResolvable;
 }
@@ -2240,7 +2240,7 @@ export interface HdinsightSparkClusterRolesHeadNode {
 export function hdinsightSparkClusterRolesHeadNodeToTerraform(struct?: HdinsightSparkClusterRolesHeadNodeOutputReference | HdinsightSparkClusterRolesHeadNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -2257,7 +2257,7 @@ export function hdinsightSparkClusterRolesHeadNodeToTerraform(struct?: Hdinsight
 export function hdinsightSparkClusterRolesHeadNodeToHclTerraform(struct?: HdinsightSparkClusterRolesHeadNodeOutputReference | HdinsightSparkClusterRolesHeadNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -2484,11 +2484,11 @@ export class HdinsightSparkClusterRolesHeadNodeOutputReference extends cdktn.Com
 }
 export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#max_instance_count HdinsightSparkCluster#max_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#max_instance_count HdinsightSparkCluster#max_instance_count}
   */
   readonly maxInstanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#min_instance_count HdinsightSparkCluster#min_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#min_instance_count HdinsightSparkCluster#min_instance_count}
   */
   readonly minInstanceCount: number;
 }
@@ -2496,7 +2496,7 @@ export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacity {
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_instance_count: cdktn.numberToTerraform(struct!.maxInstanceCount),
@@ -2508,7 +2508,7 @@ export function hdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityToTerraform
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_instance_count: {
@@ -2595,15 +2595,15 @@ export class HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityOutputReferenc
 }
 export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#days HdinsightSparkCluster#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#days HdinsightSparkCluster#days}
   */
   readonly days: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#target_instance_count HdinsightSparkCluster#target_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#target_instance_count HdinsightSparkCluster#target_instance_count}
   */
   readonly targetInstanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#time HdinsightSparkCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#time HdinsightSparkCluster#time}
   */
   readonly time: string;
 }
@@ -2611,7 +2611,7 @@ export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedule
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     days: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.days),
@@ -2624,7 +2624,7 @@ export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleT
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     days: {
@@ -2768,13 +2768,13 @@ export class HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceScheduleList
 }
 export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrence {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#timezone HdinsightSparkCluster#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#timezone HdinsightSparkCluster#timezone}
   */
   readonly timezone: string;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#schedule HdinsightSparkCluster#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#schedule HdinsightSparkCluster#schedule}
   */
   readonly schedule: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceSchedule[] | cdktn.IResolvable;
 }
@@ -2782,7 +2782,7 @@ export interface HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrence {
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrence): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     timezone: cdktn.stringToTerraform(struct!.timezone),
@@ -2794,7 +2794,7 @@ export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceToTerrafo
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrenceOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrence): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     timezone: {
@@ -2883,13 +2883,13 @@ export interface HdinsightSparkClusterRolesWorkerNodeAutoscale {
   /**
   * capacity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#capacity HdinsightSparkCluster#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#capacity HdinsightSparkCluster#capacity}
   */
   readonly capacity?: HdinsightSparkClusterRolesWorkerNodeAutoscaleCapacity;
   /**
   * recurrence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#recurrence HdinsightSparkCluster#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#recurrence HdinsightSparkCluster#recurrence}
   */
   readonly recurrence?: HdinsightSparkClusterRolesWorkerNodeAutoscaleRecurrence;
 }
@@ -2897,7 +2897,7 @@ export interface HdinsightSparkClusterRolesWorkerNodeAutoscale {
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity: hdinsightSparkClusterRolesWorkerNodeAutoscaleCapacityToTerraform(struct!.capacity),
@@ -2909,7 +2909,7 @@ export function hdinsightSparkClusterRolesWorkerNodeAutoscaleToTerraform(struct?
 export function hdinsightSparkClusterRolesWorkerNodeAutoscaleToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeAutoscaleOutputReference | HdinsightSparkClusterRolesWorkerNodeAutoscale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity: {
@@ -3002,15 +3002,15 @@ export class HdinsightSparkClusterRolesWorkerNodeAutoscaleOutputReference extend
 }
 export interface HdinsightSparkClusterRolesWorkerNodeScriptActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
   */
   readonly parameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
   */
   readonly uri: string;
 }
@@ -3018,7 +3018,7 @@ export interface HdinsightSparkClusterRolesWorkerNodeScriptActions {
 export function hdinsightSparkClusterRolesWorkerNodeScriptActionsToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3031,7 +3031,7 @@ export function hdinsightSparkClusterRolesWorkerNodeScriptActionsToTerraform(str
 export function hdinsightSparkClusterRolesWorkerNodeScriptActionsToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3178,43 +3178,43 @@ export class HdinsightSparkClusterRolesWorkerNodeScriptActionsList extends cdktn
 }
 export interface HdinsightSparkClusterRolesWorkerNode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#target_instance_count HdinsightSparkCluster#target_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#target_instance_count HdinsightSparkCluster#target_instance_count}
   */
   readonly targetInstanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
   */
   readonly vmSize: string;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#autoscale HdinsightSparkCluster#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#autoscale HdinsightSparkCluster#autoscale}
   */
   readonly autoscale?: HdinsightSparkClusterRolesWorkerNodeAutoscale;
   /**
   * script_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
   */
   readonly scriptActions?: HdinsightSparkClusterRolesWorkerNodeScriptActions[] | cdktn.IResolvable;
 }
@@ -3222,7 +3222,7 @@ export interface HdinsightSparkClusterRolesWorkerNode {
 export function hdinsightSparkClusterRolesWorkerNodeToTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeOutputReference | HdinsightSparkClusterRolesWorkerNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -3241,7 +3241,7 @@ export function hdinsightSparkClusterRolesWorkerNodeToTerraform(struct?: Hdinsig
 export function hdinsightSparkClusterRolesWorkerNodeToHclTerraform(struct?: HdinsightSparkClusterRolesWorkerNodeOutputReference | HdinsightSparkClusterRolesWorkerNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -3521,15 +3521,15 @@ export class HdinsightSparkClusterRolesWorkerNodeOutputReference extends cdktn.C
 }
 export interface HdinsightSparkClusterRolesZookeeperNodeScriptActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#name HdinsightSparkCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#parameters HdinsightSparkCluster#parameters}
   */
   readonly parameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#uri HdinsightSparkCluster#uri}
   */
   readonly uri: string;
 }
@@ -3537,7 +3537,7 @@ export interface HdinsightSparkClusterRolesZookeeperNodeScriptActions {
 export function hdinsightSparkClusterRolesZookeeperNodeScriptActionsToTerraform(struct?: HdinsightSparkClusterRolesZookeeperNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -3550,7 +3550,7 @@ export function hdinsightSparkClusterRolesZookeeperNodeScriptActionsToTerraform(
 export function hdinsightSparkClusterRolesZookeeperNodeScriptActionsToHclTerraform(struct?: HdinsightSparkClusterRolesZookeeperNodeScriptActions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -3697,33 +3697,33 @@ export class HdinsightSparkClusterRolesZookeeperNodeScriptActionsList extends cd
 }
 export interface HdinsightSparkClusterRolesZookeeperNode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#password HdinsightSparkCluster#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ssh_keys HdinsightSparkCluster#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#subnet_id HdinsightSparkCluster#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#username HdinsightSparkCluster#username}
   */
   readonly username: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#virtual_network_id HdinsightSparkCluster#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#vm_size HdinsightSparkCluster#vm_size}
   */
   readonly vmSize: string;
   /**
   * script_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#script_actions HdinsightSparkCluster#script_actions}
   */
   readonly scriptActions?: HdinsightSparkClusterRolesZookeeperNodeScriptActions[] | cdktn.IResolvable;
 }
@@ -3731,7 +3731,7 @@ export interface HdinsightSparkClusterRolesZookeeperNode {
 export function hdinsightSparkClusterRolesZookeeperNodeToTerraform(struct?: HdinsightSparkClusterRolesZookeeperNodeOutputReference | HdinsightSparkClusterRolesZookeeperNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password: cdktn.stringToTerraform(struct!.password),
@@ -3748,7 +3748,7 @@ export function hdinsightSparkClusterRolesZookeeperNodeToTerraform(struct?: Hdin
 export function hdinsightSparkClusterRolesZookeeperNodeToHclTerraform(struct?: HdinsightSparkClusterRolesZookeeperNodeOutputReference | HdinsightSparkClusterRolesZookeeperNode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password: {
@@ -3977,19 +3977,19 @@ export interface HdinsightSparkClusterRoles {
   /**
   * head_node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#head_node HdinsightSparkCluster#head_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#head_node HdinsightSparkCluster#head_node}
   */
   readonly headNode: HdinsightSparkClusterRolesHeadNode;
   /**
   * worker_node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#worker_node HdinsightSparkCluster#worker_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#worker_node HdinsightSparkCluster#worker_node}
   */
   readonly workerNode: HdinsightSparkClusterRolesWorkerNode;
   /**
   * zookeeper_node block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#zookeeper_node HdinsightSparkCluster#zookeeper_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#zookeeper_node HdinsightSparkCluster#zookeeper_node}
   */
   readonly zookeeperNode: HdinsightSparkClusterRolesZookeeperNode;
 }
@@ -3997,7 +3997,7 @@ export interface HdinsightSparkClusterRoles {
 export function hdinsightSparkClusterRolesToTerraform(struct?: HdinsightSparkClusterRolesOutputReference | HdinsightSparkClusterRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     head_node: hdinsightSparkClusterRolesHeadNodeToTerraform(struct!.headNode),
@@ -4010,7 +4010,7 @@ export function hdinsightSparkClusterRolesToTerraform(struct?: HdinsightSparkClu
 export function hdinsightSparkClusterRolesToHclTerraform(struct?: HdinsightSparkClusterRolesOutputReference | HdinsightSparkClusterRoles): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     head_node: {
@@ -4122,31 +4122,31 @@ export class HdinsightSparkClusterRolesOutputReference extends cdktn.ComplexObje
 }
 export interface HdinsightSparkClusterSecurityProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#aadds_resource_id HdinsightSparkCluster#aadds_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#aadds_resource_id HdinsightSparkCluster#aadds_resource_id}
   */
   readonly aaddsResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#cluster_users_group_dns HdinsightSparkCluster#cluster_users_group_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#cluster_users_group_dns HdinsightSparkCluster#cluster_users_group_dns}
   */
   readonly clusterUsersGroupDns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#domain_name HdinsightSparkCluster#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#domain_name HdinsightSparkCluster#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#domain_user_password HdinsightSparkCluster#domain_user_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#domain_user_password HdinsightSparkCluster#domain_user_password}
   */
   readonly domainUserPassword: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#domain_username HdinsightSparkCluster#domain_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#domain_username HdinsightSparkCluster#domain_username}
   */
   readonly domainUsername: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#ldaps_urls HdinsightSparkCluster#ldaps_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#ldaps_urls HdinsightSparkCluster#ldaps_urls}
   */
   readonly ldapsUrls: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#msi_resource_id HdinsightSparkCluster#msi_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#msi_resource_id HdinsightSparkCluster#msi_resource_id}
   */
   readonly msiResourceId: string;
 }
@@ -4154,7 +4154,7 @@ export interface HdinsightSparkClusterSecurityProfile {
 export function hdinsightSparkClusterSecurityProfileToTerraform(struct?: HdinsightSparkClusterSecurityProfileOutputReference | HdinsightSparkClusterSecurityProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aadds_resource_id: cdktn.stringToTerraform(struct!.aaddsResourceId),
@@ -4171,7 +4171,7 @@ export function hdinsightSparkClusterSecurityProfileToTerraform(struct?: Hdinsig
 export function hdinsightSparkClusterSecurityProfileToHclTerraform(struct?: HdinsightSparkClusterSecurityProfileOutputReference | HdinsightSparkClusterSecurityProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aadds_resource_id: {
@@ -4386,19 +4386,19 @@ export class HdinsightSparkClusterSecurityProfileOutputReference extends cdktn.C
 }
 export interface HdinsightSparkClusterStorageAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#is_default HdinsightSparkCluster#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#is_default HdinsightSparkCluster#is_default}
   */
   readonly isDefault: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_account_key HdinsightSparkCluster#storage_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_account_key HdinsightSparkCluster#storage_account_key}
   */
   readonly storageAccountKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_container_id HdinsightSparkCluster#storage_container_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_container_id HdinsightSparkCluster#storage_container_id}
   */
   readonly storageContainerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_resource_id HdinsightSparkCluster#storage_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_resource_id HdinsightSparkCluster#storage_resource_id}
   */
   readonly storageResourceId?: string;
 }
@@ -4406,7 +4406,7 @@ export interface HdinsightSparkClusterStorageAccount {
 export function hdinsightSparkClusterStorageAccountToTerraform(struct?: HdinsightSparkClusterStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_default: cdktn.booleanToTerraform(struct!.isDefault),
@@ -4420,7 +4420,7 @@ export function hdinsightSparkClusterStorageAccountToTerraform(struct?: Hdinsigh
 export function hdinsightSparkClusterStorageAccountToHclTerraform(struct?: HdinsightSparkClusterStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_default: {
@@ -4592,19 +4592,19 @@ export class HdinsightSparkClusterStorageAccountList extends cdktn.ComplexList {
 }
 export interface HdinsightSparkClusterStorageAccountGen2 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#filesystem_id HdinsightSparkCluster#filesystem_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#filesystem_id HdinsightSparkCluster#filesystem_id}
   */
   readonly filesystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#is_default HdinsightSparkCluster#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#is_default HdinsightSparkCluster#is_default}
   */
   readonly isDefault: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#managed_identity_resource_id HdinsightSparkCluster#managed_identity_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#managed_identity_resource_id HdinsightSparkCluster#managed_identity_resource_id}
   */
   readonly managedIdentityResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#storage_resource_id HdinsightSparkCluster#storage_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#storage_resource_id HdinsightSparkCluster#storage_resource_id}
   */
   readonly storageResourceId: string;
 }
@@ -4612,7 +4612,7 @@ export interface HdinsightSparkClusterStorageAccountGen2 {
 export function hdinsightSparkClusterStorageAccountGen2ToTerraform(struct?: HdinsightSparkClusterStorageAccountGen2OutputReference | HdinsightSparkClusterStorageAccountGen2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filesystem_id: cdktn.stringToTerraform(struct!.filesystemId),
@@ -4626,7 +4626,7 @@ export function hdinsightSparkClusterStorageAccountGen2ToTerraform(struct?: Hdin
 export function hdinsightSparkClusterStorageAccountGen2ToHclTerraform(struct?: HdinsightSparkClusterStorageAccountGen2OutputReference | HdinsightSparkClusterStorageAccountGen2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filesystem_id: {
@@ -4763,19 +4763,19 @@ export class HdinsightSparkClusterStorageAccountGen2OutputReference extends cdkt
 }
 export interface HdinsightSparkClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#create HdinsightSparkCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#create HdinsightSparkCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#delete HdinsightSparkCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#delete HdinsightSparkCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#read HdinsightSparkCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#read HdinsightSparkCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#update HdinsightSparkCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#update HdinsightSparkCluster#update}
   */
   readonly update?: string;
 }
@@ -4783,7 +4783,7 @@ export interface HdinsightSparkClusterTimeouts {
 export function hdinsightSparkClusterTimeoutsToTerraform(struct?: HdinsightSparkClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -4797,7 +4797,7 @@ export function hdinsightSparkClusterTimeoutsToTerraform(struct?: HdinsightSpark
 export function hdinsightSparkClusterTimeoutsToHclTerraform(struct?: HdinsightSparkClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -4956,7 +4956,7 @@ export class HdinsightSparkClusterTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster}
 */
 export class HdinsightSparkCluster extends cdktn.TerraformResource {
 
@@ -4972,7 +4972,7 @@ export class HdinsightSparkCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HdinsightSparkCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HdinsightSparkCluster to import
-  * @param importFromId The id of the existing HdinsightSparkCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HdinsightSparkCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HdinsightSparkCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4984,7 +4984,7 @@ export class HdinsightSparkCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hdinsight_spark_cluster azurerm_hdinsight_spark_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4995,7 +4995,7 @@ export class HdinsightSparkCluster extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_hdinsight_spark_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

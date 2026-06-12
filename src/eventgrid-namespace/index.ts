@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface EventgridNamespaceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#capacity EventgridNamespace#capacity}
   */
   readonly capacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#id EventgridNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#location EventgridNamespace#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#name EventgridNamespace#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#public_network_access EventgridNamespace#public_network_access}
   */
   readonly publicNetworkAccess?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#resource_group_name EventgridNamespace#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#sku EventgridNamespace#sku}
   */
   readonly sku?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#tags EventgridNamespace#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#identity EventgridNamespace#identity}
   */
   readonly identity?: EventgridNamespaceIdentity;
   /**
   * inbound_ip_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#inbound_ip_rule EventgridNamespace#inbound_ip_rule}
   */
   readonly inboundIpRule?: EventgridNamespaceInboundIpRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#timeouts EventgridNamespace#timeouts}
   */
   readonly timeouts?: EventgridNamespaceTimeouts;
   /**
   * topic_spaces_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#topic_spaces_configuration EventgridNamespace#topic_spaces_configuration}
   */
   readonly topicSpacesConfiguration?: EventgridNamespaceTopicSpacesConfiguration[] | cdktn.IResolvable;
 }
 export interface EventgridNamespaceIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#identity_ids EventgridNamespace#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#type EventgridNamespace#type}
   */
   readonly type: string;
 }
@@ -86,7 +86,7 @@ export interface EventgridNamespaceIdentity {
 export function eventgridNamespaceIdentityToTerraform(struct?: EventgridNamespaceIdentityOutputReference | EventgridNamespaceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -98,7 +98,7 @@ export function eventgridNamespaceIdentityToTerraform(struct?: EventgridNamespac
 export function eventgridNamespaceIdentityToHclTerraform(struct?: EventgridNamespaceIdentityOutputReference | EventgridNamespaceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -198,11 +198,11 @@ export class EventgridNamespaceIdentityOutputReference extends cdktn.ComplexObje
 }
 export interface EventgridNamespaceInboundIpRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#action EventgridNamespace#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#ip_mask EventgridNamespace#ip_mask}
   */
   readonly ipMask: string;
 }
@@ -210,7 +210,7 @@ export interface EventgridNamespaceInboundIpRule {
 export function eventgridNamespaceInboundIpRuleToTerraform(struct?: EventgridNamespaceInboundIpRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -222,7 +222,7 @@ export function eventgridNamespaceInboundIpRuleToTerraform(struct?: EventgridNam
 export function eventgridNamespaceInboundIpRuleToHclTerraform(struct?: EventgridNamespaceInboundIpRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -344,19 +344,19 @@ export class EventgridNamespaceInboundIpRuleList extends cdktn.ComplexList {
 }
 export interface EventgridNamespaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#create EventgridNamespace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#delete EventgridNamespace#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#read EventgridNamespace#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#update EventgridNamespace#update}
   */
   readonly update?: string;
 }
@@ -364,7 +364,7 @@ export interface EventgridNamespaceTimeouts {
 export function eventgridNamespaceTimeoutsToTerraform(struct?: EventgridNamespaceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -378,7 +378,7 @@ export function eventgridNamespaceTimeoutsToTerraform(struct?: EventgridNamespac
 export function eventgridNamespaceTimeoutsToHclTerraform(struct?: EventgridNamespaceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -537,11 +537,11 @@ export class EventgridNamespaceTimeoutsOutputReference extends cdktn.ComplexObje
 }
 export interface EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}
   */
   readonly value: string;
 }
@@ -549,7 +549,7 @@ export interface EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichm
 export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -561,7 +561,7 @@ export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichme
 export function eventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -680,11 +680,11 @@ export class EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentL
 }
 export interface EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#key EventgridNamespace#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#value EventgridNamespace#value}
   */
   readonly value: string;
 }
@@ -692,7 +692,7 @@ export interface EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichme
 export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -704,7 +704,7 @@ export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmen
 export function eventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -823,31 +823,31 @@ export class EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentLi
 }
 export interface EventgridNamespaceTopicSpacesConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#alternative_authentication_name_source EventgridNamespace#alternative_authentication_name_source}
   */
   readonly alternativeAuthenticationNameSource?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#maximum_client_sessions_per_authentication_name EventgridNamespace#maximum_client_sessions_per_authentication_name}
   */
   readonly maximumClientSessionsPerAuthenticationName?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#maximum_session_expiry_in_hours EventgridNamespace#maximum_session_expiry_in_hours}
   */
   readonly maximumSessionExpiryInHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#route_topic_id EventgridNamespace#route_topic_id}
   */
   readonly routeTopicId?: string;
   /**
   * dynamic_routing_enrichment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#dynamic_routing_enrichment EventgridNamespace#dynamic_routing_enrichment}
   */
   readonly dynamicRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment[] | cdktn.IResolvable;
   /**
   * static_routing_enrichment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#static_routing_enrichment EventgridNamespace#static_routing_enrichment}
   */
   readonly staticRoutingEnrichment?: EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment[] | cdktn.IResolvable;
 }
@@ -855,7 +855,7 @@ export interface EventgridNamespaceTopicSpacesConfiguration {
 export function eventgridNamespaceTopicSpacesConfigurationToTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alternative_authentication_name_source: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternativeAuthenticationNameSource),
@@ -871,7 +871,7 @@ export function eventgridNamespaceTopicSpacesConfigurationToTerraform(struct?: E
 export function eventgridNamespaceTopicSpacesConfigurationToHclTerraform(struct?: EventgridNamespaceTopicSpacesConfiguration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alternative_authentication_name_source: {
@@ -1108,7 +1108,7 @@ export class EventgridNamespaceTopicSpacesConfigurationList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace}
 */
 export class EventgridNamespace extends cdktn.TerraformResource {
 
@@ -1124,7 +1124,7 @@ export class EventgridNamespace extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventgridNamespace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventgridNamespace to import
-  * @param importFromId The id of the existing EventgridNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventgridNamespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventgridNamespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1136,7 +1136,7 @@ export class EventgridNamespace extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/eventgrid_namespace azurerm_eventgrid_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1147,7 +1147,7 @@ export class EventgridNamespace extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_eventgrid_namespace',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

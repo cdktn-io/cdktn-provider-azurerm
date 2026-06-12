@@ -4,7 +4,7 @@
 
 ### ChaosStudioExperiment <a name="ChaosStudioExperiment" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment azurerm_chaos_studio_experiment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment azurerm_chaos_studio_experiment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.Initializer"></a>
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the ChaosStudioExperiment to i
 
 The id of the existing ChaosStudioExperiment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,12 +954,12 @@ const chaosStudioExperimentConfig: chaosStudioExperiment.ChaosStudioExperimentCo
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.selectors">selectors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors">ChaosStudioExperimentSelectors</a>[]</code> | selectors block. |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.steps">steps</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSteps">ChaosStudioExperimentSteps</a>[]</code> | steps block. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity">ChaosStudioExperimentIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts">ChaosStudioExperimentTimeouts</a></code> | timeouts block. |
 
@@ -1043,7 +1043,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#location ChaosStudioExperiment#location}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#resource_group_name ChaosStudioExperiment#resource_group_name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly selectors: IResolvable | ChaosStudioExperimentSelectors[];
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#selectors ChaosStudioExperiment#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#selectors ChaosStudioExperiment#selectors}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly steps: IResolvable | ChaosStudioExperimentSteps[];
 
 steps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#steps ChaosStudioExperiment#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#steps ChaosStudioExperiment#steps}
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#id ChaosStudioExperiment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1124,7 +1124,7 @@ public readonly identity: ChaosStudioExperimentIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#identity ChaosStudioExperiment#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#identity ChaosStudioExperiment#identity}
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly timeouts: ChaosStudioExperimentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#timeouts ChaosStudioExperiment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#timeouts ChaosStudioExperiment#timeouts}
 
 ---
 
@@ -1156,8 +1156,8 @@ const chaosStudioExperimentIdentity: chaosStudioExperiment.ChaosStudioExperiment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}. |
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#type ChaosStudioExperiment#type}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#identity_ids ChaosStudioExperiment#identity_ids}.
 
 ---
 
@@ -1199,8 +1199,8 @@ const chaosStudioExperimentSelectors: chaosStudioExperiment.ChaosStudioExperimen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors.property.chaosStudioTargetIds">chaosStudioTargetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors.property.chaosStudioTargetIds">chaosStudioTargetIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly chaosStudioTargetIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#chaos_studio_target_ids ChaosStudioExperiment#chaos_studio_target_ids}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 
 ---
 
@@ -1243,7 +1243,7 @@ const chaosStudioExperimentSteps: chaosStudioExperiment.ChaosStudioExperimentSte
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSteps.property.branch">branch</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranch">ChaosStudioExperimentStepsBranch</a>[]</code> | branch block. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSteps.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSteps.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly branch: IResolvable | ChaosStudioExperimentStepsBranch[];
 
 branch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#branch ChaosStudioExperiment#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#branch ChaosStudioExperiment#branch}
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 
 ---
 
@@ -1288,7 +1288,7 @@ const chaosStudioExperimentStepsBranch: chaosStudioExperiment.ChaosStudioExperim
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranch.property.actions">actions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions">ChaosStudioExperimentStepsBranchActions</a>[]</code> | actions block. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranch.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranch.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly actions: IResolvable | ChaosStudioExperimentStepsBranchActions[]
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#actions ChaosStudioExperiment#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#actions ChaosStudioExperiment#actions}
 
 ---
 
@@ -1314,7 +1314,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#name ChaosStudioExperiment#name}.
 
 ---
 
@@ -1332,11 +1332,11 @@ const chaosStudioExperimentStepsBranchActions: chaosStudioExperiment.ChaosStudio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.actionType">actionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#action_type ChaosStudioExperiment#action_type}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.duration">duration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#duration ChaosStudioExperiment#duration}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#parameters ChaosStudioExperiment#parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.selectorName">selectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#selector_name ChaosStudioExperiment#selector_name}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.urn">urn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#urn ChaosStudioExperiment#urn}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.actionType">actionType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#action_type ChaosStudioExperiment#action_type}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.duration">duration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#duration ChaosStudioExperiment#duration}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#parameters ChaosStudioExperiment#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.selectorName">selectorName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#selector_name ChaosStudioExperiment#selector_name}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.property.urn">urn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#urn ChaosStudioExperiment#urn}. |
 
 ---
 
@@ -1348,7 +1348,7 @@ public readonly actionType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#action_type ChaosStudioExperiment#action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#action_type ChaosStudioExperiment#action_type}.
 
 ---
 
@@ -1360,7 +1360,7 @@ public readonly duration: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#duration ChaosStudioExperiment#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#duration ChaosStudioExperiment#duration}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#parameters ChaosStudioExperiment#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#parameters ChaosStudioExperiment#parameters}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public readonly selectorName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#selector_name ChaosStudioExperiment#selector_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#selector_name ChaosStudioExperiment#selector_name}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public readonly urn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#urn ChaosStudioExperiment#urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#urn ChaosStudioExperiment#urn}.
 
 ---
 
@@ -1414,10 +1414,10 @@ const chaosStudioExperimentTimeouts: chaosStudioExperiment.ChaosStudioExperiment
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#create ChaosStudioExperiment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#delete ChaosStudioExperiment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#read ChaosStudioExperiment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#update ChaosStudioExperiment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#create ChaosStudioExperiment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#delete ChaosStudioExperiment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#read ChaosStudioExperiment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#update ChaosStudioExperiment#update}. |
 
 ---
 
@@ -1429,7 +1429,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#create ChaosStudioExperiment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#create ChaosStudioExperiment#create}.
 
 ---
 
@@ -1441,7 +1441,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#delete ChaosStudioExperiment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#delete ChaosStudioExperiment#delete}.
 
 ---
 
@@ -1453,7 +1453,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#read ChaosStudioExperiment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#read ChaosStudioExperiment#read}.
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/chaos_studio_experiment#update ChaosStudioExperiment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/chaos_studio_experiment#update ChaosStudioExperiment#update}.
 
 ---
 

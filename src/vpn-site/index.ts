@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,70 @@ import * as cdktn from 'cdktn';
 
 export interface VpnSiteConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#address_cidrs VpnSite#address_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#address_cidrs VpnSite#address_cidrs}
   */
   readonly addressCidrs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#device_model VpnSite#device_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#device_model VpnSite#device_model}
   */
   readonly deviceModel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#device_vendor VpnSite#device_vendor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#device_vendor VpnSite#device_vendor}
   */
   readonly deviceVendor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#id VpnSite#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#id VpnSite#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#location VpnSite#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#location VpnSite#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#name VpnSite#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#name VpnSite#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#resource_group_name VpnSite#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#resource_group_name VpnSite#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#tags VpnSite#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#tags VpnSite#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#virtual_wan_id VpnSite#virtual_wan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#virtual_wan_id VpnSite#virtual_wan_id}
   */
   readonly virtualWanId: string;
   /**
   * link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#link VpnSite#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#link VpnSite#link}
   */
   readonly link?: VpnSiteLink[] | cdktn.IResolvable;
   /**
   * o365_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#o365_policy VpnSite#o365_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#o365_policy VpnSite#o365_policy}
   */
   readonly o365Policy?: VpnSiteO365Policy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#timeouts VpnSite#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#timeouts VpnSite#timeouts}
   */
   readonly timeouts?: VpnSiteTimeouts;
 }
 export interface VpnSiteLinkBgp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#asn VpnSite#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#asn VpnSite#asn}
   */
   readonly asn: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#peering_address VpnSite#peering_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#peering_address VpnSite#peering_address}
   */
   readonly peeringAddress: string;
 }
@@ -84,7 +84,7 @@ export interface VpnSiteLinkBgp {
 export function vpnSiteLinkBgpToTerraform(struct?: VpnSiteLinkBgpOutputReference | VpnSiteLinkBgp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     asn: cdktn.numberToTerraform(struct!.asn),
@@ -96,7 +96,7 @@ export function vpnSiteLinkBgpToTerraform(struct?: VpnSiteLinkBgpOutputReference
 export function vpnSiteLinkBgpToHclTerraform(struct?: VpnSiteLinkBgpOutputReference | VpnSiteLinkBgp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     asn: {
@@ -183,29 +183,29 @@ export class VpnSiteLinkBgpOutputReference extends cdktn.ComplexObject {
 }
 export interface VpnSiteLink {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#fqdn VpnSite#fqdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#fqdn VpnSite#fqdn}
   */
   readonly fqdn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#ip_address VpnSite#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#ip_address VpnSite#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#name VpnSite#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#name VpnSite#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#provider_name VpnSite#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#provider_name VpnSite#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#speed_in_mbps VpnSite#speed_in_mbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#speed_in_mbps VpnSite#speed_in_mbps}
   */
   readonly speedInMbps?: number;
   /**
   * bgp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#bgp VpnSite#bgp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#bgp VpnSite#bgp}
   */
   readonly bgp?: VpnSiteLinkBgp;
 }
@@ -213,7 +213,7 @@ export interface VpnSiteLink {
 export function vpnSiteLinkToTerraform(struct?: VpnSiteLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fqdn: cdktn.stringToTerraform(struct!.fqdn),
@@ -229,7 +229,7 @@ export function vpnSiteLinkToTerraform(struct?: VpnSiteLink | cdktn.IResolvable)
 export function vpnSiteLinkToHclTerraform(struct?: VpnSiteLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fqdn: {
@@ -468,15 +468,15 @@ export class VpnSiteLinkList extends cdktn.ComplexList {
 }
 export interface VpnSiteO365PolicyTrafficCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#allow_endpoint_enabled VpnSite#allow_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#allow_endpoint_enabled VpnSite#allow_endpoint_enabled}
   */
   readonly allowEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#default_endpoint_enabled VpnSite#default_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#default_endpoint_enabled VpnSite#default_endpoint_enabled}
   */
   readonly defaultEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#optimize_endpoint_enabled VpnSite#optimize_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#optimize_endpoint_enabled VpnSite#optimize_endpoint_enabled}
   */
   readonly optimizeEndpointEnabled?: boolean | cdktn.IResolvable;
 }
@@ -484,7 +484,7 @@ export interface VpnSiteO365PolicyTrafficCategory {
 export function vpnSiteO365PolicyTrafficCategoryToTerraform(struct?: VpnSiteO365PolicyTrafficCategoryOutputReference | VpnSiteO365PolicyTrafficCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allow_endpoint_enabled: cdktn.booleanToTerraform(struct!.allowEndpointEnabled),
@@ -497,7 +497,7 @@ export function vpnSiteO365PolicyTrafficCategoryToTerraform(struct?: VpnSiteO365
 export function vpnSiteO365PolicyTrafficCategoryToHclTerraform(struct?: VpnSiteO365PolicyTrafficCategoryOutputReference | VpnSiteO365PolicyTrafficCategory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allow_endpoint_enabled: {
@@ -620,7 +620,7 @@ export interface VpnSiteO365Policy {
   /**
   * traffic_category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#traffic_category VpnSite#traffic_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#traffic_category VpnSite#traffic_category}
   */
   readonly trafficCategory?: VpnSiteO365PolicyTrafficCategory;
 }
@@ -628,7 +628,7 @@ export interface VpnSiteO365Policy {
 export function vpnSiteO365PolicyToTerraform(struct?: VpnSiteO365PolicyOutputReference | VpnSiteO365Policy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     traffic_category: vpnSiteO365PolicyTrafficCategoryToTerraform(struct!.trafficCategory),
@@ -639,7 +639,7 @@ export function vpnSiteO365PolicyToTerraform(struct?: VpnSiteO365PolicyOutputRef
 export function vpnSiteO365PolicyToHclTerraform(struct?: VpnSiteO365PolicyOutputReference | VpnSiteO365Policy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     traffic_category: {
@@ -704,19 +704,19 @@ export class VpnSiteO365PolicyOutputReference extends cdktn.ComplexObject {
 }
 export interface VpnSiteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#create VpnSite#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#create VpnSite#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#delete VpnSite#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#delete VpnSite#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#read VpnSite#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#read VpnSite#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#update VpnSite#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#update VpnSite#update}
   */
   readonly update?: string;
 }
@@ -724,7 +724,7 @@ export interface VpnSiteTimeouts {
 export function vpnSiteTimeoutsToTerraform(struct?: VpnSiteTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -738,7 +738,7 @@ export function vpnSiteTimeoutsToTerraform(struct?: VpnSiteTimeouts | cdktn.IRes
 export function vpnSiteTimeoutsToHclTerraform(struct?: VpnSiteTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -897,7 +897,7 @@ export class VpnSiteTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site azurerm_vpn_site}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site azurerm_vpn_site}
 */
 export class VpnSite extends cdktn.TerraformResource {
 
@@ -913,7 +913,7 @@ export class VpnSite extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VpnSite resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnSite to import
-  * @param importFromId The id of the existing VpnSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpnSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnSite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -925,7 +925,7 @@ export class VpnSite extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vpn_site azurerm_vpn_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vpn_site azurerm_vpn_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -936,7 +936,7 @@ export class VpnSite extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_vpn_site',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

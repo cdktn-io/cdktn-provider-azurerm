@@ -4,7 +4,7 @@
 
 ### BatchJob <a name="BatchJob" id="@cdktn/provider-azurerm.batchJob.BatchJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job azurerm_batch_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job azurerm_batch_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.batchJob.BatchJob.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the BatchJob to import.
 
 The id of the existing BatchJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -936,13 +936,13 @@ const batchJobConfig: batchJob.BatchJobConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.batchPoolId">batchPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#batch_pool_id BatchJob#batch_pool_id}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#name BatchJob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.commonEnvironmentProperties">commonEnvironmentProperties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#common_environment_properties BatchJob#common_environment_properties}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#display_name BatchJob#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#id BatchJob#id}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#priority BatchJob#priority}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.taskRetryMaximum">taskRetryMaximum</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#task_retry_maximum BatchJob#task_retry_maximum}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.batchPoolId">batchPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#batch_pool_id BatchJob#batch_pool_id}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#name BatchJob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.commonEnvironmentProperties">commonEnvironmentProperties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#common_environment_properties BatchJob#common_environment_properties}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#display_name BatchJob#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#id BatchJob#id}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.priority">priority</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#priority BatchJob#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.taskRetryMaximum">taskRetryMaximum</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#task_retry_maximum BatchJob#task_retry_maximum}. |
 | <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts">BatchJobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1025,7 +1025,7 @@ public readonly batchPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#batch_pool_id BatchJob#batch_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#batch_pool_id BatchJob#batch_pool_id}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#name BatchJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#name BatchJob#name}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly commonEnvironmentProperties: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#common_environment_properties BatchJob#common_environment_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#common_environment_properties BatchJob#common_environment_properties}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#display_name BatchJob#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#display_name BatchJob#display_name}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#id BatchJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#id BatchJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ public readonly priority: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#priority BatchJob#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#priority BatchJob#priority}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly taskRetryMaximum: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#task_retry_maximum BatchJob#task_retry_maximum}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#task_retry_maximum BatchJob#task_retry_maximum}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly timeouts: BatchJobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#timeouts BatchJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#timeouts BatchJob#timeouts}
 
 ---
 
@@ -1132,10 +1132,10 @@ const batchJobTimeouts: batchJob.BatchJobTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#create BatchJob#create}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#delete BatchJob#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#read BatchJob#read}. |
-| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#update BatchJob#update}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#create BatchJob#create}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#delete BatchJob#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#read BatchJob#read}. |
+| <code><a href="#@cdktn/provider-azurerm.batchJob.BatchJobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#update BatchJob#update}. |
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#create BatchJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#create BatchJob#create}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#delete BatchJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#delete BatchJob#delete}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#read BatchJob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#read BatchJob#read}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_job#update BatchJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_job#update BatchJob#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,154 +13,154 @@ import * as cdktn from 'cdktn';
 
 export interface LinuxWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_settings LinuxWebApp#app_settings}
   */
   readonly appSettings?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_affinity_enabled LinuxWebApp#client_affinity_enabled}
   */
   readonly clientAffinityEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_certificate_enabled LinuxWebApp#client_certificate_enabled}
   */
   readonly clientCertificateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Paths to exclude when using client certificates, separated by ;
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_certificate_exclusion_paths LinuxWebApp#client_certificate_exclusion_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_certificate_exclusion_paths LinuxWebApp#client_certificate_exclusion_paths}
   */
   readonly clientCertificateExclusionPaths?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_certificate_mode LinuxWebApp#client_certificate_mode}
   */
   readonly clientCertificateMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ftp_publish_basic_authentication_enabled LinuxWebApp#ftp_publish_basic_authentication_enabled}
   */
   readonly ftpPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#https_only LinuxWebApp#https_only}
   */
   readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#id LinuxWebApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#id LinuxWebApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#key_vault_reference_identity_id LinuxWebApp#key_vault_reference_identity_id}
   */
   readonly keyVaultReferenceIdentityId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#location LinuxWebApp#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#location LinuxWebApp#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#public_network_access_enabled LinuxWebApp#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#resource_group_name LinuxWebApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#service_plan_id LinuxWebApp#service_plan_id}
   */
   readonly servicePlanId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#tags LinuxWebApp#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#virtual_network_backup_restore_enabled LinuxWebApp#virtual_network_backup_restore_enabled}
   */
   readonly virtualNetworkBackupRestoreEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#vnet_image_pull_enabled LinuxWebApp#vnet_image_pull_enabled}
   */
   readonly vnetImagePullEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#webdeploy_publish_basic_authentication_enabled LinuxWebApp#webdeploy_publish_basic_authentication_enabled}
   */
   readonly webdeployPublishBasicAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * The local path and filename of the Zip packaged application to deploy to this Linux Web App. **Note:** Using this value requires either `WEBSITE_RUN_FROM_PACKAGE=1` or `SCM_DO_BUILD_DURING_DEPLOYMENT=true` to be set on the App in `app_settings`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#zip_deploy_file LinuxWebApp#zip_deploy_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#zip_deploy_file LinuxWebApp#zip_deploy_file}
   */
   readonly zipDeployFile?: string;
   /**
   * auth_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#auth_settings LinuxWebApp#auth_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#auth_settings LinuxWebApp#auth_settings}
   */
   readonly authSettings?: LinuxWebAppAuthSettings;
   /**
   * auth_settings_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#auth_settings_v2 LinuxWebApp#auth_settings_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#auth_settings_v2 LinuxWebApp#auth_settings_v2}
   */
   readonly authSettingsV2?: LinuxWebAppAuthSettingsV2;
   /**
   * backup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#backup LinuxWebApp#backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#backup LinuxWebApp#backup}
   */
   readonly backup?: LinuxWebAppBackup;
   /**
   * connection_string block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#connection_string LinuxWebApp#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#connection_string LinuxWebApp#connection_string}
   */
   readonly connectionString?: LinuxWebAppConnectionString[] | cdktn.IResolvable;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#identity LinuxWebApp#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#identity LinuxWebApp#identity}
   */
   readonly identity?: LinuxWebAppIdentity;
   /**
   * logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#logs LinuxWebApp#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#logs LinuxWebApp#logs}
   */
   readonly logs?: LinuxWebAppLogs;
   /**
   * site_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#site_config LinuxWebApp#site_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#site_config LinuxWebApp#site_config}
   */
   readonly siteConfig: LinuxWebAppSiteConfig;
   /**
   * sticky_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#sticky_settings LinuxWebApp#sticky_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#sticky_settings LinuxWebApp#sticky_settings}
   */
   readonly stickySettings?: LinuxWebAppStickySettings;
   /**
   * storage_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#storage_account LinuxWebApp#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#storage_account LinuxWebApp#storage_account}
   */
   readonly storageAccount?: LinuxWebAppStorageAccount[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#timeouts LinuxWebApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#timeouts LinuxWebApp#timeouts}
   */
   readonly timeouts?: LinuxWebAppTimeouts;
 }
@@ -170,7 +170,7 @@ export interface LinuxWebAppSiteCredential {
 export function linuxWebAppSiteCredentialToTerraform(struct?: LinuxWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -180,7 +180,7 @@ export function linuxWebAppSiteCredentialToTerraform(struct?: LinuxWebAppSiteCre
 export function linuxWebAppSiteCredentialToHclTerraform(struct?: LinuxWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -248,25 +248,25 @@ export interface LinuxWebAppAuthSettingsActiveDirectory {
   /**
   * Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The ID of the Client to use to authenticate with Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The Client Secret for the Client ID. Cannot be used with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The App Setting name that contains the client secret of the Client. Cannot be used with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
 }
@@ -274,7 +274,7 @@ export interface LinuxWebAppAuthSettingsActiveDirectory {
 export function linuxWebAppAuthSettingsActiveDirectoryToTerraform(struct?: LinuxWebAppAuthSettingsActiveDirectoryOutputReference | LinuxWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -288,7 +288,7 @@ export function linuxWebAppAuthSettingsActiveDirectoryToTerraform(struct?: Linux
 export function linuxWebAppAuthSettingsActiveDirectoryToHclTerraform(struct?: LinuxWebAppAuthSettingsActiveDirectoryOutputReference | LinuxWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -436,25 +436,25 @@ export interface LinuxWebAppAuthSettingsFacebook {
   /**
   * The App ID of the Facebook app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
   */
   readonly appId: string;
   /**
   * The App Secret of the Facebook app used for Facebook Login. Cannot be specified with `app_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_secret LinuxWebApp#app_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_secret LinuxWebApp#app_secret}
   */
   readonly appSecret?: string;
   /**
   * The app setting name that contains the `app_secret` value used for Facebook Login. Cannot be specified with `app_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
   */
   readonly appSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes to be requested as part of Facebook Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -462,7 +462,7 @@ export interface LinuxWebAppAuthSettingsFacebook {
 export function linuxWebAppAuthSettingsFacebookToTerraform(struct?: LinuxWebAppAuthSettingsFacebookOutputReference | LinuxWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_id: cdktn.stringToTerraform(struct!.appId),
@@ -476,7 +476,7 @@ export function linuxWebAppAuthSettingsFacebookToTerraform(struct?: LinuxWebAppA
 export function linuxWebAppAuthSettingsFacebookToHclTerraform(struct?: LinuxWebAppAuthSettingsFacebookOutputReference | LinuxWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_id: {
@@ -624,25 +624,25 @@ export interface LinuxWebAppAuthSettingsGithub {
   /**
   * The ID of the GitHub app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The Client Secret of the GitHub app used for GitHub Login. Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name that contains the `client_secret` value used for GitHub Login. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -650,7 +650,7 @@ export interface LinuxWebAppAuthSettingsGithub {
 export function linuxWebAppAuthSettingsGithubToTerraform(struct?: LinuxWebAppAuthSettingsGithubOutputReference | LinuxWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -664,7 +664,7 @@ export function linuxWebAppAuthSettingsGithubToTerraform(struct?: LinuxWebAppAut
 export function linuxWebAppAuthSettingsGithubToHclTerraform(struct?: LinuxWebAppAuthSettingsGithubOutputReference | LinuxWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -812,25 +812,25 @@ export interface LinuxWebAppAuthSettingsGoogle {
   /**
   * The OpenID Connect Client ID for the Google web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret associated with the Google web application.  Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name that contains the `client_secret` value used for Google Login. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. If not specified, "openid", "profile", and "email" are used as default scopes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -838,7 +838,7 @@ export interface LinuxWebAppAuthSettingsGoogle {
 export function linuxWebAppAuthSettingsGoogleToTerraform(struct?: LinuxWebAppAuthSettingsGoogleOutputReference | LinuxWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -852,7 +852,7 @@ export function linuxWebAppAuthSettingsGoogleToTerraform(struct?: LinuxWebAppAut
 export function linuxWebAppAuthSettingsGoogleToHclTerraform(struct?: LinuxWebAppAuthSettingsGoogleOutputReference | LinuxWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1000,25 +1000,25 @@ export interface LinuxWebAppAuthSettingsMicrosoft {
   /**
   * The OAuth 2.0 client ID that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret LinuxWebApp#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication. Cannot be specified with `client_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * The list of OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. If not specified, `wl.basic` is used as the default scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#oauth_scopes LinuxWebApp#oauth_scopes}
   */
   readonly oauthScopes?: string[];
 }
@@ -1026,7 +1026,7 @@ export interface LinuxWebAppAuthSettingsMicrosoft {
 export function linuxWebAppAuthSettingsMicrosoftToTerraform(struct?: LinuxWebAppAuthSettingsMicrosoftOutputReference | LinuxWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -1040,7 +1040,7 @@ export function linuxWebAppAuthSettingsMicrosoftToTerraform(struct?: LinuxWebApp
 export function linuxWebAppAuthSettingsMicrosoftToHclTerraform(struct?: LinuxWebAppAuthSettingsMicrosoftOutputReference | LinuxWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -1188,19 +1188,19 @@ export interface LinuxWebAppAuthSettingsTwitter {
   /**
   * The OAuth 1.0a consumer key of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
   */
   readonly consumerKey: string;
   /**
   * The OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret_setting_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#consumer_secret LinuxWebApp#consumer_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#consumer_secret LinuxWebApp#consumer_secret}
   */
   readonly consumerSecret?: string;
   /**
   * The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in. Cannot be specified with `consumer_secret`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
   */
   readonly consumerSecretSettingName?: string;
 }
@@ -1208,7 +1208,7 @@ export interface LinuxWebAppAuthSettingsTwitter {
 export function linuxWebAppAuthSettingsTwitterToTerraform(struct?: LinuxWebAppAuthSettingsTwitterOutputReference | LinuxWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
@@ -1221,7 +1221,7 @@ export function linuxWebAppAuthSettingsTwitterToTerraform(struct?: LinuxWebAppAu
 export function linuxWebAppAuthSettingsTwitterToHclTerraform(struct?: LinuxWebAppAuthSettingsTwitterOutputReference | LinuxWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consumer_key: {
@@ -1341,91 +1341,91 @@ export interface LinuxWebAppAuthSettings {
   /**
   * Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#additional_login_parameters LinuxWebApp#additional_login_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#additional_login_parameters LinuxWebApp#additional_login_parameters}
   */
   readonly additionalLoginParameters?: { [key: string]: string };
   /**
   * Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
   */
   readonly allowedExternalRedirectUrls?: string[];
   /**
   * The default authentication provider to use when multiple providers are configured. Possible values include: `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount`, `Twitter`, `Github`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
   */
   readonly defaultProvider?: string;
   /**
   * Should the Authentication / Authorization feature be enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The OpenID Connect Issuer URI that represents the entity which issues access tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#issuer LinuxWebApp#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#issuer LinuxWebApp#issuer}
   */
   readonly issuer?: string;
   /**
   * The RuntimeVersion of the Authentication / Authorization feature in use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to `72` hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_refresh_extension_hours LinuxWebApp#token_refresh_extension_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_refresh_extension_hours LinuxWebApp#token_refresh_extension_hours}
   */
   readonly tokenRefreshExtensionHours?: number;
   /**
   * Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
   */
   readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#unauthenticated_client_action LinuxWebApp#unauthenticated_client_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#unauthenticated_client_action LinuxWebApp#unauthenticated_client_action}
   */
   readonly unauthenticatedClientAction?: string;
   /**
   * active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#active_directory LinuxWebApp#active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#active_directory LinuxWebApp#active_directory}
   */
   readonly activeDirectory?: LinuxWebAppAuthSettingsActiveDirectory;
   /**
   * facebook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#facebook LinuxWebApp#facebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#facebook LinuxWebApp#facebook}
   */
   readonly facebook?: LinuxWebAppAuthSettingsFacebook;
   /**
   * github block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#github LinuxWebApp#github}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#github LinuxWebApp#github}
   */
   readonly github?: LinuxWebAppAuthSettingsGithub;
   /**
   * google block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#google LinuxWebApp#google}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#google LinuxWebApp#google}
   */
   readonly google?: LinuxWebAppAuthSettingsGoogle;
   /**
   * microsoft block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#microsoft LinuxWebApp#microsoft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#microsoft LinuxWebApp#microsoft}
   */
   readonly microsoft?: LinuxWebAppAuthSettingsMicrosoft;
   /**
   * twitter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#twitter LinuxWebApp#twitter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#twitter LinuxWebApp#twitter}
   */
   readonly twitter?: LinuxWebAppAuthSettingsTwitter;
 }
@@ -1433,7 +1433,7 @@ export interface LinuxWebAppAuthSettings {
 export function linuxWebAppAuthSettingsToTerraform(struct?: LinuxWebAppAuthSettingsOutputReference | LinuxWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_login_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalLoginParameters),
@@ -1458,7 +1458,7 @@ export function linuxWebAppAuthSettingsToTerraform(struct?: LinuxWebAppAuthSetti
 export function linuxWebAppAuthSettingsToHclTerraform(struct?: LinuxWebAppAuthSettingsOutputReference | LinuxWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_login_parameters: {
@@ -1914,73 +1914,73 @@ export interface LinuxWebAppAuthSettingsV2ActiveDirectoryV2 {
   /**
   * The list of allowed Applications for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_applications LinuxWebApp#allowed_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_applications LinuxWebApp#allowed_applications}
   */
   readonly allowedApplications?: string[];
   /**
   * Specifies a list of Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The list of allowed Group Names for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_groups LinuxWebApp#allowed_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_groups LinuxWebApp#allowed_groups}
   */
   readonly allowedGroups?: string[];
   /**
   * The list of allowed Identities for the Default Authorisation Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_identities LinuxWebApp#allowed_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_identities LinuxWebApp#allowed_identities}
   */
   readonly allowedIdentities?: string[];
   /**
   * The ID of the Client to use to authenticate with Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The thumbprint of the certificate used for signing purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_certificate_thumbprint LinuxWebApp#client_secret_certificate_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_certificate_thumbprint LinuxWebApp#client_secret_certificate_thumbprint}
   */
   readonly clientSecretCertificateThumbprint?: string;
   /**
   * The App Setting name that contains the client secret of the Client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName?: string;
   /**
   * A list of Allowed Client Applications in the JWT Claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#jwt_allowed_client_applications LinuxWebApp#jwt_allowed_client_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#jwt_allowed_client_applications LinuxWebApp#jwt_allowed_client_applications}
   */
   readonly jwtAllowedClientApplications?: string[];
   /**
   * A list of Allowed Groups in the JWT Claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#jwt_allowed_groups LinuxWebApp#jwt_allowed_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#jwt_allowed_groups LinuxWebApp#jwt_allowed_groups}
   */
   readonly jwtAllowedGroups?: string[];
   /**
   * A map of key-value pairs to send to the Authorisation Endpoint when a user logs in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login_parameters LinuxWebApp#login_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login_parameters LinuxWebApp#login_parameters}
   */
   readonly loginParameters?: { [key: string]: string };
   /**
   * The Azure Tenant Endpoint for the Authenticating Tenant. e.g. `https://login.microsoftonline.com/v2.0/{tenant-guid}/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#tenant_auth_endpoint LinuxWebApp#tenant_auth_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#tenant_auth_endpoint LinuxWebApp#tenant_auth_endpoint}
   */
   readonly tenantAuthEndpoint: string;
   /**
   * Should the www-authenticate provider should be omitted from the request? Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#www_authentication_disabled LinuxWebApp#www_authentication_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#www_authentication_disabled LinuxWebApp#www_authentication_disabled}
   */
   readonly wwwAuthenticationDisabled?: boolean | cdktn.IResolvable;
 }
@@ -1988,7 +1988,7 @@ export interface LinuxWebAppAuthSettingsV2ActiveDirectoryV2 {
 export function linuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference | LinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_applications: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedApplications),
@@ -2010,7 +2010,7 @@ export function linuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: L
 export function linuxWebAppAuthSettingsV2ActiveDirectoryV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference | LinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_applications: {
@@ -2379,13 +2379,13 @@ export interface LinuxWebAppAuthSettingsV2AppleV2 {
   /**
   * The OpenID Connect Client ID for the Apple web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for Apple Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
 }
@@ -2393,7 +2393,7 @@ export interface LinuxWebAppAuthSettingsV2AppleV2 {
 export function linuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2AppleV2OutputReference | LinuxWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2405,7 +2405,7 @@ export function linuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: LinuxWebApp
 export function linuxWebAppAuthSettingsV2AppleV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2AppleV2OutputReference | LinuxWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2499,7 +2499,7 @@ export interface LinuxWebAppAuthSettingsV2AzureStaticWebAppV2 {
   /**
   * The ID of the Client to use to authenticate with Azure Static Web App Authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
 }
@@ -2507,7 +2507,7 @@ export interface LinuxWebAppAuthSettingsV2AzureStaticWebAppV2 {
 export function linuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference | LinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2518,7 +2518,7 @@ export function linuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?:
 export function linuxWebAppAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference | LinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2582,31 +2582,31 @@ export interface LinuxWebAppAuthSettingsV2CustomOidcV2 {
   /**
   * The ID of the Client to use to authenticate with this Custom OIDC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The name of the Custom OIDC Authentication Provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name: string;
   /**
   * The name of the claim that contains the users name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name_claim_type LinuxWebApp#name_claim_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name_claim_type LinuxWebApp#name_claim_type}
   */
   readonly nameClaimType?: string;
   /**
   * The endpoint that contains all the configuration endpoints for this Custom OIDC provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#openid_configuration_endpoint LinuxWebApp#openid_configuration_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#openid_configuration_endpoint LinuxWebApp#openid_configuration_endpoint}
   */
   readonly openidConfigurationEndpoint: string;
   /**
   * The list of the scopes that should be requested while authenticating.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#scopes LinuxWebApp#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#scopes LinuxWebApp#scopes}
   */
   readonly scopes?: string[];
 }
@@ -2614,7 +2614,7 @@ export interface LinuxWebAppAuthSettingsV2CustomOidcV2 {
 export function linuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -2629,7 +2629,7 @@ export function linuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: LinuxW
 export function linuxWebAppAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2CustomOidcV2 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -2861,25 +2861,25 @@ export interface LinuxWebAppAuthSettingsV2FacebookV2 {
   /**
   * The App ID of the Facebook app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_id LinuxWebApp#app_id}
   */
   readonly appId: string;
   /**
   * The app setting name that contains the `app_secret` value used for Facebook Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_secret_setting_name LinuxWebApp#app_secret_setting_name}
   */
   readonly appSecretSettingName: string;
   /**
   * The version of the Facebook API to be used while logging in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#graph_api_version LinuxWebApp#graph_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#graph_api_version LinuxWebApp#graph_api_version}
   */
   readonly graphApiVersion?: string;
   /**
   * Specifies a list of scopes to be requested as part of Facebook Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -2887,7 +2887,7 @@ export interface LinuxWebAppAuthSettingsV2FacebookV2 {
 export function linuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2FacebookV2OutputReference | LinuxWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_id: cdktn.stringToTerraform(struct!.appId),
@@ -2901,7 +2901,7 @@ export function linuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: LinuxWeb
 export function linuxWebAppAuthSettingsV2FacebookV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2FacebookV2OutputReference | LinuxWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_id: {
@@ -3046,19 +3046,19 @@ export interface LinuxWebAppAuthSettingsV2GithubV2 {
   /**
   * The ID of the GitHub app used for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for GitHub Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * Specifies a list of OAuth 2.0 scopes that will be requested as part of GitHub Login authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3066,7 +3066,7 @@ export interface LinuxWebAppAuthSettingsV2GithubV2 {
 export function linuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2GithubV2OutputReference | LinuxWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -3079,7 +3079,7 @@ export function linuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?: LinuxWebAp
 export function linuxWebAppAuthSettingsV2GithubV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2GithubV2OutputReference | LinuxWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -3196,25 +3196,25 @@ export interface LinuxWebAppAuthSettingsV2GoogleV2 {
   /**
   * Specifies a list of Allowed Audiences that will be requested as part of Google Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The OpenID Connect Client ID for the Google web application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name that contains the `client_secret` value used for Google Login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * Specifies a list of Login scopes that will be requested as part of Google Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3222,7 +3222,7 @@ export interface LinuxWebAppAuthSettingsV2GoogleV2 {
 export function linuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2GoogleV2OutputReference | LinuxWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -3236,7 +3236,7 @@ export function linuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: LinuxWebAp
 export function linuxWebAppAuthSettingsV2GoogleV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2GoogleV2OutputReference | LinuxWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -3381,67 +3381,67 @@ export interface LinuxWebAppAuthSettingsV2Login {
   /**
   * External URLs that can be redirected to as part of logging in or logging out of the app. This is an advanced setting typically only needed by Windows Store application backends. **Note:** URLs within the current domain are always implicitly allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_external_redirect_urls LinuxWebApp#allowed_external_redirect_urls}
   */
   readonly allowedExternalRedirectUrls?: string[];
   /**
   * The method by which cookies expire. Possible values include: `FixedTime`, and `IdentityProviderDerived`. Defaults to `FixedTime`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#cookie_expiration_convention LinuxWebApp#cookie_expiration_convention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#cookie_expiration_convention LinuxWebApp#cookie_expiration_convention}
   */
   readonly cookieExpirationConvention?: string;
   /**
   * The time after the request is made when the session cookie should expire. Defaults to `08:00:00`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#cookie_expiration_time LinuxWebApp#cookie_expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#cookie_expiration_time LinuxWebApp#cookie_expiration_time}
   */
   readonly cookieExpirationTime?: string;
   /**
   * The endpoint to which logout requests should be made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#logout_endpoint LinuxWebApp#logout_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#logout_endpoint LinuxWebApp#logout_endpoint}
   */
   readonly logoutEndpoint?: string;
   /**
   * The time after the request is made when the nonce should expire. Defaults to `00:05:00`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#nonce_expiration_time LinuxWebApp#nonce_expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#nonce_expiration_time LinuxWebApp#nonce_expiration_time}
   */
   readonly nonceExpirationTime?: string;
   /**
   * Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#preserve_url_fragments_for_logins LinuxWebApp#preserve_url_fragments_for_logins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#preserve_url_fragments_for_logins LinuxWebApp#preserve_url_fragments_for_logins}
   */
   readonly preserveUrlFragmentsForLogins?: boolean | cdktn.IResolvable;
   /**
   * The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to `72` hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_refresh_extension_time LinuxWebApp#token_refresh_extension_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_refresh_extension_time LinuxWebApp#token_refresh_extension_time}
   */
   readonly tokenRefreshExtensionTime?: number;
   /**
   * Should the Token Store configuration Enabled. Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_store_enabled LinuxWebApp#token_store_enabled}
   */
   readonly tokenStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * The directory path in the App Filesystem in which the tokens will be stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_store_path LinuxWebApp#token_store_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_store_path LinuxWebApp#token_store_path}
   */
   readonly tokenStorePath?: string;
   /**
   * The name of the app setting which contains the SAS URL of the blob storage containing the tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#token_store_sas_setting_name LinuxWebApp#token_store_sas_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#token_store_sas_setting_name LinuxWebApp#token_store_sas_setting_name}
   */
   readonly tokenStoreSasSettingName?: string;
   /**
   * Should the nonce be validated while completing the login flow. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#validate_nonce LinuxWebApp#validate_nonce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#validate_nonce LinuxWebApp#validate_nonce}
   */
   readonly validateNonce?: boolean | cdktn.IResolvable;
 }
@@ -3449,7 +3449,7 @@ export interface LinuxWebAppAuthSettingsV2Login {
 export function linuxWebAppAuthSettingsV2LoginToTerraform(struct?: LinuxWebAppAuthSettingsV2LoginOutputReference | LinuxWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_external_redirect_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedExternalRedirectUrls),
@@ -3470,7 +3470,7 @@ export function linuxWebAppAuthSettingsV2LoginToTerraform(struct?: LinuxWebAppAu
 export function linuxWebAppAuthSettingsV2LoginToHclTerraform(struct?: LinuxWebAppAuthSettingsV2LoginOutputReference | LinuxWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_external_redirect_urls: {
@@ -3817,25 +3817,25 @@ export interface LinuxWebAppAuthSettingsV2MicrosoftV2 {
   /**
   * Specifies a list of Allowed Audiences that will be requested as part of Microsoft Sign-In authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_audiences LinuxWebApp#allowed_audiences}
   */
   readonly allowedAudiences?: string[];
   /**
   * The OAuth 2.0 client ID that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_id LinuxWebApp#client_id}
   */
   readonly clientId: string;
   /**
   * The app setting name containing the OAuth 2.0 client secret that was created for the app used for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#client_secret_setting_name LinuxWebApp#client_secret_setting_name}
   */
   readonly clientSecretSettingName: string;
   /**
   * The list of Login scopes that will be requested as part of Microsoft Account authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login_scopes LinuxWebApp#login_scopes}
   */
   readonly loginScopes?: string[];
 }
@@ -3843,7 +3843,7 @@ export interface LinuxWebAppAuthSettingsV2MicrosoftV2 {
 export function linuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2MicrosoftV2OutputReference | LinuxWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedAudiences),
@@ -3857,7 +3857,7 @@ export function linuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: LinuxWe
 export function linuxWebAppAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2MicrosoftV2OutputReference | LinuxWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_audiences: {
@@ -4002,13 +4002,13 @@ export interface LinuxWebAppAuthSettingsV2TwitterV2 {
   /**
   * The OAuth 1.0a consumer key of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#consumer_key LinuxWebApp#consumer_key}
   */
   readonly consumerKey: string;
   /**
   * The app setting name that contains the OAuth 1.0a consumer secret of the Twitter application used for sign-in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#consumer_secret_setting_name LinuxWebApp#consumer_secret_setting_name}
   */
   readonly consumerSecretSettingName: string;
 }
@@ -4016,7 +4016,7 @@ export interface LinuxWebAppAuthSettingsV2TwitterV2 {
 export function linuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2TwitterV2OutputReference | LinuxWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     consumer_key: cdktn.stringToTerraform(struct!.consumerKey),
@@ -4028,7 +4028,7 @@ export function linuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: LinuxWebA
 export function linuxWebAppAuthSettingsV2TwitterV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2TwitterV2OutputReference | LinuxWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     consumer_key: {
@@ -4117,133 +4117,133 @@ export interface LinuxWebAppAuthSettingsV2 {
   /**
   * Should the AuthV2 Settings be enabled. Defaults to `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#auth_enabled LinuxWebApp#auth_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#auth_enabled LinuxWebApp#auth_enabled}
   */
   readonly authEnabled?: boolean | cdktn.IResolvable;
   /**
   * The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#config_file_path LinuxWebApp#config_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#config_file_path LinuxWebApp#config_file_path}
   */
   readonly configFilePath?: string;
   /**
   * The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. Possible values include: `apple`, `azureactivedirectory`, `facebook`, `github`, `google`, `twitter` and the `name` of your `custom_oidc_v2` provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#default_provider LinuxWebApp#default_provider}
   */
   readonly defaultProvider?: string;
   /**
   * The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#excluded_paths LinuxWebApp#excluded_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#excluded_paths LinuxWebApp#excluded_paths}
   */
   readonly excludedPaths?: string[];
   /**
   * The convention used to determine the url of the request made. Possible values include `ForwardProxyConventionNoProxy`, `ForwardProxyConventionStandard`, `ForwardProxyConventionCustom`. Defaults to `ForwardProxyConventionNoProxy`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#forward_proxy_convention LinuxWebApp#forward_proxy_convention}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#forward_proxy_convention LinuxWebApp#forward_proxy_convention}
   */
   readonly forwardProxyConvention?: string;
   /**
   * The name of the header containing the host of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#forward_proxy_custom_host_header_name LinuxWebApp#forward_proxy_custom_host_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#forward_proxy_custom_host_header_name LinuxWebApp#forward_proxy_custom_host_header_name}
   */
   readonly forwardProxyCustomHostHeaderName?: string;
   /**
   * The name of the header containing the scheme of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#forward_proxy_custom_scheme_header_name LinuxWebApp#forward_proxy_custom_scheme_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#forward_proxy_custom_scheme_header_name LinuxWebApp#forward_proxy_custom_scheme_header_name}
   */
   readonly forwardProxyCustomSchemeHeaderName?: string;
   /**
   * The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#http_route_api_prefix LinuxWebApp#http_route_api_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#http_route_api_prefix LinuxWebApp#http_route_api_prefix}
   */
   readonly httpRouteApiPrefix?: string;
   /**
   * Should the authentication flow be used for all requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#require_authentication LinuxWebApp#require_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#require_authentication LinuxWebApp#require_authentication}
   */
   readonly requireAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Should HTTPS be required on connections? Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#require_https LinuxWebApp#require_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#require_https LinuxWebApp#require_https}
   */
   readonly requireHttps?: boolean | cdktn.IResolvable;
   /**
   * The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#runtime_version LinuxWebApp#runtime_version}
   */
   readonly runtimeVersion?: string;
   /**
   * The action to take for requests made without authentication. Possible values include `RedirectToLoginPage`, `AllowAnonymous`, `Return401`, and `Return403`. Defaults to `RedirectToLoginPage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#unauthenticated_action LinuxWebApp#unauthenticated_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#unauthenticated_action LinuxWebApp#unauthenticated_action}
   */
   readonly unauthenticatedAction?: string;
   /**
   * active_directory_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#active_directory_v2 LinuxWebApp#active_directory_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#active_directory_v2 LinuxWebApp#active_directory_v2}
   */
   readonly activeDirectoryV2?: LinuxWebAppAuthSettingsV2ActiveDirectoryV2;
   /**
   * apple_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#apple_v2 LinuxWebApp#apple_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#apple_v2 LinuxWebApp#apple_v2}
   */
   readonly appleV2?: LinuxWebAppAuthSettingsV2AppleV2;
   /**
   * azure_static_web_app_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#azure_static_web_app_v2 LinuxWebApp#azure_static_web_app_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#azure_static_web_app_v2 LinuxWebApp#azure_static_web_app_v2}
   */
   readonly azureStaticWebAppV2?: LinuxWebAppAuthSettingsV2AzureStaticWebAppV2;
   /**
   * custom_oidc_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#custom_oidc_v2 LinuxWebApp#custom_oidc_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#custom_oidc_v2 LinuxWebApp#custom_oidc_v2}
   */
   readonly customOidcV2?: LinuxWebAppAuthSettingsV2CustomOidcV2[] | cdktn.IResolvable;
   /**
   * facebook_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#facebook_v2 LinuxWebApp#facebook_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#facebook_v2 LinuxWebApp#facebook_v2}
   */
   readonly facebookV2?: LinuxWebAppAuthSettingsV2FacebookV2;
   /**
   * github_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#github_v2 LinuxWebApp#github_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#github_v2 LinuxWebApp#github_v2}
   */
   readonly githubV2?: LinuxWebAppAuthSettingsV2GithubV2;
   /**
   * google_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#google_v2 LinuxWebApp#google_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#google_v2 LinuxWebApp#google_v2}
   */
   readonly googleV2?: LinuxWebAppAuthSettingsV2GoogleV2;
   /**
   * login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#login LinuxWebApp#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#login LinuxWebApp#login}
   */
   readonly login: LinuxWebAppAuthSettingsV2Login;
   /**
   * microsoft_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#microsoft_v2 LinuxWebApp#microsoft_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#microsoft_v2 LinuxWebApp#microsoft_v2}
   */
   readonly microsoftV2?: LinuxWebAppAuthSettingsV2MicrosoftV2;
   /**
   * twitter_v2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#twitter_v2 LinuxWebApp#twitter_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#twitter_v2 LinuxWebApp#twitter_v2}
   */
   readonly twitterV2?: LinuxWebAppAuthSettingsV2TwitterV2;
 }
@@ -4251,7 +4251,7 @@ export interface LinuxWebAppAuthSettingsV2 {
 export function linuxWebAppAuthSettingsV2ToTerraform(struct?: LinuxWebAppAuthSettingsV2OutputReference | LinuxWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auth_enabled: cdktn.booleanToTerraform(struct!.authEnabled),
@@ -4283,7 +4283,7 @@ export function linuxWebAppAuthSettingsV2ToTerraform(struct?: LinuxWebAppAuthSet
 export function linuxWebAppAuthSettingsV2ToHclTerraform(struct?: LinuxWebAppAuthSettingsV2OutputReference | LinuxWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auth_enabled: {
@@ -4935,31 +4935,31 @@ export interface LinuxWebAppBackupSchedule {
   /**
   * How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#frequency_interval LinuxWebApp#frequency_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#frequency_interval LinuxWebApp#frequency_interval}
   */
   readonly frequencyInterval: number;
   /**
   * The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#frequency_unit LinuxWebApp#frequency_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#frequency_unit LinuxWebApp#frequency_unit}
   */
   readonly frequencyUnit: string;
   /**
   * Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#keep_at_least_one_backup LinuxWebApp#keep_at_least_one_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#keep_at_least_one_backup LinuxWebApp#keep_at_least_one_backup}
   */
   readonly keepAtLeastOneBackup?: boolean | cdktn.IResolvable;
   /**
   * After how many days backups should be deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#retention_period_days LinuxWebApp#retention_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#retention_period_days LinuxWebApp#retention_period_days}
   */
   readonly retentionPeriodDays?: number;
   /**
   * When the schedule should start working in RFC-3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#start_time LinuxWebApp#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#start_time LinuxWebApp#start_time}
   */
   readonly startTime?: string;
 }
@@ -4967,7 +4967,7 @@ export interface LinuxWebAppBackupSchedule {
 export function linuxWebAppBackupScheduleToTerraform(struct?: LinuxWebAppBackupScheduleOutputReference | LinuxWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     frequency_interval: cdktn.numberToTerraform(struct!.frequencyInterval),
@@ -4982,7 +4982,7 @@ export function linuxWebAppBackupScheduleToTerraform(struct?: LinuxWebAppBackupS
 export function linuxWebAppBackupScheduleToHclTerraform(struct?: LinuxWebAppBackupScheduleOutputReference | LinuxWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     frequency_interval: {
@@ -5160,25 +5160,25 @@ export interface LinuxWebAppBackup {
   /**
   * Should this backup job be enabled?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#enabled LinuxWebApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name which should be used for this Backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name: string;
   /**
   * The SAS URL to the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#storage_account_url LinuxWebApp#storage_account_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#storage_account_url LinuxWebApp#storage_account_url}
   */
   readonly storageAccountUrl: string;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#schedule LinuxWebApp#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#schedule LinuxWebApp#schedule}
   */
   readonly schedule: LinuxWebAppBackupSchedule;
 }
@@ -5186,7 +5186,7 @@ export interface LinuxWebAppBackup {
 export function linuxWebAppBackupToTerraform(struct?: LinuxWebAppBackupOutputReference | LinuxWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -5200,7 +5200,7 @@ export function linuxWebAppBackupToTerraform(struct?: LinuxWebAppBackupOutputRef
 export function linuxWebAppBackupToHclTerraform(struct?: LinuxWebAppBackupOutputReference | LinuxWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -5342,19 +5342,19 @@ export interface LinuxWebAppConnectionString {
   /**
   * The name which should be used for this Connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name: string;
   /**
   * Type of database. Possible values include: `MySQL`, `SQLServer`, `SQLAzure`, `Custom`, `NotificationHub`, `ServiceBus`, `EventHub`, `APIHub`, `DocDb`, `RedisCache`, and `PostgreSQL`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#type LinuxWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#type LinuxWebApp#type}
   */
   readonly type: string;
   /**
   * The connection string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#value LinuxWebApp#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#value LinuxWebApp#value}
   */
   readonly value: string;
 }
@@ -5362,7 +5362,7 @@ export interface LinuxWebAppConnectionString {
 export function linuxWebAppConnectionStringToTerraform(struct?: LinuxWebAppConnectionString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5375,7 +5375,7 @@ export function linuxWebAppConnectionStringToTerraform(struct?: LinuxWebAppConne
 export function linuxWebAppConnectionStringToHclTerraform(struct?: LinuxWebAppConnectionString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5519,11 +5519,11 @@ export class LinuxWebAppConnectionStringList extends cdktn.ComplexList {
 }
 export interface LinuxWebAppIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#identity_ids LinuxWebApp#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#type LinuxWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#type LinuxWebApp#type}
   */
   readonly type: string;
 }
@@ -5531,7 +5531,7 @@ export interface LinuxWebAppIdentity {
 export function linuxWebAppIdentityToTerraform(struct?: LinuxWebAppIdentityOutputReference | LinuxWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -5543,7 +5543,7 @@ export function linuxWebAppIdentityToTerraform(struct?: LinuxWebAppIdentityOutpu
 export function linuxWebAppIdentityToHclTerraform(struct?: LinuxWebAppIdentityOutputReference | LinuxWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -5643,15 +5643,15 @@ export class LinuxWebAppIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface LinuxWebAppLogsApplicationLogsAzureBlobStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#level LinuxWebApp#level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#level LinuxWebApp#level}
   */
   readonly level: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
   */
   readonly retentionInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}
   */
   readonly sasUrl: string;
 }
@@ -5659,7 +5659,7 @@ export interface LinuxWebAppLogsApplicationLogsAzureBlobStorage {
 export function linuxWebAppLogsApplicationLogsAzureBlobStorageToTerraform(struct?: LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference | LinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     level: cdktn.stringToTerraform(struct!.level),
@@ -5672,7 +5672,7 @@ export function linuxWebAppLogsApplicationLogsAzureBlobStorageToTerraform(struct
 export function linuxWebAppLogsApplicationLogsAzureBlobStorageToHclTerraform(struct?: LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference | LinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     level: {
@@ -5784,13 +5784,13 @@ export class LinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference exten
 }
 export interface LinuxWebAppLogsApplicationLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#file_system_level LinuxWebApp#file_system_level}
   */
   readonly fileSystemLevel: string;
   /**
   * azure_blob_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
   */
   readonly azureBlobStorage?: LinuxWebAppLogsApplicationLogsAzureBlobStorage;
 }
@@ -5798,7 +5798,7 @@ export interface LinuxWebAppLogsApplicationLogs {
 export function linuxWebAppLogsApplicationLogsToTerraform(struct?: LinuxWebAppLogsApplicationLogsOutputReference | LinuxWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_system_level: cdktn.stringToTerraform(struct!.fileSystemLevel),
@@ -5810,7 +5810,7 @@ export function linuxWebAppLogsApplicationLogsToTerraform(struct?: LinuxWebAppLo
 export function linuxWebAppLogsApplicationLogsToHclTerraform(struct?: LinuxWebAppLogsApplicationLogsOutputReference | LinuxWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_system_level: {
@@ -5900,11 +5900,11 @@ export class LinuxWebAppLogsApplicationLogsOutputReference extends cdktn.Complex
 }
 export interface LinuxWebAppLogsHttpLogsAzureBlobStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
   */
   readonly retentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#sas_url LinuxWebApp#sas_url}
   */
   readonly sasUrl: string;
 }
@@ -5912,7 +5912,7 @@ export interface LinuxWebAppLogsHttpLogsAzureBlobStorage {
 export function linuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: LinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference | LinuxWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
@@ -5924,7 +5924,7 @@ export function linuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: Linu
 export function linuxWebAppLogsHttpLogsAzureBlobStorageToHclTerraform(struct?: LinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference | LinuxWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retention_in_days: {
@@ -6014,11 +6014,11 @@ export class LinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference extends cdkt
 }
 export interface LinuxWebAppLogsHttpLogsFileSystem {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#retention_in_days LinuxWebApp#retention_in_days}
   */
   readonly retentionInDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#retention_in_mb LinuxWebApp#retention_in_mb}
   */
   readonly retentionInMb: number;
 }
@@ -6026,7 +6026,7 @@ export interface LinuxWebAppLogsHttpLogsFileSystem {
 export function linuxWebAppLogsHttpLogsFileSystemToTerraform(struct?: LinuxWebAppLogsHttpLogsFileSystemOutputReference | LinuxWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     retention_in_days: cdktn.numberToTerraform(struct!.retentionInDays),
@@ -6038,7 +6038,7 @@ export function linuxWebAppLogsHttpLogsFileSystemToTerraform(struct?: LinuxWebAp
 export function linuxWebAppLogsHttpLogsFileSystemToHclTerraform(struct?: LinuxWebAppLogsHttpLogsFileSystemOutputReference | LinuxWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     retention_in_days: {
@@ -6127,13 +6127,13 @@ export interface LinuxWebAppLogsHttpLogs {
   /**
   * azure_blob_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#azure_blob_storage LinuxWebApp#azure_blob_storage}
   */
   readonly azureBlobStorage?: LinuxWebAppLogsHttpLogsAzureBlobStorage;
   /**
   * file_system block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#file_system LinuxWebApp#file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#file_system LinuxWebApp#file_system}
   */
   readonly fileSystem?: LinuxWebAppLogsHttpLogsFileSystem;
 }
@@ -6141,7 +6141,7 @@ export interface LinuxWebAppLogsHttpLogs {
 export function linuxWebAppLogsHttpLogsToTerraform(struct?: LinuxWebAppLogsHttpLogsOutputReference | LinuxWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     azure_blob_storage: linuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct!.azureBlobStorage),
@@ -6153,7 +6153,7 @@ export function linuxWebAppLogsHttpLogsToTerraform(struct?: LinuxWebAppLogsHttpL
 export function linuxWebAppLogsHttpLogsToHclTerraform(struct?: LinuxWebAppLogsHttpLogsOutputReference | LinuxWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     azure_blob_storage: {
@@ -6246,23 +6246,23 @@ export class LinuxWebAppLogsHttpLogsOutputReference extends cdktn.ComplexObject 
 }
 export interface LinuxWebAppLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#detailed_error_messages LinuxWebApp#detailed_error_messages}
   */
   readonly detailedErrorMessages?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#failed_request_tracing LinuxWebApp#failed_request_tracing}
   */
   readonly failedRequestTracing?: boolean | cdktn.IResolvable;
   /**
   * application_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#application_logs LinuxWebApp#application_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#application_logs LinuxWebApp#application_logs}
   */
   readonly applicationLogs?: LinuxWebAppLogsApplicationLogs;
   /**
   * http_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#http_logs LinuxWebApp#http_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#http_logs LinuxWebApp#http_logs}
   */
   readonly httpLogs?: LinuxWebAppLogsHttpLogs;
 }
@@ -6270,7 +6270,7 @@ export interface LinuxWebAppLogs {
 export function linuxWebAppLogsToTerraform(struct?: LinuxWebAppLogsOutputReference | LinuxWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     detailed_error_messages: cdktn.booleanToTerraform(struct!.detailedErrorMessages),
@@ -6284,7 +6284,7 @@ export function linuxWebAppLogsToTerraform(struct?: LinuxWebAppLogsOutputReferen
 export function linuxWebAppLogsToHclTerraform(struct?: LinuxWebAppLogsOutputReference | LinuxWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     detailed_error_messages: {
@@ -6433,55 +6433,55 @@ export class LinuxWebAppLogsOutputReference extends cdktn.ComplexObject {
 }
 export interface LinuxWebAppSiteConfigApplicationStack {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#docker_image_name LinuxWebApp#docker_image_name}
   */
   readonly dockerImageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#docker_registry_password LinuxWebApp#docker_registry_password}
   */
   readonly dockerRegistryPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#docker_registry_url LinuxWebApp#docker_registry_url}
   */
   readonly dockerRegistryUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#docker_registry_username LinuxWebApp#docker_registry_username}
   */
   readonly dockerRegistryUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#dotnet_version LinuxWebApp#dotnet_version}
   */
   readonly dotnetVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#go_version LinuxWebApp#go_version}
   */
   readonly goVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#java_server LinuxWebApp#java_server}
   */
   readonly javaServer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#java_server_version LinuxWebApp#java_server_version}
   */
   readonly javaServerVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#java_version LinuxWebApp#java_version}
   */
   readonly javaVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#node_version LinuxWebApp#node_version}
   */
   readonly nodeVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#php_version LinuxWebApp#php_version}
   */
   readonly phpVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#python_version LinuxWebApp#python_version}
   */
   readonly pythonVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ruby_version LinuxWebApp#ruby_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ruby_version LinuxWebApp#ruby_version}
   */
   readonly rubyVersion?: string;
 }
@@ -6489,7 +6489,7 @@ export interface LinuxWebAppSiteConfigApplicationStack {
 export function linuxWebAppSiteConfigApplicationStackToTerraform(struct?: LinuxWebAppSiteConfigApplicationStackOutputReference | LinuxWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     docker_image_name: cdktn.stringToTerraform(struct!.dockerImageName),
@@ -6512,7 +6512,7 @@ export function linuxWebAppSiteConfigApplicationStackToTerraform(struct?: LinuxW
 export function linuxWebAppSiteConfigApplicationStackToHclTerraform(struct?: LinuxWebAppSiteConfigApplicationStackOutputReference | LinuxWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     docker_image_name: {
@@ -6913,11 +6913,11 @@ export class LinuxWebAppSiteConfigApplicationStackOutputReference extends cdktn.
 }
 export interface LinuxWebAppSiteConfigAutoHealSettingAction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#action_type LinuxWebApp#action_type}
   */
   readonly actionType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#minimum_process_execution_time LinuxWebApp#minimum_process_execution_time}
   */
   readonly minimumProcessExecutionTime?: string;
 }
@@ -6925,7 +6925,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingAction {
 export function linuxWebAppSiteConfigAutoHealSettingActionToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingActionOutputReference | LinuxWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action_type: cdktn.stringToTerraform(struct!.actionType),
@@ -6937,7 +6937,7 @@ export function linuxWebAppSiteConfigAutoHealSettingActionToTerraform(struct?: L
 export function linuxWebAppSiteConfigAutoHealSettingActionToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingActionOutputReference | LinuxWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action_type: {
@@ -7027,11 +7027,11 @@ export class LinuxWebAppSiteConfigAutoHealSettingActionOutputReference extends c
 }
 export interface LinuxWebAppSiteConfigAutoHealSettingTriggerRequests {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#count LinuxWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#count LinuxWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
   */
   readonly interval: string;
 }
@@ -7039,7 +7039,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTriggerRequests {
 export function linuxWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference | LinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7051,7 +7051,7 @@ export function linuxWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(s
 export function linuxWebAppSiteConfigAutoHealSettingTriggerRequestsToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference | LinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7138,15 +7138,15 @@ export class LinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference 
 }
 export interface LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#count LinuxWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#count LinuxWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}
   */
   readonly timeTaken: string;
 }
@@ -7154,7 +7154,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest {
 export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7167,7 +7167,7 @@ export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerrafor
 export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference | LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7279,19 +7279,19 @@ export class LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReferen
 }
 export interface LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#count LinuxWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#count LinuxWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#path LinuxWebApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#path LinuxWebApp#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#time_taken LinuxWebApp#time_taken}
   */
   readonly timeTaken: string;
 }
@@ -7299,7 +7299,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath 
 export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7313,7 +7313,7 @@ export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathTo
 export function linuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7485,27 +7485,27 @@ export class LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList 
 }
 export interface LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#count LinuxWebApp#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#count LinuxWebApp#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#interval LinuxWebApp#interval}
   */
   readonly interval: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#path LinuxWebApp#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#path LinuxWebApp#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#status_code_range LinuxWebApp#status_code_range}
   */
   readonly statusCodeRange: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#sub_status LinuxWebApp#sub_status}
   */
   readonly subStatus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#win32_status_code LinuxWebApp#win32_status_code}
   */
   readonly win32StatusCode?: number;
 }
@@ -7513,7 +7513,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode {
 export function linuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -7529,7 +7529,7 @@ export function linuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerraform
 export function linuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -7759,25 +7759,25 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTrigger {
   /**
   * requests block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#requests LinuxWebApp#requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#requests LinuxWebApp#requests}
   */
   readonly requests?: LinuxWebAppSiteConfigAutoHealSettingTriggerRequests;
   /**
   * slow_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#slow_request LinuxWebApp#slow_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#slow_request LinuxWebApp#slow_request}
   */
   readonly slowRequest?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest;
   /**
   * slow_request_with_path block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#slow_request_with_path LinuxWebApp#slow_request_with_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#slow_request_with_path LinuxWebApp#slow_request_with_path}
   */
   readonly slowRequestWithPath?: LinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath[] | cdktn.IResolvable;
   /**
   * status_code block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#status_code LinuxWebApp#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#status_code LinuxWebApp#status_code}
   */
   readonly statusCode?: LinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode[] | cdktn.IResolvable;
 }
@@ -7785,7 +7785,7 @@ export interface LinuxWebAppSiteConfigAutoHealSettingTrigger {
 export function linuxWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference | LinuxWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     requests: linuxWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct!.requests),
@@ -7799,7 +7799,7 @@ export function linuxWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?: 
 export function linuxWebAppSiteConfigAutoHealSettingTriggerToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference | LinuxWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     requests: {
@@ -7950,13 +7950,13 @@ export interface LinuxWebAppSiteConfigAutoHealSetting {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#action LinuxWebApp#action}
   */
   readonly action?: LinuxWebAppSiteConfigAutoHealSettingAction;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#trigger LinuxWebApp#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#trigger LinuxWebApp#trigger}
   */
   readonly trigger?: LinuxWebAppSiteConfigAutoHealSettingTrigger;
 }
@@ -7964,7 +7964,7 @@ export interface LinuxWebAppSiteConfigAutoHealSetting {
 export function linuxWebAppSiteConfigAutoHealSettingToTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingOutputReference | LinuxWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: linuxWebAppSiteConfigAutoHealSettingActionToTerraform(struct!.action),
@@ -7976,7 +7976,7 @@ export function linuxWebAppSiteConfigAutoHealSettingToTerraform(struct?: LinuxWe
 export function linuxWebAppSiteConfigAutoHealSettingToHclTerraform(struct?: LinuxWebAppSiteConfigAutoHealSettingOutputReference | LinuxWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -8071,13 +8071,13 @@ export interface LinuxWebAppSiteConfigCors {
   /**
   * Specifies a list of origins that should be allowed to make cross-origin calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#allowed_origins LinuxWebApp#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#allowed_origins LinuxWebApp#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Are credentials allowed in CORS requests? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#support_credentials LinuxWebApp#support_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#support_credentials LinuxWebApp#support_credentials}
   */
   readonly supportCredentials?: boolean | cdktn.IResolvable;
 }
@@ -8085,7 +8085,7 @@ export interface LinuxWebAppSiteConfigCors {
 export function linuxWebAppSiteConfigCorsToTerraform(struct?: LinuxWebAppSiteConfigCorsOutputReference | LinuxWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
@@ -8097,7 +8097,7 @@ export function linuxWebAppSiteConfigCorsToTerraform(struct?: LinuxWebAppSiteCon
 export function linuxWebAppSiteConfigCorsToHclTerraform(struct?: LinuxWebAppSiteConfigCorsOutputReference | LinuxWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allowed_origins: {
@@ -8190,19 +8190,19 @@ export class LinuxWebAppSiteConfigCorsOutputReference extends cdktn.ComplexObjec
 }
 export interface LinuxWebAppSiteConfigIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -8210,7 +8210,7 @@ export interface LinuxWebAppSiteConfigIpRestrictionHeaders {
 export function linuxWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
@@ -8224,7 +8224,7 @@ export function linuxWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: Li
 export function linuxWebAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSiteConfigIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x_azure_fdid: {
@@ -8407,47 +8407,47 @@ export interface LinuxWebAppSiteConfigIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#action LinuxWebApp#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#description LinuxWebApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#description LinuxWebApp#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}
   */
   readonly headers?: LinuxWebAppSiteConfigIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -8455,7 +8455,7 @@ export interface LinuxWebAppSiteConfigIpRestriction {
 export function linuxWebAppSiteConfigIpRestrictionToTerraform(struct?: LinuxWebAppSiteConfigIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -8473,7 +8473,7 @@ export function linuxWebAppSiteConfigIpRestrictionToTerraform(struct?: LinuxWebA
 export function linuxWebAppSiteConfigIpRestrictionToHclTerraform(struct?: LinuxWebAppSiteConfigIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -8766,19 +8766,19 @@ export class LinuxWebAppSiteConfigIpRestrictionList extends cdktn.ComplexList {
 }
 export interface LinuxWebAppSiteConfigScmIpRestrictionHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_azure_fdid LinuxWebApp#x_azure_fdid}
   */
   readonly xAzureFdid?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_fd_health_probe LinuxWebApp#x_fd_health_probe}
   */
   readonly xFdHealthProbe?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_forwarded_for LinuxWebApp#x_forwarded_for}
   */
   readonly xForwardedFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#x_forwarded_host LinuxWebApp#x_forwarded_host}
   */
   readonly xForwardedHost?: string[];
 }
@@ -8786,7 +8786,7 @@ export interface LinuxWebAppSiteConfigScmIpRestrictionHeaders {
 export function linuxWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: LinuxWebAppSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x_azure_fdid: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.xAzureFdid),
@@ -8800,7 +8800,7 @@ export function linuxWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?:
 export function linuxWebAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: LinuxWebAppSiteConfigScmIpRestrictionHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x_azure_fdid: {
@@ -8983,47 +8983,47 @@ export interface LinuxWebAppSiteConfigScmIpRestriction {
   /**
   * The action to take. Possible values are `Allow` or `Deny`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#action LinuxWebApp#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#action LinuxWebApp#action}
   */
   readonly action?: string;
   /**
   * The description of the IP restriction rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#description LinuxWebApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#description LinuxWebApp#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#headers LinuxWebApp#headers}
   */
   readonly headers?: LinuxWebAppSiteConfigScmIpRestrictionHeaders[] | cdktn.IResolvable;
   /**
   * The CIDR notation of the IP or IP Range to match. For example: `10.0.0.0/24` or `192.168.10.1/32` or `fe80::/64` or `13.107.6.152/31,13.107.128.0/22`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ip_address LinuxWebApp#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The name which should be used for this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name?: string;
   /**
   * The priority value of this `ip_restriction`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#priority LinuxWebApp#priority}
   */
   readonly priority?: number;
   /**
   * The Service Tag used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#service_tag LinuxWebApp#service_tag}
   */
   readonly serviceTag?: string;
   /**
   * The Virtual Network Subnet ID used for this IP Restriction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#virtual_network_subnet_id LinuxWebApp#virtual_network_subnet_id}
   */
   readonly virtualNetworkSubnetId?: string;
 }
@@ -9031,7 +9031,7 @@ export interface LinuxWebAppSiteConfigScmIpRestriction {
 export function linuxWebAppSiteConfigScmIpRestrictionToTerraform(struct?: LinuxWebAppSiteConfigScmIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -9049,7 +9049,7 @@ export function linuxWebAppSiteConfigScmIpRestrictionToTerraform(struct?: LinuxW
 export function linuxWebAppSiteConfigScmIpRestrictionToHclTerraform(struct?: LinuxWebAppSiteConfigScmIpRestriction | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -9342,143 +9342,143 @@ export class LinuxWebAppSiteConfigScmIpRestrictionList extends cdktn.ComplexList
 }
 export interface LinuxWebAppSiteConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#always_on LinuxWebApp#always_on}
   */
   readonly alwaysOn?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#api_definition_url LinuxWebApp#api_definition_url}
   */
   readonly apiDefinitionUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#api_management_api_id LinuxWebApp#api_management_api_id}
   */
   readonly apiManagementApiId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_command_line LinuxWebApp#app_command_line}
   */
   readonly appCommandLine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#container_registry_managed_identity_client_id LinuxWebApp#container_registry_managed_identity_client_id}
   */
   readonly containerRegistryManagedIdentityClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#container_registry_use_managed_identity LinuxWebApp#container_registry_use_managed_identity}
   */
   readonly containerRegistryUseManagedIdentity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#default_documents LinuxWebApp#default_documents}
   */
   readonly defaultDocuments?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ftps_state LinuxWebApp#ftps_state}
   */
   readonly ftpsState?: string;
   /**
   * The amount of time in minutes that a node is unhealthy before being removed from the load balancer. Possible values are between `2` and `10`. Only valid in conjunction with `health_check_path`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#health_check_eviction_time_in_min LinuxWebApp#health_check_eviction_time_in_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#health_check_eviction_time_in_min LinuxWebApp#health_check_eviction_time_in_min}
   */
   readonly healthCheckEvictionTimeInMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#health_check_path LinuxWebApp#health_check_path}
   */
   readonly healthCheckPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#http2_enabled LinuxWebApp#http2_enabled}
   */
   readonly http2Enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ip_restriction_default_action LinuxWebApp#ip_restriction_default_action}
   */
   readonly ipRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#load_balancing_mode LinuxWebApp#load_balancing_mode}
   */
   readonly loadBalancingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#local_mysql_enabled LinuxWebApp#local_mysql_enabled}
   */
   readonly localMysqlEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#managed_pipeline_mode LinuxWebApp#managed_pipeline_mode}
   */
   readonly managedPipelineMode?: string;
   /**
   * Configures the minimum TLS cipher suite for the incoming requests to the Site.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#minimum_tls_cipher_suite LinuxWebApp#minimum_tls_cipher_suite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#minimum_tls_cipher_suite LinuxWebApp#minimum_tls_cipher_suite}
   */
   readonly minimumTlsCipherSuite?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#minimum_tls_version LinuxWebApp#minimum_tls_version}
   */
   readonly minimumTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#remote_debugging_enabled LinuxWebApp#remote_debugging_enabled}
   */
   readonly remoteDebuggingEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#remote_debugging_version LinuxWebApp#remote_debugging_version}
   */
   readonly remoteDebuggingVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#scm_ip_restriction_default_action LinuxWebApp#scm_ip_restriction_default_action}
   */
   readonly scmIpRestrictionDefaultAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#scm_minimum_tls_version LinuxWebApp#scm_minimum_tls_version}
   */
   readonly scmMinimumTlsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#scm_use_main_ip_restriction LinuxWebApp#scm_use_main_ip_restriction}
   */
   readonly scmUseMainIpRestriction?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#use_32_bit_worker LinuxWebApp#use_32_bit_worker}
   */
   readonly use32BitWorker?: boolean | cdktn.IResolvable;
   /**
   * Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#vnet_route_all_enabled LinuxWebApp#vnet_route_all_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#vnet_route_all_enabled LinuxWebApp#vnet_route_all_enabled}
   */
   readonly vnetRouteAllEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#websockets_enabled LinuxWebApp#websockets_enabled}
   */
   readonly websocketsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#worker_count LinuxWebApp#worker_count}
   */
   readonly workerCount?: number;
   /**
   * application_stack block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#application_stack LinuxWebApp#application_stack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#application_stack LinuxWebApp#application_stack}
   */
   readonly applicationStack?: LinuxWebAppSiteConfigApplicationStack;
   /**
   * auto_heal_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#auto_heal_setting LinuxWebApp#auto_heal_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#auto_heal_setting LinuxWebApp#auto_heal_setting}
   */
   readonly autoHealSetting?: LinuxWebAppSiteConfigAutoHealSetting;
   /**
   * cors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#cors LinuxWebApp#cors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#cors LinuxWebApp#cors}
   */
   readonly cors?: LinuxWebAppSiteConfigCors;
   /**
   * ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#ip_restriction LinuxWebApp#ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#ip_restriction LinuxWebApp#ip_restriction}
   */
   readonly ipRestriction?: LinuxWebAppSiteConfigIpRestriction[] | cdktn.IResolvable;
   /**
   * scm_ip_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#scm_ip_restriction LinuxWebApp#scm_ip_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#scm_ip_restriction LinuxWebApp#scm_ip_restriction}
   */
   readonly scmIpRestriction?: LinuxWebAppSiteConfigScmIpRestriction[] | cdktn.IResolvable;
 }
@@ -9486,7 +9486,7 @@ export interface LinuxWebAppSiteConfig {
 export function linuxWebAppSiteConfigToTerraform(struct?: LinuxWebAppSiteConfigOutputReference | LinuxWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     always_on: cdktn.booleanToTerraform(struct!.alwaysOn),
@@ -9527,7 +9527,7 @@ export function linuxWebAppSiteConfigToTerraform(struct?: LinuxWebAppSiteConfigO
 export function linuxWebAppSiteConfigToHclTerraform(struct?: LinuxWebAppSiteConfigOutputReference | LinuxWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     always_on: {
@@ -10447,11 +10447,11 @@ export class LinuxWebAppSiteConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface LinuxWebAppStickySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#app_setting_names LinuxWebApp#app_setting_names}
   */
   readonly appSettingNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#connection_string_names LinuxWebApp#connection_string_names}
   */
   readonly connectionStringNames?: string[];
 }
@@ -10459,7 +10459,7 @@ export interface LinuxWebAppStickySettings {
 export function linuxWebAppStickySettingsToTerraform(struct?: LinuxWebAppStickySettingsOutputReference | LinuxWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_setting_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.appSettingNames),
@@ -10471,7 +10471,7 @@ export function linuxWebAppStickySettingsToTerraform(struct?: LinuxWebAppStickyS
 export function linuxWebAppStickySettingsToHclTerraform(struct?: LinuxWebAppStickySettingsOutputReference | LinuxWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_setting_names: {
@@ -10564,27 +10564,27 @@ export class LinuxWebAppStickySettingsOutputReference extends cdktn.ComplexObjec
 }
 export interface LinuxWebAppStorageAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#access_key LinuxWebApp#access_key}
   */
   readonly accessKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#account_name LinuxWebApp#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#mount_path LinuxWebApp#mount_path}
   */
   readonly mountPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#name LinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#name LinuxWebApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#share_name LinuxWebApp#share_name}
   */
   readonly shareName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#type LinuxWebApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#type LinuxWebApp#type}
   */
   readonly type: string;
 }
@@ -10592,7 +10592,7 @@ export interface LinuxWebAppStorageAccount {
 export function linuxWebAppStorageAccountToTerraform(struct?: LinuxWebAppStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_key: cdktn.stringToTerraform(struct!.accessKey),
@@ -10608,7 +10608,7 @@ export function linuxWebAppStorageAccountToTerraform(struct?: LinuxWebAppStorage
 export function linuxWebAppStorageAccountToHclTerraform(struct?: LinuxWebAppStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_key: {
@@ -10830,19 +10830,19 @@ export class LinuxWebAppStorageAccountList extends cdktn.ComplexList {
 }
 export interface LinuxWebAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#create LinuxWebApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#create LinuxWebApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#delete LinuxWebApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#read LinuxWebApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#read LinuxWebApp#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#update LinuxWebApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#update LinuxWebApp#update}
   */
   readonly update?: string;
 }
@@ -10850,7 +10850,7 @@ export interface LinuxWebAppTimeouts {
 export function linuxWebAppTimeoutsToTerraform(struct?: LinuxWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -10864,7 +10864,7 @@ export function linuxWebAppTimeoutsToTerraform(struct?: LinuxWebAppTimeouts | cd
 export function linuxWebAppTimeoutsToHclTerraform(struct?: LinuxWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -11023,7 +11023,7 @@ export class LinuxWebAppTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app azurerm_linux_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app azurerm_linux_web_app}
 */
 export class LinuxWebApp extends cdktn.TerraformResource {
 
@@ -11039,7 +11039,7 @@ export class LinuxWebApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LinuxWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LinuxWebApp to import
-  * @param importFromId The id of the existing LinuxWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LinuxWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LinuxWebApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -11051,7 +11051,7 @@ export class LinuxWebApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/linux_web_app azurerm_linux_web_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11062,7 +11062,7 @@ export class LinuxWebApp extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_linux_web_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

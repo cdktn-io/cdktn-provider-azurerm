@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermVpnGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#id DataAzurermVpnGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#id DataAzurermVpnGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#name DataAzurermVpnGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#name DataAzurermVpnGateway#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#resource_group_name DataAzurermVpnGateway#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#resource_group_name DataAzurermVpnGateway#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#timeouts DataAzurermVpnGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#timeouts DataAzurermVpnGateway#timeouts}
   */
   readonly timeouts?: DataAzurermVpnGatewayTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddress {
 export function dataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressToTerraform(struct?: DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressToTerr
 export function dataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddressToHclTerraform(struct?: DataAzurermVpnGatewayBgpSettingsInstance0BgpPeeringAddress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -130,7 +130,7 @@ export interface DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddress {
 export function dataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressToTerraform(struct?: DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -140,7 +140,7 @@ export function dataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressToTerr
 export function dataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddressToHclTerraform(struct?: DataAzurermVpnGatewayBgpSettingsInstance1BgpPeeringAddress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -220,7 +220,7 @@ export interface DataAzurermVpnGatewayBgpSettings {
 export function dataAzurermVpnGatewayBgpSettingsToTerraform(struct?: DataAzurermVpnGatewayBgpSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -230,7 +230,7 @@ export function dataAzurermVpnGatewayBgpSettingsToTerraform(struct?: DataAzurerm
 export function dataAzurermVpnGatewayBgpSettingsToHclTerraform(struct?: DataAzurermVpnGatewayBgpSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -317,7 +317,7 @@ export interface DataAzurermVpnGatewayIpConfiguration {
 export function dataAzurermVpnGatewayIpConfigurationToTerraform(struct?: DataAzurermVpnGatewayIpConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -327,7 +327,7 @@ export function dataAzurermVpnGatewayIpConfigurationToTerraform(struct?: DataAzu
 export function dataAzurermVpnGatewayIpConfigurationToHclTerraform(struct?: DataAzurermVpnGatewayIpConfiguration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -398,7 +398,7 @@ export class DataAzurermVpnGatewayIpConfigurationList extends cdktn.ComplexList 
 }
 export interface DataAzurermVpnGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#read DataAzurermVpnGateway#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#read DataAzurermVpnGateway#read}
   */
   readonly read?: string;
 }
@@ -406,7 +406,7 @@ export interface DataAzurermVpnGatewayTimeouts {
 export function dataAzurermVpnGatewayTimeoutsToTerraform(struct?: DataAzurermVpnGatewayTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -417,7 +417,7 @@ export function dataAzurermVpnGatewayTimeoutsToTerraform(struct?: DataAzurermVpn
 export function dataAzurermVpnGatewayTimeoutsToHclTerraform(struct?: DataAzurermVpnGatewayTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -492,7 +492,7 @@ export class DataAzurermVpnGatewayTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway}
 */
 export class DataAzurermVpnGateway extends cdktn.TerraformDataSource {
 
@@ -508,7 +508,7 @@ export class DataAzurermVpnGateway extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermVpnGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermVpnGateway to import
-  * @param importFromId The id of the existing DataAzurermVpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermVpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermVpnGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -520,7 +520,7 @@ export class DataAzurermVpnGateway extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/vpn_gateway azurerm_vpn_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -531,7 +531,7 @@ export class DataAzurermVpnGateway extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_vpn_gateway',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
