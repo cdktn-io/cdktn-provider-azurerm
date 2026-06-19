@@ -4,7 +4,7 @@
 
 ### ExtendedCustomLocation <a name="ExtendedCustomLocation" id="@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location azurerm_extended_custom_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location azurerm_extended_custom_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocation.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the ExtendedCustomLocation to 
 
 The id of the existing ExtendedCustomLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,8 +1004,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/extendedcustom
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationAuthentication.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#value ExtendedCustomLocation#value}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationAuthentication.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#type ExtendedCustomLocation#type}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationAuthentication.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#value ExtendedCustomLocation#value}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationAuthentication.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#type ExtendedCustomLocation#type}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#value ExtendedCustomLocation#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#value ExtendedCustomLocation#value}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#type ExtendedCustomLocation#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#type ExtendedCustomLocation#type}.
 
 ---
 
@@ -1073,16 +1073,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/extendedcustom
 | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.clusterExtensionIds">ClusterExtensionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#cluster_extension_ids ExtendedCustomLocation#cluster_extension_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.hostResourceId">HostResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#host_resource_id ExtendedCustomLocation#host_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#location ExtendedCustomLocation#location}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#name ExtendedCustomLocation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#namespace ExtendedCustomLocation#namespace}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#resource_group_name ExtendedCustomLocation#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.clusterExtensionIds">ClusterExtensionIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#cluster_extension_ids ExtendedCustomLocation#cluster_extension_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.hostResourceId">HostResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#host_resource_id ExtendedCustomLocation#host_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#location ExtendedCustomLocation#location}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#name ExtendedCustomLocation#name}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#namespace ExtendedCustomLocation#namespace}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#resource_group_name ExtendedCustomLocation#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationAuthentication">ExtendedCustomLocationAuthentication</a></code> | authentication block. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#display_name ExtendedCustomLocation#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#host_type ExtendedCustomLocation#host_type}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#id ExtendedCustomLocation#id}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#display_name ExtendedCustomLocation#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.hostType">HostType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#host_type ExtendedCustomLocation#host_type}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#id ExtendedCustomLocation#id}. |
 | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts">ExtendedCustomLocationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1165,7 +1165,7 @@ ClusterExtensionIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#cluster_extension_ids ExtendedCustomLocation#cluster_extension_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#cluster_extension_ids ExtendedCustomLocation#cluster_extension_ids}.
 
 ---
 
@@ -1177,7 +1177,7 @@ HostResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#host_resource_id ExtendedCustomLocation#host_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#host_resource_id ExtendedCustomLocation#host_resource_id}.
 
 ---
 
@@ -1189,7 +1189,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#location ExtendedCustomLocation#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#location ExtendedCustomLocation#location}.
 
 ---
 
@@ -1201,7 +1201,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#name ExtendedCustomLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#name ExtendedCustomLocation#name}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#namespace ExtendedCustomLocation#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#namespace ExtendedCustomLocation#namespace}.
 
 ---
 
@@ -1225,7 +1225,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#resource_group_name ExtendedCustomLocation#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#resource_group_name ExtendedCustomLocation#resource_group_name}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Authentication ExtendedCustomLocationAuthentication
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#authentication ExtendedCustomLocation#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#authentication ExtendedCustomLocation#authentication}
 
 ---
 
@@ -1251,7 +1251,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#display_name ExtendedCustomLocation#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#display_name ExtendedCustomLocation#display_name}.
 
 ---
 
@@ -1263,7 +1263,7 @@ HostType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#host_type ExtendedCustomLocation#host_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#host_type ExtendedCustomLocation#host_type}.
 
 ---
 
@@ -1275,7 +1275,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#id ExtendedCustomLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#id ExtendedCustomLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1292,7 @@ Timeouts ExtendedCustomLocationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#timeouts ExtendedCustomLocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#timeouts ExtendedCustomLocation#timeouts}
 
 ---
 
@@ -1315,10 +1315,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/extendedcustom
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#create ExtendedCustomLocation#create}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#delete ExtendedCustomLocation#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#read ExtendedCustomLocation#read}. |
-| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#update ExtendedCustomLocation#update}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#create ExtendedCustomLocation#create}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#delete ExtendedCustomLocation#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#read ExtendedCustomLocation#read}. |
+| <code><a href="#@cdktn/provider-azurerm.extendedCustomLocation.ExtendedCustomLocationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#update ExtendedCustomLocation#update}. |
 
 ---
 
@@ -1330,7 +1330,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#create ExtendedCustomLocation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#create ExtendedCustomLocation#create}.
 
 ---
 
@@ -1342,7 +1342,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#delete ExtendedCustomLocation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#delete ExtendedCustomLocation#delete}.
 
 ---
 
@@ -1354,7 +1354,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#read ExtendedCustomLocation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#read ExtendedCustomLocation#read}.
 
 ---
 
@@ -1366,7 +1366,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/extended_custom_location#update ExtendedCustomLocation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/extended_custom_location#update ExtendedCustomLocation#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TenantTemplateDeployment <a name="TenantTemplateDeployment" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment azurerm_tenant_template_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer"></a>
 
@@ -44,14 +44,14 @@ tenantTemplateDeployment.TenantTemplateDeployment(
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.debugLevel">debug_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.parametersContent">parameters_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.templateContent">template_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.templateSpecVersionId">template_spec_version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.debugLevel">debug_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.parametersContent">parameters_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.templateContent">template_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.templateSpecVersionId">template_spec_version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}. |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts">TenantTemplateDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#timeouts TenantTemplateDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#timeouts TenantTemplateDeployment#timeouts}
 
 ---
 
@@ -595,7 +595,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}.
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}.
 
 ---
 
@@ -619,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}.
 
 ---
 
@@ -779,7 +779,7 @@ The construct id used in the generated config for the TenantTemplateDeployment t
 
 The id of the existing TenantTemplateDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1221,14 +1221,14 @@ tenantTemplateDeployment.TenantTemplateDeploymentConfig(
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.debugLevel">debug_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.parametersContent">parameters_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.templateContent">template_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.templateSpecVersionId">template_spec_version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.debugLevel">debug_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.parametersContent">parameters_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.templateContent">template_content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.templateSpecVersionId">template_spec_version_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}. |
 | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts">TenantTemplateDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1311,7 +1311,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#location TenantTemplateDeployment#location}.
 
 ---
 
@@ -1323,7 +1323,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#name TenantTemplateDeployment#name}.
 
 ---
 
@@ -1335,7 +1335,7 @@ debug_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#debug_level TenantTemplateDeployment#debug_level}.
 
 ---
 
@@ -1347,7 +1347,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#id TenantTemplateDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1362,7 +1362,7 @@ parameters_content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#parameters_content TenantTemplateDeployment#parameters_content}.
 
 ---
 
@@ -1374,7 +1374,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#tags TenantTemplateDeployment#tags}.
 
 ---
 
@@ -1386,7 +1386,7 @@ template_content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_content TenantTemplateDeployment#template_content}.
 
 ---
 
@@ -1398,7 +1398,7 @@ template_spec_version_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#template_spec_version_id TenantTemplateDeployment#template_spec_version_id}.
 
 ---
 
@@ -1412,7 +1412,7 @@ timeouts: TenantTemplateDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#timeouts TenantTemplateDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#timeouts TenantTemplateDeployment#timeouts}
 
 ---
 
@@ -1435,10 +1435,10 @@ tenantTemplateDeployment.TenantTemplateDeploymentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}. |
 
 ---
 
@@ -1450,7 +1450,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#create TenantTemplateDeployment#create}.
 
 ---
 
@@ -1462,7 +1462,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#delete TenantTemplateDeployment#delete}.
 
 ---
 
@@ -1474,7 +1474,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#read TenantTemplateDeployment#read}.
 
 ---
 
@@ -1486,7 +1486,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/tenant_template_deployment#update TenantTemplateDeployment#update}.
 
 ---
 

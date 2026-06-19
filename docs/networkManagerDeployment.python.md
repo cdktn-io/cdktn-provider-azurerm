@@ -4,7 +4,7 @@
 
 ### NetworkManagerDeployment <a name="NetworkManagerDeployment" id="@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment azurerm_network_manager_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer"></a>
 
@@ -42,13 +42,13 @@ networkManagerDeployment.NetworkManagerDeployment(
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.configurationIds">configuration_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.scopeAccess">scope_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.configurationIds">configuration_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.scopeAccess">scope_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts">NetworkManagerDeploymentTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeployment.Initializer.parameter.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#timeouts NetworkManagerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#timeouts NetworkManagerDeployment#timeouts}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}.
 
 ---
 
@@ -571,7 +571,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}.
 
 ---
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}.
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}.
 
 ---
 
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}.
 
 ---
 
@@ -731,7 +731,7 @@ The construct id used in the generated config for the NetworkManagerDeployment t
 
 The id of the existing NetworkManagerDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,13 +1116,13 @@ networkManagerDeployment.NetworkManagerDeploymentConfig(
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.configurationIds">configuration_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.scopeAccess">scope_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.configurationIds">configuration_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.scopeAccess">scope_access</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts">NetworkManagerDeploymentTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentConfig.property.triggers">triggers</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ configuration_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#configuration_ids NetworkManagerDeployment#configuration_ids}.
 
 ---
 
@@ -1216,7 +1216,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#location NetworkManagerDeployment#location}.
 
 ---
 
@@ -1228,7 +1228,7 @@ network_manager_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#network_manager_id NetworkManagerDeployment#network_manager_id}.
 
 ---
 
@@ -1240,7 +1240,7 @@ scope_access: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#scope_access NetworkManagerDeployment#scope_access}.
 
 ---
 
@@ -1252,7 +1252,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#id NetworkManagerDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1269,7 +1269,7 @@ timeouts: NetworkManagerDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#timeouts NetworkManagerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#timeouts NetworkManagerDeployment#timeouts}
 
 ---
 
@@ -1281,7 +1281,7 @@ triggers: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#triggers NetworkManagerDeployment#triggers}.
 
 ---
 
@@ -1304,10 +1304,10 @@ networkManagerDeployment.NetworkManagerDeploymentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerDeployment.NetworkManagerDeploymentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}. |
 
 ---
 
@@ -1319,7 +1319,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#create NetworkManagerDeployment#create}.
 
 ---
 
@@ -1331,7 +1331,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#delete NetworkManagerDeployment#delete}.
 
 ---
 
@@ -1343,7 +1343,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#read NetworkManagerDeployment#read}.
 
 ---
 
@@ -1355,7 +1355,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_deployment#update NetworkManagerDeployment#update}.
 
 ---
 

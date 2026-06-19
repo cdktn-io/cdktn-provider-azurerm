@@ -4,7 +4,7 @@
 
 ### DevTestPolicy <a name="DevTestPolicy" id="@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy azurerm_dev_test_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy azurerm_dev_test_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer"></a>
 
@@ -44,16 +44,16 @@ DevTestPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.evaluatorType">evaluatorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.labName">labName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#name DevTestPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.policySetName">policySetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.threshold">threshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#description DevTestPolicy#description}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.factData">factData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#id DevTestPolicy#id}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.evaluatorType">evaluatorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.labName">labName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#name DevTestPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.policySetName">policySetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.threshold">threshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#description DevTestPolicy#description}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.factData">factData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#id DevTestPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts">DevTestPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#name DevTestPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#name DevTestPolicy#name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#description DevTestPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#description DevTestPolicy#description}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#id DevTestPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#id DevTestPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}.
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#timeouts DevTestPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#timeouts DevTestPolicy#timeouts}
 
 ---
 
@@ -704,7 +704,7 @@ The construct id used in the generated config for the DevTestPolicy to import.
 
 The id of the existing DevTestPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1181,16 +1181,16 @@ DevTestPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.evaluatorType">evaluatorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.labName">labName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#name DevTestPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.policySetName">policySetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.threshold">threshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#description DevTestPolicy#description}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.factData">factData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#id DevTestPolicy#id}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.evaluatorType">evaluatorType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.labName">labName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#name DevTestPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.policySetName">policySetName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.threshold">threshold</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#description DevTestPolicy#description}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.factData">factData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#id DevTestPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts">DevTestPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1273,7 +1273,7 @@ public java.lang.String getEvaluatorType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#evaluator_type DevTestPolicy#evaluator_type}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public java.lang.String getLabName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#lab_name DevTestPolicy#lab_name}.
 
 ---
 
@@ -1297,7 +1297,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#name DevTestPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#name DevTestPolicy#name}.
 
 ---
 
@@ -1309,7 +1309,7 @@ public java.lang.String getPolicySetName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#policy_set_name DevTestPolicy#policy_set_name}.
 
 ---
 
@@ -1321,7 +1321,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#resource_group_name DevTestPolicy#resource_group_name}.
 
 ---
 
@@ -1333,7 +1333,7 @@ public java.lang.String getThreshold();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#threshold DevTestPolicy#threshold}.
 
 ---
 
@@ -1345,7 +1345,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#description DevTestPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#description DevTestPolicy#description}.
 
 ---
 
@@ -1357,7 +1357,7 @@ public java.lang.String getFactData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#fact_data DevTestPolicy#fact_data}.
 
 ---
 
@@ -1369,7 +1369,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#id DevTestPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#id DevTestPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1384,7 +1384,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#tags DevTestPolicy#tags}.
 
 ---
 
@@ -1398,7 +1398,7 @@ public DevTestPolicyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#timeouts DevTestPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#timeouts DevTestPolicy#timeouts}
 
 ---
 
@@ -1421,10 +1421,10 @@ DevTestPolicyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#create DevTestPolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#delete DevTestPolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#read DevTestPolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#update DevTestPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#create DevTestPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#delete DevTestPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#read DevTestPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.devTestPolicy.DevTestPolicyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#update DevTestPolicy#update}. |
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#create DevTestPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#create DevTestPolicy#create}.
 
 ---
 
@@ -1448,7 +1448,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#delete DevTestPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#delete DevTestPolicy#delete}.
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#read DevTestPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#read DevTestPolicy#read}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dev_test_policy#update DevTestPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_test_policy#update DevTestPolicy#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AppConfigurationKey <a name="AppConfigurationKey" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key azurerm_app_configuration_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer"></a>
 
@@ -47,18 +47,18 @@ appConfigurationKey.AppConfigurationKey(
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.vaultKeyReference">vault_key_reference</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKey.Initializer.parameter.vaultKeyReference">vault_key_reference</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
 
 ---
 
@@ -203,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
 
 ---
 
@@ -628,7 +628,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
 
 ---
 
@@ -636,7 +636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
 
 ---
 
@@ -644,7 +644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
 
 ---
 
@@ -652,7 +652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
 
 ---
 
@@ -830,7 +830,7 @@ The construct id used in the generated config for the AppConfigurationKey to imp
 
 The id of the existing AppConfigurationKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1330,18 +1330,18 @@ appConfigurationKey.AppConfigurationKeyConfig(
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.contentType">content_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts">AppConfigurationKeyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference">vault_key_reference</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyConfig.property.vaultKeyReference">vault_key_reference</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ configuration_store_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#configuration_store_id AppConfigurationKey#configuration_store_id}.
 
 ---
 
@@ -1435,7 +1435,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#key AppConfigurationKey#key}.
 
 ---
 
@@ -1447,7 +1447,7 @@ content_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#content_type AppConfigurationKey#content_type}.
 
 ---
 
@@ -1459,7 +1459,7 @@ etag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#etag AppConfigurationKey#etag}.
 
 ---
 
@@ -1471,7 +1471,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#id AppConfigurationKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1486,7 +1486,7 @@ label: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#label AppConfigurationKey#label}.
 
 ---
 
@@ -1498,7 +1498,7 @@ locked: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#locked AppConfigurationKey#locked}.
 
 ---
 
@@ -1510,7 +1510,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#tags AppConfigurationKey#tags}.
 
 ---
 
@@ -1524,7 +1524,7 @@ timeouts: AppConfigurationKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#timeouts AppConfigurationKey#timeouts}
 
 ---
 
@@ -1536,7 +1536,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#type AppConfigurationKey#type}.
 
 ---
 
@@ -1548,7 +1548,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#value AppConfigurationKey#value}.
 
 ---
 
@@ -1560,7 +1560,7 @@ vault_key_reference: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#vault_key_reference AppConfigurationKey#vault_key_reference}.
 
 ---
 
@@ -1583,10 +1583,10 @@ appConfigurationKey.AppConfigurationKeyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationKey.AppConfigurationKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}. |
 
 ---
 
@@ -1598,7 +1598,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#create AppConfigurationKey#create}.
 
 ---
 
@@ -1610,7 +1610,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#delete AppConfigurationKey#delete}.
 
 ---
 
@@ -1622,7 +1622,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#read AppConfigurationKey#read}.
 
 ---
 
@@ -1634,7 +1634,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_configuration_key#update AppConfigurationKey#update}.
 
 ---
 
