@@ -4,7 +4,7 @@
 
 ### LogAnalyticsQueryPack <a name="LogAnalyticsQueryPack" id="@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack azurerm_log_analytics_query_pack}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack azurerm_log_analytics_query_pack}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPack.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the LogAnalyticsQueryPack to i
 
 The id of the existing LogAnalyticsQueryPack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,11 +871,11 @@ const logAnalyticsQueryPackConfig: logAnalyticsQueryPack.LogAnalyticsQueryPackCo
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#location LogAnalyticsQueryPack#location}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#name LogAnalyticsQueryPack#name}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#resource_group_name LogAnalyticsQueryPack#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#id LogAnalyticsQueryPack#id}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#tags LogAnalyticsQueryPack#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#location LogAnalyticsQueryPack#location}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#name LogAnalyticsQueryPack#name}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#resource_group_name LogAnalyticsQueryPack#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#id LogAnalyticsQueryPack#id}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#tags LogAnalyticsQueryPack#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts">LogAnalyticsQueryPackTimeouts</a></code> | timeouts block. |
 
 ---
@@ -958,7 +958,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#location LogAnalyticsQueryPack#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#location LogAnalyticsQueryPack#location}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#name LogAnalyticsQueryPack#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#name LogAnalyticsQueryPack#name}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#resource_group_name LogAnalyticsQueryPack#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#resource_group_name LogAnalyticsQueryPack#resource_group_name}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#id LogAnalyticsQueryPack#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#id LogAnalyticsQueryPack#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#tags LogAnalyticsQueryPack#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#tags LogAnalyticsQueryPack#tags}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly timeouts: LogAnalyticsQueryPackTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#timeouts LogAnalyticsQueryPack#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#timeouts LogAnalyticsQueryPack#timeouts}
 
 ---
 
@@ -1041,10 +1041,10 @@ const logAnalyticsQueryPackTimeouts: logAnalyticsQueryPack.LogAnalyticsQueryPack
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#create LogAnalyticsQueryPack#create}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#delete LogAnalyticsQueryPack#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#read LogAnalyticsQueryPack#read}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#update LogAnalyticsQueryPack#update}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#create LogAnalyticsQueryPack#create}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#delete LogAnalyticsQueryPack#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#read LogAnalyticsQueryPack#read}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsQueryPack.LogAnalyticsQueryPackTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#update LogAnalyticsQueryPack#update}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#create LogAnalyticsQueryPack#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#create LogAnalyticsQueryPack#create}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#delete LogAnalyticsQueryPack#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#delete LogAnalyticsQueryPack#delete}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#read LogAnalyticsQueryPack#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#read LogAnalyticsQueryPack#read}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/log_analytics_query_pack#update LogAnalyticsQueryPack#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_query_pack#update LogAnalyticsQueryPack#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### HpcCache <a name="HpcCache" id="@cdktn/provider-azurerm.hpcCache.HpcCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache azurerm_hpc_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache azurerm_hpc_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCache.HpcCache.Initializer"></a>
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the HpcCache to import.
 
 The id of the existing HpcCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1343,24 +1343,24 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.cacheSizeInGb">CacheSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#location HpcCache#location}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#name HpcCache#name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.automaticallyRotateKeyToLatestEnabled">AutomaticallyRotateKeyToLatestEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.cacheSizeInGb">CacheSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#location HpcCache#location}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#name HpcCache#name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.automaticallyRotateKeyToLatestEnabled">AutomaticallyRotateKeyToLatestEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.defaultAccessPolicy">DefaultAccessPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicy">HpcCacheDefaultAccessPolicy</a></code> | default_access_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.directoryActiveDirectory">DirectoryActiveDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory">HpcCacheDirectoryActiveDirectory</a></code> | directory_active_directory block. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.directoryFlatFile">DirectoryFlatFile</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryFlatFile">HpcCacheDirectoryFlatFile</a></code> | directory_flat_file block. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.directoryLdap">DirectoryLdap</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap">HpcCacheDirectoryLdap</a></code> | directory_ldap block. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.dns">Dns</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDns">HpcCacheDns</a></code> | dns block. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#id HpcCache#id}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#id HpcCache#id}. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheIdentity">HpcCacheIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.mtu">Mtu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#mtu HpcCache#mtu}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.ntpServer">NtpServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#tags HpcCache#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.mtu">Mtu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#mtu HpcCache#mtu}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.ntpServer">NtpServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#tags HpcCache#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts">HpcCacheTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1443,7 +1443,7 @@ CacheSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}.
 
 ---
 
@@ -1455,7 +1455,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#location HpcCache#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#location HpcCache#location}.
 
 ---
 
@@ -1467,7 +1467,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#name HpcCache#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#name HpcCache#name}.
 
 ---
 
@@ -1479,7 +1479,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}.
 
 ---
 
@@ -1491,7 +1491,7 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}.
 
 ---
 
@@ -1503,7 +1503,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}.
 
 ---
 
@@ -1515,7 +1515,7 @@ AutomaticallyRotateKeyToLatestEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}.
 
 ---
 
@@ -1529,7 +1529,7 @@ DefaultAccessPolicy HpcCacheDefaultAccessPolicy
 
 default_access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#default_access_policy HpcCache#default_access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#default_access_policy HpcCache#default_access_policy}
 
 ---
 
@@ -1543,7 +1543,7 @@ DirectoryActiveDirectory HpcCacheDirectoryActiveDirectory
 
 directory_active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_active_directory HpcCache#directory_active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#directory_active_directory HpcCache#directory_active_directory}
 
 ---
 
@@ -1557,7 +1557,7 @@ DirectoryFlatFile HpcCacheDirectoryFlatFile
 
 directory_flat_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_flat_file HpcCache#directory_flat_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#directory_flat_file HpcCache#directory_flat_file}
 
 ---
 
@@ -1571,7 +1571,7 @@ DirectoryLdap HpcCacheDirectoryLdap
 
 directory_ldap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_ldap HpcCache#directory_ldap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#directory_ldap HpcCache#directory_ldap}
 
 ---
 
@@ -1585,7 +1585,7 @@ Dns HpcCacheDns
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns HpcCache#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dns HpcCache#dns}
 
 ---
 
@@ -1597,7 +1597,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#id HpcCache#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#id HpcCache#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1614,7 +1614,7 @@ Identity HpcCacheIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#identity HpcCache#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#identity HpcCache#identity}
 
 ---
 
@@ -1626,7 +1626,7 @@ KeyVaultKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}.
 
 ---
 
@@ -1638,7 +1638,7 @@ Mtu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#mtu HpcCache#mtu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#mtu HpcCache#mtu}.
 
 ---
 
@@ -1650,7 +1650,7 @@ NtpServer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}.
 
 ---
 
@@ -1662,7 +1662,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#tags HpcCache#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#tags HpcCache#tags}.
 
 ---
 
@@ -1676,7 +1676,7 @@ Timeouts HpcCacheTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#timeouts HpcCache#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#timeouts HpcCache#timeouts}
 
 ---
 
@@ -1710,7 +1710,7 @@ AccessRule interface{}
 
 access_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#access_rule HpcCache#access_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#access_rule HpcCache#access_rule}
 
 ---
 
@@ -1737,14 +1737,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.access">Access</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#access HpcCache#access}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#scope HpcCache#scope}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.anonymousGid">AnonymousGid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.anonymousUid">AnonymousUid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#filter HpcCache#filter}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.rootSquashEnabled">RootSquashEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.submountAccessEnabled">SubmountAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.suidEnabled">SuidEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.access">Access</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#access HpcCache#access}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#scope HpcCache#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.anonymousGid">AnonymousGid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.anonymousUid">AnonymousUid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#filter HpcCache#filter}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.rootSquashEnabled">RootSquashEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.submountAccessEnabled">SubmountAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDefaultAccessPolicyAccessRule.property.suidEnabled">SuidEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}. |
 
 ---
 
@@ -1756,7 +1756,7 @@ Access *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#access HpcCache#access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#access HpcCache#access}.
 
 ---
 
@@ -1768,7 +1768,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#scope HpcCache#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#scope HpcCache#scope}.
 
 ---
 
@@ -1780,7 +1780,7 @@ AnonymousGid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}.
 
 ---
 
@@ -1792,7 +1792,7 @@ AnonymousUid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}.
 
 ---
 
@@ -1804,7 +1804,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#filter HpcCache#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#filter HpcCache#filter}.
 
 ---
 
@@ -1816,7 +1816,7 @@ RootSquashEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}.
 
 ---
 
@@ -1828,7 +1828,7 @@ SubmountAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}.
 
 ---
 
@@ -1840,7 +1840,7 @@ SuidEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}.
 
 ---
 
@@ -1866,13 +1866,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.cacheNetbiosName">CacheNetbiosName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.dnsPrimaryIp">DnsPrimaryIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.domainNetbiosName">DomainNetbiosName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#username HpcCache#username}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.dnsSecondaryIp">DnsSecondaryIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.cacheNetbiosName">CacheNetbiosName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.dnsPrimaryIp">DnsPrimaryIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.domainNetbiosName">DomainNetbiosName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password HpcCache#password}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#username HpcCache#username}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryActiveDirectory.property.dnsSecondaryIp">DnsSecondaryIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}. |
 
 ---
 
@@ -1884,7 +1884,7 @@ CacheNetbiosName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}.
 
 ---
 
@@ -1896,7 +1896,7 @@ DnsPrimaryIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}.
 
 ---
 
@@ -1908,7 +1908,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}.
 
 ---
 
@@ -1920,7 +1920,7 @@ DomainNetbiosName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}.
 
 ---
 
@@ -1932,7 +1932,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password HpcCache#password}.
 
 ---
 
@@ -1944,7 +1944,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#username HpcCache#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#username HpcCache#username}.
 
 ---
 
@@ -1956,7 +1956,7 @@ DnsSecondaryIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}.
 
 ---
 
@@ -1977,8 +1977,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryFlatFile.property.groupFileUri">GroupFileUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryFlatFile.property.passwordFileUri">PasswordFileUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryFlatFile.property.groupFileUri">GroupFileUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryFlatFile.property.passwordFileUri">PasswordFileUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}. |
 
 ---
 
@@ -1990,7 +1990,7 @@ GroupFileUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}.
 
 ---
 
@@ -2002,7 +2002,7 @@ PasswordFileUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}.
 
 ---
 
@@ -2027,12 +2027,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.baseDn">BaseDn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.server">Server</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#server HpcCache#server}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.baseDn">BaseDn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.server">Server</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#server HpcCache#server}. |
 | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.bind">Bind</a></code> | <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdapBind">HpcCacheDirectoryLdapBind</a></code> | bind block. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.certificateValidationUri">CertificateValidationUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.downloadCertificateAutomatically">DownloadCertificateAutomatically</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.certificateValidationUri">CertificateValidationUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.downloadCertificateAutomatically">DownloadCertificateAutomatically</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdap.property.encrypted">Encrypted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}. |
 
 ---
 
@@ -2044,7 +2044,7 @@ BaseDn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}.
 
 ---
 
@@ -2056,7 +2056,7 @@ Server *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#server HpcCache#server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#server HpcCache#server}.
 
 ---
 
@@ -2070,7 +2070,7 @@ Bind HpcCacheDirectoryLdapBind
 
 bind block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#bind HpcCache#bind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#bind HpcCache#bind}
 
 ---
 
@@ -2082,7 +2082,7 @@ CertificateValidationUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}.
 
 ---
 
@@ -2094,7 +2094,7 @@ DownloadCertificateAutomatically interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}.
 
 ---
 
@@ -2106,7 +2106,7 @@ Encrypted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}.
 
 ---
 
@@ -2127,8 +2127,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdapBind.property.dn">Dn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dn HpcCache#dn}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdapBind.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdapBind.property.dn">Dn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dn HpcCache#dn}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDirectoryLdapBind.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password HpcCache#password}. |
 
 ---
 
@@ -2140,7 +2140,7 @@ Dn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dn HpcCache#dn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#dn HpcCache#dn}.
 
 ---
 
@@ -2152,7 +2152,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#password HpcCache#password}.
 
 ---
 
@@ -2173,8 +2173,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDns.property.servers">Servers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#servers HpcCache#servers}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDns.property.searchDomain">SearchDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDns.property.servers">Servers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#servers HpcCache#servers}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheDns.property.searchDomain">SearchDomain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}. |
 
 ---
 
@@ -2186,7 +2186,7 @@ Servers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#servers HpcCache#servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#servers HpcCache#servers}.
 
 ---
 
@@ -2198,7 +2198,7 @@ SearchDomain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}.
 
 ---
 
@@ -2219,8 +2219,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#type HpcCache#type}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#type HpcCache#type}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}. |
 
 ---
 
@@ -2232,7 +2232,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#type HpcCache#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#type HpcCache#type}.
 
 ---
 
@@ -2244,7 +2244,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}.
 
 ---
 
@@ -2267,10 +2267,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccache"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#create HpcCache#create}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#delete HpcCache#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#read HpcCache#read}. |
-| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#update HpcCache#update}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#create HpcCache#create}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#delete HpcCache#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#read HpcCache#read}. |
+| <code><a href="#@cdktn/provider-azurerm.hpcCache.HpcCacheTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#update HpcCache#update}. |
 
 ---
 
@@ -2282,7 +2282,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#create HpcCache#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#create HpcCache#create}.
 
 ---
 
@@ -2294,7 +2294,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#delete HpcCache#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#delete HpcCache#delete}.
 
 ---
 
@@ -2306,7 +2306,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#read HpcCache#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#read HpcCache#read}.
 
 ---
 
@@ -2318,7 +2318,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#update HpcCache#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/hpc_cache#update HpcCache#update}.
 
 ---
 

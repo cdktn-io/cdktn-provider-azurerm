@@ -4,7 +4,7 @@
 
 ### SpringCloudApplicationLiveView <a name="SpringCloudApplicationLiveView" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view azurerm_spring_cloud_application_live_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SpringCloudApplicationLive
 
 The id of the existing SpringCloudApplicationLiveView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,9 +832,9 @@ new SpringCloudApplicationLiveViewConfig {
 | <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#name SpringCloudApplicationLiveView#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.springCloudServiceId">SpringCloudServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#spring_cloud_service_id SpringCloudApplicationLiveView#spring_cloud_service_id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#id SpringCloudApplicationLiveView#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#name SpringCloudApplicationLiveView#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.springCloudServiceId">SpringCloudServiceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#spring_cloud_service_id SpringCloudApplicationLiveView#spring_cloud_service_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#id SpringCloudApplicationLiveView#id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts">SpringCloudApplicationLiveViewTimeouts</a></code> | timeouts block. |
 
 ---
@@ -917,7 +917,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#name SpringCloudApplicationLiveView#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#name SpringCloudApplicationLiveView#name}.
 
 ---
 
@@ -929,7 +929,7 @@ public string SpringCloudServiceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#spring_cloud_service_id SpringCloudApplicationLiveView#spring_cloud_service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#spring_cloud_service_id SpringCloudApplicationLiveView#spring_cloud_service_id}.
 
 ---
 
@@ -941,7 +941,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#id SpringCloudApplicationLiveView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#id SpringCloudApplicationLiveView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -958,7 +958,7 @@ public SpringCloudApplicationLiveViewTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#timeouts SpringCloudApplicationLiveView#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#timeouts SpringCloudApplicationLiveView#timeouts}
 
 ---
 
@@ -980,9 +980,9 @@ new SpringCloudApplicationLiveViewTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#create SpringCloudApplicationLiveView#create}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#delete SpringCloudApplicationLiveView#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#read SpringCloudApplicationLiveView#read}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#create SpringCloudApplicationLiveView#create}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#delete SpringCloudApplicationLiveView#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#read SpringCloudApplicationLiveView#read}. |
 
 ---
 
@@ -994,7 +994,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#create SpringCloudApplicationLiveView#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#create SpringCloudApplicationLiveView#create}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#delete SpringCloudApplicationLiveView#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#delete SpringCloudApplicationLiveView#delete}.
 
 ---
 
@@ -1018,7 +1018,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_application_live_view#read SpringCloudApplicationLiveView#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_application_live_view#read SpringCloudApplicationLiveView#read}.
 
 ---
 

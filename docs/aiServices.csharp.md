@@ -4,7 +4,7 @@
 
 ### AiServices <a name="AiServices" id="@cdktn/provider-azurerm.aiServices.AiServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services azurerm_ai_services}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services azurerm_ai_services}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServices.Initializer"></a>
 
@@ -638,7 +638,7 @@ The construct id used in the generated config for the AiServices to import.
 
 The id of the existing AiServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1263,21 +1263,21 @@ new AiServicesConfig {
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#location AiServices#location}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#name AiServices#name}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#resource_group_name AiServices#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.skuName">SkuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#sku_name AiServices#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#location AiServices#location}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#name AiServices#name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#resource_group_name AiServices#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.skuName">SkuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#sku_name AiServices#sku_name}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.customerManagedKey">CustomerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey">AiServicesCustomerManagedKey</a></code> | customer_managed_key block. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.customSubdomainName">CustomSubdomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#custom_subdomain_name AiServices#custom_subdomain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.fqdns">Fqdns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#fqdns AiServices#fqdns}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#id AiServices#id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.customSubdomainName">CustomSubdomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#custom_subdomain_name AiServices#custom_subdomain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.fqdns">Fqdns</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#fqdns AiServices#fqdns}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#id AiServices#id}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesIdentity">AiServicesIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#local_authentication_enabled AiServices#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#local_authentication_enabled AiServices#local_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.networkAcls">NetworkAcls</a></code> | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls">AiServicesNetworkAcls</a></code> | network_acls block. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.outboundNetworkAccessRestricted">OutboundNetworkAccessRestricted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#outbound_network_access_restricted AiServices#outbound_network_access_restricted}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.publicNetworkAccess">PublicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#public_network_access AiServices#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.outboundNetworkAccessRestricted">OutboundNetworkAccessRestricted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#outbound_network_access_restricted AiServices#outbound_network_access_restricted}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.publicNetworkAccess">PublicNetworkAccess</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#public_network_access AiServices#public_network_access}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.storage">Storage</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.aiServices.AiServicesStorage">AiServicesStorage</a>[]</code> | storage block. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#tags AiServices#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#tags AiServices#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts">AiServicesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1360,7 +1360,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#location AiServices#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#location AiServices#location}.
 
 ---
 
@@ -1372,7 +1372,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#name AiServices#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#name AiServices#name}.
 
 ---
 
@@ -1384,7 +1384,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#resource_group_name AiServices#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#resource_group_name AiServices#resource_group_name}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public string SkuName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#sku_name AiServices#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#sku_name AiServices#sku_name}.
 
 ---
 
@@ -1410,7 +1410,7 @@ public AiServicesCustomerManagedKey CustomerManagedKey { get; set; }
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#customer_managed_key AiServices#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#customer_managed_key AiServices#customer_managed_key}
 
 ---
 
@@ -1422,7 +1422,7 @@ public string CustomSubdomainName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#custom_subdomain_name AiServices#custom_subdomain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#custom_subdomain_name AiServices#custom_subdomain_name}.
 
 ---
 
@@ -1434,7 +1434,7 @@ public string[] Fqdns { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#fqdns AiServices#fqdns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#fqdns AiServices#fqdns}.
 
 ---
 
@@ -1446,7 +1446,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#id AiServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#id AiServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1463,7 +1463,7 @@ public AiServicesIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity AiServices#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity AiServices#identity}
 
 ---
 
@@ -1475,7 +1475,7 @@ public bool|IResolvable LocalAuthenticationEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#local_authentication_enabled AiServices#local_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#local_authentication_enabled AiServices#local_authentication_enabled}.
 
 ---
 
@@ -1489,7 +1489,7 @@ public AiServicesNetworkAcls NetworkAcls { get; set; }
 
 network_acls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#network_acls AiServices#network_acls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#network_acls AiServices#network_acls}
 
 ---
 
@@ -1501,7 +1501,7 @@ public bool|IResolvable OutboundNetworkAccessRestricted { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#outbound_network_access_restricted AiServices#outbound_network_access_restricted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#outbound_network_access_restricted AiServices#outbound_network_access_restricted}.
 
 ---
 
@@ -1513,7 +1513,7 @@ public string PublicNetworkAccess { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#public_network_access AiServices#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#public_network_access AiServices#public_network_access}.
 
 ---
 
@@ -1527,7 +1527,7 @@ public IResolvable|AiServicesStorage[] Storage { get; set; }
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#storage AiServices#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#storage AiServices#storage}
 
 ---
 
@@ -1539,7 +1539,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#tags AiServices#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#tags AiServices#tags}.
 
 ---
 
@@ -1553,7 +1553,7 @@ public AiServicesTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#timeouts AiServices#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#timeouts AiServices#timeouts}
 
 ---
 
@@ -1575,9 +1575,9 @@ new AiServicesCustomerManagedKey {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#key_vault_key_id AiServices#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#managed_hsm_key_id AiServices#managed_hsm_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#key_vault_key_id AiServices#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#managed_hsm_key_id AiServices#managed_hsm_key_id}. |
 
 ---
 
@@ -1589,7 +1589,7 @@ public string IdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}.
 
 ---
 
@@ -1601,7 +1601,7 @@ public string KeyVaultKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#key_vault_key_id AiServices#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#key_vault_key_id AiServices#key_vault_key_id}.
 
 ---
 
@@ -1613,7 +1613,7 @@ public string ManagedHsmKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#managed_hsm_key_id AiServices#managed_hsm_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#managed_hsm_key_id AiServices#managed_hsm_key_id}.
 
 ---
 
@@ -1634,8 +1634,8 @@ new AiServicesIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#type AiServices#type}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_ids AiServices#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#type AiServices#type}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_ids AiServices#identity_ids}. |
 
 ---
 
@@ -1647,7 +1647,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#type AiServices#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#type AiServices#type}.
 
 ---
 
@@ -1659,7 +1659,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_ids AiServices#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_ids AiServices#identity_ids}.
 
 ---
 
@@ -1682,9 +1682,9 @@ new AiServicesNetworkAcls {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.defaultAction">DefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#default_action AiServices#default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.bypass">Bypass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#bypass AiServices#bypass}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.ipRules">IpRules</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#ip_rules AiServices#ip_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.defaultAction">DefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#default_action AiServices#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.bypass">Bypass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#bypass AiServices#bypass}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.ipRules">IpRules</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#ip_rules AiServices#ip_rules}. |
 | <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.property.virtualNetworkRules">VirtualNetworkRules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules">AiServicesNetworkAclsVirtualNetworkRules</a>[]</code> | virtual_network_rules block. |
 
 ---
@@ -1697,7 +1697,7 @@ public string DefaultAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#default_action AiServices#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#default_action AiServices#default_action}.
 
 ---
 
@@ -1709,7 +1709,7 @@ public string Bypass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#bypass AiServices#bypass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#bypass AiServices#bypass}.
 
 ---
 
@@ -1721,7 +1721,7 @@ public string[] IpRules { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#ip_rules AiServices#ip_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#ip_rules AiServices#ip_rules}.
 
 ---
 
@@ -1735,7 +1735,7 @@ public IResolvable|AiServicesNetworkAclsVirtualNetworkRules[] VirtualNetworkRule
 
 virtual_network_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#virtual_network_rules AiServices#virtual_network_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#virtual_network_rules AiServices#virtual_network_rules}
 
 ---
 
@@ -1756,8 +1756,8 @@ new AiServicesNetworkAclsVirtualNetworkRules {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#subnet_id AiServices#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules.property.ignoreMissingVnetServiceEndpoint">IgnoreMissingVnetServiceEndpoint</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#ignore_missing_vnet_service_endpoint AiServices#ignore_missing_vnet_service_endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#subnet_id AiServices#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules.property.ignoreMissingVnetServiceEndpoint">IgnoreMissingVnetServiceEndpoint</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#ignore_missing_vnet_service_endpoint AiServices#ignore_missing_vnet_service_endpoint}. |
 
 ---
 
@@ -1769,7 +1769,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#subnet_id AiServices#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#subnet_id AiServices#subnet_id}.
 
 ---
 
@@ -1781,7 +1781,7 @@ public bool|IResolvable IgnoreMissingVnetServiceEndpoint { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#ignore_missing_vnet_service_endpoint AiServices#ignore_missing_vnet_service_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#ignore_missing_vnet_service_endpoint AiServices#ignore_missing_vnet_service_endpoint}.
 
 ---
 
@@ -1802,8 +1802,8 @@ new AiServicesStorage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesStorage.property.storageAccountId">StorageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#storage_account_id AiServices#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesStorage.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesStorage.property.storageAccountId">StorageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#storage_account_id AiServices#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesStorage.property.identityClientId">IdentityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}. |
 
 ---
 
@@ -1815,7 +1815,7 @@ public string StorageAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#storage_account_id AiServices#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#storage_account_id AiServices#storage_account_id}.
 
 ---
 
@@ -1827,7 +1827,7 @@ public string IdentityClientId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#identity_client_id AiServices#identity_client_id}.
 
 ---
 
@@ -1850,10 +1850,10 @@ new AiServicesTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#create AiServices#create}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#delete AiServices#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#read AiServices#read}. |
-| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#update AiServices#update}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#create AiServices#create}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#delete AiServices#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#read AiServices#read}. |
+| <code><a href="#@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#update AiServices#update}. |
 
 ---
 
@@ -1865,7 +1865,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#create AiServices#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#create AiServices#create}.
 
 ---
 
@@ -1877,7 +1877,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#delete AiServices#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#delete AiServices#delete}.
 
 ---
 
@@ -1889,7 +1889,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#read AiServices#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#read AiServices#read}.
 
 ---
 
@@ -1901,7 +1901,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/ai_services#update AiServices#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/ai_services#update AiServices#update}.
 
 ---
 

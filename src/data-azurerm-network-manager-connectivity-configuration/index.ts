@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermNetworkManagerConnectivityConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#id DataAzurermNetworkManagerConnectivityConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#id DataAzurermNetworkManagerConnectivityConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#name DataAzurermNetworkManagerConnectivityConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#name DataAzurermNetworkManagerConnectivityConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#network_manager_id DataAzurermNetworkManagerConnectivityConfiguration#network_manager_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#network_manager_id DataAzurermNetworkManagerConnectivityConfiguration#network_manager_id}
   */
   readonly networkManagerId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#timeouts DataAzurermNetworkManagerConnectivityConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#timeouts DataAzurermNetworkManagerConnectivityConfiguration#timeouts}
   */
   readonly timeouts?: DataAzurermNetworkManagerConnectivityConfigurationTimeouts;
 }
@@ -206,7 +206,7 @@ export class DataAzurermNetworkManagerConnectivityConfigurationHubList extends c
 }
 export interface DataAzurermNetworkManagerConnectivityConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#read DataAzurermNetworkManagerConnectivityConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#read DataAzurermNetworkManagerConnectivityConfiguration#read}
   */
   readonly read?: string;
 }
@@ -300,7 +300,7 @@ export class DataAzurermNetworkManagerConnectivityConfigurationTimeoutsOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration}
 */
 export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.Te
   * Generates CDKTN code for importing a DataAzurermNetworkManagerConnectivityConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetworkManagerConnectivityConfiguration to import
-  * @param importFromId The id of the existing DataAzurermNetworkManagerConnectivityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermNetworkManagerConnectivityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetworkManagerConnectivityConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.Te
       terraformResourceType: 'azurerm_network_manager_connectivity_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.77.0',
+        providerVersion: '4.78.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -364,6 +364,16 @@ export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.Te
   private _appliesToGroup = new DataAzurermNetworkManagerConnectivityConfigurationAppliesToGroupList(this, "applies_to_group", false);
   public get appliesToGroup() {
     return this._appliesToGroup;
+  }
+
+  // connected_group_address_overlap_enabled - computed: true, optional: false, required: false
+  public get connectedGroupAddressOverlapEnabled() {
+    return this.getBooleanAttribute('connected_group_address_overlap_enabled');
+  }
+
+  // connected_group_private_endpoints_scale - computed: true, optional: false, required: false
+  public get connectedGroupPrivateEndpointsScale() {
+    return this.getStringAttribute('connected_group_private_endpoints_scale');
   }
 
   // connectivity_topology - computed: true, optional: false, required: false
@@ -432,6 +442,11 @@ export class DataAzurermNetworkManagerConnectivityConfiguration extends cdktn.Te
   // Temporarily expose input value. Use with caution.
   public get networkManagerIdInput() {
     return this._networkManagerId;
+  }
+
+  // peering_enforcement_enabled - computed: true, optional: false, required: false
+  public get peeringEnforcementEnabled() {
+    return this.getBooleanAttribute('peering_enforcement_enabled');
   }
 
   // timeouts - computed: false, optional: true, required: false

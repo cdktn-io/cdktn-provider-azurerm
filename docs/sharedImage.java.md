@@ -4,7 +4,7 @@
 
 ### SharedImage <a name="SharedImage" id="@cdktn/provider-azurerm.sharedImage.SharedImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image azurerm_shared_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image azurerm_shared_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer"></a>
 
@@ -63,36 +63,36 @@ SharedImage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.galleryName">galleryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.galleryName">galleryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.identifier">identifier</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier">SharedImageIdentifier</a></code> | identifier block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#location SharedImage#location}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.acceleratedNetworkSupportEnabled">acceleratedNetworkSupportEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmEnabled">confidentialVmEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmSupported">confidentialVmSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#description SharedImage#description}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskControllerTypeNvmeEnabled">diskControllerTypeNvmeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskTypesNotAllowed">diskTypesNotAllowed</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.endOfLifeDate">endOfLifeDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.eula">eula</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#eula SharedImage#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hibernationEnabled">hibernationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hyperVGeneration">hyperVGeneration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#id SharedImage#id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.maxRecommendedMemoryInGb">maxRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.maxRecommendedVcpuCount">maxRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.minRecommendedMemoryInGb">minRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.minRecommendedVcpuCount">minRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.privacyStatementUri">privacyStatementUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#location SharedImage#location}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.acceleratedNetworkSupportEnabled">acceleratedNetworkSupportEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmEnabled">confidentialVmEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmSupported">confidentialVmSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#description SharedImage#description}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskControllerTypeNvmeEnabled">diskControllerTypeNvmeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskTypesNotAllowed">diskTypesNotAllowed</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.endOfLifeDate">endOfLifeDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.eula">eula</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#eula SharedImage#eula}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hibernationEnabled">hibernationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hyperVGeneration">hyperVGeneration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#id SharedImage#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.maxRecommendedMemoryInGb">maxRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.maxRecommendedVcpuCount">maxRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.minRecommendedMemoryInGb">minRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.minRecommendedVcpuCount">minRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.privacyStatementUri">privacyStatementUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.purchasePlan">purchasePlan</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan">SharedImagePurchasePlan</a></code> | purchase_plan block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.releaseNoteUri">releaseNoteUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.specialized">specialized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#tags SharedImage#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.releaseNoteUri">releaseNoteUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.specialized">specialized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#tags SharedImage#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchEnabled">trustedLaunchEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchSupported">trustedLaunchSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchEnabled">trustedLaunchEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchSupported">trustedLaunchSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
 
 ---
 
@@ -160,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#identifier SharedImage#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#identifier SharedImage#identifier}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#location SharedImage#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#location SharedImage#location}.
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#os_type SharedImage#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#os_type SharedImage#os_type}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}.
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#architecture SharedImage#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#architecture SharedImage#architecture}.
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#description SharedImage#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#description SharedImage#description}.
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}.
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}.
 
 ---
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#eula SharedImage#eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#eula SharedImage#eula}.
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}.
 
 ---
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#id SharedImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#id SharedImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -309,7 +309,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}.
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}.
 
 ---
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}.
 
 ---
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}.
 
 ---
 
@@ -341,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}.
 
 ---
 
@@ -351,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 purchase_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#purchase_plan SharedImage#purchase_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#purchase_plan SharedImage#purchase_plan}
 
 ---
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}.
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#specialized SharedImage#specialized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#specialized SharedImage#specialized}.
 
 ---
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#tags SharedImage#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#tags SharedImage#tags}.
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#timeouts SharedImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#timeouts SharedImage#timeouts}
 
 ---
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
 
 ---
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
 
 ---
 
@@ -1057,7 +1057,7 @@ The construct id used in the generated config for the SharedImage to import.
 
 The id of the existing SharedImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1971,36 +1971,36 @@ SharedImageConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.galleryName">galleryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.galleryName">galleryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.identifier">identifier</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier">SharedImageIdentifier</a></code> | identifier block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#location SharedImage#location}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.acceleratedNetworkSupportEnabled">acceleratedNetworkSupportEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmEnabled">confidentialVmEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmSupported">confidentialVmSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#description SharedImage#description}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskControllerTypeNvmeEnabled">diskControllerTypeNvmeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskTypesNotAllowed">diskTypesNotAllowed</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.endOfLifeDate">endOfLifeDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.eula">eula</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#eula SharedImage#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hibernationEnabled">hibernationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hyperVGeneration">hyperVGeneration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#id SharedImage#id}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.maxRecommendedMemoryInGb">maxRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.maxRecommendedVcpuCount">maxRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.minRecommendedMemoryInGb">minRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.minRecommendedVcpuCount">minRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.privacyStatementUri">privacyStatementUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#location SharedImage#location}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.acceleratedNetworkSupportEnabled">acceleratedNetworkSupportEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.architecture">architecture</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmEnabled">confidentialVmEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmSupported">confidentialVmSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#description SharedImage#description}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskControllerTypeNvmeEnabled">diskControllerTypeNvmeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskTypesNotAllowed">diskTypesNotAllowed</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.endOfLifeDate">endOfLifeDate</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.eula">eula</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#eula SharedImage#eula}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hibernationEnabled">hibernationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hyperVGeneration">hyperVGeneration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#id SharedImage#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.maxRecommendedMemoryInGb">maxRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.maxRecommendedVcpuCount">maxRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.minRecommendedMemoryInGb">minRecommendedMemoryInGb</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.minRecommendedVcpuCount">minRecommendedVcpuCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.privacyStatementUri">privacyStatementUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.purchasePlan">purchasePlan</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan">SharedImagePurchasePlan</a></code> | purchase_plan block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.releaseNoteUri">releaseNoteUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.specialized">specialized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#tags SharedImage#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.releaseNoteUri">releaseNoteUri</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.specialized">specialized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#tags SharedImage#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchEnabled">trustedLaunchEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchSupported">trustedLaunchSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchEnabled">trustedLaunchEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchSupported">trustedLaunchSupported</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
 
 ---
 
@@ -2082,7 +2082,7 @@ public java.lang.String getGalleryName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}.
 
 ---
 
@@ -2096,7 +2096,7 @@ public SharedImageIdentifier getIdentifier();
 
 identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#identifier SharedImage#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#identifier SharedImage#identifier}
 
 ---
 
@@ -2108,7 +2108,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#location SharedImage#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#location SharedImage#location}.
 
 ---
 
@@ -2120,7 +2120,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}.
 
 ---
 
@@ -2132,7 +2132,7 @@ public java.lang.String getOsType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#os_type SharedImage#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#os_type SharedImage#os_type}.
 
 ---
 
@@ -2144,7 +2144,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}.
 
 ---
 
@@ -2156,7 +2156,7 @@ public java.lang.Boolean|IResolvable getAcceleratedNetworkSupportEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
 
 ---
 
@@ -2168,7 +2168,7 @@ public java.lang.String getArchitecture();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#architecture SharedImage#architecture}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#architecture SharedImage#architecture}.
 
 ---
 
@@ -2180,7 +2180,7 @@ public java.lang.Boolean|IResolvable getConfidentialVmEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
 
 ---
 
@@ -2192,7 +2192,7 @@ public java.lang.Boolean|IResolvable getConfidentialVmSupported();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
 
 ---
 
@@ -2204,7 +2204,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#description SharedImage#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#description SharedImage#description}.
 
 ---
 
@@ -2216,7 +2216,7 @@ public java.lang.Boolean|IResolvable getDiskControllerTypeNvmeEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
 
 ---
 
@@ -2228,7 +2228,7 @@ public java.util.List<java.lang.String> getDiskTypesNotAllowed();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}.
 
 ---
 
@@ -2240,7 +2240,7 @@ public java.lang.String getEndOfLifeDate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}.
 
 ---
 
@@ -2252,7 +2252,7 @@ public java.lang.String getEula();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#eula SharedImage#eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#eula SharedImage#eula}.
 
 ---
 
@@ -2264,7 +2264,7 @@ public java.lang.Boolean|IResolvable getHibernationEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
 
 ---
 
@@ -2276,7 +2276,7 @@ public java.lang.String getHyperVGeneration();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}.
 
 ---
 
@@ -2288,7 +2288,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#id SharedImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#id SharedImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2303,7 +2303,7 @@ public java.lang.Number getMaxRecommendedMemoryInGb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}.
 
 ---
 
@@ -2315,7 +2315,7 @@ public java.lang.Number getMaxRecommendedVcpuCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#max_recommended_vcpu_count SharedImage#max_recommended_vcpu_count}.
 
 ---
 
@@ -2327,7 +2327,7 @@ public java.lang.Number getMinRecommendedMemoryInGb();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_memory_in_gb SharedImage#min_recommended_memory_in_gb}.
 
 ---
 
@@ -2339,7 +2339,7 @@ public java.lang.Number getMinRecommendedVcpuCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#min_recommended_vcpu_count SharedImage#min_recommended_vcpu_count}.
 
 ---
 
@@ -2351,7 +2351,7 @@ public java.lang.String getPrivacyStatementUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}.
 
 ---
 
@@ -2365,7 +2365,7 @@ public SharedImagePurchasePlan getPurchasePlan();
 
 purchase_plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#purchase_plan SharedImage#purchase_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#purchase_plan SharedImage#purchase_plan}
 
 ---
 
@@ -2377,7 +2377,7 @@ public java.lang.String getReleaseNoteUri();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}.
 
 ---
 
@@ -2389,7 +2389,7 @@ public java.lang.Boolean|IResolvable getSpecialized();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#specialized SharedImage#specialized}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#specialized SharedImage#specialized}.
 
 ---
 
@@ -2401,7 +2401,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#tags SharedImage#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#tags SharedImage#tags}.
 
 ---
 
@@ -2415,7 +2415,7 @@ public SharedImageTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#timeouts SharedImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#timeouts SharedImage#timeouts}
 
 ---
 
@@ -2427,7 +2427,7 @@ public java.lang.Boolean|IResolvable getTrustedLaunchEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public java.lang.Boolean|IResolvable getTrustedLaunchSupported();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
 
 ---
 
@@ -2461,9 +2461,9 @@ SharedImageIdentifier.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.offer">offer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#offer SharedImage#offer}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.publisher">publisher</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#publisher SharedImage#publisher}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#sku SharedImage#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.offer">offer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#offer SharedImage#offer}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.publisher">publisher</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#publisher SharedImage#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.property.sku">sku</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#sku SharedImage#sku}. |
 
 ---
 
@@ -2475,7 +2475,7 @@ public java.lang.String getOffer();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#offer SharedImage#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#offer SharedImage#offer}.
 
 ---
 
@@ -2487,7 +2487,7 @@ public java.lang.String getPublisher();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#publisher SharedImage#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#publisher SharedImage#publisher}.
 
 ---
 
@@ -2499,7 +2499,7 @@ public java.lang.String getSku();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#sku SharedImage#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#sku SharedImage#sku}.
 
 ---
 
@@ -2521,9 +2521,9 @@ SharedImagePurchasePlan.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.product">product</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#product SharedImage#product}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.publisher">publisher</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#publisher SharedImage#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.product">product</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#product SharedImage#product}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.property.publisher">publisher</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#publisher SharedImage#publisher}. |
 
 ---
 
@@ -2535,7 +2535,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#name SharedImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#name SharedImage#name}.
 
 ---
 
@@ -2547,7 +2547,7 @@ public java.lang.String getProduct();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#product SharedImage#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#product SharedImage#product}.
 
 ---
 
@@ -2559,7 +2559,7 @@ public java.lang.String getPublisher();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#publisher SharedImage#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#publisher SharedImage#publisher}.
 
 ---
 
@@ -2582,10 +2582,10 @@ SharedImageTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#create SharedImage#create}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#delete SharedImage#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#read SharedImage#read}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#update SharedImage#update}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#create SharedImage#create}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#delete SharedImage#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#read SharedImage#read}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#update SharedImage#update}. |
 
 ---
 
@@ -2597,7 +2597,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#create SharedImage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#create SharedImage#create}.
 
 ---
 
@@ -2609,7 +2609,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#delete SharedImage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#delete SharedImage#delete}.
 
 ---
 
@@ -2621,7 +2621,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#read SharedImage#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#read SharedImage#read}.
 
 ---
 
@@ -2633,7 +2633,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/shared_image#update SharedImage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/shared_image#update SharedImage#update}.
 
 ---
 

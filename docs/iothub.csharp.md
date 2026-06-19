@@ -4,7 +4,7 @@
 
 ### Iothub <a name="Iothub" id="@cdktn/provider-azurerm.iothub.Iothub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub azurerm_iothub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub azurerm_iothub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothub.Iothub.Initializer"></a>
 
@@ -731,7 +731,7 @@ The construct id used in the generated config for the Iothub to import.
 
 The id of the existing Iothub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1472,9 +1472,9 @@ new IothubCloudToDevice {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice.property.defaultTtl">DefaultTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_ttl Iothub#default_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice.property.defaultTtl">DefaultTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_ttl Iothub#default_ttl}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice.property.feedback">Feedback</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback">IothubCloudToDeviceFeedback</a>[]</code> | feedback block. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
 
 ---
 
@@ -1486,7 +1486,7 @@ public string DefaultTtl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_ttl Iothub#default_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_ttl Iothub#default_ttl}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public IResolvable|IothubCloudToDeviceFeedback[] Feedback { get; set; }
 
 feedback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#feedback Iothub#feedback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#feedback Iothub#feedback}
 
 ---
 
@@ -1512,7 +1512,7 @@ public double MaxDeliveryCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
 
 ---
 
@@ -1534,9 +1534,9 @@ new IothubCloudToDeviceFeedback {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.lockDuration">LockDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#lock_duration Iothub#lock_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.timeToLive">TimeToLive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#time_to_live Iothub#time_to_live}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.lockDuration">LockDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#lock_duration Iothub#lock_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDeviceFeedback.property.timeToLive">TimeToLive</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#time_to_live Iothub#time_to_live}. |
 
 ---
 
@@ -1548,7 +1548,7 @@ public string LockDuration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#lock_duration Iothub#lock_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#lock_duration Iothub#lock_duration}.
 
 ---
 
@@ -1560,7 +1560,7 @@ public double MaxDeliveryCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
 
 ---
 
@@ -1572,7 +1572,7 @@ public string TimeToLive { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#time_to_live Iothub#time_to_live}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#time_to_live Iothub#time_to_live}.
 
 ---
 
@@ -1625,25 +1625,25 @@ new IothubConfig {
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#location Iothub#location}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#location Iothub#location}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubSku">IothubSku</a></code> | sku block. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.cloudToDevice">CloudToDevice</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubCloudToDevice">IothubCloudToDevice</a></code> | cloud_to_device block. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.endpoint">Endpoint</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint">IothubEndpoint</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint Iothub#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.enrichment">Enrichment</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment">IothubEnrichment</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enrichment Iothub#enrichment}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.eventHubPartitionCount">EventHubPartitionCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#event_hub_partition_count Iothub#event_hub_partition_count}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.eventHubRetentionInDays">EventHubRetentionInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#event_hub_retention_in_days Iothub#event_hub_retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.endpoint">Endpoint</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint">IothubEndpoint</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint Iothub#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.enrichment">Enrichment</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment">IothubEnrichment</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enrichment Iothub#enrichment}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.eventHubPartitionCount">EventHubPartitionCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#event_hub_partition_count Iothub#event_hub_partition_count}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.eventHubRetentionInDays">EventHubRetentionInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#event_hub_retention_in_days Iothub#event_hub_retention_in_days}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.fallbackRoute">FallbackRoute</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute">IothubFallbackRoute</a></code> | fallback_route block. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.fileUpload">FileUpload</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload">IothubFileUpload</a></code> | file_upload block. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#id Iothub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#id Iothub#id}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubIdentity">IothubIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#local_authentication_enabled Iothub#local_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.minTlsVersion">MinTlsVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#min_tls_version Iothub#min_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#local_authentication_enabled Iothub#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.minTlsVersion">MinTlsVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#min_tls_version Iothub#min_tls_version}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.networkRuleSet">NetworkRuleSet</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet">IothubNetworkRuleSet</a>[]</code> | network_rule_set block. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#public_network_access_enabled Iothub#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.route">Route</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubRoute">IothubRoute</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#route Iothub#route}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#tags Iothub#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#public_network_access_enabled Iothub#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.route">Route</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubRoute">IothubRoute</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#route Iothub#route}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#tags Iothub#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts">IothubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1726,7 +1726,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#location Iothub#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#location Iothub#location}.
 
 ---
 
@@ -1738,7 +1738,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}.
 
 ---
 
@@ -1750,7 +1750,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}.
 
 ---
 
@@ -1764,7 +1764,7 @@ public IothubSku Sku { get; set; }
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#sku Iothub#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#sku Iothub#sku}
 
 ---
 
@@ -1778,7 +1778,7 @@ public IothubCloudToDevice CloudToDevice { get; set; }
 
 cloud_to_device block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#cloud_to_device Iothub#cloud_to_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#cloud_to_device Iothub#cloud_to_device}
 
 ---
 
@@ -1790,7 +1790,7 @@ public IResolvable|IothubEndpoint[] Endpoint { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint">IothubEndpoint</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint Iothub#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint Iothub#endpoint}.
 
 ---
 
@@ -1802,7 +1802,7 @@ public IResolvable|IothubEnrichment[] Enrichment { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment">IothubEnrichment</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enrichment Iothub#enrichment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enrichment Iothub#enrichment}.
 
 ---
 
@@ -1814,7 +1814,7 @@ public double EventHubPartitionCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#event_hub_partition_count Iothub#event_hub_partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#event_hub_partition_count Iothub#event_hub_partition_count}.
 
 ---
 
@@ -1826,7 +1826,7 @@ public double EventHubRetentionInDays { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#event_hub_retention_in_days Iothub#event_hub_retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#event_hub_retention_in_days Iothub#event_hub_retention_in_days}.
 
 ---
 
@@ -1840,7 +1840,7 @@ public IothubFallbackRoute FallbackRoute { get; set; }
 
 fallback_route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#fallback_route Iothub#fallback_route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#fallback_route Iothub#fallback_route}
 
 ---
 
@@ -1854,7 +1854,7 @@ public IothubFileUpload FileUpload { get; set; }
 
 file_upload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#file_upload Iothub#file_upload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#file_upload Iothub#file_upload}
 
 ---
 
@@ -1866,7 +1866,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#id Iothub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#id Iothub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1883,7 +1883,7 @@ public IothubIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity Iothub#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity Iothub#identity}
 
 ---
 
@@ -1895,7 +1895,7 @@ public bool|IResolvable LocalAuthenticationEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#local_authentication_enabled Iothub#local_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#local_authentication_enabled Iothub#local_authentication_enabled}.
 
 ---
 
@@ -1907,7 +1907,7 @@ public string MinTlsVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#min_tls_version Iothub#min_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#min_tls_version Iothub#min_tls_version}.
 
 ---
 
@@ -1921,7 +1921,7 @@ public IResolvable|IothubNetworkRuleSet[] NetworkRuleSet { get; set; }
 
 network_rule_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#network_rule_set Iothub#network_rule_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#network_rule_set Iothub#network_rule_set}
 
 ---
 
@@ -1933,7 +1933,7 @@ public bool|IResolvable PublicNetworkAccessEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#public_network_access_enabled Iothub#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#public_network_access_enabled Iothub#public_network_access_enabled}.
 
 ---
 
@@ -1945,7 +1945,7 @@ public IResolvable|IothubRoute[] Route { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.iothub.IothubRoute">IothubRoute</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#route Iothub#route}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#route Iothub#route}.
 
 ---
 
@@ -1957,7 +1957,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#tags Iothub#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#tags Iothub#tags}.
 
 ---
 
@@ -1971,7 +1971,7 @@ public IothubTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#timeouts Iothub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#timeouts Iothub#timeouts}
 
 ---
 
@@ -2004,20 +2004,20 @@ new IothubEndpoint {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#authentication_type Iothub#authentication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.batchFrequencyInSeconds">BatchFrequencyInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#batch_frequency_in_seconds Iothub#batch_frequency_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#connection_string Iothub#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#container_name Iothub#container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.encoding">Encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#encoding Iothub#encoding}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.endpointUri">EndpointUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_uri Iothub#endpoint_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.entityPath">EntityPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#entity_path Iothub#entity_path}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.fileNameFormat">FileNameFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#file_name_format Iothub#file_name_format}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.identityId">IdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_id Iothub#identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.maxChunkSizeInBytes">MaxChunkSizeInBytes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_chunk_size_in_bytes Iothub#max_chunk_size_in_bytes}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#subscription_id Iothub#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#type Iothub#type}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#authentication_type Iothub#authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.batchFrequencyInSeconds">BatchFrequencyInSeconds</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#batch_frequency_in_seconds Iothub#batch_frequency_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#connection_string Iothub#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#container_name Iothub#container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.encoding">Encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#encoding Iothub#encoding}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.endpointUri">EndpointUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_uri Iothub#endpoint_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.entityPath">EntityPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#entity_path Iothub#entity_path}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.fileNameFormat">FileNameFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#file_name_format Iothub#file_name_format}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.identityId">IdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_id Iothub#identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.maxChunkSizeInBytes">MaxChunkSizeInBytes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_chunk_size_in_bytes Iothub#max_chunk_size_in_bytes}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.subscriptionId">SubscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#subscription_id Iothub#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEndpoint.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#type Iothub#type}. |
 
 ---
 
@@ -2029,7 +2029,7 @@ public string AuthenticationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#authentication_type Iothub#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#authentication_type Iothub#authentication_type}.
 
 ---
 
@@ -2041,7 +2041,7 @@ public double BatchFrequencyInSeconds { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#batch_frequency_in_seconds Iothub#batch_frequency_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#batch_frequency_in_seconds Iothub#batch_frequency_in_seconds}.
 
 ---
 
@@ -2053,7 +2053,7 @@ public string ConnectionString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#connection_string Iothub#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#connection_string Iothub#connection_string}.
 
 ---
 
@@ -2065,7 +2065,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#container_name Iothub#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#container_name Iothub#container_name}.
 
 ---
 
@@ -2077,7 +2077,7 @@ public string Encoding { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#encoding Iothub#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#encoding Iothub#encoding}.
 
 ---
 
@@ -2089,7 +2089,7 @@ public string EndpointUri { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_uri Iothub#endpoint_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_uri Iothub#endpoint_uri}.
 
 ---
 
@@ -2101,7 +2101,7 @@ public string EntityPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#entity_path Iothub#entity_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#entity_path Iothub#entity_path}.
 
 ---
 
@@ -2113,7 +2113,7 @@ public string FileNameFormat { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#file_name_format Iothub#file_name_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#file_name_format Iothub#file_name_format}.
 
 ---
 
@@ -2125,7 +2125,7 @@ public string IdentityId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_id Iothub#identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_id Iothub#identity_id}.
 
 ---
 
@@ -2137,7 +2137,7 @@ public double MaxChunkSizeInBytes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_chunk_size_in_bytes Iothub#max_chunk_size_in_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_chunk_size_in_bytes Iothub#max_chunk_size_in_bytes}.
 
 ---
 
@@ -2149,7 +2149,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}.
 
 ---
 
@@ -2161,7 +2161,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#resource_group_name Iothub#resource_group_name}.
 
 ---
 
@@ -2173,7 +2173,7 @@ public string SubscriptionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#subscription_id Iothub#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#subscription_id Iothub#subscription_id}.
 
 ---
 
@@ -2185,7 +2185,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#type Iothub#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#type Iothub#type}.
 
 ---
 
@@ -2207,9 +2207,9 @@ new IothubEnrichment {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#key Iothub#key}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#value Iothub#value}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#key Iothub#key}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubEnrichment.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#value Iothub#value}. |
 
 ---
 
@@ -2221,7 +2221,7 @@ public string[] EndpointNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
 
 ---
 
@@ -2233,7 +2233,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#key Iothub#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#key Iothub#key}.
 
 ---
 
@@ -2245,7 +2245,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#value Iothub#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#value Iothub#value}.
 
 ---
 
@@ -2268,10 +2268,10 @@ new IothubFallbackRoute {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.condition">Condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#condition Iothub#condition}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enabled Iothub#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#source Iothub#source}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.condition">Condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#condition Iothub#condition}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enabled Iothub#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFallbackRoute.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#source Iothub#source}. |
 
 ---
 
@@ -2283,7 +2283,7 @@ public string Condition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#condition Iothub#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#condition Iothub#condition}.
 
 ---
 
@@ -2295,7 +2295,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enabled Iothub#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enabled Iothub#enabled}.
 
 ---
 
@@ -2307,7 +2307,7 @@ public string[] EndpointNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
 
 ---
 
@@ -2319,7 +2319,7 @@ public string Source { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#source Iothub#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#source Iothub#source}.
 
 ---
 
@@ -2347,15 +2347,15 @@ new IothubFileUpload {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#connection_string Iothub#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#container_name Iothub#container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#authentication_type Iothub#authentication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.defaultTtl">DefaultTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_ttl Iothub#default_ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.identityId">IdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_id Iothub#identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.lockDuration">LockDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#lock_duration Iothub#lock_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.notifications">Notifications</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#notifications Iothub#notifications}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.sasTtl">SasTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#sas_ttl Iothub#sas_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.connectionString">ConnectionString</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#connection_string Iothub#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#container_name Iothub#container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.authenticationType">AuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#authentication_type Iothub#authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.defaultTtl">DefaultTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_ttl Iothub#default_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.identityId">IdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_id Iothub#identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.lockDuration">LockDuration</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#lock_duration Iothub#lock_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.maxDeliveryCount">MaxDeliveryCount</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.notifications">Notifications</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#notifications Iothub#notifications}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubFileUpload.property.sasTtl">SasTtl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#sas_ttl Iothub#sas_ttl}. |
 
 ---
 
@@ -2367,7 +2367,7 @@ public string ConnectionString { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#connection_string Iothub#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#connection_string Iothub#connection_string}.
 
 ---
 
@@ -2379,7 +2379,7 @@ public string ContainerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#container_name Iothub#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#container_name Iothub#container_name}.
 
 ---
 
@@ -2391,7 +2391,7 @@ public string AuthenticationType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#authentication_type Iothub#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#authentication_type Iothub#authentication_type}.
 
 ---
 
@@ -2403,7 +2403,7 @@ public string DefaultTtl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_ttl Iothub#default_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_ttl Iothub#default_ttl}.
 
 ---
 
@@ -2415,7 +2415,7 @@ public string IdentityId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_id Iothub#identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_id Iothub#identity_id}.
 
 ---
 
@@ -2427,7 +2427,7 @@ public string LockDuration { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#lock_duration Iothub#lock_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#lock_duration Iothub#lock_duration}.
 
 ---
 
@@ -2439,7 +2439,7 @@ public double MaxDeliveryCount { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#max_delivery_count Iothub#max_delivery_count}.
 
 ---
 
@@ -2451,7 +2451,7 @@ public bool|IResolvable Notifications { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#notifications Iothub#notifications}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#notifications Iothub#notifications}.
 
 ---
 
@@ -2463,7 +2463,7 @@ public string SasTtl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#sas_ttl Iothub#sas_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#sas_ttl Iothub#sas_ttl}.
 
 ---
 
@@ -2484,8 +2484,8 @@ new IothubIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#type Iothub#type}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_ids Iothub#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#type Iothub#type}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_ids Iothub#identity_ids}. |
 
 ---
 
@@ -2497,7 +2497,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#type Iothub#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#type Iothub#type}.
 
 ---
 
@@ -2509,7 +2509,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#identity_ids Iothub#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#identity_ids Iothub#identity_ids}.
 
 ---
 
@@ -2531,8 +2531,8 @@ new IothubNetworkRuleSet {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet.property.applyToBuiltinEventhubEndpoint">ApplyToBuiltinEventhubEndpoint</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#apply_to_builtin_eventhub_endpoint Iothub#apply_to_builtin_eventhub_endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet.property.defaultAction">DefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_action Iothub#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet.property.applyToBuiltinEventhubEndpoint">ApplyToBuiltinEventhubEndpoint</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#apply_to_builtin_eventhub_endpoint Iothub#apply_to_builtin_eventhub_endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet.property.defaultAction">DefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_action Iothub#default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSet.property.ipRule">IpRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule">IothubNetworkRuleSetIpRule</a>[]</code> | ip_rule block. |
 
 ---
@@ -2545,7 +2545,7 @@ public bool|IResolvable ApplyToBuiltinEventhubEndpoint { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#apply_to_builtin_eventhub_endpoint Iothub#apply_to_builtin_eventhub_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#apply_to_builtin_eventhub_endpoint Iothub#apply_to_builtin_eventhub_endpoint}.
 
 ---
 
@@ -2557,7 +2557,7 @@ public string DefaultAction { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#default_action Iothub#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#default_action Iothub#default_action}.
 
 ---
 
@@ -2571,7 +2571,7 @@ public IResolvable|IothubNetworkRuleSetIpRule[] IpRule { get; set; }
 
 ip_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#ip_rule Iothub#ip_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#ip_rule Iothub#ip_rule}
 
 ---
 
@@ -2593,9 +2593,9 @@ new IothubNetworkRuleSetIpRule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.ipMask">IpMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#ip_mask Iothub#ip_mask}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#action Iothub#action}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.ipMask">IpMask</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#ip_mask Iothub#ip_mask}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubNetworkRuleSetIpRule.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#action Iothub#action}. |
 
 ---
 
@@ -2607,7 +2607,7 @@ public string IpMask { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#ip_mask Iothub#ip_mask}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#ip_mask Iothub#ip_mask}.
 
 ---
 
@@ -2619,7 +2619,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}.
 
 ---
 
@@ -2631,7 +2631,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#action Iothub#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#action Iothub#action}.
 
 ---
 
@@ -2655,11 +2655,11 @@ new IothubRoute {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.condition">Condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#condition Iothub#condition}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enabled Iothub#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#source Iothub#source}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.condition">Condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#condition Iothub#condition}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enabled Iothub#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.endpointNames">EndpointNames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubRoute.property.source">Source</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#source Iothub#source}. |
 
 ---
 
@@ -2671,7 +2671,7 @@ public string Condition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#condition Iothub#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#condition Iothub#condition}.
 
 ---
 
@@ -2683,7 +2683,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#enabled Iothub#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#enabled Iothub#enabled}.
 
 ---
 
@@ -2695,7 +2695,7 @@ public string[] EndpointNames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#endpoint_names Iothub#endpoint_names}.
 
 ---
 
@@ -2707,7 +2707,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}.
 
 ---
 
@@ -2719,7 +2719,7 @@ public string Source { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#source Iothub#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#source Iothub#source}.
 
 ---
 
@@ -2753,8 +2753,8 @@ new IothubSku {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#capacity Iothub#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubSku.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubSku.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#capacity Iothub#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubSku.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}. |
 
 ---
 
@@ -2766,7 +2766,7 @@ public double Capacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#capacity Iothub#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#capacity Iothub#capacity}.
 
 ---
 
@@ -2778,7 +2778,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#name Iothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#name Iothub#name}.
 
 ---
 
@@ -2801,10 +2801,10 @@ new IothubTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#create Iothub#create}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#delete Iothub#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#read Iothub#read}. |
-| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#update Iothub#update}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#create Iothub#create}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#delete Iothub#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#read Iothub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.iothub.IothubTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#update Iothub#update}. |
 
 ---
 
@@ -2816,7 +2816,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#create Iothub#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#create Iothub#create}.
 
 ---
 
@@ -2828,7 +2828,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#delete Iothub#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#delete Iothub#delete}.
 
 ---
 
@@ -2840,7 +2840,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#read Iothub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#read Iothub#read}.
 
 ---
 
@@ -2852,7 +2852,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/iothub#update Iothub#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/iothub#update Iothub#update}.
 
 ---
 

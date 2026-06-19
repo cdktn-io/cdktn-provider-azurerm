@@ -4,7 +4,7 @@
 
 ### WebAppActiveSlot <a name="WebAppActiveSlot" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot azurerm_web_app_active_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the WebAppActiveSlot to import
 
 The id of the existing WebAppActiveSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactivesl
 | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.slotId">SlotId</a></code> | <code>*string</code> | The ID of the Slot to swap with `Production`. |
-| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#id WebAppActiveSlot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#id WebAppActiveSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.overwriteNetworkConfig">OverwriteNetworkConfig</a></code> | <code>interface{}</code> | The swap action should overwrite the Production slot's network configuration with the configuration from this slot. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts">WebAppActiveSlotTimeouts</a></code> | timeouts block. |
 
@@ -937,7 +937,7 @@ SlotId *string
 
 The ID of the Slot to swap with `Production`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#slot_id WebAppActiveSlot#slot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#slot_id WebAppActiveSlot#slot_id}
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#id WebAppActiveSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#id WebAppActiveSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ OverwriteNetworkConfig interface{}
 
 The swap action should overwrite the Production slot's network configuration with the configuration from this slot. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#overwrite_network_config WebAppActiveSlot#overwrite_network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#overwrite_network_config WebAppActiveSlot#overwrite_network_config}
 
 ---
 
@@ -980,7 +980,7 @@ Timeouts WebAppActiveSlotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#timeouts WebAppActiveSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#timeouts WebAppActiveSlot#timeouts}
 
 ---
 
@@ -1003,10 +1003,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactivesl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#create WebAppActiveSlot#create}. |
-| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#delete WebAppActiveSlot#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#read WebAppActiveSlot#read}. |
-| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#update WebAppActiveSlot#update}. |
+| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#create WebAppActiveSlot#create}. |
+| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#delete WebAppActiveSlot#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#read WebAppActiveSlot#read}. |
+| <code><a href="#@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#update WebAppActiveSlot#update}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#create WebAppActiveSlot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#create WebAppActiveSlot#create}.
 
 ---
 
@@ -1030,7 +1030,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#delete WebAppActiveSlot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#delete WebAppActiveSlot#delete}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#read WebAppActiveSlot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#read WebAppActiveSlot#read}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_app_active_slot#update WebAppActiveSlot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/web_app_active_slot#update WebAppActiveSlot#update}.
 
 ---
 

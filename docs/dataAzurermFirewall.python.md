@@ -4,7 +4,7 @@
 
 ### DataAzurermFirewall <a name="DataAzurermFirewall" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall azurerm_firewall}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall azurerm_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer"></a>
 
@@ -40,10 +40,10 @@ dataAzurermFirewall.DataAzurermFirewall(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#name DataAzurermFirewall#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.dnsProxyEnabled">dns_proxy_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#id DataAzurermFirewall#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#name DataAzurermFirewall#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.dnsProxyEnabled">dns_proxy_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#id DataAzurermFirewall#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeouts">DataAzurermFirewallTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#name DataAzurermFirewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#name DataAzurermFirewall#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#id DataAzurermFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#id DataAzurermFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#timeouts DataAzurermFirewall#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#timeouts DataAzurermFirewall#timeouts}
 
 ---
 
@@ -434,7 +434,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#read DataAzurermFirewall#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#read DataAzurermFirewall#read}.
 
 ---
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the DataAzurermFirewall to imp
 
 The id of the existing DataAzurermFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,10 +1008,10 @@ dataAzurermFirewall.DataAzurermFirewallConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#name DataAzurermFirewall#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.dnsProxyEnabled">dns_proxy_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#id DataAzurermFirewall#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#name DataAzurermFirewall#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.dnsProxyEnabled">dns_proxy_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#id DataAzurermFirewall#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeouts">DataAzurermFirewallTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1094,7 +1094,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#name DataAzurermFirewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#name DataAzurermFirewall#name}.
 
 ---
 
@@ -1106,7 +1106,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#resource_group_name DataAzurermFirewall#resource_group_name}.
 
 ---
 
@@ -1118,7 +1118,7 @@ dns_proxy_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#dns_proxy_enabled DataAzurermFirewall#dns_proxy_enabled}.
 
 ---
 
@@ -1130,7 +1130,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#id DataAzurermFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#id DataAzurermFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ timeouts: DataAzurermFirewallTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#timeouts DataAzurermFirewall#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#timeouts DataAzurermFirewall#timeouts}
 
 ---
 
@@ -1189,7 +1189,7 @@ dataAzurermFirewall.DataAzurermFirewallTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#read DataAzurermFirewall#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#read DataAzurermFirewall#read}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall#read DataAzurermFirewall#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/firewall#read DataAzurermFirewall#read}.
 
 ---
 

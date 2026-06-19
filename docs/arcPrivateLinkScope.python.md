@@ -4,7 +4,7 @@
 
 ### ArcPrivateLinkScope <a name="ArcPrivateLinkScope" id="@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope azurerm_arc_private_link_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer"></a>
 
@@ -42,12 +42,12 @@ arcPrivateLinkScope.ArcPrivateLinkScope(
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScope.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts">ArcPrivateLinkScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#timeouts ArcPrivateLinkScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#timeouts ArcPrivateLinkScope#timeouts}
 
 ---
 
@@ -572,7 +572,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}.
 
 ---
 
@@ -580,7 +580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}.
 
 ---
 
@@ -588,7 +588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}.
 
 ---
 
@@ -596,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}.
 
 ---
 
@@ -738,7 +738,7 @@ The construct id used in the generated config for the ArcPrivateLinkScope to imp
 
 The id of the existing ArcPrivateLinkScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,12 +1123,12 @@ arcPrivateLinkScope.ArcPrivateLinkScopeConfig(
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts">ArcPrivateLinkScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1211,7 +1211,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#location ArcPrivateLinkScope#location}.
 
 ---
 
@@ -1223,7 +1223,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#name ArcPrivateLinkScope#name}.
 
 ---
 
@@ -1235,7 +1235,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#resource_group_name ArcPrivateLinkScope#resource_group_name}.
 
 ---
 
@@ -1247,7 +1247,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#id ArcPrivateLinkScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1262,7 +1262,7 @@ public_network_access_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#public_network_access_enabled ArcPrivateLinkScope#public_network_access_enabled}.
 
 ---
 
@@ -1274,7 +1274,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#tags ArcPrivateLinkScope#tags}.
 
 ---
 
@@ -1288,7 +1288,7 @@ timeouts: ArcPrivateLinkScopeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#timeouts ArcPrivateLinkScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#timeouts ArcPrivateLinkScope#timeouts}
 
 ---
 
@@ -1311,10 +1311,10 @@ arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}. |
-| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}. |
+| <code><a href="#@cdktn/provider-azurerm.arcPrivateLinkScope.ArcPrivateLinkScopeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#create ArcPrivateLinkScope#create}.
 
 ---
 
@@ -1338,7 +1338,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#delete ArcPrivateLinkScope#delete}.
 
 ---
 
@@ -1350,7 +1350,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#read ArcPrivateLinkScope#read}.
 
 ---
 
@@ -1362,7 +1362,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/arc_private_link_scope#update ArcPrivateLinkScope#update}.
 
 ---
 

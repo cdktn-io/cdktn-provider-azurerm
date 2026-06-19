@@ -4,7 +4,7 @@
 
 ### SpringCloudApp <a name="SpringCloudApp" id="@cdktn/provider-azurerm.springCloudApp.SpringCloudApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app azurerm_spring_cloud_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app azurerm_spring_cloud_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApp.SpringCloudApp.Initializer"></a>
 
@@ -631,7 +631,7 @@ The construct id used in the generated config for the SpringCloudApp to import.
 
 The id of the existing SpringCloudApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1177,20 +1177,20 @@ const springCloudAppConfig: springCloudApp.SpringCloudAppConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#name SpringCloudApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#resource_group_name SpringCloudApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.serviceName">serviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#service_name SpringCloudApp#service_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.addonJson">addonJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#addon_json SpringCloudApp#addon_json}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#name SpringCloudApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#resource_group_name SpringCloudApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.serviceName">serviceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#service_name SpringCloudApp#service_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.addonJson">addonJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#addon_json SpringCloudApp#addon_json}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.customPersistentDisk">customPersistentDisk</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk">SpringCloudAppCustomPersistentDisk</a>[]</code> | custom_persistent_disk block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#https_only SpringCloudApp#https_only}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#id SpringCloudApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#https_only SpringCloudApp#https_only}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#id SpringCloudApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIdentity">SpringCloudAppIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.ingressSettings">ingressSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings">SpringCloudAppIngressSettings</a></code> | ingress_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.isPublic">isPublic</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#is_public SpringCloudApp#is_public}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.isPublic">isPublic</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#is_public SpringCloudApp#is_public}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.persistentDisk">persistentDisk</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppPersistentDisk">SpringCloudAppPersistentDisk</a></code> | persistent_disk block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.publicEndpointEnabled">publicEndpointEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#public_endpoint_enabled SpringCloudApp#public_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.publicEndpointEnabled">publicEndpointEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#public_endpoint_enabled SpringCloudApp#public_endpoint_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts">SpringCloudAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.tlsEnabled">tlsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#tls_enabled SpringCloudApp#tls_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppConfig.property.tlsEnabled">tlsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#tls_enabled SpringCloudApp#tls_enabled}. |
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#name SpringCloudApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#name SpringCloudApp#name}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#resource_group_name SpringCloudApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#resource_group_name SpringCloudApp#resource_group_name}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly serviceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#service_name SpringCloudApp#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#service_name SpringCloudApp#service_name}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public readonly addonJson: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#addon_json SpringCloudApp#addon_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#addon_json SpringCloudApp#addon_json}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly customPersistentDisk: IResolvable | SpringCloudAppCustomPersiste
 
 custom_persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#custom_persistent_disk SpringCloudApp#custom_persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#custom_persistent_disk SpringCloudApp#custom_persistent_disk}
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly httpsOnly: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#https_only SpringCloudApp#https_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#https_only SpringCloudApp#https_only}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#id SpringCloudApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#id SpringCloudApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1363,7 @@ public readonly identity: SpringCloudAppIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#identity SpringCloudApp#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#identity SpringCloudApp#identity}
 
 ---
 
@@ -1377,7 +1377,7 @@ public readonly ingressSettings: SpringCloudAppIngressSettings;
 
 ingress_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#ingress_settings SpringCloudApp#ingress_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#ingress_settings SpringCloudApp#ingress_settings}
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly isPublic: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#is_public SpringCloudApp#is_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#is_public SpringCloudApp#is_public}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly persistentDisk: SpringCloudAppPersistentDisk;
 
 persistent_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#persistent_disk SpringCloudApp#persistent_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#persistent_disk SpringCloudApp#persistent_disk}
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly publicEndpointEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#public_endpoint_enabled SpringCloudApp#public_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#public_endpoint_enabled SpringCloudApp#public_endpoint_enabled}.
 
 ---
 
@@ -1429,7 +1429,7 @@ public readonly timeouts: SpringCloudAppTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#timeouts SpringCloudApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#timeouts SpringCloudApp#timeouts}
 
 ---
 
@@ -1441,7 +1441,7 @@ public readonly tlsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#tls_enabled SpringCloudApp#tls_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#tls_enabled SpringCloudApp#tls_enabled}.
 
 ---
 
@@ -1459,11 +1459,11 @@ const springCloudAppCustomPersistentDisk: springCloudApp.SpringCloudAppCustomPer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.mountPath">mountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.shareName">shareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#share_name SpringCloudApp#share_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.storageName">storageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#storage_name SpringCloudApp#storage_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.mountOptions">mountOptions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_options SpringCloudApp#mount_options}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.readOnlyEnabled">readOnlyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read_only_enabled SpringCloudApp#read_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.mountPath">mountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.shareName">shareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#share_name SpringCloudApp#share_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.storageName">storageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#storage_name SpringCloudApp#storage_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.mountOptions">mountOptions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_options SpringCloudApp#mount_options}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppCustomPersistentDisk.property.readOnlyEnabled">readOnlyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read_only_enabled SpringCloudApp#read_only_enabled}. |
 
 ---
 
@@ -1475,7 +1475,7 @@ public readonly mountPath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly shareName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#share_name SpringCloudApp#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#share_name SpringCloudApp#share_name}.
 
 ---
 
@@ -1499,7 +1499,7 @@ public readonly storageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#storage_name SpringCloudApp#storage_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#storage_name SpringCloudApp#storage_name}.
 
 ---
 
@@ -1511,7 +1511,7 @@ public readonly mountOptions: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_options SpringCloudApp#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_options SpringCloudApp#mount_options}.
 
 ---
 
@@ -1523,7 +1523,7 @@ public readonly readOnlyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read_only_enabled SpringCloudApp#read_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read_only_enabled SpringCloudApp#read_only_enabled}.
 
 ---
 
@@ -1541,8 +1541,8 @@ const springCloudAppIdentity: springCloudApp.SpringCloudAppIdentity = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#type SpringCloudApp#type}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#identity_ids SpringCloudApp#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#type SpringCloudApp#type}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#identity_ids SpringCloudApp#identity_ids}. |
 
 ---
 
@@ -1554,7 +1554,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#type SpringCloudApp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#type SpringCloudApp#type}.
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#identity_ids SpringCloudApp#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#identity_ids SpringCloudApp#identity_ids}.
 
 ---
 
@@ -1584,11 +1584,11 @@ const springCloudAppIngressSettings: springCloudApp.SpringCloudAppIngressSetting
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.backendProtocol">backendProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#backend_protocol SpringCloudApp#backend_protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.readTimeoutInSeconds">readTimeoutInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read_timeout_in_seconds SpringCloudApp#read_timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sendTimeoutInSeconds">sendTimeoutInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#send_timeout_in_seconds SpringCloudApp#send_timeout_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sessionAffinity">sessionAffinity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#session_affinity SpringCloudApp#session_affinity}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sessionCookieMaxAge">sessionCookieMaxAge</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#session_cookie_max_age SpringCloudApp#session_cookie_max_age}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.backendProtocol">backendProtocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#backend_protocol SpringCloudApp#backend_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.readTimeoutInSeconds">readTimeoutInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read_timeout_in_seconds SpringCloudApp#read_timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sendTimeoutInSeconds">sendTimeoutInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#send_timeout_in_seconds SpringCloudApp#send_timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sessionAffinity">sessionAffinity</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#session_affinity SpringCloudApp#session_affinity}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppIngressSettings.property.sessionCookieMaxAge">sessionCookieMaxAge</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#session_cookie_max_age SpringCloudApp#session_cookie_max_age}. |
 
 ---
 
@@ -1600,7 +1600,7 @@ public readonly backendProtocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#backend_protocol SpringCloudApp#backend_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#backend_protocol SpringCloudApp#backend_protocol}.
 
 ---
 
@@ -1612,7 +1612,7 @@ public readonly readTimeoutInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read_timeout_in_seconds SpringCloudApp#read_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read_timeout_in_seconds SpringCloudApp#read_timeout_in_seconds}.
 
 ---
 
@@ -1624,7 +1624,7 @@ public readonly sendTimeoutInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#send_timeout_in_seconds SpringCloudApp#send_timeout_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#send_timeout_in_seconds SpringCloudApp#send_timeout_in_seconds}.
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly sessionAffinity: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#session_affinity SpringCloudApp#session_affinity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#session_affinity SpringCloudApp#session_affinity}.
 
 ---
 
@@ -1648,7 +1648,7 @@ public readonly sessionCookieMaxAge: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#session_cookie_max_age SpringCloudApp#session_cookie_max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#session_cookie_max_age SpringCloudApp#session_cookie_max_age}.
 
 ---
 
@@ -1666,8 +1666,8 @@ const springCloudAppPersistentDisk: springCloudApp.SpringCloudAppPersistentDisk 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppPersistentDisk.property.sizeInGb">sizeInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#size_in_gb SpringCloudApp#size_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppPersistentDisk.property.mountPath">mountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppPersistentDisk.property.sizeInGb">sizeInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#size_in_gb SpringCloudApp#size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppPersistentDisk.property.mountPath">mountPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}. |
 
 ---
 
@@ -1679,7 +1679,7 @@ public readonly sizeInGb: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#size_in_gb SpringCloudApp#size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#size_in_gb SpringCloudApp#size_in_gb}.
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly mountPath: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#mount_path SpringCloudApp#mount_path}.
 
 ---
 
@@ -1709,10 +1709,10 @@ const springCloudAppTimeouts: springCloudApp.SpringCloudAppTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#create SpringCloudApp#create}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#delete SpringCloudApp#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read SpringCloudApp#read}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#update SpringCloudApp#update}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#create SpringCloudApp#create}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#delete SpringCloudApp#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read SpringCloudApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudApp.SpringCloudAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#update SpringCloudApp#update}. |
 
 ---
 
@@ -1724,7 +1724,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#create SpringCloudApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#create SpringCloudApp#create}.
 
 ---
 
@@ -1736,7 +1736,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#delete SpringCloudApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#delete SpringCloudApp#delete}.
 
 ---
 
@@ -1748,7 +1748,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#read SpringCloudApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#read SpringCloudApp#read}.
 
 ---
 
@@ -1760,7 +1760,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_app#update SpringCloudApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/spring_cloud_app#update SpringCloudApp#update}.
 
 ---
 

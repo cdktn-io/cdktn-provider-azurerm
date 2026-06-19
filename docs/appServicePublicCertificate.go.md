@@ -4,7 +4,7 @@
 
 ### AppServicePublicCertificate <a name="AppServicePublicCertificate" id="@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate azurerm_app_service_public_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificate.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AppServicePublicCertificat
 
 The id of the existing AppServicePublicCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,12 +912,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appservicepubl
 | <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.appServiceName">AppServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#app_service_name AppServicePublicCertificate#app_service_name}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.blob">Blob</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#blob AppServicePublicCertificate#blob}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.certificateLocation">CertificateLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#certificate_location AppServicePublicCertificate#certificate_location}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#certificate_name AppServicePublicCertificate#certificate_name}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#resource_group_name AppServicePublicCertificate#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#id AppServicePublicCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.appServiceName">AppServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#app_service_name AppServicePublicCertificate#app_service_name}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.blob">Blob</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#blob AppServicePublicCertificate#blob}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.certificateLocation">CertificateLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#certificate_location AppServicePublicCertificate#certificate_location}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.certificateName">CertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#certificate_name AppServicePublicCertificate#certificate_name}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#resource_group_name AppServicePublicCertificate#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#id AppServicePublicCertificate#id}. |
 | <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts">AppServicePublicCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1000,7 +1000,7 @@ AppServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#app_service_name AppServicePublicCertificate#app_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#app_service_name AppServicePublicCertificate#app_service_name}.
 
 ---
 
@@ -1012,7 +1012,7 @@ Blob *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#blob AppServicePublicCertificate#blob}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#blob AppServicePublicCertificate#blob}.
 
 ---
 
@@ -1024,7 +1024,7 @@ CertificateLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#certificate_location AppServicePublicCertificate#certificate_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#certificate_location AppServicePublicCertificate#certificate_location}.
 
 ---
 
@@ -1036,7 +1036,7 @@ CertificateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#certificate_name AppServicePublicCertificate#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#certificate_name AppServicePublicCertificate#certificate_name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#resource_group_name AppServicePublicCertificate#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#resource_group_name AppServicePublicCertificate#resource_group_name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#id AppServicePublicCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#id AppServicePublicCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1077,7 @@ Timeouts AppServicePublicCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#timeouts AppServicePublicCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#timeouts AppServicePublicCertificate#timeouts}
 
 ---
 
@@ -1099,9 +1099,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appservicepubl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#create AppServicePublicCertificate#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#delete AppServicePublicCertificate#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#read AppServicePublicCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#create AppServicePublicCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#delete AppServicePublicCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appServicePublicCertificate.AppServicePublicCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#read AppServicePublicCertificate#read}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#create AppServicePublicCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#create AppServicePublicCertificate#create}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#delete AppServicePublicCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#delete AppServicePublicCertificate#delete}.
 
 ---
 
@@ -1137,7 +1137,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/app_service_public_certificate#read AppServicePublicCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/app_service_public_certificate#read AppServicePublicCertificate#read}.
 
 ---
 

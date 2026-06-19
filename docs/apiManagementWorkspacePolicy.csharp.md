@@ -4,7 +4,7 @@
 
 ### ApiManagementWorkspacePolicy <a name="ApiManagementWorkspacePolicy" id="@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy azurerm_api_management_workspace_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy azurerm_api_management_workspace_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicy.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ApiManagementWorkspacePoli
 
 The id of the existing ApiManagementWorkspacePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,11 +869,11 @@ new ApiManagementWorkspacePolicyConfig {
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.apiManagementWorkspaceId">ApiManagementWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#api_management_workspace_id ApiManagementWorkspacePolicy#api_management_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#id ApiManagementWorkspacePolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.apiManagementWorkspaceId">ApiManagementWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#api_management_workspace_id ApiManagementWorkspacePolicy#api_management_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#id ApiManagementWorkspacePolicy#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts">ApiManagementWorkspacePolicyTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.xmlContent">XmlContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#xml_content ApiManagementWorkspacePolicy#xml_content}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.xmlLink">XmlLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#xml_link ApiManagementWorkspacePolicy#xml_link}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.xmlContent">XmlContent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#xml_content ApiManagementWorkspacePolicy#xml_content}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyConfig.property.xmlLink">XmlLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#xml_link ApiManagementWorkspacePolicy#xml_link}. |
 
 ---
 
@@ -955,7 +955,7 @@ public string ApiManagementWorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#api_management_workspace_id ApiManagementWorkspacePolicy#api_management_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#api_management_workspace_id ApiManagementWorkspacePolicy#api_management_workspace_id}.
 
 ---
 
@@ -967,7 +967,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#id ApiManagementWorkspacePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#id ApiManagementWorkspacePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ public ApiManagementWorkspacePolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#timeouts ApiManagementWorkspacePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#timeouts ApiManagementWorkspacePolicy#timeouts}
 
 ---
 
@@ -996,7 +996,7 @@ public string XmlContent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#xml_content ApiManagementWorkspacePolicy#xml_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#xml_content ApiManagementWorkspacePolicy#xml_content}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public string XmlLink { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#xml_link ApiManagementWorkspacePolicy#xml_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#xml_link ApiManagementWorkspacePolicy#xml_link}.
 
 ---
 
@@ -1031,10 +1031,10 @@ new ApiManagementWorkspacePolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#create ApiManagementWorkspacePolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#delete ApiManagementWorkspacePolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#read ApiManagementWorkspacePolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#update ApiManagementWorkspacePolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#create ApiManagementWorkspacePolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#delete ApiManagementWorkspacePolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#read ApiManagementWorkspacePolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementWorkspacePolicy.ApiManagementWorkspacePolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#update ApiManagementWorkspacePolicy#update}. |
 
 ---
 
@@ -1046,7 +1046,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#create ApiManagementWorkspacePolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#create ApiManagementWorkspacePolicy#create}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#delete ApiManagementWorkspacePolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#delete ApiManagementWorkspacePolicy#delete}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#read ApiManagementWorkspacePolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#read ApiManagementWorkspacePolicy#read}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_workspace_policy#update ApiManagementWorkspacePolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/api_management_workspace_policy#update ApiManagementWorkspacePolicy#update}.
 
 ---
 

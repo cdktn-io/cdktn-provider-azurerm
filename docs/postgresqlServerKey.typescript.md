@@ -4,7 +4,7 @@
 
 ### PostgresqlServerKey <a name="PostgresqlServerKey" id="@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key azurerm_postgresql_server_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key azurerm_postgresql_server_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKey.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the PostgresqlServerKey to imp
 
 The id of the existing PostgresqlServerKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,9 +820,9 @@ const postgresqlServerKeyConfig: postgresqlServerKey.PostgresqlServerKeyConfig =
 | <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#key_vault_key_id PostgresqlServerKey#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.serverId">serverId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#server_id PostgresqlServerKey#server_id}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#id PostgresqlServerKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#key_vault_key_id PostgresqlServerKey#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.serverId">serverId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#server_id PostgresqlServerKey#server_id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#id PostgresqlServerKey#id}. |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts">PostgresqlServerKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -905,7 +905,7 @@ public readonly keyVaultKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#key_vault_key_id PostgresqlServerKey#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#key_vault_key_id PostgresqlServerKey#key_vault_key_id}.
 
 ---
 
@@ -917,7 +917,7 @@ public readonly serverId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#server_id PostgresqlServerKey#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#server_id PostgresqlServerKey#server_id}.
 
 ---
 
@@ -929,7 +929,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#id PostgresqlServerKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#id PostgresqlServerKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -946,7 +946,7 @@ public readonly timeouts: PostgresqlServerKeyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#timeouts PostgresqlServerKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#timeouts PostgresqlServerKey#timeouts}
 
 ---
 
@@ -964,10 +964,10 @@ const postgresqlServerKeyTimeouts: postgresqlServerKey.PostgresqlServerKeyTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#create PostgresqlServerKey#create}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#delete PostgresqlServerKey#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#read PostgresqlServerKey#read}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#update PostgresqlServerKey#update}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#create PostgresqlServerKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#delete PostgresqlServerKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#read PostgresqlServerKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlServerKey.PostgresqlServerKeyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#update PostgresqlServerKey#update}. |
 
 ---
 
@@ -979,7 +979,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#create PostgresqlServerKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#create PostgresqlServerKey#create}.
 
 ---
 
@@ -991,7 +991,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#delete PostgresqlServerKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#delete PostgresqlServerKey#delete}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#read PostgresqlServerKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#read PostgresqlServerKey#read}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/postgresql_server_key#update PostgresqlServerKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/postgresql_server_key#update PostgresqlServerKey#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CapacityReservationGroup <a name="CapacityReservationGroup" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group azurerm_capacity_reservation_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroup.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the CapacityReservationGroup t
 
 The id of the existing CapacityReservationGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,13 +915,13 @@ new CapacityReservationGroupConfig {
 | <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#location CapacityReservationGroup#location}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#name CapacityReservationGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#resource_group_name CapacityReservationGroup#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#id CapacityReservationGroup#id}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#tags CapacityReservationGroup#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#location CapacityReservationGroup#location}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#name CapacityReservationGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#resource_group_name CapacityReservationGroup#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#id CapacityReservationGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#tags CapacityReservationGroup#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts">CapacityReservationGroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#zones CapacityReservationGroup#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupConfig.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#zones CapacityReservationGroup#zones}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#location CapacityReservationGroup#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#location CapacityReservationGroup#location}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#name CapacityReservationGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#name CapacityReservationGroup#name}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#resource_group_name CapacityReservationGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#resource_group_name CapacityReservationGroup#resource_group_name}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#id CapacityReservationGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#id CapacityReservationGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#tags CapacityReservationGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#tags CapacityReservationGroup#tags}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public CapacityReservationGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#timeouts CapacityReservationGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#timeouts CapacityReservationGroup#timeouts}
 
 ---
 
@@ -1080,7 +1080,7 @@ public string[] Zones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#zones CapacityReservationGroup#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#zones CapacityReservationGroup#zones}.
 
 ---
 
@@ -1103,10 +1103,10 @@ new CapacityReservationGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#create CapacityReservationGroup#create}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#delete CapacityReservationGroup#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#read CapacityReservationGroup#read}. |
-| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#update CapacityReservationGroup#update}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#create CapacityReservationGroup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#delete CapacityReservationGroup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#read CapacityReservationGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.capacityReservationGroup.CapacityReservationGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#update CapacityReservationGroup#update}. |
 
 ---
 
@@ -1118,7 +1118,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#create CapacityReservationGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#create CapacityReservationGroup#create}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#delete CapacityReservationGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#delete CapacityReservationGroup#delete}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#read CapacityReservationGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#read CapacityReservationGroup#read}.
 
 ---
 
@@ -1154,7 +1154,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/capacity_reservation_group#update CapacityReservationGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/capacity_reservation_group#update CapacityReservationGroup#update}.
 
 ---
 

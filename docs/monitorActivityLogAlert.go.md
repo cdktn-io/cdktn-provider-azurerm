@@ -4,7 +4,7 @@
 
 ### MonitorActivityLogAlert <a name="MonitorActivityLogAlert" id="@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlert.Initializer"></a>
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the MonitorActivityLogAlert to
 
 The id of the existing MonitorActivityLogAlert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,8 +1024,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertAction.property.actionGroupId">ActionGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#action_group_id MonitorActivityLogAlert#action_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertAction.property.webhookProperties">WebhookProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#webhook_properties MonitorActivityLogAlert#webhook_properties}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertAction.property.actionGroupId">ActionGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#action_group_id MonitorActivityLogAlert#action_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertAction.property.webhookProperties">WebhookProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#webhook_properties MonitorActivityLogAlert#webhook_properties}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ ActionGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#action_group_id MonitorActivityLogAlert#action_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#action_group_id MonitorActivityLogAlert#action_group_id}.
 
 ---
 
@@ -1049,7 +1049,7 @@ WebhookProperties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#webhook_properties MonitorActivityLogAlert#webhook_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#webhook_properties MonitorActivityLogAlert#webhook_properties}.
 
 ---
 
@@ -1094,15 +1094,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.criteria">Criteria</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria">MonitorActivityLogAlertCriteria</a></code> | criteria block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#location MonitorActivityLogAlert#location}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#name MonitorActivityLogAlert#name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_group_name MonitorActivityLogAlert#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#scopes MonitorActivityLogAlert#scopes}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#location MonitorActivityLogAlert#location}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#name MonitorActivityLogAlert#name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_group_name MonitorActivityLogAlert#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#scopes MonitorActivityLogAlert#scopes}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.action">Action</a></code> | <code>interface{}</code> | action block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#description MonitorActivityLogAlert#description}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#enabled MonitorActivityLogAlert#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#id MonitorActivityLogAlert#id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#tags MonitorActivityLogAlert#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#description MonitorActivityLogAlert#description}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#enabled MonitorActivityLogAlert#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#id MonitorActivityLogAlert#id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#tags MonitorActivityLogAlert#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts">MonitorActivityLogAlertTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1187,7 +1187,7 @@ Criteria MonitorActivityLogAlertCriteria
 
 criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#criteria MonitorActivityLogAlert#criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#criteria MonitorActivityLogAlert#criteria}
 
 ---
 
@@ -1199,7 +1199,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#location MonitorActivityLogAlert#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#location MonitorActivityLogAlert#location}.
 
 ---
 
@@ -1211,7 +1211,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#name MonitorActivityLogAlert#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#name MonitorActivityLogAlert#name}.
 
 ---
 
@@ -1223,7 +1223,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_group_name MonitorActivityLogAlert#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_group_name MonitorActivityLogAlert#resource_group_name}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Scopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#scopes MonitorActivityLogAlert#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#scopes MonitorActivityLogAlert#scopes}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Action interface{}
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#action MonitorActivityLogAlert#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#action MonitorActivityLogAlert#action}
 
 ---
 
@@ -1261,7 +1261,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#description MonitorActivityLogAlert#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#description MonitorActivityLogAlert#description}.
 
 ---
 
@@ -1273,7 +1273,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#enabled MonitorActivityLogAlert#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#enabled MonitorActivityLogAlert#enabled}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#id MonitorActivityLogAlert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#id MonitorActivityLogAlert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1300,7 +1300,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#tags MonitorActivityLogAlert#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#tags MonitorActivityLogAlert#tags}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Timeouts MonitorActivityLogAlertTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#timeouts MonitorActivityLogAlert#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#timeouts MonitorActivityLogAlert#timeouts}
 
 ---
 
@@ -1355,28 +1355,28 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#category MonitorActivityLogAlert#category}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.caller">Caller</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#caller MonitorActivityLogAlert#caller}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#level MonitorActivityLogAlert#level}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.levels">Levels</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#levels MonitorActivityLogAlert#levels}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.operationName">OperationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#operation_name MonitorActivityLogAlert#operation_name}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationCategory">RecommendationCategory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_category MonitorActivityLogAlert#recommendation_category}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationImpact">RecommendationImpact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_impact MonitorActivityLogAlert#recommendation_impact}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationType">RecommendationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_type MonitorActivityLogAlert#recommendation_type}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceGroup">ResourceGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_group MonitorActivityLogAlert#resource_group}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceGroups">ResourceGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_groups MonitorActivityLogAlert#resource_groups}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#category MonitorActivityLogAlert#category}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.caller">Caller</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#caller MonitorActivityLogAlert#caller}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.level">Level</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#level MonitorActivityLogAlert#level}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.levels">Levels</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#levels MonitorActivityLogAlert#levels}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.operationName">OperationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#operation_name MonitorActivityLogAlert#operation_name}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationCategory">RecommendationCategory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_category MonitorActivityLogAlert#recommendation_category}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationImpact">RecommendationImpact</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_impact MonitorActivityLogAlert#recommendation_impact}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.recommendationType">RecommendationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_type MonitorActivityLogAlert#recommendation_type}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceGroup">ResourceGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_group MonitorActivityLogAlert#resource_group}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceGroups">ResourceGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_groups MonitorActivityLogAlert#resource_groups}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceHealth">ResourceHealth</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth">MonitorActivityLogAlertCriteriaResourceHealth</a></code> | resource_health block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_id MonitorActivityLogAlert#resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceIds">ResourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_ids MonitorActivityLogAlert#resource_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceProvider">ResourceProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_provider MonitorActivityLogAlert#resource_provider}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceProviders">ResourceProviders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_providers MonitorActivityLogAlert#resource_providers}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_type MonitorActivityLogAlert#resource_type}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_types MonitorActivityLogAlert#resource_types}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_id MonitorActivityLogAlert#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceIds">ResourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_ids MonitorActivityLogAlert#resource_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceProvider">ResourceProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_provider MonitorActivityLogAlert#resource_provider}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceProviders">ResourceProviders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_providers MonitorActivityLogAlert#resource_providers}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_type MonitorActivityLogAlert#resource_type}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_types MonitorActivityLogAlert#resource_types}. |
 | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.serviceHealth">ServiceHealth</a></code> | <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth">MonitorActivityLogAlertCriteriaServiceHealth</a></code> | service_health block. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#status MonitorActivityLogAlert#status}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.statuses">Statuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#statuses MonitorActivityLogAlert#statuses}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.subStatus">SubStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#sub_status MonitorActivityLogAlert#sub_status}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.subStatuses">SubStatuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#sub_statuses MonitorActivityLogAlert#sub_statuses}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#status MonitorActivityLogAlert#status}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.statuses">Statuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#statuses MonitorActivityLogAlert#statuses}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.subStatus">SubStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#sub_status MonitorActivityLogAlert#sub_status}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteria.property.subStatuses">SubStatuses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#sub_statuses MonitorActivityLogAlert#sub_statuses}. |
 
 ---
 
@@ -1388,7 +1388,7 @@ Category *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#category MonitorActivityLogAlert#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#category MonitorActivityLogAlert#category}.
 
 ---
 
@@ -1400,7 +1400,7 @@ Caller *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#caller MonitorActivityLogAlert#caller}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#caller MonitorActivityLogAlert#caller}.
 
 ---
 
@@ -1412,7 +1412,7 @@ Level *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#level MonitorActivityLogAlert#level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#level MonitorActivityLogAlert#level}.
 
 ---
 
@@ -1424,7 +1424,7 @@ Levels *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#levels MonitorActivityLogAlert#levels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#levels MonitorActivityLogAlert#levels}.
 
 ---
 
@@ -1436,7 +1436,7 @@ OperationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#operation_name MonitorActivityLogAlert#operation_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#operation_name MonitorActivityLogAlert#operation_name}.
 
 ---
 
@@ -1448,7 +1448,7 @@ RecommendationCategory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_category MonitorActivityLogAlert#recommendation_category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_category MonitorActivityLogAlert#recommendation_category}.
 
 ---
 
@@ -1460,7 +1460,7 @@ RecommendationImpact *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_impact MonitorActivityLogAlert#recommendation_impact}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_impact MonitorActivityLogAlert#recommendation_impact}.
 
 ---
 
@@ -1472,7 +1472,7 @@ RecommendationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#recommendation_type MonitorActivityLogAlert#recommendation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#recommendation_type MonitorActivityLogAlert#recommendation_type}.
 
 ---
 
@@ -1484,7 +1484,7 @@ ResourceGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_group MonitorActivityLogAlert#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_group MonitorActivityLogAlert#resource_group}.
 
 ---
 
@@ -1496,7 +1496,7 @@ ResourceGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_groups MonitorActivityLogAlert#resource_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_groups MonitorActivityLogAlert#resource_groups}.
 
 ---
 
@@ -1510,7 +1510,7 @@ ResourceHealth MonitorActivityLogAlertCriteriaResourceHealth
 
 resource_health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_health MonitorActivityLogAlert#resource_health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_health MonitorActivityLogAlert#resource_health}
 
 ---
 
@@ -1522,7 +1522,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_id MonitorActivityLogAlert#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_id MonitorActivityLogAlert#resource_id}.
 
 ---
 
@@ -1534,7 +1534,7 @@ ResourceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_ids MonitorActivityLogAlert#resource_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_ids MonitorActivityLogAlert#resource_ids}.
 
 ---
 
@@ -1546,7 +1546,7 @@ ResourceProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_provider MonitorActivityLogAlert#resource_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_provider MonitorActivityLogAlert#resource_provider}.
 
 ---
 
@@ -1558,7 +1558,7 @@ ResourceProviders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_providers MonitorActivityLogAlert#resource_providers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_providers MonitorActivityLogAlert#resource_providers}.
 
 ---
 
@@ -1570,7 +1570,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_type MonitorActivityLogAlert#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_type MonitorActivityLogAlert#resource_type}.
 
 ---
 
@@ -1582,7 +1582,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#resource_types MonitorActivityLogAlert#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#resource_types MonitorActivityLogAlert#resource_types}.
 
 ---
 
@@ -1596,7 +1596,7 @@ ServiceHealth MonitorActivityLogAlertCriteriaServiceHealth
 
 service_health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#service_health MonitorActivityLogAlert#service_health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#service_health MonitorActivityLogAlert#service_health}
 
 ---
 
@@ -1608,7 +1608,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#status MonitorActivityLogAlert#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#status MonitorActivityLogAlert#status}.
 
 ---
 
@@ -1620,7 +1620,7 @@ Statuses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#statuses MonitorActivityLogAlert#statuses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#statuses MonitorActivityLogAlert#statuses}.
 
 ---
 
@@ -1632,7 +1632,7 @@ SubStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#sub_status MonitorActivityLogAlert#sub_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#sub_status MonitorActivityLogAlert#sub_status}.
 
 ---
 
@@ -1644,7 +1644,7 @@ SubStatuses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#sub_statuses MonitorActivityLogAlert#sub_statuses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#sub_statuses MonitorActivityLogAlert#sub_statuses}.
 
 ---
 
@@ -1666,9 +1666,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.current">Current</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#current MonitorActivityLogAlert#current}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.previous">Previous</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#previous MonitorActivityLogAlert#previous}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.reason">Reason</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#reason MonitorActivityLogAlert#reason}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.current">Current</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#current MonitorActivityLogAlert#current}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.previous">Previous</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#previous MonitorActivityLogAlert#previous}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaResourceHealth.property.reason">Reason</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#reason MonitorActivityLogAlert#reason}. |
 
 ---
 
@@ -1680,7 +1680,7 @@ Current *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#current MonitorActivityLogAlert#current}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#current MonitorActivityLogAlert#current}.
 
 ---
 
@@ -1692,7 +1692,7 @@ Previous *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#previous MonitorActivityLogAlert#previous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#previous MonitorActivityLogAlert#previous}.
 
 ---
 
@@ -1704,7 +1704,7 @@ Reason *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#reason MonitorActivityLogAlert#reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#reason MonitorActivityLogAlert#reason}.
 
 ---
 
@@ -1726,9 +1726,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#events MonitorActivityLogAlert#events}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.locations">Locations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#locations MonitorActivityLogAlert#locations}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#services MonitorActivityLogAlert#services}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#events MonitorActivityLogAlert#events}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.locations">Locations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#locations MonitorActivityLogAlert#locations}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertCriteriaServiceHealth.property.services">Services</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#services MonitorActivityLogAlert#services}. |
 
 ---
 
@@ -1740,7 +1740,7 @@ Events *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#events MonitorActivityLogAlert#events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#events MonitorActivityLogAlert#events}.
 
 ---
 
@@ -1752,7 +1752,7 @@ Locations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#locations MonitorActivityLogAlert#locations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#locations MonitorActivityLogAlert#locations}.
 
 ---
 
@@ -1764,7 +1764,7 @@ Services *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#services MonitorActivityLogAlert#services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#services MonitorActivityLogAlert#services}.
 
 ---
 
@@ -1787,10 +1787,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoractivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#create MonitorActivityLogAlert#create}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#delete MonitorActivityLogAlert#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#read MonitorActivityLogAlert#read}. |
-| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#update MonitorActivityLogAlert#update}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#create MonitorActivityLogAlert#create}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#delete MonitorActivityLogAlert#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#read MonitorActivityLogAlert#read}. |
+| <code><a href="#@cdktn/provider-azurerm.monitorActivityLogAlert.MonitorActivityLogAlertTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#update MonitorActivityLogAlert#update}. |
 
 ---
 
@@ -1802,7 +1802,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#create MonitorActivityLogAlert#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#create MonitorActivityLogAlert#create}.
 
 ---
 
@@ -1814,7 +1814,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#delete MonitorActivityLogAlert#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#delete MonitorActivityLogAlert#delete}.
 
 ---
 
@@ -1826,7 +1826,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#read MonitorActivityLogAlert#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#read MonitorActivityLogAlert#read}.
 
 ---
 
@@ -1838,7 +1838,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/monitor_activity_log_alert#update MonitorActivityLogAlert#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/monitor_activity_log_alert#update MonitorActivityLogAlert#update}.
 
 ---
 

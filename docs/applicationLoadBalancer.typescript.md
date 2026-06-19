@@ -4,7 +4,7 @@
 
 ### ApplicationLoadBalancer <a name="ApplicationLoadBalancer" id="@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer azurerm_application_load_balancer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer azurerm_application_load_balancer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancer.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ApplicationLoadBalancer to
 
 The id of the existing ApplicationLoadBalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,11 +882,11 @@ const applicationLoadBalancerConfig: applicationLoadBalancer.ApplicationLoadBala
 | <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#location ApplicationLoadBalancer#location}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#name ApplicationLoadBalancer#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#resource_group_name ApplicationLoadBalancer#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#id ApplicationLoadBalancer#id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#tags ApplicationLoadBalancer#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#location ApplicationLoadBalancer#location}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#name ApplicationLoadBalancer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#resource_group_name ApplicationLoadBalancer#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#id ApplicationLoadBalancer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#tags ApplicationLoadBalancer#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts">ApplicationLoadBalancerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -969,7 +969,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#location ApplicationLoadBalancer#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#location ApplicationLoadBalancer#location}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#name ApplicationLoadBalancer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#name ApplicationLoadBalancer#name}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#resource_group_name ApplicationLoadBalancer#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#resource_group_name ApplicationLoadBalancer#resource_group_name}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#id ApplicationLoadBalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#id ApplicationLoadBalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#tags ApplicationLoadBalancer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#tags ApplicationLoadBalancer#tags}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly timeouts: ApplicationLoadBalancerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#timeouts ApplicationLoadBalancer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#timeouts ApplicationLoadBalancer#timeouts}
 
 ---
 
@@ -1052,10 +1052,10 @@ const applicationLoadBalancerTimeouts: applicationLoadBalancer.ApplicationLoadBa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#create ApplicationLoadBalancer#create}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#delete ApplicationLoadBalancer#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#read ApplicationLoadBalancer#read}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#update ApplicationLoadBalancer#update}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#create ApplicationLoadBalancer#create}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#delete ApplicationLoadBalancer#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#read ApplicationLoadBalancer#read}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationLoadBalancer.ApplicationLoadBalancerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#update ApplicationLoadBalancer#update}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#create ApplicationLoadBalancer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#create ApplicationLoadBalancer#create}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#delete ApplicationLoadBalancer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#delete ApplicationLoadBalancer#delete}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#read ApplicationLoadBalancer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#read ApplicationLoadBalancer#read}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_load_balancer#update ApplicationLoadBalancer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_load_balancer#update ApplicationLoadBalancer#update}.
 
 ---
 

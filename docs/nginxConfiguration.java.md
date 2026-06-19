@@ -4,7 +4,7 @@
 
 ### NginxConfiguration <a name="NginxConfiguration" id="@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration azurerm_nginx_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration azurerm_nginx_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer"></a>
 
@@ -40,11 +40,11 @@ NginxConfiguration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.rootFile">rootFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.rootFile">rootFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.configFile">configFile</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile">NginxConfigurationConfigFile</a>></code> | config_file block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#id NginxConfiguration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.packageData">packageData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#id NginxConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.packageData">packageData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.protectedFile">protectedFile</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile">NginxConfigurationProtectedFile</a>></code> | protected_file block. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfiguration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts">NginxConfigurationTimeouts</a></code> | timeouts block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 config_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#id NginxConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#id NginxConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 protected_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
 
 ---
 
@@ -694,7 +694,7 @@ The construct id used in the generated config for the NginxConfiguration to impo
 
 The id of the existing NginxConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,11 +1079,11 @@ NginxConfigurationConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.rootFile">rootFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.nginxDeploymentId">nginxDeploymentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.rootFile">rootFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.configFile">configFile</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile">NginxConfigurationConfigFile</a>></code> | config_file block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#id NginxConfiguration#id}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.packageData">packageData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#id NginxConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.packageData">packageData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.protectedFile">protectedFile</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile">NginxConfigurationProtectedFile</a>></code> | protected_file block. |
 | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts">NginxConfigurationTimeouts</a></code> | timeouts block. |
 
@@ -1167,7 +1167,7 @@ public java.lang.String getNginxDeploymentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public java.lang.String getRootFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}.
 
 ---
 
@@ -1193,7 +1193,7 @@ public IResolvable|java.util.List<NginxConfigurationConfigFile> getConfigFile();
 
 config_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
 
 ---
 
@@ -1205,7 +1205,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#id NginxConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#id NginxConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1220,7 @@ public java.lang.String getPackageData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public IResolvable|java.util.List<NginxConfigurationProtectedFile> getProtectedF
 
 protected_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
 
 ---
 
@@ -1248,7 +1248,7 @@ public NginxConfigurationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
 
 ---
 
@@ -1269,8 +1269,8 @@ NginxConfigurationConfigFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile.property.virtualPath">virtualPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#content NginxConfiguration#content}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationConfigFile.property.virtualPath">virtualPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}. |
 
 ---
 
@@ -1282,7 +1282,7 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#content NginxConfiguration#content}.
 
 ---
 
@@ -1294,7 +1294,7 @@ public java.lang.String getVirtualPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}.
 
 ---
 
@@ -1315,8 +1315,8 @@ NginxConfigurationProtectedFile.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile.property.virtualPath">virtualPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#content NginxConfiguration#content}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationProtectedFile.property.virtualPath">virtualPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#content NginxConfiguration#content}.
 
 ---
 
@@ -1340,7 +1340,7 @@ public java.lang.String getVirtualPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}.
 
 ---
 
@@ -1363,10 +1363,10 @@ NginxConfigurationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#create NginxConfiguration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#read NginxConfiguration#read}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#update NginxConfiguration#update}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#create NginxConfiguration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#read NginxConfiguration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxConfiguration.NginxConfigurationTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#update NginxConfiguration#update}. |
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#create NginxConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#create NginxConfiguration#create}.
 
 ---
 
@@ -1390,7 +1390,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}.
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#read NginxConfiguration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#read NginxConfiguration#read}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#update NginxConfiguration#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/nginx_configuration#update NginxConfiguration#update}.
 
 ---
 
