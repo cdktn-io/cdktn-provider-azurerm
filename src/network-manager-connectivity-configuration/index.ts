@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,82 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkManagerConnectivityConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#connectivity_topology NetworkManagerConnectivityConfiguration#connectivity_topology}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#connected_group_address_overlap_enabled NetworkManagerConnectivityConfiguration#connected_group_address_overlap_enabled}
+  */
+  readonly connectedGroupAddressOverlapEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#connected_group_private_endpoints_scale NetworkManagerConnectivityConfiguration#connected_group_private_endpoints_scale}
+  */
+  readonly connectedGroupPrivateEndpointsScale?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#connectivity_topology NetworkManagerConnectivityConfiguration#connectivity_topology}
   */
   readonly connectivityTopology: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#delete_existing_peering_enabled NetworkManagerConnectivityConfiguration#delete_existing_peering_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#delete_existing_peering_enabled NetworkManagerConnectivityConfiguration#delete_existing_peering_enabled}
   */
   readonly deleteExistingPeeringEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#description NetworkManagerConnectivityConfiguration#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#description NetworkManagerConnectivityConfiguration#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
   */
   readonly globalMeshEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#id NetworkManagerConnectivityConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#id NetworkManagerConnectivityConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#name NetworkManagerConnectivityConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#name NetworkManagerConnectivityConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#network_manager_id NetworkManagerConnectivityConfiguration#network_manager_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#network_manager_id NetworkManagerConnectivityConfiguration#network_manager_id}
   */
   readonly networkManagerId: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#peering_enforcement_enabled NetworkManagerConnectivityConfiguration#peering_enforcement_enabled}
+  */
+  readonly peeringEnforcementEnabled?: boolean | cdktn.IResolvable;
+  /**
   * applies_to_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#applies_to_group NetworkManagerConnectivityConfiguration#applies_to_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#applies_to_group NetworkManagerConnectivityConfiguration#applies_to_group}
   */
   readonly appliesToGroup: NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktn.IResolvable;
   /**
   * hub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#hub NetworkManagerConnectivityConfiguration#hub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#hub NetworkManagerConnectivityConfiguration#hub}
   */
   readonly hub?: NetworkManagerConnectivityConfigurationHub;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#timeouts NetworkManagerConnectivityConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#timeouts NetworkManagerConnectivityConfiguration#timeouts}
   */
   readonly timeouts?: NetworkManagerConnectivityConfigurationTimeouts;
 }
 export interface NetworkManagerConnectivityConfigurationAppliesToGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
   */
   readonly globalMeshEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#group_connectivity NetworkManagerConnectivityConfiguration#group_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#group_connectivity NetworkManagerConnectivityConfiguration#group_connectivity}
   */
   readonly groupConnectivity: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#network_group_id NetworkManagerConnectivityConfiguration#network_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#network_group_id NetworkManagerConnectivityConfiguration#network_group_id}
   */
   readonly networkGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#use_hub_gateway NetworkManagerConnectivityConfiguration#use_hub_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#use_hub_gateway NetworkManagerConnectivityConfiguration#use_hub_gateway}
   */
   readonly useHubGateway?: boolean | cdktn.IResolvable;
 }
@@ -273,11 +285,11 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupList extends c
 }
 export interface NetworkManagerConnectivityConfigurationHub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#resource_id NetworkManagerConnectivityConfiguration#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#resource_id NetworkManagerConnectivityConfiguration#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#resource_type NetworkManagerConnectivityConfiguration#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#resource_type NetworkManagerConnectivityConfiguration#resource_type}
   */
   readonly resourceType: string;
 }
@@ -384,19 +396,19 @@ export class NetworkManagerConnectivityConfigurationHubOutputReference extends c
 }
 export interface NetworkManagerConnectivityConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#create NetworkManagerConnectivityConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#create NetworkManagerConnectivityConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#delete NetworkManagerConnectivityConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#delete NetworkManagerConnectivityConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#read NetworkManagerConnectivityConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#read NetworkManagerConnectivityConfiguration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#update NetworkManagerConnectivityConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#update NetworkManagerConnectivityConfiguration#update}
   */
   readonly update?: string;
 }
@@ -577,7 +589,7 @@ export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration}
 */
 export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformResource {
 
@@ -593,7 +605,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
   * Generates CDKTN code for importing a NetworkManagerConnectivityConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerConnectivityConfiguration to import
-  * @param importFromId The id of the existing NetworkManagerConnectivityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkManagerConnectivityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerConnectivityConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -605,7 +617,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -616,7 +628,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
       terraformResourceType: 'azurerm_network_manager_connectivity_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.77.0',
+        providerVersion: '4.78.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -627,6 +639,8 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
       connection: config.connection,
       forEach: config.forEach
     });
+    this._connectedGroupAddressOverlapEnabled = config.connectedGroupAddressOverlapEnabled;
+    this._connectedGroupPrivateEndpointsScale = config.connectedGroupPrivateEndpointsScale;
     this._connectivityTopology = config.connectivityTopology;
     this._deleteExistingPeeringEnabled = config.deleteExistingPeeringEnabled;
     this._description = config.description;
@@ -634,6 +648,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
     this._id = config.id;
     this._name = config.name;
     this._networkManagerId = config.networkManagerId;
+    this._peeringEnforcementEnabled = config.peeringEnforcementEnabled;
     this._appliesToGroup.internalValue = config.appliesToGroup;
     this._hub.internalValue = config.hub;
     this._timeouts.internalValue = config.timeouts;
@@ -642,6 +657,38 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // connected_group_address_overlap_enabled - computed: false, optional: true, required: false
+  private _connectedGroupAddressOverlapEnabled?: boolean | cdktn.IResolvable; 
+  public get connectedGroupAddressOverlapEnabled() {
+    return this.getBooleanAttribute('connected_group_address_overlap_enabled');
+  }
+  public set connectedGroupAddressOverlapEnabled(value: boolean | cdktn.IResolvable) {
+    this._connectedGroupAddressOverlapEnabled = value;
+  }
+  public resetConnectedGroupAddressOverlapEnabled() {
+    this._connectedGroupAddressOverlapEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectedGroupAddressOverlapEnabledInput() {
+    return this._connectedGroupAddressOverlapEnabled;
+  }
+
+  // connected_group_private_endpoints_scale - computed: false, optional: true, required: false
+  private _connectedGroupPrivateEndpointsScale?: string; 
+  public get connectedGroupPrivateEndpointsScale() {
+    return this.getStringAttribute('connected_group_private_endpoints_scale');
+  }
+  public set connectedGroupPrivateEndpointsScale(value: string) {
+    this._connectedGroupPrivateEndpointsScale = value;
+  }
+  public resetConnectedGroupPrivateEndpointsScale() {
+    this._connectedGroupPrivateEndpointsScale = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectedGroupPrivateEndpointsScaleInput() {
+    return this._connectedGroupPrivateEndpointsScale;
+  }
 
   // connectivity_topology - computed: false, optional: false, required: true
   private _connectivityTopology?: string; 
@@ -746,6 +793,22 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
     return this._networkManagerId;
   }
 
+  // peering_enforcement_enabled - computed: false, optional: true, required: false
+  private _peeringEnforcementEnabled?: boolean | cdktn.IResolvable; 
+  public get peeringEnforcementEnabled() {
+    return this.getBooleanAttribute('peering_enforcement_enabled');
+  }
+  public set peeringEnforcementEnabled(value: boolean | cdktn.IResolvable) {
+    this._peeringEnforcementEnabled = value;
+  }
+  public resetPeeringEnforcementEnabled() {
+    this._peeringEnforcementEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peeringEnforcementEnabledInput() {
+    return this._peeringEnforcementEnabled;
+  }
+
   // applies_to_group - computed: false, optional: false, required: true
   private _appliesToGroup = new NetworkManagerConnectivityConfigurationAppliesToGroupList(this, "applies_to_group", false);
   public get appliesToGroup() {
@@ -797,6 +860,8 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      connected_group_address_overlap_enabled: cdktn.booleanToTerraform(this._connectedGroupAddressOverlapEnabled),
+      connected_group_private_endpoints_scale: cdktn.stringToTerraform(this._connectedGroupPrivateEndpointsScale),
       connectivity_topology: cdktn.stringToTerraform(this._connectivityTopology),
       delete_existing_peering_enabled: cdktn.booleanToTerraform(this._deleteExistingPeeringEnabled),
       description: cdktn.stringToTerraform(this._description),
@@ -804,6 +869,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       network_manager_id: cdktn.stringToTerraform(this._networkManagerId),
+      peering_enforcement_enabled: cdktn.booleanToTerraform(this._peeringEnforcementEnabled),
       applies_to_group: cdktn.listMapper(networkManagerConnectivityConfigurationAppliesToGroupToTerraform, true)(this._appliesToGroup.internalValue),
       hub: networkManagerConnectivityConfigurationHubToTerraform(this._hub.internalValue),
       timeouts: networkManagerConnectivityConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -812,6 +878,18 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      connected_group_address_overlap_enabled: {
+        value: cdktn.booleanToHclTerraform(this._connectedGroupAddressOverlapEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      connected_group_private_endpoints_scale: {
+        value: cdktn.stringToHclTerraform(this._connectedGroupPrivateEndpointsScale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       connectivity_topology: {
         value: cdktn.stringToHclTerraform(this._connectivityTopology),
         isBlock: false,
@@ -853,6 +931,12 @@ export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformReso
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      peering_enforcement_enabled: {
+        value: cdktn.booleanToHclTerraform(this._peeringEnforcementEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       applies_to_group: {
         value: cdktn.listMapperHcl(networkManagerConnectivityConfigurationAppliesToGroupToHclTerraform, true)(this._appliesToGroup.internalValue),

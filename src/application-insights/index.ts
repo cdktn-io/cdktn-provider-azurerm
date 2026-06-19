@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,106 @@ import * as cdktn from 'cdktn';
 
 export interface ApplicationInsightsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#application_type ApplicationInsights#application_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#application_type ApplicationInsights#application_type}
   */
   readonly applicationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}
   */
   readonly dailyDataCapInGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#daily_data_cap_notifications_disabled ApplicationInsights#daily_data_cap_notifications_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#daily_data_cap_notifications_disabled ApplicationInsights#daily_data_cap_notifications_disabled}
   */
   readonly dailyDataCapNotificationsDisabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#disable_ip_masking ApplicationInsights#disable_ip_masking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#daily_data_cap_notifications_enabled ApplicationInsights#daily_data_cap_notifications_enabled}
+  */
+  readonly dailyDataCapNotificationsEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#disable_ip_masking ApplicationInsights#disable_ip_masking}
   */
   readonly disableIpMasking?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}
   */
   readonly forceCustomerStorageForProfiler?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#id ApplicationInsights#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#id ApplicationInsights#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}
   */
   readonly internetIngestionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}
   */
   readonly internetQueryEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#local_authentication_disabled ApplicationInsights#local_authentication_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#ip_masking_enabled ApplicationInsights#ip_masking_enabled}
+  */
+  readonly ipMaskingEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#local_authentication_disabled ApplicationInsights#local_authentication_disabled}
   */
   readonly localAuthenticationDisabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#location ApplicationInsights#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#local_authentication_enabled ApplicationInsights#local_authentication_enabled}
+  */
+  readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#location ApplicationInsights#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#name ApplicationInsights#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#name ApplicationInsights#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}
   */
   readonly retentionInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}
   */
   readonly samplingPercentage?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#tags ApplicationInsights#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#tags ApplicationInsights#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}
   */
   readonly workspaceId?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#timeouts ApplicationInsights#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#timeouts ApplicationInsights#timeouts}
   */
   readonly timeouts?: ApplicationInsightsTimeouts;
 }
 export interface ApplicationInsightsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#create ApplicationInsights#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#create ApplicationInsights#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#delete ApplicationInsights#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#delete ApplicationInsights#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#read ApplicationInsights#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#read ApplicationInsights#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#update ApplicationInsights#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#update ApplicationInsights#update}
   */
   readonly update?: string;
 }
@@ -281,7 +293,7 @@ export class ApplicationInsightsTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights azurerm_application_insights}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights azurerm_application_insights}
 */
 export class ApplicationInsights extends cdktn.TerraformResource {
 
@@ -297,7 +309,7 @@ export class ApplicationInsights extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApplicationInsights resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationInsights to import
-  * @param importFromId The id of the existing ApplicationInsights that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationInsights that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationInsights to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -309,7 +321,7 @@ export class ApplicationInsights extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/application_insights azurerm_application_insights} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/application_insights azurerm_application_insights} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +332,7 @@ export class ApplicationInsights extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_application_insights',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.77.0',
+        providerVersion: '4.78.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -334,12 +346,15 @@ export class ApplicationInsights extends cdktn.TerraformResource {
     this._applicationType = config.applicationType;
     this._dailyDataCapInGb = config.dailyDataCapInGb;
     this._dailyDataCapNotificationsDisabled = config.dailyDataCapNotificationsDisabled;
+    this._dailyDataCapNotificationsEnabled = config.dailyDataCapNotificationsEnabled;
     this._disableIpMasking = config.disableIpMasking;
     this._forceCustomerStorageForProfiler = config.forceCustomerStorageForProfiler;
     this._id = config.id;
     this._internetIngestionEnabled = config.internetIngestionEnabled;
     this._internetQueryEnabled = config.internetQueryEnabled;
+    this._ipMaskingEnabled = config.ipMaskingEnabled;
     this._localAuthenticationDisabled = config.localAuthenticationDisabled;
+    this._localAuthenticationEnabled = config.localAuthenticationEnabled;
     this._location = config.location;
     this._name = config.name;
     this._resourceGroupName = config.resourceGroupName;
@@ -393,7 +408,7 @@ export class ApplicationInsights extends cdktn.TerraformResource {
     return this._dailyDataCapInGb;
   }
 
-  // daily_data_cap_notifications_disabled - computed: false, optional: true, required: false
+  // daily_data_cap_notifications_disabled - computed: true, optional: true, required: false
   private _dailyDataCapNotificationsDisabled?: boolean | cdktn.IResolvable; 
   public get dailyDataCapNotificationsDisabled() {
     return this.getBooleanAttribute('daily_data_cap_notifications_disabled');
@@ -409,7 +424,23 @@ export class ApplicationInsights extends cdktn.TerraformResource {
     return this._dailyDataCapNotificationsDisabled;
   }
 
-  // disable_ip_masking - computed: false, optional: true, required: false
+  // daily_data_cap_notifications_enabled - computed: true, optional: true, required: false
+  private _dailyDataCapNotificationsEnabled?: boolean | cdktn.IResolvable; 
+  public get dailyDataCapNotificationsEnabled() {
+    return this.getBooleanAttribute('daily_data_cap_notifications_enabled');
+  }
+  public set dailyDataCapNotificationsEnabled(value: boolean | cdktn.IResolvable) {
+    this._dailyDataCapNotificationsEnabled = value;
+  }
+  public resetDailyDataCapNotificationsEnabled() {
+    this._dailyDataCapNotificationsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dailyDataCapNotificationsEnabledInput() {
+    return this._dailyDataCapNotificationsEnabled;
+  }
+
+  // disable_ip_masking - computed: true, optional: true, required: false
   private _disableIpMasking?: boolean | cdktn.IResolvable; 
   public get disableIpMasking() {
     return this.getBooleanAttribute('disable_ip_masking');
@@ -494,7 +525,23 @@ export class ApplicationInsights extends cdktn.TerraformResource {
     return this._internetQueryEnabled;
   }
 
-  // local_authentication_disabled - computed: false, optional: true, required: false
+  // ip_masking_enabled - computed: true, optional: true, required: false
+  private _ipMaskingEnabled?: boolean | cdktn.IResolvable; 
+  public get ipMaskingEnabled() {
+    return this.getBooleanAttribute('ip_masking_enabled');
+  }
+  public set ipMaskingEnabled(value: boolean | cdktn.IResolvable) {
+    this._ipMaskingEnabled = value;
+  }
+  public resetIpMaskingEnabled() {
+    this._ipMaskingEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipMaskingEnabledInput() {
+    return this._ipMaskingEnabled;
+  }
+
+  // local_authentication_disabled - computed: true, optional: true, required: false
   private _localAuthenticationDisabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationDisabled() {
     return this.getBooleanAttribute('local_authentication_disabled');
@@ -508,6 +555,22 @@ export class ApplicationInsights extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get localAuthenticationDisabledInput() {
     return this._localAuthenticationDisabled;
+  }
+
+  // local_authentication_enabled - computed: true, optional: true, required: false
+  private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
+  public get localAuthenticationEnabled() {
+    return this.getBooleanAttribute('local_authentication_enabled');
+  }
+  public set localAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
+    this._localAuthenticationEnabled = value;
+  }
+  public resetLocalAuthenticationEnabled() {
+    this._localAuthenticationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localAuthenticationEnabledInput() {
+    return this._localAuthenticationEnabled;
   }
 
   // location - computed: false, optional: false, required: true
@@ -638,12 +701,15 @@ export class ApplicationInsights extends cdktn.TerraformResource {
       application_type: cdktn.stringToTerraform(this._applicationType),
       daily_data_cap_in_gb: cdktn.numberToTerraform(this._dailyDataCapInGb),
       daily_data_cap_notifications_disabled: cdktn.booleanToTerraform(this._dailyDataCapNotificationsDisabled),
+      daily_data_cap_notifications_enabled: cdktn.booleanToTerraform(this._dailyDataCapNotificationsEnabled),
       disable_ip_masking: cdktn.booleanToTerraform(this._disableIpMasking),
       force_customer_storage_for_profiler: cdktn.booleanToTerraform(this._forceCustomerStorageForProfiler),
       id: cdktn.stringToTerraform(this._id),
       internet_ingestion_enabled: cdktn.booleanToTerraform(this._internetIngestionEnabled),
       internet_query_enabled: cdktn.booleanToTerraform(this._internetQueryEnabled),
+      ip_masking_enabled: cdktn.booleanToTerraform(this._ipMaskingEnabled),
       local_authentication_disabled: cdktn.booleanToTerraform(this._localAuthenticationDisabled),
+      local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
       resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
@@ -671,6 +737,12 @@ export class ApplicationInsights extends cdktn.TerraformResource {
       },
       daily_data_cap_notifications_disabled: {
         value: cdktn.booleanToHclTerraform(this._dailyDataCapNotificationsDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      daily_data_cap_notifications_enabled: {
+        value: cdktn.booleanToHclTerraform(this._dailyDataCapNotificationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -705,8 +777,20 @@ export class ApplicationInsights extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      ip_masking_enabled: {
+        value: cdktn.booleanToHclTerraform(this._ipMaskingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       local_authentication_disabled: {
         value: cdktn.booleanToHclTerraform(this._localAuthenticationDisabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      local_authentication_enabled: {
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
