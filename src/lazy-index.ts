@@ -677,6 +677,8 @@ Object.defineProperty(exports, 'netappPool', { get: function () { return require
 Object.defineProperty(exports, 'netappSnapshot', { get: function () { return require('./netapp-snapshot'); } });
 Object.defineProperty(exports, 'netappSnapshotPolicy', { get: function () { return require('./netapp-snapshot-policy'); } });
 Object.defineProperty(exports, 'netappVolume', { get: function () { return require('./netapp-volume'); } });
+Object.defineProperty(exports, 'netappVolumeBucket', { get: function () { return require('./netapp-volume-bucket'); } });
+Object.defineProperty(exports, 'netappVolumeBucketWithServer', { get: function () { return require('./netapp-volume-bucket-with-server'); } });
 Object.defineProperty(exports, 'netappVolumeGroupOracle', { get: function () { return require('./netapp-volume-group-oracle'); } });
 Object.defineProperty(exports, 'netappVolumeGroupSapHana', { get: function () { return require('./netapp-volume-group-sap-hana'); } });
 Object.defineProperty(exports, 'netappVolumeQuotaRule', { get: function () { return require('./netapp-volume-quota-rule'); } });
@@ -1369,6 +1371,8 @@ Object.defineProperty(exports, 'dataAzurermNetappPool', { get: function () { ret
 Object.defineProperty(exports, 'dataAzurermNetappSnapshot', { get: function () { return require('./data-azurerm-netapp-snapshot'); } });
 Object.defineProperty(exports, 'dataAzurermNetappSnapshotPolicy', { get: function () { return require('./data-azurerm-netapp-snapshot-policy'); } });
 Object.defineProperty(exports, 'dataAzurermNetappVolume', { get: function () { return require('./data-azurerm-netapp-volume'); } });
+Object.defineProperty(exports, 'dataAzurermNetappVolumeBucket', { get: function () { return require('./data-azurerm-netapp-volume-bucket'); } });
+Object.defineProperty(exports, 'dataAzurermNetappVolumeBucketWithServer', { get: function () { return require('./data-azurerm-netapp-volume-bucket-with-server'); } });
 Object.defineProperty(exports, 'dataAzurermNetappVolumeGroupOracle', { get: function () { return require('./data-azurerm-netapp-volume-group-oracle'); } });
 Object.defineProperty(exports, 'dataAzurermNetappVolumeGroupSapHana', { get: function () { return require('./data-azurerm-netapp-volume-group-sap-hana'); } });
 Object.defineProperty(exports, 'dataAzurermNetappVolumeQuotaRule', { get: function () { return require('./data-azurerm-netapp-volume-quota-rule'); } });
