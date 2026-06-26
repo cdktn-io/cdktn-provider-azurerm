@@ -4,7 +4,7 @@
 
 ### ContainerRegistryScopeMap <a name="ContainerRegistryScopeMap" id="@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map azurerm_container_registry_scope_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer"></a>
 
@@ -40,12 +40,12 @@ ContainerRegistryScopeMap.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.actions">actions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.containerRegistryName">containerRegistryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.actions">actions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.containerRegistryName">containerRegistryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMap.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts">ContainerRegistryScopeMapTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#timeouts ContainerRegistryScopeMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#timeouts ContainerRegistryScopeMap#timeouts}
 
 ---
 
@@ -650,7 +650,7 @@ The construct id used in the generated config for the ContainerRegistryScopeMap 
 
 The id of the existing ContainerRegistryScopeMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,12 +1035,12 @@ ContainerRegistryScopeMapConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.actions">actions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.containerRegistryName">containerRegistryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.actions">actions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.containerRegistryName">containerRegistryName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts">ContainerRegistryScopeMapTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1123,7 +1123,7 @@ public java.util.List<java.lang.String> getActions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#actions ContainerRegistryScopeMap#actions}.
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getContainerRegistryName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#container_registry_name ContainerRegistryScopeMap#container_registry_name}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#name ContainerRegistryScopeMap#name}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#resource_group_name ContainerRegistryScopeMap#resource_group_name}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#description ContainerRegistryScopeMap#description}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#id ContainerRegistryScopeMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1200,7 +1200,7 @@ public ContainerRegistryScopeMapTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#timeouts ContainerRegistryScopeMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#timeouts ContainerRegistryScopeMap#timeouts}
 
 ---
 
@@ -1223,10 +1223,10 @@ ContainerRegistryScopeMapTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#create ContainerRegistryScopeMap#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#delete ContainerRegistryScopeMap#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#read ContainerRegistryScopeMap#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#update ContainerRegistryScopeMap#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#create ContainerRegistryScopeMap#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#delete ContainerRegistryScopeMap#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#read ContainerRegistryScopeMap#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistryScopeMap.ContainerRegistryScopeMapTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#update ContainerRegistryScopeMap#update}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#create ContainerRegistryScopeMap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#create ContainerRegistryScopeMap#create}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#delete ContainerRegistryScopeMap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#delete ContainerRegistryScopeMap#delete}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#read ContainerRegistryScopeMap#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#read ContainerRegistryScopeMap#read}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/container_registry_scope_map#update ContainerRegistryScopeMap#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/container_registry_scope_map#update ContainerRegistryScopeMap#update}.
 
 ---
 

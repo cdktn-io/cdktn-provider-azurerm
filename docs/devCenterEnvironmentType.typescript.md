@@ -4,7 +4,7 @@
 
 ### DevCenterEnvironmentType <a name="DevCenterEnvironmentType" id="@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type azurerm_dev_center_environment_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type azurerm_dev_center_environment_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentType.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DevCenterEnvironmentType t
 
 The id of the existing DevCenterEnvironmentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,10 +849,10 @@ const devCenterEnvironmentTypeConfig: devCenterEnvironmentType.DevCenterEnvironm
 | <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#dev_center_id DevCenterEnvironmentType#dev_center_id}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#name DevCenterEnvironmentType#name}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#id DevCenterEnvironmentType#id}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#tags DevCenterEnvironmentType#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.devCenterId">devCenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#dev_center_id DevCenterEnvironmentType#dev_center_id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#name DevCenterEnvironmentType#name}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#id DevCenterEnvironmentType#id}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#tags DevCenterEnvironmentType#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts">DevCenterEnvironmentTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -935,7 +935,7 @@ public readonly devCenterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#dev_center_id DevCenterEnvironmentType#dev_center_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#dev_center_id DevCenterEnvironmentType#dev_center_id}.
 
 ---
 
@@ -947,7 +947,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#name DevCenterEnvironmentType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#name DevCenterEnvironmentType#name}.
 
 ---
 
@@ -959,7 +959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#id DevCenterEnvironmentType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#id DevCenterEnvironmentType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -974,7 +974,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#tags DevCenterEnvironmentType#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#tags DevCenterEnvironmentType#tags}.
 
 ---
 
@@ -988,7 +988,7 @@ public readonly timeouts: DevCenterEnvironmentTypeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#timeouts DevCenterEnvironmentType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#timeouts DevCenterEnvironmentType#timeouts}
 
 ---
 
@@ -1006,10 +1006,10 @@ const devCenterEnvironmentTypeTimeouts: devCenterEnvironmentType.DevCenterEnviro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#create DevCenterEnvironmentType#create}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#delete DevCenterEnvironmentType#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#read DevCenterEnvironmentType#read}. |
-| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#update DevCenterEnvironmentType#update}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#create DevCenterEnvironmentType#create}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#delete DevCenterEnvironmentType#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#read DevCenterEnvironmentType#read}. |
+| <code><a href="#@cdktn/provider-azurerm.devCenterEnvironmentType.DevCenterEnvironmentTypeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#update DevCenterEnvironmentType#update}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#create DevCenterEnvironmentType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#create DevCenterEnvironmentType#create}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#delete DevCenterEnvironmentType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#delete DevCenterEnvironmentType#delete}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#read DevCenterEnvironmentType#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#read DevCenterEnvironmentType#read}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/dev_center_environment_type#update DevCenterEnvironmentType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/dev_center_environment_type#update DevCenterEnvironmentType#update}.
 
 ---
 

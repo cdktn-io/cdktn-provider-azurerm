@@ -4,7 +4,7 @@
 
 ### DataProtectionResourceGuard <a name="DataProtectionResourceGuard" id="@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard azurerm_data_protection_resource_guard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuard.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataProtectionResourceGuar
 
 The id of the existing DataProtectionResourceGuard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,13 +915,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotection
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#location DataProtectionResourceGuard#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#name DataProtectionResourceGuard#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#resource_group_name DataProtectionResourceGuard#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#id DataProtectionResourceGuard#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#tags DataProtectionResourceGuard#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#location DataProtectionResourceGuard#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#name DataProtectionResourceGuard#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#resource_group_name DataProtectionResourceGuard#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#id DataProtectionResourceGuard#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#tags DataProtectionResourceGuard#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts">DataProtectionResourceGuardTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.vaultCriticalOperationExclusionList">VaultCriticalOperationExclusionList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#vault_critical_operation_exclusion_list DataProtectionResourceGuard#vault_critical_operation_exclusion_list}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardConfig.property.vaultCriticalOperationExclusionList">VaultCriticalOperationExclusionList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#vault_critical_operation_exclusion_list DataProtectionResourceGuard#vault_critical_operation_exclusion_list}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#location DataProtectionResourceGuard#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#location DataProtectionResourceGuard#location}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#name DataProtectionResourceGuard#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#name DataProtectionResourceGuard#name}.
 
 ---
 
@@ -1027,7 +1027,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#resource_group_name DataProtectionResourceGuard#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#resource_group_name DataProtectionResourceGuard#resource_group_name}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#id DataProtectionResourceGuard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#id DataProtectionResourceGuard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#tags DataProtectionResourceGuard#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#tags DataProtectionResourceGuard#tags}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Timeouts DataProtectionResourceGuardTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#timeouts DataProtectionResourceGuard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#timeouts DataProtectionResourceGuard#timeouts}
 
 ---
 
@@ -1080,7 +1080,7 @@ VaultCriticalOperationExclusionList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#vault_critical_operation_exclusion_list DataProtectionResourceGuard#vault_critical_operation_exclusion_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#vault_critical_operation_exclusion_list DataProtectionResourceGuard#vault_critical_operation_exclusion_list}.
 
 ---
 
@@ -1103,10 +1103,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotection
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#create DataProtectionResourceGuard#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#delete DataProtectionResourceGuard#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#read DataProtectionResourceGuard#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#update DataProtectionResourceGuard#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#create DataProtectionResourceGuard#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#delete DataProtectionResourceGuard#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#read DataProtectionResourceGuard#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataProtectionResourceGuard.DataProtectionResourceGuardTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#update DataProtectionResourceGuard#update}. |
 
 ---
 
@@ -1118,7 +1118,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#create DataProtectionResourceGuard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#create DataProtectionResourceGuard#create}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#delete DataProtectionResourceGuard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#delete DataProtectionResourceGuard#delete}.
 
 ---
 
@@ -1142,7 +1142,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#read DataProtectionResourceGuard#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#read DataProtectionResourceGuard#read}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_protection_resource_guard#update DataProtectionResourceGuard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_protection_resource_guard#update DataProtectionResourceGuard#update}.
 
 ---
 

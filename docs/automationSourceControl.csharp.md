@@ -4,7 +4,7 @@
 
 ### AutomationSourceControl <a name="AutomationSourceControl" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control azurerm_automation_source_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control azurerm_automation_source_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the AutomationSourceControl to
 
 The id of the existing AutomationSourceControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,17 +1057,17 @@ new AutomationSourceControlConfig {
 | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.automationAccountId">AutomationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#automation_account_id AutomationSourceControl#automation_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.folderPath">FolderPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#folder_path AutomationSourceControl#folder_path}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#name AutomationSourceControl#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.repositoryUrl">RepositoryUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#repository_url AutomationSourceControl#repository_url}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.automationAccountId">AutomationAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#automation_account_id AutomationSourceControl#automation_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.folderPath">FolderPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#folder_path AutomationSourceControl#folder_path}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#name AutomationSourceControl#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.repositoryUrl">RepositoryUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#repository_url AutomationSourceControl#repository_url}. |
 | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.security">Security</a></code> | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity">AutomationSourceControlSecurity</a></code> | security block. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.sourceControlType">SourceControlType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#source_control_type AutomationSourceControl#source_control_type}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.automaticSync">AutomaticSync</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#automatic_sync AutomationSourceControl#automatic_sync}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#branch AutomationSourceControl#branch}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#description AutomationSourceControl#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#id AutomationSourceControl#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.publishRunbookEnabled">PublishRunbookEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#publish_runbook_enabled AutomationSourceControl#publish_runbook_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.sourceControlType">SourceControlType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#source_control_type AutomationSourceControl#source_control_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.automaticSync">AutomaticSync</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#automatic_sync AutomationSourceControl#automatic_sync}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.branch">Branch</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#branch AutomationSourceControl#branch}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#description AutomationSourceControl#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#id AutomationSourceControl#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.publishRunbookEnabled">PublishRunbookEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#publish_runbook_enabled AutomationSourceControl#publish_runbook_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts">AutomationSourceControlTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1150,7 +1150,7 @@ public string AutomationAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#automation_account_id AutomationSourceControl#automation_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#automation_account_id AutomationSourceControl#automation_account_id}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public string FolderPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#folder_path AutomationSourceControl#folder_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#folder_path AutomationSourceControl#folder_path}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#name AutomationSourceControl#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#name AutomationSourceControl#name}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public string RepositoryUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#repository_url AutomationSourceControl#repository_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#repository_url AutomationSourceControl#repository_url}.
 
 ---
 
@@ -1200,7 +1200,7 @@ public AutomationSourceControlSecurity Security { get; set; }
 
 security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#security AutomationSourceControl#security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#security AutomationSourceControl#security}
 
 ---
 
@@ -1212,7 +1212,7 @@ public string SourceControlType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#source_control_type AutomationSourceControl#source_control_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#source_control_type AutomationSourceControl#source_control_type}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public bool|IResolvable AutomaticSync { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#automatic_sync AutomationSourceControl#automatic_sync}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#automatic_sync AutomationSourceControl#automatic_sync}.
 
 ---
 
@@ -1236,7 +1236,7 @@ public string Branch { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#branch AutomationSourceControl#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#branch AutomationSourceControl#branch}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#description AutomationSourceControl#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#description AutomationSourceControl#description}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#id AutomationSourceControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#id AutomationSourceControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1275,7 +1275,7 @@ public bool|IResolvable PublishRunbookEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#publish_runbook_enabled AutomationSourceControl#publish_runbook_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#publish_runbook_enabled AutomationSourceControl#publish_runbook_enabled}.
 
 ---
 
@@ -1289,7 +1289,7 @@ public AutomationSourceControlTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#timeouts AutomationSourceControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#timeouts AutomationSourceControl#timeouts}
 
 ---
 
@@ -1311,9 +1311,9 @@ new AutomationSourceControlSecurity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#token AutomationSourceControl#token}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.tokenType">TokenType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#token_type AutomationSourceControl#token_type}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.refreshToken">RefreshToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#refresh_token AutomationSourceControl#refresh_token}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#token AutomationSourceControl#token}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.tokenType">TokenType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#token_type AutomationSourceControl#token_type}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.property.refreshToken">RefreshToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#refresh_token AutomationSourceControl#refresh_token}. |
 
 ---
 
@@ -1325,7 +1325,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#token AutomationSourceControl#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#token AutomationSourceControl#token}.
 
 ---
 
@@ -1337,7 +1337,7 @@ public string TokenType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#token_type AutomationSourceControl#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#token_type AutomationSourceControl#token_type}.
 
 ---
 
@@ -1349,7 +1349,7 @@ public string RefreshToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#refresh_token AutomationSourceControl#refresh_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#refresh_token AutomationSourceControl#refresh_token}.
 
 ---
 
@@ -1372,10 +1372,10 @@ new AutomationSourceControlTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#create AutomationSourceControl#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#delete AutomationSourceControl#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#read AutomationSourceControl#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#update AutomationSourceControl#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#create AutomationSourceControl#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#delete AutomationSourceControl#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#read AutomationSourceControl#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#update AutomationSourceControl#update}. |
 
 ---
 
@@ -1387,7 +1387,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#create AutomationSourceControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#create AutomationSourceControl#create}.
 
 ---
 
@@ -1399,7 +1399,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#delete AutomationSourceControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#delete AutomationSourceControl#delete}.
 
 ---
 
@@ -1411,7 +1411,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#read AutomationSourceControl#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#read AutomationSourceControl#read}.
 
 ---
 
@@ -1423,7 +1423,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/automation_source_control#update AutomationSourceControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_source_control#update AutomationSourceControl#update}.
 
 ---
 

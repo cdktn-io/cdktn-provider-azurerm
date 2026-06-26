@@ -4,7 +4,7 @@
 
 ### ManagedRedis <a name="ManagedRedis" id="@cdktn/provider-azurerm.managedRedis.ManagedRedis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis azurerm_managed_redis}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis azurerm_managed_redis}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer"></a>
 
@@ -45,17 +45,17 @@ ManagedRedis.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#location ManagedRedis#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#location ManagedRedis#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.customerManagedKey">customerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey">ManagedRedisCustomerManagedKey</a></code> | customer_managed_key block. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.defaultDatabase">defaultDatabase</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase">ManagedRedisDefaultDatabase</a></code> | default_database block. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.highAvailabilityEnabled">highAvailabilityEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#id ManagedRedis#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.highAvailabilityEnabled">highAvailabilityEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#id ManagedRedis#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity">ManagedRedisIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.publicNetworkAccess">publicNetworkAccess</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#tags ManagedRedis#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.publicNetworkAccess">publicNetworkAccess</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#tags ManagedRedis#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedis.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts">ManagedRedisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#location ManagedRedis#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#location ManagedRedis#location}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#customer_managed_key ManagedRedis#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#customer_managed_key ManagedRedis#customer_managed_key}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#default_database ManagedRedis#default_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#default_database ManagedRedis#default_database}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#id ManagedRedis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#id ManagedRedis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -197,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#identity ManagedRedis#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#identity ManagedRedis#identity}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}.
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#tags ManagedRedis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#tags ManagedRedis#tags}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#timeouts ManagedRedis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#timeouts ManagedRedis#timeouts}
 
 ---
 
@@ -780,7 +780,7 @@ The construct id used in the generated config for the ManagedRedis to import.
 
 The id of the existing ManagedRedis that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1291,17 +1291,17 @@ ManagedRedisConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#location ManagedRedis#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#location ManagedRedis#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.customerManagedKey">customerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey">ManagedRedisCustomerManagedKey</a></code> | customer_managed_key block. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.defaultDatabase">defaultDatabase</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase">ManagedRedisDefaultDatabase</a></code> | default_database block. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.highAvailabilityEnabled">highAvailabilityEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#id ManagedRedis#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.highAvailabilityEnabled">highAvailabilityEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#id ManagedRedis#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity">ManagedRedisIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#tags ManagedRedis#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.publicNetworkAccess">publicNetworkAccess</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#tags ManagedRedis#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts">ManagedRedisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1384,7 +1384,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#location ManagedRedis#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#location ManagedRedis#location}.
 
 ---
 
@@ -1396,7 +1396,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}.
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#resource_group_name ManagedRedis#resource_group_name}.
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.lang.String getSkuName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#sku_name ManagedRedis#sku_name}.
 
 ---
 
@@ -1434,7 +1434,7 @@ public ManagedRedisCustomerManagedKey getCustomerManagedKey();
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#customer_managed_key ManagedRedis#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#customer_managed_key ManagedRedis#customer_managed_key}
 
 ---
 
@@ -1448,7 +1448,7 @@ public ManagedRedisDefaultDatabase getDefaultDatabase();
 
 default_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#default_database ManagedRedis#default_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#default_database ManagedRedis#default_database}
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.Boolean|IResolvable getHighAvailabilityEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#high_availability_enabled ManagedRedis#high_availability_enabled}.
 
 ---
 
@@ -1472,7 +1472,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#id ManagedRedis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#id ManagedRedis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1489,7 @@ public ManagedRedisIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#identity ManagedRedis#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#identity ManagedRedis#identity}
 
 ---
 
@@ -1501,7 +1501,7 @@ public java.lang.String getPublicNetworkAccess();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#public_network_access ManagedRedis#public_network_access}.
 
 ---
 
@@ -1513,7 +1513,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#tags ManagedRedis#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#tags ManagedRedis#tags}.
 
 ---
 
@@ -1527,7 +1527,7 @@ public ManagedRedisTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#timeouts ManagedRedis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#timeouts ManagedRedis#timeouts}
 
 ---
 
@@ -1548,8 +1548,8 @@ ManagedRedisCustomerManagedKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#key_vault_key_id ManagedRedis#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#user_assigned_identity_id ManagedRedis#user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#key_vault_key_id ManagedRedis#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#user_assigned_identity_id ManagedRedis#user_assigned_identity_id}. |
 
 ---
 
@@ -1561,7 +1561,7 @@ public java.lang.String getKeyVaultKeyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#key_vault_key_id ManagedRedis#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#key_vault_key_id ManagedRedis#key_vault_key_id}.
 
 ---
 
@@ -1573,7 +1573,7 @@ public java.lang.String getUserAssignedIdentityId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#user_assigned_identity_id ManagedRedis#user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#user_assigned_identity_id ManagedRedis#user_assigned_identity_id}.
 
 ---
 
@@ -1600,14 +1600,14 @@ ManagedRedisDefaultDatabase.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.accessKeysAuthenticationEnabled">accessKeysAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#access_keys_authentication_enabled ManagedRedis#access_keys_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.clientProtocol">clientProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#client_protocol ManagedRedis#client_protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.clusteringPolicy">clusteringPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#clustering_policy ManagedRedis#clustering_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.evictionPolicy">evictionPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#eviction_policy ManagedRedis#eviction_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.geoReplicationGroupName">geoReplicationGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#geo_replication_group_name ManagedRedis#geo_replication_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.accessKeysAuthenticationEnabled">accessKeysAuthenticationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#access_keys_authentication_enabled ManagedRedis#access_keys_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.clientProtocol">clientProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#client_protocol ManagedRedis#client_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.clusteringPolicy">clusteringPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#clustering_policy ManagedRedis#clustering_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.evictionPolicy">evictionPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#eviction_policy ManagedRedis#eviction_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.geoReplicationGroupName">geoReplicationGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#geo_replication_group_name ManagedRedis#geo_replication_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.module">module</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabaseModule">ManagedRedisDefaultDatabaseModule</a>></code> | module block. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.persistenceAppendOnlyFileBackupFrequency">persistenceAppendOnlyFileBackupFrequency</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#persistence_append_only_file_backup_frequency ManagedRedis#persistence_append_only_file_backup_frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.persistenceRedisDatabaseBackupFrequency">persistenceRedisDatabaseBackupFrequency</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#persistence_redis_database_backup_frequency ManagedRedis#persistence_redis_database_backup_frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.persistenceAppendOnlyFileBackupFrequency">persistenceAppendOnlyFileBackupFrequency</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#persistence_append_only_file_backup_frequency ManagedRedis#persistence_append_only_file_backup_frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabase.property.persistenceRedisDatabaseBackupFrequency">persistenceRedisDatabaseBackupFrequency</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#persistence_redis_database_backup_frequency ManagedRedis#persistence_redis_database_backup_frequency}. |
 
 ---
 
@@ -1619,7 +1619,7 @@ public java.lang.Boolean|IResolvable getAccessKeysAuthenticationEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#access_keys_authentication_enabled ManagedRedis#access_keys_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#access_keys_authentication_enabled ManagedRedis#access_keys_authentication_enabled}.
 
 ---
 
@@ -1631,7 +1631,7 @@ public java.lang.String getClientProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#client_protocol ManagedRedis#client_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#client_protocol ManagedRedis#client_protocol}.
 
 ---
 
@@ -1643,7 +1643,7 @@ public java.lang.String getClusteringPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#clustering_policy ManagedRedis#clustering_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#clustering_policy ManagedRedis#clustering_policy}.
 
 ---
 
@@ -1655,7 +1655,7 @@ public java.lang.String getEvictionPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#eviction_policy ManagedRedis#eviction_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#eviction_policy ManagedRedis#eviction_policy}.
 
 ---
 
@@ -1667,7 +1667,7 @@ public java.lang.String getGeoReplicationGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#geo_replication_group_name ManagedRedis#geo_replication_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#geo_replication_group_name ManagedRedis#geo_replication_group_name}.
 
 ---
 
@@ -1681,7 +1681,7 @@ public IResolvable|java.util.List<ManagedRedisDefaultDatabaseModule> getModule()
 
 module block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#module ManagedRedis#module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#module ManagedRedis#module}
 
 ---
 
@@ -1693,7 +1693,7 @@ public java.lang.String getPersistenceAppendOnlyFileBackupFrequency();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#persistence_append_only_file_backup_frequency ManagedRedis#persistence_append_only_file_backup_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#persistence_append_only_file_backup_frequency ManagedRedis#persistence_append_only_file_backup_frequency}.
 
 ---
 
@@ -1705,7 +1705,7 @@ public java.lang.String getPersistenceRedisDatabaseBackupFrequency();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#persistence_redis_database_backup_frequency ManagedRedis#persistence_redis_database_backup_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#persistence_redis_database_backup_frequency ManagedRedis#persistence_redis_database_backup_frequency}.
 
 ---
 
@@ -1726,8 +1726,8 @@ ManagedRedisDefaultDatabaseModule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabaseModule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabaseModule.property.args">args</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#args ManagedRedis#args}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabaseModule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisDefaultDatabaseModule.property.args">args</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#args ManagedRedis#args}. |
 
 ---
 
@@ -1739,7 +1739,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#name ManagedRedis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#name ManagedRedis#name}.
 
 ---
 
@@ -1751,7 +1751,7 @@ public java.lang.String getArgs();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#args ManagedRedis#args}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#args ManagedRedis#args}.
 
 ---
 
@@ -1772,8 +1772,8 @@ ManagedRedisIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#type ManagedRedis#type}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#identity_ids ManagedRedis#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#type ManagedRedis#type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#identity_ids ManagedRedis#identity_ids}. |
 
 ---
 
@@ -1785,7 +1785,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#type ManagedRedis#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#type ManagedRedis#type}.
 
 ---
 
@@ -1797,7 +1797,7 @@ public java.util.List<java.lang.String> getIdentityIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#identity_ids ManagedRedis#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#identity_ids ManagedRedis#identity_ids}.
 
 ---
 
@@ -1820,10 +1820,10 @@ ManagedRedisTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#create ManagedRedis#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#delete ManagedRedis#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#read ManagedRedis#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#update ManagedRedis#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#create ManagedRedis#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#delete ManagedRedis#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#read ManagedRedis#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedis.ManagedRedisTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#update ManagedRedis#update}. |
 
 ---
 
@@ -1835,7 +1835,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#create ManagedRedis#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#create ManagedRedis#create}.
 
 ---
 
@@ -1847,7 +1847,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#delete ManagedRedis#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#delete ManagedRedis#delete}.
 
 ---
 
@@ -1859,7 +1859,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#read ManagedRedis#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#read ManagedRedis#read}.
 
 ---
 
@@ -1871,7 +1871,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis#update ManagedRedis#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis#update ManagedRedis#update}.
 
 ---
 

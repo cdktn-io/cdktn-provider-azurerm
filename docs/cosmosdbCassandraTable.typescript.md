@@ -4,7 +4,7 @@
 
 ### CosmosdbCassandraTable <a name="CosmosdbCassandraTable" id="@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table azurerm_cosmosdb_cassandra_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTable.Initializer"></a>
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the CosmosdbCassandraTable to 
 
 The id of the existing CosmosdbCassandraTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,7 +977,7 @@ const cosmosdbCassandraTableAutoscaleSettings: cosmosdbCassandraTable.CosmosdbCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableAutoscaleSettings.property.maxThroughput">maxThroughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#max_throughput CosmosdbCassandraTable#max_throughput}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableAutoscaleSettings.property.maxThroughput">maxThroughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#max_throughput CosmosdbCassandraTable#max_throughput}. |
 
 ---
 
@@ -989,7 +989,7 @@ public readonly maxThroughput: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#max_throughput CosmosdbCassandraTable#max_throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#max_throughput CosmosdbCassandraTable#max_throughput}.
 
 ---
 
@@ -1014,14 +1014,14 @@ const cosmosdbCassandraTableConfig: cosmosdbCassandraTable.CosmosdbCassandraTabl
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.cassandraKeyspaceId">cassandraKeyspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#cassandra_keyspace_id CosmosdbCassandraTable#cassandra_keyspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.cassandraKeyspaceId">cassandraKeyspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#cassandra_keyspace_id CosmosdbCassandraTable#cassandra_keyspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.schema">schema</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchema">CosmosdbCassandraTableSchema</a></code> | schema block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.analyticalStorageTtl">analyticalStorageTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#analytical_storage_ttl CosmosdbCassandraTable#analytical_storage_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.analyticalStorageTtl">analyticalStorageTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#analytical_storage_ttl CosmosdbCassandraTable#analytical_storage_ttl}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.autoscaleSettings">autoscaleSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableAutoscaleSettings">CosmosdbCassandraTableAutoscaleSettings</a></code> | autoscale_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.defaultTtl">defaultTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#default_ttl CosmosdbCassandraTable#default_ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#id CosmosdbCassandraTable#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.throughput">throughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#throughput CosmosdbCassandraTable#throughput}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.defaultTtl">defaultTtl</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#default_ttl CosmosdbCassandraTable#default_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#id CosmosdbCassandraTable#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.throughput">throughput</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#throughput CosmosdbCassandraTable#throughput}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts">CosmosdbCassandraTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1104,7 +1104,7 @@ public readonly cassandraKeyspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#cassandra_keyspace_id CosmosdbCassandraTable#cassandra_keyspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#cassandra_keyspace_id CosmosdbCassandraTable#cassandra_keyspace_id}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly schema: CosmosdbCassandraTableSchema;
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#schema CosmosdbCassandraTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#schema CosmosdbCassandraTable#schema}
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly analyticalStorageTtl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#analytical_storage_ttl CosmosdbCassandraTable#analytical_storage_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#analytical_storage_ttl CosmosdbCassandraTable#analytical_storage_ttl}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly autoscaleSettings: CosmosdbCassandraTableAutoscaleSettings;
 
 autoscale_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#autoscale_settings CosmosdbCassandraTable#autoscale_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#autoscale_settings CosmosdbCassandraTable#autoscale_settings}
 
 ---
 
@@ -1168,7 +1168,7 @@ public readonly defaultTtl: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#default_ttl CosmosdbCassandraTable#default_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#default_ttl CosmosdbCassandraTable#default_ttl}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#id CosmosdbCassandraTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#id CosmosdbCassandraTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1195,7 +1195,7 @@ public readonly throughput: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#throughput CosmosdbCassandraTable#throughput}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#throughput CosmosdbCassandraTable#throughput}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly timeouts: CosmosdbCassandraTableTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#timeouts CosmosdbCassandraTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#timeouts CosmosdbCassandraTable#timeouts}
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly column: IResolvable | CosmosdbCassandraTableSchemaColumn[];
 
 column block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#column CosmosdbCassandraTable#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#column CosmosdbCassandraTable#column}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly partitionKey: IResolvable | CosmosdbCassandraTableSchemaPartitio
 
 partition_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#partition_key CosmosdbCassandraTable#partition_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#partition_key CosmosdbCassandraTable#partition_key}
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly clusterKey: IResolvable | CosmosdbCassandraTableSchemaClusterKey
 
 cluster_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#cluster_key CosmosdbCassandraTable#cluster_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#cluster_key CosmosdbCassandraTable#cluster_key}
 
 ---
 
@@ -1289,8 +1289,8 @@ const cosmosdbCassandraTableSchemaClusterKey: cosmosdbCassandraTable.CosmosdbCas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaClusterKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaClusterKey.property.orderBy">orderBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#order_by CosmosdbCassandraTable#order_by}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaClusterKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaClusterKey.property.orderBy">orderBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#order_by CosmosdbCassandraTable#order_by}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public readonly orderBy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#order_by CosmosdbCassandraTable#order_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#order_by CosmosdbCassandraTable#order_by}.
 
 ---
 
@@ -1332,8 +1332,8 @@ const cosmosdbCassandraTableSchemaColumn: cosmosdbCassandraTable.CosmosdbCassand
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaColumn.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaColumn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaColumn.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaColumn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}. |
 
 ---
 
@@ -1345,7 +1345,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 
 ---
 
@@ -1357,7 +1357,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#type CosmosdbCassandraTable#type}.
 
 ---
 
@@ -1375,7 +1375,7 @@ const cosmosdbCassandraTableSchemaPartitionKey: cosmosdbCassandraTable.CosmosdbC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaPartitionKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableSchemaPartitionKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}. |
 
 ---
 
@@ -1387,7 +1387,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#name CosmosdbCassandraTable#name}.
 
 ---
 
@@ -1405,10 +1405,10 @@ const cosmosdbCassandraTableTimeouts: cosmosdbCassandraTable.CosmosdbCassandraTa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#create CosmosdbCassandraTable#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#delete CosmosdbCassandraTable#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#read CosmosdbCassandraTable#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#update CosmosdbCassandraTable#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#create CosmosdbCassandraTable#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#delete CosmosdbCassandraTable#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#read CosmosdbCassandraTable#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbCassandraTable.CosmosdbCassandraTableTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#update CosmosdbCassandraTable#update}. |
 
 ---
 
@@ -1420,7 +1420,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#create CosmosdbCassandraTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#create CosmosdbCassandraTable#create}.
 
 ---
 
@@ -1432,7 +1432,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#delete CosmosdbCassandraTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#delete CosmosdbCassandraTable#delete}.
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#read CosmosdbCassandraTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#read CosmosdbCassandraTable#read}.
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/cosmosdb_cassandra_table#update CosmosdbCassandraTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/cosmosdb_cassandra_table#update CosmosdbCassandraTable#update}.
 
 ---
 

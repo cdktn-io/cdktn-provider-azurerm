@@ -4,7 +4,7 @@
 
 ### ManagedDevopsPool <a name="ManagedDevopsPool" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.Initializer"></a>
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the ManagedDevopsPool to impor
 
 The id of the existing ManagedDevopsPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1151,7 +1151,7 @@ public IResolvable|ManagedDevopsPoolAzureDevopsOrganizationOrganization[] Organi
 
 organization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
 
 ---
 
@@ -1165,7 +1165,7 @@ public ManagedDevopsPoolAzureDevopsOrganizationPermission Permission { get; set;
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
 
 ---
 
@@ -1187,9 +1187,9 @@ new ManagedDevopsPoolAzureDevopsOrganizationOrganization {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.parallelism">Parallelism</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.projects">Projects</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.parallelism">Parallelism</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.projects">Projects</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public double Parallelism { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public string[] Projects { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}.
 
 ---
 
@@ -1246,7 +1246,7 @@ new ManagedDevopsPoolAzureDevopsOrganizationPermission {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.kind">Kind</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.administratorAccount">AdministratorAccount</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount">ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount</a></code> | administrator_account block. |
 
 ---
@@ -1259,7 +1259,7 @@ public string Kind { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}.
 
 ---
 
@@ -1273,7 +1273,7 @@ public ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount Ad
 
 administrator_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
 
 ---
 
@@ -1294,8 +1294,8 @@ new ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.groups">Groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.users">Users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.groups">Groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.users">Users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ public string[] Groups { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}.
 
 ---
 
@@ -1319,7 +1319,7 @@ public string[] Users { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}.
 
 ---
 
@@ -1367,19 +1367,19 @@ new ManagedDevopsPoolConfig {
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.azureDevopsOrganization">AzureDevopsOrganization</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization">ManagedDevopsPoolAzureDevopsOrganization</a></code> | azure_devops_organization block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.devCenterProjectId">DevCenterProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.devCenterProjectId">DevCenterProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.virtualMachineScaleSetFabric">VirtualMachineScaleSetFabric</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric">ManagedDevopsPoolVirtualMachineScaleSetFabric</a></code> | virtual_machine_scale_set_fabric block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity">ManagedDevopsPoolIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.statefulAgent">StatefulAgent</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent">ManagedDevopsPoolStatefulAgent</a></code> | stateful_agent block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.statelessAgent">StatelessAgent</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgent">ManagedDevopsPoolStatelessAgent</a></code> | stateless_agent block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts">ManagedDevopsPoolTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.workFolder">WorkFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.workFolder">WorkFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ public ManagedDevopsPoolAzureDevopsOrganization AzureDevopsOrganization { get; s
 
 azure_devops_organization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
 
 ---
 
@@ -1475,7 +1475,7 @@ public string DevCenterProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}.
 
 ---
 
@@ -1499,7 +1499,7 @@ public double MaximumConcurrency { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}.
 
 ---
 
@@ -1511,7 +1511,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}.
 
 ---
 
@@ -1523,7 +1523,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}.
 
 ---
 
@@ -1537,7 +1537,7 @@ public ManagedDevopsPoolVirtualMachineScaleSetFabric VirtualMachineScaleSetFabri
 
 virtual_machine_scale_set_fabric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
 
 ---
 
@@ -1549,7 +1549,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1566,7 +1566,7 @@ public ManagedDevopsPoolIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
 
 ---
 
@@ -1580,7 +1580,7 @@ public ManagedDevopsPoolStatefulAgent StatefulAgent { get; set; }
 
 stateful_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
 
 ---
 
@@ -1594,7 +1594,7 @@ public ManagedDevopsPoolStatelessAgent StatelessAgent { get; set; }
 
 stateless_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
 
 ---
 
@@ -1606,7 +1606,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}.
 
 ---
 
@@ -1620,7 +1620,7 @@ public ManagedDevopsPoolTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
 
 ---
 
@@ -1632,7 +1632,7 @@ public string WorkFolder { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}.
 
 ---
 
@@ -1653,8 +1653,8 @@ new ManagedDevopsPoolIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}. |
 
 ---
 
@@ -1666,7 +1666,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}.
 
 ---
 
@@ -1678,7 +1678,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}.
 
 ---
 
@@ -1702,9 +1702,9 @@ new ManagedDevopsPoolStatefulAgent {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.automaticResourcePrediction">AutomaticResourcePrediction</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction">ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction</a></code> | automatic_resource_prediction block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.gracePeriodTimeSpan">GracePeriodTimeSpan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.gracePeriodTimeSpan">GracePeriodTimeSpan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.manualResourcePrediction">ManualResourcePrediction</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction">ManagedDevopsPoolStatefulAgentManualResourcePrediction</a></code> | manual_resource_prediction block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.maximumAgentLifetime">MaximumAgentLifetime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.maximumAgentLifetime">MaximumAgentLifetime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}. |
 
 ---
 
@@ -1718,7 +1718,7 @@ public ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction AutomaticResour
 
 automatic_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
 
 ---
 
@@ -1730,7 +1730,7 @@ public string GracePeriodTimeSpan { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}.
 
 ---
 
@@ -1744,7 +1744,7 @@ public ManagedDevopsPoolStatefulAgentManualResourcePrediction ManualResourcePred
 
 manual_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
 
 ---
 
@@ -1756,7 +1756,7 @@ public string MaximumAgentLifetime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}.
 
 ---
 
@@ -1776,7 +1776,7 @@ new ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
 
 ---
 
@@ -1788,7 +1788,7 @@ public string PredictionPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
 
 ---
 
@@ -1816,13 +1816,13 @@ new ManagedDevopsPoolStatefulAgentManualResourcePrediction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.fridaySchedule">FridaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule</a>[]</code> | friday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.mondaySchedule">MondaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule</a>[]</code> | monday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.saturdaySchedule">SaturdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule</a>[]</code> | saturday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.sundaySchedule">SundaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule</a>[]</code> | sunday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.thursdaySchedule">ThursdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule</a>[]</code> | thursday_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.tuesdaySchedule">TuesdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule</a>[]</code> | tuesday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.wednesdaySchedule">WednesdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule">ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule</a>[]</code> | wednesday_schedule block. |
 
@@ -1836,7 +1836,7 @@ public double AllWeekSchedule { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
 
 ---
 
@@ -1850,7 +1850,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayS
 
 friday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
 
 ---
 
@@ -1864,7 +1864,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayS
 
 monday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
 
 ---
 
@@ -1878,7 +1878,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturda
 
 saturday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
 
 ---
 
@@ -1892,7 +1892,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayS
 
 sunday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
 
 ---
 
@@ -1906,7 +1906,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionThursda
 
 thursday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
 
 ---
 
@@ -1918,7 +1918,7 @@ public string TimeZoneName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
 
 ---
 
@@ -1932,7 +1932,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesday
 
 tuesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
 
 ---
 
@@ -1946,7 +1946,7 @@ public IResolvable|ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesd
 
 wednesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
 
 ---
 
@@ -1967,8 +1967,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -1980,7 +1980,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -1992,7 +1992,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2013,8 +2013,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2026,7 +2026,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2038,7 +2038,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2059,8 +2059,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2072,7 +2072,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2084,7 +2084,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2105,8 +2105,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2118,7 +2118,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2130,7 +2130,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2151,8 +2151,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2164,7 +2164,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2176,7 +2176,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2197,8 +2197,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2210,7 +2210,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2222,7 +2222,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2243,8 +2243,8 @@ new ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2256,7 +2256,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2268,7 +2268,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2304,7 +2304,7 @@ public ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction AutomaticResou
 
 automatic_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
 
 ---
 
@@ -2318,7 +2318,7 @@ public ManagedDevopsPoolStatelessAgentManualResourcePrediction ManualResourcePre
 
 manual_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
 
 ---
 
@@ -2338,7 +2338,7 @@ new ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
 
 ---
 
@@ -2350,7 +2350,7 @@ public string PredictionPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
 
 ---
 
@@ -2378,13 +2378,13 @@ new ManagedDevopsPoolStatelessAgentManualResourcePrediction {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.fridaySchedule">FridaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule</a>[]</code> | friday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.mondaySchedule">MondaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule</a>[]</code> | monday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.saturdaySchedule">SaturdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule</a>[]</code> | saturday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.sundaySchedule">SundaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule</a>[]</code> | sunday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.thursdaySchedule">ThursdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule</a>[]</code> | thursday_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.tuesdaySchedule">TuesdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule</a>[]</code> | tuesday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.wednesdaySchedule">WednesdaySchedule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule">ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule</a>[]</code> | wednesday_schedule block. |
 
@@ -2398,7 +2398,7 @@ public double AllWeekSchedule { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
 
 ---
 
@@ -2412,7 +2412,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionFriday
 
 friday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
 
 ---
 
@@ -2426,7 +2426,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionMonday
 
 monday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
 
 ---
 
@@ -2440,7 +2440,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturd
 
 saturday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
 
 ---
 
@@ -2454,7 +2454,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionSunday
 
 sunday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
 
 ---
 
@@ -2468,7 +2468,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionThursd
 
 thursday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
 
 ---
 
@@ -2480,7 +2480,7 @@ public string TimeZoneName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
 
 ---
 
@@ -2494,7 +2494,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesda
 
 tuesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
 
 ---
 
@@ -2508,7 +2508,7 @@ public IResolvable|ManagedDevopsPoolStatelessAgentManualResourcePredictionWednes
 
 wednesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
 
 ---
 
@@ -2529,8 +2529,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2542,7 +2542,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2554,7 +2554,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2575,8 +2575,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2588,7 +2588,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2600,7 +2600,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2621,8 +2621,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2634,7 +2634,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2646,7 +2646,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2667,8 +2667,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2680,7 +2680,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2692,7 +2692,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2713,8 +2713,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2726,7 +2726,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2738,7 +2738,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2759,8 +2759,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2772,7 +2772,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2784,7 +2784,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2805,8 +2805,8 @@ new ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2818,7 +2818,7 @@ public double Count { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2830,7 +2830,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2853,10 +2853,10 @@ new ManagedDevopsPoolTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}. |
 
 ---
 
@@ -2868,7 +2868,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}.
 
 ---
 
@@ -2880,7 +2880,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}.
 
 ---
 
@@ -2892,7 +2892,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}.
 
 ---
 
@@ -2904,7 +2904,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}.
 
 ---
 
@@ -2930,11 +2930,11 @@ new ManagedDevopsPoolVirtualMachineScaleSetFabric {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.image">Image</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage">ManagedDevopsPoolVirtualMachineScaleSetFabricImage</a>[]</code> | image block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.skuName">SkuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.osDiskStorageAccountType">OsDiskStorageAccountType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.skuName">SkuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.osDiskStorageAccountType">OsDiskStorageAccountType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.security">Security</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity">ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity</a></code> | security block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.storage">Storage</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage">ManagedDevopsPoolVirtualMachineScaleSetFabricStorage</a></code> | storage block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}. |
 
 ---
 
@@ -2948,7 +2948,7 @@ public IResolvable|ManagedDevopsPoolVirtualMachineScaleSetFabricImage[] Image { 
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
 
 ---
 
@@ -2960,7 +2960,7 @@ public string SkuName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}.
 
 ---
 
@@ -2972,7 +2972,7 @@ public string OsDiskStorageAccountType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}.
 
 ---
 
@@ -2986,7 +2986,7 @@ public ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity Security { get; set
 
 security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
 
 ---
 
@@ -3000,7 +3000,7 @@ public ManagedDevopsPoolVirtualMachineScaleSetFabricStorage Storage { get; set; 
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
 
 ---
 
@@ -3012,7 +3012,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}.
 
 ---
 
@@ -3035,10 +3035,10 @@ new ManagedDevopsPoolVirtualMachineScaleSetFabricImage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.aliases">Aliases</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.buffer">Buffer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.wellKnownImageName">WellKnownImageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.aliases">Aliases</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.buffer">Buffer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.wellKnownImageName">WellKnownImageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}. |
 
 ---
 
@@ -3050,7 +3050,7 @@ public string[] Aliases { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}.
 
 ---
 
@@ -3062,7 +3062,7 @@ public string Buffer { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}.
 
 ---
 
@@ -3074,7 +3074,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3089,7 +3089,7 @@ public string WellKnownImageName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}.
 
 ---
 
@@ -3110,7 +3110,7 @@ new ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.interactiveLogonEnabled">InteractiveLogonEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.interactiveLogonEnabled">InteractiveLogonEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.keyVaultManagement">KeyVaultManagement</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement">ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement</a></code> | key_vault_management block. |
 
 ---
@@ -3123,7 +3123,7 @@ public bool|IResolvable InteractiveLogonEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}.
 
 ---
 
@@ -3137,7 +3137,7 @@ public ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement K
 
 key_vault_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
 
 ---
 
@@ -3160,10 +3160,10 @@ new ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyVaultCertificateIds">KeyVaultCertificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreLocation">CertificateStoreLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreName">CertificateStoreName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyExportEnabled">KeyExportEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyVaultCertificateIds">KeyVaultCertificateIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreLocation">CertificateStoreLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreName">CertificateStoreName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyExportEnabled">KeyExportEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}. |
 
 ---
 
@@ -3175,7 +3175,7 @@ public string[] KeyVaultCertificateIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}.
 
 ---
 
@@ -3187,7 +3187,7 @@ public string CertificateStoreLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}.
 
 ---
 
@@ -3199,7 +3199,7 @@ public string CertificateStoreName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}.
 
 ---
 
@@ -3211,7 +3211,7 @@ public bool|IResolvable KeyExportEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}.
 
 ---
 
@@ -3234,10 +3234,10 @@ new ManagedDevopsPoolVirtualMachineScaleSetFabricStorage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.diskSizeInGb">DiskSizeInGb</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.caching">Caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.driveLetter">DriveLetter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.storageAccountType">StorageAccountType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.diskSizeInGb">DiskSizeInGb</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.caching">Caching</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.driveLetter">DriveLetter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.storageAccountType">StorageAccountType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}. |
 
 ---
 
@@ -3249,7 +3249,7 @@ public double DiskSizeInGb { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}.
 
 ---
 
@@ -3261,7 +3261,7 @@ public string Caching { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}.
 
 ---
 
@@ -3273,7 +3273,7 @@ public string DriveLetter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}.
 
 ---
 
@@ -3285,7 +3285,7 @@ public string StorageAccountType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}.
 
 ---
 

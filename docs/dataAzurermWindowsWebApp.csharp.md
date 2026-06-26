@@ -4,7 +4,7 @@
 
 ### DataAzurermWindowsWebApp <a name="DataAzurermWindowsWebApp" id="@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app azurerm_windows_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app azurerm_windows_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebApp.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermWindowsWebApp t
 
 The id of the existing DataAzurermWindowsWebApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1331,9 +1331,9 @@ new DataAzurermWindowsWebAppConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#name DataAzurermWindowsWebApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#resource_group_name DataAzurermWindowsWebApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#id DataAzurermWindowsWebApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#name DataAzurermWindowsWebApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#resource_group_name DataAzurermWindowsWebApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#id DataAzurermWindowsWebApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppTimeouts">DataAzurermWindowsWebAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1416,7 +1416,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#name DataAzurermWindowsWebApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#name DataAzurermWindowsWebApp#name}.
 
 ---
 
@@ -1428,7 +1428,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#resource_group_name DataAzurermWindowsWebApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#resource_group_name DataAzurermWindowsWebApp#resource_group_name}.
 
 ---
 
@@ -1440,7 +1440,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#id DataAzurermWindowsWebApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#id DataAzurermWindowsWebApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1457,7 +1457,7 @@ public DataAzurermWindowsWebAppTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#timeouts DataAzurermWindowsWebApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#timeouts DataAzurermWindowsWebApp#timeouts}
 
 ---
 
@@ -1854,7 +1854,7 @@ new DataAzurermWindowsWebAppTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#read DataAzurermWindowsWebApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermWindowsWebApp.DataAzurermWindowsWebAppTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#read DataAzurermWindowsWebApp#read}. |
 
 ---
 
@@ -1866,7 +1866,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/windows_web_app#read DataAzurermWindowsWebApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/windows_web_app#read DataAzurermWindowsWebApp#read}.
 
 ---
 

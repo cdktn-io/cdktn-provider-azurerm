@@ -4,7 +4,7 @@
 
 ### ResourceProviderFeatureRegistration <a name="ResourceProviderFeatureRegistration" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration azurerm_resource_provider_feature_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration azurerm_resource_provider_feature_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ResourceProviderFeatureReg
 
 The id of the existing ResourceProviderFeatureRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,9 +832,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceprovid
 | <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#name ResourceProviderFeatureRegistration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#provider_name ResourceProviderFeatureRegistration#provider_name}. |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#id ResourceProviderFeatureRegistration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#name ResourceProviderFeatureRegistration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#provider_name ResourceProviderFeatureRegistration#provider_name}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#id ResourceProviderFeatureRegistration#id}. |
 | <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts">ResourceProviderFeatureRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -917,7 +917,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#name ResourceProviderFeatureRegistration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#name ResourceProviderFeatureRegistration#name}.
 
 ---
 
@@ -929,7 +929,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#provider_name ResourceProviderFeatureRegistration#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#provider_name ResourceProviderFeatureRegistration#provider_name}.
 
 ---
 
@@ -941,7 +941,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#id ResourceProviderFeatureRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#id ResourceProviderFeatureRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -958,7 +958,7 @@ Timeouts ResourceProviderFeatureRegistrationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#timeouts ResourceProviderFeatureRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#timeouts ResourceProviderFeatureRegistration#timeouts}
 
 ---
 
@@ -980,9 +980,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceprovid
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#create ResourceProviderFeatureRegistration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#delete ResourceProviderFeatureRegistration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#read ResourceProviderFeatureRegistration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#create ResourceProviderFeatureRegistration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#delete ResourceProviderFeatureRegistration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#read ResourceProviderFeatureRegistration#read}. |
 
 ---
 
@@ -994,7 +994,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#create ResourceProviderFeatureRegistration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#create ResourceProviderFeatureRegistration#create}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#delete ResourceProviderFeatureRegistration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#delete ResourceProviderFeatureRegistration#delete}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/resource_provider_feature_registration#read ResourceProviderFeatureRegistration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/resource_provider_feature_registration#read ResourceProviderFeatureRegistration#read}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAzurermTrustedSigningAccount <a name="DataAzurermTrustedSigningAccount" id="@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account azurerm_trusted_signing_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account azurerm_trusted_signing_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccount.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermTrustedSigningA
 
 The id of the existing DataAzurermTrustedSigningAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,9 +740,9 @@ const dataAzurermTrustedSigningAccountConfig: dataAzurermTrustedSigningAccount.D
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#name DataAzurermTrustedSigningAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#resource_group_name DataAzurermTrustedSigningAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#id DataAzurermTrustedSigningAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#name DataAzurermTrustedSigningAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#resource_group_name DataAzurermTrustedSigningAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#id DataAzurermTrustedSigningAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountTimeouts">DataAzurermTrustedSigningAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -825,7 +825,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#name DataAzurermTrustedSigningAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#name DataAzurermTrustedSigningAccount#name}.
 
 ---
 
@@ -837,7 +837,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#resource_group_name DataAzurermTrustedSigningAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#resource_group_name DataAzurermTrustedSigningAccount#resource_group_name}.
 
 ---
 
@@ -849,7 +849,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#id DataAzurermTrustedSigningAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#id DataAzurermTrustedSigningAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ public readonly timeouts: DataAzurermTrustedSigningAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#timeouts DataAzurermTrustedSigningAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#timeouts DataAzurermTrustedSigningAccount#timeouts}
 
 ---
 
@@ -884,7 +884,7 @@ const dataAzurermTrustedSigningAccountTimeouts: dataAzurermTrustedSigningAccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#read DataAzurermTrustedSigningAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermTrustedSigningAccount.DataAzurermTrustedSigningAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#read DataAzurermTrustedSigningAccount#read}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/trusted_signing_account#read DataAzurermTrustedSigningAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/trusted_signing_account#read DataAzurermTrustedSigningAccount#read}.
 
 ---
 

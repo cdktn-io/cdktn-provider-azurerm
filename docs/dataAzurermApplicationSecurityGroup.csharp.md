@@ -4,7 +4,7 @@
 
 ### DataAzurermApplicationSecurityGroup <a name="DataAzurermApplicationSecurityGroup" id="@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group azurerm_application_security_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group azurerm_application_security_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroup.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermApplicationSecu
 
 The id of the existing DataAzurermApplicationSecurityGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,9 +730,9 @@ new DataAzurermApplicationSecurityGroupConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#name DataAzurermApplicationSecurityGroup#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#resource_group_name DataAzurermApplicationSecurityGroup#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#id DataAzurermApplicationSecurityGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#name DataAzurermApplicationSecurityGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#resource_group_name DataAzurermApplicationSecurityGroup#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#id DataAzurermApplicationSecurityGroup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupTimeouts">DataAzurermApplicationSecurityGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -815,7 +815,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#name DataAzurermApplicationSecurityGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#name DataAzurermApplicationSecurityGroup#name}.
 
 ---
 
@@ -827,7 +827,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#resource_group_name DataAzurermApplicationSecurityGroup#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#resource_group_name DataAzurermApplicationSecurityGroup#resource_group_name}.
 
 ---
 
@@ -839,7 +839,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#id DataAzurermApplicationSecurityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#id DataAzurermApplicationSecurityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ public DataAzurermApplicationSecurityGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#timeouts DataAzurermApplicationSecurityGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#timeouts DataAzurermApplicationSecurityGroup#timeouts}
 
 ---
 
@@ -876,7 +876,7 @@ new DataAzurermApplicationSecurityGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationSecurityGroup.DataAzurermApplicationSecurityGroupTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}. |
 
 ---
 
@@ -888,7 +888,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/application_security_group#read DataAzurermApplicationSecurityGroup#read}.
 
 ---
 

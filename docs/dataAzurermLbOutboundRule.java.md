@@ -4,7 +4,7 @@
 
 ### DataAzurermLbOutboundRule <a name="DataAzurermLbOutboundRule" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule azurerm_lb_outbound_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule azurerm_lb_outbound_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer"></a>
 
@@ -37,9 +37,9 @@ DataAzurermLbOutboundRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts">DataAzurermLbOutboundRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#timeouts DataAzurermLbOutboundRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#timeouts DataAzurermLbOutboundRule#timeouts}
 
 ---
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DataAzurermLbOutboundRule 
 
 The id of the existing DataAzurermLbOutboundRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,9 +880,9 @@ DataAzurermLbOutboundRuleConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts">DataAzurermLbOutboundRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -965,7 +965,7 @@ public java.lang.String getLoadbalancerId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#loadbalancer_id DataAzurermLbOutboundRule#loadbalancer_id}.
 
 ---
 
@@ -977,7 +977,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#name DataAzurermLbOutboundRule#name}.
 
 ---
 
@@ -989,7 +989,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#id DataAzurermLbOutboundRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ public DataAzurermLbOutboundRuleTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#timeouts DataAzurermLbOutboundRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#timeouts DataAzurermLbOutboundRule#timeouts}
 
 ---
 
@@ -1038,7 +1038,7 @@ DataAzurermLbOutboundRuleTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#read DataAzurermLbOutboundRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#read DataAzurermLbOutboundRule#read}. |
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/data-sources/lb_outbound_rule#read DataAzurermLbOutboundRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/lb_outbound_rule#read DataAzurermLbOutboundRule#read}.
 
 ---
 

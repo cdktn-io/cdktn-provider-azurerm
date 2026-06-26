@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktn from 'cdktn';
 
 export interface StorageTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#id StorageTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#id StorageTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#name StorageTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#name StorageTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}
   */
   readonly storageAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#storage_account_name StorageTable#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#storage_account_name StorageTable#storage_account_name}
   */
   readonly storageAccountName?: string;
   /**
   * acl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#acl StorageTable#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#acl StorageTable#acl}
   */
   readonly acl?: StorageTableAcl[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#timeouts StorageTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#timeouts StorageTable#timeouts}
   */
   readonly timeouts?: StorageTableTimeouts;
 }
 export interface StorageTableAclAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#expiry StorageTable#expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#expiry StorageTable#expiry}
   */
   readonly expiry: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#permissions StorageTable#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#permissions StorageTable#permissions}
   */
   readonly permissions: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#start StorageTable#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#start StorageTable#start}
   */
   readonly start: string;
 }
@@ -219,7 +219,7 @@ export class StorageTableAclAccessPolicyList extends cdktn.ComplexList {
 }
 export interface StorageTableAcl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#id StorageTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#id StorageTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -228,7 +228,7 @@ export interface StorageTableAcl {
   /**
   * access_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#access_policy StorageTable#access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#access_policy StorageTable#access_policy}
   */
   readonly accessPolicy?: StorageTableAclAccessPolicy[] | cdktn.IResolvable;
 }
@@ -370,19 +370,19 @@ export class StorageTableAclList extends cdktn.ComplexList {
 }
 export interface StorageTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#create StorageTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#create StorageTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#delete StorageTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#delete StorageTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#read StorageTable#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#read StorageTable#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#update StorageTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#update StorageTable#update}
   */
   readonly update?: string;
 }
@@ -563,7 +563,7 @@ export class StorageTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table azurerm_storage_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table azurerm_storage_table}
 */
 export class StorageTable extends cdktn.TerraformResource {
 
@@ -579,7 +579,7 @@ export class StorageTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageTable to import
-  * @param importFromId The id of the existing StorageTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -591,7 +591,7 @@ export class StorageTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/storage_table azurerm_storage_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/storage_table azurerm_storage_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -602,7 +602,7 @@ export class StorageTable extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_table',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.78.0',
+        providerVersion: '4.79.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

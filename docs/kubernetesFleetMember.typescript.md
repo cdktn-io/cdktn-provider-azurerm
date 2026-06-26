@@ -4,7 +4,7 @@
 
 ### KubernetesFleetMember <a name="KubernetesFleetMember" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member azurerm_kubernetes_fleet_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the KubernetesFleetMember to i
 
 The id of the existing KubernetesFleetMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,11 +871,11 @@ const kubernetesFleetMemberConfig: kubernetesFleetMember.KubernetesFleetMemberCo
 | <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.kubernetesClusterId">kubernetesClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#kubernetes_cluster_id KubernetesFleetMember#kubernetes_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.kubernetesFleetId">kubernetesFleetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#kubernetes_fleet_id KubernetesFleetMember#kubernetes_fleet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#name KubernetesFleetMember#name}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#group KubernetesFleetMember#group}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#id KubernetesFleetMember#id}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.kubernetesClusterId">kubernetesClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#kubernetes_cluster_id KubernetesFleetMember#kubernetes_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.kubernetesFleetId">kubernetesFleetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#kubernetes_fleet_id KubernetesFleetMember#kubernetes_fleet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#name KubernetesFleetMember#name}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#group KubernetesFleetMember#group}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#id KubernetesFleetMember#id}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts">KubernetesFleetMemberTimeouts</a></code> | timeouts block. |
 
 ---
@@ -958,7 +958,7 @@ public readonly kubernetesClusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#kubernetes_cluster_id KubernetesFleetMember#kubernetes_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#kubernetes_cluster_id KubernetesFleetMember#kubernetes_cluster_id}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly kubernetesFleetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#kubernetes_fleet_id KubernetesFleetMember#kubernetes_fleet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#kubernetes_fleet_id KubernetesFleetMember#kubernetes_fleet_id}.
 
 ---
 
@@ -982,7 +982,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#name KubernetesFleetMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#name KubernetesFleetMember#name}.
 
 ---
 
@@ -994,7 +994,7 @@ public readonly group: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#group KubernetesFleetMember#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#group KubernetesFleetMember#group}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#id KubernetesFleetMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#id KubernetesFleetMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ public readonly timeouts: KubernetesFleetMemberTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#timeouts KubernetesFleetMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#timeouts KubernetesFleetMember#timeouts}
 
 ---
 
@@ -1041,10 +1041,10 @@ const kubernetesFleetMemberTimeouts: kubernetesFleetMember.KubernetesFleetMember
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#create KubernetesFleetMember#create}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#delete KubernetesFleetMember#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#read KubernetesFleetMember#read}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#update KubernetesFleetMember#update}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#create KubernetesFleetMember#create}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#delete KubernetesFleetMember#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#read KubernetesFleetMember#read}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#update KubernetesFleetMember#update}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#create KubernetesFleetMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#create KubernetesFleetMember#create}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#delete KubernetesFleetMember#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#delete KubernetesFleetMember#delete}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#read KubernetesFleetMember#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#read KubernetesFleetMember#read}.
 
 ---
 
@@ -1092,7 +1092,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/kubernetes_fleet_member#update KubernetesFleetMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/kubernetes_fleet_member#update KubernetesFleetMember#update}.
 
 ---
 
