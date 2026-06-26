@@ -4,7 +4,7 @@
 
 ### ManagedRedisAccessPolicyAssignment <a name="ManagedRedisAccessPolicyAssignment" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment azurerm_managed_redis_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment azurerm_managed_redis_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ManagedRedisAccessPolicyAs
 
 The id of the existing ManagedRedisAccessPolicyAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,9 +820,9 @@ const managedRedisAccessPolicyAssignmentConfig: managedRedisAccessPolicyAssignme
 | <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.managedRedisId">managedRedisId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#managed_redis_id ManagedRedisAccessPolicyAssignment#managed_redis_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#object_id ManagedRedisAccessPolicyAssignment#object_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#id ManagedRedisAccessPolicyAssignment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.managedRedisId">managedRedisId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#managed_redis_id ManagedRedisAccessPolicyAssignment#managed_redis_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.objectId">objectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#object_id ManagedRedisAccessPolicyAssignment#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#id ManagedRedisAccessPolicyAssignment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts">ManagedRedisAccessPolicyAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -905,7 +905,7 @@ public readonly managedRedisId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#managed_redis_id ManagedRedisAccessPolicyAssignment#managed_redis_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#managed_redis_id ManagedRedisAccessPolicyAssignment#managed_redis_id}.
 
 ---
 
@@ -917,7 +917,7 @@ public readonly objectId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#object_id ManagedRedisAccessPolicyAssignment#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#object_id ManagedRedisAccessPolicyAssignment#object_id}.
 
 ---
 
@@ -929,7 +929,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#id ManagedRedisAccessPolicyAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#id ManagedRedisAccessPolicyAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -946,7 +946,7 @@ public readonly timeouts: ManagedRedisAccessPolicyAssignmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#timeouts ManagedRedisAccessPolicyAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#timeouts ManagedRedisAccessPolicyAssignment#timeouts}
 
 ---
 
@@ -964,9 +964,9 @@ const managedRedisAccessPolicyAssignmentTimeouts: managedRedisAccessPolicyAssign
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#create ManagedRedisAccessPolicyAssignment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#delete ManagedRedisAccessPolicyAssignment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#read ManagedRedisAccessPolicyAssignment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#create ManagedRedisAccessPolicyAssignment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#delete ManagedRedisAccessPolicyAssignment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#read ManagedRedisAccessPolicyAssignment#read}. |
 
 ---
 
@@ -978,7 +978,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#create ManagedRedisAccessPolicyAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#create ManagedRedisAccessPolicyAssignment#create}.
 
 ---
 
@@ -990,7 +990,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#delete ManagedRedisAccessPolicyAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#delete ManagedRedisAccessPolicyAssignment#delete}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/managed_redis_access_policy_assignment#read ManagedRedisAccessPolicyAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_redis_access_policy_assignment#read ManagedRedisAccessPolicyAssignment#read}.
 
 ---
 

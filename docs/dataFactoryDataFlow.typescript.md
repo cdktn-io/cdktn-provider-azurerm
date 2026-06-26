@@ -4,7 +4,7 @@
 
 ### DataFactoryDataFlow <a name="DataFactoryDataFlow" id="@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow azurerm_data_factory_data_flow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlow.Initializer"></a>
 
@@ -597,7 +597,7 @@ The construct id used in the generated config for the DataFactoryDataFlow to imp
 
 The id of the existing DataFactoryDataFlow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1077,16 +1077,16 @@ const dataFactoryDataFlowConfig: dataFactoryDataFlow.DataFactoryDataFlowConfig =
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.dataFactoryId">dataFactoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#data_factory_id DataFactoryDataFlow#data_factory_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.dataFactoryId">dataFactoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#data_factory_id DataFactoryDataFlow#data_factory_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.sink">sink</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink">DataFactoryDataFlowSink</a>[]</code> | sink block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.source">source</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource">DataFactoryDataFlowSource</a>[]</code> | source block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.annotations">annotations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#annotations DataFactoryDataFlow#annotations}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#folder DataFactoryDataFlow#folder}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#id DataFactoryDataFlow#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.script">script</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#script DataFactoryDataFlow#script}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.scriptLines">scriptLines</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#script_lines DataFactoryDataFlow#script_lines}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.annotations">annotations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#annotations DataFactoryDataFlow#annotations}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#folder DataFactoryDataFlow#folder}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#id DataFactoryDataFlow#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.script">script</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#script DataFactoryDataFlow#script}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.scriptLines">scriptLines</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#script_lines DataFactoryDataFlow#script_lines}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts">DataFactoryDataFlowTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowConfig.property.transformation">transformation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation">DataFactoryDataFlowTransformation</a>[]</code> | transformation block. |
 
@@ -1170,7 +1170,7 @@ public readonly dataFactoryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#data_factory_id DataFactoryDataFlow#data_factory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#data_factory_id DataFactoryDataFlow#data_factory_id}.
 
 ---
 
@@ -1182,7 +1182,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly sink: IResolvable | DataFactoryDataFlowSink[];
 
 sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#sink DataFactoryDataFlow#sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#sink DataFactoryDataFlow#sink}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly source: IResolvable | DataFactoryDataFlowSource[];
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#source DataFactoryDataFlow#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#source DataFactoryDataFlow#source}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly annotations: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#annotations DataFactoryDataFlow#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#annotations DataFactoryDataFlow#annotations}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly folder: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#folder DataFactoryDataFlow#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#folder DataFactoryDataFlow#folder}.
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#id DataFactoryDataFlow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#id DataFactoryDataFlow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1273,7 +1273,7 @@ public readonly script: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#script DataFactoryDataFlow#script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#script DataFactoryDataFlow#script}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly scriptLines: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#script_lines DataFactoryDataFlow#script_lines}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#script_lines DataFactoryDataFlow#script_lines}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly timeouts: DataFactoryDataFlowTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#timeouts DataFactoryDataFlow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#timeouts DataFactoryDataFlow#timeouts}
 
 ---
 
@@ -1313,7 +1313,7 @@ public readonly transformation: IResolvable | DataFactoryDataFlowTransformation[
 
 transformation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#transformation DataFactoryDataFlow#transformation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#transformation DataFactoryDataFlow#transformation}
 
 ---
 
@@ -1331,9 +1331,9 @@ const dataFactoryDataFlowSink: dataFactoryDataFlow.DataFactoryDataFlowSink = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.dataset">dataset</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkDataset">DataFactoryDataFlowSinkDataset</a></code> | dataset block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.flowlet">flowlet</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet">DataFactoryDataFlowSinkFlowlet</a></code> | flowlet block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.linkedService">linkedService</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkLinkedService">DataFactoryDataFlowSinkLinkedService</a></code> | linked_service block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSink.property.rejectedLinkedService">rejectedLinkedService</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkRejectedLinkedService">DataFactoryDataFlowSinkRejectedLinkedService</a></code> | rejected_linked_service block. |
@@ -1349,7 +1349,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly dataset: DataFactoryDataFlowSinkDataset;
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly flowlet: DataFactoryDataFlowSinkFlowlet;
 
 flowlet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly linkedService: DataFactoryDataFlowSinkLinkedService;
 
 linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
 
 ---
 
@@ -1417,7 +1417,7 @@ public readonly rejectedLinkedService: DataFactoryDataFlowSinkRejectedLinkedServ
 
 rejected_linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#rejected_linked_service DataFactoryDataFlow#rejected_linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#rejected_linked_service DataFactoryDataFlow#rejected_linked_service}
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly schemaLinkedService: DataFactoryDataFlowSinkSchemaLinkedService;
 
 schema_linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#schema_linked_service DataFactoryDataFlow#schema_linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#schema_linked_service DataFactoryDataFlow#schema_linked_service}
 
 ---
 
@@ -1449,8 +1449,8 @@ const dataFactoryDataFlowSinkDataset: dataFactoryDataFlow.DataFactoryDataFlowSin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1462,7 +1462,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1474,7 +1474,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1492,9 +1492,9 @@ const dataFactoryDataFlowSinkFlowlet: dataFactoryDataFlow.DataFactoryDataFlowSin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly datasetParameters: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1548,8 +1548,8 @@ const dataFactoryDataFlowSinkLinkedService: dataFactoryDataFlow.DataFactoryDataF
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1573,7 +1573,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1591,8 +1591,8 @@ const dataFactoryDataFlowSinkRejectedLinkedService: dataFactoryDataFlow.DataFact
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkRejectedLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkRejectedLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkRejectedLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkRejectedLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1604,7 +1604,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1634,8 +1634,8 @@ const dataFactoryDataFlowSinkSchemaLinkedService: dataFactoryDataFlow.DataFactor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkSchemaLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkSchemaLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkSchemaLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSinkSchemaLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1647,7 +1647,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1659,7 +1659,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1677,9 +1677,9 @@ const dataFactoryDataFlowSource: dataFactoryDataFlow.DataFactoryDataFlowSource =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.dataset">dataset</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceDataset">DataFactoryDataFlowSourceDataset</a></code> | dataset block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.flowlet">flowlet</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet">DataFactoryDataFlowSourceFlowlet</a></code> | flowlet block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.linkedService">linkedService</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceLinkedService">DataFactoryDataFlowSourceLinkedService</a></code> | linked_service block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSource.property.rejectedLinkedService">rejectedLinkedService</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceRejectedLinkedService">DataFactoryDataFlowSourceRejectedLinkedService</a></code> | rejected_linked_service block. |
@@ -1695,7 +1695,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1709,7 +1709,7 @@ public readonly dataset: DataFactoryDataFlowSourceDataset;
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
 
 ---
 
@@ -1735,7 +1735,7 @@ public readonly flowlet: DataFactoryDataFlowSourceFlowlet;
 
 flowlet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
 
 ---
 
@@ -1749,7 +1749,7 @@ public readonly linkedService: DataFactoryDataFlowSourceLinkedService;
 
 linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
 
 ---
 
@@ -1763,7 +1763,7 @@ public readonly rejectedLinkedService: DataFactoryDataFlowSourceRejectedLinkedSe
 
 rejected_linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#rejected_linked_service DataFactoryDataFlow#rejected_linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#rejected_linked_service DataFactoryDataFlow#rejected_linked_service}
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly schemaLinkedService: DataFactoryDataFlowSourceSchemaLinkedServic
 
 schema_linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#schema_linked_service DataFactoryDataFlow#schema_linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#schema_linked_service DataFactoryDataFlow#schema_linked_service}
 
 ---
 
@@ -1795,8 +1795,8 @@ const dataFactoryDataFlowSourceDataset: dataFactoryDataFlow.DataFactoryDataFlowS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1808,7 +1808,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1820,7 +1820,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1838,9 +1838,9 @@ const dataFactoryDataFlowSourceFlowlet: dataFactoryDataFlow.DataFactoryDataFlowS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1852,7 +1852,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1864,7 +1864,7 @@ public readonly datasetParameters: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
 
 ---
 
@@ -1876,7 +1876,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1894,8 +1894,8 @@ const dataFactoryDataFlowSourceLinkedService: dataFactoryDataFlow.DataFactoryDat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1907,7 +1907,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1937,8 +1937,8 @@ const dataFactoryDataFlowSourceRejectedLinkedService: dataFactoryDataFlow.DataFa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceRejectedLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceRejectedLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceRejectedLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceRejectedLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1950,7 +1950,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -1962,7 +1962,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -1980,8 +1980,8 @@ const dataFactoryDataFlowSourceSchemaLinkedService: dataFactoryDataFlow.DataFact
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceSchemaLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceSchemaLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceSchemaLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowSourceSchemaLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -2023,10 +2023,10 @@ const dataFactoryDataFlowTimeouts: dataFactoryDataFlow.DataFactoryDataFlowTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#create DataFactoryDataFlow#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#delete DataFactoryDataFlow#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#read DataFactoryDataFlow#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#update DataFactoryDataFlow#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#create DataFactoryDataFlow#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#delete DataFactoryDataFlow#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#read DataFactoryDataFlow#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#update DataFactoryDataFlow#update}. |
 
 ---
 
@@ -2038,7 +2038,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#create DataFactoryDataFlow#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#create DataFactoryDataFlow#create}.
 
 ---
 
@@ -2050,7 +2050,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#delete DataFactoryDataFlow#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#delete DataFactoryDataFlow#delete}.
 
 ---
 
@@ -2062,7 +2062,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#read DataFactoryDataFlow#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#read DataFactoryDataFlow#read}.
 
 ---
 
@@ -2074,7 +2074,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#update DataFactoryDataFlow#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#update DataFactoryDataFlow#update}.
 
 ---
 
@@ -2092,9 +2092,9 @@ const dataFactoryDataFlowTransformation: dataFactoryDataFlow.DataFactoryDataFlow
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.dataset">dataset</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationDataset">DataFactoryDataFlowTransformationDataset</a></code> | dataset block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.flowlet">flowlet</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet">DataFactoryDataFlowTransformationFlowlet</a></code> | flowlet block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformation.property.linkedService">linkedService</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationLinkedService">DataFactoryDataFlowTransformationLinkedService</a></code> | linked_service block. |
 
@@ -2108,7 +2108,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -2122,7 +2122,7 @@ public readonly dataset: DataFactoryDataFlowTransformationDataset;
 
 dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset DataFactoryDataFlow#dataset}
 
 ---
 
@@ -2134,7 +2134,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#description DataFactoryDataFlow#description}.
 
 ---
 
@@ -2148,7 +2148,7 @@ public readonly flowlet: DataFactoryDataFlowTransformationFlowlet;
 
 flowlet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#flowlet DataFactoryDataFlow#flowlet}
 
 ---
 
@@ -2162,7 +2162,7 @@ public readonly linkedService: DataFactoryDataFlowTransformationLinkedService;
 
 linked_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#linked_service DataFactoryDataFlow#linked_service}
 
 ---
 
@@ -2180,8 +2180,8 @@ const dataFactoryDataFlowTransformationDataset: dataFactoryDataFlow.DataFactoryD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationDataset.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationDataset.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -2193,7 +2193,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -2205,7 +2205,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -2223,9 +2223,9 @@ const dataFactoryDataFlowTransformationFlowlet: dataFactoryDataFlow.DataFactoryD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.datasetParameters">datasetParameters</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationFlowlet.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -2237,7 +2237,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -2249,7 +2249,7 @@ public readonly datasetParameters: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#dataset_parameters DataFactoryDataFlow#dataset_parameters}.
 
 ---
 
@@ -2261,7 +2261,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 
@@ -2279,8 +2279,8 @@ const dataFactoryDataFlowTransformationLinkedService: dataFactoryDataFlow.DataFa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationLinkedService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryDataFlow.DataFactoryDataFlowTransformationLinkedService.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}. |
 
 ---
 
@@ -2292,7 +2292,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#name DataFactoryDataFlow#name}.
 
 ---
 
@@ -2304,7 +2304,7 @@ public readonly parameters: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/data_factory_data_flow#parameters DataFactoryDataFlow#parameters}.
 
 ---
 

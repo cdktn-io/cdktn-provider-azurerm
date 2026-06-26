@@ -4,7 +4,7 @@
 
 ### FrontdoorRulesEngine <a name="FrontdoorRulesEngine" id="@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngine.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the FrontdoorRulesEngine to im
 
 The id of the existing FrontdoorRulesEngine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,11 +939,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.frontdoorName">FrontdoorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.frontdoorName">FrontdoorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts">FrontdoorRulesEngineTimeouts</a></code> | timeouts block. |
 
@@ -1027,7 +1027,7 @@ FrontdoorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}.
 
 ---
 
@@ -1051,7 +1051,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}.
 
 ---
 
@@ -1063,7 +1063,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}.
 
 ---
 
@@ -1075,7 +1075,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1092,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#rule FrontdoorRulesEngine#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#rule FrontdoorRulesEngine#rule}
 
 ---
 
@@ -1106,7 +1106,7 @@ Timeouts FrontdoorRulesEngineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#timeouts FrontdoorRulesEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#timeouts FrontdoorRulesEngine#timeouts}
 
 ---
 
@@ -1129,8 +1129,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.action">Action</a></code> | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleAction">FrontdoorRulesEngineRuleAction</a></code> | action block. |
 | <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRule.property.matchCondition">MatchCondition</a></code> | <code>interface{}</code> | match_condition block. |
 
@@ -1144,7 +1144,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}.
 
 ---
 
@@ -1156,7 +1156,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}.
 
 ---
 
@@ -1170,7 +1170,7 @@ Action FrontdoorRulesEngineRuleAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#action FrontdoorRulesEngine#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#action FrontdoorRulesEngine#action}
 
 ---
 
@@ -1184,7 +1184,7 @@ MatchCondition interface{}
 
 match_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#match_condition FrontdoorRulesEngine#match_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#match_condition FrontdoorRulesEngine#match_condition}
 
 ---
 
@@ -1220,7 +1220,7 @@ RequestHeader interface{}
 
 request_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#request_header FrontdoorRulesEngine#request_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#request_header FrontdoorRulesEngine#request_header}
 
 ---
 
@@ -1234,7 +1234,7 @@ ResponseHeader interface{}
 
 response_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#response_header FrontdoorRulesEngine#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#response_header FrontdoorRulesEngine#response_header}
 
 ---
 
@@ -1256,9 +1256,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.headerActionType">HeaderActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.headerActionType">HeaderActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionRequestHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
 
 ---
 
@@ -1270,7 +1270,7 @@ HeaderActionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}.
 
 ---
 
@@ -1282,7 +1282,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
 
 ---
 
@@ -1316,9 +1316,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.headerActionType">HeaderActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.headerActionType">HeaderActionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleActionResponseHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
 
 ---
 
@@ -1330,7 +1330,7 @@ HeaderActionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}.
 
 ---
 
@@ -1342,7 +1342,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}.
 
 ---
 
@@ -1354,7 +1354,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
 
 ---
 
@@ -1379,12 +1379,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.negateCondition">NegateCondition</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.selector">Selector</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.transform">Transform</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.value">Value</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.variable">Variable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.operator">Operator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.negateCondition">NegateCondition</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.selector">Selector</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.transform">Transform</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.value">Value</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineRuleMatchCondition.property.variable">Variable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}. |
 
 ---
 
@@ -1396,7 +1396,7 @@ Operator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}.
 
 ---
 
@@ -1408,7 +1408,7 @@ NegateCondition interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Selector *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}.
 
 ---
 
@@ -1432,7 +1432,7 @@ Transform *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}.
 
 ---
 
@@ -1444,7 +1444,7 @@ Value *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}.
 
 ---
 
@@ -1456,7 +1456,7 @@ Variable *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}.
 
 ---
 
@@ -1479,10 +1479,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoorrules
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}. |
-| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}. |
+| <code><a href="#@cdktn/provider-azurerm.frontdoorRulesEngine.FrontdoorRulesEngineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}. |
 
 ---
 
@@ -1494,7 +1494,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}.
 
 ---
 
@@ -1506,7 +1506,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}.
 
 ---
 
@@ -1518,7 +1518,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}.
 
 ---
 
@@ -1530,7 +1530,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}.
 
 ---
 

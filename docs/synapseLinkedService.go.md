@@ -4,7 +4,7 @@
 
 ### SynapseLinkedService <a name="SynapseLinkedService" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service azurerm_synapse_linked_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the SynapseLinkedService to im
 
 The id of the existing SynapseLinkedService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,16 +1041,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkeds
 | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.synapseWorkspaceId">SynapseWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#synapse_workspace_id SynapseLinkedService#synapse_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#type SynapseLinkedService#type}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.typePropertiesJson">TypePropertiesJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#type_properties_json SynapseLinkedService#type_properties_json}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.additionalProperties">AdditionalProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#additional_properties SynapseLinkedService#additional_properties}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.annotations">Annotations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#annotations SynapseLinkedService#annotations}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#description SynapseLinkedService#description}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#id SynapseLinkedService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.synapseWorkspaceId">SynapseWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#synapse_workspace_id SynapseLinkedService#synapse_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#type SynapseLinkedService#type}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.typePropertiesJson">TypePropertiesJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#type_properties_json SynapseLinkedService#type_properties_json}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.additionalProperties">AdditionalProperties</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#additional_properties SynapseLinkedService#additional_properties}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.annotations">Annotations</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#annotations SynapseLinkedService#annotations}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#description SynapseLinkedService#description}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#id SynapseLinkedService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.integrationRuntime">IntegrationRuntime</a></code> | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime">SynapseLinkedServiceIntegrationRuntime</a></code> | integration_runtime block. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}. |
 | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts">SynapseLinkedServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1133,7 +1133,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ SynapseWorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#synapse_workspace_id SynapseLinkedService#synapse_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#synapse_workspace_id SynapseLinkedService#synapse_workspace_id}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#type SynapseLinkedService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#type SynapseLinkedService#type}.
 
 ---
 
@@ -1169,7 +1169,7 @@ TypePropertiesJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#type_properties_json SynapseLinkedService#type_properties_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#type_properties_json SynapseLinkedService#type_properties_json}.
 
 ---
 
@@ -1181,7 +1181,7 @@ AdditionalProperties *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#additional_properties SynapseLinkedService#additional_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#additional_properties SynapseLinkedService#additional_properties}.
 
 ---
 
@@ -1193,7 +1193,7 @@ Annotations *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#annotations SynapseLinkedService#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#annotations SynapseLinkedService#annotations}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#description SynapseLinkedService#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#description SynapseLinkedService#description}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#id SynapseLinkedService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#id SynapseLinkedService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1234,7 +1234,7 @@ IntegrationRuntime SynapseLinkedServiceIntegrationRuntime
 
 integration_runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#integration_runtime SynapseLinkedService#integration_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#integration_runtime SynapseLinkedService#integration_runtime}
 
 ---
 
@@ -1246,7 +1246,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Timeouts SynapseLinkedServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#timeouts SynapseLinkedService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#timeouts SynapseLinkedService#timeouts}
 
 ---
 
@@ -1281,8 +1281,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkeds
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}. |
 
 ---
 
@@ -1294,7 +1294,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#name SynapseLinkedService#name}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#parameters SynapseLinkedService#parameters}.
 
 ---
 
@@ -1329,10 +1329,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkeds
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#create SynapseLinkedService#create}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#delete SynapseLinkedService#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#read SynapseLinkedService#read}. |
-| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#update SynapseLinkedService#update}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#create SynapseLinkedService#create}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#delete SynapseLinkedService#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#read SynapseLinkedService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#update SynapseLinkedService#update}. |
 
 ---
 
@@ -1344,7 +1344,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#create SynapseLinkedService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#create SynapseLinkedService#create}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#delete SynapseLinkedService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#delete SynapseLinkedService#delete}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#read SynapseLinkedService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#read SynapseLinkedService#read}.
 
 ---
 
@@ -1380,7 +1380,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/synapse_linked_service#update SynapseLinkedService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/synapse_linked_service#update SynapseLinkedService#update}.
 
 ---
 

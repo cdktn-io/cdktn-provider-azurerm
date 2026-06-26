@@ -4,7 +4,7 @@
 
 ### PolicyDefinition <a name="PolicyDefinition" id="@cdktn/provider-azurerm.policyDefinition.PolicyDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition azurerm_policy_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition azurerm_policy_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.policyDefinition.PolicyDefinition.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the PolicyDefinition to import
 
 The id of the existing PolicyDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1039,16 +1039,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/policydefiniti
 | <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#display_name PolicyDefinition#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#mode PolicyDefinition#mode}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#name PolicyDefinition#name}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#policy_type PolicyDefinition#policy_type}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#description PolicyDefinition#description}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#id PolicyDefinition#id}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.managementGroupId">ManagementGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#management_group_id PolicyDefinition#management_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#metadata PolicyDefinition#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.parameters">Parameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#parameters PolicyDefinition#parameters}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.policyRule">PolicyRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#policy_rule PolicyDefinition#policy_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#display_name PolicyDefinition#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#mode PolicyDefinition#mode}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#name PolicyDefinition#name}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#policy_type PolicyDefinition#policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#description PolicyDefinition#description}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#id PolicyDefinition#id}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.managementGroupId">ManagementGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#management_group_id PolicyDefinition#management_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#metadata PolicyDefinition#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.parameters">Parameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#parameters PolicyDefinition#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.policyRule">PolicyRule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#policy_rule PolicyDefinition#policy_rule}. |
 | <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts">PolicyDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#display_name PolicyDefinition#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#display_name PolicyDefinition#display_name}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#mode PolicyDefinition#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#mode PolicyDefinition#mode}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#name PolicyDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#name PolicyDefinition#name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ PolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#policy_type PolicyDefinition#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#policy_type PolicyDefinition#policy_type}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#description PolicyDefinition#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#description PolicyDefinition#description}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#id PolicyDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#id PolicyDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1206,7 +1206,7 @@ ManagementGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#management_group_id PolicyDefinition#management_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#management_group_id PolicyDefinition#management_group_id}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Metadata *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#metadata PolicyDefinition#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#metadata PolicyDefinition#metadata}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Parameters *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#parameters PolicyDefinition#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#parameters PolicyDefinition#parameters}.
 
 ---
 
@@ -1242,7 +1242,7 @@ PolicyRule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#policy_rule PolicyDefinition#policy_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#policy_rule PolicyDefinition#policy_rule}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Timeouts PolicyDefinitionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#timeouts PolicyDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#timeouts PolicyDefinition#timeouts}
 
 ---
 
@@ -1279,10 +1279,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/policydefiniti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#create PolicyDefinition#create}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#delete PolicyDefinition#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#read PolicyDefinition#read}. |
-| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#update PolicyDefinition#update}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#create PolicyDefinition#create}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#delete PolicyDefinition#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#read PolicyDefinition#read}. |
+| <code><a href="#@cdktn/provider-azurerm.policyDefinition.PolicyDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#update PolicyDefinition#update}. |
 
 ---
 
@@ -1294,7 +1294,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#create PolicyDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#create PolicyDefinition#create}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#delete PolicyDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#delete PolicyDefinition#delete}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#read PolicyDefinition#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#read PolicyDefinition#read}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/policy_definition#update PolicyDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/policy_definition#update PolicyDefinition#update}.
 
 ---
 

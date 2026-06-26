@@ -4,7 +4,7 @@
 
 ### LogAnalyticsCluster <a name="LogAnalyticsCluster" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster azurerm_log_analytics_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the LogAnalyticsCluster to imp
 
 The id of the existing LogAnalyticsCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,12 +947,12 @@ const logAnalyticsClusterConfig: logAnalyticsCluster.LogAnalyticsClusterConfig =
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity">LogAnalyticsClusterIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#location LogAnalyticsCluster#location}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#name LogAnalyticsCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#resource_group_name LogAnalyticsCluster#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#id LogAnalyticsCluster#id}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.sizeGb">sizeGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#size_gb LogAnalyticsCluster#size_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#tags LogAnalyticsCluster#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#location LogAnalyticsCluster#location}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#name LogAnalyticsCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#resource_group_name LogAnalyticsCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#id LogAnalyticsCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.sizeGb">sizeGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#size_gb LogAnalyticsCluster#size_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#tags LogAnalyticsCluster#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts">LogAnalyticsClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1037,7 +1037,7 @@ public readonly identity: LogAnalyticsClusterIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#identity LogAnalyticsCluster#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#identity LogAnalyticsCluster#identity}
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#location LogAnalyticsCluster#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#location LogAnalyticsCluster#location}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#name LogAnalyticsCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#name LogAnalyticsCluster#name}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#resource_group_name LogAnalyticsCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#resource_group_name LogAnalyticsCluster#resource_group_name}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#id LogAnalyticsCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#id LogAnalyticsCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1100,7 +1100,7 @@ public readonly sizeGb: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#size_gb LogAnalyticsCluster#size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#size_gb LogAnalyticsCluster#size_gb}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#tags LogAnalyticsCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#tags LogAnalyticsCluster#tags}.
 
 ---
 
@@ -1126,7 +1126,7 @@ public readonly timeouts: LogAnalyticsClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#timeouts LogAnalyticsCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#timeouts LogAnalyticsCluster#timeouts}
 
 ---
 
@@ -1144,8 +1144,8 @@ const logAnalyticsClusterIdentity: logAnalyticsCluster.LogAnalyticsClusterIdenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#type LogAnalyticsCluster#type}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#identity_ids LogAnalyticsCluster#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#type LogAnalyticsCluster#type}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#identity_ids LogAnalyticsCluster#identity_ids}. |
 
 ---
 
@@ -1157,7 +1157,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#type LogAnalyticsCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#type LogAnalyticsCluster#type}.
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#identity_ids LogAnalyticsCluster#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#identity_ids LogAnalyticsCluster#identity_ids}.
 
 ---
 
@@ -1187,10 +1187,10 @@ const logAnalyticsClusterTimeouts: logAnalyticsCluster.LogAnalyticsClusterTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#create LogAnalyticsCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#delete LogAnalyticsCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#read LogAnalyticsCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#update LogAnalyticsCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#create LogAnalyticsCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#delete LogAnalyticsCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#read LogAnalyticsCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#update LogAnalyticsCluster#update}. |
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#create LogAnalyticsCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#create LogAnalyticsCluster#create}.
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#delete LogAnalyticsCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#delete LogAnalyticsCluster#delete}.
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#read LogAnalyticsCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#read LogAnalyticsCluster#read}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.78.0/docs/resources/log_analytics_cluster#update LogAnalyticsCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/log_analytics_cluster#update LogAnalyticsCluster#update}.
 
 ---
 
