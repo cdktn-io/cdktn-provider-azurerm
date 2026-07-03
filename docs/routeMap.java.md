@@ -4,7 +4,7 @@
 
 ### RouteMap <a name="RouteMap" id="@cdktn/provider-azurerm.routeMap.RouteMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map azurerm_route_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map azurerm_route_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMap.Initializer"></a>
 
@@ -38,9 +38,9 @@ RouteMap.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.virtualHubId">virtualHubId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#id RouteMap#id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.virtualHubId">virtualHubId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#id RouteMap#id}. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule">RouteMapRule</a>></code> | rule block. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMap.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts">RouteMapTimeouts</a></code> | timeouts block. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#id RouteMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#id RouteMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#rule RouteMap#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#rule RouteMap#rule}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#timeouts RouteMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#timeouts RouteMap#timeouts}
 
 ---
 
@@ -645,7 +645,7 @@ The construct id used in the generated config for the RouteMap to import.
 
 The id of the existing RouteMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,9 +984,9 @@ RouteMapConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.virtualHubId">virtualHubId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#id RouteMap#id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.virtualHubId">virtualHubId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#id RouteMap#id}. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.rule">rule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule">RouteMapRule</a>></code> | rule block. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts">RouteMapTimeouts</a></code> | timeouts block. |
 
@@ -1070,7 +1070,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getVirtualHubId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#virtual_hub_id RouteMap#virtual_hub_id}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#id RouteMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#id RouteMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1111,7 +1111,7 @@ public IResolvable|java.util.List<RouteMapRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#rule RouteMap#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#rule RouteMap#rule}
 
 ---
 
@@ -1125,7 +1125,7 @@ public RouteMapTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#timeouts RouteMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#timeouts RouteMap#timeouts}
 
 ---
 
@@ -1148,10 +1148,10 @@ RouteMapRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.action">action</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleAction">RouteMapRuleAction</a>></code> | action block. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.matchCriterion">matchCriterion</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion">RouteMapRuleMatchCriterion</a>></code> | match_criterion block. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.nextStepIfMatched">nextStepIfMatched</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#next_step_if_matched RouteMap#next_step_if_matched}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRule.property.nextStepIfMatched">nextStepIfMatched</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#next_step_if_matched RouteMap#next_step_if_matched}. |
 
 ---
 
@@ -1163,7 +1163,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#name RouteMap#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#name RouteMap#name}.
 
 ---
 
@@ -1177,7 +1177,7 @@ public IResolvable|java.util.List<RouteMapRuleAction> getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#action RouteMap#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#action RouteMap#action}
 
 ---
 
@@ -1191,7 +1191,7 @@ public IResolvable|java.util.List<RouteMapRuleMatchCriterion> getMatchCriterion(
 
 match_criterion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#match_criterion RouteMap#match_criterion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#match_criterion RouteMap#match_criterion}
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.String getNextStepIfMatched();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#next_step_if_matched RouteMap#next_step_if_matched}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#next_step_if_matched RouteMap#next_step_if_matched}.
 
 ---
 
@@ -1224,7 +1224,7 @@ RouteMapRuleAction.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#type RouteMap#type}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleAction.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#type RouteMap#type}. |
 | <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleAction.property.parameter">parameter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter">RouteMapRuleActionParameter</a>></code> | parameter block. |
 
 ---
@@ -1237,7 +1237,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#type RouteMap#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#type RouteMap#type}.
 
 ---
 
@@ -1251,7 +1251,7 @@ public IResolvable|java.util.List<RouteMapRuleActionParameter> getParameter();
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#parameter RouteMap#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#parameter RouteMap#parameter}
 
 ---
 
@@ -1273,9 +1273,9 @@ RouteMapRuleActionParameter.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.asPath">asPath</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#as_path RouteMap#as_path}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.community">community</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#community RouteMap#community}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.routePrefix">routePrefix</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.asPath">asPath</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#as_path RouteMap#as_path}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.community">community</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#community RouteMap#community}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.property.routePrefix">routePrefix</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}. |
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.util.List<java.lang.String> getAsPath();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#as_path RouteMap#as_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#as_path RouteMap#as_path}.
 
 ---
 
@@ -1299,7 +1299,7 @@ public java.util.List<java.lang.String> getCommunity();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#community RouteMap#community}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#community RouteMap#community}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public java.util.List<java.lang.String> getRoutePrefix();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}.
 
 ---
 
@@ -1334,10 +1334,10 @@ RouteMapRuleMatchCriterion.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.matchCondition">matchCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#match_condition RouteMap#match_condition}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.asPath">asPath</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#as_path RouteMap#as_path}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.community">community</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#community RouteMap#community}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.routePrefix">routePrefix</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.matchCondition">matchCondition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#match_condition RouteMap#match_condition}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.asPath">asPath</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#as_path RouteMap#as_path}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.community">community</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#community RouteMap#community}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.property.routePrefix">routePrefix</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}. |
 
 ---
 
@@ -1349,7 +1349,7 @@ public java.lang.String getMatchCondition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#match_condition RouteMap#match_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#match_condition RouteMap#match_condition}.
 
 ---
 
@@ -1361,7 +1361,7 @@ public java.util.List<java.lang.String> getAsPath();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#as_path RouteMap#as_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#as_path RouteMap#as_path}.
 
 ---
 
@@ -1373,7 +1373,7 @@ public java.util.List<java.lang.String> getCommunity();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#community RouteMap#community}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#community RouteMap#community}.
 
 ---
 
@@ -1385,7 +1385,7 @@ public java.util.List<java.lang.String> getRoutePrefix();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#route_prefix RouteMap#route_prefix}.
 
 ---
 
@@ -1408,10 +1408,10 @@ RouteMapTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#create RouteMap#create}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#delete RouteMap#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#read RouteMap#read}. |
-| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#update RouteMap#update}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#create RouteMap#create}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#delete RouteMap#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#read RouteMap#read}. |
+| <code><a href="#@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#update RouteMap#update}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#create RouteMap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#create RouteMap#create}.
 
 ---
 
@@ -1435,7 +1435,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#delete RouteMap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#delete RouteMap#delete}.
 
 ---
 
@@ -1447,7 +1447,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#read RouteMap#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#read RouteMap#read}.
 
 ---
 
@@ -1459,7 +1459,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/route_map#update RouteMap#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/route_map#update RouteMap#update}.
 
 ---
 

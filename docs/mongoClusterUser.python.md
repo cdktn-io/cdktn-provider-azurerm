@@ -4,7 +4,7 @@
 
 ### MongoClusterUser <a name="MongoClusterUser" id="@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user azurerm_mongo_cluster_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user azurerm_mongo_cluster_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer"></a>
 
@@ -42,12 +42,12 @@ mongoClusterUser.MongoClusterUser(
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.identityProviderType">identity_provider_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.mongoClusterId">mongo_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.identityProviderType">identity_provider_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.mongoClusterId">mongo_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.role">role</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole">MongoClusterUserRole</a>]</code> | role block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUser.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts">MongoClusterUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#role MongoClusterUser#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#role MongoClusterUser#role}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#timeouts MongoClusterUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#timeouts MongoClusterUser#timeouts}
 
 ---
 
@@ -586,7 +586,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}.
 
 ---
 
@@ -594,7 +594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}.
 
 ---
 
@@ -602,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}.
 
 ---
 
@@ -732,7 +732,7 @@ The construct id used in the generated config for the MongoClusterUser to import
 
 The id of the existing MongoClusterUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1117,12 +1117,12 @@ mongoClusterUser.MongoClusterUserConfig(
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.identityProviderType">identity_provider_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.mongoClusterId">mongo_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.identityProviderType">identity_provider_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.mongoClusterId">mongo_cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.principalType">principal_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.role">role</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole">MongoClusterUserRole</a>]</code> | role block. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts">MongoClusterUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1205,7 +1205,7 @@ identity_provider_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#identity_provider_type MongoClusterUser#identity_provider_type}.
 
 ---
 
@@ -1217,7 +1217,7 @@ mongo_cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#mongo_cluster_id MongoClusterUser#mongo_cluster_id}.
 
 ---
 
@@ -1229,7 +1229,7 @@ object_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#object_id MongoClusterUser#object_id}.
 
 ---
 
@@ -1241,7 +1241,7 @@ principal_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#principal_type MongoClusterUser#principal_type}.
 
 ---
 
@@ -1255,7 +1255,7 @@ role: IResolvable | typing.List[MongoClusterUserRole]
 
 role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#role MongoClusterUser#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#role MongoClusterUser#role}
 
 ---
 
@@ -1267,7 +1267,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#id MongoClusterUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ timeouts: MongoClusterUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#timeouts MongoClusterUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#timeouts MongoClusterUser#timeouts}
 
 ---
 
@@ -1305,8 +1305,8 @@ mongoClusterUser.MongoClusterUserRole(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#database MongoClusterUser#database}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#name MongoClusterUser#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#database MongoClusterUser#database}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserRole.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#name MongoClusterUser#name}. |
 
 ---
 
@@ -1318,7 +1318,7 @@ database: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#database MongoClusterUser#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#database MongoClusterUser#database}.
 
 ---
 
@@ -1330,7 +1330,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#name MongoClusterUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#name MongoClusterUser#name}.
 
 ---
 
@@ -1352,9 +1352,9 @@ mongoClusterUser.MongoClusterUserTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mongoClusterUser.MongoClusterUserTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}. |
 
 ---
 
@@ -1366,7 +1366,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#create MongoClusterUser#create}.
 
 ---
 
@@ -1378,7 +1378,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#delete MongoClusterUser#delete}.
 
 ---
 
@@ -1390,7 +1390,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mongo_cluster_user#read MongoClusterUser#read}.
 
 ---
 

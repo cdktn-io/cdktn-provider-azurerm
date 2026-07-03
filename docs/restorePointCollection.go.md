@@ -4,7 +4,7 @@
 
 ### RestorePointCollection <a name="RestorePointCollection" id="@cdktn/provider-azurerm.restorePointCollection.RestorePointCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection azurerm_restore_point_collection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection azurerm_restore_point_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.restorePointCollection.RestorePointCollection.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the RestorePointCollection to 
 
 The id of the existing RestorePointCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,12 +908,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/restorepointco
 | <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#location RestorePointCollection#location}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#name RestorePointCollection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#resource_group_name RestorePointCollection#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.sourceVirtualMachineId">SourceVirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#source_virtual_machine_id RestorePointCollection#source_virtual_machine_id}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#id RestorePointCollection#id}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#tags RestorePointCollection#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#location RestorePointCollection#location}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#name RestorePointCollection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#resource_group_name RestorePointCollection#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.sourceVirtualMachineId">SourceVirtualMachineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#source_virtual_machine_id RestorePointCollection#source_virtual_machine_id}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#id RestorePointCollection#id}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#tags RestorePointCollection#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts">RestorePointCollectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -996,7 +996,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#location RestorePointCollection#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#location RestorePointCollection#location}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#name RestorePointCollection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#name RestorePointCollection#name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#resource_group_name RestorePointCollection#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#resource_group_name RestorePointCollection#resource_group_name}.
 
 ---
 
@@ -1032,7 +1032,7 @@ SourceVirtualMachineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#source_virtual_machine_id RestorePointCollection#source_virtual_machine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#source_virtual_machine_id RestorePointCollection#source_virtual_machine_id}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#id RestorePointCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#id RestorePointCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#tags RestorePointCollection#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#tags RestorePointCollection#tags}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Timeouts RestorePointCollectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#timeouts RestorePointCollection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#timeouts RestorePointCollection#timeouts}
 
 ---
 
@@ -1096,10 +1096,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/restorepointco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#create RestorePointCollection#create}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#delete RestorePointCollection#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#read RestorePointCollection#read}. |
-| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#update RestorePointCollection#update}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#create RestorePointCollection#create}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#delete RestorePointCollection#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#read RestorePointCollection#read}. |
+| <code><a href="#@cdktn/provider-azurerm.restorePointCollection.RestorePointCollectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#update RestorePointCollection#update}. |
 
 ---
 
@@ -1111,7 +1111,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#create RestorePointCollection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#create RestorePointCollection#create}.
 
 ---
 
@@ -1123,7 +1123,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#delete RestorePointCollection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#delete RestorePointCollection#delete}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#read RestorePointCollection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#read RestorePointCollection#read}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/restore_point_collection#update RestorePointCollection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/restore_point_collection#update RestorePointCollection#update}.
 
 ---
 

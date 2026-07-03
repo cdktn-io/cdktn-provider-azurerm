@@ -4,7 +4,7 @@
 
 ### ManagedApplicationDefinition <a name="ManagedApplicationDefinition" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition azurerm_managed_application_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition azurerm_managed_application_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer"></a>
 
@@ -49,19 +49,19 @@ managedApplicationDefinition.ManagedApplicationDefinition(
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.lockLevel">lock_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.lockLevel">lock_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.authorization">authorization</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization">ManagedApplicationDefinitionAuthorization</a>]</code> | authorization block. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.createUiDefinition">create_ui_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.mainTemplate">main_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.packageEnabled">package_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.packageFileUri">package_file_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.createUiDefinition">create_ui_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.mainTemplate">main_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.packageEnabled">package_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.packageFileUri">package_file_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts">ManagedApplicationDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#authorization ManagedApplicationDefinition#authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#authorization ManagedApplicationDefinition#authorization}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}.
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}.
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}.
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#timeouts ManagedApplicationDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#timeouts ManagedApplicationDefinition#timeouts}
 
 ---
 
@@ -664,7 +664,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}.
 
 ---
 
@@ -672,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}.
 
 ---
 
@@ -680,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}.
 
 ---
 
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}.
 
 ---
 
@@ -860,7 +860,7 @@ The construct id used in the generated config for the ManagedApplicationDefiniti
 
 The id of the existing ManagedApplicationDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1380,8 +1380,8 @@ managedApplicationDefinition.ManagedApplicationDefinitionAuthorization(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization.property.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#role_definition_id ManagedApplicationDefinition#role_definition_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#service_principal_id ManagedApplicationDefinition#service_principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization.property.roleDefinitionId">role_definition_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#role_definition_id ManagedApplicationDefinition#role_definition_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#service_principal_id ManagedApplicationDefinition#service_principal_id}. |
 
 ---
 
@@ -1393,7 +1393,7 @@ role_definition_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#role_definition_id ManagedApplicationDefinition#role_definition_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#role_definition_id ManagedApplicationDefinition#role_definition_id}.
 
 ---
 
@@ -1405,7 +1405,7 @@ service_principal_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#service_principal_id ManagedApplicationDefinition#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#service_principal_id ManagedApplicationDefinition#service_principal_id}.
 
 ---
 
@@ -1452,19 +1452,19 @@ managedApplicationDefinition.ManagedApplicationDefinitionConfig(
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.lockLevel">lock_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.lockLevel">lock_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.authorization">authorization</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization">ManagedApplicationDefinitionAuthorization</a>]</code> | authorization block. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.createUiDefinition">create_ui_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.mainTemplate">main_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.packageEnabled">package_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.packageFileUri">package_file_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.createUiDefinition">create_ui_definition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.mainTemplate">main_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.packageEnabled">package_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.packageFileUri">package_file_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts">ManagedApplicationDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1547,7 +1547,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#display_name ManagedApplicationDefinition#display_name}.
 
 ---
 
@@ -1559,7 +1559,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#location ManagedApplicationDefinition#location}.
 
 ---
 
@@ -1571,7 +1571,7 @@ lock_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#lock_level ManagedApplicationDefinition#lock_level}.
 
 ---
 
@@ -1583,7 +1583,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#name ManagedApplicationDefinition#name}.
 
 ---
 
@@ -1595,7 +1595,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#resource_group_name ManagedApplicationDefinition#resource_group_name}.
 
 ---
 
@@ -1609,7 +1609,7 @@ authorization: IResolvable | typing.List[ManagedApplicationDefinitionAuthorizati
 
 authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#authorization ManagedApplicationDefinition#authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#authorization ManagedApplicationDefinition#authorization}
 
 ---
 
@@ -1621,7 +1621,7 @@ create_ui_definition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}.
 
 ---
 
@@ -1633,7 +1633,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#description ManagedApplicationDefinition#description}.
 
 ---
 
@@ -1645,7 +1645,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#id ManagedApplicationDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1660,7 +1660,7 @@ main_template: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#main_template ManagedApplicationDefinition#main_template}.
 
 ---
 
@@ -1672,7 +1672,7 @@ package_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}.
 
 ---
 
@@ -1684,7 +1684,7 @@ package_file_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}.
 
 ---
 
@@ -1696,7 +1696,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#tags ManagedApplicationDefinition#tags}.
 
 ---
 
@@ -1710,7 +1710,7 @@ timeouts: ManagedApplicationDefinitionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#timeouts ManagedApplicationDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#timeouts ManagedApplicationDefinition#timeouts}
 
 ---
 
@@ -1733,10 +1733,10 @@ managedApplicationDefinition.ManagedApplicationDefinitionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}. |
 
 ---
 
@@ -1748,7 +1748,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#create ManagedApplicationDefinition#create}.
 
 ---
 
@@ -1760,7 +1760,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#delete ManagedApplicationDefinition#delete}.
 
 ---
 
@@ -1772,7 +1772,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#read ManagedApplicationDefinition#read}.
 
 ---
 
@@ -1784,7 +1784,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_application_definition#update ManagedApplicationDefinition#update}.
 
 ---
 

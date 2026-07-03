@@ -4,7 +4,7 @@
 
 ### AutomationVariableInt <a name="AutomationVariableInt" id="@cdktn/provider-azurerm.automationVariableInt.AutomationVariableInt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int azurerm_automation_variable_int}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int azurerm_automation_variable_int}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationVariableInt.AutomationVariableInt.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AutomationVariableInt to i
 
 The id of the existing AutomationVariableInt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -945,14 +945,14 @@ new AutomationVariableIntConfig {
 | <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#automation_account_name AutomationVariableInt#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#name AutomationVariableInt#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#resource_group_name AutomationVariableInt#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#description AutomationVariableInt#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#encrypted AutomationVariableInt#encrypted}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#id AutomationVariableInt#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#automation_account_name AutomationVariableInt#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#name AutomationVariableInt#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#resource_group_name AutomationVariableInt#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#description AutomationVariableInt#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.encrypted">Encrypted</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#encrypted AutomationVariableInt#encrypted}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#id AutomationVariableInt#id}. |
 | <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts">AutomationVariableIntTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#value AutomationVariableInt#value}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntConfig.property.value">Value</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#value AutomationVariableInt#value}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ public string AutomationAccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#automation_account_name AutomationVariableInt#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#automation_account_name AutomationVariableInt#automation_account_name}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#name AutomationVariableInt#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#name AutomationVariableInt#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#resource_group_name AutomationVariableInt#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#resource_group_name AutomationVariableInt#resource_group_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#description AutomationVariableInt#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#description AutomationVariableInt#description}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public bool|IResolvable Encrypted { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#encrypted AutomationVariableInt#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#encrypted AutomationVariableInt#encrypted}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#id AutomationVariableInt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#id AutomationVariableInt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1111,7 +1111,7 @@ public AutomationVariableIntTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#timeouts AutomationVariableInt#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#timeouts AutomationVariableInt#timeouts}
 
 ---
 
@@ -1123,7 +1123,7 @@ public double Value { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#value AutomationVariableInt#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#value AutomationVariableInt#value}.
 
 ---
 
@@ -1146,10 +1146,10 @@ new AutomationVariableIntTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#create AutomationVariableInt#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#delete AutomationVariableInt#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#read AutomationVariableInt#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#update AutomationVariableInt#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#create AutomationVariableInt#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#delete AutomationVariableInt#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#read AutomationVariableInt#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationVariableInt.AutomationVariableIntTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#update AutomationVariableInt#update}. |
 
 ---
 
@@ -1161,7 +1161,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#create AutomationVariableInt#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#create AutomationVariableInt#create}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#delete AutomationVariableInt#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#delete AutomationVariableInt#delete}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#read AutomationVariableInt#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#read AutomationVariableInt#read}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/automation_variable_int#update AutomationVariableInt#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/automation_variable_int#update AutomationVariableInt#update}.
 
 ---
 
