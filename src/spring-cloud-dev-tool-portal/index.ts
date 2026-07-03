@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface SpringCloudDevToolPortalConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#application_accelerator_enabled SpringCloudDevToolPortal#application_accelerator_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#application_accelerator_enabled SpringCloudDevToolPortal#application_accelerator_enabled}
   */
   readonly applicationAcceleratorEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#application_live_view_enabled SpringCloudDevToolPortal#application_live_view_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#application_live_view_enabled SpringCloudDevToolPortal#application_live_view_enabled}
   */
   readonly applicationLiveViewEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#id SpringCloudDevToolPortal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#id SpringCloudDevToolPortal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#name SpringCloudDevToolPortal#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#name SpringCloudDevToolPortal#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#public_network_access_enabled SpringCloudDevToolPortal#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#public_network_access_enabled SpringCloudDevToolPortal#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#spring_cloud_service_id SpringCloudDevToolPortal#spring_cloud_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#spring_cloud_service_id SpringCloudDevToolPortal#spring_cloud_service_id}
   */
   readonly springCloudServiceId: string;
   /**
   * sso block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#sso SpringCloudDevToolPortal#sso}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#sso SpringCloudDevToolPortal#sso}
   */
   readonly sso?: SpringCloudDevToolPortalSso;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#timeouts SpringCloudDevToolPortal#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#timeouts SpringCloudDevToolPortal#timeouts}
   */
   readonly timeouts?: SpringCloudDevToolPortalTimeouts;
 }
 export interface SpringCloudDevToolPortalSso {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#client_id SpringCloudDevToolPortal#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#client_id SpringCloudDevToolPortal#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#client_secret SpringCloudDevToolPortal#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#client_secret SpringCloudDevToolPortal#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#metadata_url SpringCloudDevToolPortal#metadata_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#metadata_url SpringCloudDevToolPortal#metadata_url}
   */
   readonly metadataUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#scope SpringCloudDevToolPortal#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#scope SpringCloudDevToolPortal#scope}
   */
   readonly scope?: string[];
 }
@@ -237,19 +237,19 @@ export class SpringCloudDevToolPortalSsoOutputReference extends cdktn.ComplexObj
 }
 export interface SpringCloudDevToolPortalTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#create SpringCloudDevToolPortal#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#create SpringCloudDevToolPortal#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#delete SpringCloudDevToolPortal#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#delete SpringCloudDevToolPortal#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#read SpringCloudDevToolPortal#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#read SpringCloudDevToolPortal#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#update SpringCloudDevToolPortal#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#update SpringCloudDevToolPortal#update}
   */
   readonly update?: string;
 }
@@ -430,7 +430,7 @@ export class SpringCloudDevToolPortalTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal azurerm_spring_cloud_dev_tool_portal}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal azurerm_spring_cloud_dev_tool_portal}
 */
 export class SpringCloudDevToolPortal extends cdktn.TerraformResource {
 
@@ -446,7 +446,7 @@ export class SpringCloudDevToolPortal extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SpringCloudDevToolPortal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudDevToolPortal to import
-  * @param importFromId The id of the existing SpringCloudDevToolPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpringCloudDevToolPortal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudDevToolPortal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -458,7 +458,7 @@ export class SpringCloudDevToolPortal extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/spring_cloud_dev_tool_portal azurerm_spring_cloud_dev_tool_portal} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/spring_cloud_dev_tool_portal azurerm_spring_cloud_dev_tool_portal} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -469,7 +469,7 @@ export class SpringCloudDevToolPortal extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_spring_cloud_dev_tool_portal',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.79.0',
+        providerVersion: '4.80.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
