@@ -4,7 +4,7 @@
 
 ### MssqlJobSchedule <a name="MssqlJobSchedule" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule azurerm_mssql_job_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule azurerm_mssql_job_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the MssqlJobSchedule to import
 
 The id of the existing MssqlJobSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,13 +952,13 @@ new MssqlJobScheduleConfig {
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.jobId">JobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#job_id MssqlJobSchedule#job_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#type MssqlJobSchedule#type}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#enabled MssqlJobSchedule#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.endTime">EndTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#end_time MssqlJobSchedule#end_time}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#id MssqlJobSchedule#id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.interval">Interval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#interval MssqlJobSchedule#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.startTime">StartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#start_time MssqlJobSchedule#start_time}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.jobId">JobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#job_id MssqlJobSchedule#job_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#type MssqlJobSchedule#type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#enabled MssqlJobSchedule#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.endTime">EndTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#end_time MssqlJobSchedule#end_time}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#id MssqlJobSchedule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.interval">Interval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#interval MssqlJobSchedule#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.startTime">StartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#start_time MssqlJobSchedule#start_time}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts">MssqlJobScheduleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1041,7 +1041,7 @@ public string JobId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#job_id MssqlJobSchedule#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#job_id MssqlJobSchedule#job_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#type MssqlJobSchedule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#type MssqlJobSchedule#type}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public bool|IResolvable Enabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#enabled MssqlJobSchedule#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#enabled MssqlJobSchedule#enabled}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public string EndTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#end_time MssqlJobSchedule#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#end_time MssqlJobSchedule#end_time}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#id MssqlJobSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#id MssqlJobSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1104,7 +1104,7 @@ public string Interval { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#interval MssqlJobSchedule#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#interval MssqlJobSchedule#interval}.
 
 ---
 
@@ -1116,7 +1116,7 @@ public string StartTime { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#start_time MssqlJobSchedule#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#start_time MssqlJobSchedule#start_time}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public MssqlJobScheduleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#timeouts MssqlJobSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#timeouts MssqlJobSchedule#timeouts}
 
 ---
 
@@ -1153,10 +1153,10 @@ new MssqlJobScheduleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#create MssqlJobSchedule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#delete MssqlJobSchedule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#read MssqlJobSchedule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#update MssqlJobSchedule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#create MssqlJobSchedule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#delete MssqlJobSchedule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#read MssqlJobSchedule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#update MssqlJobSchedule#update}. |
 
 ---
 
@@ -1168,7 +1168,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#create MssqlJobSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#create MssqlJobSchedule#create}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#delete MssqlJobSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#delete MssqlJobSchedule#delete}.
 
 ---
 
@@ -1192,7 +1192,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#read MssqlJobSchedule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#read MssqlJobSchedule#read}.
 
 ---
 
@@ -1204,7 +1204,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_schedule#update MssqlJobSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_schedule#update MssqlJobSchedule#update}.
 
 ---
 

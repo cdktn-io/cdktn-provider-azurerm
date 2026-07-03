@@ -4,7 +4,7 @@
 
 ### PostgresqlConfiguration <a name="PostgresqlConfiguration" id="@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration azurerm_postgresql_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfiguration.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the PostgresqlConfiguration to
 
 The id of the existing PostgresqlConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,11 +878,11 @@ new PostgresqlConfigurationConfig {
 | <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#name PostgresqlConfiguration#name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#resource_group_name PostgresqlConfiguration#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.serverName">ServerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#server_name PostgresqlConfiguration#server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#value PostgresqlConfiguration#value}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#id PostgresqlConfiguration#id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#name PostgresqlConfiguration#name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#resource_group_name PostgresqlConfiguration#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.serverName">ServerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#server_name PostgresqlConfiguration#server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#value PostgresqlConfiguration#value}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#id PostgresqlConfiguration#id}. |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts">PostgresqlConfigurationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -965,7 +965,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#name PostgresqlConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#name PostgresqlConfiguration#name}.
 
 ---
 
@@ -977,7 +977,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#resource_group_name PostgresqlConfiguration#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#resource_group_name PostgresqlConfiguration#resource_group_name}.
 
 ---
 
@@ -989,7 +989,7 @@ public string ServerName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#server_name PostgresqlConfiguration#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#server_name PostgresqlConfiguration#server_name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#value PostgresqlConfiguration#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#value PostgresqlConfiguration#value}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#id PostgresqlConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#id PostgresqlConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1030,7 @@ public PostgresqlConfigurationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#timeouts PostgresqlConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#timeouts PostgresqlConfiguration#timeouts}
 
 ---
 
@@ -1052,9 +1052,9 @@ new PostgresqlConfigurationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#create PostgresqlConfiguration#create}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#delete PostgresqlConfiguration#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#read PostgresqlConfiguration#read}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#create PostgresqlConfiguration#create}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#delete PostgresqlConfiguration#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlConfiguration.PostgresqlConfigurationTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#read PostgresqlConfiguration#read}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#create PostgresqlConfiguration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#create PostgresqlConfiguration#create}.
 
 ---
 
@@ -1078,7 +1078,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#delete PostgresqlConfiguration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#delete PostgresqlConfiguration#delete}.
 
 ---
 
@@ -1090,7 +1090,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/postgresql_configuration#read PostgresqlConfiguration#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_configuration#read PostgresqlConfiguration#read}.
 
 ---
 

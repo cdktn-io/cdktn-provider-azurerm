@@ -4,7 +4,7 @@
 
 ### StaticSite <a name="StaticSite" id="@cdktn/provider-azurerm.staticSite.StaticSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site azurerm_static_site}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site azurerm_static_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticSite.StaticSite.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the StaticSite to import.
 
 The id of the existing StaticSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,15 +1040,15 @@ new StaticSiteConfig {
 | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#location StaticSite#location}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#name StaticSite#name}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#resource_group_name StaticSite#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.appSettings">AppSettings</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#app_settings StaticSite#app_settings}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#id StaticSite#id}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#location StaticSite#location}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#name StaticSite#name}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#resource_group_name StaticSite#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.appSettings">AppSettings</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#app_settings StaticSite#app_settings}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#id StaticSite#id}. |
 | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteIdentity">StaticSiteIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.skuSize">SkuSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#sku_size StaticSite#sku_size}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.skuTier">SkuTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#sku_tier StaticSite#sku_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#tags StaticSite#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.skuSize">SkuSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#sku_size StaticSite#sku_size}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.skuTier">SkuTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#sku_tier StaticSite#sku_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#tags StaticSite#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts">StaticSiteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#location StaticSite#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#location StaticSite#location}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#name StaticSite#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#name StaticSite#name}.
 
 ---
 
@@ -1155,7 +1155,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#resource_group_name StaticSite#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#resource_group_name StaticSite#resource_group_name}.
 
 ---
 
@@ -1167,7 +1167,7 @@ public System.Collections.Generic.IDictionary<string, string> AppSettings { get;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#app_settings StaticSite#app_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#app_settings StaticSite#app_settings}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#id StaticSite#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#id StaticSite#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1196,7 @@ public StaticSiteIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#identity StaticSite#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#identity StaticSite#identity}
 
 ---
 
@@ -1208,7 +1208,7 @@ public string SkuSize { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#sku_size StaticSite#sku_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#sku_size StaticSite#sku_size}.
 
 ---
 
@@ -1220,7 +1220,7 @@ public string SkuTier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#sku_tier StaticSite#sku_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#sku_tier StaticSite#sku_tier}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#tags StaticSite#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#tags StaticSite#tags}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public StaticSiteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#timeouts StaticSite#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#timeouts StaticSite#timeouts}
 
 ---
 
@@ -1267,8 +1267,8 @@ new StaticSiteIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#type StaticSite#type}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#identity_ids StaticSite#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#type StaticSite#type}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#identity_ids StaticSite#identity_ids}. |
 
 ---
 
@@ -1280,7 +1280,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#type StaticSite#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#type StaticSite#type}.
 
 ---
 
@@ -1292,7 +1292,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#identity_ids StaticSite#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#identity_ids StaticSite#identity_ids}.
 
 ---
 
@@ -1315,10 +1315,10 @@ new StaticSiteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#create StaticSite#create}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#delete StaticSite#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#read StaticSite#read}. |
-| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#update StaticSite#update}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#create StaticSite#create}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#delete StaticSite#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#read StaticSite#read}. |
+| <code><a href="#@cdktn/provider-azurerm.staticSite.StaticSiteTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#update StaticSite#update}. |
 
 ---
 
@@ -1330,7 +1330,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#create StaticSite#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#create StaticSite#create}.
 
 ---
 
@@ -1342,7 +1342,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#delete StaticSite#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#delete StaticSite#delete}.
 
 ---
 
@@ -1354,7 +1354,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#read StaticSite#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#read StaticSite#read}.
 
 ---
 
@@ -1366,7 +1366,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/static_site#update StaticSite#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/static_site#update StaticSite#update}.
 
 ---
 

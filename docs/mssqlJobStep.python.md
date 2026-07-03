@@ -4,7 +4,7 @@
 
 ### MssqlJobStep <a name="MssqlJobStep" id="@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step azurerm_mssql_job_step}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step azurerm_mssql_job_step}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer"></a>
 
@@ -49,20 +49,20 @@ mssqlJobStep.MssqlJobStep(
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobId">job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobStepIndex">job_step_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobTargetGroupId">job_target_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#name MssqlJobStep#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.sqlScript">sql_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#id MssqlJobStep#id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.initialRetryIntervalSeconds">initial_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.maximumRetryIntervalSeconds">maximum_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobId">job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobStepIndex">job_step_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobTargetGroupId">job_target_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#name MssqlJobStep#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.sqlScript">sql_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#id MssqlJobStep#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.initialRetryIntervalSeconds">initial_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.maximumRetryIntervalSeconds">maximum_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.outputTarget">output_target</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget">MssqlJobStepOutputTarget</a></code> | output_target block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.retryAttempts">retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.retryIntervalBackoffMultiplier">retry_interval_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.retryAttempts">retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.retryIntervalBackoffMultiplier">retry_interval_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts">MssqlJobStepTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStep.Initializer.parameter.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}. |
 
 ---
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#name MssqlJobStep#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#name MssqlJobStep#name}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#id MssqlJobStep#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#id MssqlJobStep#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}.
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 output_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#output_target MssqlJobStep#output_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#output_target MssqlJobStep#output_target}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}.
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeouts MssqlJobStep#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeouts MssqlJobStep#timeouts}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}.
 
 ---
 
@@ -650,7 +650,7 @@ def put_output_target(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}.
 
 ---
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}.
 
 ---
 
@@ -666,7 +666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
 
 ---
 
@@ -674,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}.
 
 ---
 
@@ -693,7 +693,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#create MssqlJobStep#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#create MssqlJobStep#create}.
 
 ---
 
@@ -701,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}.
 
 ---
 
@@ -709,7 +709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#read MssqlJobStep#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#read MssqlJobStep#read}.
 
 ---
 
@@ -717,7 +717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#update MssqlJobStep#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#update MssqlJobStep#update}.
 
 ---
 
@@ -889,7 +889,7 @@ The construct id used in the generated config for the MssqlJobStep to import.
 
 The id of the existing MssqlJobStep that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1435,20 +1435,20 @@ mssqlJobStep.MssqlJobStepConfig(
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobId">job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobStepIndex">job_step_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobTargetGroupId">job_target_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#name MssqlJobStep#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.sqlScript">sql_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#id MssqlJobStep#id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.initialRetryIntervalSeconds">initial_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.maximumRetryIntervalSeconds">maximum_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobId">job_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobStepIndex">job_step_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobTargetGroupId">job_target_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#name MssqlJobStep#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.sqlScript">sql_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#id MssqlJobStep#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.initialRetryIntervalSeconds">initial_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.maximumRetryIntervalSeconds">maximum_retry_interval_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.outputTarget">output_target</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget">MssqlJobStepOutputTarget</a></code> | output_target block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.retryAttempts">retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.retryIntervalBackoffMultiplier">retry_interval_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.retryAttempts">retry_attempts</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.retryIntervalBackoffMultiplier">retry_interval_backoff_multiplier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts">MssqlJobStepTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepConfig.property.timeoutSeconds">timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}. |
 
 ---
 
@@ -1530,7 +1530,7 @@ job_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_id MssqlJobStep#job_id}.
 
 ---
 
@@ -1542,7 +1542,7 @@ job_step_index: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_step_index MssqlJobStep#job_step_index}.
 
 ---
 
@@ -1554,7 +1554,7 @@ job_target_group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_target_group_id MssqlJobStep#job_target_group_id}.
 
 ---
 
@@ -1566,7 +1566,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#name MssqlJobStep#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#name MssqlJobStep#name}.
 
 ---
 
@@ -1578,7 +1578,7 @@ sql_script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#sql_script MssqlJobStep#sql_script}.
 
 ---
 
@@ -1590,7 +1590,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#id MssqlJobStep#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#id MssqlJobStep#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1605,7 +1605,7 @@ initial_retry_interval_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#initial_retry_interval_seconds MssqlJobStep#initial_retry_interval_seconds}.
 
 ---
 
@@ -1617,7 +1617,7 @@ job_credential_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
 
 ---
 
@@ -1629,7 +1629,7 @@ maximum_retry_interval_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#maximum_retry_interval_seconds MssqlJobStep#maximum_retry_interval_seconds}.
 
 ---
 
@@ -1643,7 +1643,7 @@ output_target: MssqlJobStepOutputTarget
 
 output_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#output_target MssqlJobStep#output_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#output_target MssqlJobStep#output_target}
 
 ---
 
@@ -1655,7 +1655,7 @@ retry_attempts: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_attempts MssqlJobStep#retry_attempts}.
 
 ---
 
@@ -1667,7 +1667,7 @@ retry_interval_backoff_multiplier: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#retry_interval_backoff_multiplier MssqlJobStep#retry_interval_backoff_multiplier}.
 
 ---
 
@@ -1681,7 +1681,7 @@ timeouts: MssqlJobStepTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeouts MssqlJobStep#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeouts MssqlJobStep#timeouts}
 
 ---
 
@@ -1693,7 +1693,7 @@ timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#timeout_seconds MssqlJobStep#timeout_seconds}.
 
 ---
 
@@ -1716,10 +1716,10 @@ mssqlJobStep.MssqlJobStepOutputTarget(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.mssqlDatabaseId">mssql_database_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.mssqlDatabaseId">mssql_database_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.tableName">table_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.jobCredentialId">job_credential_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepOutputTarget.property.schemaName">schema_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}. |
 
 ---
 
@@ -1731,7 +1731,7 @@ mssql_database_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#mssql_database_id MssqlJobStep#mssql_database_id}.
 
 ---
 
@@ -1743,7 +1743,7 @@ table_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#table_name MssqlJobStep#table_name}.
 
 ---
 
@@ -1755,7 +1755,7 @@ job_credential_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#job_credential_id MssqlJobStep#job_credential_id}.
 
 ---
 
@@ -1767,7 +1767,7 @@ schema_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#schema_name MssqlJobStep#schema_name}.
 
 ---
 
@@ -1790,10 +1790,10 @@ mssqlJobStep.MssqlJobStepTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#create MssqlJobStep#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#read MssqlJobStep#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#update MssqlJobStep#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#create MssqlJobStep#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#read MssqlJobStep#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlJobStep.MssqlJobStepTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#update MssqlJobStep#update}. |
 
 ---
 
@@ -1805,7 +1805,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#create MssqlJobStep#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#create MssqlJobStep#create}.
 
 ---
 
@@ -1817,7 +1817,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#delete MssqlJobStep#delete}.
 
 ---
 
@@ -1829,7 +1829,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#read MssqlJobStep#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#read MssqlJobStep#read}.
 
 ---
 
@@ -1841,7 +1841,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/resources/mssql_job_step#update MssqlJobStep#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/mssql_job_step#update MssqlJobStep#update}.
 
 ---
 

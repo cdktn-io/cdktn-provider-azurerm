@@ -4,7 +4,7 @@
 
 ### DataAzurermFunctionApp <a name="DataAzurermFunctionApp" id="@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app azurerm_function_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app azurerm_function_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionApp.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAzurermFunctionApp to 
 
 The id of the existing DataAzurermFunctionApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,10 +903,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfun
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppTimeouts">DataAzurermFunctionAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -989,7 +989,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#name DataAzurermFunctionApp#name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#resource_group_name DataAzurermFunctionApp#resource_group_name}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#id DataAzurermFunctionApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#tags DataAzurermFunctionApp#tags}.
 
 ---
 
@@ -1042,7 +1042,7 @@ Timeouts DataAzurermFunctionAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#timeouts DataAzurermFunctionApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#timeouts DataAzurermFunctionApp#timeouts}
 
 ---
 
@@ -1192,7 +1192,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermFunctionApp.DataAzurermFunctionAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.79.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/function_app#read DataAzurermFunctionApp#read}.
 
 ---
 
