@@ -4,7 +4,7 @@
 
 ### RedisCacheAccessPolicy <a name="RedisCacheAccessPolicy" id="@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy azurerm_redis_cache_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicy.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the RedisCacheAccessPolicy to 
 
 The id of the existing RedisCacheAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ const redisCacheAccessPolicyConfig: redisCacheAccessPolicy.RedisCacheAccessPolic
 | <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#name RedisCacheAccessPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.permissions">permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#permissions RedisCacheAccessPolicy#permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.redisCacheId">redisCacheId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#redis_cache_id RedisCacheAccessPolicy#redis_cache_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#id RedisCacheAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#name RedisCacheAccessPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.permissions">permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#permissions RedisCacheAccessPolicy#permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.redisCacheId">redisCacheId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#redis_cache_id RedisCacheAccessPolicy#redis_cache_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#id RedisCacheAccessPolicy#id}. |
 | <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts">RedisCacheAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#name RedisCacheAccessPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#name RedisCacheAccessPolicy#name}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly permissions: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#permissions RedisCacheAccessPolicy#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#permissions RedisCacheAccessPolicy#permissions}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly redisCacheId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#redis_cache_id RedisCacheAccessPolicy#redis_cache_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#redis_cache_id RedisCacheAccessPolicy#redis_cache_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#id RedisCacheAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#id RedisCacheAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public readonly timeouts: RedisCacheAccessPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#timeouts RedisCacheAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#timeouts RedisCacheAccessPolicy#timeouts}
 
 ---
 
@@ -999,10 +999,10 @@ const redisCacheAccessPolicyTimeouts: redisCacheAccessPolicy.RedisCacheAccessPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#create RedisCacheAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#delete RedisCacheAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#read RedisCacheAccessPolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#update RedisCacheAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#create RedisCacheAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#delete RedisCacheAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#read RedisCacheAccessPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.redisCacheAccessPolicy.RedisCacheAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#update RedisCacheAccessPolicy#update}. |
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#create RedisCacheAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#create RedisCacheAccessPolicy#create}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#delete RedisCacheAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#delete RedisCacheAccessPolicy#delete}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#read RedisCacheAccessPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#read RedisCacheAccessPolicy#read}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/redis_cache_access_policy#update RedisCacheAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redis_cache_access_policy#update RedisCacheAccessPolicy#update}.
 
 ---
 

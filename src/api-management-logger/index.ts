@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +13,66 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementLoggerConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#api_management_name ApiManagementLogger#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#buffered ApiManagementLogger#buffered}
   */
   readonly buffered?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#description ApiManagementLogger#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#description ApiManagementLogger#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#id ApiManagementLogger#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#id ApiManagementLogger#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#name ApiManagementLogger#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#name ApiManagementLogger#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#resource_group_name ApiManagementLogger#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#resource_id ApiManagementLogger#resource_id}
   */
   readonly resourceId?: string;
   /**
   * application_insights block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#application_insights ApiManagementLogger#application_insights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#application_insights ApiManagementLogger#application_insights}
   */
   readonly applicationInsights?: ApiManagementLoggerApplicationInsights;
   /**
   * eventhub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#eventhub ApiManagementLogger#eventhub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#eventhub ApiManagementLogger#eventhub}
   */
   readonly eventhub?: ApiManagementLoggerEventhub;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#timeouts ApiManagementLogger#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#timeouts ApiManagementLogger#timeouts}
   */
   readonly timeouts?: ApiManagementLoggerTimeouts;
 }
 export interface ApiManagementLoggerApplicationInsights {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}
   */
   readonly connectionString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#identity_client_id ApiManagementLogger#identity_client_id}
+  */
+  readonly identityClientId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#instrumentation_key ApiManagementLogger#instrumentation_key}
   */
   readonly instrumentationKey?: string;
 }
@@ -80,6 +84,7 @@ export function apiManagementLoggerApplicationInsightsToTerraform(struct?: ApiMa
   }
   return {
     connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    identity_client_id: cdktn.stringToTerraform(struct!.identityClientId),
     instrumentation_key: cdktn.stringToTerraform(struct!.instrumentationKey),
   }
 }
@@ -93,6 +98,12 @@ export function apiManagementLoggerApplicationInsightsToHclTerraform(struct?: Ap
   const attrs = {
     connection_string: {
       value: cdktn.stringToHclTerraform(struct!.connectionString),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    identity_client_id: {
+      value: cdktn.stringToHclTerraform(struct!.identityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,6 +138,10 @@ export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktn
       hasAnyValues = true;
       internalValueResult.connectionString = this._connectionString;
     }
+    if (this._identityClientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identityClientId = this._identityClientId;
+    }
     if (this._instrumentationKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.instrumentationKey = this._instrumentationKey;
@@ -138,11 +153,13 @@ export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktn
     if (value === undefined) {
       this.isEmptyObject = false;
       this._connectionString = undefined;
+      this._identityClientId = undefined;
       this._instrumentationKey = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._connectionString = value.connectionString;
+      this._identityClientId = value.identityClientId;
       this._instrumentationKey = value.instrumentationKey;
     }
   }
@@ -163,6 +180,22 @@ export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktn
     return this._connectionString;
   }
 
+  // identity_client_id - computed: false, optional: true, required: false
+  private _identityClientId?: string; 
+  public get identityClientId() {
+    return this.getStringAttribute('identity_client_id');
+  }
+  public set identityClientId(value: string) {
+    this._identityClientId = value;
+  }
+  public resetIdentityClientId() {
+    this._identityClientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityClientIdInput() {
+    return this._identityClientId;
+  }
+
   // instrumentation_key - computed: false, optional: true, required: false
   private _instrumentationKey?: string; 
   public get instrumentationKey() {
@@ -181,19 +214,19 @@ export class ApiManagementLoggerApplicationInsightsOutputReference extends cdktn
 }
 export interface ApiManagementLoggerEventhub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#connection_string ApiManagementLogger#connection_string}
   */
   readonly connectionString?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#endpoint_uri ApiManagementLogger#endpoint_uri}
   */
   readonly endpointUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#name ApiManagementLogger#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#name ApiManagementLogger#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#user_assigned_identity_client_id ApiManagementLogger#user_assigned_identity_client_id}
   */
   readonly userAssignedIdentityClientId?: string;
 }
@@ -361,19 +394,19 @@ export class ApiManagementLoggerEventhubOutputReference extends cdktn.ComplexObj
 }
 export interface ApiManagementLoggerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#create ApiManagementLogger#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#create ApiManagementLogger#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#delete ApiManagementLogger#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#delete ApiManagementLogger#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#read ApiManagementLogger#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#read ApiManagementLogger#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#update ApiManagementLogger#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#update ApiManagementLogger#update}
   */
   readonly update?: string;
 }
@@ -554,7 +587,7 @@ export class ApiManagementLoggerTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger azurerm_api_management_logger}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger azurerm_api_management_logger}
 */
 export class ApiManagementLogger extends cdktn.TerraformResource {
 
@@ -570,7 +603,7 @@ export class ApiManagementLogger extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementLogger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementLogger to import
-  * @param importFromId The id of the existing ApiManagementLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementLogger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementLogger to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -582,7 +615,7 @@ export class ApiManagementLogger extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_logger azurerm_api_management_logger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -593,7 +626,7 @@ export class ApiManagementLogger extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_logger',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.80.0',
+        providerVersion: '4.81.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ContainerConnectedRegistry <a name="ContainerConnectedRegistry" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry azurerm_container_connected_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry azurerm_container_connected_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer"></a>
 
@@ -49,19 +49,19 @@ containerConnectedRegistry.ContainerConnectedRegistry(
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.containerRegistryId">container_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncTokenId">sync_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.auditLogEnabled">audit_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.clientTokenIds">client_token_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.logLevel">log_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.containerRegistryId">container_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncTokenId">sync_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.auditLogEnabled">audit_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.clientTokenIds">client_token_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.logLevel">log_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}. |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.notification">notification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification">ContainerConnectedRegistryNotification</a>]</code> | notification block. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.parentRegistryId">parent_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncMessageTtl">sync_message_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncSchedule">sync_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncWindow">sync_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.parentRegistryId">parent_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncMessageTtl">sync_message_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncSchedule">sync_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.syncWindow">sync_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}. |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts">ContainerConnectedRegistryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#notification ContainerConnectedRegistry#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#notification ContainerConnectedRegistry#notification}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}.
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}.
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}.
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}.
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#timeouts ContainerConnectedRegistry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#timeouts ContainerConnectedRegistry#timeouts}
 
 ---
 
@@ -666,7 +666,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
 
 ---
 
@@ -674,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
 
 ---
 
@@ -682,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
 
 ---
 
@@ -690,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
 
 ---
 
@@ -874,7 +874,7 @@ The construct id used in the generated config for the ContainerConnectedRegistry
 
 The id of the existing ContainerConnectedRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1420,19 +1420,19 @@ containerConnectedRegistry.ContainerConnectedRegistryConfig(
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.containerRegistryId">container_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncTokenId">sync_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.auditLogEnabled">audit_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.clientTokenIds">client_token_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.logLevel">log_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.containerRegistryId">container_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncTokenId">sync_token_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.auditLogEnabled">audit_log_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.clientTokenIds">client_token_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.logLevel">log_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.mode">mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}. |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.notification">notification</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification">ContainerConnectedRegistryNotification</a>]</code> | notification block. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.parentRegistryId">parent_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncMessageTtl">sync_message_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncSchedule">sync_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncWindow">sync_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.parentRegistryId">parent_registry_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncMessageTtl">sync_message_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncSchedule">sync_schedule</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.syncWindow">sync_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}. |
 | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts">ContainerConnectedRegistryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1515,7 +1515,7 @@ container_registry_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#container_registry_id ContainerConnectedRegistry#container_registry_id}.
 
 ---
 
@@ -1527,7 +1527,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
 
 ---
 
@@ -1539,7 +1539,7 @@ sync_token_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_token_id ContainerConnectedRegistry#sync_token_id}.
 
 ---
 
@@ -1551,7 +1551,7 @@ audit_log_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#audit_log_enabled ContainerConnectedRegistry#audit_log_enabled}.
 
 ---
 
@@ -1563,7 +1563,7 @@ client_token_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#client_token_ids ContainerConnectedRegistry#client_token_ids}.
 
 ---
 
@@ -1575,7 +1575,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#id ContainerConnectedRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1590,7 +1590,7 @@ log_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#log_level ContainerConnectedRegistry#log_level}.
 
 ---
 
@@ -1602,7 +1602,7 @@ mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#mode ContainerConnectedRegistry#mode}.
 
 ---
 
@@ -1616,7 +1616,7 @@ notification: IResolvable | typing.List[ContainerConnectedRegistryNotification]
 
 notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#notification ContainerConnectedRegistry#notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#notification ContainerConnectedRegistry#notification}
 
 ---
 
@@ -1628,7 +1628,7 @@ parent_registry_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#parent_registry_id ContainerConnectedRegistry#parent_registry_id}.
 
 ---
 
@@ -1640,7 +1640,7 @@ sync_message_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_message_ttl ContainerConnectedRegistry#sync_message_ttl}.
 
 ---
 
@@ -1652,7 +1652,7 @@ sync_schedule: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_schedule ContainerConnectedRegistry#sync_schedule}.
 
 ---
 
@@ -1664,7 +1664,7 @@ sync_window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#sync_window ContainerConnectedRegistry#sync_window}.
 
 ---
 
@@ -1678,7 +1678,7 @@ timeouts: ContainerConnectedRegistryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#timeouts ContainerConnectedRegistry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#timeouts ContainerConnectedRegistry#timeouts}
 
 ---
 
@@ -1701,10 +1701,10 @@ containerConnectedRegistry.ContainerConnectedRegistryNotification(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#action ContainerConnectedRegistry#action}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.digest">digest</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#digest ContainerConnectedRegistry#digest}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.tag">tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#tag ContainerConnectedRegistry#tag}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#action ContainerConnectedRegistry#action}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.digest">digest</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#digest ContainerConnectedRegistry#digest}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.property.tag">tag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#tag ContainerConnectedRegistry#tag}. |
 
 ---
 
@@ -1716,7 +1716,7 @@ action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#action ContainerConnectedRegistry#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#action ContainerConnectedRegistry#action}.
 
 ---
 
@@ -1728,7 +1728,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#name ContainerConnectedRegistry#name}.
 
 ---
 
@@ -1740,7 +1740,7 @@ digest: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#digest ContainerConnectedRegistry#digest}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#digest ContainerConnectedRegistry#digest}.
 
 ---
 
@@ -1752,7 +1752,7 @@ tag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#tag ContainerConnectedRegistry#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#tag ContainerConnectedRegistry#tag}.
 
 ---
 
@@ -1775,10 +1775,10 @@ containerConnectedRegistry.ContainerConnectedRegistryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}. |
 
 ---
 
@@ -1790,7 +1790,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#create ContainerConnectedRegistry#create}.
 
 ---
 
@@ -1802,7 +1802,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#delete ContainerConnectedRegistry#delete}.
 
 ---
 
@@ -1814,7 +1814,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#read ContainerConnectedRegistry#read}.
 
 ---
 
@@ -1826,7 +1826,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_connected_registry#update ContainerConnectedRegistry#update}.
 
 ---
 

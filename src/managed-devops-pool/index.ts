@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,88 @@ import * as cdktn from 'cdktn';
 
 export interface ManagedDevopsPoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}
   */
   readonly devCenterProjectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}
   */
   readonly maximumConcurrency: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}
   */
   readonly workFolder?: string;
   /**
   * azure_devops_organization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
   */
   readonly azureDevopsOrganization: ManagedDevopsPoolAzureDevopsOrganization;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
   */
   readonly identity?: ManagedDevopsPoolIdentity;
   /**
   * stateful_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
   */
   readonly statefulAgent?: ManagedDevopsPoolStatefulAgent;
   /**
   * stateless_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
   */
   readonly statelessAgent?: ManagedDevopsPoolStatelessAgent;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
   */
   readonly timeouts?: ManagedDevopsPoolTimeouts;
   /**
   * virtual_machine_scale_set_fabric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
   */
   readonly virtualMachineScaleSetFabric: ManagedDevopsPoolVirtualMachineScaleSetFabric;
 }
 export interface ManagedDevopsPoolAzureDevopsOrganizationOrganization {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}
   */
   readonly parallelism: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}
   */
   readonly projects?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}
   */
   readonly url: string;
 }
@@ -262,11 +262,11 @@ export class ManagedDevopsPoolAzureDevopsOrganizationOrganizationList extends cd
 }
 export interface ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}
   */
   readonly users?: string[];
 }
@@ -379,13 +379,13 @@ export class ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAcco
 }
 export interface ManagedDevopsPoolAzureDevopsOrganizationPermission {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}
   */
   readonly kind: string;
   /**
   * administrator_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
   */
   readonly administratorAccount?: ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount;
 }
@@ -497,13 +497,13 @@ export interface ManagedDevopsPoolAzureDevopsOrganization {
   /**
   * organization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
   */
   readonly organization: ManagedDevopsPoolAzureDevopsOrganizationOrganization[] | cdktn.IResolvable;
   /**
   * permission block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
   */
   readonly permission?: ManagedDevopsPoolAzureDevopsOrganizationPermission;
 }
@@ -613,11 +613,11 @@ export class ManagedDevopsPoolAzureDevopsOrganizationOutputReference extends cdk
 }
 export interface ManagedDevopsPoolIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}
   */
   readonly identityIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}
   */
   readonly type: string;
 }
@@ -724,7 +724,7 @@ export class ManagedDevopsPoolIdentityOutputReference extends cdktn.ComplexObjec
 }
 export interface ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}
   */
   readonly predictionPreference?: string;
 }
@@ -808,11 +808,11 @@ export class ManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputRefe
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -951,11 +951,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedul
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1094,11 +1094,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedul
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1237,11 +1237,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySched
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1380,11 +1380,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedul
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1523,11 +1523,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySched
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1666,11 +1666,11 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedu
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -1809,53 +1809,53 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySche
 }
 export interface ManagedDevopsPoolStatefulAgentManualResourcePrediction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}
   */
   readonly allWeekSchedule?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}
   */
   readonly timeZoneName?: string;
   /**
   * friday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
   */
   readonly fridaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule[] | cdktn.IResolvable;
   /**
   * monday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
   */
   readonly mondaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule[] | cdktn.IResolvable;
   /**
   * saturday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
   */
   readonly saturdaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule[] | cdktn.IResolvable;
   /**
   * sunday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
   */
   readonly sundaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule[] | cdktn.IResolvable;
   /**
   * thursday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
   */
   readonly thursdaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule[] | cdktn.IResolvable;
   /**
   * tuesday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
   */
   readonly tuesdaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule[] | cdktn.IResolvable;
   /**
   * wednesday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
   */
   readonly wednesdaySchedule?: ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule[] | cdktn.IResolvable;
 }
@@ -2171,23 +2171,23 @@ export class ManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReferen
 }
 export interface ManagedDevopsPoolStatefulAgent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}
   */
   readonly gracePeriodTimeSpan?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}
   */
   readonly maximumAgentLifetime?: string;
   /**
   * automatic_resource_prediction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
   */
   readonly automaticResourcePrediction?: ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction;
   /**
   * manual_resource_prediction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
   */
   readonly manualResourcePrediction?: ManagedDevopsPoolStatefulAgentManualResourcePrediction;
 }
@@ -2358,7 +2358,7 @@ export class ManagedDevopsPoolStatefulAgentOutputReference extends cdktn.Complex
 }
 export interface ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}
   */
   readonly predictionPreference?: string;
 }
@@ -2442,11 +2442,11 @@ export class ManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputRef
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -2585,11 +2585,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedu
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -2728,11 +2728,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedu
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -2871,11 +2871,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySche
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -3014,11 +3014,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedu
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -3157,11 +3157,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySche
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -3300,11 +3300,11 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySched
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}
   */
   readonly time: string;
 }
@@ -3443,53 +3443,53 @@ export class ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySch
 }
 export interface ManagedDevopsPoolStatelessAgentManualResourcePrediction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}
   */
   readonly allWeekSchedule?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}
   */
   readonly timeZoneName?: string;
   /**
   * friday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
   */
   readonly fridaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule[] | cdktn.IResolvable;
   /**
   * monday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
   */
   readonly mondaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule[] | cdktn.IResolvable;
   /**
   * saturday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
   */
   readonly saturdaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule[] | cdktn.IResolvable;
   /**
   * sunday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
   */
   readonly sundaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule[] | cdktn.IResolvable;
   /**
   * thursday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
   */
   readonly thursdaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule[] | cdktn.IResolvable;
   /**
   * tuesday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
   */
   readonly tuesdaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule[] | cdktn.IResolvable;
   /**
   * wednesday_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
   */
   readonly wednesdaySchedule?: ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule[] | cdktn.IResolvable;
 }
@@ -3807,13 +3807,13 @@ export interface ManagedDevopsPoolStatelessAgent {
   /**
   * automatic_resource_prediction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
   */
   readonly automaticResourcePrediction?: ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction;
   /**
   * manual_resource_prediction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
   */
   readonly manualResourcePrediction?: ManagedDevopsPoolStatelessAgentManualResourcePrediction;
 }
@@ -3926,19 +3926,19 @@ export class ManagedDevopsPoolStatelessAgentOutputReference extends cdktn.Comple
 }
 export interface ManagedDevopsPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}
   */
   readonly update?: string;
 }
@@ -4119,22 +4119,22 @@ export class ManagedDevopsPoolTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 export interface ManagedDevopsPoolVirtualMachineScaleSetFabricImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}
   */
   readonly aliases?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}
   */
   readonly buffer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}
   */
   readonly wellKnownImageName?: string;
 }
@@ -4337,19 +4337,19 @@ export class ManagedDevopsPoolVirtualMachineScaleSetFabricImageList extends cdkt
 }
 export interface ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}
   */
   readonly certificateStoreLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}
   */
   readonly certificateStoreName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}
   */
   readonly keyExportEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}
   */
   readonly keyVaultCertificateIds: string[];
 }
@@ -4517,13 +4517,13 @@ export class ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManage
 }
 export interface ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}
   */
   readonly interactiveLogonEnabled?: boolean | cdktn.IResolvable;
   /**
   * key_vault_management block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
   */
   readonly keyVaultManagement?: ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement;
 }
@@ -4636,19 +4636,19 @@ export class ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReferenc
 }
 export interface ManagedDevopsPoolVirtualMachineScaleSetFabricStorage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}
   */
   readonly caching?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}
   */
   readonly diskSizeInGb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}
   */
   readonly driveLetter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}
   */
   readonly storageAccountType?: string;
 }
@@ -4816,33 +4816,33 @@ export class ManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference
 }
 export interface ManagedDevopsPoolVirtualMachineScaleSetFabric {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}
   */
   readonly osDiskStorageAccountType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}
   */
   readonly subnetId?: string;
   /**
   * image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
   */
   readonly image: ManagedDevopsPoolVirtualMachineScaleSetFabricImage[] | cdktn.IResolvable;
   /**
   * security block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
   */
   readonly security?: ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity;
   /**
   * storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
   */
   readonly storage?: ManagedDevopsPoolVirtualMachineScaleSetFabricStorage;
 }
@@ -5065,7 +5065,7 @@ export class ManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool}
 */
 export class ManagedDevopsPool extends cdktn.TerraformResource {
 
@@ -5081,7 +5081,7 @@ export class ManagedDevopsPool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ManagedDevopsPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDevopsPool to import
-  * @param importFromId The id of the existing ManagedDevopsPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDevopsPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDevopsPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -5093,7 +5093,7 @@ export class ManagedDevopsPool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -5104,7 +5104,7 @@ export class ManagedDevopsPool extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_managed_devops_pool',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.80.0',
+        providerVersion: '4.81.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

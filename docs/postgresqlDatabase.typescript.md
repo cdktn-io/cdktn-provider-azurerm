@@ -4,7 +4,7 @@
 
 ### PostgresqlDatabase <a name="PostgresqlDatabase" id="@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database azurerm_postgresql_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database azurerm_postgresql_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabase.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the PostgresqlDatabase to impo
 
 The id of the existing PostgresqlDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,12 +886,12 @@ const postgresqlDatabaseConfig: postgresqlDatabase.PostgresqlDatabaseConfig = { 
 | <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.charset">charset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#charset PostgresqlDatabase#charset}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.collation">collation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#collation PostgresqlDatabase#collation}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#name PostgresqlDatabase#name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#resource_group_name PostgresqlDatabase#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.serverName">serverName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#server_name PostgresqlDatabase#server_name}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#id PostgresqlDatabase#id}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.charset">charset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#charset PostgresqlDatabase#charset}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.collation">collation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#collation PostgresqlDatabase#collation}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#name PostgresqlDatabase#name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#resource_group_name PostgresqlDatabase#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.serverName">serverName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#server_name PostgresqlDatabase#server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#id PostgresqlDatabase#id}. |
 | <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts">PostgresqlDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -974,7 +974,7 @@ public readonly charset: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#charset PostgresqlDatabase#charset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#charset PostgresqlDatabase#charset}.
 
 ---
 
@@ -986,7 +986,7 @@ public readonly collation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#collation PostgresqlDatabase#collation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#collation PostgresqlDatabase#collation}.
 
 ---
 
@@ -998,7 +998,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#name PostgresqlDatabase#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#name PostgresqlDatabase#name}.
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#resource_group_name PostgresqlDatabase#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#resource_group_name PostgresqlDatabase#resource_group_name}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly serverName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#server_name PostgresqlDatabase#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#server_name PostgresqlDatabase#server_name}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#id PostgresqlDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#id PostgresqlDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ public readonly timeouts: PostgresqlDatabaseTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#timeouts PostgresqlDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#timeouts PostgresqlDatabase#timeouts}
 
 ---
 
@@ -1069,9 +1069,9 @@ const postgresqlDatabaseTimeouts: postgresqlDatabase.PostgresqlDatabaseTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#create PostgresqlDatabase#create}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#delete PostgresqlDatabase#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#read PostgresqlDatabase#read}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#create PostgresqlDatabase#create}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#delete PostgresqlDatabase#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.postgresqlDatabase.PostgresqlDatabaseTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#read PostgresqlDatabase#read}. |
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#create PostgresqlDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#create PostgresqlDatabase#create}.
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#delete PostgresqlDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#delete PostgresqlDatabase#delete}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/postgresql_database#read PostgresqlDatabase#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/postgresql_database#read PostgresqlDatabase#read}.
 
 ---
 

@@ -178,6 +178,7 @@ Object.defineProperty(exports, 'capacityReservation', { get: function () { retur
 Object.defineProperty(exports, 'capacityReservationGroup', { get: function () { return require('./capacity-reservation-group'); } });
 Object.defineProperty(exports, 'cdnEndpoint', { get: function () { return require('./cdn-endpoint'); } });
 Object.defineProperty(exports, 'cdnEndpointCustomDomain', { get: function () { return require('./cdn-endpoint-custom-domain'); } });
+Object.defineProperty(exports, 'cdnFrontdoorBatchRuleSet', { get: function () { return require('./cdn-frontdoor-batch-rule-set'); } });
 Object.defineProperty(exports, 'cdnFrontdoorCustomDomain', { get: function () { return require('./cdn-frontdoor-custom-domain'); } });
 Object.defineProperty(exports, 'cdnFrontdoorCustomDomainAssociation', { get: function () { return require('./cdn-frontdoor-custom-domain-association'); } });
 Object.defineProperty(exports, 'cdnFrontdoorEndpoint', { get: function () { return require('./cdn-frontdoor-endpoint'); } });
@@ -195,6 +196,11 @@ Object.defineProperty(exports, 'chaosStudioCapability', { get: function () { ret
 Object.defineProperty(exports, 'chaosStudioExperiment', { get: function () { return require('./chaos-studio-experiment'); } });
 Object.defineProperty(exports, 'chaosStudioTarget', { get: function () { return require('./chaos-studio-target'); } });
 Object.defineProperty(exports, 'cognitiveAccount', { get: function () { return require('./cognitive-account'); } });
+Object.defineProperty(exports, 'cognitiveAccountConnectionAccountKey', { get: function () { return require('./cognitive-account-connection-account-key'); } });
+Object.defineProperty(exports, 'cognitiveAccountConnectionAccountManagedIdentity', { get: function () { return require('./cognitive-account-connection-account-managed-identity'); } });
+Object.defineProperty(exports, 'cognitiveAccountConnectionApiKey', { get: function () { return require('./cognitive-account-connection-api-key'); } });
+Object.defineProperty(exports, 'cognitiveAccountConnectionCustomKeys', { get: function () { return require('./cognitive-account-connection-custom-keys'); } });
+Object.defineProperty(exports, 'cognitiveAccountConnectionEntraId', { get: function () { return require('./cognitive-account-connection-entra-id'); } });
 Object.defineProperty(exports, 'cognitiveAccountCustomerManagedKey', { get: function () { return require('./cognitive-account-customer-managed-key'); } });
 Object.defineProperty(exports, 'cognitiveAccountProject', { get: function () { return require('./cognitive-account-project'); } });
 Object.defineProperty(exports, 'cognitiveAccountRaiBlocklist', { get: function () { return require('./cognitive-account-rai-blocklist'); } });
@@ -499,6 +505,7 @@ Object.defineProperty(exports, 'keyVaultManagedHardwareSecurityModuleRoleDefinit
 Object.defineProperty(exports, 'keyVaultManagedStorageAccount', { get: function () { return require('./key-vault-managed-storage-account'); } });
 Object.defineProperty(exports, 'keyVaultManagedStorageAccountSasTokenDefinition', { get: function () { return require('./key-vault-managed-storage-account-sas-token-definition'); } });
 Object.defineProperty(exports, 'keyVaultSecret', { get: function () { return require('./key-vault-secret'); } });
+Object.defineProperty(exports, 'kubernetesAutomaticCluster', { get: function () { return require('./kubernetes-automatic-cluster'); } });
 Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return require('./kubernetes-cluster'); } });
 Object.defineProperty(exports, 'kubernetesClusterDeploymentSafeguard', { get: function () { return require('./kubernetes-cluster-deployment-safeguard'); } });
 Object.defineProperty(exports, 'kubernetesClusterExtension', { get: function () { return require('./kubernetes-cluster-extension'); } });
@@ -554,6 +561,7 @@ Object.defineProperty(exports, 'logAnalyticsStorageInsights', { get: function ()
 Object.defineProperty(exports, 'logAnalyticsWorkspace', { get: function () { return require('./log-analytics-workspace'); } });
 Object.defineProperty(exports, 'logAnalyticsWorkspaceTable', { get: function () { return require('./log-analytics-workspace-table'); } });
 Object.defineProperty(exports, 'logAnalyticsWorkspaceTableCustomLog', { get: function () { return require('./log-analytics-workspace-table-custom-log'); } });
+Object.defineProperty(exports, 'logAnalyticsWorkspaceTableMicrosoft', { get: function () { return require('./log-analytics-workspace-table-microsoft'); } });
 Object.defineProperty(exports, 'logicAppActionCustom', { get: function () { return require('./logic-app-action-custom'); } });
 Object.defineProperty(exports, 'logicAppActionHttp', { get: function () { return require('./logic-app-action-http'); } });
 Object.defineProperty(exports, 'logicAppIntegrationAccount', { get: function () { return require('./logic-app-integration-account'); } });
@@ -973,6 +981,7 @@ Object.defineProperty(exports, 'storageAccountLocalUser', { get: function () { r
 Object.defineProperty(exports, 'storageAccountNetworkRules', { get: function () { return require('./storage-account-network-rules'); } });
 Object.defineProperty(exports, 'storageAccountQueueProperties', { get: function () { return require('./storage-account-queue-properties'); } });
 Object.defineProperty(exports, 'storageAccountStaticWebsite', { get: function () { return require('./storage-account-static-website'); } });
+Object.defineProperty(exports, 'storageAccountTableProperties', { get: function () { return require('./storage-account-table-properties'); } });
 Object.defineProperty(exports, 'storageBlob', { get: function () { return require('./storage-blob'); } });
 Object.defineProperty(exports, 'storageBlobInventoryPolicy', { get: function () { return require('./storage-blob-inventory-policy'); } });
 Object.defineProperty(exports, 'storageContainer', { get: function () { return require('./storage-container'); } });
@@ -1185,6 +1194,7 @@ Object.defineProperty(exports, 'dataAzurermBillingMcaAccountScope', { get: funct
 Object.defineProperty(exports, 'dataAzurermBillingMpaAccountScope', { get: function () { return require('./data-azurerm-billing-mpa-account-scope'); } });
 Object.defineProperty(exports, 'dataAzurermBlueprintDefinition', { get: function () { return require('./data-azurerm-blueprint-definition'); } });
 Object.defineProperty(exports, 'dataAzurermBlueprintPublishedVersion', { get: function () { return require('./data-azurerm-blueprint-published-version'); } });
+Object.defineProperty(exports, 'dataAzurermCdnFrontdoorBatchRuleSet', { get: function () { return require('./data-azurerm-cdn-frontdoor-batch-rule-set'); } });
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorCustomDomain', { get: function () { return require('./data-azurerm-cdn-frontdoor-custom-domain'); } });
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorEndpoint', { get: function () { return require('./data-azurerm-cdn-frontdoor-endpoint'); } });
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorFirewallPolicy', { get: function () { return require('./data-azurerm-cdn-frontdoor-firewall-policy'); } });

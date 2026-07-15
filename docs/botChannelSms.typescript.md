@@ -4,7 +4,7 @@
 
 ### BotChannelSms <a name="BotChannelSms" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms azurerm_bot_channel_sms}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms azurerm_bot_channel_sms}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the BotChannelSms to import.
 
 The id of the existing BotChannelSms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,13 +908,13 @@ const botChannelSmsConfig: botChannelSms.BotChannelSmsConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.botName">botName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#bot_name BotChannelSms#bot_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#location BotChannelSms#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#phone_number BotChannelSms#phone_number}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#resource_group_name BotChannelSms#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.smsChannelAccountSecurityId">smsChannelAccountSecurityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#sms_channel_account_security_id BotChannelSms#sms_channel_account_security_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.smsChannelAuthToken">smsChannelAuthToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#sms_channel_auth_token BotChannelSms#sms_channel_auth_token}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#id BotChannelSms#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.botName">botName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#bot_name BotChannelSms#bot_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#location BotChannelSms#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#phone_number BotChannelSms#phone_number}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#resource_group_name BotChannelSms#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.smsChannelAccountSecurityId">smsChannelAccountSecurityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#sms_channel_account_security_id BotChannelSms#sms_channel_account_security_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.smsChannelAuthToken">smsChannelAuthToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#sms_channel_auth_token BotChannelSms#sms_channel_auth_token}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#id BotChannelSms#id}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts">BotChannelSmsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -997,7 +997,7 @@ public readonly botName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#bot_name BotChannelSms#bot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#bot_name BotChannelSms#bot_name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#location BotChannelSms#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#location BotChannelSms#location}.
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly phoneNumber: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#phone_number BotChannelSms#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#phone_number BotChannelSms#phone_number}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#resource_group_name BotChannelSms#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#resource_group_name BotChannelSms#resource_group_name}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly smsChannelAccountSecurityId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#sms_channel_account_security_id BotChannelSms#sms_channel_account_security_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#sms_channel_account_security_id BotChannelSms#sms_channel_account_security_id}.
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly smsChannelAuthToken: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#sms_channel_auth_token BotChannelSms#sms_channel_auth_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#sms_channel_auth_token BotChannelSms#sms_channel_auth_token}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#id BotChannelSms#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#id BotChannelSms#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ public readonly timeouts: BotChannelSmsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#timeouts BotChannelSms#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#timeouts BotChannelSms#timeouts}
 
 ---
 
@@ -1104,10 +1104,10 @@ const botChannelSmsTimeouts: botChannelSms.BotChannelSmsTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#create BotChannelSms#create}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#delete BotChannelSms#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#read BotChannelSms#read}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#update BotChannelSms#update}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#create BotChannelSms#create}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#delete BotChannelSms#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#read BotChannelSms#read}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#update BotChannelSms#update}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#create BotChannelSms#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#create BotChannelSms#create}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#delete BotChannelSms#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#delete BotChannelSms#delete}.
 
 ---
 
@@ -1143,7 +1143,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#read BotChannelSms#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#read BotChannelSms#read}.
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_sms#update BotChannelSms#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_sms#update BotChannelSms#update}.
 
 ---
 

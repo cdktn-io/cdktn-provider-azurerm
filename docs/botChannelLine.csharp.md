@@ -4,7 +4,7 @@
 
 ### BotChannelLine <a name="BotChannelLine" id="@cdktn/provider-azurerm.botChannelLine.BotChannelLine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line azurerm_bot_channel_line}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line azurerm_bot_channel_line}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelLine.BotChannelLine.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the BotChannelLine to import.
 
 The id of the existing BotChannelLine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,11 +891,11 @@ new BotChannelLineConfig {
 | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.botName">BotName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#bot_name BotChannelLine#bot_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.botName">BotName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#bot_name BotChannelLine#bot_name}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.lineChannel">LineChannel</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineLineChannel">BotChannelLineLineChannel</a>[]</code> | line_channel block. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#location BotChannelLine#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#resource_group_name BotChannelLine#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#id BotChannelLine#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#location BotChannelLine#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#resource_group_name BotChannelLine#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#id BotChannelLine#id}. |
 | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts">BotChannelLineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -978,7 +978,7 @@ public string BotName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#bot_name BotChannelLine#bot_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#bot_name BotChannelLine#bot_name}.
 
 ---
 
@@ -992,7 +992,7 @@ public IResolvable|BotChannelLineLineChannel[] LineChannel { get; set; }
 
 line_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#line_channel BotChannelLine#line_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#line_channel BotChannelLine#line_channel}
 
 ---
 
@@ -1004,7 +1004,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#location BotChannelLine#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#location BotChannelLine#location}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#resource_group_name BotChannelLine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#resource_group_name BotChannelLine#resource_group_name}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#id BotChannelLine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#id BotChannelLine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ public BotChannelLineTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#timeouts BotChannelLine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#timeouts BotChannelLine#timeouts}
 
 ---
 
@@ -1066,8 +1066,8 @@ new BotChannelLineLineChannel {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineLineChannel.property.accessToken">AccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#access_token BotChannelLine#access_token}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineLineChannel.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#secret BotChannelLine#secret}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineLineChannel.property.accessToken">AccessToken</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#access_token BotChannelLine#access_token}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineLineChannel.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#secret BotChannelLine#secret}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ public string AccessToken { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#access_token BotChannelLine#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#access_token BotChannelLine#access_token}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Secret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#secret BotChannelLine#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#secret BotChannelLine#secret}.
 
 ---
 
@@ -1114,10 +1114,10 @@ new BotChannelLineTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#create BotChannelLine#create}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#delete BotChannelLine#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#read BotChannelLine#read}. |
-| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#update BotChannelLine#update}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#create BotChannelLine#create}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#delete BotChannelLine#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#read BotChannelLine#read}. |
+| <code><a href="#@cdktn/provider-azurerm.botChannelLine.BotChannelLineTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#update BotChannelLine#update}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#create BotChannelLine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#create BotChannelLine#create}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#delete BotChannelLine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#delete BotChannelLine#delete}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#read BotChannelLine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#read BotChannelLine#read}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/bot_channel_line#update BotChannelLine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/bot_channel_line#update BotChannelLine#update}.
 
 ---
 
