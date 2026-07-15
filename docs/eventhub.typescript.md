@@ -4,7 +4,7 @@
 
 ### Eventhub <a name="Eventhub" id="@cdktn/provider-azurerm.eventhub.Eventhub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub azurerm_eventhub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub azurerm_eventhub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the Eventhub to import.
 
 The id of the existing Eventhub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,11 +1054,11 @@ const eventhubCaptureDescription: eventhub.EventhubCaptureDescription = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination">EventhubCaptureDescriptionDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#enabled Eventhub#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#encoding Eventhub#encoding}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.intervalInSeconds">intervalInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.sizeLimitInBytes">sizeLimitInBytes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.skipEmptyArchives">skipEmptyArchives</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#enabled Eventhub#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.encoding">encoding</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#encoding Eventhub#encoding}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.intervalInSeconds">intervalInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.sizeLimitInBytes">sizeLimitInBytes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.skipEmptyArchives">skipEmptyArchives</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}. |
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly destination: EventhubCaptureDescriptionDestination;
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#destination Eventhub#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#destination Eventhub#destination}
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#enabled Eventhub#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#enabled Eventhub#enabled}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly encoding: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#encoding Eventhub#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#encoding Eventhub#encoding}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly intervalInSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly sizeLimitInBytes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly skipEmptyArchives: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}.
 
 ---
 
@@ -1150,12 +1150,12 @@ const eventhubCaptureDescriptionDestination: eventhub.EventhubCaptureDescription
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.archiveNameFormat">archiveNameFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.blobContainerName">blobContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#name Eventhub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAccountId">storageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationId">storageAuthenticationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.archiveNameFormat">archiveNameFormat</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.blobContainerName">blobContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAccountId">storageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationId">storageAuthenticationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ public readonly archiveNameFormat: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}.
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly blobContainerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}.
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#name Eventhub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly storageAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly storageAuthenticationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly storageAuthenticationType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}.
 
 ---
 
@@ -1252,16 +1252,16 @@ const eventhubConfig: eventhub.EventhubConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#name Eventhub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.partitionCount">partitionCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.partitionCount">partitionCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.captureDescription">captureDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription">EventhubCaptureDescription</a></code> | capture_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#id Eventhub#id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.messageRetention">messageRetention</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId">namespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceName">namespaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.messageRetention">messageRetention</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId">namespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceName">namespaceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.retentionDescription">retentionDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription">EventhubRetentionDescription</a></code> | retention_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#status Eventhub#status}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts">EventhubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1344,7 +1344,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#name Eventhub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}.
 
 ---
 
@@ -1356,7 +1356,7 @@ public readonly partitionCount: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#partition_count Eventhub#partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}.
 
 ---
 
@@ -1370,7 +1370,7 @@ public readonly captureDescription: EventhubCaptureDescription;
 
 capture_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#capture_description Eventhub#capture_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#capture_description Eventhub#capture_description}
 
 ---
 
@@ -1382,7 +1382,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#id Eventhub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1397,7 +1397,7 @@ public readonly messageRetention: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#message_retention Eventhub#message_retention}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}.
 
 ---
 
@@ -1409,7 +1409,7 @@ public readonly namespaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly namespaceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}.
 
 ---
 
@@ -1433,7 +1433,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}.
 
 ---
 
@@ -1447,7 +1447,7 @@ public readonly retentionDescription: EventhubRetentionDescription;
 
 retention_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#retention_description Eventhub#retention_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_description Eventhub#retention_description}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#status Eventhub#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}.
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly timeouts: EventhubTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#timeouts Eventhub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#timeouts Eventhub#timeouts}
 
 ---
 
@@ -1491,9 +1491,9 @@ const eventhubRetentionDescription: eventhub.EventhubRetentionDescription = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.cleanupPolicy">cleanupPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.retentionTimeInHours">retentionTimeInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.tombstoneRetentionTimeInHours">tombstoneRetentionTimeInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.cleanupPolicy">cleanupPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.retentionTimeInHours">retentionTimeInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.tombstoneRetentionTimeInHours">tombstoneRetentionTimeInHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}. |
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly cleanupPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}.
 
 ---
 
@@ -1517,7 +1517,7 @@ public readonly retentionTimeInHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}.
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly tombstoneRetentionTimeInHours: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}.
 
 ---
 
@@ -1547,10 +1547,10 @@ const eventhubTimeouts: eventhub.EventhubTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#create Eventhub#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#delete Eventhub#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#read Eventhub#read}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#update Eventhub#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#create Eventhub#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#delete Eventhub#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#read Eventhub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#update Eventhub#update}. |
 
 ---
 
@@ -1562,7 +1562,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#create Eventhub#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#create Eventhub#create}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#delete Eventhub#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#delete Eventhub#delete}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#read Eventhub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#read Eventhub#read}.
 
 ---
 
@@ -1598,7 +1598,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/eventhub#update Eventhub#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#update Eventhub#update}.
 
 ---
 

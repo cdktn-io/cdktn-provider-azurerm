@@ -4,7 +4,7 @@
 
 ### DataAzurermDevCenter <a name="DataAzurermDevCenter" id="@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center azurerm_dev_center}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center azurerm_dev_center}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenter.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermDevCenter to im
 
 The id of the existing DataAzurermDevCenter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,9 +740,9 @@ const dataAzurermDevCenterConfig: dataAzurermDevCenter.DataAzurermDevCenterConfi
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#name DataAzurermDevCenter#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#resource_group_name DataAzurermDevCenter#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#id DataAzurermDevCenter#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#name DataAzurermDevCenter#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#resource_group_name DataAzurermDevCenter#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#id DataAzurermDevCenter#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterTimeouts">DataAzurermDevCenterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -825,7 +825,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#name DataAzurermDevCenter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#name DataAzurermDevCenter#name}.
 
 ---
 
@@ -837,7 +837,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#resource_group_name DataAzurermDevCenter#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#resource_group_name DataAzurermDevCenter#resource_group_name}.
 
 ---
 
@@ -849,7 +849,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#id DataAzurermDevCenter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#id DataAzurermDevCenter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ public readonly timeouts: DataAzurermDevCenterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#timeouts DataAzurermDevCenter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#timeouts DataAzurermDevCenter#timeouts}
 
 ---
 
@@ -895,7 +895,7 @@ const dataAzurermDevCenterTimeouts: dataAzurermDevCenter.DataAzurermDevCenterTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#read DataAzurermDevCenter#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermDevCenter.DataAzurermDevCenterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#read DataAzurermDevCenter#read}. |
 
 ---
 
@@ -907,7 +907,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/dev_center#read DataAzurermDevCenter#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/dev_center#read DataAzurermDevCenter#read}.
 
 ---
 

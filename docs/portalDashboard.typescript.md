@@ -4,7 +4,7 @@
 
 ### PortalDashboard <a name="PortalDashboard" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard azurerm_portal_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard azurerm_portal_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the PortalDashboard to import.
 
 The id of the existing PortalDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,12 +893,12 @@ const portalDashboardConfig: portalDashboard.PortalDashboardConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.dashboardProperties">dashboardProperties</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#dashboard_properties PortalDashboard#dashboard_properties}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#location PortalDashboard#location}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#name PortalDashboard#name}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#resource_group_name PortalDashboard#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#id PortalDashboard#id}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#tags PortalDashboard#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.dashboardProperties">dashboardProperties</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#dashboard_properties PortalDashboard#dashboard_properties}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#location PortalDashboard#location}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#name PortalDashboard#name}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#resource_group_name PortalDashboard#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#id PortalDashboard#id}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#tags PortalDashboard#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts">PortalDashboardTimeouts</a></code> | timeouts block. |
 
 ---
@@ -981,7 +981,7 @@ public readonly dashboardProperties: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#dashboard_properties PortalDashboard#dashboard_properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#dashboard_properties PortalDashboard#dashboard_properties}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#location PortalDashboard#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#location PortalDashboard#location}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#name PortalDashboard#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#name PortalDashboard#name}.
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#resource_group_name PortalDashboard#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#resource_group_name PortalDashboard#resource_group_name}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#id PortalDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#id PortalDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1044,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#tags PortalDashboard#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#tags PortalDashboard#tags}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly timeouts: PortalDashboardTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#timeouts PortalDashboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#timeouts PortalDashboard#timeouts}
 
 ---
 
@@ -1076,10 +1076,10 @@ const portalDashboardTimeouts: portalDashboard.PortalDashboardTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#create PortalDashboard#create}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#delete PortalDashboard#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#read PortalDashboard#read}. |
-| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#update PortalDashboard#update}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#create PortalDashboard#create}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#delete PortalDashboard#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#read PortalDashboard#read}. |
+| <code><a href="#@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#update PortalDashboard#update}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#create PortalDashboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#create PortalDashboard#create}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#delete PortalDashboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#delete PortalDashboard#delete}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#read PortalDashboard#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#read PortalDashboard#read}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/portal_dashboard#update PortalDashboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/portal_dashboard#update PortalDashboard#update}.
 
 ---
 

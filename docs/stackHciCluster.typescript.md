@@ -4,7 +4,7 @@
 
 ### StackHciCluster <a name="StackHciCluster" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster azurerm_stack_hci_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the StackHciCluster to import.
 
 The id of the existing StackHciCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,15 +1033,15 @@ const stackHciClusterConfig: stackHciCluster.StackHciClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#location StackHciCluster#location}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#name StackHciCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#resource_group_name StackHciCluster#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.automanageConfigurationId">automanageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#automanage_configuration_id StackHciCluster#automanage_configuration_id}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#client_id StackHciCluster#client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#id StackHciCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#location StackHciCluster#location}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#name StackHciCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#resource_group_name StackHciCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.automanageConfigurationId">automanageConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#automanage_configuration_id StackHciCluster#automanage_configuration_id}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.clientId">clientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#client_id StackHciCluster#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#id StackHciCluster#id}. |
 | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterIdentity">StackHciClusterIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#tags StackHciCluster#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#tenant_id StackHciCluster#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#tags StackHciCluster#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#tenant_id StackHciCluster#tenant_id}. |
 | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts">StackHciClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1124,7 +1124,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#location StackHciCluster#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#location StackHciCluster#location}.
 
 ---
 
@@ -1136,7 +1136,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#name StackHciCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#name StackHciCluster#name}.
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#resource_group_name StackHciCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#resource_group_name StackHciCluster#resource_group_name}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly automanageConfigurationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#automanage_configuration_id StackHciCluster#automanage_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#automanage_configuration_id StackHciCluster#automanage_configuration_id}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly clientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#client_id StackHciCluster#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#client_id StackHciCluster#client_id}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#id StackHciCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#id StackHciCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1201,7 @@ public readonly identity: StackHciClusterIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#identity StackHciCluster#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#identity StackHciCluster#identity}
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#tags StackHciCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#tags StackHciCluster#tags}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public readonly tenantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#tenant_id StackHciCluster#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#tenant_id StackHciCluster#tenant_id}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly timeouts: StackHciClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#timeouts StackHciCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#timeouts StackHciCluster#timeouts}
 
 ---
 
@@ -1257,7 +1257,7 @@ const stackHciClusterIdentity: stackHciCluster.StackHciClusterIdentity = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}. |
 
 ---
 
@@ -1269,7 +1269,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#type StackHciCluster#type}.
 
 ---
 
@@ -1287,10 +1287,10 @@ const stackHciClusterTimeouts: stackHciCluster.StackHciClusterTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#create StackHciCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#delete StackHciCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#read StackHciCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#update StackHciCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#create StackHciCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#delete StackHciCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#read StackHciCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#update StackHciCluster#update}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#create StackHciCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#create StackHciCluster#create}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#delete StackHciCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#delete StackHciCluster#delete}.
 
 ---
 
@@ -1326,7 +1326,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#read StackHciCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#read StackHciCluster#read}.
 
 ---
 
@@ -1338,7 +1338,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/stack_hci_cluster#update StackHciCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/stack_hci_cluster#update StackHciCluster#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CosmosdbSqlFunction <a name="CosmosdbSqlFunction" id="@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function azurerm_cosmosdb_sql_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunction.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the CosmosdbSqlFunction to imp
 
 The id of the existing CosmosdbSqlFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,10 +855,10 @@ new CosmosdbSqlFunctionConfig {
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.body">Body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.containerId">ContainerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.body">Body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.containerId">ContainerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts">CosmosdbSqlFunctionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -941,7 +941,7 @@ public string Body { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#body CosmosdbSqlFunction#body}.
 
 ---
 
@@ -953,7 +953,7 @@ public string ContainerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#container_id CosmosdbSqlFunction#container_id}.
 
 ---
 
@@ -965,7 +965,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#name CosmosdbSqlFunction#name}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#id CosmosdbSqlFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ public CosmosdbSqlFunctionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#timeouts CosmosdbSqlFunction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#timeouts CosmosdbSqlFunction#timeouts}
 
 ---
 
@@ -1017,10 +1017,10 @@ new CosmosdbSqlFunctionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#create CosmosdbSqlFunction#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#delete CosmosdbSqlFunction#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#read CosmosdbSqlFunction#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#update CosmosdbSqlFunction#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#create CosmosdbSqlFunction#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#delete CosmosdbSqlFunction#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#read CosmosdbSqlFunction#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbSqlFunction.CosmosdbSqlFunctionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#update CosmosdbSqlFunction#update}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#create CosmosdbSqlFunction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#create CosmosdbSqlFunction#create}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#delete CosmosdbSqlFunction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#delete CosmosdbSqlFunction#delete}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#read CosmosdbSqlFunction#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#read CosmosdbSqlFunction#read}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/resources/cosmosdb_sql_function#update CosmosdbSqlFunction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_sql_function#update CosmosdbSqlFunction#update}.
 
 ---
 

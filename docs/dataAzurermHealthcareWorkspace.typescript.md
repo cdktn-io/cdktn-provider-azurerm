@@ -4,7 +4,7 @@
 
 ### DataAzurermHealthcareWorkspace <a name="DataAzurermHealthcareWorkspace" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace azurerm_healthcare_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspace.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermHealthcareWorks
 
 The id of the existing DataAzurermHealthcareWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,9 +718,9 @@ const dataAzurermHealthcareWorkspaceConfig: dataAzurermHealthcareWorkspace.DataA
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts">DataAzurermHealthcareWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -803,7 +803,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#name DataAzurermHealthcareWorkspace#name}.
 
 ---
 
@@ -815,7 +815,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#resource_group_name DataAzurermHealthcareWorkspace#resource_group_name}.
 
 ---
 
@@ -827,7 +827,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#id DataAzurermHealthcareWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public readonly timeouts: DataAzurermHealthcareWorkspaceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#timeouts DataAzurermHealthcareWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#timeouts DataAzurermHealthcareWorkspace#timeouts}
 
 ---
 
@@ -862,7 +862,7 @@ const dataAzurermHealthcareWorkspaceTimeouts: dataAzurermHealthcareWorkspace.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareWorkspace.DataAzurermHealthcareWorkspaceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}. |
 
 ---
 
@@ -874,7 +874,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.80.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_workspace#read DataAzurermHealthcareWorkspace#read}.
 
 ---
 
