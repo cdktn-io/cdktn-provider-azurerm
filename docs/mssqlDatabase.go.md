@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabase(scope Construct, id *string, config MssqlDatabaseConfig) MssqlDatabase
 ```
@@ -723,7 +723,7 @@ func ResetZoneRedundant()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.MssqlDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.MssqlDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -769,7 +769,7 @@ mssqldatabase.MssqlDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.MssqlDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -783,7 +783,7 @@ mssqldatabase.MssqlDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.MssqlDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1826,7 +1826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseConfig {
 	Connection: interface{},
@@ -1846,11 +1846,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
 	EnclaveType: *string,
 	GeoBackupEnabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseIdentity,
-	Import: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseImport,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseIdentity,
+	Import: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseImport,
 	LedgerEnabled: interface{},
 	LicenseType: *string,
-	LongTermRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseLongTermRetentionPolicy,
+	LongTermRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseLongTermRetentionPolicy,
 	MaintenanceConfigurationName: *string,
 	MaxSizeGb: *f64,
 	MinCapacity: *f64,
@@ -1863,12 +1863,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
 	RestorePointInTime: *string,
 	SampleName: *string,
 	SecondaryType: *string,
-	ShortTermRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseShortTermRetentionPolicy,
+	ShortTermRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseShortTermRetentionPolicy,
 	SkuName: *string,
 	StorageAccountType: *string,
 	Tags: *map[string]*string,
-	ThreatDetectionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseThreatDetectionPolicy,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlDatabase.MssqlDatabaseTimeouts,
+	ThreatDetectionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseThreatDetectionPolicy,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlDatabase.MssqlDatabaseTimeouts,
 	TransparentDataEncryptionEnabled: interface{},
 	TransparentDataEncryptionKeyAutomaticRotationEnabled: interface{},
 	TransparentDataEncryptionKeyVaultKeyId: *string,
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseIdentity {
 	IdentityIds: *[]*string,
@@ -2507,7 +2507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseImport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseImport {
 	AdministratorLogin: *string,
@@ -2623,7 +2623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseLongTermRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseLongTermRetentionPolicy {
 	ImmutableBackupsEnabled: interface{},
@@ -2711,7 +2711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseShortTermRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseShortTermRetentionPolicy {
 	RetentionDays: *f64,
@@ -2757,7 +2757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseThreatDetectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseThreatDetectionPolicy {
 	DisabledAlerts: *[]*string,
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 &mssqldatabase.MssqlDatabaseTimeouts {
 	Create: *string,
@@ -2949,7 +2949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseIdentityOutputReference
 ```
@@ -3242,7 +3242,7 @@ func InternalValue() MssqlDatabaseIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseImportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseImportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseImportOutputReference
 ```
@@ -3652,7 +3652,7 @@ func InternalValue() MssqlDatabaseImport
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseLongTermRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseLongTermRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseLongTermRetentionPolicyOutputReference
 ```
@@ -4046,7 +4046,7 @@ func InternalValue() MssqlDatabaseLongTermRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseShortTermRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseShortTermRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseShortTermRetentionPolicyOutputReference
 ```
@@ -4346,7 +4346,7 @@ func InternalValue() MssqlDatabaseShortTermRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseThreatDetectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseThreatDetectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseThreatDetectionPolicyOutputReference
 ```
@@ -4798,7 +4798,7 @@ func InternalValue() MssqlDatabaseThreatDetectionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlDatabase.MssqlDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqldatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqldatabase"
 
 mssqldatabase.NewMssqlDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlDatabaseTimeoutsOutputReference
 ```

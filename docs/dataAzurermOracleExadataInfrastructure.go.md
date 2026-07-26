@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructure(scope Construct, id *string, config DataAzurermOracleExadataInfrastructureConfig) DataAzurermOracleExadataInfrastructure
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructure.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 &dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructureConfig {
 	Connection: interface{},
@@ -1100,7 +1100,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureTimeouts,
 }
 ```
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureDefinedFileSystemConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 &dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructureDefinedFileSystemConfiguration {
 
@@ -1263,7 +1263,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureEstimatedPatchingTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 &dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructureEstimatedPatchingTime {
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 &dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructureMaintenanceWindow {
 
@@ -1289,7 +1289,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 &dataazurermoracleexadatainfrastructure.DataAzurermOracleExadataInfrastructureTimeouts {
 	Read: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationList
 ```
@@ -1472,7 +1472,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleExadataInfrastructureDefinedFileSystemConfigurationOutputReference
 ```
@@ -1783,7 +1783,7 @@ func InternalValue() DataAzurermOracleExadataInfrastructureDefinedFileSystemConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureEstimatedPatchingTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeList
 ```
@@ -1932,7 +1932,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleExadataInfrastructureEstimatedPatchingTimeOutputReference
 ```
@@ -2243,7 +2243,7 @@ func InternalValue() DataAzurermOracleExadataInfrastructureEstimatedPatchingTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleExadataInfrastructureMaintenanceWindowList
 ```
@@ -2392,7 +2392,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleExadataInfrastructureMaintenanceWindowOutputReference
 ```
@@ -2769,7 +2769,7 @@ func InternalValue() DataAzurermOracleExadataInfrastructureMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleExadataInfrastructure.DataAzurermOracleExadataInfrastructureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleexadatainfrastructure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleexadatainfrastructure"
 
 dataazurermoracleexadatainfrastructure.NewDataAzurermOracleExadataInfrastructureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleExadataInfrastructureTimeoutsOutputReference
 ```

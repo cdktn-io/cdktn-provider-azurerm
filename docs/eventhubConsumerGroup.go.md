@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.NewEventhubConsumerGroup(scope Construct, id *string, config EventhubConsumerGroupConfig) EventhubConsumerGroup
 ```
@@ -434,7 +434,7 @@ func ResetUserMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.EventhubConsumerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.EventhubConsumerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ eventhubconsumergroup.EventhubConsumerGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.EventhubConsumerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ eventhubconsumergroup.EventhubConsumerGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.EventhubConsumerGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 &eventhubconsumergroup.EventhubConsumerGroupConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsum
 	NamespaceName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventhubConsumerGroup.EventhubConsumerGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventhubConsumerGroup.EventhubConsumerGroupTimeouts,
 	UserMetadata: *string,
 }
 ```
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 &eventhubconsumergroup.EventhubConsumerGroupTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventhubConsumerGroup.EventhubConsumerGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventhubconsumergroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventhubconsumergroup"
 
 eventhubconsumergroup.NewEventhubConsumerGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventhubConsumerGroupTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.NewIotcentralApplicationNetworkRuleSet(scope Construct, id *string, config IotcentralApplicationNetworkRuleSetConfig) IotcentralApplicationNetworkRuleSet
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 &iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSetConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralappl
 	DefaultAction: *string,
 	Id: *string,
 	IpRule: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetIpRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 &iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSetIpRule {
 	IpMask: *string,
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 &iotcentralapplicationnetworkruleset.IotcentralApplicationNetworkRuleSetTimeouts {
 	Create: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetIpRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.NewIotcentralApplicationNetworkRuleSetIpRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotcentralApplicationNetworkRuleSetIpRuleList
 ```
@@ -1357,7 +1357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetIpRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.NewIotcentralApplicationNetworkRuleSetIpRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotcentralApplicationNetworkRuleSetIpRuleOutputReference
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralApplicationNetworkRuleSet.IotcentralApplicationNetworkRuleSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralapplicationnetworkruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralapplicationnetworkruleset"
 
 iotcentralapplicationnetworkruleset.NewIotcentralApplicationNetworkRuleSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotcentralApplicationNetworkRuleSetTimeoutsOutputReference
 ```

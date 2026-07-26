@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.NewDataAzurermApiManagementUser(scope Construct, id *string, config DataAzurermApiManagementUserConfig) DataAzurermApiManagementUser
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.DataAzurermApiManagementUser_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.DataAzurermApiManagementUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermapimanagementuser.DataAzurermApiManagementUser_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.DataAzurermApiManagementUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermapimanagementuser.DataAzurermApiManagementUser_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.DataAzurermApiManagementUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 &dataazurermapimanagementuser.DataAzurermApiManagementUserConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapi
 	ResourceGroupName: *string,
 	UserId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermApiManagementUser.DataAzurermApiManagementUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermApiManagementUser.DataAzurermApiManagementUserTimeouts,
 }
 ```
 
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 &dataazurermapimanagementuser.DataAzurermApiManagementUserTimeouts {
 	Read: *string,
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagementUser.DataAzurermApiManagementUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementuser"
 
 dataazurermapimanagementuser.NewDataAzurermApiManagementUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermApiManagementUserTimeoutsOutputReference
 ```

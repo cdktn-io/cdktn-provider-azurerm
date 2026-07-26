@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.NewDataFactoryDatasetMysql(scope Construct, id *string, config DataFactoryDatasetMysqlConfig) DataFactoryDatasetMysql
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysql.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.DataFactoryDatasetMysql_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.DataFactoryDatasetMysql_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ datafactorydatasetmysql.DataFactoryDatasetMysql_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.DataFactoryDatasetMysql_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ datafactorydatasetmysql.DataFactoryDatasetMysql_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.DataFactoryDatasetMysql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 &datafactorydatasetmysql.DataFactoryDatasetMysqlConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydat
 	Parameters: *map[string]*string,
 	SchemaColumn: interface{},
 	TableName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetMysql.DataFactoryDatasetMysqlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetMysql.DataFactoryDatasetMysqlTimeouts,
 }
 ```
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlSchemaColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 &datafactorydatasetmysql.DataFactoryDatasetMysqlSchemaColumn {
 	Name: *string,
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 &datafactorydatasetmysql.DataFactoryDatasetMysqlTimeouts {
 	Create: *string,
@@ -1455,7 +1455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlSchemaColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.NewDataFactoryDatasetMysqlSchemaColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryDatasetMysqlSchemaColumnList
 ```
@@ -1615,7 +1615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlSchemaColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.NewDataFactoryDatasetMysqlSchemaColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryDatasetMysqlSchemaColumnOutputReference
 ```
@@ -1962,7 +1962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetMysql.DataFactoryDatasetMysqlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetmysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetmysql"
 
 datafactorydatasetmysql.NewDataFactoryDatasetMysqlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetMysqlTimeoutsOutputReference
 ```

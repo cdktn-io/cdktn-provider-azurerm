@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServer(scope Construct, id *string, config DataAzurermNetappVolumeBucketWithServerConfig) DataAzurermNetappVolumeBucketWithServer
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 &dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServerConfig {
 	Connection: interface{},
@@ -803,7 +803,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 	Name: *string,
 	NetappVolumeId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerTimeouts,
 }
 ```
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerFileSystemNfsUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 &dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServerFileSystemNfsUser {
 
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 &dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServerKeyVault {
 
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 &dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServerServer {
 
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 &dataazurermnetappvolumebucketwithserver.DataAzurermNetappVolumeBucketWithServerTimeouts {
 	Read: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerFileSystemNfsUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerFileSystemNfsUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermNetappVolumeBucketWithServerFileSystemNfsUserList
 ```
@@ -1175,7 +1175,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerFileSystemNfsUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerFileSystemNfsUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermNetappVolumeBucketWithServerFileSystemNfsUserOutputReference
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() DataAzurermNetappVolumeBucketWithServerFileSystemNfsUser
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerKeyVaultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerKeyVaultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermNetappVolumeBucketWithServerKeyVaultList
 ```
@@ -1613,7 +1613,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermNetappVolumeBucketWithServerKeyVaultOutputReference
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() DataAzurermNetappVolumeBucketWithServerKeyVault
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerServerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerServerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermNetappVolumeBucketWithServerServerList
 ```
@@ -2073,7 +2073,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermNetappVolumeBucketWithServerServerOutputReference
 ```
@@ -2373,7 +2373,7 @@ func InternalValue() DataAzurermNetappVolumeBucketWithServerServer
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolumeBucketWithServer.DataAzurermNetappVolumeBucketWithServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappvolumebucketwithserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappvolumebucketwithserver"
 
 dataazurermnetappvolumebucketwithserver.NewDataAzurermNetappVolumeBucketWithServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetappVolumeBucketWithServerTimeoutsOutputReference
 ```

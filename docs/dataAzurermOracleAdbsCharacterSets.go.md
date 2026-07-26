@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.NewDataAzurermOracleAdbsCharacterSets(scope Construct, id *string, config DataAzurermOracleAdbsCharacterSetsConfig) DataAzurermOracleAdbsCharacterSets
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsCharacterSets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 &dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSetsCharacterSets {
 
@@ -682,7 +682,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 &dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSetsConfig {
 	Connection: interface{},
@@ -694,7 +694,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 	Provisioners: *[]interface{},
 	Location: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsTimeouts,
 }
 ```
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 &dataazurermoracleadbscharactersets.DataAzurermOracleAdbsCharacterSetsTimeouts {
 	Read: *string,
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsCharacterSetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.NewDataAzurermOracleAdbsCharacterSetsCharacterSetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleAdbsCharacterSetsCharacterSetsList
 ```
@@ -1014,7 +1014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsCharacterSetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.NewDataAzurermOracleAdbsCharacterSetsCharacterSetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleAdbsCharacterSetsCharacterSetsOutputReference
 ```
@@ -1292,7 +1292,7 @@ func InternalValue() DataAzurermOracleAdbsCharacterSetsCharacterSets
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleAdbsCharacterSets.DataAzurermOracleAdbsCharacterSetsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleadbscharactersets"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleadbscharactersets"
 
 dataazurermoracleadbscharactersets.NewDataAzurermOracleAdbsCharacterSetsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleAdbsCharacterSetsTimeoutsOutputReference
 ```

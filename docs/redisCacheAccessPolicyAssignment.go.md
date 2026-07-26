@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.NewRedisCacheAccessPolicyAssignment(scope Construct, id *string, config RedisCacheAccessPolicyAssignmentConfig) RedisCacheAccessPolicyAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 &rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignmentConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheacce
 	ObjectIdAlias: *string,
 	RedisCacheId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignmentTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 &rediscacheaccesspolicyassignment.RedisCacheAccessPolicyAssignmentTimeouts {
 	Create: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redisCacheAccessPolicyAssignment.RedisCacheAccessPolicyAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rediscacheaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rediscacheaccesspolicyassignment"
 
 rediscacheaccesspolicyassignment.NewRedisCacheAccessPolicyAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedisCacheAccessPolicyAssignmentTimeoutsOutputReference
 ```

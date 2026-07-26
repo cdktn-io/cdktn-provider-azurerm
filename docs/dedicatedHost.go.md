@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.NewDedicatedHost(scope Construct, id *string, config DedicatedHostConfig) DedicatedHost
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHost.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.DedicatedHost_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHost.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.DedicatedHost_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ dedicatedhost.DedicatedHost_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHost.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.DedicatedHost_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ dedicatedhost.DedicatedHost_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHost.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.DedicatedHost_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 &dedicatedhost.DedicatedHostConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
 	Id: *string,
 	LicenseType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dedicatedHost.DedicatedHostTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dedicatedHost.DedicatedHostTimeouts,
 }
 ```
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHostTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 &dedicatedhost.DedicatedHostTimeouts {
 	Create: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dedicatedHost.DedicatedHostTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dedicatedhost"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dedicatedhost"
 
 dedicatedhost.NewDedicatedHostTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DedicatedHostTimeoutsOutputReference
 ```

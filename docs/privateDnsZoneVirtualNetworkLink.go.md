@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.NewPrivateDnsZoneVirtualNetworkLink(scope Construct, id *string, config PrivateDnsZoneVirtualNetworkLinkConfig) PrivateDnsZoneVirtualNetworkLink
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 &privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLinkConfig {
 	Connection: interface{},
@@ -953,7 +953,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszone
 	RegistrationEnabled: interface{},
 	ResolutionPolicy: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLinkTimeouts,
 }
 ```
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 &privatednszonevirtualnetworklink.PrivateDnsZoneVirtualNetworkLinkTimeouts {
 	Create: *string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsZoneVirtualNetworkLink.PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednszonevirtualnetworklink"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednszonevirtualnetworklink"
 
 privatednszonevirtualnetworklink.NewPrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference
 ```

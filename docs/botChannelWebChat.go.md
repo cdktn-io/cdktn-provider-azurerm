@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.NewBotChannelWebChat(scope Construct, id *string, config BotChannelWebChatConfig) BotChannelWebChat
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChat.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.BotChannelWebChat_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChat.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.BotChannelWebChat_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ botchannelwebchat.BotChannelWebChat_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChat.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.BotChannelWebChat_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ botchannelwebchat.BotChannelWebChat_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChat.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.BotChannelWebChat_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 &botchannelwebchat.BotChannelWebChatConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebc
 	ResourceGroupName: *string,
 	Id: *string,
 	Site: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.botChannelWebChat.BotChannelWebChatTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.botChannelWebChat.BotChannelWebChatTimeouts,
 }
 ```
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatSite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 &botchannelwebchat.BotChannelWebChatSite {
 	Name: *string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 &botchannelwebchat.BotChannelWebChatTimeouts {
 	Create: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatSiteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.NewBotChannelWebChatSiteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BotChannelWebChatSiteList
 ```
@@ -1371,7 +1371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.NewBotChannelWebChatSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BotChannelWebChatSiteOutputReference
 ```
@@ -1747,7 +1747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelWebChat.BotChannelWebChatTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelwebchat"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelwebchat"
 
 botchannelwebchat.NewBotChannelWebChatTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotChannelWebChatTimeoutsOutputReference
 ```

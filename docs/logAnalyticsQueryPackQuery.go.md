@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.NewLogAnalyticsQueryPackQuery(scope Construct, id *string, config LogAnalyticsQueryPackQueryConfig) LogAnalyticsQueryPackQuery
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.LogAnalyticsQueryPackQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 &loganalyticsquerypackquery.LogAnalyticsQueryPackQueryConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsqu
 	ResourceTypes: *[]*string,
 	Solutions: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQueryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQueryTimeouts,
 }
 ```
 
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQueryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 &loganalyticsquerypackquery.LogAnalyticsQueryPackQueryTimeouts {
 	Create: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsQueryPackQuery.LogAnalyticsQueryPackQueryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsquerypackquery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsquerypackquery"
 
 loganalyticsquerypackquery.NewLogAnalyticsQueryPackQueryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogAnalyticsQueryPackQueryTimeoutsOutputReference
 ```

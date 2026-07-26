@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.NewDataAzurermSynapseWorkspace(scope Construct, id *string, config DataAzurermSynapseWorkspaceConfig) DataAzurermSynapseWorkspace
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.DataAzurermSynapseWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 &dataazurermsynapseworkspace.DataAzurermSynapseWorkspaceConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsyn
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceTimeouts,
 }
 ```
 
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 &dataazurermsynapseworkspace.DataAzurermSynapseWorkspaceIdentity {
 
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsyn
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 &dataazurermsynapseworkspace.DataAzurermSynapseWorkspaceTimeouts {
 	Read: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.NewDataAzurermSynapseWorkspaceIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSynapseWorkspaceIdentityList
 ```
@@ -1083,7 +1083,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.NewDataAzurermSynapseWorkspaceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSynapseWorkspaceIdentityOutputReference
 ```
@@ -1394,7 +1394,7 @@ func InternalValue() DataAzurermSynapseWorkspaceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSynapseWorkspace.DataAzurermSynapseWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsynapseworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsynapseworkspace"
 
 dataazurermsynapseworkspace.NewDataAzurermSynapseWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSynapseWorkspaceTimeoutsOutputReference
 ```

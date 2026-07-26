@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflow(scope Construct, id *string, config LogicAppWorkflowConfig) LogicAppWorkflow
 ```
@@ -523,7 +523,7 @@ func ResetWorkflowVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.LogicAppWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.LogicAppWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ logicappworkflow.LogicAppWorkflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.LogicAppWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ logicappworkflow.LogicAppWorkflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.LogicAppWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1197,13 +1197,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControl {
-	Action: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowAccessControlAction,
-	Content: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowAccessControlContent,
-	Trigger: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowAccessControlTrigger,
-	WorkflowManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowAccessControlWorkflowManagement,
+	Action: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowAccessControlAction,
+	Content: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowAccessControlContent,
+	Trigger: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowAccessControlTrigger,
+	WorkflowManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowAccessControlWorkflowManagement,
 }
 ```
 
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlAction {
 	AllowedCallerIpAddressRange: *[]*string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlContent {
 	AllowedCallerIpAddressRange: *[]*string,
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlTrigger {
 	AllowedCallerIpAddressRange: *[]*string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicy {
 	Claim: interface{},
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaim {
 	Name: *string,
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlWorkflowManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowAccessControlWorkflowManagement {
 	AllowedCallerIpAddressRange: *[]*string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowConfig {
 	Connection: interface{},
@@ -1530,15 +1530,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkfl
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	AccessControl: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowAccessControl,
+	AccessControl: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowAccessControl,
 	Enabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowIdentity,
 	IntegrationServiceEnvironmentId: *string,
 	LogicAppIntegrationAccountId: *string,
 	Parameters: *map[string]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppWorkflow.LogicAppWorkflowTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppWorkflow.LogicAppWorkflowTimeouts,
 	WorkflowParameters: *map[string]*string,
 	WorkflowSchema: *string,
 	WorkflowVersion: *string,
@@ -1838,7 +1838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowIdentity {
 	Type: *string,
@@ -1884,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 &logicappworkflow.LogicAppWorkflowTimeouts {
 	Create: *string,
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowAccessControlActionOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() LogicAppWorkflowAccessControlAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowAccessControlContentOutputReference
 ```
@@ -2502,7 +2502,7 @@ func InternalValue() LogicAppWorkflowAccessControlContent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowAccessControlOutputReference
 ```
@@ -2919,7 +2919,7 @@ func InternalValue() LogicAppWorkflowAccessControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimList
 ```
@@ -3079,7 +3079,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyClaimOutputReference
 ```
@@ -3390,7 +3390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyList
 ```
@@ -3550,7 +3550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LogicAppWorkflowAccessControlTriggerOpenAuthenticationPolicyOutputReference
 ```
@@ -3874,7 +3874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowAccessControlTriggerOutputReference
 ```
@@ -4194,7 +4194,7 @@ func InternalValue() LogicAppWorkflowAccessControlTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowAccessControlWorkflowManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowAccessControlWorkflowManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowAccessControlWorkflowManagementOutputReference
 ```
@@ -4465,7 +4465,7 @@ func InternalValue() LogicAppWorkflowAccessControlWorkflowManagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowIdentityOutputReference
 ```
@@ -4787,7 +4787,7 @@ func InternalValue() LogicAppWorkflowIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppWorkflow.LogicAppWorkflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappworkflow"
 
 logicappworkflow.NewLogicAppWorkflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppWorkflowTimeoutsOutputReference
 ```

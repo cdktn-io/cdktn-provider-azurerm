@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandard(scope Construct, id *string, config DataAzurermLogicAppStandardConfig) DataAzurermLogicAppStandard
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.DataAzurermLogicAppStandard_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.DataAzurermLogicAppStandard_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermlogicappstandard.DataAzurermLogicAppStandard_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandard.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.DataAzurermLogicAppStandard_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermlogicappstandard.DataAzurermLogicAppStandard_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.DataAzurermLogicAppStandard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardTimeouts,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardConnectionString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardConnectionString {
 
@@ -1164,7 +1164,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardIdentity {
 
@@ -1177,7 +1177,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfig {
 
@@ -1190,7 +1190,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfigCors {
 
@@ -1203,7 +1203,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfigIpRestriction {
 
@@ -1216,7 +1216,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders {
 
@@ -1229,7 +1229,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfigScmIpRestriction {
 
@@ -1242,7 +1242,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeaders {
 
@@ -1255,7 +1255,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardSiteCredential {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 &dataazurermlogicappstandard.DataAzurermLogicAppStandardTimeouts {
 	Read: *string,
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardConnectionStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardConnectionStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardConnectionStringList
 ```
@@ -1451,7 +1451,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardConnectionStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardConnectionStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardConnectionStringOutputReference
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() DataAzurermLogicAppStandardConnectionString
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardIdentityList
 ```
@@ -1900,7 +1900,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardIdentityOutputReference
 ```
@@ -2211,7 +2211,7 @@ func InternalValue() DataAzurermLogicAppStandardIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigCorsList
 ```
@@ -2360,7 +2360,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigCorsOutputReference
 ```
@@ -2649,7 +2649,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfigCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersList
 ```
@@ -2798,7 +2798,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigIpRestrictionHeadersOutputReference
 ```
@@ -3109,7 +3109,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfigIpRestrictionHeaders
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigIpRestrictionList
 ```
@@ -3258,7 +3258,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigIpRestrictionOutputReference
 ```
@@ -3602,7 +3602,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfigIpRestriction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigList
 ```
@@ -3751,7 +3751,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigOutputReference
 ```
@@ -4282,7 +4282,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersList
 ```
@@ -4431,7 +4431,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeadersOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfigScmIpRestrictionHeader
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteConfigScmIpRestrictionList
 ```
@@ -4891,7 +4891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteConfigScmIpRestrictionOutputReference
 ```
@@ -5235,7 +5235,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteConfigScmIpRestriction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppStandardSiteCredentialList
 ```
@@ -5384,7 +5384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardSiteCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardSiteCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppStandardSiteCredentialOutputReference
 ```
@@ -5673,7 +5673,7 @@ func InternalValue() DataAzurermLogicAppStandardSiteCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppStandard.DataAzurermLogicAppStandardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappstandard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappstandard"
 
 dataazurermlogicappstandard.NewDataAzurermLogicAppStandardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermLogicAppStandardTimeoutsOutputReference
 ```

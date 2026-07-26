@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.NewSynapseLinkedService(scope Construct, id *string, config SynapseLinkedServiceConfig) SynapseLinkedService
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.SynapseLinkedService_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.SynapseLinkedService_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ synapselinkedservice.SynapseLinkedService_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.SynapseLinkedService_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ synapselinkedservice.SynapseLinkedService_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.SynapseLinkedService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1006,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 &synapselinkedservice.SynapseLinkedServiceConfig {
 	Connection: interface{},
@@ -1024,9 +1024,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkeds
 	Annotations: *[]*string,
 	Description: *string,
 	Id: *string,
-	IntegrationRuntime: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime,
+	IntegrationRuntime: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapseLinkedService.SynapseLinkedServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapseLinkedService.SynapseLinkedServiceTimeouts,
 }
 ```
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 &synapselinkedservice.SynapseLinkedServiceIntegrationRuntime {
 	Name: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 &synapselinkedservice.SynapseLinkedServiceTimeouts {
 	Create: *string,
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceIntegrationRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.NewSynapseLinkedServiceIntegrationRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapseLinkedServiceIntegrationRuntimeOutputReference
 ```
@@ -1691,7 +1691,7 @@ func InternalValue() SynapseLinkedServiceIntegrationRuntime
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseLinkedService.SynapseLinkedServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapselinkedservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapselinkedservice"
 
 synapselinkedservice.NewSynapseLinkedServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapseLinkedServiceTimeoutsOutputReference
 ```

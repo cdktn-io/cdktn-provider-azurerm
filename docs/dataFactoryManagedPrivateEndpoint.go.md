@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.NewDataFactoryManagedPrivateEndpoint(scope Construct, id *string, config DataFactoryManagedPrivateEndpointConfig) DataFactoryManagedPrivateEndpoint
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 &datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpointConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactoryman
 	Fqdns: *[]*string,
 	Id: *string,
 	SubresourceName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpointTimeouts,
 }
 ```
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 &datafactorymanagedprivateendpoint.DataFactoryManagedPrivateEndpointTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryManagedPrivateEndpoint.DataFactoryManagedPrivateEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorymanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorymanagedprivateendpoint"
 
 datafactorymanagedprivateendpoint.NewDataFactoryManagedPrivateEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryManagedPrivateEndpointTimeoutsOutputReference
 ```

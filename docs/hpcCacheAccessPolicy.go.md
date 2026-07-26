@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.NewHpcCacheAccessPolicy(scope Construct, id *string, config HpcCacheAccessPolicyConfig) HpcCacheAccessPolicy
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.HpcCacheAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.HpcCacheAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ hpccacheaccesspolicy.HpcCacheAccessPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.HpcCacheAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ hpccacheaccesspolicy.HpcCacheAccessPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.HpcCacheAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 &hpccacheaccesspolicy.HpcCacheAccessPolicyAccessRule {
 	Access: *string,
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 &hpccacheaccesspolicy.HpcCacheAccessPolicyConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccess
 	HpcCacheId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.hpcCacheAccessPolicy.HpcCacheAccessPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.hpcCacheAccessPolicy.HpcCacheAccessPolicyTimeouts,
 }
 ```
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 &hpccacheaccesspolicy.HpcCacheAccessPolicyTimeouts {
 	Create: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyAccessRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.NewHpcCacheAccessPolicyAccessRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HpcCacheAccessPolicyAccessRuleList
 ```
@@ -1384,7 +1384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyAccessRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.NewHpcCacheAccessPolicyAccessRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HpcCacheAccessPolicyAccessRuleOutputReference
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheAccessPolicy.HpcCacheAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheaccesspolicy"
 
 hpccacheaccesspolicy.NewHpcCacheAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HpcCacheAccessPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.NewAppServiceConnection(scope Construct, id *string, config AppServiceConnectionConfig) AppServiceConnection
 ```
@@ -474,7 +474,7 @@ func ResetVnetSolution()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.AppServiceConnection_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.AppServiceConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ appserviceconnection.AppServiceConnection_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.AppServiceConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ appserviceconnection.AppServiceConnection_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.AppServiceConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 &appserviceconnection.AppServiceConnectionAuthentication {
 	Type: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 &appserviceconnection.AppServiceConnectionConfig {
 	Connection: interface{},
@@ -1088,13 +1088,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconn
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AppServiceId: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceConnection.AppServiceConnectionAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceConnection.AppServiceConnectionAuthentication,
 	Name: *string,
 	TargetResourceId: *string,
 	ClientType: *string,
 	Id: *string,
-	SecretStore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceConnection.AppServiceConnectionSecretStore,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceConnection.AppServiceConnectionTimeouts,
+	SecretStore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceConnection.AppServiceConnectionSecretStore,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceConnection.AppServiceConnectionTimeouts,
 	VnetSolution: *string,
 }
 ```
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionSecretStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 &appserviceconnection.AppServiceConnectionSecretStore {
 	KeyVaultId: *string,
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 &appserviceconnection.AppServiceConnectionTimeouts {
 	Create: *string,
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.NewAppServiceConnectionAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceConnectionAuthenticationOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() AppServiceConnectionAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionSecretStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.NewAppServiceConnectionSecretStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceConnectionSecretStoreOutputReference
 ```
@@ -2138,7 +2138,7 @@ func InternalValue() AppServiceConnectionSecretStore
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceConnection.AppServiceConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceconnection"
 
 appserviceconnection.NewAppServiceConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceConnectionTimeoutsOutputReference
 ```

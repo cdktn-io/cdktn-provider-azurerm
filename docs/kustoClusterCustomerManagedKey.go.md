@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.NewKustoClusterCustomerManagedKey(scope Construct, id *string, config KustoClusterCustomerManagedKeyConfig) KustoClusterCustomerManagedKey
 ```
@@ -462,7 +462,7 @@ func ResetUserIdentity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.KustoClusterCustomerManagedKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -927,7 +927,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 &kustoclustercustomermanagedkey.KustoClusterCustomerManagedKeyConfig {
 	Connection: interface{},
@@ -943,7 +943,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercu
 	KeyVaultId: *string,
 	KeyVersion: *string,
 	ManagedHsmKeyId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKeyTimeouts,
 	UserIdentity: *string,
 }
 ```
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 &kustoclustercustomermanagedkey.KustoClusterCustomerManagedKeyTimeouts {
 	Create: *string,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoClusterCustomerManagedKey.KustoClusterCustomerManagedKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclustercustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclustercustomermanagedkey"
 
 kustoclustercustomermanagedkey.NewKustoClusterCustomerManagedKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KustoClusterCustomerManagedKeyTimeoutsOutputReference
 ```

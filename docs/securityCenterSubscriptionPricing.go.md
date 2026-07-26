@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.NewSecurityCenterSubscriptionPricing(scope Construct, id *string, config SecurityCenterSubscriptionPricingConfig) SecurityCenterSubscriptionPricing
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricing.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricing.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricing.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricing.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.SecurityCenterSubscriptionPricing_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 &securitycentersubscriptionpricing.SecurityCenterSubscriptionPricingConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycenter
 	Id: *string,
 	ResourceType: *string,
 	Subplan: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 &securitycentersubscriptionpricing.SecurityCenterSubscriptionPricingExtension {
 	Name: *string,
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 &securitycentersubscriptionpricing.SecurityCenterSubscriptionPricingTimeouts {
 	Create: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingExtensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.NewSecurityCenterSubscriptionPricingExtensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurityCenterSubscriptionPricingExtensionList
 ```
@@ -1357,7 +1357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingExtensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.NewSecurityCenterSubscriptionPricingExtensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurityCenterSubscriptionPricingExtensionOutputReference
 ```
@@ -1675,7 +1675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSubscriptionPricing.SecurityCenterSubscriptionPricingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersubscriptionpricing"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersubscriptionpricing"
 
 securitycentersubscriptionpricing.NewSecurityCenterSubscriptionPricingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityCenterSubscriptionPricingTimeoutsOutputReference
 ```

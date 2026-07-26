@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGateway(scope Construct, id *string, config VpnGatewayConfig) VpnGateway
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.vpnGateway.VpnGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.VpnGateway_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.vpnGateway.VpnGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.VpnGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ vpngateway.VpnGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.vpnGateway.VpnGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.VpnGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ vpngateway.VpnGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.vpnGateway.VpnGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.VpnGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1017,13 +1017,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayBgpSettings {
 	Asn: *f64,
 	PeerWeight: *f64,
-	Instance0BgpPeeringAddress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnGateway.VpnGatewayBgpSettingsInstance0BgpPeeringAddress,
-	Instance1BgpPeeringAddress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnGateway.VpnGatewayBgpSettingsInstance1BgpPeeringAddress,
+	Instance0BgpPeeringAddress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnGateway.VpnGatewayBgpSettingsInstance0BgpPeeringAddress,
+	Instance1BgpPeeringAddress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnGateway.VpnGatewayBgpSettingsInstance1BgpPeeringAddress,
 }
 ```
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettingsInstance0BgpPeeringAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayBgpSettingsInstance0BgpPeeringAddress {
 	CustomIps: *[]*string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettingsInstance1BgpPeeringAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayBgpSettingsInstance1BgpPeeringAddress {
 	CustomIps: *[]*string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayConfig {
 	Connection: interface{},
@@ -1174,12 +1174,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
 	ResourceGroupName: *string,
 	VirtualHubId: *string,
 	BgpRouteTranslationForNatEnabled: interface{},
-	BgpSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnGateway.VpnGatewayBgpSettings,
+	BgpSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnGateway.VpnGatewayBgpSettings,
 	Id: *string,
 	RoutingPreference: *string,
 	ScaleUnit: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnGateway.VpnGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnGateway.VpnGatewayTimeouts,
 }
 ```
 
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayIpConfiguration {
 
@@ -1435,7 +1435,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 &vpngateway.VpnGatewayTimeouts {
 	Create: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayBgpSettingsInstance0BgpPeeringAddressOutputReference
 ```
@@ -1815,7 +1815,7 @@ func InternalValue() VpnGatewayBgpSettingsInstance0BgpPeeringAddress
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayBgpSettingsInstance1BgpPeeringAddressOutputReference
 ```
@@ -2119,7 +2119,7 @@ func InternalValue() VpnGatewayBgpSettingsInstance1BgpPeeringAddress
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayBgpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayBgpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayBgpSettingsOutputReference
 ```
@@ -2507,7 +2507,7 @@ func InternalValue() VpnGatewayBgpSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnGatewayIpConfigurationList
 ```
@@ -2656,7 +2656,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnGatewayIpConfigurationOutputReference
 ```
@@ -2956,7 +2956,7 @@ func InternalValue() VpnGatewayIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGateway.VpnGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngateway"
 
 vpngateway.NewVpnGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayTimeoutsOutputReference
 ```

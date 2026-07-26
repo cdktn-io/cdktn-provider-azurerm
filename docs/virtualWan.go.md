@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualWan.VirtualWan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.NewVirtualWan(scope Construct, id *string, config VirtualWanConfig) VirtualWan
 ```
@@ -462,7 +462,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualWan.VirtualWan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.VirtualWan_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualWan.VirtualWan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.VirtualWan_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ virtualwan.VirtualWan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualWan.VirtualWan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.VirtualWan_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ virtualwan.VirtualWan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualWan.VirtualWan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.VirtualWan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualWan.VirtualWanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 &virtualwan.VirtualWanConfig {
 	Connection: interface{},
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
 	Id: *string,
 	Office365LocalBreakoutCategory: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualWan.VirtualWanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualWan.VirtualWanTimeouts,
 	Type: *string,
 }
 ```
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualWan.VirtualWanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 &virtualwan.VirtualWanTimeouts {
 	Create: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualWan.VirtualWanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualwan"
 
 virtualwan.NewVirtualWanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualWanTimeoutsOutputReference
 ```

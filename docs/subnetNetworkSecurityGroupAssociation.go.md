@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.NewSubnetNetworkSecurityGroupAssociation(scope Construct, id *string, config SubnetNetworkSecurityGroupAssociationConfig) SubnetNetworkSecurityGroupAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 &subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworks
 	NetworkSecurityGroupId: *string,
 	SubnetId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociationTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 &subnetnetworksecuritygroupassociation.SubnetNetworkSecurityGroupAssociationTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetNetworkSecurityGroupAssociation.SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetnetworksecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetnetworksecuritygroupassociation"
 
 subnetnetworksecuritygroupassociation.NewSubnetNetworkSecurityGroupAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetNetworkSecurityGroupAssociationTimeoutsOutputReference
 ```

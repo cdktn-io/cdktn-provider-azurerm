@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.NewIothubCertificate(scope Construct, id *string, config IothubCertificateConfig) IothubCertificate
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.IothubCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.IothubCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iothubcertificate.IothubCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.IothubCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iothubcertificate.IothubCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.IothubCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 &iothubcertificate.IothubCertificateConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertific
 	ResourceGroupName: *string,
 	Id: *string,
 	IsVerified: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iothubCertificate.IothubCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iothubCertificate.IothubCertificateTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 &iothubcertificate.IothubCertificateTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubCertificate.IothubCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubcertificate"
 
 iothubcertificate.NewIothubCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IothubCertificateTimeoutsOutputReference
 ```

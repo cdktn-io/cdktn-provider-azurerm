@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.NewMssqlServerTransparentDataEncryption(scope Construct, id *string, config MssqlServerTransparentDataEncryptionConfig) MssqlServerTransparentDataEncryption
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 &mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryptionConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertra
 	Id: *string,
 	KeyVaultKeyId: *string,
 	ManagedHsmKeyId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryptionTimeouts,
 }
 ```
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 &mssqlservertransparentdataencryption.MssqlServerTransparentDataEncryptionTimeouts {
 	Create: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerTransparentDataEncryption.MssqlServerTransparentDataEncryptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlservertransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlservertransparentdataencryption"
 
 mssqlservertransparentdataencryption.NewMssqlServerTransparentDataEncryptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlServerTransparentDataEncryptionTimeoutsOutputReference
 ```

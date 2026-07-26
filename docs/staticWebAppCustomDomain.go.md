@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.NewStaticWebAppCustomDomain(scope Construct, id *string, config StaticWebAppCustomDomainConfig) StaticWebAppCustomDomain
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.StaticWebAppCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.StaticWebAppCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ staticwebappcustomdomain.StaticWebAppCustomDomain_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.StaticWebAppCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ staticwebappcustomdomain.StaticWebAppCustomDomain_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.StaticWebAppCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 &staticwebappcustomdomain.StaticWebAppCustomDomainConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcu
 	StaticWebAppId: *string,
 	ValidationType: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 &staticwebappcustomdomain.StaticWebAppCustomDomainTimeouts {
 	Create: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticWebAppCustomDomain.StaticWebAppCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappcustomdomain"
 
 staticwebappcustomdomain.NewStaticWebAppCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StaticWebAppCustomDomainTimeoutsOutputReference
 ```

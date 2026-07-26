@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.NewDataAzurermRouteFilter(scope Construct, id *string, config DataAzurermRouteFilterConfig) DataAzurermRouteFilter
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.DataAzurermRouteFilter_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.DataAzurermRouteFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermroutefilter.DataAzurermRouteFilter_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.DataAzurermRouteFilter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermroutefilter.DataAzurermRouteFilter_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.DataAzurermRouteFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 &dataazurermroutefilter.DataAzurermRouteFilterConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermrou
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermRouteFilter.DataAzurermRouteFilterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermRouteFilter.DataAzurermRouteFilterTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 &dataazurermroutefilter.DataAzurermRouteFilterRule {
 
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermrou
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 &dataazurermroutefilter.DataAzurermRouteFilterTimeouts {
 	Read: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.NewDataAzurermRouteFilterRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermRouteFilterRuleList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.NewDataAzurermRouteFilterRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermRouteFilterRuleOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataAzurermRouteFilterRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRouteFilter.DataAzurermRouteFilterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroutefilter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroutefilter"
 
 dataazurermroutefilter.NewDataAzurermRouteFilterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermRouteFilterTimeoutsOutputReference
 ```

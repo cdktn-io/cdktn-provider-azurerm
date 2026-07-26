@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.NewCognitiveAccountRaiBlocklist(scope Construct, id *string, config CognitiveAccountRaiBlocklistConfig) CognitiveAccountRaiBlocklist
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 &cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklistConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccou
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 &cognitiveaccountraiblocklist.CognitiveAccountRaiBlocklistTimeouts {
 	Create: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraiblocklist"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraiblocklist"
 
 cognitiveaccountraiblocklist.NewCognitiveAccountRaiBlocklistTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountRaiBlocklistTimeoutsOutputReference
 ```

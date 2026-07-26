@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.NewKeyVaultManagedHardwareSecurityModuleRoleDefinition(scope Construct, id *string, config KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig) KeyVaultManagedHardwareSecurityModuleRoleDefinition
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecur
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecur
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 &keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanage
 	Id: *string,
 	Permission: interface{},
 	RoleName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts,
 }
 ```
 
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 &keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermission {
 	Actions: *[]*string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 &keyvaultmanagedhardwaresecuritymoduleroledefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeouts {
 	Create: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.NewKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionList
 ```
@@ -1443,7 +1443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.NewKeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyVaultManagedHardwareSecurityModuleRoleDefinitionPermissionOutputReference
 ```
@@ -1826,7 +1826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleRoleDefinition.KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymoduleroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymoduleroledefinition"
 
 keyvaultmanagedhardwaresecuritymoduleroledefinition.NewKeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultManagedHardwareSecurityModuleRoleDefinitionTimeoutsOutputReference
 ```

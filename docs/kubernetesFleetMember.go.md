@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.NewKubernetesFleetMember(scope Construct, id *string, config KubernetesFleetMemberConfig) KubernetesFleetMember
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.KubernetesFleetMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.KubernetesFleetMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ kubernetesfleetmember.KubernetesFleetMember_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.KubernetesFleetMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ kubernetesfleetmember.KubernetesFleetMember_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.KubernetesFleetMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 &kubernetesfleetmember.KubernetesFleetMemberConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesflee
 	Name: *string,
 	Group: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesFleetMember.KubernetesFleetMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesFleetMember.KubernetesFleetMemberTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 &kubernetesfleetmember.KubernetesFleetMemberTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetMember.KubernetesFleetMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetmember"
 
 kubernetesfleetmember.NewKubernetesFleetMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesFleetMemberTimeoutsOutputReference
 ```

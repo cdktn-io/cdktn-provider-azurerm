@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollection(scope Construct, id *string, config FirewallApplicationRuleCollectionConfig) FirewallApplicationRuleCollection
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.FirewallApplicationRuleCollection_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.FirewallApplicationRuleCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ firewallapplicationrulecollection.FirewallApplicationRuleCollection_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.FirewallApplicationRuleCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ firewallapplicationrulecollection.FirewallApplicationRuleCollection_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.FirewallApplicationRuleCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -905,7 +905,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 &firewallapplicationrulecollection.FirewallApplicationRuleCollectionConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplic
 	ResourceGroupName: *string,
 	Rule: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionTimeouts,
 }
 ```
 
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 &firewallapplicationrulecollection.FirewallApplicationRuleCollectionRule {
 	Name: *string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRuleProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 &firewallapplicationrulecollection.FirewallApplicationRuleCollectionRuleProtocol {
 	Port: *f64,
@@ -1290,7 +1290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 &firewallapplicationrulecollection.FirewallApplicationRuleCollectionTimeouts {
 	Create: *string,
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollectionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallApplicationRuleCollectionRuleList
 ```
@@ -1526,7 +1526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollectionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallApplicationRuleCollectionRuleOutputReference
 ```
@@ -2002,7 +2002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRuleProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollectionRuleProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallApplicationRuleCollectionRuleProtocolList
 ```
@@ -2162,7 +2162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionRuleProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollectionRuleProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallApplicationRuleCollectionRuleProtocolOutputReference
 ```
@@ -2473,7 +2473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallApplicationRuleCollection.FirewallApplicationRuleCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/firewallapplicationrulecollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallapplicationrulecollection"
 
 firewallapplicationrulecollection.NewFirewallApplicationRuleCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallApplicationRuleCollectionTimeoutsOutputReference
 ```

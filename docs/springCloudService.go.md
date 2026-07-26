@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudService(scope Construct, id *string, config SpringCloudServiceConfig) SpringCloudService
 ```
@@ -603,7 +603,7 @@ func ResetZoneRedundant()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudService.SpringCloudService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.SpringCloudService_IsConstruct(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudService.SpringCloudService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.SpringCloudService_IsTerraformElement(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ springcloudservice.SpringCloudService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudService.SpringCloudService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.SpringCloudService_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ springcloudservice.SpringCloudService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudService.SpringCloudService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.SpringCloudService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1343,7 +1343,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfig {
 	Connection: interface{},
@@ -1357,20 +1357,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudser
 	Name: *string,
 	ResourceGroupName: *string,
 	BuildAgentPoolSize: *string,
-	ConfigServerGitSetting: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceConfigServerGitSetting,
+	ConfigServerGitSetting: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceConfigServerGitSetting,
 	ContainerRegistry: interface{},
-	DefaultBuildService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceDefaultBuildService,
+	DefaultBuildService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceDefaultBuildService,
 	Id: *string,
 	LogStreamPublicEndpointEnabled: interface{},
 	ManagedEnvironmentId: *string,
-	Marketplace: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceMarketplace,
-	Network: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceNetwork,
+	Marketplace: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceMarketplace,
+	Network: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceNetwork,
 	ServiceRegistryEnabled: interface{},
 	SkuName: *string,
 	SkuTier: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceTimeouts,
-	Trace: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceTrace,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceTimeouts,
+	Trace: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceTrace,
 	ZoneRedundant: interface{},
 }
 ```
@@ -1728,15 +1728,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSetting {
 	Uri: *string,
-	HttpBasicAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceConfigServerGitSettingHttpBasicAuth,
+	HttpBasicAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceConfigServerGitSettingHttpBasicAuth,
 	Label: *string,
 	Repository: interface{},
 	SearchPaths: *[]*string,
-	SshAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceConfigServerGitSettingSshAuth,
+	SshAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceConfigServerGitSettingSshAuth,
 }
 ```
 
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingHttpBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSettingHttpBasicAuth {
 	Password: *string,
@@ -1882,16 +1882,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSettingRepository {
 	Name: *string,
 	Uri: *string,
-	HttpBasicAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth,
+	HttpBasicAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth,
 	Label: *string,
 	Pattern: *[]*string,
 	SearchPaths: *[]*string,
-	SshAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudService.SpringCloudServiceConfigServerGitSettingRepositorySshAuth,
+	SshAuth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudService.SpringCloudServiceConfigServerGitSettingRepositorySshAuth,
 }
 ```
 
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuth {
 	Password: *string,
@@ -2048,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositorySshAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSettingRepositorySshAuth {
 	PrivateKey: *string,
@@ -2122,7 +2122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingSshAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceConfigServerGitSettingSshAuth {
 	PrivateKey: *string,
@@ -2196,7 +2196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceContainerRegistry {
 	Name: *string,
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceDefaultBuildService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceDefaultBuildService {
 	ContainerRegistryName: *string,
@@ -2302,7 +2302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceMarketplace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceMarketplace {
 	Plan: *string,
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceNetwork {
 	AppSubnetId: *string,
@@ -2478,7 +2478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceRequiredNetworkTrafficRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceRequiredNetworkTrafficRules {
 
@@ -2491,7 +2491,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudser
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceTimeouts {
 	Create: *string,
@@ -2565,7 +2565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceTrace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 &springcloudservice.SpringCloudServiceTrace {
 	ConnectionString: *string,
@@ -2613,7 +2613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceConfigServerGitSettingHttpBasicAuthOutputReference
 ```
@@ -2906,7 +2906,7 @@ func InternalValue() SpringCloudServiceConfigServerGitSettingHttpBasicAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceConfigServerGitSettingOutputReference
 ```
@@ -3361,7 +3361,7 @@ func InternalValue() SpringCloudServiceConfigServerGitSetting
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceConfigServerGitSettingRepositoryHttpBasicAuthOutputReference
 ```
@@ -3654,7 +3654,7 @@ func InternalValue() SpringCloudServiceConfigServerGitSettingRepositoryHttpBasic
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpringCloudServiceConfigServerGitSettingRepositoryList
 ```
@@ -3814,7 +3814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpringCloudServiceConfigServerGitSettingRepositoryOutputReference
 ```
@@ -4296,7 +4296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingRepositorySshAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingRepositorySshAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceConfigServerGitSettingRepositorySshAuthOutputReference
 ```
@@ -4654,7 +4654,7 @@ func InternalValue() SpringCloudServiceConfigServerGitSettingRepositorySshAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceConfigServerGitSettingSshAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceConfigServerGitSettingSshAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceConfigServerGitSettingSshAuthOutputReference
 ```
@@ -5012,7 +5012,7 @@ func InternalValue() SpringCloudServiceConfigServerGitSettingSshAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceContainerRegistryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceContainerRegistryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpringCloudServiceContainerRegistryList
 ```
@@ -5172,7 +5172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceContainerRegistryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceContainerRegistryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpringCloudServiceContainerRegistryOutputReference
 ```
@@ -5527,7 +5527,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceDefaultBuildServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceDefaultBuildServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceDefaultBuildServiceOutputReference
 ```
@@ -5805,7 +5805,7 @@ func InternalValue() SpringCloudServiceDefaultBuildService
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceMarketplaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceMarketplaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceMarketplaceOutputReference
 ```
@@ -6120,7 +6120,7 @@ func InternalValue() SpringCloudServiceMarketplace
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceNetworkOutputReference
 ```
@@ -6551,7 +6551,7 @@ func InternalValue() SpringCloudServiceNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceRequiredNetworkTrafficRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceRequiredNetworkTrafficRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SpringCloudServiceRequiredNetworkTrafficRulesList
 ```
@@ -6700,7 +6700,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceRequiredNetworkTrafficRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceRequiredNetworkTrafficRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SpringCloudServiceRequiredNetworkTrafficRulesOutputReference
 ```
@@ -7022,7 +7022,7 @@ func InternalValue() SpringCloudServiceRequiredNetworkTrafficRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceTimeoutsOutputReference
 ```
@@ -7387,7 +7387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudService.SpringCloudServiceTraceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudservice"
 
 springcloudservice.NewSpringCloudServiceTraceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudServiceTraceOutputReference
 ```

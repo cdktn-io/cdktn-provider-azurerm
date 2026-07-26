@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlot(scope Construct, id *string, config AppServiceSlotConfig) AppServiceSlot
 ```
@@ -589,7 +589,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.AppServiceSlot_IsConstruct(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.AppServiceSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ appserviceslot.AppServiceSlot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.AppServiceSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ appserviceslot.AppServiceSlot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.AppServiceSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1318,22 +1318,22 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettings {
 	Enabled: interface{},
-	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettingsActiveDirectory,
+	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettingsActiveDirectory,
 	AdditionalLoginParams: *map[string]*string,
 	AllowedExternalRedirectUrls: *[]*string,
 	DefaultProvider: *string,
-	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettingsFacebook,
-	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettingsGoogle,
+	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettingsFacebook,
+	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettingsGoogle,
 	Issuer: *string,
-	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettingsMicrosoft,
+	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettingsMicrosoft,
 	RuntimeVersion: *string,
 	TokenRefreshExtensionHours: *f64,
 	TokenStoreEnabled: interface{},
-	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettingsTwitter,
+	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettingsTwitter,
 	UnauthenticatedClientAction: *string,
 }
 ```
@@ -1542,7 +1542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettingsActiveDirectory {
 	ClientId: *string,
@@ -1602,7 +1602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsFacebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettingsFacebook {
 	AppId: *string,
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsGoogle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettingsGoogle {
 	ClientId: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsMicrosoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettingsMicrosoft {
 	ClientId: *string,
@@ -1782,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsTwitter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotAuthSettingsTwitter {
 	ConsumerKey: *string,
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotConfig {
 	Connection: interface{},
@@ -1844,19 +1844,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot
 	Name: *string,
 	ResourceGroupName: *string,
 	AppSettings: *map[string]*string,
-	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotAuthSettings,
+	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotAuthSettings,
 	ClientAffinityEnabled: interface{},
 	ConnectionString: interface{},
 	Enabled: interface{},
 	HttpsOnly: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotIdentity,
 	KeyVaultReferenceIdentityId: *string,
-	Logs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogs,
-	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotSiteConfig,
+	Logs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogs,
+	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotSiteConfig,
 	StorageAccount: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotTimeouts,
 }
 ```
 
@@ -2213,7 +2213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotConnectionString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotConnectionString {
 	Name: *string,
@@ -2273,7 +2273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotIdentity {
 	Type: *string,
@@ -2319,13 +2319,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogs {
-	ApplicationLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogsApplicationLogs,
+	ApplicationLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogsApplicationLogs,
 	DetailedErrorMessagesEnabled: interface{},
 	FailedRequestTracingEnabled: interface{},
-	HttpLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogsHttpLogs,
+	HttpLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogsHttpLogs,
 }
 ```
 
@@ -2397,10 +2397,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsApplicationLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogsApplicationLogs {
-	AzureBlobStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogsApplicationLogsAzureBlobStorage,
+	AzureBlobStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogsApplicationLogsAzureBlobStorage,
 	FileSystemLevel: *string,
 }
 ```
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsApplicationLogsAzureBlobStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogsApplicationLogsAzureBlobStorage {
 	Level: *string,
@@ -2505,11 +2505,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogsHttpLogs {
-	AzureBlobStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogsHttpLogsAzureBlobStorage,
-	FileSystem: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotLogsHttpLogsFileSystem,
+	AzureBlobStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogsHttpLogsAzureBlobStorage,
+	FileSystem: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotLogsHttpLogsFileSystem,
 }
 ```
 
@@ -2555,7 +2555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogsAzureBlobStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogsHttpLogsAzureBlobStorage {
 	RetentionInDays: *f64,
@@ -2601,7 +2601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogsFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotLogsHttpLogsFileSystem {
 	RetentionInDays: *f64,
@@ -2647,7 +2647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfig {
 	AcrUseManagedIdentityCredentials: interface{},
@@ -2655,7 +2655,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot
 	AlwaysOn: interface{},
 	AppCommandLine: *string,
 	AutoSwapSlotName: *string,
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServiceSlot.AppServiceSlotSiteConfigCors,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSlot.AppServiceSlotSiteConfigCors,
 	DefaultDocuments: *[]*string,
 	DotnetFrameworkVersion: *string,
 	FtpsState: *string,
@@ -3101,7 +3101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfigCors {
 	AllowedOrigins: *[]*string,
@@ -3147,7 +3147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfigIpRestriction {
 	Action: *string,
@@ -3263,7 +3263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfigIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -3337,7 +3337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfigScmIpRestriction {
 	Action: *string,
@@ -3453,7 +3453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteConfigScmIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -3527,7 +3527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotSiteCredential {
 
@@ -3540,7 +3540,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotStorageAccount {
 	AccessKey: *string,
@@ -3642,7 +3642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 &appserviceslot.AppServiceSlotTimeouts {
 	Create: *string,
@@ -3718,7 +3718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsActiveDirectoryOutputReference
 ```
@@ -4047,7 +4047,7 @@ func InternalValue() AppServiceSlotAuthSettingsActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsFacebookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsFacebookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsFacebookOutputReference
 ```
@@ -4369,7 +4369,7 @@ func InternalValue() AppServiceSlotAuthSettingsFacebook
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsGoogleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsGoogleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsGoogleOutputReference
 ```
@@ -4691,7 +4691,7 @@ func InternalValue() AppServiceSlotAuthSettingsGoogle
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsMicrosoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsMicrosoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsMicrosoftOutputReference
 ```
@@ -5013,7 +5013,7 @@ func InternalValue() AppServiceSlotAuthSettingsMicrosoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsOutputReference
 ```
@@ -5726,7 +5726,7 @@ func InternalValue() AppServiceSlotAuthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotAuthSettingsTwitterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotAuthSettingsTwitterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotAuthSettingsTwitterOutputReference
 ```
@@ -6019,7 +6019,7 @@ func InternalValue() AppServiceSlotAuthSettingsTwitter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotConnectionStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotConnectionStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotConnectionStringList
 ```
@@ -6179,7 +6179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotConnectionStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotConnectionStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotConnectionStringOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotIdentityOutputReference
 ```
@@ -6834,7 +6834,7 @@ func InternalValue() AppServiceSlotIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsApplicationLogsAzureBlobStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsApplicationLogsAzureBlobStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsApplicationLogsAzureBlobStorageOutputReference
 ```
@@ -7149,7 +7149,7 @@ func InternalValue() AppServiceSlotLogsApplicationLogsAzureBlobStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsApplicationLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsApplicationLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsApplicationLogsOutputReference
 ```
@@ -7469,7 +7469,7 @@ func InternalValue() AppServiceSlotLogsApplicationLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogsAzureBlobStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsHttpLogsAzureBlobStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsHttpLogsAzureBlobStorageOutputReference
 ```
@@ -7762,7 +7762,7 @@ func InternalValue() AppServiceSlotLogsHttpLogsAzureBlobStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogsFileSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsHttpLogsFileSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsHttpLogsFileSystemOutputReference
 ```
@@ -8055,7 +8055,7 @@ func InternalValue() AppServiceSlotLogsHttpLogsFileSystem
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsHttpLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsHttpLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsHttpLogsOutputReference
 ```
@@ -8388,7 +8388,7 @@ func InternalValue() AppServiceSlotLogsHttpLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotLogsOutputReference
 ```
@@ -8779,7 +8779,7 @@ func InternalValue() AppServiceSlotLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotSiteConfigCorsOutputReference
 ```
@@ -9079,7 +9079,7 @@ func InternalValue() AppServiceSlotSiteConfigCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotSiteConfigIpRestrictionHeadersList
 ```
@@ -9239,7 +9239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotSiteConfigIpRestrictionHeadersOutputReference
 ```
@@ -9622,7 +9622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotSiteConfigIpRestrictionList
 ```
@@ -9782,7 +9782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotSiteConfigIpRestrictionOutputReference
 ```
@@ -10265,7 +10265,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotSiteConfigOutputReference
 ```
@@ -11452,7 +11452,7 @@ func InternalValue() AppServiceSlotSiteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigScmIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotSiteConfigScmIpRestrictionHeadersList
 ```
@@ -11612,7 +11612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigScmIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotSiteConfigScmIpRestrictionHeadersOutputReference
 ```
@@ -11995,7 +11995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigScmIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotSiteConfigScmIpRestrictionList
 ```
@@ -12155,7 +12155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteConfigScmIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteConfigScmIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotSiteConfigScmIpRestrictionOutputReference
 ```
@@ -12638,7 +12638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotSiteCredentialList
 ```
@@ -12787,7 +12787,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotSiteCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotSiteCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotSiteCredentialOutputReference
 ```
@@ -13076,7 +13076,7 @@ func InternalValue() AppServiceSlotSiteCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotStorageAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotStorageAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppServiceSlotStorageAccountList
 ```
@@ -13236,7 +13236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppServiceSlotStorageAccountOutputReference
 ```
@@ -13642,7 +13642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSlot.AppServiceSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceslot"
 
 appserviceslot.NewAppServiceSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSlotTimeoutsOutputReference
 ```

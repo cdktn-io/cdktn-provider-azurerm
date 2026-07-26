@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NewNetworkManagerSubscriptionConnection(scope Construct, id *string, config NetworkManagerSubscriptionConnectionConfig) NetworkManagerSubscriptionConnection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 &networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnectionConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanager
 	SubscriptionId: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnectionTimeouts,
 }
 ```
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 &networkmanagersubscriptionconnection.NetworkManagerSubscriptionConnectionTimeouts {
 	Create: *string,
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerSubscriptionConnection.NetworkManagerSubscriptionConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagersubscriptionconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagersubscriptionconnection"
 
 networkmanagersubscriptionconnection.NewNetworkManagerSubscriptionConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerSubscriptionConnectionTimeoutsOutputReference
 ```

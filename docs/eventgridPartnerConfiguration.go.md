@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.NewEventgridPartnerConfiguration(scope Construct, id *string, config EventgridPartnerConfigurationConfig) EventgridPartnerConfiguration
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.EventgridPartnerConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.EventgridPartnerConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ eventgridpartnerconfiguration.EventgridPartnerConfiguration_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.EventgridPartnerConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ eventgridpartnerconfiguration.EventgridPartnerConfiguration_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.EventgridPartnerConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 &eventgridpartnerconfiguration.EventgridPartnerConfigurationConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartn
 	Id: *string,
 	PartnerAuthorization: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridPartnerConfiguration.EventgridPartnerConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridPartnerConfiguration.EventgridPartnerConfigurationTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationPartnerAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 &eventgridpartnerconfiguration.EventgridPartnerConfigurationPartnerAuthorization {
 	PartnerName: *string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 &eventgridpartnerconfiguration.EventgridPartnerConfigurationTimeouts {
 	Create: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationPartnerAuthorizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.NewEventgridPartnerConfigurationPartnerAuthorizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridPartnerConfigurationPartnerAuthorizationList
 ```
@@ -1371,7 +1371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationPartnerAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.NewEventgridPartnerConfigurationPartnerAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridPartnerConfigurationPartnerAuthorizationOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerConfiguration.EventgridPartnerConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerconfiguration"
 
 eventgridpartnerconfiguration.NewEventgridPartnerConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridPartnerConfigurationTimeoutsOutputReference
 ```

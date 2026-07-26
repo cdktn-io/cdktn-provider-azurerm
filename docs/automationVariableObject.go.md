@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.NewAutomationVariableObject(scope Construct, id *string, config AutomationVariableObjectConfig) AutomationVariableObject
 ```
@@ -448,7 +448,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.AutomationVariableObject_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.AutomationVariableObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ automationvariableobject.AutomationVariableObject_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.AutomationVariableObject_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ automationvariableobject.AutomationVariableObject_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.AutomationVariableObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 &automationvariableobject.AutomationVariableObjectConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvari
 	Description: *string,
 	Encrypted: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationVariableObject.AutomationVariableObjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationVariableObject.AutomationVariableObjectTimeouts,
 	Value: *string,
 }
 ```
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 &automationvariableobject.AutomationVariableObjectTimeouts {
 	Create: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationVariableObject.AutomationVariableObjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationvariableobject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationvariableobject"
 
 automationvariableobject.NewAutomationVariableObjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationVariableObjectTimeoutsOutputReference
 ```

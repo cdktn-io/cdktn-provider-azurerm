@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.NewLogAnalyticsCluster(scope Construct, id *string, config LogAnalyticsClusterConfig) LogAnalyticsCluster
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.LogAnalyticsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.LogAnalyticsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ loganalyticscluster.LogAnalyticsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.LogAnalyticsCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ loganalyticscluster.LogAnalyticsCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.LogAnalyticsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 &loganalyticscluster.LogAnalyticsClusterConfig {
 	Connection: interface{},
@@ -940,14 +940,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscl
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logAnalyticsCluster.LogAnalyticsClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logAnalyticsCluster.LogAnalyticsClusterIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
 	SizeGb: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logAnalyticsCluster.LogAnalyticsClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logAnalyticsCluster.LogAnalyticsClusterTimeouts,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 &loganalyticscluster.LogAnalyticsClusterIdentity {
 	Type: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 &loganalyticscluster.LogAnalyticsClusterTimeouts {
 	Create: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.NewLogAnalyticsClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogAnalyticsClusterIdentityOutputReference
 ```
@@ -1595,7 +1595,7 @@ func InternalValue() LogAnalyticsClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsCluster.LogAnalyticsClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticscluster"
 
 loganalyticscluster.NewLogAnalyticsClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogAnalyticsClusterTimeoutsOutputReference
 ```

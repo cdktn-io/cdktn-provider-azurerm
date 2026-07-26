@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.NewLogAnalyticsSavedSearch(scope Construct, id *string, config LogAnalyticsSavedSearchConfig) LogAnalyticsSavedSearch
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearch.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.LogAnalyticsSavedSearch_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.LogAnalyticsSavedSearch_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ loganalyticssavedsearch.LogAnalyticsSavedSearch_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.LogAnalyticsSavedSearch_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ loganalyticssavedsearch.LogAnalyticsSavedSearch_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.LogAnalyticsSavedSearch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 &loganalyticssavedsearch.LogAnalyticsSavedSearchConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssa
 	FunctionParameters: *[]*string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logAnalyticsSavedSearch.LogAnalyticsSavedSearchTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logAnalyticsSavedSearch.LogAnalyticsSavedSearchTimeouts,
 }
 ```
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearchTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 &loganalyticssavedsearch.LogAnalyticsSavedSearchTimeouts {
 	Create: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsSavedSearch.LogAnalyticsSavedSearchTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticssavedsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticssavedsearch"
 
 loganalyticssavedsearch.NewLogAnalyticsSavedSearchTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogAnalyticsSavedSearchTimeoutsOutputReference
 ```

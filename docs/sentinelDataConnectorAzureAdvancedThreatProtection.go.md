@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.NewSentinelDataConnectorAzureAdvancedThreatProtection(scope Construct, id *string, config SentinelDataConnectorAzureAdvancedThreatProtectionConfig) SentinelDataConnectorAzureAdvancedThreatProtection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdv
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdv
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 &sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtectionConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataco
 	Name: *string,
 	Id: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtectionTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 &sentineldataconnectorazureadvancedthreatprotection.SentinelDataConnectorAzureAdvancedThreatProtectionTimeouts {
 	Create: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureAdvancedThreatProtection.SentinelDataConnectorAzureAdvancedThreatProtectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazureadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazureadvancedthreatprotection"
 
 sentineldataconnectorazureadvancedthreatprotection.NewSentinelDataConnectorAzureAdvancedThreatProtectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorAzureAdvancedThreatProtectionTimeoutsOutputReference
 ```

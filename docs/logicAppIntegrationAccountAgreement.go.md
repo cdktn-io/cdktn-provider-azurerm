@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.NewLogicAppIntegrationAccountAgreement(scope Construct, id *string, config LogicAppIntegrationAccountAgreementConfig) LogicAppIntegrationAccountAgreement
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreement.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 &logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreementConfig {
 	Connection: interface{},
@@ -1025,16 +1025,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegr
 	Provisioners: *[]interface{},
 	AgreementType: *string,
 	Content: *string,
-	GuestIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementGuestIdentity,
+	GuestIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementGuestIdentity,
 	GuestPartnerName: *string,
-	HostIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementHostIdentity,
+	HostIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementHostIdentity,
 	HostPartnerName: *string,
 	IntegrationAccountName: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementTimeouts,
 }
 ```
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementGuestIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 &logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreementGuestIdentity {
 	Qualifier: *string,
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementHostIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 &logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreementHostIdentity {
 	Qualifier: *string,
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 &logicappintegrationaccountagreement.LogicAppIntegrationAccountAgreementTimeouts {
 	Create: *string,
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementGuestIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.NewLogicAppIntegrationAccountAgreementGuestIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppIntegrationAccountAgreementGuestIdentityOutputReference
 ```
@@ -1753,7 +1753,7 @@ func InternalValue() LogicAppIntegrationAccountAgreementGuestIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementHostIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.NewLogicAppIntegrationAccountAgreementHostIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppIntegrationAccountAgreementHostIdentityOutputReference
 ```
@@ -2046,7 +2046,7 @@ func InternalValue() LogicAppIntegrationAccountAgreementHostIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logicAppIntegrationAccountAgreement.LogicAppIntegrationAccountAgreementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/logicappintegrationaccountagreement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/logicappintegrationaccountagreement"
 
 logicappintegrationaccountagreement.NewLogicAppIntegrationAccountAgreementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogicAppIntegrationAccountAgreementTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.NewPaloAltoLocalRulestack(scope Construct, id *string, config PaloAltoLocalRulestackConfig) PaloAltoLocalRulestack
 ```
@@ -476,7 +476,7 @@ func ResetVulnerabilityProfile()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.PaloAltoLocalRulestack_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.PaloAltoLocalRulestack_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ paloaltolocalrulestack.PaloAltoLocalRulestack_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.PaloAltoLocalRulestack_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ paloaltolocalrulestack.PaloAltoLocalRulestack_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.PaloAltoLocalRulestack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 &paloaltolocalrulestack.PaloAltoLocalRulestackConfig {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalr
 	DnsSubscription: *string,
 	FileBlockingProfile: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoLocalRulestack.PaloAltoLocalRulestackTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoLocalRulestack.PaloAltoLocalRulestackTimeouts,
 	UrlFilteringProfile: *string,
 	VulnerabilityProfile: *string,
 }
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestackTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 &paloaltolocalrulestack.PaloAltoLocalRulestackTimeouts {
 	Create: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestack.PaloAltoLocalRulestackTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestack"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestack"
 
 paloaltolocalrulestack.NewPaloAltoLocalRulestackTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackTimeoutsOutputReference
 ```

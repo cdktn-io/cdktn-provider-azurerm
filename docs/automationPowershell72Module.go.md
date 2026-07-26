@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72Module.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.NewAutomationPowershell72Module(scope Construct, id *string, config AutomationPowershell72ModuleConfig) AutomationPowershell72Module
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72Module.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.AutomationPowershell72Module_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72Module.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.AutomationPowershell72Module_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ automationpowershell72module.AutomationPowershell72Module_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72Module.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.AutomationPowershell72Module_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ automationpowershell72module.AutomationPowershell72Module_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72Module.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.AutomationPowershell72Module_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 &automationpowershell72module.AutomationPowershell72ModuleConfig {
 	Connection: interface{},
@@ -879,11 +879,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowe
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AutomationAccountId: *string,
-	ModuleLink: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationPowershell72Module.AutomationPowershell72ModuleModuleLink,
+	ModuleLink: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationPowershell72Module.AutomationPowershell72ModuleModuleLink,
 	Name: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationPowershell72Module.AutomationPowershell72ModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationPowershell72Module.AutomationPowershell72ModuleTimeouts,
 }
 ```
 
@@ -1061,11 +1061,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleModuleLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 &automationpowershell72module.AutomationPowershell72ModuleModuleLink {
 	Uri: *string,
-	Hash: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationPowershell72Module.AutomationPowershell72ModuleModuleLinkHash,
+	Hash: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationPowershell72Module.AutomationPowershell72ModuleModuleLinkHash,
 }
 ```
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleModuleLinkHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 &automationpowershell72module.AutomationPowershell72ModuleModuleLinkHash {
 	Algorithm: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 &automationpowershell72module.AutomationPowershell72ModuleTimeouts {
 	Create: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleModuleLinkHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.NewAutomationPowershell72ModuleModuleLinkHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationPowershell72ModuleModuleLinkHashOutputReference
 ```
@@ -1524,7 +1524,7 @@ func InternalValue() AutomationPowershell72ModuleModuleLinkHash
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleModuleLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.NewAutomationPowershell72ModuleModuleLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationPowershell72ModuleModuleLinkOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() AutomationPowershell72ModuleModuleLink
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationPowershell72Module.AutomationPowershell72ModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationpowershell72module"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationpowershell72module"
 
 automationpowershell72module.NewAutomationPowershell72ModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationPowershell72ModuleTimeoutsOutputReference
 ```

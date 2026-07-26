@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.NewVpnServerConfigurationPolicyGroup(scope Construct, id *string, config VpnServerConfigurationPolicyGroupConfig) VpnServerConfigurationPolicyGroup
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 &vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroupConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfi
 	Id: *string,
 	IsDefault: interface{},
 	Priority: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupTimeouts,
 }
 ```
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 &vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroupPolicy {
 	Name: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 &vpnserverconfigurationpolicygroup.VpnServerConfigurationPolicyGroupTimeouts {
 	Create: *string,
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.NewVpnServerConfigurationPolicyGroupPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnServerConfigurationPolicyGroupPolicyList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.NewVpnServerConfigurationPolicyGroupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnServerConfigurationPolicyGroupPolicyOutputReference
 ```
@@ -1733,7 +1733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnServerConfigurationPolicyGroup.VpnServerConfigurationPolicyGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpnserverconfigurationpolicygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpnserverconfigurationpolicygroup"
 
 vpnserverconfigurationpolicygroup.NewVpnServerConfigurationPolicyGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnServerConfigurationPolicyGroupTimeoutsOutputReference
 ```

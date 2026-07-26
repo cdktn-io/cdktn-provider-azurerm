@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUser(scope Construct, id *string, config StorageAccountLocalUserConfig) StorageAccountLocalUser
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ storageaccountlocaluser.StorageAccountLocalUser_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ storageaccountlocaluser.StorageAccountLocalUser_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccount
 	SshAuthorizedKey: interface{},
 	SshKeyEnabled: interface{},
 	SshPasswordEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountLocalUser.StorageAccountLocalUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountLocalUser.StorageAccountLocalUserTimeouts,
 }
 ```
 
@@ -1234,10 +1234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserPermissionScope {
-	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions,
 	ResourceName: *string,
 	Service: *string,
 }
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserPermissionScopePermissions {
 	Create: interface{},
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserSshAuthorizedKey {
 	Key: *string,
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserTimeouts {
 	Create: *string,
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountLocalUserPermissionScopeList
 ```
@@ -1666,7 +1666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountLocalUserPermissionScopeOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountLocalUserPermissionScopePermissionsOutputReference
 ```
@@ -2406,7 +2406,7 @@ func InternalValue() StorageAccountLocalUserPermissionScopePermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserSshAuthorizedKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountLocalUserSshAuthorizedKeyList
 ```
@@ -2566,7 +2566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserSshAuthorizedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountLocalUserSshAuthorizedKeyOutputReference
 ```
@@ -2884,7 +2884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountLocalUserTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.NewCapacityReservation(scope Construct, id *string, config CapacityReservationConfig) CapacityReservation
 ```
@@ -454,7 +454,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.CapacityReservation_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.CapacityReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ capacityreservation.CapacityReservation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.CapacityReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ capacityreservation.CapacityReservation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.CapacityReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 &capacityreservation.CapacityReservationConfig {
 	Connection: interface{},
@@ -909,10 +909,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreserv
 	Provisioners: *[]interface{},
 	CapacityReservationGroupId: *string,
 	Name: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.capacityReservation.CapacityReservationSku,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.capacityReservation.CapacityReservationSku,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.capacityReservation.CapacityReservationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.capacityReservation.CapacityReservationTimeouts,
 	Zone: *string,
 }
 ```
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservationSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 &capacityreservation.CapacityReservationSku {
 	Capacity: *f64,
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 &capacityreservation.CapacityReservationTimeouts {
 	Create: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservationSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.NewCapacityReservationSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CapacityReservationSkuOutputReference
 ```
@@ -1519,7 +1519,7 @@ func InternalValue() CapacityReservationSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.capacityReservation.CapacityReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/capacityreservation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/capacityreservation"
 
 capacityreservation.NewCapacityReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CapacityReservationTimeoutsOutputReference
 ```

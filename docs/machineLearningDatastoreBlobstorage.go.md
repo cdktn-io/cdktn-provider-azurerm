@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.NewMachineLearningDatastoreBlobstorage(scope Construct, id *string, config MachineLearningDatastoreBlobstorageConfig) MachineLearningDatastoreBlobstorage
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 &machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorageConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearnin
 	ServiceDataAuthIdentity: *string,
 	SharedAccessSignature: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorageTimeouts,
 }
 ```
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 &machinelearningdatastoreblobstorage.MachineLearningDatastoreBlobstorageTimeouts {
 	Create: *string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningDatastoreBlobstorage.MachineLearningDatastoreBlobstorageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningdatastoreblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningdatastoreblobstorage"
 
 machinelearningdatastoreblobstorage.NewMachineLearningDatastoreBlobstorageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningDatastoreBlobstorageTimeoutsOutputReference
 ```
