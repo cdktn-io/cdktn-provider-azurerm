@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuit(scope Construct, id *string, config DataAzurermExpressRouteCircuitConfig) DataAzurermExpressRouteCircuit
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuit.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuit.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 &dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuitConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexp
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitPeerings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 &dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuitPeerings {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitServiceProviderProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 &dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuitServiceProviderProperties {
 
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 &dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuitSku {
 
@@ -948,7 +948,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 &dataazurermexpressroutecircuit.DataAzurermExpressRouteCircuitTimeouts {
 	Read: *string,
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitPeeringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitPeeringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermExpressRouteCircuitPeeringsList
 ```
@@ -1131,7 +1131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitPeeringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitPeeringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermExpressRouteCircuitPeeringsOutputReference
 ```
@@ -1475,7 +1475,7 @@ func InternalValue() DataAzurermExpressRouteCircuitPeerings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitServiceProviderPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitServiceProviderPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermExpressRouteCircuitServiceProviderPropertiesList
 ```
@@ -1624,7 +1624,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitServiceProviderPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitServiceProviderPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermExpressRouteCircuitServiceProviderPropertiesOutputReference
 ```
@@ -1924,7 +1924,7 @@ func InternalValue() DataAzurermExpressRouteCircuitServiceProviderProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitSkuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitSkuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermExpressRouteCircuitSkuList
 ```
@@ -2073,7 +2073,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermExpressRouteCircuitSkuOutputReference
 ```
@@ -2362,7 +2362,7 @@ func InternalValue() DataAzurermExpressRouteCircuitSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExpressRouteCircuit.DataAzurermExpressRouteCircuitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermexpressroutecircuit"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermexpressroutecircuit"
 
 dataazurermexpressroutecircuit.NewDataAzurermExpressRouteCircuitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermExpressRouteCircuitTimeoutsOutputReference
 ```

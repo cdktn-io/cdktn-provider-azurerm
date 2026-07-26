@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.NewApiManagementEmailTemplate(scope Construct, id *string, config ApiManagementEmailTemplateConfig) ApiManagementEmailTemplate
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.ApiManagementEmailTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.ApiManagementEmailTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apimanagementemailtemplate.ApiManagementEmailTemplate_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.ApiManagementEmailTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apimanagementemailtemplate.ApiManagementEmailTemplate_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.ApiManagementEmailTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 &apimanagementemailtemplate.ApiManagementEmailTemplateConfig {
 	Connection: interface{},
@@ -908,7 +908,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagemente
 	Subject: *string,
 	TemplateName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementEmailTemplate.ApiManagementEmailTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementEmailTemplate.ApiManagementEmailTemplateTimeouts,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 &apimanagementemailtemplate.ApiManagementEmailTemplateTimeouts {
 	Create: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementEmailTemplate.ApiManagementEmailTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementemailtemplate"
 
 apimanagementemailtemplate.NewApiManagementEmailTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementEmailTemplateTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticCluster(scope Construct, id *string, config KubernetesAutomaticClusterConfig) KubernetesAutomaticCluster
 ```
@@ -547,7 +547,7 @@ func ResetWebAppRoutingIngress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.KubernetesAutomaticCluster_IsConstruct(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.KubernetesAutomaticCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ kubernetesautomaticcluster.KubernetesAutomaticCluster_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.KubernetesAutomaticCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ kubernetesautomaticcluster.KubernetesAutomaticCluster_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.KubernetesAutomaticCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1188,7 +1188,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterApiServerAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterApiServerAccess {
 	AuthorizedIpRanges: *[]*string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterConfig {
 	Connection: interface{},
@@ -1244,18 +1244,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesauto
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	ApiServerAccess: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterApiServerAccess,
-	HostedSystem: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterHostedSystem,
+	ApiServerAccess: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterApiServerAccess,
+	HostedSystem: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterHostedSystem,
 	Id: *string,
-	PrivateCluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterPrivateCluster,
-	ServiceMesh: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMesh,
+	PrivateCluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterPrivateCluster,
+	ServiceMesh: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMesh,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterTimeouts,
-	WebAppRoutingIngress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngress,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterTimeouts,
+	WebAppRoutingIngress: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngress,
 }
 ```
 
@@ -1521,7 +1521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterHostedSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterHostedSystem {
 	NodeSubnetId: *string,
@@ -1567,7 +1567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterIdentity {
 	Type: *string,
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterKubeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterKubeConfig {
 
@@ -1626,7 +1626,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesauto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterPrivateCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterPrivateCluster {
 	PrivateDnsZoneId: *string,
@@ -1672,11 +1672,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterServiceMesh {
 	Revisions: *[]*string,
-	CertificateAuthority: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMeshCertificateAuthority,
+	CertificateAuthority: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMeshCertificateAuthority,
 	ExternalIngressGatewayEnabled: interface{},
 	InternalIngressGatewayEnabled: interface{},
 	ProxyRedirectMechanism: *string,
@@ -1762,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMeshCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterServiceMeshCertificateAuthority {
 	CertificateChainObjectName: *string,
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterTimeouts {
 	Create: *string,
@@ -1924,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterWebAppRoutingIngress {
 	DefaultNginxController: *string,
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 &kubernetesautomaticcluster.KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentity {
 
@@ -1999,7 +1999,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesauto
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterApiServerAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterApiServerAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterApiServerAccessOutputReference
 ```
@@ -2306,7 +2306,7 @@ func InternalValue() KubernetesAutomaticClusterApiServerAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterHostedSystemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterHostedSystemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterHostedSystemOutputReference
 ```
@@ -2599,7 +2599,7 @@ func InternalValue() KubernetesAutomaticClusterHostedSystem
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterIdentityOutputReference
 ```
@@ -2921,7 +2921,7 @@ func InternalValue() KubernetesAutomaticClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterKubeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterKubeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesAutomaticClusterKubeConfigList
 ```
@@ -3070,7 +3070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterKubeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterKubeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesAutomaticClusterKubeConfigOutputReference
 ```
@@ -3403,7 +3403,7 @@ func InternalValue() KubernetesAutomaticClusterKubeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterPrivateClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterPrivateClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterPrivateClusterOutputReference
 ```
@@ -3710,7 +3710,7 @@ func InternalValue() KubernetesAutomaticClusterPrivateCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterServiceMeshCertificateAuthorityOutputReference
 ```
@@ -4069,7 +4069,7 @@ func InternalValue() KubernetesAutomaticClusterServiceMeshCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterServiceMeshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterServiceMeshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterServiceMeshOutputReference
 ```
@@ -4469,7 +4469,7 @@ func InternalValue() KubernetesAutomaticClusterServiceMesh
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterTimeoutsOutputReference
 ```
@@ -4834,7 +4834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterWebAppRoutingIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesAutomaticClusterWebAppRoutingIngressOutputReference
 ```
@@ -5181,7 +5181,7 @@ func InternalValue() KubernetesAutomaticClusterWebAppRoutingIngress
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityList
 ```
@@ -5330,7 +5330,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesAutomaticCluster.KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesautomaticcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesautomaticcluster"
 
 kubernetesautomaticcluster.NewKubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesAutomaticClusterWebAppRoutingIngressWebAppRoutingIdentityOutputReference
 ```

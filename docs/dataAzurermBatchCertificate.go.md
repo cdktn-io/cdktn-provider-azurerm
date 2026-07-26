@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.NewDataAzurermBatchCertificate(scope Construct, id *string, config DataAzurermBatchCertificateConfig) DataAzurermBatchCertificate
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.DataAzurermBatchCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.DataAzurermBatchCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermbatchcertificate.DataAzurermBatchCertificate_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.DataAzurermBatchCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermbatchcertificate.DataAzurermBatchCertificate_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.DataAzurermBatchCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 &dataazurermbatchcertificate.DataAzurermBatchCertificateConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbat
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermBatchCertificate.DataAzurermBatchCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermBatchCertificate.DataAzurermBatchCertificateTimeouts,
 }
 ```
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 &dataazurermbatchcertificate.DataAzurermBatchCertificateTimeouts {
 	Read: *string,
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermBatchCertificate.DataAzurermBatchCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermbatchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermbatchcertificate"
 
 dataazurermbatchcertificate.NewDataAzurermBatchCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermBatchCertificateTimeoutsOutputReference
 ```

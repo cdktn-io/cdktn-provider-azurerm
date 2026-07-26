@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTest(scope Construct, id *string, config ApplicationInsightsStandardWebTestConfig) ApplicationInsightsStandardWebTest
 ```
@@ -502,7 +502,7 @@ func ResetValidationRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestConfig {
 	Connection: interface{},
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationins
 	GeoLocations: *[]*string,
 	Location: *string,
 	Name: *string,
-	Request: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequest,
+	Request: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequest,
 	ResourceGroupName: *string,
 	Description: *string,
 	Enabled: interface{},
@@ -1155,8 +1155,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationins
 	RetryEnabled: interface{},
 	Tags: *map[string]*string,
 	Timeout: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestTimeouts,
-	ValidationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRules,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestTimeouts,
+	ValidationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRules,
 }
 ```
 
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestRequest {
 	Url: *string,
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestRequestHeader {
 	Name: *string,
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestTimeouts {
 	Create: *string,
@@ -1677,10 +1677,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestValidationRules {
-	Content: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRulesContent,
+	Content: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRulesContent,
 	ExpectedStatusCode: *f64,
 	SslCertRemainingLifetime: *f64,
 	SslCheckEnabled: interface{},
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRulesContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 &applicationinsightsstandardwebtest.ApplicationInsightsStandardWebTestValidationRulesContent {
 	ContentMatch: *string,
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationInsightsStandardWebTestRequestHeaderList
 ```
@@ -1975,7 +1975,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationInsightsStandardWebTestRequestHeaderOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsStandardWebTestRequestOutputReference
 ```
@@ -2715,7 +2715,7 @@ func InternalValue() ApplicationInsightsStandardWebTestRequest
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsStandardWebTestTimeoutsOutputReference
 ```
@@ -3080,7 +3080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRulesContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestValidationRulesContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsStandardWebTestValidationRulesContentOutputReference
 ```
@@ -3409,7 +3409,7 @@ func InternalValue() ApplicationInsightsStandardWebTestValidationRulesContent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsStandardWebTest.ApplicationInsightsStandardWebTestValidationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsstandardwebtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsstandardwebtest"
 
 applicationinsightsstandardwebtest.NewApplicationInsightsStandardWebTestValidationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsStandardWebTestValidationRulesOutputReference
 ```

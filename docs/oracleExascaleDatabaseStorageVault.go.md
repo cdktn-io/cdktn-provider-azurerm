@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.NewOracleExascaleDatabaseStorageVault(scope Construct, id *string, config OracleExascaleDatabaseStorageVaultConfig) OracleExascaleDatabaseStorageVault
 ```
@@ -461,7 +461,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1014,7 +1014,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 &oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVaultConfig {
 	Connection: interface{},
@@ -1026,7 +1026,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascale
 	Provisioners: *[]interface{},
 	AdditionalFlashCachePercentage: *f64,
 	DisplayName: *string,
-	HighCapacityDatabaseStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorage,
+	HighCapacityDatabaseStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorage,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
@@ -1034,7 +1034,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascale
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 &oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorage {
 	TotalSizeInGb: *f64,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 &oracleexascaledatabasestoragevault.OracleExascaleDatabaseStorageVaultTimeouts {
 	Create: *string,
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.NewOracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStorageOutputReference
 ```
@@ -1681,7 +1681,7 @@ func InternalValue() OracleExascaleDatabaseStorageVaultHighCapacityDatabaseStora
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleExascaleDatabaseStorageVault.OracleExascaleDatabaseStorageVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleexascaledatabasestoragevault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleexascaledatabasestoragevault"
 
 oracleexascaledatabasestoragevault.NewOracleExascaleDatabaseStorageVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleExascaleDatabaseStorageVaultTimeoutsOutputReference
 ```

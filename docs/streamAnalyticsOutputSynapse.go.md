@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.NewStreamAnalyticsOutputSynapse(scope Construct, id *string, config StreamAnalyticsOutputSynapseConfig) StreamAnalyticsOutputSynapse
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapse.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapse.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapse.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapse.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapse_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 &streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapseConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalytic
 	Table: *string,
 	User: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapseTimeouts,
 }
 ```
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 &streamanalyticsoutputsynapse.StreamAnalyticsOutputSynapseTimeouts {
 	Create: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsOutputSynapse.StreamAnalyticsOutputSynapseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputsynapse"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputsynapse"
 
 streamanalyticsoutputsynapse.NewStreamAnalyticsOutputSynapseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsOutputSynapseTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.NewDataAzurermSystemCenterVirtualMachineManagerInventoryItems(scope Construct, id *string, config DataAzurermSystemCenterVirtualMachineManagerInventoryItemsConfig) DataAzurermSystemCenterVirtualMachineManagerInventoryItems
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCent
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCent
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItems_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 &dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsConfig {
 	Connection: interface{},
@@ -704,7 +704,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsys
 	InventoryType: *string,
 	SystemCenterVirtualMachineManagerServerId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeouts,
 }
 ```
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 &dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItems {
 
@@ -867,7 +867,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsys
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 &dataazurermsystemcentervirtualmachinemanagerinventoryitems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeouts {
 	Read: *string,
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.NewDataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsList
 ```
@@ -1050,7 +1050,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.NewDataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSystemCenterVirtualMachineManagerInventoryItemsInventoryItemsOutputReference
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() DataAzurermSystemCenterVirtualMachineManagerInventoryItemsI
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSystemCenterVirtualMachineManagerInventoryItems.DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsystemcentervirtualmachinemanagerinventoryitems"
 
 dataazurermsystemcentervirtualmachinemanagerinventoryitems.NewDataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSystemCenterVirtualMachineManagerInventoryItemsTimeoutsOutputReference
 ```

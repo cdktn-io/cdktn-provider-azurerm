@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.NewArcMachine(scope Construct, id *string, config ArcMachineConfig) ArcMachine
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.ArcMachine_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.ArcMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ arcmachine.ArcMachine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.ArcMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ arcmachine.ArcMachine_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcMachine.ArcMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.ArcMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachine.ArcMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 &arcmachine.ArcMachineConfig {
 	Connection: interface{},
@@ -934,9 +934,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.arcMachine.ArcMachineIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcMachine.ArcMachineIdentity,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.arcMachine.ArcMachineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcMachine.ArcMachineTimeouts,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachine.ArcMachineIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 &arcmachine.ArcMachineIdentity {
 	Type: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachine.ArcMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 &arcmachine.ArcMachineTimeouts {
 	Create: *string,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachine.ArcMachineIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.NewArcMachineIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcMachineIdentityOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() ArcMachineIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachine.ArcMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachine"
 
 arcmachine.NewArcMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcMachineTimeoutsOutputReference
 ```

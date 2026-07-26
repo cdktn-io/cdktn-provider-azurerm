@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.NewServicebusTopic(scope Construct, id *string, config ServicebusTopicConfig) ServicebusTopic
 ```
@@ -504,7 +504,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.ServicebusTopic_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.ServicebusTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ servicebustopic.ServicebusTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.ServicebusTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ servicebustopic.ServicebusTopic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.ServicebusTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1123,7 +1123,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 &servicebustopic.ServicebusTopicConfig {
 	Connection: interface{},
@@ -1147,7 +1147,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopi
 	RequiresDuplicateDetection: interface{},
 	Status: *string,
 	SupportOrdering: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.servicebusTopic.ServicebusTopicTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.servicebusTopic.ServicebusTopicTimeouts,
 }
 ```
 
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 &servicebustopic.ServicebusTopicTimeouts {
 	Create: *string,
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusTopic.ServicebusTopicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebustopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebustopic"
 
 servicebustopic.NewServicebusTopicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusTopicTimeoutsOutputReference
 ```

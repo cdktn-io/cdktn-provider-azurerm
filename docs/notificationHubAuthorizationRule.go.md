@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NewNotificationHubAuthorizationRule(scope Construct, id *string, config NotificationHubAuthorizationRuleConfig) NotificationHubAuthorizationRule
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NotificationHubAuthorizationRule_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NotificationHubAuthorizationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ notificationhubauthorizationrule.NotificationHubAuthorizationRule_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NotificationHubAuthorizationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ notificationhubauthorizationrule.NotificationHubAuthorizationRule_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NotificationHubAuthorizationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 &notificationhubauthorizationrule.NotificationHubAuthorizationRuleConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhu
 	Listen: interface{},
 	Manage: interface{},
 	Send: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.notificationHubAuthorizationRule.NotificationHubAuthorizationRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.notificationHubAuthorizationRule.NotificationHubAuthorizationRuleTimeouts,
 }
 ```
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 &notificationhubauthorizationrule.NotificationHubAuthorizationRuleTimeouts {
 	Create: *string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.notificationHubAuthorizationRule.NotificationHubAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/notificationhubauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/notificationhubauthorizationrule"
 
 notificationhubauthorizationrule.NewNotificationHubAuthorizationRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotificationHubAuthorizationRuleTimeoutsOutputReference
 ```

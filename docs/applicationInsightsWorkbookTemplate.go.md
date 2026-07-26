@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.NewApplicationInsightsWorkbookTemplate(scope Construct, id *string, config ApplicationInsightsWorkbookTemplateConfig) ApplicationInsightsWorkbookTemplate
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -999,7 +999,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 &applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplateConfig {
 	Connection: interface{},
@@ -1019,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationins
 	Localized: *string,
 	Priority: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateTimeouts,
 }
 ```
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateGalleries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 &applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplateGalleries {
 	Category: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 &applicationinsightsworkbooktemplate.ApplicationInsightsWorkbookTemplateTimeouts {
 	Create: *string,
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateGalleriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.NewApplicationInsightsWorkbookTemplateGalleriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationInsightsWorkbookTemplateGalleriesList
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateGalleriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.NewApplicationInsightsWorkbookTemplateGalleriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationInsightsWorkbookTemplateGalleriesOutputReference
 ```
@@ -1984,7 +1984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsightsWorkbookTemplate.ApplicationInsightsWorkbookTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsightsworkbooktemplate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationinsightsworkbooktemplate"
 
 applicationinsightsworkbooktemplate.NewApplicationInsightsWorkbookTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsWorkbookTemplateTimeoutsOutputReference
 ```

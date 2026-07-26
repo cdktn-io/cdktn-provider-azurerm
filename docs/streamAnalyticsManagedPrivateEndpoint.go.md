@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.NewStreamAnalyticsManagedPrivateEndpoint(scope Construct, id *string, config StreamAnalyticsManagedPrivateEndpointConfig) StreamAnalyticsManagedPrivateEndpoint
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 &streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpointConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalytic
 	SubresourceName: *string,
 	TargetResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpointTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 &streamanalyticsmanagedprivateendpoint.StreamAnalyticsManagedPrivateEndpointTimeouts {
 	Create: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsManagedPrivateEndpoint.StreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsmanagedprivateendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsmanagedprivateendpoint"
 
 streamanalyticsmanagedprivateendpoint.NewStreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsManagedPrivateEndpointTimeoutsOutputReference
 ```

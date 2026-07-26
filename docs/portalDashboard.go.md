@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.NewPortalDashboard(scope Construct, id *string, config PortalDashboardConfig) PortalDashboard
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.PortalDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.PortalDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ portaldashboard.PortalDashboard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.PortalDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ portaldashboard.PortalDashboard_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.PortalDashboard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 &portaldashboard.PortalDashboardConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboar
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.portalDashboard.PortalDashboardTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.portalDashboard.PortalDashboardTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 &portaldashboard.PortalDashboardTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.portalDashboard.PortalDashboardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/portaldashboard"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/portaldashboard"
 
 portaldashboard.NewPortalDashboardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PortalDashboardTimeoutsOutputReference
 ```

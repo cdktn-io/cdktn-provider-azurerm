@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.NewVmwareNetappVolumeAttachment(scope Construct, id *string, config VmwareNetappVolumeAttachmentConfig) VmwareNetappVolumeAttachment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.VmwareNetappVolumeAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 &vmwarenetappvolumeattachment.VmwareNetappVolumeAttachmentConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvo
 	NetappVolumeId: *string,
 	VmwareClusterId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 &vmwarenetappvolumeattachment.VmwareNetappVolumeAttachmentTimeouts {
 	Create: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwarenetappvolumeattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwarenetappvolumeattachment"
 
 vmwarenetappvolumeattachment.NewVmwareNetappVolumeAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareNetappVolumeAttachmentTimeoutsOutputReference
 ```

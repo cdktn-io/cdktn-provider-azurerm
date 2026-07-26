@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.diskAccess.DiskAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.NewDiskAccess(scope Construct, id *string, config DiskAccessConfig) DiskAccess
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.diskAccess.DiskAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.DiskAccess_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.diskAccess.DiskAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.DiskAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ diskaccess.DiskAccess_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.diskAccess.DiskAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.DiskAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ diskaccess.DiskAccess_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.diskAccess.DiskAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.DiskAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.diskAccess.DiskAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 &diskaccess.DiskAccessConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.diskAccess.DiskAccessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.diskAccess.DiskAccessTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.diskAccess.DiskAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 &diskaccess.DiskAccessTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.diskAccess.DiskAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/diskaccess"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/diskaccess"
 
 diskaccess.NewDiskAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiskAccessTimeoutsOutputReference
 ```

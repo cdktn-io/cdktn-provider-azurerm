@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.NewDataAzurermTemplateSpecVersion(scope Construct, id *string, config DataAzurermTemplateSpecVersionConfig) DataAzurermTemplateSpecVersion
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.DataAzurermTemplateSpecVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 &dataazurermtemplatespecversion.DataAzurermTemplateSpecVersionConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtem
 	ResourceGroupName: *string,
 	Version: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersionTimeouts,
 }
 ```
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 &dataazurermtemplatespecversion.DataAzurermTemplateSpecVersionTimeouts {
 	Read: *string,
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermTemplateSpecVersion.DataAzurermTemplateSpecVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtemplatespecversion"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtemplatespecversion"
 
 dataazurermtemplatespecversion.NewDataAzurermTemplateSpecVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermTemplateSpecVersionTimeoutsOutputReference
 ```

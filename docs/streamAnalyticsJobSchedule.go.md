@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.NewStreamAnalyticsJobSchedule(scope Construct, id *string, config StreamAnalyticsJobScheduleConfig) StreamAnalyticsJobSchedule
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.StreamAnalyticsJobSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.StreamAnalyticsJobSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ streamanalyticsjobschedule.StreamAnalyticsJobSchedule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.StreamAnalyticsJobSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ streamanalyticsjobschedule.StreamAnalyticsJobSchedule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.StreamAnalyticsJobSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 &streamanalyticsjobschedule.StreamAnalyticsJobScheduleConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalytic
 	StreamAnalyticsJobId: *string,
 	Id: *string,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsJobSchedule.StreamAnalyticsJobScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsJobSchedule.StreamAnalyticsJobScheduleTimeouts,
 }
 ```
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 &streamanalyticsjobschedule.StreamAnalyticsJobScheduleTimeouts {
 	Create: *string,
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsJobSchedule.StreamAnalyticsJobScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsjobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsjobschedule"
 
 streamanalyticsjobschedule.NewStreamAnalyticsJobScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsJobScheduleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.NewManagedRedisAccessPolicyAssignment(scope Construct, id *string, config ManagedRedisAccessPolicyAssignmentConfig) ManagedRedisAccessPolicyAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 &managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignmentConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisac
 	ManagedRedisId: *string,
 	ObjectId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 &managedredisaccesspolicyassignment.ManagedRedisAccessPolicyAssignmentTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisAccessPolicyAssignment.ManagedRedisAccessPolicyAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisaccesspolicyassignment"
 
 managedredisaccesspolicyassignment.NewManagedRedisAccessPolicyAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedRedisAccessPolicyAssignmentTimeoutsOutputReference
 ```

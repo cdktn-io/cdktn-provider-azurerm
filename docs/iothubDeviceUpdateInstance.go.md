@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.NewIothubDeviceUpdateInstance(scope Construct, id *string, config IothubDeviceUpdateInstanceConfig) IothubDeviceUpdateInstance
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.IothubDeviceUpdateInstance_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.IothubDeviceUpdateInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ iothubdeviceupdateinstance.IothubDeviceUpdateInstance_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.IothubDeviceUpdateInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ iothubdeviceupdateinstance.IothubDeviceUpdateInstance_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.IothubDeviceUpdateInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 &iothubdeviceupdateinstance.IothubDeviceUpdateInstanceConfig {
 	Connection: interface{},
@@ -940,10 +940,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceup
 	IothubId: *string,
 	Name: *string,
 	DiagnosticEnabled: interface{},
-	DiagnosticStorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceDiagnosticStorageAccount,
+	DiagnosticStorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceDiagnosticStorageAccount,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceTimeouts,
 }
 ```
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceDiagnosticStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 &iothubdeviceupdateinstance.IothubDeviceUpdateInstanceDiagnosticStorageAccount {
 	ConnectionString: *string,
@@ -1196,7 +1196,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 &iothubdeviceupdateinstance.IothubDeviceUpdateInstanceTimeouts {
 	Create: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.NewIothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IothubDeviceUpdateInstanceDiagnosticStorageAccountOutputReference
 ```
@@ -1565,7 +1565,7 @@ func InternalValue() IothubDeviceUpdateInstanceDiagnosticStorageAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubDeviceUpdateInstance.IothubDeviceUpdateInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubdeviceupdateinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubdeviceupdateinstance"
 
 iothubdeviceupdateinstance.NewIothubDeviceUpdateInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IothubDeviceUpdateInstanceTimeoutsOutputReference
 ```

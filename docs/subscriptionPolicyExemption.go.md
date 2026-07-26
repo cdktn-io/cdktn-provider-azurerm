@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.NewSubscriptionPolicyExemption(scope Construct, id *string, config SubscriptionPolicyExemptionConfig) SubscriptionPolicyExemption
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.SubscriptionPolicyExemption_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.SubscriptionPolicyExemption_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ subscriptionpolicyexemption.SubscriptionPolicyExemption_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.SubscriptionPolicyExemption_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ subscriptionpolicyexemption.SubscriptionPolicyExemption_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.SubscriptionPolicyExemption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 &subscriptionpolicyexemption.SubscriptionPolicyExemptionConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpo
 	Id: *string,
 	Metadata: *string,
 	PolicyDefinitionReferenceIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 &subscriptionpolicyexemption.SubscriptionPolicyExemptionTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscriptionPolicyExemption.SubscriptionPolicyExemptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscriptionpolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscriptionpolicyexemption"
 
 subscriptionpolicyexemption.NewSubscriptionPolicyExemptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubscriptionPolicyExemptionTimeoutsOutputReference
 ```

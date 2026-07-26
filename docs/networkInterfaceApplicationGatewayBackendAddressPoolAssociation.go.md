@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociation(scope Construct, id *string, config NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationConfig) NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterface
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 &networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfa
 	IpConfigurationName: *string,
 	NetworkInterfaceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 &networkinterfaceapplicationgatewaybackendaddresspoolassociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeouts {
 	Create: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterfaceApplicationGatewayBackendAddressPoolAssociation.NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfaceapplicationgatewaybackendaddresspoolassociation"
 
 networkinterfaceapplicationgatewaybackendaddresspoolassociation.NewNetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceApplicationGatewayBackendAddressPoolAssociationTimeoutsOutputReference
 ```

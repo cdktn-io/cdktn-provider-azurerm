@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.NewSentinelDataConnectorAwsCloudTrail(scope Construct, id *string, config SentinelDataConnectorAwsCloudTrailConfig) SentinelDataConnectorAwsCloudTrail
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrail.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrail.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrail_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 &sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrailConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataco
 	LogAnalyticsWorkspaceId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrailTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrailTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrailTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 &sentineldataconnectorawscloudtrail.SentinelDataConnectorAwsCloudTrailTimeouts {
 	Create: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAwsCloudTrail.SentinelDataConnectorAwsCloudTrailTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorawscloudtrail"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorawscloudtrail"
 
 sentineldataconnectorawscloudtrail.NewSentinelDataConnectorAwsCloudTrailTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorAwsCloudTrailTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedText.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedText(scope Construct, id *string, config DataFactoryDatasetDelimitedTextConfig) DataFactoryDatasetDelimitedText
 ```
@@ -605,7 +605,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedText.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_IsConstruct(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedText.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_IsTerraformElement(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedText.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_IsTerraformResource(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedText.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedText_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1400,7 +1400,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobFsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextAzureBlobFsLocation {
 	DynamicFilenameEnabled: interface{},
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextAzureBlobStorageLocation {
 	Container: *string,
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextConfig {
 	Connection: interface{},
@@ -1619,8 +1619,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydat
 	Name: *string,
 	AdditionalProperties: *map[string]*string,
 	Annotations: *[]*string,
-	AzureBlobFsLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobFsLocation,
-	AzureBlobStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobStorageLocation,
+	AzureBlobFsLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobFsLocation,
+	AzureBlobStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobStorageLocation,
 	ColumnDelimiter: *string,
 	CompressionCodec: *string,
 	CompressionLevel: *string,
@@ -1629,14 +1629,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydat
 	EscapeCharacter: *string,
 	FirstRowAsHeader: interface{},
 	Folder: *string,
-	HttpServerLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextHttpServerLocation,
+	HttpServerLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextHttpServerLocation,
 	Id: *string,
 	NullValue: *string,
 	Parameters: *map[string]*string,
 	QuoteCharacter: *string,
 	RowDelimiter: *string,
 	SchemaColumn: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextTimeouts,
 }
 ```
 
@@ -2041,7 +2041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextHttpServerLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextHttpServerLocation {
 	Filename: *string,
@@ -2129,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextSchemaColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextSchemaColumn {
 	Name: *string,
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 &datafactorydatasetdelimitedtext.DataFactoryDatasetDelimitedTextTimeouts {
 	Create: *string,
@@ -2265,7 +2265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetDelimitedTextAzureBlobFsLocationOutputReference
 ```
@@ -2688,7 +2688,7 @@ func InternalValue() DataFactoryDatasetDelimitedTextAzureBlobFsLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetDelimitedTextAzureBlobStorageLocationOutputReference
 ```
@@ -3104,7 +3104,7 @@ func InternalValue() DataFactoryDatasetDelimitedTextAzureBlobStorageLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextHttpServerLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetDelimitedTextHttpServerLocationOutputReference
 ```
@@ -3477,7 +3477,7 @@ func InternalValue() DataFactoryDatasetDelimitedTextHttpServerLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextSchemaColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextSchemaColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryDatasetDelimitedTextSchemaColumnList
 ```
@@ -3637,7 +3637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextSchemaColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextSchemaColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryDatasetDelimitedTextSchemaColumnOutputReference
 ```
@@ -3984,7 +3984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetDelimitedText.DataFactoryDatasetDelimitedTextTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetdelimitedtext"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetdelimitedtext"
 
 datafactorydatasetdelimitedtext.NewDataFactoryDatasetDelimitedTextTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetDelimitedTextTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocation(scope Construct, id *string, config DataAzurermExtendedLocationCustomLocationConfig) DataAzurermExtendedLocationCustomLocation
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationAuthentication {
 
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermext
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermext
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts,
 }
 ```
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationTimeouts {
 	Read: *string,
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermExtendedLocationCustomLocationAuthenticationList
 ```
@@ -1116,7 +1116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermExtendedLocationCustomLocationAuthenticationOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() DataAzurermExtendedLocationCustomLocationAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference
 ```

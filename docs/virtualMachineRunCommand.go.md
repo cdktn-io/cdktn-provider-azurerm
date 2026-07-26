@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommand.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommand(scope Construct, id *string, config VirtualMachineRunCommandConfig) VirtualMachineRunCommand
 ```
@@ -555,7 +555,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommand.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.VirtualMachineRunCommand_IsConstruct(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommand.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.VirtualMachineRunCommand_IsTerraformElement(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ virtualmachineruncommand.VirtualMachineRunCommand_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommand.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.VirtualMachineRunCommand_IsTerraformResource(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ virtualmachineruncommand.VirtualMachineRunCommand_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommand.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.VirtualMachineRunCommand_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1185,7 +1185,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandConfig {
 	Connection: interface{},
@@ -1197,19 +1197,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachine
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Source: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRunCommand.VirtualMachineRunCommandSource,
+	Source: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRunCommand.VirtualMachineRunCommandSource,
 	VirtualMachineId: *string,
-	ErrorBlobManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRunCommand.VirtualMachineRunCommandErrorBlobManagedIdentity,
+	ErrorBlobManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRunCommand.VirtualMachineRunCommandErrorBlobManagedIdentity,
 	ErrorBlobUri: *string,
 	Id: *string,
-	OutputBlobManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRunCommand.VirtualMachineRunCommandOutputBlobManagedIdentity,
+	OutputBlobManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRunCommand.VirtualMachineRunCommandOutputBlobManagedIdentity,
 	OutputBlobUri: *string,
 	Parameter: interface{},
 	ProtectedParameter: interface{},
 	RunAsPassword: *string,
 	RunAsUser: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRunCommand.VirtualMachineRunCommandTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRunCommand.VirtualMachineRunCommandTimeouts,
 }
 ```
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandErrorBlobManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandErrorBlobManagedIdentity {
 	ClientId: *string,
@@ -1558,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandInstanceView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandInstanceView {
 
@@ -1571,7 +1571,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachine
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandOutputBlobManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandOutputBlobManagedIdentity {
 	ClientId: *string,
@@ -1617,7 +1617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandParameter {
 	Name: *string,
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandProtectedParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandProtectedParameter {
 	Name: *string,
@@ -1709,13 +1709,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandSource {
 	CommandId: *string,
 	Script: *string,
 	ScriptUri: *string,
-	ScriptUriManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRunCommand.VirtualMachineRunCommandSourceScriptUriManagedIdentity,
+	ScriptUriManagedIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRunCommand.VirtualMachineRunCommandSourceScriptUriManagedIdentity,
 }
 ```
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandSourceScriptUriManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandSourceScriptUriManagedIdentity {
 	ClientId: *string,
@@ -1831,7 +1831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 &virtualmachineruncommand.VirtualMachineRunCommandTimeouts {
 	Create: *string,
@@ -1907,7 +1907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandErrorBlobManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRunCommandErrorBlobManagedIdentityOutputReference
 ```
@@ -2214,7 +2214,7 @@ func InternalValue() VirtualMachineRunCommandErrorBlobManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandInstanceViewList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandInstanceViewList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineRunCommandInstanceViewList
 ```
@@ -2363,7 +2363,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandInstanceViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandInstanceViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineRunCommandInstanceViewOutputReference
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() VirtualMachineRunCommandInstanceView
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandOutputBlobManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRunCommandOutputBlobManagedIdentityOutputReference
 ```
@@ -3014,7 +3014,7 @@ func InternalValue() VirtualMachineRunCommandOutputBlobManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineRunCommandParameterList
 ```
@@ -3174,7 +3174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineRunCommandParameterOutputReference
 ```
@@ -3485,7 +3485,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandProtectedParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandProtectedParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineRunCommandProtectedParameterList
 ```
@@ -3645,7 +3645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandProtectedParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandProtectedParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineRunCommandProtectedParameterOutputReference
 ```
@@ -3956,7 +3956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRunCommandSourceOutputReference
 ```
@@ -4334,7 +4334,7 @@ func InternalValue() VirtualMachineRunCommandSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRunCommandSourceScriptUriManagedIdentityOutputReference
 ```
@@ -4641,7 +4641,7 @@ func InternalValue() VirtualMachineRunCommandSourceScriptUriManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRunCommand.VirtualMachineRunCommandTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineruncommand"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineruncommand"
 
 virtualmachineruncommand.NewVirtualMachineRunCommandTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRunCommandTimeoutsOutputReference
 ```

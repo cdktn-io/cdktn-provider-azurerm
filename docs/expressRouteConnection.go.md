@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.NewExpressRouteConnection(scope Construct, id *string, config ExpressRouteConnectionConfig) ExpressRouteConnection
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.ExpressRouteConnection_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.ExpressRouteConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ expressrouteconnection.ExpressRouteConnection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.ExpressRouteConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ expressrouteconnection.ExpressRouteConnection_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.ExpressRouteConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 &expressrouteconnection.ExpressRouteConnectionConfig {
 	Connection: interface{},
@@ -1061,9 +1061,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteco
 	Id: *string,
 	InternetSecurityEnabled: interface{},
 	PrivateLinkFastPathEnabled: interface{},
-	Routing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.expressRouteConnection.ExpressRouteConnectionRouting,
+	Routing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRouteConnection.ExpressRouteConnectionRouting,
 	RoutingWeight: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.expressRouteConnection.ExpressRouteConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRouteConnection.ExpressRouteConnectionTimeouts,
 }
 ```
 
@@ -1319,13 +1319,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 &expressrouteconnection.ExpressRouteConnectionRouting {
 	AssociatedRouteTableId: *string,
 	InboundRouteMapId: *string,
 	OutboundRouteMapId: *string,
-	PropagatedRouteTable: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable,
+	PropagatedRouteTable: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable,
 }
 ```
 
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 &expressrouteconnection.ExpressRouteConnectionRoutingPropagatedRouteTable {
 	Labels: *[]*string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 &expressrouteconnection.ExpressRouteConnectionTimeouts {
 	Create: *string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.NewExpressRouteConnectionRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRouteConnectionRoutingOutputReference
 ```
@@ -1895,7 +1895,7 @@ func InternalValue() ExpressRouteConnectionRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.NewExpressRouteConnectionRoutingPropagatedRouteTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() ExpressRouteConnectionRoutingPropagatedRouteTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteconnection"
 
 expressrouteconnection.NewExpressRouteConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRouteConnectionTimeoutsOutputReference
 ```

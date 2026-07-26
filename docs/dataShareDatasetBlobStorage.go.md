@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.NewDataShareDatasetBlobStorage(scope Construct, id *string, config DataShareDatasetBlobStorageConfig) DataShareDatasetBlobStorage
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.DataShareDatasetBlobStorage_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.DataShareDatasetBlobStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ datasharedatasetblobstorage.DataShareDatasetBlobStorage_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.DataShareDatasetBlobStorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ datasharedatasetblobstorage.DataShareDatasetBlobStorage_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.DataShareDatasetBlobStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -930,7 +930,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 &datasharedatasetblobstorage.DataShareDatasetBlobStorageConfig {
 	Connection: interface{},
@@ -943,11 +943,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatas
 	ContainerName: *string,
 	DataShareId: *string,
 	Name: *string,
-	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageStorageAccount,
+	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageStorageAccount,
 	FilePath: *string,
 	FolderPath: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageTimeouts,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 &datasharedatasetblobstorage.DataShareDatasetBlobStorageStorageAccount {
 	Name: *string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 &datasharedatasetblobstorage.DataShareDatasetBlobStorageTimeouts {
 	Create: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.NewDataShareDatasetBlobStorageStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataShareDatasetBlobStorageStorageAccountOutputReference
 ```
@@ -1588,7 +1588,7 @@ func InternalValue() DataShareDatasetBlobStorageStorageAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShareDatasetBlobStorage.DataShareDatasetBlobStorageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datasharedatasetblobstorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datasharedatasetblobstorage"
 
 datasharedatasetblobstorage.NewDataShareDatasetBlobStorageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataShareDatasetBlobStorageTimeoutsOutputReference
 ```

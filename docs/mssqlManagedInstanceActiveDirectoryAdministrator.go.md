@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministrator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.NewMssqlManagedInstanceActiveDirectoryAdministrator(scope Construct, id *string, config MssqlManagedInstanceActiveDirectoryAdministratorConfig) MssqlManagedInstanceActiveDirectoryAdministrator
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministrator_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirec
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirec
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministrator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministrator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 &mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministratorConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedin
 	TenantId: *string,
 	AzureadAuthenticationOnly: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministratorTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 &mssqlmanagedinstanceactivedirectoryadministrator.MssqlManagedInstanceActiveDirectoryAdministratorTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceActiveDirectoryAdministrator.MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstanceactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstanceactivedirectoryadministrator"
 
 mssqlmanagedinstanceactivedirectoryadministrator.NewMssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlManagedInstanceActiveDirectoryAdministratorTimeoutsOutputReference
 ```

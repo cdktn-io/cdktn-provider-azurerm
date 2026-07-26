@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.NewApplicationLoadBalancerSubnetAssociation(scope Construct, id *string, config ApplicationLoadBalancerSubnetAssociationConfig) ApplicationLoadBalancerSubnetAssociation
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociatio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociatio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 &applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociationConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloa
 	SubnetId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociationTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 &applicationloadbalancersubnetassociation.ApplicationLoadBalancerSubnetAssociationTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerSubnetAssociation.ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersubnetassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersubnetassociation"
 
 applicationloadbalancersubnetassociation.NewApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationLoadBalancerSubnetAssociationTimeoutsOutputReference
 ```

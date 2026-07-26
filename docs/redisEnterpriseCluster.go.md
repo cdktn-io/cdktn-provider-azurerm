@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.NewRedisEnterpriseCluster(scope Construct, id *string, config RedisEnterpriseClusterConfig) RedisEnterpriseCluster
 ```
@@ -448,7 +448,7 @@ func ResetZones()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.RedisEnterpriseCluster_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.RedisEnterpriseCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ redisenterprisecluster.RedisEnterpriseCluster_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.RedisEnterpriseCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ redisenterprisecluster.RedisEnterpriseCluster_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.RedisEnterpriseCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 &redisenterprisecluster.RedisEnterpriseClusterConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterpris
 	Id: *string,
 	MinimumTlsVersion: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redisEnterpriseCluster.RedisEnterpriseClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redisEnterpriseCluster.RedisEnterpriseClusterTimeouts,
 	Zones: *[]*string,
 }
 ```
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 &redisenterprisecluster.RedisEnterpriseClusterTimeouts {
 	Create: *string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redisEnterpriseCluster.RedisEnterpriseClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redisenterprisecluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redisenterprisecluster"
 
 redisenterprisecluster.NewRedisEnterpriseClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedisEnterpriseClusterTimeoutsOutputReference
 ```

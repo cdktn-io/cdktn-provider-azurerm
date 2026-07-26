@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.NewEmailCommunicationService(scope Construct, id *string, config EmailCommunicationServiceConfig) EmailCommunicationService
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.EmailCommunicationService_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.EmailCommunicationService_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ emailcommunicationservice.EmailCommunicationService_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.EmailCommunicationService_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ emailcommunicationservice.EmailCommunicationService_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.EmailCommunicationService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 &emailcommunicationservice.EmailCommunicationServiceConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunica
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.emailCommunicationService.EmailCommunicationServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.emailCommunicationService.EmailCommunicationServiceTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 &emailcommunicationservice.EmailCommunicationServiceTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationService.EmailCommunicationServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservice"
 
 emailcommunicationservice.NewEmailCommunicationServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailCommunicationServiceTimeoutsOutputReference
 ```

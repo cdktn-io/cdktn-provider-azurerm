@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTable(scope Construct, id *string, config StorageTableConfig) StorageTable
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageTable.StorageTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.StorageTable_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageTable.StorageTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.StorageTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ storagetable.StorageTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageTable.StorageTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.StorageTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ storagetable.StorageTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageTable.StorageTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.StorageTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageTable.StorageTableAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 &storagetable.StorageTableAcl {
 	Id: *string,
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 &storagetable.StorageTableAclAccessPolicy {
 	Expiry: *string,
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageTable.StorageTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 &storagetable.StorageTableConfig {
 	Connection: interface{},
@@ -1019,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
 	Id: *string,
 	StorageAccountId: *string,
 	StorageAccountName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageTable.StorageTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageTable.StorageTableTimeouts,
 }
 ```
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 &storagetable.StorageTableTimeouts {
 	Create: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTableAclAccessPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageTableAclAccessPolicyList
 ```
@@ -1433,7 +1433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTableAclAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageTableAclAccessPolicyOutputReference
 ```
@@ -1766,7 +1766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTableAclList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTableAclList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageTableAclList
 ```
@@ -1926,7 +1926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTableAclOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTableAclOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageTableAclOutputReference
 ```
@@ -2257,7 +2257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagetable"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagetable"
 
 storagetable.NewStorageTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTableTimeoutsOutputReference
 ```

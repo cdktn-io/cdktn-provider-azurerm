@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscription.Subscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.NewSubscription(scope Construct, id *string, config SubscriptionConfig) Subscription
 ```
@@ -462,7 +462,7 @@ func ResetWorkload()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.subscription.Subscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.Subscription_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.subscription.Subscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.Subscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ subscription.Subscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.subscription.Subscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.Subscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ subscription.Subscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.subscription.Subscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.Subscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscription.SubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 &subscription.SubscriptionConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
 	Id: *string,
 	SubscriptionId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subscription.SubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subscription.SubscriptionTimeouts,
 	Workload: *string,
 }
 ```
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subscription.SubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 &subscription.SubscriptionTimeouts {
 	Create: *string,
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subscription.SubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subscription"
 
 subscription.NewSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubscriptionTimeoutsOutputReference
 ```
