@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearch(scope Construct, id *string, config DataAzurermElasticCloudElasticsearchConfig) DataAzurermElasticCloudElasticsearch
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearch.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearch.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 &dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearchConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 	ResourceGroupName: *string,
 	Id: *string,
 	Logs: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchTimeouts,
 }
 ```
 
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 &dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearchLogs {
 
@@ -1035,7 +1035,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogsFilteringTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 &dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearchLogsFilteringTag {
 
@@ -1048,7 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 &dataazurermelasticcloudelasticsearch.DataAzurermElasticCloudElasticsearchTimeouts {
 	Read: *string,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogsFilteringTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearchLogsFilteringTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermElasticCloudElasticsearchLogsFilteringTagList
 ```
@@ -1231,7 +1231,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference
 ```
@@ -1531,7 +1531,7 @@ func InternalValue() DataAzurermElasticCloudElasticsearchLogsFilteringTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearchLogsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermElasticCloudElasticsearchLogsList
 ```
@@ -1691,7 +1691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearchLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermElasticCloudElasticsearchLogsOutputReference
 ```
@@ -2002,7 +2002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticCloudElasticsearch.DataAzurermElasticCloudElasticsearchTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticcloudelasticsearch"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermelasticcloudelasticsearch"
 
 dataazurermelasticcloudelasticsearch.NewDataAzurermElasticCloudElasticsearchTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermElasticCloudElasticsearchTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.NewIothubFileUploadA(scope Construct, id *string, config IothubFileUploadAConfig) IothubFileUploadA
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.IothubFileUploadA_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.IothubFileUploadA_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ iothubfileupload.IothubFileUploadA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.IothubFileUploadA_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ iothubfileupload.IothubFileUploadA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.IothubFileUploadA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 &iothubfileupload.IothubFileUploadAConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileuplo
 	MaxDeliveryCount: *f64,
 	NotificationsEnabled: interface{},
 	SasTtl: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iothubFileUpload.IothubFileUploadTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iothubFileUpload.IothubFileUploadTimeouts,
 }
 ```
 
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 &iothubfileupload.IothubFileUploadTimeouts {
 	Create: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubFileUpload.IothubFileUploadTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfileupload"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfileupload"
 
 iothubfileupload.NewIothubFileUploadTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IothubFileUploadTimeoutsOutputReference
 ```

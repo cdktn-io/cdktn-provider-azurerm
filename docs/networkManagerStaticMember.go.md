@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NewNetworkManagerStaticMember(scope Construct, id *string, config NetworkManagerStaticMemberConfig) NetworkManagerStaticMember
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NetworkManagerStaticMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NetworkManagerStaticMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ networkmanagerstaticmember.NetworkManagerStaticMember_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NetworkManagerStaticMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkmanagerstaticmember.NetworkManagerStaticMember_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NetworkManagerStaticMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 &networkmanagerstaticmember.NetworkManagerStaticMemberConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanager
 	NetworkGroupId: *string,
 	TargetVirtualNetworkId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkManagerStaticMember.NetworkManagerStaticMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkManagerStaticMember.NetworkManagerStaticMemberTimeouts,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 &networkmanagerstaticmember.NetworkManagerStaticMemberTimeouts {
 	Create: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerStaticMember.NetworkManagerStaticMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerstaticmember"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerstaticmember"
 
 networkmanagerstaticmember.NewNetworkManagerStaticMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerStaticMemberTimeoutsOutputReference
 ```

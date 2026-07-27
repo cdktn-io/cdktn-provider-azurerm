@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.NewVirtualMachineScaleSetStandbyPool(scope Construct, id *string, config VirtualMachineScaleSetStandbyPoolConfig) VirtualMachineScaleSetStandbyPool
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -934,7 +934,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 &virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPoolConfig {
 	Connection: interface{},
@@ -945,14 +945,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachine
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AttachedVirtualMachineScaleSetId: *string,
-	ElasticityProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolElasticityProfile,
+	ElasticityProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolElasticityProfile,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	VirtualMachineState: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolTimeouts,
 }
 ```
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolElasticityProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 &virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPoolElasticityProfile {
 	MaxReadyCapacity: *f64,
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 &virtualmachinescalesetstandbypool.VirtualMachineScaleSetStandbyPoolTimeouts {
 	Create: *string,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.NewVirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetStandbyPoolElasticityProfileOutputReference
 ```
@@ -1584,7 +1584,7 @@ func InternalValue() VirtualMachineScaleSetStandbyPoolElasticityProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSetStandbyPool.VirtualMachineScaleSetStandbyPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescalesetstandbypool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescalesetstandbypool"
 
 virtualmachinescalesetstandbypool.NewVirtualMachineScaleSetStandbyPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetStandbyPoolTimeoutsOutputReference
 ```

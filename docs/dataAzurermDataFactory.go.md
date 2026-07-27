@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactory(scope Construct, id *string, config DataAzurermDataFactoryConfig) DataAzurermDataFactory
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.DataAzurermDataFactory_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.DataAzurermDataFactory_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdatafactory.DataAzurermDataFactory_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.DataAzurermDataFactory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdatafactory.DataAzurermDataFactory_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.DataAzurermDataFactory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 &dataazurermdatafactory.DataAzurermDataFactoryConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDataFactory.DataAzurermDataFactoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDataFactory.DataAzurermDataFactoryTimeouts,
 }
 ```
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryGithubConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 &dataazurermdatafactory.DataAzurermDataFactoryGithubConfiguration {
 
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 &dataazurermdatafactory.DataAzurermDataFactoryIdentity {
 
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 &dataazurermdatafactory.DataAzurermDataFactoryTimeouts {
 	Read: *string,
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryVstsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 &dataazurermdatafactory.DataAzurermDataFactoryVstsConfiguration {
 
@@ -971,7 +971,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryGithubConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryGithubConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDataFactoryGithubConfigurationList
 ```
@@ -1120,7 +1120,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryGithubConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryGithubConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDataFactoryGithubConfigurationOutputReference
 ```
@@ -1442,7 +1442,7 @@ func InternalValue() DataAzurermDataFactoryGithubConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDataFactoryIdentityList
 ```
@@ -1591,7 +1591,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDataFactoryIdentityOutputReference
 ```
@@ -1902,7 +1902,7 @@ func InternalValue() DataAzurermDataFactoryIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDataFactoryTimeoutsOutputReference
 ```
@@ -2180,7 +2180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryVstsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryVstsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDataFactoryVstsConfigurationList
 ```
@@ -2329,7 +2329,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactory.DataAzurermDataFactoryVstsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactory"
 
 dataazurermdatafactory.NewDataAzurermDataFactoryVstsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDataFactoryVstsConfigurationOutputReference
 ```

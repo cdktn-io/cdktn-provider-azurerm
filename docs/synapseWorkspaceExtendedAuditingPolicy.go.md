@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.NewSynapseWorkspaceExtendedAuditingPolicy(scope Construct, id *string, config SynapseWorkspaceExtendedAuditingPolicyConfig) SynapseWorkspaceExtendedAuditingPolicy
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -927,7 +927,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 &synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicyConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspa
 	StorageAccountAccessKey: *string,
 	StorageAccountAccessKeyIsSecondary: interface{},
 	StorageEndpoint: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicyTimeouts,
 }
 ```
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 &synapseworkspaceextendedauditingpolicy.SynapseWorkspaceExtendedAuditingPolicyTimeouts {
 	Create: *string,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseWorkspaceExtendedAuditingPolicy.SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspaceextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspaceextendedauditingpolicy"
 
 synapseworkspaceextendedauditingpolicy.NewSynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapseWorkspaceExtendedAuditingPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.NewBatchCertificate(scope Construct, id *string, config BatchCertificateConfig) BatchCertificate
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.BatchCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.BatchCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ batchcertificate.BatchCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.BatchCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ batchcertificate.BatchCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.BatchCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -943,7 +943,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 &batchcertificate.BatchCertificateConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertifica
 	ThumbprintAlgorithm: *string,
 	Id: *string,
 	Password: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.batchCertificate.BatchCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.batchCertificate.BatchCertificateTimeouts,
 }
 ```
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 &batchcertificate.BatchCertificateTimeouts {
 	Create: *string,
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/batchcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/batchcertificate"
 
 batchcertificate.NewBatchCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BatchCertificateTimeoutsOutputReference
 ```

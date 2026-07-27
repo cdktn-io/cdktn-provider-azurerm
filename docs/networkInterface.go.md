@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterface.NetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NewNetworkInterface(scope Construct, id *string, config NetworkInterfaceConfig) NetworkInterface
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkInterface.NetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkInterface.NetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ networkinterface.NetworkInterface_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkInterface.NetworkInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ networkinterface.NetworkInterface_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkInterface.NetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1159,7 +1159,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 &networkinterface.NetworkInterfaceConfig {
 	Connection: interface{},
@@ -1182,7 +1182,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterfa
 	InternalDnsNameLabel: *string,
 	IpForwardingEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkInterface.NetworkInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkInterface.NetworkInterfaceTimeouts,
 }
 ```
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 &networkinterface.NetworkInterfaceIpConfiguration {
 	Name: *string,
@@ -1594,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 &networkinterface.NetworkInterfaceTimeouts {
 	Create: *string,
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NewNetworkInterfaceIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkInterfaceIpConfigurationList
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NewNetworkInterfaceIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkInterfaceIpConfigurationOutputReference
 ```
@@ -2315,7 +2315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkInterface.NetworkInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkinterface"
 
 networkinterface.NewNetworkInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceTimeoutsOutputReference
 ```

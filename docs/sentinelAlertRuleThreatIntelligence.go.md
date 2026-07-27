@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.NewSentinelAlertRuleThreatIntelligence(scope Construct, id *string, config SentinelAlertRuleThreatIntelligenceConfig) SentinelAlertRuleThreatIntelligence
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligence.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligence.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligence.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligence.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligence_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 &sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligenceConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertr
 	Name: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligenceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligenceTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligenceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 &sentinelalertrulethreatintelligence.SentinelAlertRuleThreatIntelligenceTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelAlertRuleThreatIntelligence.SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelalertrulethreatintelligence"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelalertrulethreatintelligence"
 
 sentinelalertrulethreatintelligence.NewSentinelAlertRuleThreatIntelligenceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelAlertRuleThreatIntelligenceTimeoutsOutputReference
 ```

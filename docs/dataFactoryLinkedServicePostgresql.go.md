@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.NewDataFactoryLinkedServicePostgresql(scope Construct, id *string, config DataFactoryLinkedServicePostgresqlConfig) DataFactoryLinkedServicePostgresql
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresql.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 &datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresqlConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylin
 	Id: *string,
 	IntegrationRuntimeName: *string,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresqlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresqlTimeouts,
 }
 ```
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresqlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 &datafactorylinkedservicepostgresql.DataFactoryLinkedServicePostgresqlTimeouts {
 	Create: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServicePostgresql.DataFactoryLinkedServicePostgresqlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicepostgresql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicepostgresql"
 
 datafactorylinkedservicepostgresql.NewDataFactoryLinkedServicePostgresqlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServicePostgresqlTimeoutsOutputReference
 ```

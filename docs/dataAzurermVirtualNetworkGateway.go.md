@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGateway(scope Construct, id *string, config DataAzurermVirtualNetworkGatewayConfig) DataAzurermVirtualNetworkGateway
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -845,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayBgpSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayBgpSettings {
 
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayTimeouts,
 }
 ```
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayCustomRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayCustomRoute {
 
@@ -1034,7 +1034,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayIpConfiguration {
 
@@ -1047,7 +1047,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayTimeouts {
 	Read: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayVpnClientConfiguration {
 
@@ -1092,7 +1092,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificate {
 
@@ -1105,7 +1105,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 &dataazurermvirtualnetworkgateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificate {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayBgpSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayBgpSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayBgpSettingsList
 ```
@@ -1269,7 +1269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayBgpSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayBgpSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayBgpSettingsOutputReference
 ```
@@ -1569,7 +1569,7 @@ func InternalValue() DataAzurermVirtualNetworkGatewayBgpSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayCustomRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayCustomRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayCustomRouteList
 ```
@@ -1718,7 +1718,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayCustomRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayCustomRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayCustomRouteOutputReference
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() DataAzurermVirtualNetworkGatewayCustomRoute
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayIpConfigurationList
 ```
@@ -2145,7 +2145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayIpConfigurationOutputReference
 ```
@@ -2478,7 +2478,7 @@ func InternalValue() DataAzurermVirtualNetworkGatewayIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermVirtualNetworkGatewayTimeoutsOutputReference
 ```
@@ -2756,7 +2756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationList
 ```
@@ -2905,7 +2905,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationOutputReference
 ```
@@ -3271,7 +3271,7 @@ func InternalValue() DataAzurermVirtualNetworkGatewayVpnClientConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateList
 ```
@@ -3420,7 +3420,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevokedCertificateOutputReference
 ```
@@ -3709,7 +3709,7 @@ func InternalValue() DataAzurermVirtualNetworkGatewayVpnClientConfigurationRevok
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateList
 ```
@@ -3858,7 +3858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualNetworkGateway.DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualnetworkgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualnetworkgateway"
 
 dataazurermvirtualnetworkgateway.NewDataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.NewDataAzurermNotificationHubNamespace(scope Construct, id *string, config DataAzurermNotificationHubNamespaceConfig) DataAzurermNotificationHubNamespace
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 &dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespaceConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnot
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 &dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespaceSku {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnot
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 &dataazurermnotificationhubnamespace.DataAzurermNotificationHubNamespaceTimeouts {
 	Read: *string,
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceSkuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.NewDataAzurermNotificationHubNamespaceSkuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermNotificationHubNamespaceSkuList
 ```
@@ -1105,7 +1105,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.NewDataAzurermNotificationHubNamespaceSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermNotificationHubNamespaceSkuOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataAzurermNotificationHubNamespaceSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNotificationHubNamespace.DataAzurermNotificationHubNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnotificationhubnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnotificationhubnamespace"
 
 dataazurermnotificationhubnamespace.NewDataAzurermNotificationHubNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNotificationHubNamespaceTimeoutsOutputReference
 ```

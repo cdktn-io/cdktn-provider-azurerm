@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSet(scope Construct, id *string, config VirtualMachineScaleSetConfig) VirtualMachineScaleSet
 ```
@@ -749,7 +749,7 @@ func ResetZones()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.VirtualMachineScaleSet_IsConstruct(x interface{}) *bool
 ```
@@ -781,7 +781,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.VirtualMachineScaleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -795,7 +795,7 @@ virtualmachinescaleset.VirtualMachineScaleSet_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.VirtualMachineScaleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ virtualmachinescaleset.VirtualMachineScaleSet_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.VirtualMachineScaleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1698,7 +1698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetBootDiagnostics {
 	StorageUri: *string,
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetConfig {
 	Connection: interface{},
@@ -1757,32 +1757,32 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachine
 	Location: *string,
 	Name: *string,
 	NetworkProfile: interface{},
-	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile,
+	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile,
 	ResourceGroupName: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetSku,
-	StorageProfileOsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetSku,
+	StorageProfileOsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk,
 	UpgradePolicyMode: *string,
 	AutomaticOsUpgrade: interface{},
-	BootDiagnostics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics,
+	BootDiagnostics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnostics,
 	EvictionPolicy: *string,
 	Extension: interface{},
 	HealthProbeId: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetIdentity,
 	LicenseType: *string,
-	OsProfileLinuxConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig,
+	OsProfileLinuxConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig,
 	OsProfileSecrets: interface{},
-	OsProfileWindowsConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig,
+	OsProfileWindowsConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig,
 	Overprovision: interface{},
-	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetPlan,
+	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetPlan,
 	Priority: *string,
 	ProximityPlacementGroupId: *string,
-	RollingUpgradePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy,
+	RollingUpgradePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy,
 	SinglePlacementGroup: interface{},
 	StorageProfileDataDisk: interface{},
-	StorageProfileImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference,
+	StorageProfileImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts,
 	Zones: *[]*string,
 }
 ```
@@ -2299,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetExtension {
 	Name: *string,
@@ -2429,7 +2429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetIdentity {
 	Type: *string,
@@ -2475,14 +2475,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetNetworkProfile {
 	IpConfiguration: interface{},
 	Name: *string,
 	Primary: interface{},
 	AcceleratedNetworking: interface{},
-	DnsSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings,
+	DnsSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings,
 	IpForwarding: interface{},
 	NetworkSecurityGroupId: *string,
 }
@@ -2595,7 +2595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetNetworkProfileDnsSettings {
 	DnsServers: *[]*string,
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetNetworkProfileIpConfiguration {
 	Name: *string,
@@ -2637,7 +2637,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachine
 	ApplicationSecurityGroupIds: *[]*string,
 	LoadBalancerBackendAddressPoolIds: *[]*string,
 	LoadBalancerInboundNatRulesIds: *[]*string,
-	PublicIpAddressConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration,
+	PublicIpAddressConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration,
 }
 ```
 
@@ -2759,7 +2759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfiguration {
 	DomainNameLabel: *string,
@@ -2819,7 +2819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfile {
 	AdminUsername: *string,
@@ -2893,7 +2893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileLinuxConfig {
 	DisablePasswordAuthentication: interface{},
@@ -2941,7 +2941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileLinuxConfigSshKeys {
 	Path: *string,
@@ -2987,7 +2987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileSecrets {
 	SourceVaultId: *string,
@@ -3035,7 +3035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileSecretsVaultCertificates {
 	CertificateUrl: *string,
@@ -3081,7 +3081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileWindowsConfig {
 	AdditionalUnattendConfig: interface{},
@@ -3159,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfig {
 	Component: *string,
@@ -3233,7 +3233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetOsProfileWindowsConfigWinrm {
 	Protocol: *string,
@@ -3279,7 +3279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetPlan {
 	Name: *string,
@@ -3339,7 +3339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetRollingUpgradePolicy {
 	MaxBatchInstancePercent: *f64,
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetSku {
 	Capacity: *f64,
@@ -3473,7 +3473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetStorageProfileDataDisk {
 	CreateOption: *string,
@@ -3561,7 +3561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetStorageProfileImageReference {
 	Id: *string,
@@ -3652,7 +3652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetStorageProfileOsDisk {
 	CreateOption: *string,
@@ -3768,7 +3768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 &virtualmachinescaleset.VirtualMachineScaleSetTimeouts {
 	Create: *string,
@@ -3844,7 +3844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetBootDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetBootDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetBootDiagnosticsOutputReference
 ```
@@ -4144,7 +4144,7 @@ func InternalValue() VirtualMachineScaleSetBootDiagnostics
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetExtensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetExtensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetExtensionList
 ```
@@ -4304,7 +4304,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetExtensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetExtensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetExtensionOutputReference
 ```
@@ -4775,7 +4775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetIdentityOutputReference
 ```
@@ -5097,7 +5097,7 @@ func InternalValue() VirtualMachineScaleSetIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileDnsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileDnsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetNetworkProfileDnsSettingsOutputReference
 ```
@@ -5368,7 +5368,7 @@ func InternalValue() VirtualMachineScaleSetNetworkProfileDnsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetNetworkProfileIpConfigurationList
 ```
@@ -5528,7 +5528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetNetworkProfileIpConfigurationOutputReference
 ```
@@ -6019,7 +6019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIpAddressConfigurationOutputReference
 ```
@@ -6334,7 +6334,7 @@ func InternalValue() VirtualMachineScaleSetNetworkProfileIpConfigurationPublicIp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetNetworkProfileList
 ```
@@ -6494,7 +6494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetNetworkProfileOutputReference
 ```
@@ -6969,7 +6969,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileLinuxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetOsProfileLinuxConfigOutputReference
 ```
@@ -7289,7 +7289,7 @@ func InternalValue() VirtualMachineScaleSetOsProfileLinuxConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileLinuxConfigSshKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetOsProfileLinuxConfigSshKeysList
 ```
@@ -7449,7 +7449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileLinuxConfigSshKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileLinuxConfigSshKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetOsProfileLinuxConfigSshKeysOutputReference
 ```
@@ -7767,7 +7767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetOsProfileOutputReference
 ```
@@ -8118,7 +8118,7 @@ func InternalValue() VirtualMachineScaleSetOsProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetOsProfileSecretsList
 ```
@@ -8278,7 +8278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetOsProfileSecretsOutputReference
 ```
@@ -8609,7 +8609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileSecretsVaultCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetOsProfileSecretsVaultCertificatesList
 ```
@@ -8769,7 +8769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetOsProfileSecretsVaultCertificatesOutputReference
 ```
@@ -9087,7 +9087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigList
 ```
@@ -9247,7 +9247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetOsProfileWindowsConfigAdditionalUnattendConfigOutputReference
 ```
@@ -9602,7 +9602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileWindowsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetOsProfileWindowsConfigOutputReference
 ```
@@ -9993,7 +9993,7 @@ func InternalValue() VirtualMachineScaleSetOsProfileWindowsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrmList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileWindowsConfigWinrmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetOsProfileWindowsConfigWinrmList
 ```
@@ -10153,7 +10153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetOsProfileWindowsConfigWinrmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetOsProfileWindowsConfigWinrmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetOsProfileWindowsConfigWinrmOutputReference
 ```
@@ -10471,7 +10471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetPlanOutputReference
 ```
@@ -10786,7 +10786,7 @@ func InternalValue() VirtualMachineScaleSetPlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetRollingUpgradePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetRollingUpgradePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetRollingUpgradePolicyOutputReference
 ```
@@ -11151,7 +11151,7 @@ func InternalValue() VirtualMachineScaleSetRollingUpgradePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetSkuOutputReference
 ```
@@ -11473,7 +11473,7 @@ func InternalValue() VirtualMachineScaleSetSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetStorageProfileDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineScaleSetStorageProfileDataDiskList
 ```
@@ -11633,7 +11633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetStorageProfileDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineScaleSetStorageProfileDataDiskOutputReference
 ```
@@ -12031,7 +12031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetStorageProfileImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetStorageProfileImageReferenceOutputReference
 ```
@@ -12425,7 +12425,7 @@ func InternalValue() VirtualMachineScaleSetStorageProfileImageReference
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetStorageProfileOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetStorageProfileOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetStorageProfileOsDiskOutputReference
 ```
@@ -12870,7 +12870,7 @@ func InternalValue() VirtualMachineScaleSetStorageProfileOsDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineScaleSet.VirtualMachineScaleSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinescaleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinescaleset"
 
 virtualmachinescaleset.NewVirtualMachineScaleSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineScaleSetTimeoutsOutputReference
 ```

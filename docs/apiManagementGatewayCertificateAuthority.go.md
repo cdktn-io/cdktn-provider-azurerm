@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.NewApiManagementGatewayCertificateAuthority(scope Construct, id *string, config ApiManagementGatewayCertificateAuthorityConfig) ApiManagementGatewayCertificateAuthority
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthority.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthority_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthority_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthorit
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthority.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthority_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthorit
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 &apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthorityConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementg
 	GatewayName: *string,
 	Id: *string,
 	IsTrusted: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthorityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthorityTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthorityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 &apimanagementgatewaycertificateauthority.ApiManagementGatewayCertificateAuthorityTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementGatewayCertificateAuthority.ApiManagementGatewayCertificateAuthorityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementgatewaycertificateauthority"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementgatewaycertificateauthority"
 
 apimanagementgatewaycertificateauthority.NewApiManagementGatewayCertificateAuthorityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementGatewayCertificateAuthorityTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSet(scope Construct, id *string, config CdnFrontdoorBatchRuleSetConfig) CdnFrontdoorBatchRuleSet
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetConfig {
 	Connection: interface{},
@@ -834,7 +834,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorba
 	CdnFrontdoorProfileId: *string,
 	Name: *string,
 	Rule: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetTimeouts,
 }
 ```
 
@@ -983,14 +983,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRule {
-	Actions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActions,
+	Actions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActions,
 	Name: *string,
 	Order: *f64,
 	BehaviourOnMatch: *string,
-	Conditions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditions,
+	Conditions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditions,
 }
 ```
 
@@ -1075,14 +1075,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActions {
 	ModifyRequestHeader: interface{},
 	ModifyResponseHeader: interface{},
-	RouteConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverride,
-	UrlRedirect: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRedirect,
-	UrlRewrite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRewrite,
+	RouteConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverride,
+	UrlRedirect: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRedirect,
+	UrlRewrite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRewrite,
 }
 ```
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeader {
 	HeaderName: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeader {
 	HeaderName: *string,
@@ -1293,11 +1293,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverride {
-	Caching: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCaching,
-	OriginGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroup,
+	Caching: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCaching,
+	OriginGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroup,
 }
 ```
 
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCaching {
 	Behaviour: *string,
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroup {
 	CdnFrontdoorOriginGroupId: *string,
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsUrlRedirect {
 	RedirectType: *string,
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleActionsUrlRewrite {
 	DestinationPath: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditions {
 	ClientPort: interface{},
@@ -1961,7 +1961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsClientPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsClientPort {
 	Operator: *string,
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsDeviceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsDeviceType {
 	Operator: *string,
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHostName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsHostName {
 	Operator: *string,
@@ -2113,7 +2113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHttpVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsHttpVersion {
 	Operator: *string,
@@ -2159,7 +2159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsPostArgument.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsPostArgument {
 	Name: *string,
@@ -2233,7 +2233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsQueryString {
 	Operator: *string,
@@ -2293,7 +2293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddress {
 	Operator: *string,
@@ -2339,7 +2339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestBody {
 	Operator: *string,
@@ -2399,7 +2399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestCookies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestCookies {
 	Name: *string,
@@ -2473,7 +2473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtension {
 	Operator: *string,
@@ -2533,7 +2533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFilename.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestFilename {
 	Operator: *string,
@@ -2593,7 +2593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestHeader {
 	Name: *string,
@@ -2667,7 +2667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestMethod {
 	Operator: *string,
@@ -2713,7 +2713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestPath {
 	Operator: *string,
@@ -2773,7 +2773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestScheme.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestScheme {
 	Operator: *string,
@@ -2819,7 +2819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsRequestUrl {
 	Operator: *string,
@@ -2879,7 +2879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsServerPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsServerPort {
 	Operator: *string,
@@ -2925,7 +2925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSocketAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsSocketAddress {
 	Operator: *string,
@@ -2971,7 +2971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSslProtocol.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetRuleConditionsSslProtocol {
 	Operator: *string,
@@ -3017,7 +3017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 &cdnfrontdoorbatchruleset.CdnFrontdoorBatchRuleSetTimeouts {
 	Create: *string,
@@ -3093,7 +3093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderList
 ```
@@ -3253,7 +3253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleActionsModifyRequestHeaderOutputReference
 ```
@@ -3593,7 +3593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderList
 ```
@@ -3753,7 +3753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleActionsModifyResponseHeaderOutputReference
 ```
@@ -4093,7 +4093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsOutputReference
 ```
@@ -4552,7 +4552,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCachingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCachingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideCachingOutputReference
 ```
@@ -4939,7 +4939,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverri
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOriginGroupOutputReference
 ```
@@ -5232,7 +5232,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverri
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverrideOutputReference
 ```
@@ -5558,7 +5558,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActionsRouteConfigurationOverri
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsUrlRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsUrlRedirectOutputReference
 ```
@@ -5974,7 +5974,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActionsUrlRedirect
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleActionsUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleActionsUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleActionsUrlRewriteOutputReference
 ```
@@ -6296,7 +6296,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleActionsUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsClientPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsClientPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsClientPortList
 ```
@@ -6456,7 +6456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsClientPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsClientPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsClientPortOutputReference
 ```
@@ -6774,7 +6774,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeList
 ```
@@ -6934,7 +6934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsDeviceTypeOutputReference
 ```
@@ -7245,7 +7245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHostNameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsHostNameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsHostNameList
 ```
@@ -7405,7 +7405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHostNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsHostNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsHostNameOutputReference
 ```
@@ -7752,7 +7752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHttpVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsHttpVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsHttpVersionList
 ```
@@ -7912,7 +7912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsHttpVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsHttpVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsHttpVersionOutputReference
 ```
@@ -8223,7 +8223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetRuleConditionsOutputReference
 ```
@@ -9270,7 +9270,7 @@ func InternalValue() CdnFrontdoorBatchRuleSetRuleConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsPostArgumentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsPostArgumentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsPostArgumentList
 ```
@@ -9430,7 +9430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsPostArgumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsPostArgumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsPostArgumentOutputReference
 ```
@@ -9799,7 +9799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsQueryStringList
 ```
@@ -9959,7 +9959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsQueryStringOutputReference
 ```
@@ -10306,7 +10306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressList
 ```
@@ -10466,7 +10466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRemoteAddressOutputReference
 ```
@@ -10777,7 +10777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestBodyList
 ```
@@ -10937,7 +10937,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestBodyOutputReference
 ```
@@ -11284,7 +11284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesList
 ```
@@ -11444,7 +11444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestCookiesOutputReference
 ```
@@ -11813,7 +11813,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionList
 ```
@@ -11973,7 +11973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestFileExtensionOutputReference
 ```
@@ -12320,7 +12320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameList
 ```
@@ -12480,7 +12480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestFilenameOutputReference
 ```
@@ -12827,7 +12827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderList
 ```
@@ -12987,7 +12987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestHeaderOutputReference
 ```
@@ -13356,7 +13356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestMethodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestMethodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestMethodList
 ```
@@ -13516,7 +13516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestMethodOutputReference
 ```
@@ -13827,7 +13827,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestPathList
 ```
@@ -13987,7 +13987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestPathOutputReference
 ```
@@ -14334,7 +14334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeList
 ```
@@ -14494,7 +14494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestSchemeOutputReference
 ```
@@ -14805,7 +14805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestUrlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestUrlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestUrlList
 ```
@@ -14965,7 +14965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsRequestUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsRequestUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsRequestUrlOutputReference
 ```
@@ -15312,7 +15312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsServerPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsServerPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsServerPortList
 ```
@@ -15472,7 +15472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsServerPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsServerPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsServerPortOutputReference
 ```
@@ -15790,7 +15790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSocketAddressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsSocketAddressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsSocketAddressList
 ```
@@ -15950,7 +15950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSocketAddressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsSocketAddressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsSocketAddressOutputReference
 ```
@@ -16261,7 +16261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSslProtocolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsSslProtocolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsSslProtocolList
 ```
@@ -16421,7 +16421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleConditionsSslProtocolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleConditionsSslProtocolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleConditionsSslProtocolOutputReference
 ```
@@ -16732,7 +16732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnFrontdoorBatchRuleSetRuleList
 ```
@@ -16892,7 +16892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnFrontdoorBatchRuleSetRuleOutputReference
 ```
@@ -17309,7 +17309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorBatchRuleSet.CdnFrontdoorBatchRuleSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorbatchruleset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorbatchruleset"
 
 cdnfrontdoorbatchruleset.NewCdnFrontdoorBatchRuleSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorBatchRuleSetTimeoutsOutputReference
 ```

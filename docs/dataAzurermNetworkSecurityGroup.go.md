@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.NewDataAzurermNetworkSecurityGroup(scope Construct, id *string, config DataAzurermNetworkSecurityGroupConfig) DataAzurermNetworkSecurityGroup
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 &dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroupConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnet
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupSecurityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 &dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroupSecurityRule {
 
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnet
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 &dataazurermnetworksecuritygroup.DataAzurermNetworkSecurityGroupTimeouts {
 	Read: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupSecurityRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.NewDataAzurermNetworkSecurityGroupSecurityRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermNetworkSecurityGroupSecurityRuleList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupSecurityRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.NewDataAzurermNetworkSecurityGroupSecurityRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermNetworkSecurityGroupSecurityRuleOutputReference
 ```
@@ -1515,7 +1515,7 @@ func InternalValue() DataAzurermNetworkSecurityGroupSecurityRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityGroup.DataAzurermNetworkSecurityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecuritygroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworksecuritygroup"
 
 dataazurermnetworksecuritygroup.NewDataAzurermNetworkSecurityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetworkSecurityGroupTimeoutsOutputReference
 ```

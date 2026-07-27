@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.NewDataAzurermDataShareDatasetKustoDatabase(scope Construct, id *string, config DataAzurermDataShareDatasetKustoDatabaseConfig) DataAzurermDataShareDatasetKustoDatabase
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabas
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabas
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 &dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabaseConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 	Name: *string,
 	ShareId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabaseTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 &dataazurermdatasharedatasetkustodatabase.DataAzurermDataShareDatasetKustoDatabaseTimeouts {
 	Read: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataShareDatasetKustoDatabase.DataAzurermDataShareDatasetKustoDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatasharedatasetkustodatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatasharedatasetkustodatabase"
 
 dataazurermdatasharedatasetkustodatabase.NewDataAzurermDataShareDatasetKustoDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDataShareDatasetKustoDatabaseTimeoutsOutputReference
 ```

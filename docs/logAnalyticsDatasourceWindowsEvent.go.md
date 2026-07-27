@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.NewLogAnalyticsDatasourceWindowsEvent(scope Construct, id *string, config LogAnalyticsDatasourceWindowsEventConfig) LogAnalyticsDatasourceWindowsEvent
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEvent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEvent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEvent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEvent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEvent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEventConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 &loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEventConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsda
 	ResourceGroupName: *string,
 	WorkspaceName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEventTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEventTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEventTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 &loganalyticsdatasourcewindowsevent.LogAnalyticsDatasourceWindowsEventTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.logAnalyticsDatasourceWindowsEvent.LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loganalyticsdatasourcewindowsevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loganalyticsdatasourcewindowsevent"
 
 loganalyticsdatasourcewindowsevent.NewLogAnalyticsDatasourceWindowsEventTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogAnalyticsDatasourceWindowsEventTimeoutsOutputReference
 ```

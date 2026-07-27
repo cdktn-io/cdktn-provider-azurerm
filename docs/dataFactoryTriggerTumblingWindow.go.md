@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindow(scope Construct, id *string, config DataFactoryTriggerTumblingWindowConfig) DataFactoryTriggerTumblingWindow
 ```
@@ -529,7 +529,7 @@ func ResetTriggerDependency()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1192,7 +1192,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 &datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindowConfig {
 	Connection: interface{},
@@ -1206,7 +1206,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytri
 	Frequency: *string,
 	Interval: *f64,
 	Name: *string,
-	Pipeline: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowPipeline,
+	Pipeline: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowPipeline,
 	StartTime: *string,
 	Activated: interface{},
 	AdditionalProperties: *map[string]*string,
@@ -1216,8 +1216,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytri
 	EndTime: *string,
 	Id: *string,
 	MaxConcurrency: *f64,
-	Retry: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowRetry,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTimeouts,
+	Retry: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowRetry,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTimeouts,
 	TriggerDependency: interface{},
 }
 ```
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 &datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindowPipeline {
 	Name: *string,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 &datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindowRetry {
 	Count: *f64,
@@ -1635,7 +1635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 &datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindowTimeouts {
 	Create: *string,
@@ -1709,7 +1709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTriggerDependency.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 &datafactorytriggertumblingwindow.DataFactoryTriggerTumblingWindowTriggerDependency {
 	Offset: *string,
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowPipelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindowPipelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerTumblingWindowPipelineOutputReference
 ```
@@ -2071,7 +2071,7 @@ func InternalValue() DataFactoryTriggerTumblingWindowPipeline
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindowRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerTumblingWindowRetryOutputReference
 ```
@@ -2371,7 +2371,7 @@ func InternalValue() DataFactoryTriggerTumblingWindowRetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerTumblingWindowTimeoutsOutputReference
 ```
@@ -2736,7 +2736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTriggerDependencyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindowTriggerDependencyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryTriggerTumblingWindowTriggerDependencyList
 ```
@@ -2896,7 +2896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerTumblingWindow.DataFactoryTriggerTumblingWindowTriggerDependencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggertumblingwindow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggertumblingwindow"
 
 datafactorytriggertumblingwindow.NewDataFactoryTriggerTumblingWindowTriggerDependencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryTriggerTumblingWindowTriggerDependencyOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.NewPurviewAccount(scope Construct, id *string, config PurviewAccountConfig) PurviewAccount
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.PurviewAccount_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.PurviewAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ purviewaccount.PurviewAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.PurviewAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ purviewaccount.PurviewAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.PurviewAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 &purviewaccount.PurviewAccountConfig {
 	Connection: interface{},
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.purviewAccount.PurviewAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.purviewAccount.PurviewAccountIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
@@ -1073,7 +1073,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 	ManagedResourceGroupName: *string,
 	PublicNetworkEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.purviewAccount.PurviewAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.purviewAccount.PurviewAccountTimeouts,
 }
 ```
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 &purviewaccount.PurviewAccountIdentity {
 	Type: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 &purviewaccount.PurviewAccountManagedResources {
 
@@ -1362,7 +1362,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 &purviewaccount.PurviewAccountTimeouts {
 	Create: *string,
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.NewPurviewAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PurviewAccountIdentityOutputReference
 ```
@@ -1760,7 +1760,7 @@ func InternalValue() PurviewAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.NewPurviewAccountManagedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PurviewAccountManagedResourcesList
 ```
@@ -1909,7 +1909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.NewPurviewAccountManagedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PurviewAccountManagedResourcesOutputReference
 ```
@@ -2209,7 +2209,7 @@ func InternalValue() PurviewAccountManagedResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/purviewaccount"
 
 purviewaccount.NewPurviewAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PurviewAccountTimeoutsOutputReference
 ```

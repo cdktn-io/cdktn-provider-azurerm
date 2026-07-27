@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.NewRelayNamespaceAuthorizationRule(scope Construct, id *string, config RelayNamespaceAuthorizationRuleConfig) RelayNamespaceAuthorizationRule
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 &relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRuleConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespace
 	Listen: interface{},
 	Manage: interface{},
 	Send: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts,
 }
 ```
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 &relaynamespaceauthorizationrule.RelayNamespaceAuthorizationRuleTimeouts {
 	Create: *string,
@@ -1252,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayNamespaceAuthorizationRule.RelayNamespaceAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relaynamespaceauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relaynamespaceauthorizationrule"
 
 relaynamespaceauthorizationrule.NewRelayNamespaceAuthorizationRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RelayNamespaceAuthorizationRuleTimeoutsOutputReference
 ```

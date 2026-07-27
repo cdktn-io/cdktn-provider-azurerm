@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.NewMssqlServerExtendedAuditingPolicy(scope Construct, id *string, config MssqlServerExtendedAuditingPolicyConfig) MssqlServerExtendedAuditingPolicy
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 &mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicyConfig {
 	Connection: interface{},
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverext
 	StorageAccountAccessKeyIsSecondary: interface{},
 	StorageAccountSubscriptionId: *string,
 	StorageEndpoint: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicyTimeouts,
 }
 ```
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 &mssqlserverextendedauditingpolicy.MssqlServerExtendedAuditingPolicyTimeouts {
 	Create: *string,
@@ -1394,7 +1394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlServerExtendedAuditingPolicy.MssqlServerExtendedAuditingPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlserverextendedauditingpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlserverextendedauditingpolicy"
 
 mssqlserverextendedauditingpolicy.NewMssqlServerExtendedAuditingPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlServerExtendedAuditingPolicyTimeoutsOutputReference
 ```

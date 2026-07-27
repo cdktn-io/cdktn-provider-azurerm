@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.NewDataProtectionBackupInstanceKubernetesCluster(scope Construct, id *string, config DataProtectionBackupInstanceKubernetesClusterConfig) DataProtectionBackupInstanceKubernetesCluster
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubern
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubern
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 &dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters {
 	ClusterScopedResourcesEnabled: interface{},
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 &dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesClusterConfig {
 	Connection: interface{},
@@ -1077,9 +1077,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotection
 	Name: *string,
 	SnapshotResourceGroupName: *string,
 	VaultId: *string,
-	BackupDatasourceParameters: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters,
+	BackupDatasourceParameters: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParameters,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterTimeouts,
 }
 ```
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 &dataprotectionbackupinstancekubernetescluster.DataProtectionBackupInstanceKubernetesClusterTimeouts {
 	Create: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.NewDataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupInstanceKubernetesClusterBackupDatasourceParametersOutputReference
 ```
@@ -1810,7 +1810,7 @@ func InternalValue() DataProtectionBackupInstanceKubernetesClusterBackupDatasour
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceKubernetesCluster.DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancekubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancekubernetescluster"
 
 dataprotectionbackupinstancekubernetescluster.NewDataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupInstanceKubernetesClusterTimeoutsOutputReference
 ```

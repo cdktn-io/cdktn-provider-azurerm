@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.NewDataAzurermStorageTableEntities(scope Construct, id *string, config DataAzurermStorageTableEntitiesConfig) DataAzurermStorageTableEntities
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntities.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.DataAzurermStorageTableEntities_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntities.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.DataAzurermStorageTableEntities_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermstoragetableentities.DataAzurermStorageTableEntities_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntities.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.DataAzurermStorageTableEntities_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermstoragetableentities.DataAzurermStorageTableEntities_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntities.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.DataAzurermStorageTableEntities_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -720,7 +720,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 &dataazurermstoragetableentities.DataAzurermStorageTableEntitiesConfig {
 	Connection: interface{},
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 	StorageTableId: *string,
 	Id: *string,
 	Select: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesTimeouts,
 }
 ```
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 &dataazurermstoragetableentities.DataAzurermStorageTableEntitiesItems {
 
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 &dataazurermstoragetableentities.DataAzurermStorageTableEntitiesTimeouts {
 	Read: *string,
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.NewDataAzurermStorageTableEntitiesItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermStorageTableEntitiesItemsList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.NewDataAzurermStorageTableEntitiesItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermStorageTableEntitiesItemsOutputReference
 ```
@@ -1393,7 +1393,7 @@ func InternalValue() DataAzurermStorageTableEntitiesItems
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageTableEntities.DataAzurermStorageTableEntitiesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstoragetableentities"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstoragetableentities"
 
 dataazurermstoragetableentities.NewDataAzurermStorageTableEntitiesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageTableEntitiesTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespace(scope Construct, id *string, config ServicebusNamespaceConfig) ServicebusNamespace
 ```
@@ -529,7 +529,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.ServicebusNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.ServicebusNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ servicebusnamespace.ServicebusNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.ServicebusNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ servicebusnamespace.ServicebusNamespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.ServicebusNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1203,7 +1203,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceConfig {
 	Connection: interface{},
@@ -1218,16 +1218,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusname
 	ResourceGroupName: *string,
 	Sku: *string,
 	Capacity: *f64,
-	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.servicebusNamespace.ServicebusNamespaceCustomerManagedKey,
+	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.servicebusNamespace.ServicebusNamespaceCustomerManagedKey,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.servicebusNamespace.ServicebusNamespaceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.servicebusNamespace.ServicebusNamespaceIdentity,
 	LocalAuthEnabled: interface{},
 	MinimumTlsVersion: *string,
-	NetworkRuleSet: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.servicebusNamespace.ServicebusNamespaceNetworkRuleSet,
+	NetworkRuleSet: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.servicebusNamespace.ServicebusNamespaceNetworkRuleSet,
 	PremiumMessagingPartitions: *f64,
 	PublicNetworkAccessEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.servicebusNamespace.ServicebusNamespaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.servicebusNamespace.ServicebusNamespaceTimeouts,
 }
 ```
 
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceCustomerManagedKey {
 	IdentityId: *string,
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceIdentity {
 	Type: *string,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceNetworkRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceNetworkRuleSet {
 	DefaultAction: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceNetworkRuleSetNetworkRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceNetworkRuleSetNetworkRules {
 	SubnetId: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 &servicebusnamespace.ServicebusNamespaceTimeouts {
 	Create: *string,
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceCustomerManagedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceCustomerManagedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusNamespaceCustomerManagedKeyOutputReference
 ```
@@ -2166,7 +2166,7 @@ func InternalValue() ServicebusNamespaceCustomerManagedKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusNamespaceIdentityOutputReference
 ```
@@ -2488,7 +2488,7 @@ func InternalValue() ServicebusNamespaceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceNetworkRuleSetNetworkRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceNetworkRuleSetNetworkRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServicebusNamespaceNetworkRuleSetNetworkRulesList
 ```
@@ -2648,7 +2648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServicebusNamespaceNetworkRuleSetNetworkRulesOutputReference
 ```
@@ -2966,7 +2966,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceNetworkRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceNetworkRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusNamespaceNetworkRuleSetOutputReference
 ```
@@ -3373,7 +3373,7 @@ func InternalValue() ServicebusNamespaceNetworkRuleSet
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.servicebusNamespace.ServicebusNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/servicebusnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/servicebusnamespace"
 
 servicebusnamespace.NewServicebusNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicebusNamespaceTimeoutsOutputReference
 ```

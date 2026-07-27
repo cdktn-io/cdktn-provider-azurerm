@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.Subnet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnet(scope Construct, id *string, config SubnetConfig) Subnet
 ```
@@ -516,7 +516,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.subnet.Subnet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.Subnet_IsConstruct(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.subnet.Subnet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ subnet.Subnet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.subnet.Subnet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.Subnet_IsTerraformResource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ subnet.Subnet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.subnet.Subnet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.Subnet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1113,7 +1113,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 &subnet.SubnetConfig {
 	Connection: interface{},
@@ -1130,13 +1130,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
 	DefaultOutboundAccessEnabled: interface{},
 	Delegation: interface{},
 	Id: *string,
-	IpAddressPool: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subnet.SubnetIpAddressPool,
+	IpAddressPool: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subnet.SubnetIpAddressPool,
 	PrivateEndpointNetworkPolicies: *string,
 	PrivateLinkServiceNetworkPoliciesEnabled: interface{},
 	ServiceEndpointPolicyIds: *[]*string,
 	ServiceEndpoints: *[]*string,
 	SharingScope: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subnet.SubnetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subnet.SubnetTimeouts,
 }
 ```
 
@@ -1420,11 +1420,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 &subnet.SubnetDelegation {
 	Name: *string,
-	ServiceDelegation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subnet.SubnetDelegationServiceDelegation,
+	ServiceDelegation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subnet.SubnetDelegationServiceDelegation,
 }
 ```
 
@@ -1468,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 &subnet.SubnetDelegationServiceDelegation {
 	Name: *string,
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetIpAddressPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 &subnet.SubnetIpAddressPool {
 	Id: *string,
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnet.SubnetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 &subnet.SubnetTimeouts {
 	Create: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetDelegationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnetDelegationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SubnetDelegationList
 ```
@@ -1799,7 +1799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetDelegationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnetDelegationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SubnetDelegationOutputReference
 ```
@@ -2123,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetDelegationServiceDelegationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnetDelegationServiceDelegationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetDelegationServiceDelegationOutputReference
 ```
@@ -2423,7 +2423,7 @@ func InternalValue() SubnetDelegationServiceDelegation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetIpAddressPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnetIpAddressPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetIpAddressPoolOutputReference
 ```
@@ -2727,7 +2727,7 @@ func InternalValue() SubnetIpAddressPool
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnet.SubnetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnet"
 
 subnet.NewSubnetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetTimeoutsOutputReference
 ```

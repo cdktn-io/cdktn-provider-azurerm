@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.NewContainerAppCustomDomain(scope Construct, id *string, config ContainerAppCustomDomainConfig) ContainerAppCustomDomain
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.ContainerAppCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.ContainerAppCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ containerappcustomdomain.ContainerAppCustomDomain_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.ContainerAppCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ containerappcustomdomain.ContainerAppCustomDomain_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.ContainerAppCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 &containerappcustomdomain.ContainerAppCustomDomainConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcu
 	CertificateBindingType: *string,
 	ContainerAppEnvironmentCertificateId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerAppCustomDomain.ContainerAppCustomDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerAppCustomDomain.ContainerAppCustomDomainTimeouts,
 }
 ```
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 &containerappcustomdomain.ContainerAppCustomDomainTimeouts {
 	Create: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppCustomDomain.ContainerAppCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappcustomdomain"
 
 containerappcustomdomain.NewContainerAppCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAppCustomDomainTimeoutsOutputReference
 ```

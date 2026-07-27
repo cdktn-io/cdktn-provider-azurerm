@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.NewDataAzurermAutomationRunbook(scope Construct, id *string, config DataAzurermAutomationRunbookConfig) DataAzurermAutomationRunbook
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.DataAzurermAutomationRunbook_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.DataAzurermAutomationRunbook_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermautomationrunbook.DataAzurermAutomationRunbook_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.DataAzurermAutomationRunbook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermautomationrunbook.DataAzurermAutomationRunbook_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.DataAzurermAutomationRunbook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 &dataazurermautomationrunbook.DataAzurermAutomationRunbookConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaut
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermAutomationRunbook.DataAzurermAutomationRunbookTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermAutomationRunbook.DataAzurermAutomationRunbookTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbookTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 &dataazurermautomationrunbook.DataAzurermAutomationRunbookTimeouts {
 	Read: *string,
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAutomationRunbook.DataAzurermAutomationRunbookTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermautomationrunbook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermautomationrunbook"
 
 dataazurermautomationrunbook.NewDataAzurermAutomationRunbookTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermAutomationRunbookTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.NewDatadogMonitorSsoConfiguration(scope Construct, id *string, config DatadogMonitorSsoConfigurationConfig) DatadogMonitorSsoConfiguration
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.DatadogMonitorSsoConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 &datadogmonitorssoconfiguration.DatadogMonitorSsoConfigurationConfig {
 	Connection: interface{},
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitor
 	Name: *string,
 	SingleSignOn: *string,
 	SingleSignOnEnabled: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfigurationTimeouts,
 }
 ```
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 &datadogmonitorssoconfiguration.DatadogMonitorSsoConfigurationTimeouts {
 	Create: *string,
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.datadogMonitorSsoConfiguration.DatadogMonitorSsoConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datadogmonitorssoconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datadogmonitorssoconfiguration"
 
 datadogmonitorssoconfiguration.NewDatadogMonitorSsoConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatadogMonitorSsoConfigurationTimeoutsOutputReference
 ```

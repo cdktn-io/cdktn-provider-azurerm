@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.image.Image.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.NewImage(scope Construct, id *string, config ImageConfig) Image
 ```
@@ -495,7 +495,7 @@ func ResetZoneResilient()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.image.Image.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.Image_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.image.Image.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.Image_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ image.Image_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.image.Image.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.Image_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ image.Image_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.image.Image.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.Image_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1026,7 +1026,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.image.ImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 &image.ImageConfig {
 	Connection: interface{},
@@ -1042,10 +1042,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
 	DataDisk: interface{},
 	HyperVGeneration: *string,
 	Id: *string,
-	OsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.image.ImageOsDisk,
+	OsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.image.ImageOsDisk,
 	SourceVirtualMachineId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.image.ImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.image.ImageTimeouts,
 	ZoneResilient: interface{},
 }
 ```
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.image.ImageDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 &image.ImageDataDisk {
 	StorageType: *string,
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.image.ImageOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 &image.ImageOsDisk {
 	StorageType: *string,
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.image.ImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 &image.ImageTimeouts {
 	Create: *string,
@@ -1617,7 +1617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.image.ImageDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.NewImageDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImageDataDiskList
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.image.ImageDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.NewImageDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImageDataDiskOutputReference
 ```
@@ -2240,7 +2240,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.image.ImageOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.NewImageOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageOsDiskOutputReference
 ```
@@ -2714,7 +2714,7 @@ func InternalValue() ImageOsDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.image.ImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/image"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/image"
 
 image.NewImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImageTimeoutsOutputReference
 ```

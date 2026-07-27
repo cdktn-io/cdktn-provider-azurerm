@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.NewAppServicePlan(scope Construct, id *string, config AppServicePlanConfig) AppServicePlan
 ```
@@ -496,7 +496,7 @@ func ResetZoneRedundant()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.AppServicePlan_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.AppServicePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ appserviceplan.AppServicePlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.AppServicePlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ appserviceplan.AppServicePlan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.AppServicePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1104,7 +1104,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 &appserviceplan.AppServicePlanConfig {
 	Connection: interface{},
@@ -1117,7 +1117,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServicePlan.AppServicePlanSku,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServicePlan.AppServicePlanSku,
 	AppServiceEnvironmentId: *string,
 	Id: *string,
 	IsXenon: interface{},
@@ -1126,7 +1126,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan
 	PerSiteScaling: interface{},
 	Reserved: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServicePlan.AppServicePlanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appServicePlan.AppServicePlanTimeouts,
 	ZoneRedundant: interface{},
 }
 ```
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlanSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 &appserviceplan.AppServicePlanSku {
 	Size: *string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 &appserviceplan.AppServicePlanTimeouts {
 	Create: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlanSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.NewAppServicePlanSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServicePlanSkuOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() AppServicePlanSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServicePlan.AppServicePlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appserviceplan"
 
 appserviceplan.NewAppServicePlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServicePlanTimeoutsOutputReference
 ```

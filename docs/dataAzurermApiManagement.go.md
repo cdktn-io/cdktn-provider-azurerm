@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagement(scope Construct, id *string, config DataAzurermApiManagementConfig) DataAzurermApiManagement
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagement.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.DataAzurermApiManagement_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagement.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.DataAzurermApiManagement_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermapimanagement.DataAzurermApiManagement_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagement.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.DataAzurermApiManagement_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermapimanagement.DataAzurermApiManagement_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagement.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.DataAzurermApiManagement_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementAdditionalLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementAdditionalLocation {
 
@@ -920,7 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementConfig {
 	Connection: interface{},
@@ -934,7 +934,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermApiManagement.DataAzurermApiManagementTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermApiManagement.DataAzurermApiManagementTimeouts,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfiguration {
 
@@ -1110,7 +1110,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationDeveloperPortal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfigurationDeveloperPortal {
 
@@ -1123,7 +1123,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfigurationManagement {
 
@@ -1136,7 +1136,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationPortal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfigurationPortal {
 
@@ -1149,7 +1149,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfigurationProxy {
 
@@ -1162,7 +1162,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationScm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementHostnameConfigurationScm {
 
@@ -1175,7 +1175,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementIdentity {
 
@@ -1188,7 +1188,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementTenantAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementTenantAccess {
 
@@ -1201,7 +1201,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 &dataazurermapimanagement.DataAzurermApiManagementTimeouts {
 	Read: *string,
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementAdditionalLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementAdditionalLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementAdditionalLocationList
 ```
@@ -1384,7 +1384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementAdditionalLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementAdditionalLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementAdditionalLocationOutputReference
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() DataAzurermApiManagementAdditionalLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationDeveloperPortalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationDeveloperPortalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationDeveloperPortalList
 ```
@@ -1877,7 +1877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationDeveloperPortalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationDeveloperPortalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationDeveloperPortalOutputReference
 ```
@@ -2188,7 +2188,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfigurationDeveloperPorta
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationList
 ```
@@ -2337,7 +2337,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationManagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationManagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationManagementList
 ```
@@ -2486,7 +2486,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationManagementOutputReference
 ```
@@ -2797,7 +2797,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfigurationManagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationOutputReference
 ```
@@ -3119,7 +3119,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationPortalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationPortalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationPortalList
 ```
@@ -3268,7 +3268,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationPortalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationPortalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationPortalOutputReference
 ```
@@ -3579,7 +3579,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfigurationPortal
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationProxyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationProxyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationProxyList
 ```
@@ -3728,7 +3728,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationProxyOutputReference
 ```
@@ -4050,7 +4050,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfigurationProxy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationScmList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationScmList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementHostnameConfigurationScmList
 ```
@@ -4199,7 +4199,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementHostnameConfigurationScmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementHostnameConfigurationScmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementHostnameConfigurationScmOutputReference
 ```
@@ -4510,7 +4510,7 @@ func InternalValue() DataAzurermApiManagementHostnameConfigurationScm
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementIdentityList
 ```
@@ -4659,7 +4659,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementIdentityOutputReference
 ```
@@ -4970,7 +4970,7 @@ func InternalValue() DataAzurermApiManagementIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementTenantAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementTenantAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApiManagementTenantAccessList
 ```
@@ -5119,7 +5119,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementTenantAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementTenantAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApiManagementTenantAccessOutputReference
 ```
@@ -5430,7 +5430,7 @@ func InternalValue() DataAzurermApiManagementTenantAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagement.DataAzurermApiManagementTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagement"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagement"
 
 dataazurermapimanagement.NewDataAzurermApiManagementTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermApiManagementTimeoutsOutputReference
 ```

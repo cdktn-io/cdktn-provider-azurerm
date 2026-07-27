@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRule(scope Construct, id *string, config NetworkManagerAdminRuleConfig) NetworkManagerAdminRule
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NetworkManagerAdminRule_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NetworkManagerAdminRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ networkmanageradminrule.NetworkManagerAdminRule_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NetworkManagerAdminRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ networkmanageradminrule.NetworkManagerAdminRule_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NetworkManagerAdminRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 &networkmanageradminrule.NetworkManagerAdminRuleConfig {
 	Connection: interface{},
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanager
 	Id: *string,
 	Source: interface{},
 	SourcePortRanges: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkManagerAdminRule.NetworkManagerAdminRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkManagerAdminRule.NetworkManagerAdminRuleTimeouts,
 }
 ```
 
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 &networkmanageradminrule.NetworkManagerAdminRuleDestination {
 	AddressPrefix: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 &networkmanageradminrule.NetworkManagerAdminRuleSource {
 	AddressPrefix: *string,
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 &networkmanageradminrule.NetworkManagerAdminRuleTimeouts {
 	Create: *string,
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkManagerAdminRuleDestinationList
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkManagerAdminRuleDestinationOutputReference
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRuleSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkManagerAdminRuleSourceList
 ```
@@ -2155,7 +2155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRuleSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkManagerAdminRuleSourceOutputReference
 ```
@@ -2466,7 +2466,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerAdminRule.NetworkManagerAdminRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageradminrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageradminrule"
 
 networkmanageradminrule.NewNetworkManagerAdminRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerAdminRuleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShare.DataShare.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.NewDataShare(scope Construct, id *string, config DataShareConfig) DataShare
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataShare.DataShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.DataShare_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataShare.DataShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.DataShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datashare.DataShare_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataShare.DataShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.DataShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ datashare.DataShare_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataShare.DataShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.DataShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShare.DataShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 &datashare.DataShareConfig {
 	Connection: interface{},
@@ -941,9 +941,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	SnapshotSchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataShare.DataShareSnapshotSchedule,
+	SnapshotSchedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataShare.DataShareSnapshotSchedule,
 	Terms: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataShare.DataShareTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataShare.DataShareTimeouts,
 }
 ```
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShare.DataShareSnapshotSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 &datashare.DataShareSnapshotSchedule {
 	Name: *string,
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataShare.DataShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 &datashare.DataShareTimeouts {
 	Create: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShare.DataShareSnapshotScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.NewDataShareSnapshotScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataShareSnapshotScheduleOutputReference
 ```
@@ -1598,7 +1598,7 @@ func InternalValue() DataShareSnapshotSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataShare.DataShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datashare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datashare"
 
 datashare.NewDataShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataShareTimeoutsOutputReference
 ```

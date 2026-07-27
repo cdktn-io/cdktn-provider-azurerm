@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshot(scope Construct, id *string, config DataAzurermSnapshotConfig) DataAzurermSnapshot
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.DataAzurermSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.DataAzurermSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsnapshot.DataAzurermSnapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.DataAzurermSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsnapshot.DataAzurermSnapshot_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.DataAzurermSnapshot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 &dataazurermsnapshot.DataAzurermSnapshotConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsna
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermSnapshot.DataAzurermSnapshotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermSnapshot.DataAzurermSnapshotTimeouts,
 }
 ```
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 &dataazurermsnapshot.DataAzurermSnapshotEncryptionSettings {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsna
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 &dataazurermsnapshot.DataAzurermSnapshotEncryptionSettingsDiskEncryptionKey {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsna
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsKeyEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 &dataazurermsnapshot.DataAzurermSnapshotEncryptionSettingsKeyEncryptionKey {
 
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsna
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 &dataazurermsnapshot.DataAzurermSnapshotTimeouts {
 	Read: *string,
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyList
 ```
@@ -1164,7 +1164,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSnapshotEncryptionSettingsDiskEncryptionKeyOutputReference
 ```
@@ -1453,7 +1453,7 @@ func InternalValue() DataAzurermSnapshotEncryptionSettingsDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyList
 ```
@@ -1602,7 +1602,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSnapshotEncryptionSettingsKeyEncryptionKeyOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() DataAzurermSnapshotEncryptionSettingsKeyEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSnapshotEncryptionSettingsList
 ```
@@ -2040,7 +2040,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotEncryptionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotEncryptionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSnapshotEncryptionSettingsOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() DataAzurermSnapshotEncryptionSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSnapshot.DataAzurermSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsnapshot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsnapshot"
 
 dataazurermsnapshot.NewDataAzurermSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSnapshotTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.NewDataAzurermStorageBlob(scope Construct, id *string, config DataAzurermStorageBlobConfig) DataAzurermStorageBlob
 ```
@@ -353,7 +353,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.DataAzurermStorageBlob_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.DataAzurermStorageBlob_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazurermstorageblob.DataAzurermStorageBlob_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.DataAzurermStorageBlob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ dataazurermstorageblob.DataAzurermStorageBlob_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.DataAzurermStorageBlob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 &dataazurermstorageblob.DataAzurermStorageBlobConfig {
 	Connection: interface{},
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 	StorageAccountName: *string,
 	StorageContainerId: *string,
 	StorageContainerName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts,
 }
 ```
 
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 &dataazurermstorageblob.DataAzurermStorageBlobTimeouts {
 	Read: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageblob"
 
 dataazurermstorageblob.NewDataAzurermStorageBlobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageBlobTimeoutsOutputReference
 ```

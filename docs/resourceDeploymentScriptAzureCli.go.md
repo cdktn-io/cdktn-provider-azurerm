@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCli.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCli(scope Construct, id *string, config ResourceDeploymentScriptAzureCliConfig) ResourceDeploymentScriptAzureCli
 ```
@@ -563,7 +563,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCli.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_IsConstruct(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCli.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_IsTerraformElement(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCli.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_IsTerraformResource(x interface{}) *bool
 ```
@@ -623,7 +623,7 @@ resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCli.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCli_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1281,7 +1281,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliConfig {
 	Connection: interface{},
@@ -1298,18 +1298,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploy
 	Version: *string,
 	CleanupPreference: *string,
 	CommandLine: *string,
-	Container: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliContainer,
+	Container: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliContainer,
 	EnvironmentVariable: interface{},
 	ForceUpdateTag: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliIdentity,
 	PrimaryScriptUri: *string,
 	ScriptContent: *string,
-	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliStorageAccount,
+	StorageAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliStorageAccount,
 	SupportingScriptUris: *[]*string,
 	Tags: *map[string]*string,
 	Timeout: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliTimeouts,
 }
 ```
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliContainer {
 	ContainerGroupName: *string,
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliEnvironmentVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliEnvironmentVariable {
 	Name: *string,
@@ -1754,7 +1754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliIdentity {
 	IdentityIds: *[]*string,
@@ -1800,7 +1800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliStorageAccount {
 	Key: *string,
@@ -1846,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 &resourcedeploymentscriptazurecli.ResourceDeploymentScriptAzureCliTimeouts {
 	Create: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliContainerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliContainerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzureCliContainerOutputReference
 ```
@@ -2200,7 +2200,7 @@ func InternalValue() ResourceDeploymentScriptAzureCliContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliEnvironmentVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliEnvironmentVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ResourceDeploymentScriptAzureCliEnvironmentVariableList
 ```
@@ -2360,7 +2360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ResourceDeploymentScriptAzureCliEnvironmentVariableOutputReference
 ```
@@ -2707,7 +2707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzureCliIdentityOutputReference
 ```
@@ -3000,7 +3000,7 @@ func InternalValue() ResourceDeploymentScriptAzureCliIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzureCliStorageAccountOutputReference
 ```
@@ -3293,7 +3293,7 @@ func InternalValue() ResourceDeploymentScriptAzureCliStorageAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceDeploymentScriptAzureCli.ResourceDeploymentScriptAzureCliTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcedeploymentscriptazurecli"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcedeploymentscriptazurecli"
 
 resourcedeploymentscriptazurecli.NewResourceDeploymentScriptAzureCliTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceDeploymentScriptAzureCliTimeoutsOutputReference
 ```

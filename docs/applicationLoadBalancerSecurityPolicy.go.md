@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.NewApplicationLoadBalancerSecurityPolicy(scope Construct, id *string, config ApplicationLoadBalancerSecurityPolicyConfig) ApplicationLoadBalancerSecurityPolicy
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 &applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicyConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloa
 	WebApplicationFirewallPolicyId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicyTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 &applicationloadbalancersecuritypolicy.ApplicationLoadBalancerSecurityPolicyTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerSecurityPolicy.ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancersecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancersecuritypolicy"
 
 applicationloadbalancersecuritypolicy.NewApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationLoadBalancerSecurityPolicyTimeoutsOutputReference
 ```

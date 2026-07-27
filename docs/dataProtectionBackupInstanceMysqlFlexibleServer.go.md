@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.NewDataProtectionBackupInstanceMysqlFlexibleServer(scope Construct, id *string, config DataProtectionBackupInstanceMysqlFlexibleServerConfig) DataProtectionBackupInstanceMysqlFlexibleServer
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServer_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysq
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysq
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -881,7 +881,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 &dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServerConfig {
 	Connection: interface{},
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotection
 	ServerId: *string,
 	VaultId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServerTimeouts,
 }
 ```
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 &dataprotectionbackupinstancemysqlflexibleserver.DataProtectionBackupInstanceMysqlFlexibleServerTimeouts {
 	Create: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupInstanceMysqlFlexibleServer.DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackupinstancemysqlflexibleserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackupinstancemysqlflexibleserver"
 
 dataprotectionbackupinstancemysqlflexibleserver.NewDataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupInstanceMysqlFlexibleServerTimeoutsOutputReference
 ```

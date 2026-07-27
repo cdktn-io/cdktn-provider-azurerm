@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSas(scope Construct, id *string, config DataAzurermStorageAccountSasConfig) DataAzurermStorageAccountSas
 ```
@@ -392,7 +392,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasConfig {
 	Connection: interface{},
@@ -924,15 +924,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 	Provisioners: *[]interface{},
 	ConnectionString: *string,
 	Expiry: *string,
-	ResourceTypes: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes,
-	Services: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices,
+	ResourceTypes: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes,
+	Services: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices,
 	Start: *string,
 	HttpsOnly: interface{},
 	Id: *string,
 	IpAddresses: *string,
-	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions,
 	SignedVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasPermissions {
 	Add: interface{},
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasResourceTypes {
 	Container: interface{},
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasServices {
 	Blob: interface{},
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasTimeouts {
 	Read: *string,
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasPermissionsOutputReference
 ```
@@ -2044,7 +2044,7 @@ func InternalValue() DataAzurermStorageAccountSasPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasResourceTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasResourceTypesOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() DataAzurermStorageAccountSasResourceTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasServicesOutputReference
 ```
@@ -2696,7 +2696,7 @@ func InternalValue() DataAzurermStorageAccountSasServices
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasTimeoutsOutputReference
 ```

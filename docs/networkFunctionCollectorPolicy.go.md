@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NewNetworkFunctionCollectorPolicy(scope Construct, id *string, config NetworkFunctionCollectorPolicyConfig) NetworkFunctionCollectorPolicy
 ```
@@ -460,7 +460,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 &networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicyConfig {
 	Connection: interface{},
@@ -935,14 +935,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctio
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	IpfxEmission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxEmission,
-	IpfxIngestion: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxIngestion,
+	IpfxEmission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxEmission,
+	IpfxIngestion: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxIngestion,
 	Location: *string,
 	Name: *string,
 	TrafficCollectorId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyTimeouts,
 }
 ```
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxEmission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 &networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicyIpfxEmission {
 	DestinationTypes: *[]*string,
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 &networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicyIpfxIngestion {
 	SourceResourceIds: *[]*string,
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 &networkfunctioncollectorpolicy.NetworkFunctionCollectorPolicyTimeouts {
 	Create: *string,
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxEmissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NewNetworkFunctionCollectorPolicyIpfxEmissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkFunctionCollectorPolicyIpfxEmissionOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() NetworkFunctionCollectorPolicyIpfxEmission
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyIpfxIngestionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NewNetworkFunctionCollectorPolicyIpfxIngestionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkFunctionCollectorPolicyIpfxIngestionOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() NetworkFunctionCollectorPolicyIpfxIngestion
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionCollectorPolicy.NetworkFunctionCollectorPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctioncollectorpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctioncollectorpolicy"
 
 networkfunctioncollectorpolicy.NewNetworkFunctionCollectorPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkFunctionCollectorPolicyTimeoutsOutputReference
 ```

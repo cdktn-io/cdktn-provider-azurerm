@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.NewLbBackendAddressPoolAddress(scope Construct, id *string, config LbBackendAddressPoolAddressConfig) LbBackendAddressPoolAddress
 ```
@@ -448,7 +448,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.LbBackendAddressPoolAddress_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.LbBackendAddressPoolAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ lbbackendaddresspooladdress.LbBackendAddressPoolAddress_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.LbBackendAddressPoolAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ lbbackendaddresspooladdress.LbBackendAddressPoolAddress_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.LbBackendAddressPoolAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -902,7 +902,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 &lbbackendaddresspooladdress.LbBackendAddressPoolAddressConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddre
 	BackendAddressIpConfigurationId: *string,
 	Id: *string,
 	IpAddress: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressTimeouts,
 	VirtualNetworkId: *string,
 }
 ```
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressInboundNatRulePortMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 &lbbackendaddresspooladdress.LbBackendAddressPoolAddressInboundNatRulePortMapping {
 
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddre
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 &lbbackendaddresspooladdress.LbBackendAddressPoolAddressTimeouts {
 	Create: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressInboundNatRulePortMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.NewLbBackendAddressPoolAddressInboundNatRulePortMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbBackendAddressPoolAddressInboundNatRulePortMappingList
 ```
@@ -1347,7 +1347,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressInboundNatRulePortMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.NewLbBackendAddressPoolAddressInboundNatRulePortMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbBackendAddressPoolAddressInboundNatRulePortMappingOutputReference
 ```
@@ -1647,7 +1647,7 @@ func InternalValue() LbBackendAddressPoolAddressInboundNatRulePortMapping
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbBackendAddressPoolAddress.LbBackendAddressPoolAddressTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lbbackendaddresspooladdress"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lbbackendaddresspooladdress"
 
 lbbackendaddresspooladdress.NewLbBackendAddressPoolAddressTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbBackendAddressPoolAddressTimeoutsOutputReference
 ```

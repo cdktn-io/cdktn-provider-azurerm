@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.NewSharedImage(scope Construct, id *string, config SharedImageConfig) SharedImage
 ```
@@ -607,7 +607,7 @@ func ResetTrustedLaunchSupported()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sharedImage.SharedImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.SharedImage_IsConstruct(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sharedImage.SharedImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.SharedImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ sharedimage.SharedImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sharedImage.SharedImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.SharedImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ sharedimage.SharedImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sharedImage.SharedImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.SharedImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1556,7 +1556,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImage.SharedImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 &sharedimage.SharedImageConfig {
 	Connection: interface{},
@@ -1567,7 +1567,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	GalleryName: *string,
-	Identifier: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImage.SharedImageIdentifier,
+	Identifier: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sharedImage.SharedImageIdentifier,
 	Location: *string,
 	Name: *string,
 	OsType: *string,
@@ -1589,11 +1589,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
 	MinRecommendedMemoryInGb: *f64,
 	MinRecommendedVcpuCount: *f64,
 	PrivacyStatementUri: *string,
-	PurchasePlan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImage.SharedImagePurchasePlan,
+	PurchasePlan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sharedImage.SharedImagePurchasePlan,
 	ReleaseNoteUri: *string,
 	Specialized: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImage.SharedImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sharedImage.SharedImageTimeouts,
 	TrustedLaunchEnabled: interface{},
 	TrustedLaunchSupported: interface{},
 }
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 &sharedimage.SharedImageIdentifier {
 	Offer: *string,
@@ -2147,7 +2147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 &sharedimage.SharedImagePurchasePlan {
 	Name: *string,
@@ -2207,7 +2207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 &sharedimage.SharedImageTimeouts {
 	Create: *string,
@@ -2283,7 +2283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.NewSharedImageIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageIdentifierOutputReference
 ```
@@ -2598,7 +2598,7 @@ func InternalValue() SharedImageIdentifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.NewSharedImagePurchasePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImagePurchasePlanOutputReference
 ```
@@ -2927,7 +2927,7 @@ func InternalValue() SharedImagePurchasePlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sharedimage"
 
 sharedimage.NewSharedImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageTimeoutsOutputReference
 ```

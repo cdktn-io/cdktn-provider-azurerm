@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NewNetworkFunctionAzureTrafficCollector(scope Construct, id *string, config NetworkFunctionAzureTrafficCollectorConfig) NetworkFunctionAzureTrafficCollector
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 &networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollectorConfig {
 	Connection: interface{},
@@ -892,7 +892,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctio
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollectorTimeouts,
 }
 ```
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 &networkfunctionazuretrafficcollector.NetworkFunctionAzureTrafficCollectorTimeouts {
 	Create: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkFunctionAzureTrafficCollector.NetworkFunctionAzureTrafficCollectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkfunctionazuretrafficcollector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkfunctionazuretrafficcollector"
 
 networkfunctionazuretrafficcollector.NewNetworkFunctionAzureTrafficCollectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkFunctionAzureTrafficCollectorTimeoutsOutputReference
 ```

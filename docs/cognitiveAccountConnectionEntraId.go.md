@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.NewCognitiveAccountConnectionEntraId(scope Construct, id *string, config CognitiveAccountConnectionEntraIdConfig) CognitiveAccountConnectionEntraId
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 &cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraIdConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 	Target: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 &cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraIdTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.NewCognitiveAccountConnectionEntraIdTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountConnectionEntraIdTimeoutsOutputReference
 ```

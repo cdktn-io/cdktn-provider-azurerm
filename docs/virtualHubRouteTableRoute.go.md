@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.NewVirtualHubRouteTableRouteA(scope Construct, id *string, config VirtualHubRouteTableRouteAConfig) VirtualHubRouteTableRouteA
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.VirtualHubRouteTableRouteA_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.VirtualHubRouteTableRouteA_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ virtualhubroutetableroute.VirtualHubRouteTableRouteA_IsTerraformElement(x interf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.VirtualHubRouteTableRouteA_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ virtualhubroutetableroute.VirtualHubRouteTableRouteA_IsTerraformResource(x inter
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.VirtualHubRouteTableRouteA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 &virtualhubroutetableroute.VirtualHubRouteTableRouteAConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubrout
 	RouteTableId: *string,
 	Id: *string,
 	NextHopType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualHubRouteTableRoute.VirtualHubRouteTableRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualHubRouteTableRoute.VirtualHubRouteTableRouteTimeouts,
 }
 ```
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 &virtualhubroutetableroute.VirtualHubRouteTableRouteTimeouts {
 	Create: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHubRouteTableRoute.VirtualHubRouteTableRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhubroutetableroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhubroutetableroute"
 
 virtualhubroutetableroute.NewVirtualHubRouteTableRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualHubRouteTableRouteTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.NewSynapsePrivateLinkHub(scope Construct, id *string, config SynapsePrivateLinkHubConfig) SynapsePrivateLinkHub
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.SynapsePrivateLinkHub_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.SynapsePrivateLinkHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ synapseprivatelinkhub.SynapsePrivateLinkHub_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.SynapsePrivateLinkHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ synapseprivatelinkhub.SynapsePrivateLinkHub_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.SynapsePrivateLinkHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 &synapseprivatelinkhub.SynapsePrivateLinkHubConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivate
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapsePrivateLinkHub.SynapsePrivateLinkHubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapsePrivateLinkHub.SynapsePrivateLinkHubTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 &synapseprivatelinkhub.SynapsePrivateLinkHubTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapsePrivateLinkHub.SynapsePrivateLinkHubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseprivatelinkhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseprivatelinkhub"
 
 synapseprivatelinkhub.NewSynapsePrivateLinkHubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapsePrivateLinkHubTimeoutsOutputReference
 ```

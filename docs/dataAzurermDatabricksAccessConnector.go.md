@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.NewDataAzurermDatabricksAccessConnector(scope Construct, id *string, config DataAzurermDatabricksAccessConnectorConfig) DataAzurermDatabricksAccessConnector
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 &dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnectorConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 &dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnectorIdentity {
 
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 &dataazurermdatabricksaccessconnector.DataAzurermDatabricksAccessConnectorTimeouts {
 	Read: *string,
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.NewDataAzurermDatabricksAccessConnectorIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDatabricksAccessConnectorIdentityList
 ```
@@ -1072,7 +1072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.NewDataAzurermDatabricksAccessConnectorIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDatabricksAccessConnectorIdentityOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataAzurermDatabricksAccessConnectorIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDatabricksAccessConnector.DataAzurermDatabricksAccessConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatabricksaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatabricksaccessconnector"
 
 dataazurermdatabricksaccessconnector.NewDataAzurermDatabricksAccessConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDatabricksAccessConnectorTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.NewDevCenterProjectPool(scope Construct, id *string, config DevCenterProjectPoolConfig) DevCenterProjectPool
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.DevCenterProjectPool_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.DevCenterProjectPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ devcenterprojectpool.DevCenterProjectPool_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.DevCenterProjectPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ devcenterprojectpool.DevCenterProjectPool_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.DevCenterProjectPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 &devcenterprojectpool.DevCenterProjectPoolConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterproje
 	SingleSignOnEnabled: interface{},
 	StopOnDisconnectGracePeriodMinutes: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.devCenterProjectPool.DevCenterProjectPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.devCenterProjectPool.DevCenterProjectPoolTimeouts,
 }
 ```
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 &devcenterprojectpool.DevCenterProjectPoolTimeouts {
 	Create: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterProjectPool.DevCenterProjectPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterprojectpool"
 
 devcenterprojectpool.NewDevCenterProjectPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterProjectPoolTimeoutsOutputReference
 ```

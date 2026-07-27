@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.NewIotcentralOrganization(scope Construct, id *string, config IotcentralOrganizationConfig) IotcentralOrganization
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.IotcentralOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.IotcentralOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ iotcentralorganization.IotcentralOrganization_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.IotcentralOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ iotcentralorganization.IotcentralOrganization_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.IotcentralOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 &iotcentralorganization.IotcentralOrganizationConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorga
 	OrganizationId: *string,
 	Id: *string,
 	ParentOrganizationId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotcentralOrganization.IotcentralOrganizationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotcentralOrganization.IotcentralOrganizationTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 &iotcentralorganization.IotcentralOrganizationTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotcentralOrganization.IotcentralOrganizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotcentralorganization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotcentralorganization"
 
 iotcentralorganization.NewIotcentralOrganizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotcentralOrganizationTimeoutsOutputReference
 ```

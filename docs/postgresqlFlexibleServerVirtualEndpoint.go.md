@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.NewPostgresqlFlexibleServerVirtualEndpoint(scope Construct, id *string, config PostgresqlFlexibleServerVirtualEndpointConfig) PostgresqlFlexibleServerVirtualEndpoint
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 &postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpointConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflex
 	SourceServerId: *string,
 	Type: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpointTimeouts,
 }
 ```
 
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 &postgresqlflexibleservervirtualendpoint.PostgresqlFlexibleServerVirtualEndpointTimeouts {
 	Create: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerVirtualEndpoint.PostgresqlFlexibleServerVirtualEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleservervirtualendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleservervirtualendpoint"
 
 postgresqlflexibleservervirtualendpoint.NewPostgresqlFlexibleServerVirtualEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresqlFlexibleServerVirtualEndpointTimeoutsOutputReference
 ```

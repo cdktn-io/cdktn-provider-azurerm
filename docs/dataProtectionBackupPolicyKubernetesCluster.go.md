@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesCluster(scope Construct, id *string, config DataProtectionBackupPolicyKubernetesClusterConfig) DataProtectionBackupPolicyKubernetesCluster
 ```
@@ -467,7 +467,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetes
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterConfig {
 	Connection: interface{},
@@ -965,13 +965,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotection
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	BackupRepeatingTimeIntervals: *[]*string,
-	DefaultRetentionRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRule,
+	DefaultRetentionRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRule,
 	Name: *string,
 	ResourceGroupName: *string,
 	VaultName: *string,
 	Id: *string,
 	RetentionRule: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRule {
 	LifeCycle: interface{},
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycle {
 	DataStoreType: *string,
@@ -1271,10 +1271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterRetentionRule {
-	Criteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteria,
+	Criteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteria,
 	LifeCycle: interface{},
 	Name: *string,
 	Priority: *f64,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteria {
 	AbsoluteCriteria: *string,
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycle {
 	DataStoreType: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 &dataprotectionbackuppolicykubernetescluster.DataProtectionBackupPolicyKubernetesClusterTimeouts {
 	Create: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleList
 ```
@@ -1705,7 +1705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleLifeCycleOutputReference
 ```
@@ -2016,7 +2016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupPolicyKubernetesClusterDefaultRetentionRuleOutputReference
 ```
@@ -2300,7 +2300,7 @@ func InternalValue() DataProtectionBackupPolicyKubernetesClusterDefaultRetention
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupPolicyKubernetesClusterRetentionRuleCriteriaOutputReference
 ```
@@ -2694,7 +2694,7 @@ func InternalValue() DataProtectionBackupPolicyKubernetesClusterRetentionRuleCri
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleList
 ```
@@ -2854,7 +2854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataProtectionBackupPolicyKubernetesClusterRetentionRuleLifeCycleOutputReference
 ```
@@ -3165,7 +3165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterRetentionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataProtectionBackupPolicyKubernetesClusterRetentionRuleList
 ```
@@ -3325,7 +3325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataProtectionBackupPolicyKubernetesClusterRetentionRuleOutputReference
 ```
@@ -3706,7 +3706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataProtectionBackupPolicyKubernetesCluster.DataProtectionBackupPolicyKubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataprotectionbackuppolicykubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataprotectionbackuppolicykubernetescluster"
 
 dataprotectionbackuppolicykubernetescluster.NewDataProtectionBackupPolicyKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataProtectionBackupPolicyKubernetesClusterTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.NewApiManagementWorkspaceCertificate(scope Construct, id *string, config ApiManagementWorkspaceCertificateConfig) ApiManagementWorkspaceCertificate
 ```
@@ -455,7 +455,7 @@ func ResetUserAssignedIdentityClientId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.ApiManagementWorkspaceCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 &apimanagementworkspacecertificate.ApiManagementWorkspaceCertificateConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementw
 	Id: *string,
 	KeyVaultSecretId: *string,
 	Password: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificateTimeouts,
 	UserAssignedIdentityClientId: *string,
 }
 ```
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 &apimanagementworkspacecertificate.ApiManagementWorkspaceCertificateTimeouts {
 	Create: *string,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspaceCertificate.ApiManagementWorkspaceCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspacecertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspacecertificate"
 
 apimanagementworkspacecertificate.NewApiManagementWorkspaceCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementWorkspaceCertificateTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.NewHpcCacheBlobNfsTarget(scope Construct, id *string, config HpcCacheBlobNfsTargetConfig) HpcCacheBlobNfsTarget
 ```
@@ -448,7 +448,7 @@ func ResetWriteBackTimerInSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.HpcCacheBlobNfsTarget_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.HpcCacheBlobNfsTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ hpccacheblobnfstarget.HpcCacheBlobNfsTarget_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.HpcCacheBlobNfsTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ hpccacheblobnfstarget.HpcCacheBlobNfsTarget_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.HpcCacheBlobNfsTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 &hpccacheblobnfstarget.HpcCacheBlobNfsTargetConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnf
 	UsageModel: *string,
 	AccessPolicyName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTargetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTargetTimeouts,
 	VerificationTimerInSeconds: *f64,
 	WriteBackTimerInSeconds: *f64,
 }
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 &hpccacheblobnfstarget.HpcCacheBlobNfsTargetTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.hpcCacheBlobNfsTarget.HpcCacheBlobNfsTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/hpccacheblobnfstarget"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/hpccacheblobnfstarget"
 
 hpccacheblobnfstarget.NewHpcCacheBlobNfsTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HpcCacheBlobNfsTargetTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsername.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.NewEmailCommunicationServiceDomainSenderUsername(scope Construct, id *string, config EmailCommunicationServiceDomainSenderUsernameConfig) EmailCommunicationServiceDomainSenderUsername
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsername.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsername_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsername.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsername_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSen
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsername.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsername_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSen
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsername.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsername_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsernameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 &emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsernameConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunica
 	Name: *string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsernameTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsernameTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsernameTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 &emailcommunicationservicedomainsenderusername.EmailCommunicationServiceDomainSenderUsernameTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.emailCommunicationServiceDomainSenderUsername.EmailCommunicationServiceDomainSenderUsernameTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/emailcommunicationservicedomainsenderusername"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/emailcommunicationservicedomainsenderusername"
 
 emailcommunicationservicedomainsenderusername.NewEmailCommunicationServiceDomainSenderUsernameTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EmailCommunicationServiceDomainSenderUsernameTimeoutsOutputReference
 ```

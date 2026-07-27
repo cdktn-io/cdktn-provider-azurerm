@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.NewStorageAccountStaticWebsiteA(scope Construct, id *string, config StorageAccountStaticWebsiteAConfig) StorageAccountStaticWebsiteA
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.StorageAccountStaticWebsiteA_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.StorageAccountStaticWebsiteA_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ storageaccountstaticwebsite.StorageAccountStaticWebsiteA_IsTerraformElement(x in
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.StorageAccountStaticWebsiteA_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ storageaccountstaticwebsite.StorageAccountStaticWebsiteA_IsTerraformResource(x i
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.StorageAccountStaticWebsiteA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 &storageaccountstaticwebsite.StorageAccountStaticWebsiteAConfig {
 	Connection: interface{},
@@ -854,7 +854,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 	Error404Document: *string,
 	Id: *string,
 	IndexDocument: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountStaticWebsite.StorageAccountStaticWebsiteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountStaticWebsite.StorageAccountStaticWebsiteTimeouts,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 &storageaccountstaticwebsite.StorageAccountStaticWebsiteTimeouts {
 	Create: *string,
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountStaticWebsite.StorageAccountStaticWebsiteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountstaticwebsite"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccountstaticwebsite"
 
 storageaccountstaticwebsite.NewStorageAccountStaticWebsiteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountStaticWebsiteTimeoutsOutputReference
 ```

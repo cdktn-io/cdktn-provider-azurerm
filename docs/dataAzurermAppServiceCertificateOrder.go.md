@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.NewDataAzurermAppServiceCertificateOrder(scope Construct, id *string, config DataAzurermAppServiceCertificateOrderConfig) DataAzurermAppServiceCertificateOrder
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 &dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrderCertificates {
 
@@ -880,7 +880,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapp
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 &dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrderConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapp
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderTimeouts,
 }
 ```
 
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 &dataazurermappservicecertificateorder.DataAzurermAppServiceCertificateOrderTimeouts {
 	Read: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.NewDataAzurermAppServiceCertificateOrderCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermAppServiceCertificateOrderCertificatesList
 ```
@@ -1226,7 +1226,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.NewDataAzurermAppServiceCertificateOrderCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermAppServiceCertificateOrderCertificatesOutputReference
 ```
@@ -1537,7 +1537,7 @@ func InternalValue() DataAzurermAppServiceCertificateOrderCertificates
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAppServiceCertificateOrder.DataAzurermAppServiceCertificateOrderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermappservicecertificateorder"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermappservicecertificateorder"
 
 dataazurermappservicecertificateorder.NewDataAzurermAppServiceCertificateOrderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermAppServiceCertificateOrderTimeoutsOutputReference
 ```

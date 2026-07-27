@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.NewMonitorAadDiagnosticSetting(scope Construct, id *string, config MonitorAadDiagnosticSettingConfig) MonitorAadDiagnosticSetting
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.MonitorAadDiagnosticSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 &monitoraaddiagnosticsetting.MonitorAadDiagnosticSettingConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiag
 	Id: *string,
 	LogAnalyticsWorkspaceId: *string,
 	StorageAccountId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingTimeouts,
 }
 ```
 
@@ -1161,11 +1161,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 &monitoraaddiagnosticsetting.MonitorAadDiagnosticSettingEnabledLog {
 	Category: *string,
-	RetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogRetentionPolicy,
+	RetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogRetentionPolicy,
 }
 ```
 
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 &monitoraaddiagnosticsetting.MonitorAadDiagnosticSettingEnabledLogRetentionPolicy {
 	Days: *f64,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 &monitoraaddiagnosticsetting.MonitorAadDiagnosticSettingTimeouts {
 	Create: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.NewMonitorAadDiagnosticSettingEnabledLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAadDiagnosticSettingEnabledLogList
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.NewMonitorAadDiagnosticSettingEnabledLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAadDiagnosticSettingEnabledLogOutputReference
 ```
@@ -1822,7 +1822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.NewMonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAadDiagnosticSettingEnabledLogRetentionPolicyOutputReference
 ```
@@ -2129,7 +2129,7 @@ func InternalValue() MonitorAadDiagnosticSettingEnabledLogRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAadDiagnosticSetting.MonitorAadDiagnosticSettingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoraaddiagnosticsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoraaddiagnosticsetting"
 
 monitoraaddiagnosticsetting.NewMonitorAadDiagnosticSettingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAadDiagnosticSettingTimeoutsOutputReference
 ```

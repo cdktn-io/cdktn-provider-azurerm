@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSetting(scope Construct, id *string, config StackHciDeploymentSettingConfig) StackHciDeploymentSetting
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.StackHciDeploymentSetting_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.StackHciDeploymentSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ stackhcideploymentsetting.StackHciDeploymentSetting_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.StackHciDeploymentSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ stackhcideploymentsetting.StackHciDeploymentSetting_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.StackHciDeploymentSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploy
 	StackHciClusterId: *string,
 	Version: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingTimeouts,
 }
 ```
 
@@ -1054,19 +1054,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnit {
 	ActiveDirectoryOrganizationalUnitPath: *string,
-	Cluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitCluster,
+	Cluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitCluster,
 	DomainFqdn: *string,
-	HostNetwork: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetwork,
+	HostNetwork: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetwork,
 	InfrastructureNetwork: interface{},
 	NamePrefix: *string,
-	OptionalService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitOptionalService,
+	OptionalService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitOptionalService,
 	PhysicalNode: interface{},
 	SecretsLocation: *string,
-	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitStorage,
+	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitStorage,
 	BitlockerBootVolumeEnabled: interface{},
 	BitlockerDataVolumeEnabled: interface{},
 	CredentialGuardEnabled: interface{},
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitCluster {
 	AzureServiceEndpoint: *string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetwork {
 	Intent: interface{},
@@ -1572,17 +1572,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetworkIntent {
 	Adapter: *[]*string,
 	Name: *string,
 	TrafficType: *[]*string,
-	AdapterPropertyOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride,
+	AdapterPropertyOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride,
 	AdapterPropertyOverrideEnabled: interface{},
-	QosPolicyOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride,
+	QosPolicyOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride,
 	QosPolicyOverrideEnabled: interface{},
-	VirtualSwitchConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride,
+	VirtualSwitchConfigurationOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride,
 	VirtualSwitchConfigurationOverrideEnabled: interface{},
 }
 ```
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverride {
 	JumboPacket: *string,
@@ -1782,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverride {
 	BandwidthPercentageSmb: *string,
@@ -1842,7 +1842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverride {
 	EnableIov: *string,
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitHostNetworkStorageNetwork {
 	Name: *string,
@@ -1948,7 +1948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitInfrastructureNetwork {
 	DnsServer: *[]*string,
@@ -2038,7 +2038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPool {
 	EndingAddress: *string,
@@ -2084,7 +2084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitOptionalService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitOptionalService {
 	CustomLocation: *string,
@@ -2116,7 +2116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitPhysicalNode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitPhysicalNode {
 	Ipv4Address: *string,
@@ -2162,7 +2162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingScaleUnitStorage {
 	ConfigurationMode: *string,
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 &stackhcideploymentsetting.StackHciDeploymentSettingTimeouts {
 	Create: *string,
@@ -2256,7 +2256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitClusterOutputReference
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterPropertyOverrideOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitHostNetworkIntentAdapterP
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkIntentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitHostNetworkIntentList
 ```
@@ -3111,7 +3111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitHostNetworkIntentOutputReference
 ```
@@ -3657,7 +3657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolicyOverrideOutputReference
 ```
@@ -3993,7 +3993,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitHostNetworkIntentQosPolic
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualSwitchConfigurationOverrideOutputReference
 ```
@@ -4300,7 +4300,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitHostNetworkIntentVirtualS
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitHostNetworkOutputReference
 ```
@@ -4677,7 +4677,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitHostNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkList
 ```
@@ -4837,7 +4837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitHostNetworkStorageNetworkOutputReference
 ```
@@ -5170,7 +5170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolList
 ```
@@ -5330,7 +5330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitInfrastructureNetworkIpPoolOutputReference
 ```
@@ -5641,7 +5641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitInfrastructureNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitInfrastructureNetworkList
 ```
@@ -5801,7 +5801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitInfrastructureNetworkOutputReference
 ```
@@ -6198,7 +6198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitList
 ```
@@ -6358,7 +6358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitOptionalServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitOptionalServiceOutputReference
 ```
@@ -6629,7 +6629,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitOptionalService
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitOutputReference
 ```
@@ -7571,7 +7571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitPhysicalNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitPhysicalNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciDeploymentSettingScaleUnitPhysicalNodeList
 ```
@@ -7731,7 +7731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciDeploymentSettingScaleUnitPhysicalNodeOutputReference
 ```
@@ -8042,7 +8042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingScaleUnitStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingScaleUnitStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingScaleUnitStorageOutputReference
 ```
@@ -8313,7 +8313,7 @@ func InternalValue() StackHciDeploymentSettingScaleUnitStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciDeploymentSetting.StackHciDeploymentSettingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcideploymentsetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcideploymentsetting"
 
 stackhcideploymentsetting.NewStackHciDeploymentSettingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciDeploymentSettingTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.NewMarketplaceRoleAssignment(scope Construct, id *string, config MarketplaceRoleAssignmentConfig) MarketplaceRoleAssignment
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.MarketplaceRoleAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.MarketplaceRoleAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ marketplaceroleassignment.MarketplaceRoleAssignment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.MarketplaceRoleAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ marketplaceroleassignment.MarketplaceRoleAssignment_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.MarketplaceRoleAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 &marketplaceroleassignment.MarketplaceRoleAssignmentConfig {
 	Connection: interface{},
@@ -1045,7 +1045,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplacerol
 	RoleDefinitionId: *string,
 	RoleDefinitionName: *string,
 	SkipServicePrincipalAadCheck: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.marketplaceRoleAssignment.MarketplaceRoleAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.marketplaceRoleAssignment.MarketplaceRoleAssignmentTimeouts,
 }
 ```
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 &marketplaceroleassignment.MarketplaceRoleAssignmentTimeouts {
 	Create: *string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.marketplaceRoleAssignment.MarketplaceRoleAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/marketplaceroleassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/marketplaceroleassignment"
 
 marketplaceroleassignment.NewMarketplaceRoleAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MarketplaceRoleAssignmentTimeoutsOutputReference
 ```

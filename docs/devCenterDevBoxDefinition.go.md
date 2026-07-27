@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.NewDevCenterDevBoxDefinition(scope Construct, id *string, config DevCenterDevBoxDefinitionConfig) DevCenterDevBoxDefinition
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.DevCenterDevBoxDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.DevCenterDevBoxDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ devcenterdevboxdefinition.DevCenterDevBoxDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.DevCenterDevBoxDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ devcenterdevboxdefinition.DevCenterDevBoxDefinition_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.DevCenterDevBoxDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 &devcenterdevboxdefinition.DevCenterDevBoxDefinitionConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevbo
 	HibernateSupportEnabled: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.devCenterDevBoxDefinition.DevCenterDevBoxDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.devCenterDevBoxDefinition.DevCenterDevBoxDefinitionTimeouts,
 }
 ```
 
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 &devcenterdevboxdefinition.DevCenterDevBoxDefinitionTimeouts {
 	Create: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterDevBoxDefinition.DevCenterDevBoxDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcenterdevboxdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcenterdevboxdefinition"
 
 devcenterdevboxdefinition.NewDevCenterDevBoxDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterDevBoxDefinitionTimeoutsOutputReference
 ```

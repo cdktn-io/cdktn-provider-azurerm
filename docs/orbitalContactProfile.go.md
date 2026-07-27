@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfile(scope Construct, id *string, config OrbitalContactProfileConfig) OrbitalContactProfile
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.OrbitalContactProfile_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.OrbitalContactProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ orbitalcontactprofile.OrbitalContactProfile_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.OrbitalContactProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ orbitalcontactprofile.OrbitalContactProfile_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.OrbitalContactProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1014,7 +1014,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 &orbitalcontactprofile.OrbitalContactProfileConfig {
 	Connection: interface{},
@@ -1035,7 +1035,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontact
 	Id: *string,
 	MinimumElevationDegrees: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.orbitalContactProfile.OrbitalContactProfileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.orbitalContactProfile.OrbitalContactProfileTimeouts,
 }
 ```
 
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 &orbitalcontactprofile.OrbitalContactProfileLinks {
 	Channels: interface{},
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 &orbitalcontactprofile.OrbitalContactProfileLinksChannels {
 	BandwidthMhz: *f64,
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannelsEndPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 &orbitalcontactprofile.OrbitalContactProfileLinksChannelsEndPoint {
 	EndPointName: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 &orbitalcontactprofile.OrbitalContactProfileTimeouts {
 	Create: *string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannelsEndPointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksChannelsEndPointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrbitalContactProfileLinksChannelsEndPointList
 ```
@@ -1781,7 +1781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannelsEndPointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksChannelsEndPointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrbitalContactProfileLinksChannelsEndPointOutputReference
 ```
@@ -2143,7 +2143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksChannelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrbitalContactProfileLinksChannelsList
 ```
@@ -2303,7 +2303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksChannelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksChannelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrbitalContactProfileLinksChannelsOutputReference
 ```
@@ -2729,7 +2729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrbitalContactProfileLinksList
 ```
@@ -2889,7 +2889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrbitalContactProfileLinksOutputReference
 ```
@@ -3257,7 +3257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.orbitalContactProfile.OrbitalContactProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/orbitalcontactprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/orbitalcontactprofile"
 
 orbitalcontactprofile.NewOrbitalContactProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrbitalContactProfileTimeoutsOutputReference
 ```

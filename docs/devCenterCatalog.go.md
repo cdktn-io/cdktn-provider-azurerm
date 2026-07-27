@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.NewDevCenterCatalog(scope Construct, id *string, config DevCenterCatalogConfig) DevCenterCatalog
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.DevCenterCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.DevCenterCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ devcentercatalog.DevCenterCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.DevCenterCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ devcentercatalog.DevCenterCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.DevCenterCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 &devcentercatalog.DevCenterCatalogCatalogAdogit {
 	Branch: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 &devcentercatalog.DevCenterCatalogCatalogGithub {
 	Branch: *string,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 &devcentercatalog.DevCenterCatalogConfig {
 	Connection: interface{},
@@ -1071,10 +1071,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatal
 	DevCenterId: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	CatalogAdogit: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.devCenterCatalog.DevCenterCatalogCatalogAdogit,
-	CatalogGithub: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.devCenterCatalog.DevCenterCatalogCatalogGithub,
+	CatalogAdogit: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.devCenterCatalog.DevCenterCatalogCatalogAdogit,
+	CatalogGithub: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.devCenterCatalog.DevCenterCatalogCatalogGithub,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.devCenterCatalog.DevCenterCatalogTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.devCenterCatalog.DevCenterCatalogTimeouts,
 }
 ```
 
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 &devcentercatalog.DevCenterCatalogTimeouts {
 	Create: *string,
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogAdogitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.NewDevCenterCatalogCatalogAdogitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterCatalogCatalogAdogitOutputReference
 ```
@@ -1680,7 +1680,7 @@ func InternalValue() DevCenterCatalogCatalogAdogit
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogCatalogGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.NewDevCenterCatalogCatalogGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterCatalogCatalogGithubOutputReference
 ```
@@ -2017,7 +2017,7 @@ func InternalValue() DevCenterCatalogCatalogGithub
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.devCenterCatalog.DevCenterCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/devcentercatalog"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/devcentercatalog"
 
 devcentercatalog.NewDevCenterCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DevCenterCatalogTimeoutsOutputReference
 ```

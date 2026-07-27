@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.NewDataAzurermCognitiveAccountProject(scope Construct, id *string, config DataAzurermCognitiveAccountProjectConfig) DataAzurermCognitiveAccountProject
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 &dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProjectConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcog
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectTimeouts,
 }
 ```
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 &dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProjectIdentity {
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 &dataazurermcognitiveaccountproject.DataAzurermCognitiveAccountProjectTimeouts {
 	Read: *string,
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.NewDataAzurermCognitiveAccountProjectIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermCognitiveAccountProjectIdentityList
 ```
@@ -1152,7 +1152,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.NewDataAzurermCognitiveAccountProjectIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermCognitiveAccountProjectIdentityOutputReference
 ```
@@ -1463,7 +1463,7 @@ func InternalValue() DataAzurermCognitiveAccountProjectIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCognitiveAccountProject.DataAzurermCognitiveAccountProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcognitiveaccountproject"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcognitiveaccountproject"
 
 dataazurermcognitiveaccountproject.NewDataAzurermCognitiveAccountProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermCognitiveAccountProjectTimeoutsOutputReference
 ```

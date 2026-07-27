@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.NewApiManagementApiVersionSet(scope Construct, id *string, config ApiManagementApiVersionSetConfig) ApiManagementApiVersionSet
 ```
@@ -448,7 +448,7 @@ func ResetVersionQueryName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.ApiManagementApiVersionSet_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.ApiManagementApiVersionSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apimanagementapiversionset.ApiManagementApiVersionSet_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.ApiManagementApiVersionSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ apimanagementapiversionset.ApiManagementApiVersionSet_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.ApiManagementApiVersionSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 &apimanagementapiversionset.ApiManagementApiVersionSetConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementa
 	VersioningScheme: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementApiVersionSet.ApiManagementApiVersionSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementApiVersionSet.ApiManagementApiVersionSetTimeouts,
 	VersionHeaderName: *string,
 	VersionQueryName: *string,
 }
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 &apimanagementapiversionset.ApiManagementApiVersionSetTimeouts {
 	Create: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiVersionSet.ApiManagementApiVersionSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapiversionset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapiversionset"
 
 apimanagementapiversionset.NewApiManagementApiVersionSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementApiVersionSetTimeoutsOutputReference
 ```

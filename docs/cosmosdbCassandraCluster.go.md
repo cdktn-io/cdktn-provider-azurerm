@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.NewCosmosdbCassandraCluster(scope Construct, id *string, config CosmosdbCassandraClusterConfig) CosmosdbCassandraCluster
 ```
@@ -503,7 +503,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.CosmosdbCassandraCluster_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.CosmosdbCassandraCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ cosmosdbcassandracluster.CosmosdbCassandraCluster_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.CosmosdbCassandraCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ cosmosdbcassandracluster.CosmosdbCassandraCluster_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.CosmosdbCassandraCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1144,7 +1144,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 &cosmosdbcassandracluster.CosmosdbCassandraClusterConfig {
 	Connection: interface{},
@@ -1165,10 +1165,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassan
 	ExternalSeedNodeIpAddresses: *[]*string,
 	HoursBetweenBackups: *f64,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbCassandraCluster.CosmosdbCassandraClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbCassandraCluster.CosmosdbCassandraClusterIdentity,
 	RepairEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbCassandraCluster.CosmosdbCassandraClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbCassandraCluster.CosmosdbCassandraClusterTimeouts,
 	Version: *string,
 }
 ```
@@ -1477,7 +1477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 &cosmosdbcassandracluster.CosmosdbCassandraClusterIdentity {
 	Type: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 &cosmosdbcassandracluster.CosmosdbCassandraClusterTimeouts {
 	Create: *string,
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.NewCosmosdbCassandraClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbCassandraClusterIdentityOutputReference
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() CosmosdbCassandraClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbCassandraCluster.CosmosdbCassandraClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbcassandracluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbcassandracluster"
 
 cosmosdbcassandracluster.NewCosmosdbCassandraClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbCassandraClusterTimeoutsOutputReference
 ```

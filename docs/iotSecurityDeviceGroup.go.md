@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.NewIotSecurityDeviceGroup(scope Construct, id *string, config IotSecurityDeviceGroupConfig) IotSecurityDeviceGroup
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.IotSecurityDeviceGroup_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.IotSecurityDeviceGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ iotsecuritydevicegroup.IotSecurityDeviceGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.IotSecurityDeviceGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ iotsecuritydevicegroup.IotSecurityDeviceGroup_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.IotSecurityDeviceGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupAllowRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 &iotsecuritydevicegroup.IotSecurityDeviceGroupAllowRule {
 	ConnectionFromIpsNotAllowed: *[]*string,
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 &iotsecuritydevicegroup.IotSecurityDeviceGroupConfig {
 	Connection: interface{},
@@ -974,10 +974,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydev
 	Provisioners: *[]interface{},
 	IothubId: *string,
 	Name: *string,
-	AllowRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotSecurityDeviceGroup.IotSecurityDeviceGroupAllowRule,
+	AllowRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotSecurityDeviceGroup.IotSecurityDeviceGroupAllowRule,
 	Id: *string,
 	RangeRule: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotSecurityDeviceGroup.IotSecurityDeviceGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotSecurityDeviceGroup.IotSecurityDeviceGroupTimeouts,
 }
 ```
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupRangeRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 &iotsecuritydevicegroup.IotSecurityDeviceGroupRangeRule {
 	Duration: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 &iotsecuritydevicegroup.IotSecurityDeviceGroupTimeouts {
 	Create: *string,
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupAllowRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.NewIotSecurityDeviceGroupAllowRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotSecurityDeviceGroupAllowRuleOutputReference
 ```
@@ -1672,7 +1672,7 @@ func InternalValue() IotSecurityDeviceGroupAllowRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupRangeRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.NewIotSecurityDeviceGroupRangeRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotSecurityDeviceGroupRangeRuleList
 ```
@@ -1832,7 +1832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupRangeRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.NewIotSecurityDeviceGroupRangeRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotSecurityDeviceGroupRangeRuleOutputReference
 ```
@@ -2187,7 +2187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecurityDeviceGroup.IotSecurityDeviceGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritydevicegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritydevicegroup"
 
 iotsecuritydevicegroup.NewIotSecurityDeviceGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotSecurityDeviceGroupTimeoutsOutputReference
 ```

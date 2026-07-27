@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.NewSentinelDataConnectorAzureSecurityCenter(scope Construct, id *string, config SentinelDataConnectorAzureSecurityCenterConfig) SentinelDataConnectorAzureSecurityCenter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCente
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCente
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 &sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenterConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataco
 	Name: *string,
 	Id: *string,
 	SubscriptionId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenterTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 &sentineldataconnectorazuresecuritycenter.SentinelDataConnectorAzureSecurityCenterTimeouts {
 	Create: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorAzureSecurityCenter.SentinelDataConnectorAzureSecurityCenterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorazuresecuritycenter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorazuresecuritycenter"
 
 sentineldataconnectorazuresecuritycenter.NewSentinelDataConnectorAzureSecurityCenterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorAzureSecurityCenterTimeoutsOutputReference
 ```

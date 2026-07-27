@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.NewStreamAnalyticsOutputEventhub(scope Construct, id *string, config StreamAnalyticsOutputEventhubConfig) StreamAnalyticsOutputEventhub
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 &streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhubConfig {
 	Connection: interface{},
@@ -1063,7 +1063,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalytic
 	EventhubName: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Serialization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubSerialization,
+	Serialization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubSerialization,
 	ServicebusNamespace: *string,
 	StreamAnalyticsJobName: *string,
 	AuthenticationMode: *string,
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalytic
 	PropertyColumns: *[]*string,
 	SharedAccessPolicyKey: *string,
 	SharedAccessPolicyName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubTimeouts,
 }
 ```
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubSerialization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 &streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhubSerialization {
 	Type: *string,
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 &streamanalyticsoutputeventhub.StreamAnalyticsOutputEventhubTimeouts {
 	Create: *string,
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubSerializationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.NewStreamAnalyticsOutputEventhubSerializationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsOutputEventhubSerializationOutputReference
 ```
@@ -1849,7 +1849,7 @@ func InternalValue() StreamAnalyticsOutputEventhubSerialization
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsOutputEventhub.StreamAnalyticsOutputEventhubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticsoutputeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticsoutputeventhub"
 
 streamanalyticsoutputeventhub.NewStreamAnalyticsOutputEventhubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsOutputEventhubTimeoutsOutputReference
 ```

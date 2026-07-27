@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.NewDataAzurermNginxApiKey(scope Construct, id *string, config DataAzurermNginxApiKeyConfig) DataAzurermNginxApiKey
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.DataAzurermNginxApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.DataAzurermNginxApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermnginxapikey.DataAzurermNginxApiKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.DataAzurermNginxApiKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermnginxapikey.DataAzurermNginxApiKey_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.DataAzurermNginxApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 &dataazurermnginxapikey.DataAzurermNginxApiKeyConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermngi
 	Name: *string,
 	NginxDeploymentId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNginxApiKey.DataAzurermNginxApiKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNginxApiKey.DataAzurermNginxApiKeyTimeouts,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 &dataazurermnginxapikey.DataAzurermNginxApiKeyTimeouts {
 	Read: *string,
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNginxApiKey.DataAzurermNginxApiKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnginxapikey"
 
 dataazurermnginxapikey.NewDataAzurermNginxApiKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNginxApiKeyTimeoutsOutputReference
 ```

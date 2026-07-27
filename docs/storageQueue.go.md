@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageQueue.StorageQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.NewStorageQueue(scope Construct, id *string, config StorageQueueConfig) StorageQueue
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageQueue.StorageQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.StorageQueue_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageQueue.StorageQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.StorageQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storagequeue.StorageQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageQueue.StorageQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.StorageQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ storagequeue.StorageQueue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageQueue.StorageQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.StorageQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageQueue.StorageQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 &storagequeue.StorageQueueConfig {
 	Connection: interface{},
@@ -906,7 +906,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
 	Metadata: *map[string]*string,
 	StorageAccountId: *string,
 	StorageAccountName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageQueue.StorageQueueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageQueue.StorageQueueTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageQueue.StorageQueueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 &storagequeue.StorageQueueTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageQueue.StorageQueueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagequeue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagequeue"
 
 storagequeue.NewStorageQueueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageQueueTimeoutsOutputReference
 ```

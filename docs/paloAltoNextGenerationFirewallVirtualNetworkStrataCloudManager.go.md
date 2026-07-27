@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager(scope Construct, id *string, config PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerConfig) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager
 ```
@@ -521,7 +521,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager_IsConstruct(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGener
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager_IsTerraformResource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGener
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1096,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerConfig {
 	Connection: interface{},
@@ -1108,17 +1108,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextge
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile,
+	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile,
 	ResourceGroupName: *string,
 	StrataCloudManagerTenantName: *string,
 	DestinationNat: interface{},
-	DnsSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings,
+	DnsSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity,
 	MarketplaceOfferId: *string,
 	PlanId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts,
 }
 ```
 
@@ -1393,13 +1393,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat {
 	Name: *string,
 	Protocol: *string,
-	BackendConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig,
-	FrontendConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig,
+	BackendConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig,
+	FrontendConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig,
 }
 ```
 
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig {
 	Port: *f64,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig {
 	Port: *f64,
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings {
 	DnsServers: *[]*string,
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity {
 	IdentityIds: *[]*string,
@@ -1655,11 +1655,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile {
 	PublicIpAddressIds: *[]*string,
-	VnetConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration,
+	VnetConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration,
 	EgressNatIpAddressIds: *[]*string,
 	TrustedAddressRanges: *[]*string,
 }
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration {
 	VirtualNetworkId: *string,
@@ -1791,7 +1791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 &paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts {
 	Create: *string,
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference
 ```
@@ -2160,7 +2160,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference
 ```
@@ -2453,7 +2453,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList
 ```
@@ -2613,7 +2613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatOutputReference
 ```
@@ -3008,7 +3008,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference
 ```
@@ -3326,7 +3326,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference
 ```
@@ -3619,7 +3619,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference
 ```
@@ -4005,7 +4005,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference
 ```
@@ -4345,7 +4345,7 @@ func InternalValue() PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager.PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager"
 
 paloaltonextgenerationfirewallvirtualnetworkstratacloudmanager.NewPaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsOutputReference
 ```

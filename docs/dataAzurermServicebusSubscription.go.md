@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.NewDataAzurermServicebusSubscription(scope Construct, id *string, config DataAzurermServicebusSubscriptionConfig) DataAzurermServicebusSubscription
 ```
@@ -353,7 +353,7 @@ func ResetTopicName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.DataAzurermServicebusSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.DataAzurermServicebusSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazurermservicebussubscription.DataAzurermServicebusSubscription_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.DataAzurermServicebusSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ dataazurermservicebussubscription.DataAzurermServicebusSubscription_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.DataAzurermServicebusSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 &dataazurermservicebussubscription.DataAzurermServicebusSubscriptionConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermser
 	Id: *string,
 	NamespaceName: *string,
 	ResourceGroupName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermServicebusSubscription.DataAzurermServicebusSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermServicebusSubscription.DataAzurermServicebusSubscriptionTimeouts,
 	TopicId: *string,
 	TopicName: *string,
 }
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 &dataazurermservicebussubscription.DataAzurermServicebusSubscriptionTimeouts {
 	Read: *string,
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusSubscription.DataAzurermServicebusSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebussubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebussubscription"
 
 dataazurermservicebussubscription.NewDataAzurermServicebusSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermServicebusSubscriptionTimeoutsOutputReference
 ```

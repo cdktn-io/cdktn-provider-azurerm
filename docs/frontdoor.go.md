@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoor(scope Construct, id *string, config FrontdoorConfig) Frontdoor
 ```
@@ -533,7 +533,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.Frontdoor_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.Frontdoor_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ frontdoor.Frontdoor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.Frontdoor_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ frontdoor.Frontdoor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.frontdoor.Frontdoor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.Frontdoor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1196,7 +1196,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorBackendPool {
 	Backend: interface{},
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorBackendPoolBackend {
 	Address: *string,
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorBackendPoolHealthProbe {
 	Name: *string,
@@ -1490,7 +1490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorBackendPoolLoadBalancing {
 	Name: *string,
@@ -1564,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorBackendPoolSettings {
 	EnforceBackendPoolsCertificateNameCheck: interface{},
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorConfig {
 	Connection: interface{},
@@ -1632,7 +1632,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
 	Id: *string,
 	LoadBalancerEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.frontdoor.FrontdoorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.frontdoor.FrontdoorTimeouts,
 }
 ```
 
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorExplicitResourceOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorExplicitResourceOrder {
 
@@ -1924,7 +1924,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorFrontendEndpoint {
 	HostName: *string,
@@ -2012,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorRoutingRule {
 	AcceptedProtocols: *[]*string,
@@ -2020,8 +2020,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
 	Name: *string,
 	PatternsToMatch: *[]*string,
 	Enabled: interface{},
-	ForwardingConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.frontdoor.FrontdoorRoutingRuleForwardingConfiguration,
-	RedirectConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.frontdoor.FrontdoorRoutingRuleRedirectConfiguration,
+	ForwardingConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.frontdoor.FrontdoorRoutingRuleForwardingConfiguration,
+	RedirectConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.frontdoor.FrontdoorRoutingRuleRedirectConfiguration,
 }
 ```
 
@@ -2132,7 +2132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorRoutingRuleForwardingConfiguration {
 	BackendPoolName: *string,
@@ -2262,7 +2262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorRoutingRuleRedirectConfiguration {
 	RedirectProtocol: *string,
@@ -2364,7 +2364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.frontdoor.FrontdoorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 &frontdoor.FrontdoorTimeouts {
 	Create: *string,
@@ -2440,7 +2440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorBackendPoolBackendList
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorBackendPoolBackendOutputReference
 ```
@@ -3042,7 +3042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolHealthProbeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorBackendPoolHealthProbeList
 ```
@@ -3202,7 +3202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolHealthProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolHealthProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorBackendPoolHealthProbeOutputReference
 ```
@@ -3647,7 +3647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorBackendPoolList
 ```
@@ -3807,7 +3807,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolLoadBalancingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorBackendPoolLoadBalancingList
 ```
@@ -3967,7 +3967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolLoadBalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolLoadBalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorBackendPoolLoadBalancingOutputReference
 ```
@@ -4354,7 +4354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorBackendPoolOutputReference
 ```
@@ -4733,7 +4733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorBackendPoolSettingsList
 ```
@@ -4893,7 +4893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorBackendPoolSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorBackendPoolSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorBackendPoolSettingsOutputReference
 ```
@@ -5211,7 +5211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorExplicitResourceOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorExplicitResourceOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorExplicitResourceOrderList
 ```
@@ -5360,7 +5360,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorExplicitResourceOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorExplicitResourceOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorExplicitResourceOrderOutputReference
 ```
@@ -5682,7 +5682,7 @@ func InternalValue() FrontdoorExplicitResourceOrder
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorFrontendEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorFrontendEndpointList
 ```
@@ -5842,7 +5842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorFrontendEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorFrontendEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorFrontendEndpointOutputReference
 ```
@@ -6251,7 +6251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleForwardingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorRoutingRuleForwardingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FrontdoorRoutingRuleForwardingConfigurationOutputReference
 ```
@@ -6725,7 +6725,7 @@ func InternalValue() FrontdoorRoutingRuleForwardingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FrontdoorRoutingRuleList
 ```
@@ -6885,7 +6885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FrontdoorRoutingRuleOutputReference
 ```
@@ -7364,7 +7364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorRoutingRuleRedirectConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorRoutingRuleRedirectConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FrontdoorRoutingRuleRedirectConfigurationOutputReference
 ```
@@ -7773,7 +7773,7 @@ func InternalValue() FrontdoorRoutingRuleRedirectConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.frontdoor.FrontdoorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/frontdoor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/frontdoor"
 
 frontdoor.NewFrontdoorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FrontdoorTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.NewDataAzurermIothubDps(scope Construct, id *string, config DataAzurermIothubDpsConfig) DataAzurermIothubDps
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDps.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.DataAzurermIothubDps_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.DataAzurermIothubDps_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermiothubdps.DataAzurermIothubDps_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.DataAzurermIothubDps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermiothubdps.DataAzurermIothubDps_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.DataAzurermIothubDps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 &dataazurermiothubdps.DataAzurermIothubDpsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermIothubDps.DataAzurermIothubDpsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermIothubDps.DataAzurermIothubDpsTimeouts,
 }
 ```
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDpsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 &dataazurermiothubdps.DataAzurermIothubDpsTimeouts {
 	Read: *string,
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothubDps.DataAzurermIothubDpsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubdps"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubdps"
 
 dataazurermiothubdps.NewDataAzurermIothubDpsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermIothubDpsTimeoutsOutputReference
 ```

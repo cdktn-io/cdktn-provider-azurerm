@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.NewStaticWebAppFunctionAppRegistration(scope Construct, id *string, config StaticWebAppFunctionAppRegistrationConfig) StaticWebAppFunctionAppRegistration
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 &staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistrationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfu
 	FunctionAppId: *string,
 	StaticWebAppId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistrationTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 &staticwebappfunctionappregistration.StaticWebAppFunctionAppRegistrationTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.staticWebAppFunctionAppRegistration.StaticWebAppFunctionAppRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/staticwebappfunctionappregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/staticwebappfunctionappregistration"
 
 staticwebappfunctionappregistration.NewStaticWebAppFunctionAppRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StaticWebAppFunctionAppRegistrationTimeoutsOutputReference
 ```

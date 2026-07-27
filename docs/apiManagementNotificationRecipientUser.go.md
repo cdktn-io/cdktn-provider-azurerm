@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.NewApiManagementNotificationRecipientUser(scope Construct, id *string, config ApiManagementNotificationRecipientUserConfig) ApiManagementNotificationRecipientUser
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 &apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUserConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementn
 	NotificationType: *string,
 	UserId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUserTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 &apimanagementnotificationrecipientuser.ApiManagementNotificationRecipientUserTimeouts {
 	Create: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNotificationRecipientUser.ApiManagementNotificationRecipientUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnotificationrecipientuser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnotificationrecipientuser"
 
 apimanagementnotificationrecipientuser.NewApiManagementNotificationRecipientUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementNotificationRecipientUserTimeoutsOutputReference
 ```

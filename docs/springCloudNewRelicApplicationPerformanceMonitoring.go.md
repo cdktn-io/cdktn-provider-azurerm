@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.NewSpringCloudNewRelicApplicationPerformanceMonitoring(scope Construct, id *string, config SpringCloudNewRelicApplicationPerformanceMonitoringConfig) SpringCloudNewRelicApplicationPerformanceMonitoring
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicati
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoring_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1080,7 +1080,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 &springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnew
 	GloballyEnabled: interface{},
 	Id: *string,
 	Labels: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts,
 }
 ```
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 &springcloudnewrelicapplicationperformancemonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringTimeouts {
 	Create: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudNewRelicApplicationPerformanceMonitoring.SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudnewrelicapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudnewrelicapplicationperformancemonitoring"
 
 springcloudnewrelicapplicationperformancemonitoring.NewSpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudNewRelicApplicationPerformanceMonitoringTimeoutsOutputReference
 ```

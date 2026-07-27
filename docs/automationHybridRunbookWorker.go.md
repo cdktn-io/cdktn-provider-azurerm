@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorker.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.NewAutomationHybridRunbookWorker(scope Construct, id *string, config AutomationHybridRunbookWorkerConfig) AutomationHybridRunbookWorker
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorker.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.AutomationHybridRunbookWorker_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.AutomationHybridRunbookWorker_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ automationhybridrunbookworker.AutomationHybridRunbookWorker_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.AutomationHybridRunbookWorker_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ automationhybridrunbookworker.AutomationHybridRunbookWorker_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.AutomationHybridRunbookWorker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 &automationhybridrunbookworker.AutomationHybridRunbookWorkerConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybr
 	WorkerGroupName: *string,
 	WorkerId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationHybridRunbookWorker.AutomationHybridRunbookWorkerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationHybridRunbookWorker.AutomationHybridRunbookWorkerTimeouts,
 }
 ```
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorkerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 &automationhybridrunbookworker.AutomationHybridRunbookWorkerTimeouts {
 	Create: *string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationHybridRunbookWorker.AutomationHybridRunbookWorkerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationhybridrunbookworker"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationhybridrunbookworker"
 
 automationhybridrunbookworker.NewAutomationHybridRunbookWorkerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationHybridRunbookWorkerTimeoutsOutputReference
 ```

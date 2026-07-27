@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.NewTenantTemplateDeployment(scope Construct, id *string, config TenantTemplateDeploymentConfig) TenantTemplateDeployment
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.TenantTemplateDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.TenantTemplateDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ tenanttemplatedeployment.TenantTemplateDeployment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.TenantTemplateDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ tenanttemplatedeployment.TenantTemplateDeployment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.TenantTemplateDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -960,7 +960,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 &tenanttemplatedeployment.TenantTemplateDeploymentConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplate
 	Tags: *map[string]*string,
 	TemplateContent: *string,
 	TemplateSpecVersionId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts,
 }
 ```
 
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 &tenanttemplatedeployment.TenantTemplateDeploymentTimeouts {
 	Create: *string,
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.tenantTemplateDeployment.TenantTemplateDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/tenanttemplatedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/tenanttemplatedeployment"
 
 tenanttemplatedeployment.NewTenantTemplateDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TenantTemplateDeploymentTimeoutsOutputReference
 ```

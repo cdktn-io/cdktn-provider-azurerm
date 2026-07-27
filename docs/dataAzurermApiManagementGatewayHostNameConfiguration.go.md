@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.NewDataAzurermApiManagementGatewayHostNameConfiguration(scope Construct, id *string, config DataAzurermApiManagementGatewayHostNameConfigurationConfig) DataAzurermApiManagementGatewayHostNameConfiguration
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfiguration.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfiguration_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 &dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfigurationConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapi
 	GatewayName: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfigurationTimeouts,
 }
 ```
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 &dataazurermapimanagementgatewayhostnameconfiguration.DataAzurermApiManagementGatewayHostNameConfigurationTimeouts {
 	Read: *string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApiManagementGatewayHostNameConfiguration.DataAzurermApiManagementGatewayHostNameConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermapimanagementgatewayhostnameconfiguration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermapimanagementgatewayhostnameconfiguration"
 
 dataazurermapimanagementgatewayhostnameconfiguration.NewDataAzurermApiManagementGatewayHostNameConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermApiManagementGatewayHostNameConfigurationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentType(scope Construct, id *string, config DataAzurermDevCenterProjectEnvironmentTypeConfig) DataAzurermDevCenterProjectEnvironmentType
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentType_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmen
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmen
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 &dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentTypeConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdev
 	DevCenterProjectId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 &dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentTypeIdentity {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdev
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 &dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentTypeTimeouts {
 	Read: *string,
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 &dataazurermdevcenterprojectenvironmenttype.DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignment {
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdev
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentTypeIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDevCenterProjectEnvironmentTypeIdentityList
 ```
@@ -1118,7 +1118,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentTypeIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDevCenterProjectEnvironmentTypeIdentityOutputReference
 ```
@@ -1429,7 +1429,7 @@ func InternalValue() DataAzurermDevCenterProjectEnvironmentTypeIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDevCenterProjectEnvironmentTypeTimeoutsOutputReference
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentList
 ```
@@ -1856,7 +1856,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectEnvironmentType.DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectenvironmenttype"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectenvironmenttype"
 
 dataazurermdevcenterprojectenvironmenttype.NewDataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermDevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference
 ```

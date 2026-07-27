@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.NewDataAzurermDataFactoryTriggerSchedules(scope Construct, id *string, config DataAzurermDataFactoryTriggerSchedulesConfig) DataAzurermDataFactoryTriggerSchedules
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 &dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedulesConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdat
 	Provisioners: *[]interface{},
 	DataFactoryId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedulesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedulesTimeouts,
 }
 ```
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedulesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 &dataazurermdatafactorytriggerschedules.DataAzurermDataFactoryTriggerSchedulesTimeouts {
 	Read: *string,
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDataFactoryTriggerSchedules.DataAzurermDataFactoryTriggerSchedulesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdatafactorytriggerschedules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdatafactorytriggerschedules"
 
 dataazurermdatafactorytriggerschedules.NewDataAzurermDataFactoryTriggerSchedulesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDataFactoryTriggerSchedulesTimeoutsOutputReference
 ```

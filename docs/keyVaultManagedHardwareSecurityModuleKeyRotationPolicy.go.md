@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.NewKeyVaultManagedHardwareSecurityModuleKeyRotationPolicy(scope Construct, id *string, config KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig) KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 &keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanage
 	Id: *string,
 	TimeAfterCreation: *string,
 	TimeBeforeExpiry: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 &keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeouts {
 	Create: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultManagedHardwareSecurityModuleKeyRotationPolicy.KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy"
 
 keyvaultmanagedhardwaresecuritymodulekeyrotationpolicy.NewKeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultManagedHardwareSecurityModuleKeyRotationPolicyTimeoutsOutputReference
 ```

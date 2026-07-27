@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.NewDataAzurermLbOutboundRule(scope Construct, id *string, config DataAzurermLbOutboundRuleConfig) DataAzurermLbOutboundRule
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.DataAzurermLbOutboundRule_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.DataAzurermLbOutboundRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermlboutboundrule.DataAzurermLbOutboundRule_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.DataAzurermLbOutboundRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermlboutboundrule.DataAzurermLbOutboundRule_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.DataAzurermLbOutboundRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 &dataazurermlboutboundrule.DataAzurermLbOutboundRuleConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlbo
 	LoadbalancerId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts,
 }
 ```
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleFrontendIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 &dataazurermlboutboundrule.DataAzurermLbOutboundRuleFrontendIpConfiguration {
 
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlbo
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 &dataazurermlboutboundrule.DataAzurermLbOutboundRuleTimeouts {
 	Read: *string,
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleFrontendIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.NewDataAzurermLbOutboundRuleFrontendIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLbOutboundRuleFrontendIpConfigurationList
 ```
@@ -1116,7 +1116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleFrontendIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.NewDataAzurermLbOutboundRuleFrontendIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLbOutboundRuleFrontendIpConfigurationOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() DataAzurermLbOutboundRuleFrontendIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLbOutboundRule.DataAzurermLbOutboundRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlboutboundrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlboutboundrule"
 
 dataazurermlboutboundrule.NewDataAzurermLbOutboundRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermLbOutboundRuleTimeoutsOutputReference
 ```

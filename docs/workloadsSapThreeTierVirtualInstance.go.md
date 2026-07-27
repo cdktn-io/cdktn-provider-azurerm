@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstance(scope Construct, id *string, config WorkloadsSapThreeTierVirtualInstanceConfig) WorkloadsSapThreeTierVirtualInstance
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1078,7 +1078,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceConfig {
 	Connection: interface{},
@@ -1095,13 +1095,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapth
 	ResourceGroupName: *string,
 	SapFqdn: *string,
 	SapProduct: *string,
-	ThreeTierConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration,
+	ThreeTierConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceIdentity,
 	ManagedResourceGroupName: *string,
 	ManagedResourcesNetworkAccessType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceTimeouts,
 }
 ```
 
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceIdentity {
 	IdentityIds: *[]*string,
@@ -1431,17 +1431,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration {
-	ApplicationServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration,
+	ApplicationServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration,
 	AppResourceGroupName: *string,
-	CentralServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration,
-	DatabaseServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration,
+	CentralServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration,
+	DatabaseServerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration,
 	HighAvailabilityType: *string,
-	ResourceNames: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames,
+	ResourceNames: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames,
 	SecondaryIpEnabled: interface{},
-	TransportCreateAndMount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount,
+	TransportCreateAndMount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount,
 }
 ```
 
@@ -1571,12 +1571,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration {
 	InstanceCount: *f64,
 	SubnetId: *string,
-	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration,
+	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration,
 }
 ```
 
@@ -1633,11 +1633,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration {
-	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage,
-	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile,
+	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage,
+	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile,
 	VirtualMachineSize: *string,
 }
 ```
@@ -1697,7 +1697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage {
 	Offer: *string,
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile {
 	AdminUsername: *string,
@@ -1831,12 +1831,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration {
 	InstanceCount: *f64,
 	SubnetId: *string,
-	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration,
+	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration,
 }
 ```
 
@@ -1893,11 +1893,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration {
-	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage,
-	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile,
+	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage,
+	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile,
 	VirtualMachineSize: *string,
 }
 ```
@@ -1957,7 +1957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage {
 	Offer: *string,
@@ -2031,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile {
 	AdminUsername: *string,
@@ -2091,12 +2091,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration {
 	InstanceCount: *f64,
 	SubnetId: *string,
-	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration,
+	VirtualMachineConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration,
 	DatabaseType: *string,
 	DiskVolumeConfiguration: interface{},
 }
@@ -2183,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration {
 	NumberOfDisks: *f64,
@@ -2257,11 +2257,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration {
-	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage,
-	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile,
+	Image: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage,
+	OsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile,
 	VirtualMachineSize: *string,
 }
 ```
@@ -2321,7 +2321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage {
 	Offer: *string,
@@ -2395,7 +2395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile {
 	AdminUsername: *string,
@@ -2455,13 +2455,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames {
-	ApplicationServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer,
-	CentralServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer,
-	DatabaseServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer,
-	SharedStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage,
+	ApplicationServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer,
+	CentralServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer,
+	DatabaseServer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer,
+	SharedStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage,
 }
 ```
 
@@ -2537,7 +2537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer {
 	AvailabilitySetName: *string,
@@ -2585,7 +2585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine {
 	DataDisk: interface{},
@@ -2675,7 +2675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk {
 	Names: *[]*string,
@@ -2721,11 +2721,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer {
 	AvailabilitySetName: *string,
-	LoadBalancer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer,
+	LoadBalancer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer,
 	VirtualMachine: interface{},
 }
 ```
@@ -2785,7 +2785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer {
 	BackendPoolNames: *[]*string,
@@ -2859,7 +2859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine {
 	DataDisk: interface{},
@@ -2949,7 +2949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk {
 	Names: *[]*string,
@@ -2995,11 +2995,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer {
 	AvailabilitySetName: *string,
-	LoadBalancer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer,
+	LoadBalancer: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer,
 	VirtualMachine: interface{},
 }
 ```
@@ -3059,7 +3059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer {
 	BackendPoolNames: *[]*string,
@@ -3133,7 +3133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine {
 	DataDisk: interface{},
@@ -3223,7 +3223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk {
 	Names: *[]*string,
@@ -3269,7 +3269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage {
 	AccountName: *string,
@@ -3315,7 +3315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount {
 	ResourceGroupId: *string,
@@ -3361,7 +3361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 &workloadssapthreetiervirtualinstance.WorkloadsSapThreeTierVirtualInstanceTimeouts {
 	Create: *string,
@@ -3437,7 +3437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference
 ```
@@ -3730,7 +3730,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference
 ```
@@ -4058,7 +4058,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference
 ```
@@ -4395,7 +4395,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference
 ```
@@ -4710,7 +4710,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference
 ```
@@ -5051,7 +5051,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference
 ```
@@ -5379,7 +5379,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationC
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference
 ```
@@ -5716,7 +5716,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationC
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference
 ```
@@ -6031,7 +6031,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationC
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference
 ```
@@ -6372,7 +6372,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationC
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList
 ```
@@ -6532,7 +6532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationOutputReference
 ```
@@ -6887,7 +6887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference
 ```
@@ -7286,7 +7286,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationD
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference
 ```
@@ -7623,7 +7623,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationD
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference
 ```
@@ -7938,7 +7938,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationD
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference
 ```
@@ -8279,7 +8279,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationD
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference
 ```
@@ -8797,7 +8797,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference
 ```
@@ -9117,7 +9117,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList
 ```
@@ -9277,7 +9277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskOutputReference
 ```
@@ -9588,7 +9588,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList
 ```
@@ -9748,7 +9748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineOutputReference
 ```
@@ -10173,7 +10173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference
 ```
@@ -10538,7 +10538,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference
 ```
@@ -10900,7 +10900,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList
 ```
@@ -11060,7 +11060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference
 ```
@@ -11371,7 +11371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList
 ```
@@ -11531,7 +11531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineOutputReference
 ```
@@ -11956,7 +11956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference
 ```
@@ -12321,7 +12321,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference
 ```
@@ -12683,7 +12683,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList
 ```
@@ -12843,7 +12843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskOutputReference
 ```
@@ -13154,7 +13154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList
 ```
@@ -13314,7 +13314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineOutputReference
 ```
@@ -13739,7 +13739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference
 ```
@@ -14156,7 +14156,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference
 ```
@@ -14463,7 +14463,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationR
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference
 ```
@@ -14770,7 +14770,7 @@ func InternalValue() WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationT
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.workloadsSapThreeTierVirtualInstance.WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/workloadssapthreetiervirtualinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/workloadssapthreetiervirtualinstance"
 
 workloadssapthreetiervirtualinstance.NewWorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NewNetworkManagerIpamPool(scope Construct, id *string, config NetworkManagerIpamPoolConfig) NetworkManagerIpamPool
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NetworkManagerIpamPool_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NetworkManagerIpamPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkmanageripampool.NetworkManagerIpamPool_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NetworkManagerIpamPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkmanageripampool.NetworkManagerIpamPool_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NetworkManagerIpamPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 &networkmanageripampool.NetworkManagerIpamPoolConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanager
 	Id: *string,
 	ParentPoolName: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts,
 }
 ```
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 &networkmanageripampool.NetworkManagerIpamPoolTimeouts {
 	Create: *string,
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerIpamPool.NetworkManagerIpamPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanageripampool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanageripampool"
 
 networkmanageripampool.NewNetworkManagerIpamPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerIpamPoolTimeoutsOutputReference
 ```

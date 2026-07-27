@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.NewManagedRedisGeoReplication(scope Construct, id *string, config ManagedRedisGeoReplicationConfig) ManagedRedisGeoReplication
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.ManagedRedisGeoReplication_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.ManagedRedisGeoReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ managedredisgeoreplication.ManagedRedisGeoReplication_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.ManagedRedisGeoReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ managedredisgeoreplication.ManagedRedisGeoReplication_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.ManagedRedisGeoReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 &managedredisgeoreplication.ManagedRedisGeoReplicationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisge
 	LinkedManagedRedisIds: *[]*string,
 	ManagedRedisId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 &managedredisgeoreplication.ManagedRedisGeoReplicationTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedRedisGeoReplication.ManagedRedisGeoReplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedredisgeoreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedredisgeoreplication"
 
 managedredisgeoreplication.NewManagedRedisGeoReplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedRedisGeoReplicationTimeoutsOutputReference
 ```

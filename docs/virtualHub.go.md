@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHub.VirtualHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.NewVirtualHub(scope Construct, id *string, config VirtualHubConfig) VirtualHub
 ```
@@ -496,7 +496,7 @@ func ResetVirtualWanId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualHub.VirtualHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.VirtualHub_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualHub.VirtualHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.VirtualHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ virtualhub.VirtualHub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualHub.VirtualHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.VirtualHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ virtualhub.VirtualHub_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualHub.VirtualHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.VirtualHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1104,7 +1104,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHub.VirtualHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 &virtualhub.VirtualHubConfig {
 	Connection: interface{},
@@ -1124,7 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
 	Route: interface{},
 	Sku: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualHub.VirtualHubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualHub.VirtualHubTimeouts,
 	VirtualRouterAutoScaleMinCapacity: *f64,
 	VirtualWanId: *string,
 }
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHub.VirtualHubRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 &virtualhub.VirtualHubRoute {
 	AddressPrefixes: *[]*string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualHub.VirtualHubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 &virtualhub.VirtualHubTimeouts {
 	Create: *string,
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHub.VirtualHubRouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.NewVirtualHubRouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualHubRouteList
 ```
@@ -1677,7 +1677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHub.VirtualHubRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.NewVirtualHubRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualHubRouteOutputReference
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualHub.VirtualHubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualhub"
 
 virtualhub.NewVirtualHubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualHubTimeoutsOutputReference
 ```

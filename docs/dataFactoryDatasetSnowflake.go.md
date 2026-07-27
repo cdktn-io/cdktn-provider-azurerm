@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.NewDataFactoryDatasetSnowflake(scope Construct, id *string, config DataFactoryDatasetSnowflakeConfig) DataFactoryDatasetSnowflake
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.DataFactoryDatasetSnowflake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1071,7 +1071,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 &datafactorydatasetsnowflake.DataFactoryDatasetSnowflakeConfig {
 	Connection: interface{},
@@ -1093,7 +1093,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydat
 	SchemaColumn: interface{},
 	SchemaName: *string,
 	TableName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeTimeouts,
 }
 ```
 
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeSchemaColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 &datafactorydatasetsnowflake.DataFactoryDatasetSnowflakeSchemaColumn {
 	Name: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 &datafactorydatasetsnowflake.DataFactoryDatasetSnowflakeTimeouts {
 	Create: *string,
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeSchemaColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.NewDataFactoryDatasetSnowflakeSchemaColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryDatasetSnowflakeSchemaColumnList
 ```
@@ -1672,7 +1672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeSchemaColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.NewDataFactoryDatasetSnowflakeSchemaColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryDatasetSnowflakeSchemaColumnOutputReference
 ```
@@ -2048,7 +2048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetSnowflake.DataFactoryDatasetSnowflakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetsnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetsnowflake"
 
 datafactorydatasetsnowflake.NewDataFactoryDatasetSnowflakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetSnowflakeTimeoutsOutputReference
 ```

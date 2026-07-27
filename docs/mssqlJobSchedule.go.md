@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.NewMssqlJobSchedule(scope Construct, id *string, config MssqlJobScheduleConfig) MssqlJobSchedule
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.MssqlJobSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.MssqlJobSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ mssqljobschedule.MssqlJobSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.MssqlJobSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ mssqljobschedule.MssqlJobSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.MssqlJobSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -920,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 &mssqljobschedule.MssqlJobScheduleConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedu
 	Id: *string,
 	Interval: *string,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlJobSchedule.MssqlJobScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlJobSchedule.MssqlJobScheduleTimeouts,
 }
 ```
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 &mssqljobschedule.MssqlJobScheduleTimeouts {
 	Create: *string,
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobSchedule.MssqlJobScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobschedule"
 
 mssqljobschedule.NewMssqlJobScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlJobScheduleTimeoutsOutputReference
 ```

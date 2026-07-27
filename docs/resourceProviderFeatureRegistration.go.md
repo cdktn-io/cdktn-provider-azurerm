@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.NewResourceProviderFeatureRegistration(scope Construct, id *string, config ResourceProviderFeatureRegistrationConfig) ResourceProviderFeatureRegistration
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.ResourceProviderFeatureRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 &resourceproviderfeatureregistration.ResourceProviderFeatureRegistrationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceprovid
 	Name: *string,
 	ProviderName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 &resourceproviderfeatureregistration.ResourceProviderFeatureRegistrationTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceProviderFeatureRegistration.ResourceProviderFeatureRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourceproviderfeatureregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourceproviderfeatureregistration"
 
 resourceproviderfeatureregistration.NewResourceProviderFeatureRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceProviderFeatureRegistrationTimeoutsOutputReference
 ```

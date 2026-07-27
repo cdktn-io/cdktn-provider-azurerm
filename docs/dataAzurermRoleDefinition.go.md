@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.NewDataAzurermRoleDefinition(scope Construct, id *string, config DataAzurermRoleDefinitionConfig) DataAzurermRoleDefinition
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.DataAzurermRoleDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.DataAzurermRoleDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermroledefinition.DataAzurermRoleDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.DataAzurermRoleDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermroledefinition.DataAzurermRoleDefinition_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.DataAzurermRoleDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 &dataazurermroledefinition.DataAzurermRoleDefinitionConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 	Name: *string,
 	RoleDefinitionId: *string,
 	Scope: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermRoleDefinition.DataAzurermRoleDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermRoleDefinition.DataAzurermRoleDefinitionTimeouts,
 }
 ```
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 &dataazurermroledefinition.DataAzurermRoleDefinitionPermissions {
 
@@ -957,7 +957,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 &dataazurermroledefinition.DataAzurermRoleDefinitionTimeouts {
 	Read: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.NewDataAzurermRoleDefinitionPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermRoleDefinitionPermissionsList
 ```
@@ -1140,7 +1140,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.NewDataAzurermRoleDefinitionPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermRoleDefinitionPermissionsOutputReference
 ```
@@ -1473,7 +1473,7 @@ func InternalValue() DataAzurermRoleDefinitionPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleDefinition.DataAzurermRoleDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroledefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroledefinition"
 
 dataazurermroledefinition.NewDataAzurermRoleDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermRoleDefinitionTimeoutsOutputReference
 ```

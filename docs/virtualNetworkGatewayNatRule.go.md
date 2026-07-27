@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRule(scope Construct, id *string, config VirtualNetworkGatewayNatRuleConfig) VirtualNetworkGatewayNatRule
 ```
@@ -474,7 +474,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -983,7 +983,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 &virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRuleConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetwork
 	Id: *string,
 	IpConfigurationId: *string,
 	Mode: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleTimeouts,
 	Type: *string,
 }
 ```
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleExternalMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 &virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRuleExternalMapping {
 	AddressSpace: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleInternalMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 &virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRuleInternalMapping {
 	AddressSpace: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 &virtualnetworkgatewaynatrule.VirtualNetworkGatewayNatRuleTimeouts {
 	Create: *string,
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleExternalMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRuleExternalMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualNetworkGatewayNatRuleExternalMappingList
 ```
@@ -1562,7 +1562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleExternalMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRuleExternalMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualNetworkGatewayNatRuleExternalMappingOutputReference
 ```
@@ -1880,7 +1880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleInternalMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRuleInternalMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualNetworkGatewayNatRuleInternalMappingList
 ```
@@ -2040,7 +2040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleInternalMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRuleInternalMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualNetworkGatewayNatRuleInternalMappingOutputReference
 ```
@@ -2358,7 +2358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualNetworkGatewayNatRule.VirtualNetworkGatewayNatRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualnetworkgatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualnetworkgatewaynatrule"
 
 virtualnetworkgatewaynatrule.NewVirtualNetworkGatewayNatRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualNetworkGatewayNatRuleTimeoutsOutputReference
 ```
