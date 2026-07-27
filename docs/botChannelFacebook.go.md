@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.NewBotChannelFacebook(scope Construct, id *string, config BotChannelFacebookConfig) BotChannelFacebook
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.BotChannelFacebook_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.BotChannelFacebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ botchannelfacebook.BotChannelFacebook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.BotChannelFacebook_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ botchannelfacebook.BotChannelFacebook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.BotChannelFacebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -905,7 +905,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 &botchannelfacebook.BotChannelFacebookConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelface
 	Page: interface{},
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.botChannelFacebook.BotChannelFacebookTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.botChannelFacebook.BotChannelFacebookTimeouts,
 }
 ```
 
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookPage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 &botchannelfacebook.BotChannelFacebookPage {
 	AccessToken: *string,
@@ -1175,7 +1175,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 &botchannelfacebook.BotChannelFacebookTimeouts {
 	Create: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookPageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.NewBotChannelFacebookPageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BotChannelFacebookPageList
 ```
@@ -1411,7 +1411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.NewBotChannelFacebookPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BotChannelFacebookPageOutputReference
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelFacebook.BotChannelFacebookTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelfacebook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelfacebook"
 
 botchannelfacebook.NewBotChannelFacebookTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotChannelFacebookTimeoutsOutputReference
 ```

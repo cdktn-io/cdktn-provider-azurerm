@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.NewDataAzurermIothubSharedAccessPolicy(scope Construct, id *string, config DataAzurermIothubSharedAccessPolicyConfig) DataAzurermIothubSharedAccessPolicy
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 &dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicyConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicyTimeouts,
 }
 ```
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 &dataazurermiothubsharedaccesspolicy.DataAzurermIothubSharedAccessPolicyTimeouts {
 	Read: *string,
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothubSharedAccessPolicy.DataAzurermIothubSharedAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothubsharedaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermiothubsharedaccesspolicy"
 
 dataazurermiothubsharedaccesspolicy.NewDataAzurermIothubSharedAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermIothubSharedAccessPolicyTimeoutsOutputReference
 ```

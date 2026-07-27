@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.NewAdvancedThreatProtection(scope Construct, id *string, config AdvancedThreatProtectionConfig) AdvancedThreatProtection
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.AdvancedThreatProtection_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.AdvancedThreatProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ advancedthreatprotection.AdvancedThreatProtection_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.AdvancedThreatProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ advancedthreatprotection.AdvancedThreatProtection_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.AdvancedThreatProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 &advancedthreatprotection.AdvancedThreatProtectionConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreat
 	Enabled: interface{},
 	TargetResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.advancedThreatProtection.AdvancedThreatProtectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.advancedThreatProtection.AdvancedThreatProtectionTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 &advancedthreatprotection.AdvancedThreatProtectionTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.advancedThreatProtection.AdvancedThreatProtectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/advancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/advancedthreatprotection"
 
 advancedthreatprotection.NewAdvancedThreatProtectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AdvancedThreatProtectionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.NewCdnFrontdoorEndpoint(scope Construct, id *string, config CdnFrontdoorEndpointConfig) CdnFrontdoorEndpoint
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.CdnFrontdoorEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.CdnFrontdoorEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cdnfrontdoorendpoint.CdnFrontdoorEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.CdnFrontdoorEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ cdnfrontdoorendpoint.CdnFrontdoorEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.CdnFrontdoorEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 &cdnfrontdoorendpoint.CdnFrontdoorEndpointConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdooren
 	Enabled: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorEndpoint.CdnFrontdoorEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorEndpoint.CdnFrontdoorEndpointTimeouts,
 }
 ```
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 &cdnfrontdoorendpoint.CdnFrontdoorEndpointTimeouts {
 	Create: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorEndpoint.CdnFrontdoorEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorendpoint"
 
 cdnfrontdoorendpoint.NewCdnFrontdoorEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorEndpointTimeoutsOutputReference
 ```

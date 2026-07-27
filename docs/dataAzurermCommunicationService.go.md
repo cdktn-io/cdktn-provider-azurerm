@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.NewDataAzurermCommunicationService(scope Construct, id *string, config DataAzurermCommunicationServiceConfig) DataAzurermCommunicationService
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.DataAzurermCommunicationService_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.DataAzurermCommunicationService_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermcommunicationservice.DataAzurermCommunicationService_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.DataAzurermCommunicationService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermcommunicationservice.DataAzurermCommunicationService_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.DataAzurermCommunicationService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 &dataazurermcommunicationservice.DataAzurermCommunicationServiceConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcom
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermCommunicationService.DataAzurermCommunicationServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermCommunicationService.DataAzurermCommunicationServiceTimeouts,
 }
 ```
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 &dataazurermcommunicationservice.DataAzurermCommunicationServiceTimeouts {
 	Read: *string,
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCommunicationService.DataAzurermCommunicationServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcommunicationservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcommunicationservice"
 
 dataazurermcommunicationservice.NewDataAzurermCommunicationServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermCommunicationServiceTimeoutsOutputReference
 ```

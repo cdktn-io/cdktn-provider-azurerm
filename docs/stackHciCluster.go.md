@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.NewStackHciCluster(scope Construct, id *string, config StackHciClusterConfig) StackHciCluster
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.StackHciCluster_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.StackHciCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ stackhcicluster.StackHciCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.StackHciCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ stackhcicluster.StackHciCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciCluster.StackHciCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.StackHciCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1017,7 +1017,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciCluster.StackHciClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 &stackhcicluster.StackHciClusterConfig {
 	Connection: interface{},
@@ -1033,10 +1033,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluste
 	AutomanageConfigurationId: *string,
 	ClientId: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciCluster.StackHciClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciCluster.StackHciClusterIdentity,
 	Tags: *map[string]*string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciCluster.StackHciClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciCluster.StackHciClusterTimeouts,
 }
 ```
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciCluster.StackHciClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 &stackhcicluster.StackHciClusterIdentity {
 	Type: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 &stackhcicluster.StackHciClusterTimeouts {
 	Create: *string,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciCluster.StackHciClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.NewStackHciClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciClusterIdentityOutputReference
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() StackHciClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciCluster.StackHciClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcicluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcicluster"
 
 stackhcicluster.NewStackHciClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciClusterTimeoutsOutputReference
 ```

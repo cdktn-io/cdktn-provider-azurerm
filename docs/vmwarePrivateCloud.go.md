@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.NewVmwarePrivateCloud(scope Construct, id *string, config VmwarePrivateCloudConfig) VmwarePrivateCloud
 ```
@@ -468,7 +468,7 @@ func ResetVcenterPassword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.VmwarePrivateCloud_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.VmwarePrivateCloud_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ vmwareprivatecloud.VmwarePrivateCloud_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.VmwarePrivateCloud_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ vmwareprivatecloud.VmwarePrivateCloud_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloud.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.VmwarePrivateCloud_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudCircuit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 &vmwareprivatecloud.VmwarePrivateCloudCircuit {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatec
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 &vmwareprivatecloud.VmwarePrivateCloudConfig {
 	Connection: interface{},
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatec
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	ManagementCluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vmwarePrivateCloud.VmwarePrivateCloudManagementCluster,
+	ManagementCluster: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vmwarePrivateCloud.VmwarePrivateCloudManagementCluster,
 	Name: *string,
 	NetworkSubnetCidr: *string,
 	ResourceGroupName: *string,
@@ -1153,7 +1153,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatec
 	InternetConnectionEnabled: interface{},
 	NsxtPassword: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vmwarePrivateCloud.VmwarePrivateCloudTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vmwarePrivateCloud.VmwarePrivateCloudTimeouts,
 	VcenterPassword: *string,
 }
 ```
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudManagementCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 &vmwareprivatecloud.VmwarePrivateCloudManagementCluster {
 	Size: *f64,
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 &vmwareprivatecloud.VmwarePrivateCloudTimeouts {
 	Create: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudCircuitList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.NewVmwarePrivateCloudCircuitList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwarePrivateCloudCircuitList
 ```
@@ -1667,7 +1667,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudCircuitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.NewVmwarePrivateCloudCircuitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VmwarePrivateCloudCircuitOutputReference
 ```
@@ -1978,7 +1978,7 @@ func InternalValue() VmwarePrivateCloudCircuit
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudManagementClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.NewVmwarePrivateCloudManagementClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwarePrivateCloudManagementClusterOutputReference
 ```
@@ -2271,7 +2271,7 @@ func InternalValue() VmwarePrivateCloudManagementCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwarePrivateCloud.VmwarePrivateCloudTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vmwareprivatecloud"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vmwareprivatecloud"
 
 vmwareprivatecloud.NewVmwarePrivateCloudTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwarePrivateCloudTimeoutsOutputReference
 ```

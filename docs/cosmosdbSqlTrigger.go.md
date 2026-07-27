@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.NewCosmosdbSqlTrigger(scope Construct, id *string, config CosmosdbSqlTriggerConfig) CosmosdbSqlTrigger
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.CosmosdbSqlTrigger_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.CosmosdbSqlTrigger_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cosmosdbsqltrigger.CosmosdbSqlTrigger_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.CosmosdbSqlTrigger_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cosmosdbsqltrigger.CosmosdbSqlTrigger_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTrigger.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.CosmosdbSqlTrigger_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 &cosmosdbsqltrigger.CosmosdbSqlTriggerConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltri
 	Operation: *string,
 	Type: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlTrigger.CosmosdbSqlTriggerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlTrigger.CosmosdbSqlTriggerTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTriggerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 &cosmosdbsqltrigger.CosmosdbSqlTriggerTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlTrigger.CosmosdbSqlTriggerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqltrigger"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqltrigger"
 
 cosmosdbsqltrigger.NewCosmosdbSqlTriggerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlTriggerTimeoutsOutputReference
 ```

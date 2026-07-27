@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.NewAutomationRuntimeEnvironment(scope Construct, id *string, config AutomationRuntimeEnvironmentConfig) AutomationRuntimeEnvironment
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.AutomationRuntimeEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.AutomationRuntimeEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ automationruntimeenvironment.AutomationRuntimeEnvironment_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.AutomationRuntimeEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ automationruntimeenvironment.AutomationRuntimeEnvironment_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.AutomationRuntimeEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 &automationruntimeenvironment.AutomationRuntimeEnvironmentConfig {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationrunt
 	Id: *string,
 	RuntimeDefaultPackages: *map[string]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts,
 }
 ```
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 &automationruntimeenvironment.AutomationRuntimeEnvironmentTimeouts {
 	Create: *string,
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationRuntimeEnvironment.AutomationRuntimeEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationruntimeenvironment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationruntimeenvironment"
 
 automationruntimeenvironment.NewAutomationRuntimeEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationRuntimeEnvironmentTimeoutsOutputReference
 ```

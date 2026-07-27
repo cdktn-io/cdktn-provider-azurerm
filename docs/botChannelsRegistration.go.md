@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.NewBotChannelsRegistration(scope Construct, id *string, config BotChannelsRegistrationConfig) BotChannelsRegistration
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.BotChannelsRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.BotChannelsRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ botchannelsregistration.BotChannelsRegistration_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.BotChannelsRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ botchannelsregistration.BotChannelsRegistration_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.BotChannelsRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1276,7 +1276,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 &botchannelsregistration.BotChannelsRegistrationConfig {
 	Connection: interface{},
@@ -1306,7 +1306,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsreg
 	PublicNetworkAccessEnabled: interface{},
 	StreamingEndpointEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.botChannelsRegistration.BotChannelsRegistrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.botChannelsRegistration.BotChannelsRegistrationTimeouts,
 }
 ```
 
@@ -1677,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 &botchannelsregistration.BotChannelsRegistrationTimeouts {
 	Create: *string,
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelsRegistration.BotChannelsRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsregistration"
 
 botchannelsregistration.NewBotChannelsRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotChannelsRegistrationTimeoutsOutputReference
 ```

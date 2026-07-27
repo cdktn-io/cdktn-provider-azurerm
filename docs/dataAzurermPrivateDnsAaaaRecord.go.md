@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.NewDataAzurermPrivateDnsAaaaRecord(scope Construct, id *string, config DataAzurermPrivateDnsAaaaRecordConfig) DataAzurermPrivateDnsAaaaRecord
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecord.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 &dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecordConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpri
 	ResourceGroupName: *string,
 	ZoneName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecordTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecordTimeouts,
 }
 ```
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecordTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 &dataazurermprivatednsaaaarecord.DataAzurermPrivateDnsAaaaRecordTimeouts {
 	Read: *string,
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsAaaaRecord.DataAzurermPrivateDnsAaaaRecordTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsaaaarecord"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsaaaarecord"
 
 dataazurermprivatednsaaaarecord.NewDataAzurermPrivateDnsAaaaRecordTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermPrivateDnsAaaaRecordTimeoutsOutputReference
 ```

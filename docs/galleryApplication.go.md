@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.NewGalleryApplication(scope Construct, id *string, config GalleryApplicationConfig) GalleryApplication
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.GalleryApplication_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.GalleryApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ galleryapplication.GalleryApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.GalleryApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ galleryapplication.GalleryApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.GalleryApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 &galleryapplication.GalleryApplicationConfig {
 	Connection: interface{},
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplica
 	PrivacyStatementUri: *string,
 	ReleaseNoteUri: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.galleryApplication.GalleryApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.galleryApplication.GalleryApplicationTimeouts,
 }
 ```
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 &galleryapplication.GalleryApplicationTimeouts {
 	Create: *string,
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.galleryApplication.GalleryApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/galleryapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/galleryapplication"
 
 galleryapplication.NewGalleryApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GalleryApplicationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.NewMssqlManagedInstanceSecurityAlertPolicy(scope Construct, id *string, config MssqlManagedInstanceSecurityAlertPolicyConfig) MssqlManagedInstanceSecurityAlertPolicy
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 &mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicyConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedin
 	RetentionDays: *f64,
 	StorageAccountAccessKey: *string,
 	StorageEndpoint: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicyTimeouts,
 }
 ```
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 &mssqlmanagedinstancesecurityalertpolicy.MssqlManagedInstanceSecurityAlertPolicyTimeouts {
 	Create: *string,
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceSecurityAlertPolicy.MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancesecurityalertpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancesecurityalertpolicy"
 
 mssqlmanagedinstancesecurityalertpolicy.NewMssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlManagedInstanceSecurityAlertPolicyTimeoutsOutputReference
 ```

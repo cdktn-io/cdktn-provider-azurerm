@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.NewDataFactoryLinkedServiceAzureFileStorage(scope Construct, id *string, config DataFactoryLinkedServiceAzureFileStorageConfig) DataFactoryLinkedServiceAzureFileStorage
 ```
@@ -510,7 +510,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorage_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorage_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorag
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorage_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorag
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1129,7 +1129,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 &datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorageConfig {
 	Connection: interface{},
@@ -1149,10 +1149,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylin
 	Host: *string,
 	Id: *string,
 	IntegrationRuntimeName: *string,
-	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageKeyVaultPassword,
+	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageKeyVaultPassword,
 	Parameters: *map[string]*string,
 	Password: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageTimeouts,
 	UserId: *string,
 }
 ```
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageKeyVaultPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 &datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorageKeyVaultPassword {
 	LinkedServiceName: *string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 &datafactorylinkedserviceazurefilestorage.DataFactoryLinkedServiceAzureFileStorageTimeouts {
 	Create: *string,
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageKeyVaultPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.NewDataFactoryLinkedServiceAzureFileStorageKeyVaultPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceAzureFileStorageKeyVaultPasswordOutputReference
 ```
@@ -1863,7 +1863,7 @@ func InternalValue() DataFactoryLinkedServiceAzureFileStorageKeyVaultPassword
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceAzureFileStorage.DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceazurefilestorage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceazurefilestorage"
 
 datafactorylinkedserviceazurefilestorage.NewDataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceAzureFileStorageTimeoutsOutputReference
 ```

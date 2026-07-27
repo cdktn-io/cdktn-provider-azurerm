@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroup(scope Construct, id *string, config MonitorAlertProcessingRuleActionGroupConfig) MonitorAlertProcessingRuleActionGroup
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,20 +1019,20 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupCondition {
-	AlertContext: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertContext,
-	AlertRuleId: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleId,
-	AlertRuleName: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleName,
-	Description: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionDescription,
-	MonitorCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorCondition,
-	MonitorService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorService,
-	Severity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSeverity,
-	SignalType: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSignalType,
-	TargetResource: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResource,
-	TargetResourceGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup,
-	TargetResourceType: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceType,
+	AlertContext: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertContext,
+	AlertRuleId: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleId,
+	AlertRuleName: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleName,
+	Description: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionDescription,
+	MonitorCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorCondition,
+	MonitorService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorService,
+	Severity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSeverity,
+	SignalType: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSignalType,
+	TargetResource: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResource,
+	TargetResourceGroup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup,
+	TargetResourceType: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceType,
 }
 ```
 
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionAlertContext {
 	Operator: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleId {
 	Operator: *string,
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleName {
 	Operator: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionDescription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionDescription {
 	Operator: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionMonitorCondition {
 	Operator: *string,
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionMonitorService {
 	Operator: *string,
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSeverity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionSeverity {
 	Operator: *string,
@@ -1535,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSignalType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionSignalType {
 	Operator: *string,
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionTargetResource {
 	Operator: *string,
@@ -1627,7 +1627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup {
 	Operator: *string,
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceType {
 	Operator: *string,
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupConfig {
 	Connection: interface{},
@@ -1733,13 +1733,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertpr
 	Name: *string,
 	ResourceGroupName: *string,
 	Scopes: *[]*string,
-	Condition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupCondition,
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
-	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupSchedule,
+	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupSchedule,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupTimeouts,
 }
 ```
 
@@ -1984,12 +1984,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupSchedule {
 	EffectiveFrom: *string,
 	EffectiveUntil: *string,
-	Recurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrence,
+	Recurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrence,
 	TimeZone: *string,
 }
 ```
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrence {
 	Daily: interface{},
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily {
 	EndTime: *string,
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly {
 	DaysOfMonth: *[]*f64,
@@ -2232,7 +2232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly {
 	DaysOfWeek: *[]*string,
@@ -2292,7 +2292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 &monitoralertprocessingruleactiongroup.MonitorAlertProcessingRuleActionGroupTimeouts {
 	Create: *string,
@@ -2368,7 +2368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference
 ```
@@ -2661,7 +2661,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionAlertContext
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference
 ```
@@ -2954,7 +2954,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionAlertRuleId
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference
 ```
@@ -3247,7 +3247,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionAlertRuleName
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference
 ```
@@ -3540,7 +3540,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionDescription
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference
 ```
@@ -3833,7 +3833,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionMonitorCondit
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference
 ```
@@ -4126,7 +4126,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionMonitorServic
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionOutputReference
 ```
@@ -4837,7 +4837,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference
 ```
@@ -5130,7 +5130,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionSeverity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference
 ```
@@ -5423,7 +5423,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionSignalType
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference
 ```
@@ -5716,7 +5716,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionTargetResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference
 ```
@@ -6009,7 +6009,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionTargetResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference
 ```
@@ -6302,7 +6302,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupConditionTargetResourc
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupScheduleOutputReference
 ```
@@ -6680,7 +6680,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList
 ```
@@ -6840,7 +6840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputReference
 ```
@@ -7151,7 +7151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList
 ```
@@ -7311,7 +7311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutputReference
 ```
@@ -7658,7 +7658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference
 ```
@@ -8033,7 +8033,7 @@ func InternalValue() MonitorAlertProcessingRuleActionGroupScheduleRecurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList
 ```
@@ -8193,7 +8193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutputReference
 ```
@@ -8540,7 +8540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorAlertProcessingRuleActionGroup.MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitoralertprocessingruleactiongroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitoralertprocessingruleactiongroup"
 
 monitoralertprocessingruleactiongroup.NewMonitorAlertProcessingRuleActionGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference
 ```

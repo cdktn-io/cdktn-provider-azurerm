@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.NewWebPubsubNetworkAcl(scope Construct, id *string, config WebPubsubNetworkAclConfig) WebPubsubNetworkAcl
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.WebPubsubNetworkAcl_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.WebPubsubNetworkAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ webpubsubnetworkacl.WebPubsubNetworkAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.WebPubsubNetworkAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ webpubsubnetworkacl.WebPubsubNetworkAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.WebPubsubNetworkAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 &webpubsubnetworkacl.WebPubsubNetworkAclConfig {
 	Connection: interface{},
@@ -898,12 +898,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetwo
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	PublicNetwork: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubNetworkAcl.WebPubsubNetworkAclPublicNetwork,
+	PublicNetwork: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.webPubsubNetworkAcl.WebPubsubNetworkAclPublicNetwork,
 	WebPubsubId: *string,
 	DefaultAction: *string,
 	Id: *string,
 	PrivateEndpoint: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubNetworkAcl.WebPubsubNetworkAclTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.webPubsubNetworkAcl.WebPubsubNetworkAclTimeouts,
 }
 ```
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclPrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 &webpubsubnetworkacl.WebPubsubNetworkAclPrivateEndpoint {
 	Id: *string,
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclPublicNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 &webpubsubnetworkacl.WebPubsubNetworkAclPublicNetwork {
 	AllowedRequestTypes: *[]*string,
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 &webpubsubnetworkacl.WebPubsubNetworkAclTimeouts {
 	Create: *string,
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclPrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.NewWebPubsubNetworkAclPrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebPubsubNetworkAclPrivateEndpointList
 ```
@@ -1428,7 +1428,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclPrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.NewWebPubsubNetworkAclPrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebPubsubNetworkAclPrivateEndpointOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclPublicNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.NewWebPubsubNetworkAclPublicNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubNetworkAclPublicNetworkOutputReference
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() WebPubsubNetworkAclPublicNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubNetworkAcl.WebPubsubNetworkAclTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubnetworkacl"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubnetworkacl"
 
 webpubsubnetworkacl.NewWebPubsubNetworkAclTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubNetworkAclTimeoutsOutputReference
 ```

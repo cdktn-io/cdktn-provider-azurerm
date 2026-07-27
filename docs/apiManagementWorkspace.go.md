@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.NewApiManagementWorkspace(scope Construct, id *string, config ApiManagementWorkspaceConfig) ApiManagementWorkspace
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.ApiManagementWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.ApiManagementWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apimanagementworkspace.ApiManagementWorkspace_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.ApiManagementWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apimanagementworkspace.ApiManagementWorkspace_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.ApiManagementWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 &apimanagementworkspace.ApiManagementWorkspaceConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementw
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementWorkspace.ApiManagementWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementWorkspace.ApiManagementWorkspaceTimeouts,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 &apimanagementworkspace.ApiManagementWorkspaceTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementWorkspace.ApiManagementWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementworkspace"
 
 apimanagementworkspace.NewApiManagementWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementWorkspaceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.NewPostgresqlFlexibleServerActiveDirectoryAdministrator(scope Construct, id *string, config PostgresqlFlexibleServerActiveDirectoryAdministratorConfig) PostgresqlFlexibleServerActiveDirectoryAdministrator
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerAct
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerAct
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministrator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 &postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflex
 	ServerName: *string,
 	TenantId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorTimeouts,
 }
 ```
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 &postgresqlflexibleserveractivedirectoryadministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorTimeouts {
 	Create: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerActiveDirectoryAdministrator.PostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserveractivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserveractivedirectoryadministrator"
 
 postgresqlflexibleserveractivedirectoryadministrator.NewPostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresqlFlexibleServerActiveDirectoryAdministratorTimeoutsOutputReference
 ```

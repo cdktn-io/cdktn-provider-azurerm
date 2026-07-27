@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewNewRelicMonitor(scope Construct, id *string, config NewRelicMonitorConfig) NewRelicMonitor
 ```
@@ -515,7 +515,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewRelicMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewRelicMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ newrelicmonitor.NewRelicMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewRelicMonitor_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ newrelicmonitor.NewRelicMonitor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewRelicMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1112,7 +1112,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 &newrelicmonitor.NewRelicMonitorConfig {
 	Connection: interface{},
@@ -1124,17 +1124,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonito
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.newRelicMonitor.NewRelicMonitorPlan,
+	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.newRelicMonitor.NewRelicMonitorPlan,
 	ResourceGroupName: *string,
-	User: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.newRelicMonitor.NewRelicMonitorUser,
+	User: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.newRelicMonitor.NewRelicMonitorUser,
 	AccountCreationSource: *string,
 	AccountId: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.newRelicMonitor.NewRelicMonitorIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.newRelicMonitor.NewRelicMonitorIdentity,
 	IngestionKey: *string,
 	OrganizationId: *string,
 	OrgCreationSource: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.newRelicMonitor.NewRelicMonitorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.newRelicMonitor.NewRelicMonitorTimeouts,
 	UserId: *string,
 }
 ```
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 &newrelicmonitor.NewRelicMonitorIdentity {
 	Type: *string,
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 &newrelicmonitor.NewRelicMonitorPlan {
 	EffectiveDate: *string,
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 &newrelicmonitor.NewRelicMonitorTimeouts {
 	Create: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 &newrelicmonitor.NewRelicMonitorUser {
 	Email: *string,
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewNewRelicMonitorIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NewRelicMonitorIdentityOutputReference
 ```
@@ -1956,7 +1956,7 @@ func InternalValue() NewRelicMonitorIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewNewRelicMonitorPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NewRelicMonitorPlanOutputReference
 ```
@@ -2314,7 +2314,7 @@ func InternalValue() NewRelicMonitorPlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewNewRelicMonitorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NewRelicMonitorTimeoutsOutputReference
 ```
@@ -2650,7 +2650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.newRelicMonitor.NewRelicMonitorUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/newrelicmonitor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/newrelicmonitor"
 
 newrelicmonitor.NewNewRelicMonitorUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NewRelicMonitorUserOutputReference
 ```

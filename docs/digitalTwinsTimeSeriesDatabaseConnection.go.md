@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.NewDigitalTwinsTimeSeriesDatabaseConnection(scope Construct, id *string, config DigitalTwinsTimeSeriesDatabaseConnectionConfig) DigitalTwinsTimeSeriesDatabaseConnection
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnection_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnectio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnectio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 &digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnectionConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsti
 	EventhubConsumerGroupName: *string,
 	Id: *string,
 	KustoTableName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnectionTimeouts,
 }
 ```
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 &digitaltwinstimeseriesdatabaseconnection.DigitalTwinsTimeSeriesDatabaseConnectionTimeouts {
 	Create: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.digitalTwinsTimeSeriesDatabaseConnection.DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinstimeseriesdatabaseconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinstimeseriesdatabaseconnection"
 
 digitaltwinstimeseriesdatabaseconnection.NewDigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DigitalTwinsTimeSeriesDatabaseConnectionTimeoutsOutputReference
 ```

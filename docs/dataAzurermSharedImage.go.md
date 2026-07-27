@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImage(scope Construct, id *string, config DataAzurermSharedImageConfig) DataAzurermSharedImage
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.DataAzurermSharedImage_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.DataAzurermSharedImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsharedimage.DataAzurermSharedImage_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.DataAzurermSharedImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsharedimage.DataAzurermSharedImage_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.DataAzurermSharedImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 &dataazurermsharedimage.DataAzurermSharedImageConfig {
 	Connection: interface{},
@@ -914,7 +914,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsha
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermSharedImage.DataAzurermSharedImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermSharedImage.DataAzurermSharedImageTimeouts,
 }
 ```
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageIdentifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 &dataazurermsharedimage.DataAzurermSharedImageIdentifier {
 
@@ -1090,7 +1090,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsha
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImagePurchasePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 &dataazurermsharedimage.DataAzurermSharedImagePurchasePlan {
 
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsha
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 &dataazurermsharedimage.DataAzurermSharedImageTimeouts {
 	Read: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageIdentifierList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImageIdentifierList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSharedImageIdentifierList
 ```
@@ -1286,7 +1286,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageIdentifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImageIdentifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSharedImageIdentifierOutputReference
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() DataAzurermSharedImageIdentifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImagePurchasePlanList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImagePurchasePlanList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermSharedImagePurchasePlanList
 ```
@@ -1735,7 +1735,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImagePurchasePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImagePurchasePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermSharedImagePurchasePlanOutputReference
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() DataAzurermSharedImagePurchasePlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSharedImage.DataAzurermSharedImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsharedimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsharedimage"
 
 dataazurermsharedimage.NewDataAzurermSharedImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSharedImageTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.NewBotChannelSms(scope Construct, id *string, config BotChannelSmsConfig) BotChannelSms
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.BotChannelSms_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.BotChannelSms_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ botchannelsms.BotChannelSms_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.BotChannelSms_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ botchannelsms.BotChannelSms_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.BotChannelSms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 &botchannelsms.BotChannelSmsConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
 	SmsChannelAccountSecurityId: *string,
 	SmsChannelAuthToken: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.botChannelSms.BotChannelSmsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.botChannelSms.BotChannelSmsTimeouts,
 }
 ```
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 &botchannelsms.BotChannelSmsTimeouts {
 	Create: *string,
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botChannelSms.BotChannelSmsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botchannelsms"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botchannelsms"
 
 botchannelsms.NewBotChannelSmsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotChannelSmsTimeoutsOutputReference
 ```

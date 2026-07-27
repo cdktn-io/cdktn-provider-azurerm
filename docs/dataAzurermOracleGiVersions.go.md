@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.NewDataAzurermOracleGiVersions(scope Construct, id *string, config DataAzurermOracleGiVersionsConfig) DataAzurermOracleGiVersions
 ```
@@ -339,7 +339,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.DataAzurermOracleGiVersions_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.DataAzurermOracleGiVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermoraclegiversions.DataAzurermOracleGiVersions_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.DataAzurermOracleGiVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazurermoraclegiversions.DataAzurermOracleGiVersions_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.DataAzurermOracleGiVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -727,7 +727,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 &dataazurermoraclegiversions.DataAzurermOracleGiVersionsConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermora
 	Location: *string,
 	Id: *string,
 	Shape: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleGiVersions.DataAzurermOracleGiVersionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleGiVersions.DataAzurermOracleGiVersionsTimeouts,
 	Zone: *string,
 }
 ```
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 &dataazurermoraclegiversions.DataAzurermOracleGiVersionsTimeouts {
 	Read: *string,
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleGiVersions.DataAzurermOracleGiVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoraclegiversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoraclegiversions"
 
 dataazurermoraclegiversions.NewDataAzurermOracleGiVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleGiVersionsTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.NewPrivateDnsResolverInboundEndpoint(scope Construct, id *string, config PrivateDnsResolverInboundEndpointConfig) PrivateDnsResolverInboundEndpoint
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 &privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpointConfig {
 	Connection: interface{},
@@ -900,13 +900,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsreso
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	IpConfigurations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurations,
+	IpConfigurations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurations,
 	Location: *string,
 	Name: *string,
 	PrivateDnsResolverId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointTimeouts,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 &privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpointIpConfigurations {
 	SubnetId: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 &privatednsresolverinboundendpoint.PrivateDnsResolverInboundEndpointTimeouts {
 	Create: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.NewPrivateDnsResolverInboundEndpointIpConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference
 ```
@@ -1562,7 +1562,7 @@ func InternalValue() PrivateDnsResolverInboundEndpointIpConfigurations
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsResolverInboundEndpoint.PrivateDnsResolverInboundEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privatednsresolverinboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privatednsresolverinboundendpoint"
 
 privatednsresolverinboundendpoint.NewPrivateDnsResolverInboundEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateDnsResolverInboundEndpointTimeoutsOutputReference
 ```

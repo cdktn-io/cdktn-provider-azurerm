@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.NewIothubFallbackRouteA(scope Construct, id *string, config IothubFallbackRouteAConfig) IothubFallbackRouteA
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.IothubFallbackRouteA_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.IothubFallbackRouteA_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iothubfallbackroute.IothubFallbackRouteA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.IothubFallbackRouteA_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iothubfallbackroute.IothubFallbackRouteA_IsTerraformResource(x interface{}) *boo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.IothubFallbackRouteA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 &iothubfallbackroute.IothubFallbackRouteAConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallback
 	Condition: *string,
 	Id: *string,
 	Source: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iothubFallbackRoute.IothubFallbackRouteTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iothubFallbackRoute.IothubFallbackRouteTimeouts,
 }
 ```
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 &iothubfallbackroute.IothubFallbackRouteTimeouts {
 	Create: *string,
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iothubFallbackRoute.IothubFallbackRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iothubfallbackroute"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iothubfallbackroute"
 
 iothubfallbackroute.NewIothubFallbackRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IothubFallbackRouteTimeoutsOutputReference
 ```

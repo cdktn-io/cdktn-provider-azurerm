@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesCluster(scope Construct, id *string, config KubernetesClusterConfig) KubernetesCluster
 ```
@@ -1189,7 +1189,7 @@ func ResetWorkloadIdentityEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -1221,7 +1221,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -1235,7 +1235,7 @@ kubernetescluster.KubernetesCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1249,7 +1249,7 @@ kubernetescluster.KubernetesCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.KubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2941,7 +2941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinux.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterAciConnectorLinux {
 	SubnetName: *string,
@@ -2973,7 +2973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterAciConnectorLinuxConnectorIdentity {
 
@@ -2986,7 +2986,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterApiServerAccessProfile {
 	AuthorizedIpRanges: *[]*string,
@@ -3046,7 +3046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterAutoScalerProfile {
 	BalanceSimilarNodeGroups: interface{},
@@ -3344,7 +3344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl {
 	AdminGroupObjectIds: *[]*string,
@@ -3404,7 +3404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterBootstrapProfile {
 	ArtifactSource: *string,
@@ -3450,7 +3450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterConfidentialComputing {
 	SgxQuoteHelperEnabled: interface{},
@@ -3482,7 +3482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterConfig {
 	Connection: interface{},
@@ -3492,19 +3492,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultNodePool: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePool,
+	DefaultNodePool: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePool,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	AciConnectorLinux: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterAciConnectorLinux,
+	AciConnectorLinux: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterAciConnectorLinux,
 	AiToolchainOperatorEnabled: interface{},
-	ApiServerAccessProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterApiServerAccessProfile,
+	ApiServerAccessProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterApiServerAccessProfile,
 	AutomaticUpgradeChannel: *string,
-	AutoScalerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterAutoScalerProfile,
-	AzureActiveDirectoryRoleBasedAccessControl: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl,
+	AutoScalerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterAutoScalerProfile,
+	AzureActiveDirectoryRoleBasedAccessControl: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl,
 	AzurePolicyEnabled: interface{},
-	BootstrapProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterBootstrapProfile,
-	ConfidentialComputing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterConfidentialComputing,
+	BootstrapProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterBootstrapProfile,
+	ConfidentialComputing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterConfidentialComputing,
 	CostAnalysisEnabled: interface{},
 	CustomCaTrustCertificatesBase64: *[]*string,
 	DiskEncryptionSetId: *string,
@@ -3512,46 +3512,46 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 	DnsPrefixPrivateCluster: *string,
 	EdgeZone: *string,
 	HttpApplicationRoutingEnabled: interface{},
-	HttpProxyConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterHttpProxyConfig,
+	HttpProxyConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterHttpProxyConfig,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterIdentity,
 	ImageCleanerEnabled: interface{},
 	ImageCleanerIntervalHours: *f64,
-	IngressApplicationGateway: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterIngressApplicationGateway,
-	KeyManagementService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterKeyManagementService,
-	KeyVaultSecretsProvider: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider,
-	KubeletIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterKubeletIdentity,
+	IngressApplicationGateway: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterIngressApplicationGateway,
+	KeyManagementService: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterKeyManagementService,
+	KeyVaultSecretsProvider: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider,
+	KubeletIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterKubeletIdentity,
 	KubernetesVersion: *string,
-	LinuxProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterLinuxProfile,
+	LinuxProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterLinuxProfile,
 	LocalAccountDisabled: interface{},
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterMaintenanceWindow,
-	MaintenanceWindowAutoUpgrade: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade,
-	MaintenanceWindowNodeOs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs,
-	MicrosoftDefender: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterMicrosoftDefender,
-	MonitorMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterMonitorMetrics,
-	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterNetworkProfile,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterMaintenanceWindow,
+	MaintenanceWindowAutoUpgrade: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade,
+	MaintenanceWindowNodeOs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs,
+	MicrosoftDefender: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterMicrosoftDefender,
+	MonitorMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterMonitorMetrics,
+	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterNetworkProfile,
 	NodeOsUpgradeChannel: *string,
-	NodeProvisioningProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterNodeProvisioningProfile,
+	NodeProvisioningProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterNodeProvisioningProfile,
 	NodeResourceGroup: *string,
 	OidcIssuerEnabled: interface{},
-	OmsAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterOmsAgent,
+	OmsAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterOmsAgent,
 	OpenServiceMeshEnabled: interface{},
 	PrivateClusterEnabled: interface{},
 	PrivateClusterPublicFqdnEnabled: interface{},
 	PrivateDnsZoneId: *string,
 	RoleBasedAccessControlEnabled: interface{},
 	RunCommandEnabled: interface{},
-	ServiceMeshProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterServiceMeshProfile,
-	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterServicePrincipal,
+	ServiceMeshProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterServiceMeshProfile,
+	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterServicePrincipal,
 	SkuTier: *string,
-	StorageProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterStorageProfile,
+	StorageProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterStorageProfile,
 	SupportPlan: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterTimeouts,
-	UpgradeOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterUpgradeOverride,
-	WebAppRouting: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterWebAppRouting,
-	WindowsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterWindowsProfile,
-	WorkloadAutoscalerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterTimeouts,
+	UpgradeOverride: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterUpgradeOverride,
+	WebAppRouting: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterWebAppRouting,
+	WindowsProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterWindowsProfile,
+	WorkloadAutoscalerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile,
 	WorkloadIdentityEnabled: interface{},
 }
 ```
@@ -4501,7 +4501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePool {
 	Name: *string,
@@ -4512,15 +4512,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 	GpuInstance: *string,
 	HostEncryptionEnabled: interface{},
 	HostGroupId: *string,
-	KubeletConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig,
+	KubeletConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig,
 	KubeletDiskType: *string,
-	LinuxOsConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfig,
+	LinuxOsConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfig,
 	MaxCount: *f64,
 	MaxPods: *f64,
 	MinCount: *f64,
 	NodeCount: *f64,
 	NodeLabels: *map[string]*string,
-	NodeNetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile,
+	NodeNetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile,
 	NodePublicIpEnabled: interface{},
 	NodePublicIpPrefixId: *string,
 	OnlyCriticalAddonsEnabled: interface{},
@@ -4536,7 +4536,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 	TemporaryNameForRotation: *string,
 	Type: *string,
 	UltraSsdEnabled: interface{},
-	UpgradeSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettings,
+	UpgradeSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettings,
 	VmSize: *string,
 	VnetSubnetId: *string,
 	WorkloadRuntime: *string,
@@ -5045,7 +5045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolKubeletConfig {
 	AllowedUnsafeSysctls: *[]*string,
@@ -5217,11 +5217,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolLinuxOsConfig {
 	SwapFileSizeMb: *f64,
-	SysctlConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig,
+	SysctlConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig,
 	TransparentHugePage: *string,
 	TransparentHugePageDefrag: *string,
 	TransparentHugePageEnabled: *string,
@@ -5307,7 +5307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig {
 	FsAioMaxNr: *f64,
@@ -5731,7 +5731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile {
 	AllowedHostPorts: interface{},
@@ -5793,7 +5793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts {
 	PortEnd: *f64,
@@ -5853,7 +5853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterDefaultNodePoolUpgradeSettings {
 	MaxSurge: *string,
@@ -5927,7 +5927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterHttpProxyConfig {
 	HttpProxy: *string,
@@ -6001,7 +6001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterIdentity {
 	Type: *string,
@@ -6047,7 +6047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterIngressApplicationGateway {
 	GatewayId: *string,
@@ -6121,7 +6121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentity {
 
@@ -6134,7 +6134,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKeyManagementService {
 	KeyVaultKeyId: *string,
@@ -6180,7 +6180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKeyVaultSecretsProvider {
 	SecretRotationEnabled: interface{},
@@ -6226,7 +6226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentity {
 
@@ -6239,7 +6239,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKubeAdminConfig {
 
@@ -6252,7 +6252,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKubeConfig {
 
@@ -6265,7 +6265,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterKubeletIdentity {
 	ClientId: *string,
@@ -6325,11 +6325,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterLinuxProfile {
 	AdminUsername: *string,
-	SshKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterLinuxProfileSshKey,
+	SshKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterLinuxProfileSshKey,
 }
 ```
 
@@ -6373,7 +6373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterLinuxProfileSshKey {
 	KeyData: *string,
@@ -6405,7 +6405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindow {
 	Allowed: interface{},
@@ -6455,7 +6455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowAllowed {
 	Day: *string,
@@ -6501,7 +6501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowAutoUpgrade {
 	Duration: *f64,
@@ -6661,7 +6661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed {
 	End: *string,
@@ -6707,7 +6707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowNodeOs {
 	Duration: *f64,
@@ -6867,7 +6867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed {
 	End: *string,
@@ -6913,7 +6913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMaintenanceWindowNotAllowed {
 	End: *string,
@@ -6959,7 +6959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefender.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMicrosoftDefender {
 	LogAnalyticsWorkspaceId: *string,
@@ -6991,7 +6991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterMonitorMetrics {
 	AnnotationsAllowed: *string,
@@ -7037,16 +7037,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNetworkProfile {
 	NetworkPlugin: *string,
-	AdvancedNetworking: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking,
+	AdvancedNetworking: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking,
 	DnsServiceIp: *string,
 	IpVersions: *[]*string,
-	LoadBalancerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfile,
+	LoadBalancerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfile,
 	LoadBalancerSku: *string,
-	NatGatewayProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfile,
+	NatGatewayProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfile,
 	NetworkDataPlane: *string,
 	NetworkMode: *string,
 	NetworkPluginMode: *string,
@@ -7285,7 +7285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNetworkProfileAdvancedNetworking {
 	ObservabilityEnabled: interface{},
@@ -7331,7 +7331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNetworkProfileLoadBalancerProfile {
 	BackendPoolType: *string,
@@ -7447,7 +7447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNetworkProfileNatGatewayProfile {
 	IdleTimeoutInMinutes: *f64,
@@ -7493,7 +7493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterNodeProvisioningProfile {
 	DefaultNodePools: *string,
@@ -7539,7 +7539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterOmsAgent {
 	LogAnalyticsWorkspaceId: *string,
@@ -7585,7 +7585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterOmsAgentOmsAgentIdentity {
 
@@ -7598,12 +7598,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterServiceMeshProfile {
 	Mode: *string,
 	Revisions: *[]*string,
-	CertificateAuthority: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthority,
+	CertificateAuthority: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthority,
 	ExternalIngressGatewayEnabled: interface{},
 	InternalIngressGatewayEnabled: interface{},
 }
@@ -7688,7 +7688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterServiceMeshProfileCertificateAuthority {
 	CertChainObjectName: *string,
@@ -7776,7 +7776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterServicePrincipal {
 	ClientId: *string,
@@ -7822,7 +7822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterStorageProfile {
 	BlobDriverEnabled: interface{},
@@ -7896,7 +7896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterTimeouts {
 	Create: *string,
@@ -7970,7 +7970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterUpgradeOverride {
 	ForceUpgradeEnabled: interface{},
@@ -8016,7 +8016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterWebAppRouting {
 	DnsZoneIds: *[]*string,
@@ -8062,7 +8062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentity {
 
@@ -8075,12 +8075,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterWindowsProfile {
 	AdminPassword: *string,
 	AdminUsername: *string,
-	Gmsa: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesCluster.KubernetesClusterWindowsProfileGmsa,
+	Gmsa: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesCluster.KubernetesClusterWindowsProfileGmsa,
 	License: *string,
 }
 ```
@@ -8151,7 +8151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterWindowsProfileGmsa {
 	DnsServer: *string,
@@ -8197,7 +8197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 &kubernetescluster.KubernetesClusterWorkloadAutoscalerProfile {
 	KedaEnabled: interface{},
@@ -8245,7 +8245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterAciConnectorLinuxConnectorIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterAciConnectorLinuxConnectorIdentityList
 ```
@@ -8394,7 +8394,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference
 ```
@@ -8694,7 +8694,7 @@ func InternalValue() KubernetesClusterAciConnectorLinuxConnectorIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterAciConnectorLinuxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterAciConnectorLinuxOutputReference
 ```
@@ -8976,7 +8976,7 @@ func InternalValue() KubernetesClusterAciConnectorLinux
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterApiServerAccessProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterApiServerAccessProfileOutputReference
 ```
@@ -9312,7 +9312,7 @@ func InternalValue() KubernetesClusterApiServerAccessProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterAutoScalerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterAutoScalerProfileOutputReference
 ```
@@ -10141,7 +10141,7 @@ func InternalValue() KubernetesClusterAutoScalerProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference
 ```
@@ -10477,7 +10477,7 @@ func InternalValue() KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterBootstrapProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterBootstrapProfileOutputReference
 ```
@@ -10784,7 +10784,7 @@ func InternalValue() KubernetesClusterBootstrapProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterConfidentialComputingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterConfidentialComputingOutputReference
 ```
@@ -11055,7 +11055,7 @@ func InternalValue() KubernetesClusterConfidentialComputing
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolKubeletConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolKubeletConfigOutputReference
 ```
@@ -11623,7 +11623,7 @@ func InternalValue() KubernetesClusterDefaultNodePoolKubeletConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference
 ```
@@ -12030,7 +12030,7 @@ func InternalValue() KubernetesClusterDefaultNodePoolLinuxOsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference
 ```
@@ -13120,7 +13120,7 @@ func InternalValue() KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList
 ```
@@ -13280,7 +13280,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference
 ```
@@ -13634,7 +13634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference
 ```
@@ -13983,7 +13983,7 @@ func InternalValue() KubernetesClusterDefaultNodePoolNodeNetworkProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolOutputReference
 ```
@@ -15350,7 +15350,7 @@ func InternalValue() KubernetesClusterDefaultNodePool
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference
 ```
@@ -15708,7 +15708,7 @@ func InternalValue() KubernetesClusterDefaultNodePoolUpgradeSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterHttpProxyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterHttpProxyConfigOutputReference
 ```
@@ -16073,7 +16073,7 @@ func InternalValue() KubernetesClusterHttpProxyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterIdentityOutputReference
 ```
@@ -16395,7 +16395,7 @@ func InternalValue() KubernetesClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList
 ```
@@ -16544,7 +16544,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference
 ```
@@ -16844,7 +16844,7 @@ func InternalValue() KubernetesClusterIngressApplicationGatewayIngressApplicatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterIngressApplicationGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterIngressApplicationGatewayOutputReference
 ```
@@ -17231,7 +17231,7 @@ func InternalValue() KubernetesClusterIngressApplicationGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKeyManagementServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterKeyManagementServiceOutputReference
 ```
@@ -17531,7 +17531,7 @@ func InternalValue() KubernetesClusterKeyManagementService
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKeyVaultSecretsProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterKeyVaultSecretsProviderOutputReference
 ```
@@ -17849,7 +17849,7 @@ func InternalValue() KubernetesClusterKeyVaultSecretsProvider
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKeyVaultSecretsProviderSecretIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterKeyVaultSecretsProviderSecretIdentityList
 ```
@@ -17998,7 +17998,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference
 ```
@@ -18298,7 +18298,7 @@ func InternalValue() KubernetesClusterKeyVaultSecretsProviderSecretIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeAdminConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterKubeAdminConfigList
 ```
@@ -18447,7 +18447,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeAdminConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterKubeAdminConfigOutputReference
 ```
@@ -18780,7 +18780,7 @@ func InternalValue() KubernetesClusterKubeAdminConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterKubeConfigList
 ```
@@ -18929,7 +18929,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterKubeConfigOutputReference
 ```
@@ -19262,7 +19262,7 @@ func InternalValue() KubernetesClusterKubeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterKubeletIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterKubeletIdentityOutputReference
 ```
@@ -19598,7 +19598,7 @@ func InternalValue() KubernetesClusterKubeletIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterLinuxProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterLinuxProfileOutputReference
 ```
@@ -19904,7 +19904,7 @@ func InternalValue() KubernetesClusterLinuxProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterLinuxProfileSshKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterLinuxProfileSshKeyOutputReference
 ```
@@ -20175,7 +20175,7 @@ func InternalValue() KubernetesClusterLinuxProfileSshKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowAllowedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterMaintenanceWindowAllowedList
 ```
@@ -20335,7 +20335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterMaintenanceWindowAllowedOutputReference
 ```
@@ -20646,7 +20646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList
 ```
@@ -20806,7 +20806,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference
 ```
@@ -21117,7 +21117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowAutoUpgradeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference
 ```
@@ -21648,7 +21648,7 @@ func InternalValue() KubernetesClusterMaintenanceWindowAutoUpgrade
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowNodeOsNotAllowedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterMaintenanceWindowNodeOsNotAllowedList
 ```
@@ -21808,7 +21808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference
 ```
@@ -22119,7 +22119,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowNodeOsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMaintenanceWindowNodeOsOutputReference
 ```
@@ -22650,7 +22650,7 @@ func InternalValue() KubernetesClusterMaintenanceWindowNodeOs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowNotAllowedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterMaintenanceWindowNotAllowedList
 ```
@@ -22810,7 +22810,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowNotAllowedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterMaintenanceWindowNotAllowedOutputReference
 ```
@@ -23121,7 +23121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMaintenanceWindowOutputReference
 ```
@@ -23454,7 +23454,7 @@ func InternalValue() KubernetesClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMicrosoftDefenderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMicrosoftDefenderOutputReference
 ```
@@ -23725,7 +23725,7 @@ func InternalValue() KubernetesClusterMicrosoftDefender
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterMonitorMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterMonitorMetricsOutputReference
 ```
@@ -24032,7 +24032,7 @@ func InternalValue() KubernetesClusterMonitorMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNetworkProfileAdvancedNetworkingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference
 ```
@@ -24339,7 +24339,7 @@ func InternalValue() KubernetesClusterNetworkProfileAdvancedNetworking
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNetworkProfileLoadBalancerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference
 ```
@@ -24802,7 +24802,7 @@ func InternalValue() KubernetesClusterNetworkProfileLoadBalancerProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNetworkProfileNatGatewayProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNetworkProfileNatGatewayProfileOutputReference
 ```
@@ -25120,7 +25120,7 @@ func InternalValue() KubernetesClusterNetworkProfileNatGatewayProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNetworkProfileOutputReference
 ```
@@ -25865,7 +25865,7 @@ func InternalValue() KubernetesClusterNetworkProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterNodeProvisioningProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterNodeProvisioningProfileOutputReference
 ```
@@ -26172,7 +26172,7 @@ func InternalValue() KubernetesClusterNodeProvisioningProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterOmsAgentOmsAgentIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterOmsAgentOmsAgentIdentityList
 ```
@@ -26321,7 +26321,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterOmsAgentOmsAgentIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterOmsAgentOmsAgentIdentityOutputReference
 ```
@@ -26621,7 +26621,7 @@ func InternalValue() KubernetesClusterOmsAgentOmsAgentIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterOmsAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterOmsAgentOutputReference
 ```
@@ -26932,7 +26932,7 @@ func InternalValue() KubernetesClusterOmsAgent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference
 ```
@@ -27291,7 +27291,7 @@ func InternalValue() KubernetesClusterServiceMeshProfileCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterServiceMeshProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterServiceMeshProfileOutputReference
 ```
@@ -27684,7 +27684,7 @@ func InternalValue() KubernetesClusterServiceMeshProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterServicePrincipalOutputReference
 ```
@@ -27977,7 +27977,7 @@ func InternalValue() KubernetesClusterServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterStorageProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterStorageProfileOutputReference
 ```
@@ -28342,7 +28342,7 @@ func InternalValue() KubernetesClusterStorageProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterTimeoutsOutputReference
 ```
@@ -28707,7 +28707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterUpgradeOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterUpgradeOverrideOutputReference
 ```
@@ -29007,7 +29007,7 @@ func InternalValue() KubernetesClusterUpgradeOverride
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWebAppRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterWebAppRoutingOutputReference
 ```
@@ -29318,7 +29318,7 @@ func InternalValue() KubernetesClusterWebAppRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWebAppRoutingWebAppRoutingIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterWebAppRoutingWebAppRoutingIdentityList
 ```
@@ -29467,7 +29467,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference
 ```
@@ -29767,7 +29767,7 @@ func InternalValue() KubernetesClusterWebAppRoutingWebAppRoutingIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWindowsProfileGmsaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterWindowsProfileGmsaOutputReference
 ```
@@ -30060,7 +30060,7 @@ func InternalValue() KubernetesClusterWindowsProfileGmsa
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWindowsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterWindowsProfileOutputReference
 ```
@@ -30424,7 +30424,7 @@ func InternalValue() KubernetesClusterWindowsProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetescluster"
 
 kubernetescluster.NewKubernetesClusterWorkloadAutoscalerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterWorkloadAutoscalerProfileOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.NewSystemCenterVirtualMachineManagerVirtualNetwork(scope Construct, id *string, config SystemCenterVirtualMachineManagerVirtualNetworkConfig) SystemCenterVirtualMachineManagerVirtualNetwork
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManage
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManage
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 &systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetworkConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervi
 	SystemCenterVirtualMachineManagerServerInventoryItemId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetworkTimeouts,
 }
 ```
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 &systemcentervirtualmachinemanagervirtualnetwork.SystemCenterVirtualMachineManagerVirtualNetworkTimeouts {
 	Create: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerVirtualNetwork.SystemCenterVirtualMachineManagerVirtualNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagervirtualnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagervirtualnetwork"
 
 systemcentervirtualmachinemanagervirtualnetwork.NewSystemCenterVirtualMachineManagerVirtualNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SystemCenterVirtualMachineManagerVirtualNetworkTimeoutsOutputReference
 ```

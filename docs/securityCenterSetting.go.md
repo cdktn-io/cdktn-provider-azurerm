@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.NewSecurityCenterSetting(scope Construct, id *string, config SecurityCenterSettingConfig) SecurityCenterSetting
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.SecurityCenterSetting_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.SecurityCenterSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ securitycentersetting.SecurityCenterSetting_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.SecurityCenterSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ securitycentersetting.SecurityCenterSetting_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.SecurityCenterSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 &securitycentersetting.SecurityCenterSettingConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycenter
 	Enabled: interface{},
 	SettingName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.securityCenterSetting.SecurityCenterSettingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.securityCenterSetting.SecurityCenterSettingTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSettingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 &securitycentersetting.SecurityCenterSettingTimeouts {
 	Create: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterSetting.SecurityCenterSettingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentersetting"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentersetting"
 
 securitycentersetting.NewSecurityCenterSettingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityCenterSettingTimeoutsOutputReference
 ```

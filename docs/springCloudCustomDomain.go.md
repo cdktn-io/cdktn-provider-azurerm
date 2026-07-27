@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.NewSpringCloudCustomDomain(scope Construct, id *string, config SpringCloudCustomDomainConfig) SpringCloudCustomDomain
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.SpringCloudCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.SpringCloudCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ springcloudcustomdomain.SpringCloudCustomDomain_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.SpringCloudCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ springcloudcustomdomain.SpringCloudCustomDomain_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.SpringCloudCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 &springcloudcustomdomain.SpringCloudCustomDomainConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcus
 	CertificateName: *string,
 	Id: *string,
 	Thumbprint: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudCustomDomain.SpringCloudCustomDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudCustomDomain.SpringCloudCustomDomainTimeouts,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 &springcloudcustomdomain.SpringCloudCustomDomainTimeouts {
 	Create: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudCustomDomain.SpringCloudCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudcustomdomain"
 
 springcloudcustomdomain.NewSpringCloudCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudCustomDomainTimeoutsOutputReference
 ```

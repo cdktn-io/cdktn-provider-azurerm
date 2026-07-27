@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.NewDataAzurermPolicyDefinition(scope Construct, id *string, config DataAzurermPolicyDefinitionConfig) DataAzurermPolicyDefinition
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.DataAzurermPolicyDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.DataAzurermPolicyDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermpolicydefinition.DataAzurermPolicyDefinition_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.DataAzurermPolicyDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermpolicydefinition.DataAzurermPolicyDefinition_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.DataAzurermPolicyDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 &dataazurermpolicydefinition.DataAzurermPolicyDefinitionConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpol
 	Id: *string,
 	ManagementGroupName: *string,
 	Name: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermPolicyDefinition.DataAzurermPolicyDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermPolicyDefinition.DataAzurermPolicyDefinitionTimeouts,
 }
 ```
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 &dataazurermpolicydefinition.DataAzurermPolicyDefinitionTimeouts {
 	Read: *string,
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicyDefinition.DataAzurermPolicyDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicydefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicydefinition"
 
 dataazurermpolicydefinition.NewDataAzurermPolicyDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermPolicyDefinitionTimeoutsOutputReference
 ```

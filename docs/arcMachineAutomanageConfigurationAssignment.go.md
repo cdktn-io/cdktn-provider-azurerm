@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.NewArcMachineAutomanageConfigurationAssignment(scope Construct, id *string, config ArcMachineAutomanageConfigurationAssignmentConfig) ArcMachineAutomanageConfigurationAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAss
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAss
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 &arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignmentConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineauto
 	ArcMachineId: *string,
 	ConfigurationId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignmentTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 &arcmachineautomanageconfigurationassignment.ArcMachineAutomanageConfigurationAssignmentTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcMachineAutomanageConfigurationAssignment.ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arcmachineautomanageconfigurationassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arcmachineautomanageconfigurationassignment"
 
 arcmachineautomanageconfigurationassignment.NewArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcMachineAutomanageConfigurationAssignmentTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.NewStreamAnalyticsCluster(scope Construct, id *string, config StreamAnalyticsClusterConfig) StreamAnalyticsCluster
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.StreamAnalyticsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.StreamAnalyticsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ streamanalyticscluster.StreamAnalyticsCluster_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.StreamAnalyticsCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ streamanalyticscluster.StreamAnalyticsCluster_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.StreamAnalyticsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 &streamanalyticscluster.StreamAnalyticsClusterConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalytic
 	StreamingCapacity: *f64,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.streamAnalyticsCluster.StreamAnalyticsClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.streamAnalyticsCluster.StreamAnalyticsClusterTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 &streamanalyticscluster.StreamAnalyticsClusterTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.streamAnalyticsCluster.StreamAnalyticsClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/streamanalyticscluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/streamanalyticscluster"
 
 streamanalyticscluster.NewStreamAnalyticsClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamAnalyticsClusterTimeoutsOutputReference
 ```

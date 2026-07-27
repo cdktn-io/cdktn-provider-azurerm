@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.NewCognitiveDeployment(scope Construct, id *string, config CognitiveDeploymentConfig) CognitiveDeployment
 ```
@@ -474,7 +474,7 @@ func ResetVersionUpgradeOption()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.CognitiveDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.CognitiveDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ cognitivedeployment.CognitiveDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.CognitiveDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ cognitivedeployment.CognitiveDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.CognitiveDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +961,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 &cognitivedeployment.CognitiveDeploymentConfig {
 	Connection: interface{},
@@ -972,13 +972,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeplo
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CognitiveAccountId: *string,
-	Model: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveDeployment.CognitiveDeploymentModel,
+	Model: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveDeployment.CognitiveDeploymentModel,
 	Name: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveDeployment.CognitiveDeploymentSku,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveDeployment.CognitiveDeploymentSku,
 	DynamicThrottlingEnabled: interface{},
 	Id: *string,
 	RaiPolicyName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveDeployment.CognitiveDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveDeployment.CognitiveDeploymentTimeouts,
 	VersionUpgradeOption: *string,
 }
 ```
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 &cognitivedeployment.CognitiveDeploymentModel {
 	Format: *string,
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 &cognitivedeployment.CognitiveDeploymentSku {
 	Name: *string,
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 &cognitivedeployment.CognitiveDeploymentTimeouts {
 	Create: *string,
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.NewCognitiveDeploymentModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveDeploymentModelOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() CognitiveDeploymentModel
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.NewCognitiveDeploymentSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveDeploymentSkuOutputReference
 ```
@@ -2131,7 +2131,7 @@ func InternalValue() CognitiveDeploymentSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveDeployment.CognitiveDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitivedeployment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitivedeployment"
 
 cognitivedeployment.NewCognitiveDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveDeploymentTimeoutsOutputReference
 ```

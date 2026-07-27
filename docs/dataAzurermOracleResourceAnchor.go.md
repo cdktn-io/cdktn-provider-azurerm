@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.NewDataAzurermOracleResourceAnchor(scope Construct, id *string, config DataAzurermOracleResourceAnchorConfig) DataAzurermOracleResourceAnchor
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchor.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 &dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchorConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermora
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchorTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 &dataazurermoracleresourceanchor.DataAzurermOracleResourceAnchorTimeouts {
 	Read: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleResourceAnchor.DataAzurermOracleResourceAnchorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracleresourceanchor"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracleresourceanchor"
 
 dataazurermoracleresourceanchor.NewDataAzurermOracleResourceAnchorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleResourceAnchorTimeoutsOutputReference
 ```

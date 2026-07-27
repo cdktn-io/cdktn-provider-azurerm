@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSpark.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.NewMachineLearningSynapseSpark(scope Construct, id *string, config MachineLearningSynapseSparkConfig) MachineLearningSynapseSpark
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSpark.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.MachineLearningSynapseSpark_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSpark.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.MachineLearningSynapseSpark_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ machinelearningsynapsespark.MachineLearningSynapseSpark_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSpark.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.MachineLearningSynapseSpark_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ machinelearningsynapsespark.MachineLearningSynapseSpark_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSpark.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.MachineLearningSynapseSpark_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSparkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 &machinelearningsynapsespark.MachineLearningSynapseSparkConfig {
 	Connection: interface{},
@@ -993,10 +993,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearnin
 	SynapseSparkPoolId: *string,
 	Description: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningSynapseSpark.MachineLearningSynapseSparkIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningSynapseSpark.MachineLearningSynapseSparkIdentity,
 	LocalAuthEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningSynapseSpark.MachineLearningSynapseSparkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningSynapseSpark.MachineLearningSynapseSparkTimeouts,
 }
 ```
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSparkIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 &machinelearningsynapsespark.MachineLearningSynapseSparkIdentity {
 	Type: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSparkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 &machinelearningsynapsespark.MachineLearningSynapseSparkTimeouts {
 	Create: *string,
@@ -1334,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSparkIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.NewMachineLearningSynapseSparkIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningSynapseSparkIdentityOutputReference
 ```
@@ -1656,7 +1656,7 @@ func InternalValue() MachineLearningSynapseSparkIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningSynapseSpark.MachineLearningSynapseSparkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningsynapsespark"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningsynapsespark"
 
 machinelearningsynapsespark.NewMachineLearningSynapseSparkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningSynapseSparkTimeoutsOutputReference
 ```

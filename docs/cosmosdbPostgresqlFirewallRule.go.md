@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.NewCosmosdbPostgresqlFirewallRule(scope Construct, id *string, config CosmosdbPostgresqlFirewallRuleConfig) CosmosdbPostgresqlFirewallRule
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 &cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRuleConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgr
 	Name: *string,
 	StartIpAddress: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRuleTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 &cosmosdbpostgresqlfirewallrule.CosmosdbPostgresqlFirewallRuleTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbPostgresqlFirewallRule.CosmosdbPostgresqlFirewallRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbpostgresqlfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbpostgresqlfirewallrule"
 
 cosmosdbpostgresqlfirewallrule.NewCosmosdbPostgresqlFirewallRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbPostgresqlFirewallRuleTimeoutsOutputReference
 ```

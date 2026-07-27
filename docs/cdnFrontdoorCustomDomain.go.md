@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.NewCdnFrontdoorCustomDomain(scope Construct, id *string, config CdnFrontdoorCustomDomainConfig) CdnFrontdoorCustomDomain
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 &cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomainConfig {
 	Connection: interface{},
@@ -925,10 +925,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcu
 	CdnFrontdoorProfileId: *string,
 	HostName: *string,
 	Name: *string,
-	Tls: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTls,
+	Tls: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTls,
 	DnsZoneId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTimeouts,
 }
 ```
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 &cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomainTimeouts {
 	Create: *string,
@@ -1193,12 +1193,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 &cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomainTls {
 	CdnFrontdoorSecretId: *string,
 	CertificateType: *string,
-	CipherSuite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuite,
+	CipherSuite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuite,
 	MinimumTlsVersion: *string,
 	MinimumVersion: *string,
 }
@@ -1283,11 +1283,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 &cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomainTlsCipherSuite {
 	Type: *string,
-	CustomCiphers: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers,
+	CustomCiphers: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers,
 }
 ```
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 &cdnfrontdoorcustomdomain.CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers {
 	Tls12: *[]*string,
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.NewCdnFrontdoorCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorCustomDomainTimeoutsOutputReference
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.NewCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference
 ```
@@ -2051,7 +2051,7 @@ func InternalValue() CdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsCipherSuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.NewCdnFrontdoorCustomDomainTlsCipherSuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorCustomDomainTlsCipherSuiteOutputReference
 ```
@@ -2364,7 +2364,7 @@ func InternalValue() CdnFrontdoorCustomDomainTlsCipherSuite
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnFrontdoorCustomDomain.CdnFrontdoorCustomDomainTlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnfrontdoorcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnfrontdoorcustomdomain"
 
 cdnfrontdoorcustomdomain.NewCdnFrontdoorCustomDomainTlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnFrontdoorCustomDomainTlsOutputReference
 ```

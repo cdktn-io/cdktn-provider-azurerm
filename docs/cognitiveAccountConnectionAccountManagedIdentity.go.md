@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.NewCognitiveAccountConnectionAccountManagedIdentity(scope Construct, id *string, config CognitiveAccountConnectionAccountManagedIdentityConfig) CognitiveAccountConnectionAccountManagedIdentity
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccou
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 &cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentityConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 	Name: *string,
 	Target: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentityTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 &cognitiveaccountconnectionaccountmanagedidentity.CognitiveAccountConnectionAccountManagedIdentityTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionAccountManagedIdentity.CognitiveAccountConnectionAccountManagedIdentityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionaccountmanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountconnectionaccountmanagedidentity"
 
 cognitiveaccountconnectionaccountmanagedidentity.NewCognitiveAccountConnectionAccountManagedIdentityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountConnectionAccountManagedIdentityTimeoutsOutputReference
 ```

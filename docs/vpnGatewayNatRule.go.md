@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRule(scope Construct, id *string, config VpnGatewayNatRuleConfig) VpnGatewayNatRule
 ```
@@ -488,7 +488,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.VpnGatewayNatRule_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.VpnGatewayNatRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vpngatewaynatrule.VpnGatewayNatRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.VpnGatewayNatRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ vpngatewaynatrule.VpnGatewayNatRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.VpnGatewayNatRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -975,7 +975,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 &vpngatewaynatrule.VpnGatewayNatRuleConfig {
 	Connection: interface{},
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatr
 	InternalMapping: interface{},
 	IpConfigurationId: *string,
 	Mode: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.vpnGatewayNatRule.VpnGatewayNatRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.vpnGatewayNatRule.VpnGatewayNatRuleTimeouts,
 	Type: *string,
 }
 ```
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleExternalMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 &vpngatewaynatrule.VpnGatewayNatRuleExternalMapping {
 	AddressSpace: *string,
@@ -1258,7 +1258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleInternalMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 &vpngatewaynatrule.VpnGatewayNatRuleInternalMapping {
 	AddressSpace: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 &vpngatewaynatrule.VpnGatewayNatRuleTimeouts {
 	Create: *string,
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleExternalMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRuleExternalMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnGatewayNatRuleExternalMappingList
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleExternalMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRuleExternalMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnGatewayNatRuleExternalMappingOutputReference
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleInternalMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRuleInternalMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnGatewayNatRuleInternalMappingList
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleInternalMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRuleInternalMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnGatewayNatRuleInternalMappingOutputReference
 ```
@@ -2336,7 +2336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vpnGatewayNatRule.VpnGatewayNatRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/vpngatewaynatrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/vpngatewaynatrule"
 
 vpngatewaynatrule.NewVpnGatewayNatRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnGatewayNatRuleTimeoutsOutputReference
 ```

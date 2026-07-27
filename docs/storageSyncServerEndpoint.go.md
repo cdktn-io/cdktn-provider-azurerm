@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.NewStorageSyncServerEndpoint(scope Construct, id *string, config StorageSyncServerEndpointConfig) StorageSyncServerEndpoint
 ```
@@ -462,7 +462,7 @@ func ResetVolumeFreeSpacePercent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.StorageSyncServerEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.StorageSyncServerEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ storagesyncserverendpoint.StorageSyncServerEndpoint_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.StorageSyncServerEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ storagesyncserverendpoint.StorageSyncServerEndpoint_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.StorageSyncServerEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 &storagesyncserverendpoint.StorageSyncServerEndpointConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncser
 	InitialDownloadPolicy: *string,
 	LocalCacheMode: *string,
 	TierFilesOlderThanDays: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageSyncServerEndpoint.StorageSyncServerEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageSyncServerEndpoint.StorageSyncServerEndpointTimeouts,
 	VolumeFreeSpacePercent: *f64,
 }
 ```
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 &storagesyncserverendpoint.StorageSyncServerEndpointTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageSyncServerEndpoint.StorageSyncServerEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagesyncserverendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagesyncserverendpoint"
 
 storagesyncserverendpoint.NewStorageSyncServerEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageSyncServerEndpointTimeoutsOutputReference
 ```

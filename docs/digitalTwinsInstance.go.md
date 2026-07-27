@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.NewDigitalTwinsInstance(scope Construct, id *string, config DigitalTwinsInstanceConfig) DigitalTwinsInstance
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.DigitalTwinsInstance_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.DigitalTwinsInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ digitaltwinsinstance.DigitalTwinsInstance_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.DigitalTwinsInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ digitaltwinsinstance.DigitalTwinsInstance_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.DigitalTwinsInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 &digitaltwinsinstance.DigitalTwinsInstanceConfig {
 	Connection: interface{},
@@ -922,9 +922,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsin
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.digitalTwinsInstance.DigitalTwinsInstanceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.digitalTwinsInstance.DigitalTwinsInstanceIdentity,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.digitalTwinsInstance.DigitalTwinsInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.digitalTwinsInstance.DigitalTwinsInstanceTimeouts,
 }
 ```
 
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstanceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 &digitaltwinsinstance.DigitalTwinsInstanceIdentity {
 	Type: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 &digitaltwinsinstance.DigitalTwinsInstanceTimeouts {
 	Create: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstanceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.NewDigitalTwinsInstanceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DigitalTwinsInstanceIdentityOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() DigitalTwinsInstanceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.digitalTwinsInstance.DigitalTwinsInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/digitaltwinsinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/digitaltwinsinstance"
 
 digitaltwinsinstance.NewDigitalTwinsInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DigitalTwinsInstanceTimeoutsOutputReference
 ```

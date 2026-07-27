@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.NewDataFactoryCustomerManagedKey(scope Construct, id *string, config DataFactoryCustomerManagedKeyConfig) DataFactoryCustomerManagedKey
 ```
@@ -434,7 +434,7 @@ func ResetUserAssignedIdentityId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.DataFactoryCustomerManagedKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 &datafactorycustomermanagedkey.DataFactoryCustomerManagedKeyConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycus
 	CustomerManagedKeyId: *string,
 	DataFactoryId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKeyTimeouts,
 	UserAssignedIdentityId: *string,
 }
 ```
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 &datafactorycustomermanagedkey.DataFactoryCustomerManagedKeyTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCustomerManagedKey.DataFactoryCustomerManagedKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycustomermanagedkey"
 
 datafactorycustomermanagedkey.NewDataFactoryCustomerManagedKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryCustomerManagedKeyTimeoutsOutputReference
 ```

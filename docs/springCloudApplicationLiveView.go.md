@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.NewSpringCloudApplicationLiveView(scope Construct, id *string, config SpringCloudApplicationLiveViewConfig) SpringCloudApplicationLiveView
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.SpringCloudApplicationLiveView_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.SpringCloudApplicationLiveView_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ springcloudapplicationliveview.SpringCloudApplicationLiveView_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.SpringCloudApplicationLiveView_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ springcloudapplicationliveview.SpringCloudApplicationLiveView_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.SpringCloudApplicationLiveView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 &springcloudapplicationliveview.SpringCloudApplicationLiveViewConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapp
 	Name: *string,
 	SpringCloudServiceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 &springcloudapplicationliveview.SpringCloudApplicationLiveViewTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApplicationLiveView.SpringCloudApplicationLiveViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationliveview"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationliveview"
 
 springcloudapplicationliveview.NewSpringCloudApplicationLiveViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudApplicationLiveViewTimeoutsOutputReference
 ```

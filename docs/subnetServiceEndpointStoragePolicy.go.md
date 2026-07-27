@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.NewSubnetServiceEndpointStoragePolicy(scope Construct, id *string, config SubnetServiceEndpointStoragePolicyConfig) SubnetServiceEndpointStoragePolicy
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 &subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicyConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetservicee
 	Definition: interface{},
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyTimeouts,
 }
 ```
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 &subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicyDefinition {
 	Name: *string,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 &subnetserviceendpointstoragepolicy.SubnetServiceEndpointStoragePolicyTimeouts {
 	Create: *string,
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.NewSubnetServiceEndpointStoragePolicyDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SubnetServiceEndpointStoragePolicyDefinitionList
 ```
@@ -1414,7 +1414,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.NewSubnetServiceEndpointStoragePolicyDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SubnetServiceEndpointStoragePolicyDefinitionOutputReference
 ```
@@ -1783,7 +1783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.subnetServiceEndpointStoragePolicy.SubnetServiceEndpointStoragePolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/subnetserviceendpointstoragepolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/subnetserviceendpointstoragepolicy"
 
 subnetserviceendpointstoragepolicy.NewSubnetServiceEndpointStoragePolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SubnetServiceEndpointStoragePolicyTimeoutsOutputReference
 ```

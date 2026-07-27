@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperiment(scope Construct, id *string, config ChaosStudioExperimentConfig) ChaosStudioExperiment
 ```
@@ -473,7 +473,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.ChaosStudioExperiment_IsConstruct(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.ChaosStudioExperiment_IsTerraformElement(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ chaosstudioexperiment.ChaosStudioExperiment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.ChaosStudioExperiment_IsTerraformResource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ chaosstudioexperiment.ChaosStudioExperiment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperiment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.ChaosStudioExperiment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentConfig {
 	Connection: interface{},
@@ -954,8 +954,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexp
 	Selectors: interface{},
 	Steps: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.chaosStudioExperiment.ChaosStudioExperimentIdentity,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.chaosStudioExperiment.ChaosStudioExperimentTimeouts,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.chaosStudioExperiment.ChaosStudioExperimentIdentity,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.chaosStudioExperiment.ChaosStudioExperimentTimeouts,
 }
 ```
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentIdentity {
 	Type: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentSelectors {
 	ChaosStudioTargetIds: *[]*string,
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentSteps {
 	Branch: interface{},
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentStepsBranch {
 	Actions: interface{},
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentStepsBranchActions {
 	ActionType: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 &chaosstudioexperiment.ChaosStudioExperimentTimeouts {
 	Create: *string,
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChaosStudioExperimentIdentityOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() ChaosStudioExperimentIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChaosStudioExperimentSelectorsList
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChaosStudioExperimentSelectorsOutputReference
 ```
@@ -2308,7 +2308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsBranchActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChaosStudioExperimentStepsBranchActionsList
 ```
@@ -2468,7 +2468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsBranchActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChaosStudioExperimentStepsBranchActionsOutputReference
 ```
@@ -2873,7 +2873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsBranchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChaosStudioExperimentStepsBranchList
 ```
@@ -3033,7 +3033,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsBranchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsBranchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChaosStudioExperimentStepsBranchOutputReference
 ```
@@ -3357,7 +3357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChaosStudioExperimentStepsList
 ```
@@ -3517,7 +3517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChaosStudioExperimentStepsOutputReference
 ```
@@ -3841,7 +3841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.chaosStudioExperiment.ChaosStudioExperimentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/chaosstudioexperiment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/chaosstudioexperiment"
 
 chaosstudioexperiment.NewChaosStudioExperimentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChaosStudioExperimentTimeoutsOutputReference
 ```

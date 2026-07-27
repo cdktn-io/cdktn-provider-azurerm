@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.NewDataAzurermLogicAppWorkflow(scope Construct, id *string, config DataAzurermLogicAppWorkflowConfig) DataAzurermLogicAppWorkflow
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflow.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.DataAzurermLogicAppWorkflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -812,7 +812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 &dataazurermlogicappworkflow.DataAzurermLogicAppWorkflowConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlog
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowTimeouts,
 }
 ```
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 &dataazurermlogicappworkflow.DataAzurermLogicAppWorkflowIdentity {
 
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlog
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 &dataazurermlogicappworkflow.DataAzurermLogicAppWorkflowTimeouts {
 	Read: *string,
@@ -1022,7 +1022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.NewDataAzurermLogicAppWorkflowIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLogicAppWorkflowIdentityList
 ```
@@ -1171,7 +1171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.NewDataAzurermLogicAppWorkflowIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLogicAppWorkflowIdentityOutputReference
 ```
@@ -1482,7 +1482,7 @@ func InternalValue() DataAzurermLogicAppWorkflowIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLogicAppWorkflow.DataAzurermLogicAppWorkflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermlogicappworkflow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermlogicappworkflow"
 
 dataazurermlogicappworkflow.NewDataAzurermLogicAppWorkflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermLogicAppWorkflowTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.NewStackHciNetworkInterface(scope Construct, id *string, config StackHciNetworkInterfaceConfig) StackHciNetworkInterface
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.StackHciNetworkInterface_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.StackHciNetworkInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ stackhcinetworkinterface.StackHciNetworkInterface_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.StackHciNetworkInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ stackhcinetworkinterface.StackHciNetworkInterface_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.StackHciNetworkInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 &stackhcinetworkinterface.StackHciNetworkInterfaceConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetwor
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CustomLocationId: *string,
-	IpConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciNetworkInterface.StackHciNetworkInterfaceIpConfiguration,
+	IpConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciNetworkInterface.StackHciNetworkInterfaceIpConfiguration,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetwor
 	Id: *string,
 	MacAddress: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciNetworkInterface.StackHciNetworkInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciNetworkInterface.StackHciNetworkInterfaceTimeouts,
 }
 ```
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterfaceIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 &stackhcinetworkinterface.StackHciNetworkInterfaceIpConfiguration {
 	SubnetId: *string,
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 &stackhcinetworkinterface.StackHciNetworkInterfaceTimeouts {
 	Create: *string,
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterfaceIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.NewStackHciNetworkInterfaceIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciNetworkInterfaceIpConfigurationOutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() StackHciNetworkInterfaceIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciNetworkInterface.StackHciNetworkInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcinetworkinterface"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcinetworkinterface"
 
 stackhcinetworkinterface.NewStackHciNetworkInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciNetworkInterfaceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.NewSpringCloudAppDynamicsApplicationPerformanceMonitoring(scope Construct, id *string, config SpringCloudAppDynamicsApplicationPerformanceMonitoringConfig) SpringCloudAppDynamicsApplicationPerformanceMonitoring
 ```
@@ -476,7 +476,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApp
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApp
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoring_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1073,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 &springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringConfig {
 	Connection: interface{},
@@ -1096,7 +1096,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapp
 	ControllerSslEnabled: interface{},
 	GloballyEnabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeouts,
 }
 ```
 
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 &springcloudappdynamicsapplicationperformancemonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeouts {
 	Create: *string,
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudAppDynamicsApplicationPerformanceMonitoring.SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudappdynamicsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudappdynamicsapplicationperformancemonitoring"
 
 springcloudappdynamicsapplicationperformancemonitoring.NewSpringCloudAppDynamicsApplicationPerformanceMonitoringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudAppDynamicsApplicationPerformanceMonitoringTimeoutsOutputReference
 ```

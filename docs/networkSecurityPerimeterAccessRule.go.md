@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NewNetworkSecurityPerimeterAccessRule(scope Construct, id *string, config NetworkSecurityPerimeterAccessRuleConfig) NetworkSecurityPerimeterAccessRule
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 &networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRuleConfig {
 	Connection: interface{},
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurit
 	Id: *string,
 	ServiceTags: *[]*string,
 	SubscriptionIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRuleTimeouts,
 }
 ```
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 &networksecurityperimeteraccessrule.NetworkSecurityPerimeterAccessRuleTimeouts {
 	Create: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkSecurityPerimeterAccessRule.NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeteraccessrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networksecurityperimeteraccessrule"
 
 networksecurityperimeteraccessrule.NewNetworkSecurityPerimeterAccessRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityPerimeterAccessRuleTimeoutsOutputReference
 ```

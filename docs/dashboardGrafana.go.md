@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafana(scope Construct, id *string, config DashboardGrafanaConfig) DashboardGrafana
 ```
@@ -543,7 +543,7 @@ func ResetZoneRedundancyEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.DashboardGrafana_IsConstruct(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.DashboardGrafana_IsTerraformElement(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ dashboardgrafana.DashboardGrafana_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.DashboardGrafana_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ dashboardgrafana.DashboardGrafana_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.DashboardGrafana_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1239,7 +1239,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 &dashboardgrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrations {
 	ResourceId: *string,
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 &dashboardgrafana.DashboardGrafanaConfig {
 	Connection: interface{},
@@ -1290,13 +1290,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafa
 	AzureMonitorWorkspaceIntegrations: interface{},
 	DeterministicOutboundIpEnabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dashboardGrafana.DashboardGrafanaIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dashboardGrafana.DashboardGrafanaIdentity,
 	PublicNetworkAccessEnabled: interface{},
 	Sku: *string,
 	SkuSize: *string,
-	Smtp: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dashboardGrafana.DashboardGrafanaSmtp,
+	Smtp: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dashboardGrafana.DashboardGrafanaSmtp,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dashboardGrafana.DashboardGrafanaTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dashboardGrafana.DashboardGrafanaTimeouts,
 	ZoneRedundancyEnabled: interface{},
 }
 ```
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 &dashboardgrafana.DashboardGrafanaIdentity {
 	Type: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 &dashboardgrafana.DashboardGrafanaSmtp {
 	FromAddress: *string,
@@ -1798,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 &dashboardgrafana.DashboardGrafanaTimeouts {
 	Create: *string,
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafanaAzureMonitorWorkspaceIntegrationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardGrafanaAzureMonitorWorkspaceIntegrationsList
 ```
@@ -2034,7 +2034,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference
 ```
@@ -2323,7 +2323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafanaIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DashboardGrafanaIdentityOutputReference
 ```
@@ -2645,7 +2645,7 @@ func InternalValue() DashboardGrafanaIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafanaSmtpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DashboardGrafanaSmtpOutputReference
 ```
@@ -3091,7 +3091,7 @@ func InternalValue() DashboardGrafanaSmtp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dashboardgrafana"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dashboardgrafana"
 
 dashboardgrafana.NewDashboardGrafanaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DashboardGrafanaTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.NewDataAzurermManagedRedisAccessPolicyAssignment(scope Construct, id *string, config DataAzurermManagedRedisAccessPolicyAssignmentConfig) DataAzurermManagedRedisAccessPolicyAssignment
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolic
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 &dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignmentConfig {
 	Connection: interface{},
@@ -716,7 +716,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 	ObjectId: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignmentTimeouts,
 }
 ```
 
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 &dataazurermmanagedredisaccesspolicyassignment.DataAzurermManagedRedisAccessPolicyAssignmentTimeouts {
 	Read: *string,
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedisAccessPolicyAssignment.DataAzurermManagedRedisAccessPolicyAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredisaccesspolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmanagedredisaccesspolicyassignment"
 
 dataazurermmanagedredisaccesspolicyassignment.NewDataAzurermManagedRedisAccessPolicyAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermManagedRedisAccessPolicyAssignmentTimeoutsOutputReference
 ```

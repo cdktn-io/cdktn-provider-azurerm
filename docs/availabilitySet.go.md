@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.NewAvailabilitySet(scope Construct, id *string, config AvailabilitySetConfig) AvailabilitySet
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.AvailabilitySet_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.AvailabilitySet_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ availabilityset.AvailabilitySet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.AvailabilitySet_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ availabilityset.AvailabilitySet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.AvailabilitySet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 &availabilityset.AvailabilitySetConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityse
 	PlatformUpdateDomainCount: *f64,
 	ProximityPlacementGroupId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.availabilitySet.AvailabilitySetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.availabilitySet.AvailabilitySetTimeouts,
 }
 ```
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 &availabilityset.AvailabilitySetTimeouts {
 	Create: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.availabilitySet.AvailabilitySetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/availabilityset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/availabilityset"
 
 availabilityset.NewAvailabilitySetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AvailabilitySetTimeoutsOutputReference
 ```

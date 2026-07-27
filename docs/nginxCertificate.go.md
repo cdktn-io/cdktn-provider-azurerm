@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NewNginxCertificate(scope Construct, id *string, config NginxCertificateConfig) NginxCertificate
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NginxCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NginxCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ nginxcertificate.NginxCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NginxCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ nginxcertificate.NginxCertificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NginxCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 &nginxcertificate.NginxCertificateConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertifica
 	Name: *string,
 	NginxDeploymentId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.nginxCertificate.NginxCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.nginxCertificate.NginxCertificateTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 &nginxcertificate.NginxCertificateTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxCertificate.NginxCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxcertificate"
 
 nginxcertificate.NewNginxCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NginxCertificateTimeoutsOutputReference
 ```

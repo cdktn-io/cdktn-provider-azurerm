@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NewNetappBackupVault(scope Construct, id *string, config NetappBackupVaultConfig) NetappBackupVault
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ netappbackupvault.NetappBackupVault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ netappbackupvault.NetappBackupVault_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 &netappbackupvault.NetappBackupVaultConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupva
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.netappBackupVault.NetappBackupVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.netappBackupVault.NetappBackupVaultTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 &netappbackupvault.NetappBackupVaultTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappBackupVault.NetappBackupVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/netappbackupvault"
 
 netappbackupvault.NewNetappBackupVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupVaultTimeoutsOutputReference
 ```

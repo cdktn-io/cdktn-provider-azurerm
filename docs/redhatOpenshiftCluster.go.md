@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftCluster(scope Construct, id *string, config RedhatOpenshiftClusterConfig) RedhatOpenshiftCluster
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1111,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterApiServerProfile {
 	Visibility: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterClusterProfile {
 	Domain: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterConfig {
 	Connection: interface{},
@@ -1241,19 +1241,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ApiServerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile,
-	ClusterProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile,
-	IngressProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile,
+	ApiServerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile,
+	ClusterProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile,
+	IngressProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile,
 	Location: *string,
-	MainProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile,
+	MainProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile,
 	Name: *string,
-	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile,
+	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile,
 	ResourceGroupName: *string,
-	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal,
-	WorkerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile,
+	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal,
+	WorkerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts,
 }
 ```
 
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterIngressProfile {
 	Visibility: *string,
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterMainProfile {
 	SubnetId: *string,
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterNetworkProfile {
 	PodCidr: *string,
@@ -1714,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterServicePrincipal {
 	ClientId: *string,
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterTimeouts {
 	Create: *string,
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterWorkerProfile {
 	DiskSizeGb: *f64,
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterApiServerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterApiServerProfileOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() RedhatOpenshiftClusterApiServerProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterClusterProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterClusterProfileOutputReference
 ```
@@ -2622,7 +2622,7 @@ func InternalValue() RedhatOpenshiftClusterClusterProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterIngressProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterIngressProfileOutputReference
 ```
@@ -2915,7 +2915,7 @@ func InternalValue() RedhatOpenshiftClusterIngressProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterMainProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterMainProfileOutputReference
 ```
@@ -3266,7 +3266,7 @@ func InternalValue() RedhatOpenshiftClusterMainProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterNetworkProfileOutputReference
 ```
@@ -3617,7 +3617,7 @@ func InternalValue() RedhatOpenshiftClusterNetworkProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterServicePrincipalOutputReference
 ```
@@ -3910,7 +3910,7 @@ func InternalValue() RedhatOpenshiftClusterServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterTimeoutsOutputReference
 ```
@@ -4275,7 +4275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterWorkerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterWorkerProfileOutputReference
 ```

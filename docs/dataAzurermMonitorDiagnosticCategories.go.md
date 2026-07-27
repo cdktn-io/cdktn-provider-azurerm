@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.NewDataAzurermMonitorDiagnosticCategories(scope Construct, id *string, config DataAzurermMonitorDiagnosticCategoriesConfig) DataAzurermMonitorDiagnosticCategories
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategories.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 &dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategoriesConfig {
 	Connection: interface{},
@@ -703,7 +703,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmon
 	Provisioners: *[]interface{},
 	ResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategoriesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategoriesTimeouts,
 }
 ```
 
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategoriesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 &dataazurermmonitordiagnosticcategories.DataAzurermMonitorDiagnosticCategoriesTimeouts {
 	Read: *string,
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermMonitorDiagnosticCategories.DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmonitordiagnosticcategories"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermmonitordiagnosticcategories"
 
 dataazurermmonitordiagnosticcategories.NewDataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference
 ```

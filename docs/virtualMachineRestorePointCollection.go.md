@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.NewVirtualMachineRestorePointCollection(scope Construct, id *string, config VirtualMachineRestorePointCollectionConfig) VirtualMachineRestorePointCollection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.VirtualMachineRestorePointCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 &virtualmachinerestorepointcollection.VirtualMachineRestorePointCollectionConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachine
 	SourceVirtualMachineId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollectionTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 &virtualmachinerestorepointcollection.VirtualMachineRestorePointCollectionTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineRestorePointCollection.VirtualMachineRestorePointCollectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinerestorepointcollection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinerestorepointcollection"
 
 virtualmachinerestorepointcollection.NewVirtualMachineRestorePointCollectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineRestorePointCollectionTimeoutsOutputReference
 ```

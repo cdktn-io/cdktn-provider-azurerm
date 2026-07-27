@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NewNginxApiKey(scope Construct, id *string, config NginxApiKeyConfig) NginxApiKey
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NginxApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NginxApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ nginxapikey.NginxApiKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NginxApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ nginxapikey.NginxApiKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NginxApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 &nginxapikey.NginxApiKeyConfig {
 	Connection: interface{},
@@ -874,7 +874,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
 	NginxDeploymentId: *string,
 	SecretText: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.nginxApiKey.NginxApiKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.nginxApiKey.NginxApiKeyTimeouts,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 &nginxapikey.NginxApiKeyTimeouts {
 	Create: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxApiKey.NginxApiKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/nginxapikey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/nginxapikey"
 
 nginxapikey.NewNginxApiKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NginxApiKeyTimeoutsOutputReference
 ```

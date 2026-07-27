@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.NewCognitiveAccountRaiPolicy(scope Construct, id *string, config CognitiveAccountRaiPolicyConfig) CognitiveAccountRaiPolicy
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.CognitiveAccountRaiPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 &cognitiveaccountraipolicy.CognitiveAccountRaiPolicyConfig {
 	Connection: interface{},
@@ -936,7 +936,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 	Id: *string,
 	Mode: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyTimeouts,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyContentFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 &cognitiveaccountraipolicy.CognitiveAccountRaiPolicyContentFilter {
 	BlockEnabled: interface{},
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 &cognitiveaccountraipolicy.CognitiveAccountRaiPolicyTimeouts {
 	Create: *string,
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyContentFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.NewCognitiveAccountRaiPolicyContentFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CognitiveAccountRaiPolicyContentFilterList
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyContentFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.NewCognitiveAccountRaiPolicyContentFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CognitiveAccountRaiPolicyContentFilterOutputReference
 ```
@@ -1841,7 +1841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiPolicy.CognitiveAccountRaiPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountraipolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountraipolicy"
 
 cognitiveaccountraipolicy.NewCognitiveAccountRaiPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountRaiPolicyTimeoutsOutputReference
 ```

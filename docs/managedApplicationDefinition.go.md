@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.NewManagedApplicationDefinition(scope Construct, id *string, config ManagedApplicationDefinitionConfig) ManagedApplicationDefinition
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.ManagedApplicationDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.ManagedApplicationDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ managedapplicationdefinition.ManagedApplicationDefinition_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.ManagedApplicationDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ managedapplicationdefinition.ManagedApplicationDefinition_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.ManagedApplicationDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1086,7 +1086,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 &managedapplicationdefinition.ManagedApplicationDefinitionAuthorization {
 	RoleDefinitionId: *string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 &managedapplicationdefinition.ManagedApplicationDefinitionConfig {
 	Connection: interface{},
@@ -1155,7 +1155,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplica
 	PackageEnabled: interface{},
 	PackageFileUri: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts,
 }
 ```
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 &managedapplicationdefinition.ManagedApplicationDefinitionTimeouts {
 	Create: *string,
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.NewManagedApplicationDefinitionAuthorizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedApplicationDefinitionAuthorizationList
 ```
@@ -1673,7 +1673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.NewManagedApplicationDefinitionAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedApplicationDefinitionAuthorizationOutputReference
 ```
@@ -1984,7 +1984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplicationDefinition.ManagedApplicationDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplicationdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplicationdefinition"
 
 managedapplicationdefinition.NewManagedApplicationDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedApplicationDefinitionTimeoutsOutputReference
 ```

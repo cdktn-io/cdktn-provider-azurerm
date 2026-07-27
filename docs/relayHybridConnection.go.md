@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.NewRelayHybridConnection(scope Construct, id *string, config RelayHybridConnectionConfig) RelayHybridConnection
 ```
@@ -441,7 +441,7 @@ func ResetUserMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.RelayHybridConnection_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.RelayHybridConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ relayhybridconnection.RelayHybridConnection_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.RelayHybridConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ relayhybridconnection.RelayHybridConnection_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.RelayHybridConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 &relayhybridconnection.RelayHybridConnectionConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridcon
 	ResourceGroupName: *string,
 	Id: *string,
 	RequiresClientAuthorization: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.relayHybridConnection.RelayHybridConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.relayHybridConnection.RelayHybridConnectionTimeouts,
 	UserMetadata: *string,
 }
 ```
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 &relayhybridconnection.RelayHybridConnectionTimeouts {
 	Create: *string,
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.relayHybridConnection.RelayHybridConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/relayhybridconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/relayhybridconnection"
 
 relayhybridconnection.NewRelayHybridConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RelayHybridConnectionTimeoutsOutputReference
 ```

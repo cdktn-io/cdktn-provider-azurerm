@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.NewSentinelDataConnectorOfficeIrm(scope Construct, id *string, config SentinelDataConnectorOfficeIrmConfig) SentinelDataConnectorOfficeIrm
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrm.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrm.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrm.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrm.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrm_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 &sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrmConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataco
 	Name: *string,
 	Id: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrmTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrmTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrmTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 &sentineldataconnectorofficeirm.SentinelDataConnectorOfficeIrmTimeouts {
 	Create: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorOfficeIrm.SentinelDataConnectorOfficeIrmTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectorofficeirm"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectorofficeirm"
 
 sentineldataconnectorofficeirm.NewSentinelDataConnectorOfficeIrmTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorOfficeIrmTimeoutsOutputReference
 ```

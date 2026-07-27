@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRules(scope Construct, id *string, config DynatraceTagRulesConfig) DynatraceTagRules
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.DynatraceTagRules_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.DynatraceTagRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ dynatracetagrules.DynatraceTagRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.DynatraceTagRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ dynatracetagrules.DynatraceTagRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.DynatraceTagRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesConfig {
 	Connection: interface{},
@@ -901,9 +901,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagru
 	MonitorId: *string,
 	Name: *string,
 	Id: *string,
-	LogRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dynatraceTagRules.DynatraceTagRulesLogRule,
-	MetricRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dynatraceTagRules.DynatraceTagRulesMetricRule,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dynatraceTagRules.DynatraceTagRulesTimeouts,
+	LogRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dynatraceTagRules.DynatraceTagRulesLogRule,
+	MetricRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dynatraceTagRules.DynatraceTagRulesMetricRule,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dynatraceTagRules.DynatraceTagRulesTimeouts,
 }
 ```
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesLogRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesLogRule {
 	FilteringTag: interface{},
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesLogRuleFilteringTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesLogRuleFilteringTag {
 	Action: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesMetricRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesMetricRule {
 	FilteringTag: interface{},
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesMetricRuleFilteringTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesMetricRuleFilteringTag {
 	Action: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 &dynatracetagrules.DynatraceTagRulesTimeouts {
 	Create: *string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesLogRuleFilteringTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesLogRuleFilteringTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynatraceTagRulesLogRuleFilteringTagList
 ```
@@ -1563,7 +1563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesLogRuleFilteringTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesLogRuleFilteringTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynatraceTagRulesLogRuleFilteringTagOutputReference
 ```
@@ -1896,7 +1896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesLogRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesLogRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynatraceTagRulesLogRuleOutputReference
 ```
@@ -2274,7 +2274,7 @@ func InternalValue() DynatraceTagRulesLogRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesMetricRuleFilteringTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesMetricRuleFilteringTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DynatraceTagRulesMetricRuleFilteringTagList
 ```
@@ -2434,7 +2434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesMetricRuleFilteringTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesMetricRuleFilteringTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DynatraceTagRulesMetricRuleFilteringTagOutputReference
 ```
@@ -2767,7 +2767,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesMetricRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesMetricRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynatraceTagRulesMetricRuleOutputReference
 ```
@@ -3087,7 +3087,7 @@ func InternalValue() DynatraceTagRulesMetricRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dynatraceTagRules.DynatraceTagRulesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dynatracetagrules"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dynatracetagrules"
 
 dynatracetagrules.NewDynatraceTagRulesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DynatraceTagRulesTimeoutsOutputReference
 ```

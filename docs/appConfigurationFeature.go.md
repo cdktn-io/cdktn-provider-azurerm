@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeature(scope Construct, id *string, config AppConfigurationFeatureConfig) AppConfigurationFeature
 ```
@@ -543,7 +543,7 @@ func ResetTimewindowFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.AppConfigurationFeature_IsConstruct(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.AppConfigurationFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ appconfigurationfeature.AppConfigurationFeature_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.AppConfigurationFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +603,7 @@ appconfigurationfeature.AppConfigurationFeature_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.AppConfigurationFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1162,7 +1162,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureConfig {
 	Connection: interface{},
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurati
 	PercentageFilterValue: *f64,
 	Tags: *map[string]*string,
 	TargetingFilter: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appConfigurationFeature.AppConfigurationFeatureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.appConfigurationFeature.AppConfigurationFeatureTimeouts,
 	TimewindowFilter: interface{},
 }
 ```
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureCustomFilter {
 	Name: *string,
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureTargetingFilter {
 	DefaultRolloutPercentage: *f64,
@@ -1593,7 +1593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureTargetingFilterGroups {
 	Name: *string,
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureTimeouts {
 	Create: *string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 &appconfigurationfeature.AppConfigurationFeatureTimewindowFilter {
 	End: *string,
@@ -1761,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureCustomFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppConfigurationFeatureCustomFilterList
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureCustomFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppConfigurationFeatureCustomFilterOutputReference
 ```
@@ -2239,7 +2239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTargetingFilterGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppConfigurationFeatureTargetingFilterGroupsList
 ```
@@ -2399,7 +2399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTargetingFilterGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppConfigurationFeatureTargetingFilterGroupsOutputReference
 ```
@@ -2710,7 +2710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTargetingFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppConfigurationFeatureTargetingFilterList
 ```
@@ -2870,7 +2870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTargetingFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppConfigurationFeatureTargetingFilterOutputReference
 ```
@@ -3230,7 +3230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppConfigurationFeatureTimeoutsOutputReference
 ```
@@ -3595,7 +3595,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTimewindowFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppConfigurationFeatureTimewindowFilterList
 ```
@@ -3755,7 +3755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appconfigurationfeature"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/appconfigurationfeature"
 
 appconfigurationfeature.NewAppConfigurationFeatureTimewindowFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppConfigurationFeatureTimewindowFilterOutputReference
 ```

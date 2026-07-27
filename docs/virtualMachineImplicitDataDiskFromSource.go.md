@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.NewVirtualMachineImplicitDataDiskFromSource(scope Construct, id *string, config VirtualMachineImplicitDataDiskFromSourceConfig) VirtualMachineImplicitDataDiskFromSource
 ```
@@ -441,7 +441,7 @@ func ResetWriteAcceleratorEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSource_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSourc
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 &virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSourceConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachine
 	VirtualMachineId: *string,
 	Caching: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSourceTimeouts,
 	WriteAcceleratorEnabled: interface{},
 }
 ```
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 &virtualmachineimplicitdatadiskfromsource.VirtualMachineImplicitDataDiskFromSourceTimeouts {
 	Create: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineImplicitDataDiskFromSource.VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineimplicitdatadiskfromsource"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineimplicitdatadiskfromsource"
 
 virtualmachineimplicitdatadiskfromsource.NewVirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineImplicitDataDiskFromSourceTimeoutsOutputReference
 ```

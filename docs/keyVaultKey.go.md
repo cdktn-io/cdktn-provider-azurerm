@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKey(scope Construct, id *string, config KeyVaultKeyConfig) KeyVaultKey
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ keyvaultkey.KeyVaultKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ keyvaultkey.KeyVaultKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.KeyVaultKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1187,7 +1187,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyConfig {
 	Connection: interface{},
@@ -1206,10 +1206,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
 	Id: *string,
 	KeySize: *f64,
 	NotBeforeDate: *string,
-	ReleasePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultKey.KeyVaultKeyReleasePolicy,
-	RotationPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultKey.KeyVaultKeyRotationPolicy,
+	ReleasePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultKey.KeyVaultKeyReleasePolicy,
+	RotationPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultKey.KeyVaultKeyRotationPolicy,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultKey.KeyVaultKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultKey.KeyVaultKeyTimeouts,
 }
 ```
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyReleasePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyReleasePolicy {
 	Json: *string,
@@ -1526,10 +1526,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyRotationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyRotationPolicy {
-	Automatic: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultKey.KeyVaultKeyRotationPolicyAutomatic,
+	Automatic: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultKey.KeyVaultKeyRotationPolicyAutomatic,
 	ExpireAfter: *string,
 	NotifyBeforeExpiry: *string,
 }
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyRotationPolicyAutomatic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyRotationPolicyAutomatic {
 	TimeAfterCreation: *string,
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 &keyvaultkey.KeyVaultKeyTimeouts {
 	Create: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyReleasePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKeyReleasePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultKeyReleasePolicyOutputReference
 ```
@@ -2010,7 +2010,7 @@ func InternalValue() KeyVaultKeyReleasePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyRotationPolicyAutomaticOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKeyRotationPolicyAutomaticOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultKeyRotationPolicyAutomaticOutputReference
 ```
@@ -2317,7 +2317,7 @@ func InternalValue() KeyVaultKeyRotationPolicyAutomatic
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyRotationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKeyRotationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultKeyRotationPolicyOutputReference
 ```
@@ -2666,7 +2666,7 @@ func InternalValue() KeyVaultKeyRotationPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultKey.KeyVaultKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultkey"
 
 keyvaultkey.NewKeyVaultKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultKeyTimeoutsOutputReference
 ```

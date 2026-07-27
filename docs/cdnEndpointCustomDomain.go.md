@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.NewCdnEndpointCustomDomain(scope Construct, id *string, config CdnEndpointCustomDomainConfig) CdnEndpointCustomDomain
 ```
@@ -467,7 +467,7 @@ func ResetUserManagedHttps()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.CdnEndpointCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.CdnEndpointCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ cdnendpointcustomdomain.CdnEndpointCustomDomain_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.CdnEndpointCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ cdnendpointcustomdomain.CdnEndpointCustomDomain_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.CdnEndpointCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainCdnManagedHttps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 &cdnendpointcustomdomain.CdnEndpointCustomDomainCdnManagedHttps {
 	CertificateType: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 &cdnendpointcustomdomain.CdnEndpointCustomDomainConfig {
 	Connection: interface{},
@@ -983,10 +983,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcus
 	CdnEndpointId: *string,
 	HostName: *string,
 	Name: *string,
-	CdnManagedHttps: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpointCustomDomain.CdnEndpointCustomDomainCdnManagedHttps,
+	CdnManagedHttps: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpointCustomDomain.CdnEndpointCustomDomainCdnManagedHttps,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpointCustomDomain.CdnEndpointCustomDomainTimeouts,
-	UserManagedHttps: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpointCustomDomain.CdnEndpointCustomDomainUserManagedHttps,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpointCustomDomain.CdnEndpointCustomDomainTimeouts,
+	UserManagedHttps: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpointCustomDomain.CdnEndpointCustomDomainUserManagedHttps,
 }
 ```
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 &cdnendpointcustomdomain.CdnEndpointCustomDomainTimeouts {
 	Create: *string,
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainUserManagedHttps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 &cdnendpointcustomdomain.CdnEndpointCustomDomainUserManagedHttps {
 	KeyVaultSecretId: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainCdnManagedHttpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.NewCdnEndpointCustomDomainCdnManagedHttpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointCustomDomainCdnManagedHttpsOutputReference
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() CdnEndpointCustomDomainCdnManagedHttps
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.NewCdnEndpointCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointCustomDomainTimeoutsOutputReference
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpointCustomDomain.CdnEndpointCustomDomainUserManagedHttpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpointcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpointcustomdomain"
 
 cdnendpointcustomdomain.NewCdnEndpointCustomDomainUserManagedHttpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointCustomDomainUserManagedHttpsOutputReference
 ```

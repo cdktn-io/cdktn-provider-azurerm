@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServices(scope Construct, id *string, config AiServicesConfig) AiServices
 ```
@@ -549,7 +549,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.aiServices.AiServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.AiServices_IsConstruct(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.aiServices.AiServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.AiServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ aiservices.AiServices_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.aiServices.AiServices.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.AiServices_IsTerraformResource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ aiservices.AiServices_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.aiServices.AiServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.AiServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1223,7 +1223,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesConfig {
 	Connection: interface{},
@@ -1237,18 +1237,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
 	Name: *string,
 	ResourceGroupName: *string,
 	SkuName: *string,
-	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.aiServices.AiServicesCustomerManagedKey,
+	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.aiServices.AiServicesCustomerManagedKey,
 	CustomSubdomainName: *string,
 	Fqdns: *[]*string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.aiServices.AiServicesIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.aiServices.AiServicesIdentity,
 	LocalAuthenticationEnabled: interface{},
-	NetworkAcls: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.aiServices.AiServicesNetworkAcls,
+	NetworkAcls: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.aiServices.AiServicesNetworkAcls,
 	OutboundNetworkAccessRestricted: interface{},
 	PublicNetworkAccess: *string,
 	Storage: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.aiServices.AiServicesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.aiServices.AiServicesTimeouts,
 }
 ```
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesCustomerManagedKey {
 	IdentityClientId: *string,
@@ -1622,7 +1622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesIdentity {
 	Type: *string,
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesNetworkAcls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesNetworkAcls {
 	DefaultAction: *string,
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesNetworkAclsVirtualNetworkRules {
 	SubnetId: *string,
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesStorage {
 	StorageAccountId: *string,
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.aiServices.AiServicesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 &aiservices.AiServicesTimeouts {
 	Create: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesCustomerManagedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesCustomerManagedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiServicesCustomerManagedKeyOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() AiServicesCustomerManagedKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiServicesIdentityOutputReference
 ```
@@ -2570,7 +2570,7 @@ func InternalValue() AiServicesIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesNetworkAclsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiServicesNetworkAclsOutputReference
 ```
@@ -2941,7 +2941,7 @@ func InternalValue() AiServicesNetworkAcls
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesNetworkAclsVirtualNetworkRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiServicesNetworkAclsVirtualNetworkRulesList
 ```
@@ -3101,7 +3101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesNetworkAclsVirtualNetworkRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesNetworkAclsVirtualNetworkRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiServicesNetworkAclsVirtualNetworkRulesOutputReference
 ```
@@ -3419,7 +3419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AiServicesStorageList
 ```
@@ -3579,7 +3579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AiServicesStorageOutputReference
 ```
@@ -3897,7 +3897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.aiServices.AiServicesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/aiservices"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/aiservices"
 
 aiservices.NewAiServicesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AiServicesTimeoutsOutputReference
 ```

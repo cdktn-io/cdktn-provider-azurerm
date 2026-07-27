@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.NewSentinelWatchlistItem(scope Construct, id *string, config SentinelWatchlistItemConfig) SentinelWatchlistItem
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.SentinelWatchlistItem_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.SentinelWatchlistItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentinelwatchlistitem.SentinelWatchlistItem_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.SentinelWatchlistItem_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentinelwatchlistitem.SentinelWatchlistItem_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.SentinelWatchlistItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 &sentinelwatchlistitem.SentinelWatchlistItemConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchl
 	WatchlistId: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelWatchlistItem.SentinelWatchlistItemTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelWatchlistItem.SentinelWatchlistItemTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 &sentinelwatchlistitem.SentinelWatchlistItemTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelWatchlistItem.SentinelWatchlistItemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelwatchlistitem"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelwatchlistitem"
 
 sentinelwatchlistitem.NewSentinelWatchlistItemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelWatchlistItemTimeoutsOutputReference
 ```

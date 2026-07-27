@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespace(scope Construct, id *string, config EventgridNamespaceConfig) EventgridNamespace
 ```
@@ -515,7 +515,7 @@ func ResetTopicSpacesConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.EventgridNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.EventgridNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ eventgridnamespace.EventgridNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.EventgridNamespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ eventgridnamespace.EventgridNamespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.EventgridNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1068,7 +1068,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceConfig {
 	Connection: interface{},
@@ -1083,12 +1083,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnames
 	ResourceGroupName: *string,
 	Capacity: *f64,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridNamespace.EventgridNamespaceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridNamespace.EventgridNamespaceIdentity,
 	InboundIpRule: interface{},
 	PublicNetworkAccess: *string,
 	Sku: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridNamespace.EventgridNamespaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridNamespace.EventgridNamespaceTimeouts,
 	TopicSpacesConfiguration: interface{},
 }
 ```
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceIdentity {
 	Type: *string,
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceInboundIpRule {
 	IpMask: *string,
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceTimeouts {
 	Create: *string,
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceTopicSpacesConfiguration {
 	AlternativeAuthenticationNameSource: *[]*string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichment {
 	Key: *string,
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 &eventgridnamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichment {
 	Key: *string,
@@ -1715,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridNamespaceIdentityOutputReference
 ```
@@ -2037,7 +2037,7 @@ func InternalValue() EventgridNamespaceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceInboundIpRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridNamespaceInboundIpRuleList
 ```
@@ -2197,7 +2197,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceInboundIpRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceInboundIpRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridNamespaceInboundIpRuleOutputReference
 ```
@@ -2515,7 +2515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridNamespaceTimeoutsOutputReference
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentList
 ```
@@ -3040,7 +3040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridNamespaceTopicSpacesConfigurationDynamicRoutingEnrichmentOutputReference
 ```
@@ -3351,7 +3351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridNamespaceTopicSpacesConfigurationList
 ```
@@ -3511,7 +3511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridNamespaceTopicSpacesConfigurationOutputReference
 ```
@@ -3978,7 +3978,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentList
 ```
@@ -4138,7 +4138,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridNamespace.EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridnamespace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridnamespace"
 
 eventgridnamespace.NewEventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridNamespaceTopicSpacesConfigurationStaticRoutingEnrichmentOutputReference
 ```

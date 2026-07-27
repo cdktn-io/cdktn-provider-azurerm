@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.NewContainerRegistryWebhook(scope Construct, id *string, config ContainerRegistryWebhookConfig) ContainerRegistryWebhook
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.ContainerRegistryWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.ContainerRegistryWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ containerregistrywebhook.ContainerRegistryWebhook_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.ContainerRegistryWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ containerregistrywebhook.ContainerRegistryWebhook_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.ContainerRegistryWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 &containerregistrywebhook.ContainerRegistryWebhookConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 	Scope: *string,
 	Status: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistryWebhook.ContainerRegistryWebhookTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerRegistryWebhook.ContainerRegistryWebhookTimeouts,
 }
 ```
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhookTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 &containerregistrywebhook.ContainerRegistryWebhookTimeouts {
 	Create: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryWebhook.ContainerRegistryWebhookTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrywebhook"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrywebhook"
 
 containerregistrywebhook.NewContainerRegistryWebhookTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryWebhookTimeoutsOutputReference
 ```

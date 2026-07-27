@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.NewAutomationSchedule(scope Construct, id *string, config AutomationScheduleConfig) AutomationSchedule
 ```
@@ -496,7 +496,7 @@ func ResetWeekDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.AutomationSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.AutomationSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ automationschedule.AutomationSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.AutomationSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ automationschedule.AutomationSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.AutomationSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1093,7 +1093,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 &automationschedule.AutomationScheduleConfig {
 	Connection: interface{},
@@ -1112,9 +1112,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsche
 	Id: *string,
 	Interval: *f64,
 	MonthDays: *[]*f64,
-	MonthlyOccurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSchedule.AutomationScheduleMonthlyOccurrence,
+	MonthlyOccurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationSchedule.AutomationScheduleMonthlyOccurrence,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSchedule.AutomationScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationSchedule.AutomationScheduleTimeouts,
 	Timezone: *string,
 	WeekDays: *[]*string,
 }
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 &automationschedule.AutomationScheduleMonthlyOccurrence {
 	Day: *string,
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 &automationschedule.AutomationScheduleTimeouts {
 	Create: *string,
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.NewAutomationScheduleMonthlyOccurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationScheduleMonthlyOccurrenceOutputReference
 ```
@@ -1813,7 +1813,7 @@ func InternalValue() AutomationScheduleMonthlyOccurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationschedule"
 
 automationschedule.NewAutomationScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationScheduleTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.NewPaloAltoLocalRulestackRule(scope Construct, id *string, config PaloAltoLocalRulestackRuleConfig) PaloAltoLocalRulestackRule
 ```
@@ -550,7 +550,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_IsConstruct(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.PaloAltoLocalRulestackRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1301,7 +1301,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 &paloaltolocalrulestackrule.PaloAltoLocalRulestackRuleCategory {
 	CustomUrls: *[]*string,
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 &paloaltolocalrulestackrule.PaloAltoLocalRulestackRuleConfig {
 	Connection: interface{},
@@ -1359,13 +1359,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalr
 	Provisioners: *[]interface{},
 	Action: *string,
 	Applications: *[]*string,
-	Destination: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleDestination,
 	Name: *string,
 	Priority: *f64,
 	RulestackId: *string,
-	Source: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleSource,
+	Source: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleSource,
 	AuditComment: *string,
-	Category: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleCategory,
+	Category: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleCategory,
 	DecryptionRuleType: *string,
 	Description: *string,
 	Enabled: interface{},
@@ -1377,7 +1377,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalr
 	Protocol: *string,
 	ProtocolPorts: *[]*string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleTimeouts,
 }
 ```
 
@@ -1754,7 +1754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 &paloaltolocalrulestackrule.PaloAltoLocalRulestackRuleDestination {
 	Cidrs: *[]*string,
@@ -1842,7 +1842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 &paloaltolocalrulestackrule.PaloAltoLocalRulestackRuleSource {
 	Cidrs: *[]*string,
@@ -1916,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 &paloaltolocalrulestackrule.PaloAltoLocalRulestackRuleTimeouts {
 	Create: *string,
@@ -1992,7 +1992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleCategoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.NewPaloAltoLocalRulestackRuleCategoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackRuleCategoryOutputReference
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() PaloAltoLocalRulestackRuleCategory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.NewPaloAltoLocalRulestackRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackRuleDestinationOutputReference
 ```
@@ -2686,7 +2686,7 @@ func InternalValue() PaloAltoLocalRulestackRuleDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.NewPaloAltoLocalRulestackRuleSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackRuleSourceOutputReference
 ```
@@ -3051,7 +3051,7 @@ func InternalValue() PaloAltoLocalRulestackRuleSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.paloAltoLocalRulestackRule.PaloAltoLocalRulestackRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/paloaltolocalrulestackrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/paloaltolocalrulestackrule"
 
 paloaltolocalrulestackrule.NewPaloAltoLocalRulestackRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PaloAltoLocalRulestackRuleTimeoutsOutputReference
 ```

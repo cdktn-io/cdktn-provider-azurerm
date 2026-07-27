@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.NewKustoClusterPrincipalAssignment(scope Construct, id *string, config KustoClusterPrincipalAssignmentConfig) KustoClusterPrincipalAssignment
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.KustoClusterPrincipalAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 &kustoclusterprincipalassignment.KustoClusterPrincipalAssignmentConfig {
 	Connection: interface{},
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterpr
 	Role: *string,
 	TenantId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignmentTimeouts,
 }
 ```
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 &kustoclusterprincipalassignment.KustoClusterPrincipalAssignmentTimeouts {
 	Create: *string,
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kustoClusterPrincipalAssignment.KustoClusterPrincipalAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kustoclusterprincipalassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kustoclusterprincipalassignment"
 
 kustoclusterprincipalassignment.NewKustoClusterPrincipalAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KustoClusterPrincipalAssignmentTimeoutsOutputReference
 ```

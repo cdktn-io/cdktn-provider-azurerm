@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.NewSystemCenterVirtualMachineManagerServer(scope Construct, id *string, config SystemCenterVirtualMachineManagerServerConfig) SystemCenterVirtualMachineManagerServer
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 &systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServerConfig {
 	Connection: interface{},
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervi
 	Id: *string,
 	Port: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServerTimeouts,
 }
 ```
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 &systemcentervirtualmachinemanagerserver.SystemCenterVirtualMachineManagerServerTimeouts {
 	Create: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.systemCenterVirtualMachineManagerServer.SystemCenterVirtualMachineManagerServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/systemcentervirtualmachinemanagerserver"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/systemcentervirtualmachinemanagerserver"
 
 systemcentervirtualmachinemanagerserver.NewSystemCenterVirtualMachineManagerServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SystemCenterVirtualMachineManagerServerTimeoutsOutputReference
 ```
