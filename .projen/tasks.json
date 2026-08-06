@@ -2,7 +2,7 @@
   "manifestVersion": 3,
   "env": {
     "PATH": "$(pnpm -c exec \"node --print process.env.PATH\")",
-    "NODE_OPTIONS": "--max-old-space-size=28672",
+    "NODE_OPTIONS": "--max-old-space-size=20480",
     "CHECKPOINT_DISABLE": "1"
   },
   "tasks": {
@@ -177,7 +177,7 @@
       },
       "steps": [
         {
-          "exec": "mkdir -p src && rm -rf ./src/* && cdktn get && cp -R .gen/providers/azurerm/* ./src/ && cp .gen/versions.json ./src/version.json"
+          "exec": "rm -rf ./src && cdktn get && cp -R .gen/providers/azurerm ./src && cp .gen/versions.json ./src/version.json"
         },
         {
           "spawn": "default"
