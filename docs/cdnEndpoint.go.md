@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpoint(scope Construct, id *string, config CdnEndpointConfig) CdnEndpoint
 ```
@@ -570,7 +570,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.CdnEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.CdnEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ cdnendpoint.CdnEndpoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.CdnEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ cdnendpoint.CdnEndpoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.CdnEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1310,7 +1310,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointConfig {
 	Connection: interface{},
@@ -1328,7 +1328,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
 	ContentTypesToCompress: *[]*string,
 	DeliveryRule: interface{},
 	GeoFilter: interface{},
-	GlobalDeliveryRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointGlobalDeliveryRule,
+	GlobalDeliveryRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointGlobalDeliveryRule,
 	Id: *string,
 	IsCompressionEnabled: interface{},
 	IsHttpAllowed: interface{},
@@ -1339,7 +1339,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
 	ProbePath: *string,
 	QuerystringCachingBehaviour: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointTimeouts,
 }
 ```
 
@@ -1705,15 +1705,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRule {
 	Name: *string,
 	Order: *f64,
-	CacheExpirationAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleCacheExpirationAction,
-	CacheKeyQueryStringAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleCacheKeyQueryStringAction,
+	CacheExpirationAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleCacheExpirationAction,
+	CacheKeyQueryStringAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleCacheKeyQueryStringAction,
 	CookiesCondition: interface{},
-	DeviceCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleDeviceCondition,
+	DeviceCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleDeviceCondition,
 	HttpVersionCondition: interface{},
 	ModifyRequestHeaderAction: interface{},
 	ModifyResponseHeaderAction: interface{},
@@ -1722,14 +1722,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
 	RemoteAddressCondition: interface{},
 	RequestBodyCondition: interface{},
 	RequestHeaderCondition: interface{},
-	RequestMethodCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleRequestMethodCondition,
-	RequestSchemeCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleRequestSchemeCondition,
+	RequestMethodCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleRequestMethodCondition,
+	RequestSchemeCondition: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleRequestSchemeCondition,
 	RequestUriCondition: interface{},
 	UrlFileExtensionCondition: interface{},
 	UrlFileNameCondition: interface{},
 	UrlPathCondition: interface{},
-	UrlRedirectAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleUrlRedirectAction,
-	UrlRewriteAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointDeliveryRuleUrlRewriteAction,
+	UrlRedirectAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleUrlRedirectAction,
+	UrlRewriteAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointDeliveryRuleUrlRewriteAction,
 }
 ```
 
@@ -2071,7 +2071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCacheExpirationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleCacheExpirationAction {
 	Behavior: *string,
@@ -2117,7 +2117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCacheKeyQueryStringAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleCacheKeyQueryStringAction {
 	Behavior: *string,
@@ -2163,7 +2163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCookiesCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleCookiesCondition {
 	Operator: *string,
@@ -2251,7 +2251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleDeviceCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleDeviceCondition {
 	MatchValues: *[]*string,
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleHttpVersionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleHttpVersionCondition {
 	MatchValues: *[]*string,
@@ -2371,7 +2371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyRequestHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleModifyRequestHeaderAction {
 	Action: *string,
@@ -2431,7 +2431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyResponseHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleModifyResponseHeaderAction {
 	Action: *string,
@@ -2491,7 +2491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRulePostArgCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRulePostArgCondition {
 	Operator: *string,
@@ -2579,7 +2579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleQueryStringCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleQueryStringCondition {
 	Operator: *string,
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRemoteAddressCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRemoteAddressCondition {
 	Operator: *string,
@@ -2713,7 +2713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestBodyCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRequestBodyCondition {
 	Operator: *string,
@@ -2787,7 +2787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestHeaderCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRequestHeaderCondition {
 	Operator: *string,
@@ -2875,7 +2875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestMethodCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRequestMethodCondition {
 	MatchValues: *[]*string,
@@ -2935,7 +2935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestSchemeCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRequestSchemeCondition {
 	MatchValues: *[]*string,
@@ -2995,7 +2995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestUriCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleRequestUriCondition {
 	Operator: *string,
@@ -3069,7 +3069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileExtensionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleUrlFileExtensionCondition {
 	Operator: *string,
@@ -3143,7 +3143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileNameCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleUrlFileNameCondition {
 	Operator: *string,
@@ -3217,7 +3217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlPathCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleUrlPathCondition {
 	Operator: *string,
@@ -3291,7 +3291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlRedirectAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleUrlRedirectAction {
 	RedirectType: *string,
@@ -3393,7 +3393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlRewriteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointDeliveryRuleUrlRewriteAction {
 	Destination: *string,
@@ -3453,7 +3453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGeoFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGeoFilter {
 	Action: *string,
@@ -3513,15 +3513,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRule {
-	CacheExpirationAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheExpirationAction,
-	CacheKeyQueryStringAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringAction,
+	CacheExpirationAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheExpirationAction,
+	CacheKeyQueryStringAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringAction,
 	ModifyRequestHeaderAction: interface{},
 	ModifyResponseHeaderAction: interface{},
-	UrlRedirectAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRedirectAction,
-	UrlRewriteAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRewriteAction,
+	UrlRedirectAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRedirectAction,
+	UrlRewriteAction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRewriteAction,
 }
 ```
 
@@ -3627,7 +3627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheExpirationAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleCacheExpirationAction {
 	Behavior: *string,
@@ -3673,7 +3673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringAction {
 	Behavior: *string,
@@ -3719,7 +3719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyRequestHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleModifyRequestHeaderAction {
 	Action: *string,
@@ -3779,7 +3779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleModifyResponseHeaderAction {
 	Action: *string,
@@ -3839,7 +3839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRedirectAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleUrlRedirectAction {
 	RedirectType: *string,
@@ -3941,7 +3941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRewriteAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointGlobalDeliveryRuleUrlRewriteAction {
 	Destination: *string,
@@ -4001,7 +4001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointOrigin {
 	HostName: *string,
@@ -4075,7 +4075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 &cdnendpoint.CdnEndpointTimeouts {
 	Create: *string,
@@ -4151,7 +4151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCacheExpirationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleCacheExpirationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleCacheExpirationActionOutputReference
 ```
@@ -4451,7 +4451,7 @@ func InternalValue() CdnEndpointDeliveryRuleCacheExpirationAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCacheKeyQueryStringActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleCacheKeyQueryStringActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleCacheKeyQueryStringActionOutputReference
 ```
@@ -4751,7 +4751,7 @@ func InternalValue() CdnEndpointDeliveryRuleCacheKeyQueryStringAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCookiesConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleCookiesConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleCookiesConditionList
 ```
@@ -4911,7 +4911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleCookiesConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleCookiesConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleCookiesConditionOutputReference
 ```
@@ -5309,7 +5309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleDeviceConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleDeviceConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleDeviceConditionOutputReference
 ```
@@ -5638,7 +5638,7 @@ func InternalValue() CdnEndpointDeliveryRuleDeviceCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleHttpVersionConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleHttpVersionConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleHttpVersionConditionList
 ```
@@ -5798,7 +5798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleHttpVersionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleHttpVersionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleHttpVersionConditionOutputReference
 ```
@@ -6145,7 +6145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleList
 ```
@@ -6305,7 +6305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyRequestHeaderActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleModifyRequestHeaderActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleModifyRequestHeaderActionList
 ```
@@ -6465,7 +6465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyRequestHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleModifyRequestHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleModifyRequestHeaderActionOutputReference
 ```
@@ -6805,7 +6805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyResponseHeaderActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleModifyResponseHeaderActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleModifyResponseHeaderActionList
 ```
@@ -6965,7 +6965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleModifyResponseHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleModifyResponseHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleModifyResponseHeaderActionOutputReference
 ```
@@ -7305,7 +7305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleOutputReference
 ```
@@ -8456,7 +8456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRulePostArgConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRulePostArgConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRulePostArgConditionList
 ```
@@ -8616,7 +8616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRulePostArgConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRulePostArgConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRulePostArgConditionOutputReference
 ```
@@ -9014,7 +9014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleQueryStringConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleQueryStringConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleQueryStringConditionList
 ```
@@ -9174,7 +9174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleQueryStringConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleQueryStringConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleQueryStringConditionOutputReference
 ```
@@ -9550,7 +9550,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRemoteAddressConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRemoteAddressConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleRemoteAddressConditionList
 ```
@@ -9710,7 +9710,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRemoteAddressConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleRemoteAddressConditionOutputReference
 ```
@@ -10057,7 +10057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestBodyConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestBodyConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleRequestBodyConditionList
 ```
@@ -10217,7 +10217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestBodyConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestBodyConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleRequestBodyConditionOutputReference
 ```
@@ -10593,7 +10593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestHeaderConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestHeaderConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleRequestHeaderConditionList
 ```
@@ -10753,7 +10753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestHeaderConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestHeaderConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleRequestHeaderConditionOutputReference
 ```
@@ -11151,7 +11151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestMethodConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestMethodConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleRequestMethodConditionOutputReference
 ```
@@ -11480,7 +11480,7 @@ func InternalValue() CdnEndpointDeliveryRuleRequestMethodCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestSchemeConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestSchemeConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleRequestSchemeConditionOutputReference
 ```
@@ -11809,7 +11809,7 @@ func InternalValue() CdnEndpointDeliveryRuleRequestSchemeCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestUriConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestUriConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleRequestUriConditionList
 ```
@@ -11969,7 +11969,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleRequestUriConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleRequestUriConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleRequestUriConditionOutputReference
 ```
@@ -12345,7 +12345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileExtensionConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlFileExtensionConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleUrlFileExtensionConditionList
 ```
@@ -12505,7 +12505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleUrlFileExtensionConditionOutputReference
 ```
@@ -12881,7 +12881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileNameConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlFileNameConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleUrlFileNameConditionList
 ```
@@ -13041,7 +13041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlFileNameConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlFileNameConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleUrlFileNameConditionOutputReference
 ```
@@ -13417,7 +13417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlPathConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlPathConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointDeliveryRuleUrlPathConditionList
 ```
@@ -13577,7 +13577,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlPathConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlPathConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointDeliveryRuleUrlPathConditionOutputReference
 ```
@@ -13953,7 +13953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlRedirectActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlRedirectActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleUrlRedirectActionOutputReference
 ```
@@ -14369,7 +14369,7 @@ func InternalValue() CdnEndpointDeliveryRuleUrlRedirectAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointDeliveryRuleUrlRewriteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointDeliveryRuleUrlRewriteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointDeliveryRuleUrlRewriteActionOutputReference
 ```
@@ -14691,7 +14691,7 @@ func InternalValue() CdnEndpointDeliveryRuleUrlRewriteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGeoFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGeoFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointGeoFilterList
 ```
@@ -14851,7 +14851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGeoFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGeoFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointGeoFilterOutputReference
 ```
@@ -15184,7 +15184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheExpirationActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleCacheExpirationActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointGlobalDeliveryRuleCacheExpirationActionOutputReference
 ```
@@ -15484,7 +15484,7 @@ func InternalValue() CdnEndpointGlobalDeliveryRuleCacheExpirationAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleCacheKeyQueryStringActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringActionOutputReference
 ```
@@ -15784,7 +15784,7 @@ func InternalValue() CdnEndpointGlobalDeliveryRuleCacheKeyQueryStringAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionList
 ```
@@ -15944,7 +15944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointGlobalDeliveryRuleModifyRequestHeaderActionOutputReference
 ```
@@ -16284,7 +16284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionList
 ```
@@ -16444,7 +16444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointGlobalDeliveryRuleModifyResponseHeaderActionOutputReference
 ```
@@ -16784,7 +16784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointGlobalDeliveryRuleOutputReference
 ```
@@ -17285,7 +17285,7 @@ func InternalValue() CdnEndpointGlobalDeliveryRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRedirectActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleUrlRedirectActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointGlobalDeliveryRuleUrlRedirectActionOutputReference
 ```
@@ -17701,7 +17701,7 @@ func InternalValue() CdnEndpointGlobalDeliveryRuleUrlRedirectAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointGlobalDeliveryRuleUrlRewriteActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointGlobalDeliveryRuleUrlRewriteActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointGlobalDeliveryRuleUrlRewriteActionOutputReference
 ```
@@ -18023,7 +18023,7 @@ func InternalValue() CdnEndpointGlobalDeliveryRuleUrlRewriteAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointOriginList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointOriginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CdnEndpointOriginList
 ```
@@ -18183,7 +18183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CdnEndpointOriginOutputReference
 ```
@@ -18552,7 +18552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnEndpoint.CdnEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnendpoint"
 
 cdnendpoint.NewCdnEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnEndpointTimeoutsOutputReference
 ```

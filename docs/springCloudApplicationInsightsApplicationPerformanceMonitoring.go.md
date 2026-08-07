@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.NewSpringCloudApplicationInsightsApplicationPerformanceMonitoring(scope Construct, id *string, config SpringCloudApplicationInsightsApplicationPerformanceMonitoringConfig) SpringCloudApplicationInsightsApplicationPerformanceMonitoring
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoring_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 &springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringConfig {
 	Connection: interface{},
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapp
 	RoleName: *string,
 	SamplingPercentage: *f64,
 	SamplingRequestsPerSecond: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts,
 }
 ```
 
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 &springcloudapplicationinsightsapplicationperformancemonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts {
 	Create: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudApplicationInsightsApplicationPerformanceMonitoring.SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudapplicationinsightsapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudapplicationinsightsapplicationperformancemonitoring"
 
 springcloudapplicationinsightsapplicationperformancemonitoring.NewSpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsOutputReference
 ```

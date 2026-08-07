@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.NewDataAzurermTrafficManagerGeographicalLocation(scope Construct, id *string, config DataAzurermTrafficManagerGeographicalLocationConfig) DataAzurermTrafficManagerGeographicalLocation
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocation_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographi
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 &dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocationConfig {
 	Connection: interface{},
@@ -670,7 +670,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtra
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocationTimeouts,
 }
 ```
 
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 &dataazurermtrafficmanagergeographicallocation.DataAzurermTrafficManagerGeographicalLocationTimeouts {
 	Read: *string,
@@ -841,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermTrafficManagerGeographicalLocation.DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermtrafficmanagergeographicallocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermtrafficmanagergeographicallocation"
 
 dataazurermtrafficmanagergeographicallocation.NewDataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermTrafficManagerGeographicalLocationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.NewMssqlManagedInstanceTransparentDataEncryption(scope Construct, id *string, config MssqlManagedInstanceTransparentDataEncryptionConfig) MssqlManagedInstanceTransparentDataEncryption
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryption_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryption_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryption_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 &mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryptionConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedin
 	Id: *string,
 	KeyVaultKeyId: *string,
 	ManagedHsmKeyId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryptionTimeouts,
 }
 ```
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 &mssqlmanagedinstancetransparentdataencryption.MssqlManagedInstanceTransparentDataEncryptionTimeouts {
 	Create: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlManagedInstanceTransparentDataEncryption.MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqlmanagedinstancetransparentdataencryption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqlmanagedinstancetransparentdataencryption"
 
 mssqlmanagedinstancetransparentdataencryption.NewMssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquet(scope Construct, id *string, config DataFactoryDatasetParquetConfig) DataFactoryDatasetParquet
 ```
@@ -556,7 +556,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.DataFactoryDatasetParquet_IsConstruct(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.DataFactoryDatasetParquet_IsTerraformElement(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ datafactorydatasetparquet.DataFactoryDatasetParquet_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.DataFactoryDatasetParquet_IsTerraformResource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ datafactorydatasetparquet.DataFactoryDatasetParquet_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.DataFactoryDatasetParquet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1197,7 +1197,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetAzureBlobFsLocation {
 	DynamicFilenameEnabled: interface{},
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetAzureBlobStorageLocation {
 	Container: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetConfig {
 	Connection: interface{},
@@ -1416,17 +1416,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydat
 	Name: *string,
 	AdditionalProperties: *map[string]*string,
 	Annotations: *[]*string,
-	AzureBlobFsLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocation,
-	AzureBlobStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobStorageLocation,
+	AzureBlobFsLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocation,
+	AzureBlobStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobStorageLocation,
 	CompressionCodec: *string,
 	CompressionLevel: *string,
 	Description: *string,
 	Folder: *string,
-	HttpServerLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetParquet.DataFactoryDatasetParquetHttpServerLocation,
+	HttpServerLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetParquet.DataFactoryDatasetParquetHttpServerLocation,
 	Id: *string,
 	Parameters: *map[string]*string,
 	SchemaColumn: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryDatasetParquet.DataFactoryDatasetParquetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryDatasetParquet.DataFactoryDatasetParquetTimeouts,
 }
 ```
 
@@ -1740,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetHttpServerLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetHttpServerLocation {
 	Filename: *string,
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetSchemaColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetSchemaColumn {
 	Name: *string,
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 &datafactorydatasetparquet.DataFactoryDatasetParquetTimeouts {
 	Create: *string,
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobFsLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetAzureBlobFsLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetParquetAzureBlobFsLocationOutputReference
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() DataFactoryDatasetParquetAzureBlobFsLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetAzureBlobStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetAzureBlobStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetParquetAzureBlobStorageLocationOutputReference
 ```
@@ -2803,7 +2803,7 @@ func InternalValue() DataFactoryDatasetParquetAzureBlobStorageLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetHttpServerLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetHttpServerLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetParquetHttpServerLocationOutputReference
 ```
@@ -3183,7 +3183,7 @@ func InternalValue() DataFactoryDatasetParquetHttpServerLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetSchemaColumnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetSchemaColumnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryDatasetParquetSchemaColumnList
 ```
@@ -3343,7 +3343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetSchemaColumnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetSchemaColumnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryDatasetParquetSchemaColumnOutputReference
 ```
@@ -3690,7 +3690,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryDatasetParquet.DataFactoryDatasetParquetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorydatasetparquet"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorydatasetparquet"
 
 datafactorydatasetparquet.NewDataFactoryDatasetParquetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryDatasetParquetTimeoutsOutputReference
 ```

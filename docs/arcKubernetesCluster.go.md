@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesCluster(scope Construct, id *string, config ArcKubernetesClusterConfig) ArcKubernetesCluster
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ arckubernetescluster.ArcKubernetesCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ arckubernetescluster.ArcKubernetesCluster_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterConfig {
 	Connection: interface{},
@@ -1000,13 +1000,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetesc
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AgentPublicKeyCertificate: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.arcKubernetesCluster.ArcKubernetesClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcKubernetesCluster.ArcKubernetesClusterIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.arcKubernetesCluster.ArcKubernetesClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcKubernetesCluster.ArcKubernetesClusterTimeouts,
 }
 ```
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterIdentity {
 	Type: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterTimeouts {
 	Create: *string,
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesClusterIdentityOutputReference
 ```
@@ -1611,7 +1611,7 @@ func InternalValue() ArcKubernetesClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesClusterTimeoutsOutputReference
 ```

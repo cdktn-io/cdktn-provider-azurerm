@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.NewDataAzurermDevCenterProjectPool(scope Construct, id *string, config DataAzurermDevCenterProjectPoolConfig) DataAzurermDevCenterProjectPool
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 &dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPoolConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdev
 	DevCenterProjectId: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPoolTimeouts,
 }
 ```
 
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 &dataazurermdevcenterprojectpool.DataAzurermDevCenterProjectPoolTimeouts {
 	Read: *string,
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDevCenterProjectPool.DataAzurermDevCenterProjectPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdevcenterprojectpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdevcenterprojectpool"
 
 dataazurermdevcenterprojectpool.NewDataAzurermDevCenterProjectPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDevCenterProjectPoolTimeoutsOutputReference
 ```

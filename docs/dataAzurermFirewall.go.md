@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewall(scope Construct, id *string, config DataAzurermFirewallConfig) DataAzurermFirewall
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.DataAzurermFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.DataAzurermFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermfirewall.DataAzurermFirewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.DataAzurermFirewall_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermfirewall.DataAzurermFirewall_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.DataAzurermFirewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 &dataazurermfirewall.DataAzurermFirewallConfig {
 	Connection: interface{},
@@ -844,7 +844,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfir
 	ResourceGroupName: *string,
 	DnsProxyEnabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermFirewall.DataAzurermFirewallTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermFirewall.DataAzurermFirewallTimeouts,
 }
 ```
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 &dataazurermfirewall.DataAzurermFirewallIpConfiguration {
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallManagementIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 &dataazurermfirewall.DataAzurermFirewallManagementIpConfiguration {
 
@@ -1033,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 &dataazurermfirewall.DataAzurermFirewallTimeouts {
 	Read: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallVirtualHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 &dataazurermfirewall.DataAzurermFirewallVirtualHub {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfir
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermFirewallIpConfigurationList
 ```
@@ -1229,7 +1229,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermFirewallIpConfigurationOutputReference
 ```
@@ -1540,7 +1540,7 @@ func InternalValue() DataAzurermFirewallIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallManagementIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallManagementIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermFirewallManagementIpConfigurationList
 ```
@@ -1689,7 +1689,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallManagementIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallManagementIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermFirewallManagementIpConfigurationOutputReference
 ```
@@ -2000,7 +2000,7 @@ func InternalValue() DataAzurermFirewallManagementIpConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermFirewallTimeoutsOutputReference
 ```
@@ -2278,7 +2278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallVirtualHubList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallVirtualHubList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermFirewallVirtualHubList
 ```
@@ -2427,7 +2427,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermFirewall.DataAzurermFirewallVirtualHubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermfirewall"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermfirewall"
 
 dataazurermfirewall.NewDataAzurermFirewallVirtualHubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermFirewallVirtualHubOutputReference
 ```

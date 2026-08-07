@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.NewDataAzurermNetworkServiceTags(scope Construct, id *string, config DataAzurermNetworkServiceTagsConfig) DataAzurermNetworkServiceTags
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.DataAzurermNetworkServiceTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 &dataazurermnetworkservicetags.DataAzurermNetworkServiceTagsConfig {
 	Connection: interface{},
@@ -767,7 +767,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 	Service: *string,
 	Id: *string,
 	LocationFilter: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTagsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTagsTimeouts,
 }
 ```
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTagsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 &dataazurermnetworkservicetags.DataAzurermNetworkServiceTagsTimeouts {
 	Read: *string,
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkServiceTags.DataAzurermNetworkServiceTagsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetworkservicetags"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworkservicetags"
 
 dataazurermnetworkservicetags.NewDataAzurermNetworkServiceTagsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetworkServiceTagsTimeoutsOutputReference
 ```

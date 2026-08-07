@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.NewDataFactoryLinkedServiceOdata(scope Construct, id *string, config DataFactoryLinkedServiceOdataConfig) DataFactoryLinkedServiceOdata
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdata.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdata.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.DataFactoryLinkedServiceOdata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataBasicAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 &datafactorylinkedserviceodata.DataFactoryLinkedServiceOdataBasicAuthentication {
 	Password: *string,
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 &datafactorylinkedserviceodata.DataFactoryLinkedServiceOdataConfig {
 	Connection: interface{},
@@ -1074,12 +1074,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylin
 	Url: *string,
 	AdditionalProperties: *map[string]*string,
 	Annotations: *[]*string,
-	BasicAuthentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataBasicAuthentication,
+	BasicAuthentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataBasicAuthentication,
 	Description: *string,
 	Id: *string,
 	IntegrationRuntimeName: *string,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataTimeouts,
 }
 ```
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 &datafactorylinkedserviceodata.DataFactoryLinkedServiceOdataTimeouts {
 	Create: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataBasicAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.NewDataFactoryLinkedServiceOdataBasicAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceOdataBasicAuthenticationOutputReference
 ```
@@ -1691,7 +1691,7 @@ func InternalValue() DataFactoryLinkedServiceOdataBasicAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceOdata.DataFactoryLinkedServiceOdataTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedserviceodata"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedserviceodata"
 
 datafactorylinkedserviceodata.NewDataFactoryLinkedServiceOdataTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceOdataTimeoutsOutputReference
 ```

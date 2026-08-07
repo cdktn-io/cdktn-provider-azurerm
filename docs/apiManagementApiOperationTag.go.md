@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.NewApiManagementApiOperationTag(scope Construct, id *string, config ApiManagementApiOperationTagConfig) ApiManagementApiOperationTag
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.ApiManagementApiOperationTag_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.ApiManagementApiOperationTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apimanagementapioperationtag.ApiManagementApiOperationTag_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.ApiManagementApiOperationTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apimanagementapioperationtag.ApiManagementApiOperationTag_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.ApiManagementApiOperationTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 &apimanagementapioperationtag.ApiManagementApiOperationTagConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementa
 	DisplayName: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementApiOperationTag.ApiManagementApiOperationTagTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementApiOperationTag.ApiManagementApiOperationTagTimeouts,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTagTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 &apimanagementapioperationtag.ApiManagementApiOperationTagTimeouts {
 	Create: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiOperationTag.ApiManagementApiOperationTagTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapioperationtag"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapioperationtag"
 
 apimanagementapioperationtag.NewApiManagementApiOperationTagTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementApiOperationTagTimeoutsOutputReference
 ```

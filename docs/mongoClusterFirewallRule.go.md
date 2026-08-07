@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.NewMongoClusterFirewallRule(scope Construct, id *string, config MongoClusterFirewallRuleConfig) MongoClusterFirewallRule
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.MongoClusterFirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.MongoClusterFirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ mongoclusterfirewallrule.MongoClusterFirewallRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.MongoClusterFirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ mongoclusterfirewallrule.MongoClusterFirewallRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.MongoClusterFirewallRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 &mongoclusterfirewallrule.MongoClusterFirewallRuleConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfi
 	Name: *string,
 	StartIpAddress: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 &mongoclusterfirewallrule.MongoClusterFirewallRuleTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mongoClusterFirewallRule.MongoClusterFirewallRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mongoclusterfirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mongoclusterfirewallrule"
 
 mongoclusterfirewallrule.NewMongoClusterFirewallRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterFirewallRuleTimeoutsOutputReference
 ```

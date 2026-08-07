@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignment(scope Construct, id *string, config ManagementGroupPolicyAssignmentConfig) ManagementGroupPolicyAssignment
 ```
@@ -556,7 +556,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.ManagementGroupPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.ManagementGroupPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ managementgrouppolicyassignment.ManagementGroupPolicyAssignment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.ManagementGroupPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ managementgrouppolicyassignment.ManagementGroupPolicyAssignment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.ManagementGroupPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1197,7 +1197,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentConfig {
 	Connection: interface{},
@@ -1214,7 +1214,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrou
 	DisplayName: *string,
 	Enforce: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentIdentity,
 	Location: *string,
 	Metadata: *string,
 	NonComplianceMessage: interface{},
@@ -1222,7 +1222,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrou
 	Overrides: interface{},
 	Parameters: *string,
 	ResourceSelectors: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentTimeouts,
 }
 ```
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentIdentity {
 	Type: *string,
@@ -1582,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentNonComplianceMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentNonComplianceMessage {
 	Content: *string,
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentOverrides {
 	Value: *string,
@@ -1676,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverridesSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentOverridesSelectors {
 	In: *[]*string,
@@ -1736,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentResourceSelectors {
 	Selectors: interface{},
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectorsSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentResourceSelectorsSelectors {
 	Kind: *string,
@@ -1844,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 &managementgrouppolicyassignment.ManagementGroupPolicyAssignmentTimeouts {
 	Create: *string,
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagementGroupPolicyAssignmentIdentityOutputReference
 ```
@@ -2242,7 +2242,7 @@ func InternalValue() ManagementGroupPolicyAssignmentIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentNonComplianceMessageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentNonComplianceMessageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagementGroupPolicyAssignmentNonComplianceMessageList
 ```
@@ -2402,7 +2402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentNonComplianceMessageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentNonComplianceMessageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagementGroupPolicyAssignmentNonComplianceMessageOutputReference
 ```
@@ -2720,7 +2720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagementGroupPolicyAssignmentOverridesList
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagementGroupPolicyAssignmentOverridesOutputReference
 ```
@@ -3211,7 +3211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverridesSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentOverridesSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagementGroupPolicyAssignmentOverridesSelectorsList
 ```
@@ -3371,7 +3371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentOverridesSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagementGroupPolicyAssignmentOverridesSelectorsOutputReference
 ```
@@ -3725,7 +3725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentResourceSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagementGroupPolicyAssignmentResourceSelectorsList
 ```
@@ -3885,7 +3885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentResourceSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagementGroupPolicyAssignmentResourceSelectorsOutputReference
 ```
@@ -4216,7 +4216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectorsSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentResourceSelectorsSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagementGroupPolicyAssignmentResourceSelectorsSelectorsList
 ```
@@ -4376,7 +4376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentResourceSelectorsSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentResourceSelectorsSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagementGroupPolicyAssignmentResourceSelectorsSelectorsOutputReference
 ```
@@ -4723,7 +4723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyAssignment.ManagementGroupPolicyAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyassignment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyassignment"
 
 managementgrouppolicyassignment.NewManagementGroupPolicyAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagementGroupPolicyAssignmentTimeoutsOutputReference
 ```

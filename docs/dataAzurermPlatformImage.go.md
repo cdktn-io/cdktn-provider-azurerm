@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.NewDataAzurermPlatformImage(scope Construct, id *string, config DataAzurermPlatformImageConfig) DataAzurermPlatformImage
 ```
@@ -332,7 +332,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.DataAzurermPlatformImage_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.DataAzurermPlatformImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermplatformimage.DataAzurermPlatformImage_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.DataAzurermPlatformImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermplatformimage.DataAzurermPlatformImage_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.DataAzurermPlatformImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 &dataazurermplatformimage.DataAzurermPlatformImageConfig {
 	Connection: interface{},
@@ -768,7 +768,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpla
 	Publisher: *string,
 	Sku: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts,
 	Version: *string,
 }
 ```
@@ -958,7 +958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 &dataazurermplatformimage.DataAzurermPlatformImageTimeouts {
 	Read: *string,
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPlatformImage.DataAzurermPlatformImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermplatformimage"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermplatformimage"
 
 dataazurermplatformimage.NewDataAzurermPlatformImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermPlatformImageTimeoutsOutputReference
 ```

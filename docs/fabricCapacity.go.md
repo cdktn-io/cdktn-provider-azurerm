@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.NewFabricCapacity(scope Construct, id *string, config FabricCapacityConfig) FabricCapacity
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.FabricCapacity_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.FabricCapacity_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ fabriccapacity.FabricCapacity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.FabricCapacity_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ fabriccapacity.FabricCapacity_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.FabricCapacity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 &fabriccapacity.FabricCapacityConfig {
 	Connection: interface{},
@@ -932,11 +932,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.fabricCapacity.FabricCapacitySku,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.fabricCapacity.FabricCapacitySku,
 	AdministrationMembers: *[]*string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.fabricCapacity.FabricCapacityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.fabricCapacity.FabricCapacityTimeouts,
 }
 ```
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 &fabriccapacity.FabricCapacitySku {
 	Name: *string,
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 &fabriccapacity.FabricCapacityTimeouts {
 	Create: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacitySkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.NewFabricCapacitySkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FabricCapacitySkuOutputReference
 ```
@@ -1555,7 +1555,7 @@ func InternalValue() FabricCapacitySku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.fabricCapacity.FabricCapacityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/fabriccapacity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/fabriccapacity"
 
 fabriccapacity.NewFabricCapacityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FabricCapacityTimeoutsOutputReference
 ```

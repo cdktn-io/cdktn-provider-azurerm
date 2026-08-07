@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.NewActiveDirectoryDomainServiceReplicaSet(scope Construct, id *string, config ActiveDirectoryDomainServiceReplicaSetConfig) ActiveDirectoryDomainServiceReplicaSet
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 &activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSetConfig {
 	Connection: interface{},
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirector
 	Location: *string,
 	SubnetId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSetTimeouts,
 }
 ```
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 &activedirectorydomainservicereplicaset.ActiveDirectoryDomainServiceReplicaSetTimeouts {
 	Create: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.activeDirectoryDomainServiceReplicaSet.ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/activedirectorydomainservicereplicaset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/activedirectorydomainservicereplicaset"
 
 activedirectorydomainservicereplicaset.NewActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActiveDirectoryDomainServiceReplicaSetTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.NewSynapseFirewallRule(scope Construct, id *string, config SynapseFirewallRuleConfig) SynapseFirewallRule
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.SynapseFirewallRule_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.SynapseFirewallRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ synapsefirewallrule.SynapseFirewallRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.SynapseFirewallRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ synapsefirewallrule.SynapseFirewallRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.SynapseFirewallRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 &synapsefirewallrule.SynapseFirewallRuleConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewal
 	StartIpAddress: *string,
 	SynapseWorkspaceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapseFirewallRule.SynapseFirewallRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapseFirewallRule.SynapseFirewallRuleTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 &synapsefirewallrule.SynapseFirewallRuleTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseFirewallRule.SynapseFirewallRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapsefirewallrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapsefirewallrule"
 
 synapsefirewallrule.NewSynapseFirewallRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapseFirewallRuleTimeoutsOutputReference
 ```

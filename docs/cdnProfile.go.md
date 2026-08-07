@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnProfile.CdnProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.NewCdnProfile(scope Construct, id *string, config CdnProfileConfig) CdnProfile
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cdnProfile.CdnProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.CdnProfile_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cdnProfile.CdnProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.CdnProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cdnprofile.CdnProfile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cdnProfile.CdnProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.CdnProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cdnprofile.CdnProfile_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cdnProfile.CdnProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.CdnProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnProfile.CdnProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 &cdnprofile.CdnProfileConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
 	Sku: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cdnProfile.CdnProfileTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cdnProfile.CdnProfileTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cdnProfile.CdnProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 &cdnprofile.CdnProfileTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cdnProfile.CdnProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cdnprofile"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cdnprofile"
 
 cdnprofile.NewCdnProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CdnProfileTimeoutsOutputReference
 ```

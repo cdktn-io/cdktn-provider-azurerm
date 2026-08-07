@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.NewContainerRegistryCredentialSet(scope Construct, id *string, config ContainerRegistryCredentialSetConfig) ContainerRegistryCredentialSet
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.ContainerRegistryCredentialSet_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.ContainerRegistryCredentialSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ containerregistrycredentialset.ContainerRegistryCredentialSet_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.ContainerRegistryCredentialSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ containerregistrycredentialset.ContainerRegistryCredentialSet_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.ContainerRegistryCredentialSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -896,7 +896,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetAuthenticationCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 &containerregistrycredentialset.ContainerRegistryCredentialSetAuthenticationCredentials {
 	PasswordSecretId: *string,
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 &containerregistrycredentialset.ContainerRegistryCredentialSetConfig {
 	Connection: interface{},
@@ -952,13 +952,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregis
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AuthenticationCredentials: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerRegistryCredentialSet.ContainerRegistryCredentialSetAuthenticationCredentials,
+	AuthenticationCredentials: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistryCredentialSet.ContainerRegistryCredentialSetAuthenticationCredentials,
 	ContainerRegistryId: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerRegistryCredentialSet.ContainerRegistryCredentialSetIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistryCredentialSet.ContainerRegistryCredentialSetIdentity,
 	LoginServer: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerRegistryCredentialSet.ContainerRegistryCredentialSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistryCredentialSet.ContainerRegistryCredentialSetTimeouts,
 }
 ```
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 &containerregistrycredentialset.ContainerRegistryCredentialSetIdentity {
 	Type: *string,
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 &containerregistrycredentialset.ContainerRegistryCredentialSetTimeouts {
 	Create: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetAuthenticationCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.NewContainerRegistryCredentialSetAuthenticationCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryCredentialSetAuthenticationCredentialsOutputReference
 ```
@@ -1554,7 +1554,7 @@ func InternalValue() ContainerRegistryCredentialSetAuthenticationCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.NewContainerRegistryCredentialSetIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryCredentialSetIdentityOutputReference
 ```
@@ -1847,7 +1847,7 @@ func InternalValue() ContainerRegistryCredentialSetIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryCredentialSet.ContainerRegistryCredentialSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrycredentialset"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrycredentialset"
 
 containerregistrycredentialset.NewContainerRegistryCredentialSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryCredentialSetTimeoutsOutputReference
 ```

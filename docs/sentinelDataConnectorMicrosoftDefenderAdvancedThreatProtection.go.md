@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.NewSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection(scope Construct, id *string, config SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionConfig) SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConne
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConne
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 &sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataco
 	Name: *string,
 	Id: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 &sentineldataconnectormicrosoftdefenderadvancedthreatprotection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeouts {
 	Create: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorMicrosoftDefenderAdvancedThreatProtection.SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectormicrosoftdefenderadvancedthreatprotection"
 
 sentineldataconnectormicrosoftdefenderadvancedthreatprotection.NewSentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorMicrosoftDefenderAdvancedThreatProtectionTimeoutsOutputReference
 ```

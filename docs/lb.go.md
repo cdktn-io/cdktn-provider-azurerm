@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lb.Lb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.NewLb(scope Construct, id *string, config LbConfig) Lb
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.lb.Lb.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.Lb_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.lb.Lb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.Lb_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ lb.Lb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.lb.Lb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.Lb_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ lb.Lb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.lb.Lb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.Lb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lb.LbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 &lb.LbConfig {
 	Connection: interface{},
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
 	SkuTier: *string,
 	SubnetId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.lb.LbTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.lb.LbTimeouts,
 }
 ```
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 &lb.LbFrontendIpConfiguration {
 	Name: *string,
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.lb.LbTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 &lb.LbTimeouts {
 	Create: *string,
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lb.LbFrontendIpConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.NewLbFrontendIpConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbFrontendIpConfigurationList
 ```
@@ -1721,7 +1721,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lb.LbFrontendIpConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.NewLbFrontendIpConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbFrontendIpConfigurationOutputReference
 ```
@@ -2286,7 +2286,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lb.LbTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/lb"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/lb"
 
 lb.NewLbTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbTimeoutsOutputReference
 ```

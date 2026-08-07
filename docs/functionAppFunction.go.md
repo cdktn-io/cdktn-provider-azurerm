@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.NewFunctionAppFunction(scope Construct, id *string, config FunctionAppFunctionConfig) FunctionAppFunction
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.FunctionAppFunction_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.FunctionAppFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ functionappfunction.FunctionAppFunction_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.FunctionAppFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ functionappfunction.FunctionAppFunction_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.FunctionAppFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1032,7 +1032,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 &functionappfunction.FunctionAppFunctionConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfun
 	Id: *string,
 	Language: *string,
 	TestData: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFunction.FunctionAppFunctionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFunction.FunctionAppFunctionTimeouts,
 }
 ```
 
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 &functionappfunction.FunctionAppFunctionFile {
 	Content: *string,
@@ -1329,7 +1329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 &functionappfunction.FunctionAppFunctionTimeouts {
 	Create: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.NewFunctionAppFunctionFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFunctionFileList
 ```
@@ -1565,7 +1565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.NewFunctionAppFunctionFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFunctionFileOutputReference
 ```
@@ -1876,7 +1876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFunction.FunctionAppFunctionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfunction"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappfunction"
 
 functionappfunction.NewFunctionAppFunctionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFunctionTimeoutsOutputReference
 ```

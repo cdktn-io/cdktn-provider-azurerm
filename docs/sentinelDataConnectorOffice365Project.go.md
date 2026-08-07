@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365Project.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.NewSentinelDataConnectorOffice365Project(scope Construct, id *string, config SentinelDataConnectorOffice365ProjectConfig) SentinelDataConnectorOffice365Project
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365Project.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365Project.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365Project.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365Project.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.SentinelDataConnectorOffice365Project_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365ProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 &sentineldataconnectoroffice365project.SentinelDataConnectorOffice365ProjectConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataco
 	Name: *string,
 	Id: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365ProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365ProjectTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365ProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 &sentineldataconnectoroffice365project.SentinelDataConnectorOffice365ProjectTimeouts {
 	Create: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelDataConnectorOffice365Project.SentinelDataConnectorOffice365ProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentineldataconnectoroffice365project"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentineldataconnectoroffice365project"
 
 sentineldataconnectoroffice365project.NewSentinelDataConnectorOffice365ProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelDataConnectorOffice365ProjectTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.NewContainerAppEnvironmentCertificate(scope Construct, id *string, config ContainerAppEnvironmentCertificateConfig) ContainerAppEnvironmentCertificate
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.ContainerAppEnvironmentCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 &containerappenvironmentcertificate.ContainerAppEnvironmentCertificateCertificateKeyVault {
 	KeyVaultSecretId: *string,
@@ -1034,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 &containerappenvironmentcertificate.ContainerAppEnvironmentCertificateConfig {
 	Connection: interface{},
@@ -1047,11 +1047,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappen
 	ContainerAppEnvironmentId: *string,
 	Name: *string,
 	CertificateBlobBase64: *string,
-	CertificateKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault,
+	CertificateKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVault,
 	CertificatePassword: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts,
 }
 ```
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 &containerappenvironmentcertificate.ContainerAppEnvironmentCertificateTimeouts {
 	Create: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.NewContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAppEnvironmentCertificateCertificateKeyVaultOutputReference
 ```
@@ -1631,7 +1631,7 @@ func InternalValue() ContainerAppEnvironmentCertificateCertificateKeyVault
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerAppEnvironmentCertificate.ContainerAppEnvironmentCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerappenvironmentcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerappenvironmentcertificate"
 
 containerappenvironmentcertificate.NewContainerAppEnvironmentCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAppEnvironmentCertificateTimeoutsOutputReference
 ```

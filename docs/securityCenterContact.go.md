@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.NewSecurityCenterContact(scope Construct, id *string, config SecurityCenterContactConfig) SecurityCenterContact
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContact.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.SecurityCenterContact_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContact.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.SecurityCenterContact_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ securitycentercontact.SecurityCenterContact_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContact.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.SecurityCenterContact_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ securitycentercontact.SecurityCenterContact_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContact.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.SecurityCenterContact_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContactConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 &securitycentercontact.SecurityCenterContactConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycenter
 	Name: *string,
 	Id: *string,
 	Phone: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.securityCenterContact.SecurityCenterContactTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.securityCenterContact.SecurityCenterContactTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContactTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 &securitycentercontact.SecurityCenterContactTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.securityCenterContact.SecurityCenterContactTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/securitycentercontact"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/securitycentercontact"
 
 securitycentercontact.NewSecurityCenterContactTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurityCenterContactTimeoutsOutputReference
 ```

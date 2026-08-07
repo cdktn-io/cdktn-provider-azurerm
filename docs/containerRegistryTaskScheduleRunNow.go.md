@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.NewContainerRegistryTaskScheduleRunNow(scope Construct, id *string, config ContainerRegistryTaskScheduleRunNowConfig) ContainerRegistryTaskScheduleRunNow
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 &containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNowConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregis
 	Provisioners: *[]interface{},
 	ContainerRegistryTaskId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNowTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNowTimeouts,
 }
 ```
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 &containerregistrytaskschedulerunnow.ContainerRegistryTaskScheduleRunNowTimeouts {
 	Create: *string,
@@ -993,7 +993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistryTaskScheduleRunNow.ContainerRegistryTaskScheduleRunNowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerregistrytaskschedulerunnow"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistrytaskschedulerunnow"
 
 containerregistrytaskschedulerunnow.NewContainerRegistryTaskScheduleRunNowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryTaskScheduleRunNowTimeoutsOutputReference
 ```

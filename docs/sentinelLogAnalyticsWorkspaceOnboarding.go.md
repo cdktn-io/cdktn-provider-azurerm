@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboarding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.NewSentinelLogAnalyticsWorkspaceOnboarding(scope Construct, id *string, config SentinelLogAnalyticsWorkspaceOnboardingConfig) SentinelLogAnalyticsWorkspaceOnboarding
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboarding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboarding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboarding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboarding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboarding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboardingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 &sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboardingConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinellogana
 	WorkspaceId: *string,
 	CustomerManagedKeyEnabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboardingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboardingTimeouts,
 }
 ```
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboardingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 &sentinelloganalyticsworkspaceonboarding.SentinelLogAnalyticsWorkspaceOnboardingTimeouts {
 	Create: *string,
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sentinelLogAnalyticsWorkspaceOnboarding.SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/sentinelloganalyticsworkspaceonboarding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sentinelloganalyticsworkspaceonboarding"
 
 sentinelloganalyticsworkspaceonboarding.NewSentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SentinelLogAnalyticsWorkspaceOnboardingTimeoutsOutputReference
 ```

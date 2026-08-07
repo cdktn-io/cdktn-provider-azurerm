@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.NewStackHciExtension(scope Construct, id *string, config StackHciExtensionConfig) StackHciExtension
 ```
@@ -462,7 +462,7 @@ func ResetTypeHandlerVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.StackHciExtension_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.StackHciExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ stackhciextension.StackHciExtension_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.StackHciExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ stackhciextension.StackHciExtension_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.StackHciExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 &stackhciextension.StackHciExtensionConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextens
 	Id: *string,
 	ProtectedSettings: *string,
 	Settings: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciExtension.StackHciExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciExtension.StackHciExtensionTimeouts,
 	TypeHandlerVersion: *string,
 }
 ```
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 &stackhciextension.StackHciExtensionTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciExtension.StackHciExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhciextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhciextension"
 
 stackhciextension.NewStackHciExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciExtensionTimeoutsOutputReference
 ```

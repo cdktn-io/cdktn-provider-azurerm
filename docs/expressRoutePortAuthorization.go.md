@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.NewExpressRoutePortAuthorization(scope Construct, id *string, config ExpressRoutePortAuthorizationConfig) ExpressRoutePortAuthorization
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.ExpressRoutePortAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.ExpressRoutePortAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ expressrouteportauthorization.ExpressRoutePortAuthorization_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.ExpressRoutePortAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ expressrouteportauthorization.ExpressRoutePortAuthorization_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.ExpressRoutePortAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 &expressrouteportauthorization.ExpressRoutePortAuthorizationConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressroutepo
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.expressRoutePortAuthorization.ExpressRoutePortAuthorizationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRoutePortAuthorization.ExpressRoutePortAuthorizationTimeouts,
 }
 ```
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 &expressrouteportauthorization.ExpressRoutePortAuthorizationTimeouts {
 	Create: *string,
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePortAuthorization.ExpressRoutePortAuthorizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/expressrouteportauthorization"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteportauthorization"
 
 expressrouteportauthorization.NewExpressRoutePortAuthorizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRoutePortAuthorizationTimeoutsOutputReference
 ```

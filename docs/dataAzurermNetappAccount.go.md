@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.NewDataAzurermNetappAccount(scope Construct, id *string, config DataAzurermNetappAccountConfig) DataAzurermNetappAccount
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.DataAzurermNetappAccount_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.DataAzurermNetappAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ dataazurermnetappaccount.DataAzurermNetappAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.DataAzurermNetappAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ dataazurermnetappaccount.DataAzurermNetappAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.DataAzurermNetappAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 &dataazurermnetappaccount.DataAzurermNetappAccountConfig {
 	Connection: interface{},
@@ -757,8 +757,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnet
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNetappAccount.DataAzurermNetappAccountIdentity,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermNetappAccount.DataAzurermNetappAccountTimeouts,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetappAccount.DataAzurermNetappAccountIdentity,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetappAccount.DataAzurermNetappAccountTimeouts,
 }
 ```
 
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 &dataazurermnetappaccount.DataAzurermNetappAccountIdentity {
 	Type: *string,
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 &dataazurermnetappaccount.DataAzurermNetappAccountTimeouts {
 	Read: *string,
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.NewDataAzurermNetappAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetappAccountIdentityOutputReference
 ```
@@ -1325,7 +1325,7 @@ func InternalValue() DataAzurermNetappAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappAccount.DataAzurermNetappAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermnetappaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetappaccount"
 
 dataazurermnetappaccount.NewDataAzurermNetappAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetappAccountTimeoutsOutputReference
 ```

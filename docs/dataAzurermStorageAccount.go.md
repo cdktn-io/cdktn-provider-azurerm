@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccount(scope Construct, id *string, config DataAzurermStorageAccountConfig) DataAzurermStorageAccount
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.DataAzurermStorageAccount_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.DataAzurermStorageAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermstorageaccount.DataAzurermStorageAccount_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.DataAzurermStorageAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermstorageaccount.DataAzurermStorageAccount_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.DataAzurermStorageAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1688,7 +1688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountAzureFilesAuthentication {
 
@@ -1701,7 +1701,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectory {
 
@@ -1714,7 +1714,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountConfig {
 	Connection: interface{},
@@ -1728,7 +1728,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsto
 	ResourceGroupName: *string,
 	Id: *string,
 	MinTlsVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermStorageAccount.DataAzurermStorageAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccount.DataAzurermStorageAccountTimeouts,
 }
 ```
 
@@ -1891,7 +1891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountCustomDomain {
 
@@ -1904,7 +1904,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountIdentity {
 
@@ -1917,7 +1917,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsto
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 &dataazurermstorageaccount.DataAzurermStorageAccountTimeouts {
 	Read: *string,
@@ -1951,7 +1951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryList
 ```
@@ -2100,7 +2100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermStorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference
 ```
@@ -2433,7 +2433,7 @@ func InternalValue() DataAzurermStorageAccountAzureFilesAuthenticationActiveDire
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountAzureFilesAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermStorageAccountAzureFilesAuthenticationList
 ```
@@ -2582,7 +2582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountAzureFilesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountAzureFilesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermStorageAccountAzureFilesAuthenticationOutputReference
 ```
@@ -2882,7 +2882,7 @@ func InternalValue() DataAzurermStorageAccountAzureFilesAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountCustomDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountCustomDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermStorageAccountCustomDomainList
 ```
@@ -3031,7 +3031,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermStorageAccountCustomDomainOutputReference
 ```
@@ -3309,7 +3309,7 @@ func InternalValue() DataAzurermStorageAccountCustomDomain
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermStorageAccountIdentityList
 ```
@@ -3458,7 +3458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermStorageAccountIdentityOutputReference
 ```
@@ -3769,7 +3769,7 @@ func InternalValue() DataAzurermStorageAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccount.DataAzurermStorageAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermstorageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccount"
 
 dataazurermstorageaccount.NewDataAzurermStorageAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountTimeoutsOutputReference
 ```

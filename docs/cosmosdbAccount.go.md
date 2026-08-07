@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccount(scope Construct, id *string, config CosmosdbAccountConfig) CosmosdbAccount
 ```
@@ -767,7 +767,7 @@ func ResetVirtualNetworkRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsConstruct(x interface{}) *bool
 ```
@@ -799,7 +799,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -813,7 +813,7 @@ cosmosdbaccount.CosmosdbAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -827,7 +827,7 @@ cosmosdbaccount.CosmosdbAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2057,7 +2057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountAnalyticalStorage {
 	SchemaType: *string,
@@ -2089,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountBackup {
 	Type: *string,
@@ -2177,7 +2177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCapabilities {
 	Name: *string,
@@ -2209,7 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCapacity {
 	TotalThroughputLimit: *f64,
@@ -2241,7 +2241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountConfig {
 	Connection: interface{},
@@ -2251,26 +2251,26 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccoun
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ConsistencyPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountConsistencyPolicy,
+	ConsistencyPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountConsistencyPolicy,
 	GeoLocation: interface{},
 	Location: *string,
 	Name: *string,
 	OfferType: *string,
 	ResourceGroupName: *string,
 	AccessKeyMetadataWritesEnabled: interface{},
-	AnalyticalStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountAnalyticalStorage,
+	AnalyticalStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountAnalyticalStorage,
 	AnalyticalStorageEnabled: interface{},
 	AutomaticFailoverEnabled: interface{},
-	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountBackup,
+	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountBackup,
 	BurstCapacityEnabled: interface{},
 	Capabilities: interface{},
-	Capacity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountCapacity,
-	CorsRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountCorsRule,
+	Capacity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountCapacity,
+	CorsRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountCorsRule,
 	CreateMode: *string,
 	DefaultIdentityType: *string,
 	FreeTierEnabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountIdentity,
 	IpRangeFilter: *[]*string,
 	IsVirtualNetworkFilterEnabled: interface{},
 	KeyVaultKeyId: *string,
@@ -2285,9 +2285,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccoun
 	NetworkAclBypassIds: *[]*string,
 	PartitionMergeEnabled: interface{},
 	PublicNetworkAccessEnabled: interface{},
-	Restore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountRestore,
+	Restore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountRestore,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbAccount.CosmosdbAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountTimeouts,
 	VirtualNetworkRule: interface{},
 }
 ```
@@ -2900,7 +2900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountConsistencyPolicy {
 	ConsistencyLevel: *string,
@@ -2960,7 +2960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCorsRule {
 	AllowedHeaders: *[]*string,
@@ -3048,7 +3048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountGeoLocation {
 	FailoverPriority: *f64,
@@ -3108,7 +3108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountIdentity {
 	Type: *string,
@@ -3154,7 +3154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestore {
 	RestoreTimestampInUtc: *string,
@@ -3246,7 +3246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestoreDatabase {
 	Name: *string,
@@ -3292,7 +3292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestoreGremlinDatabase {
 	Name: *string,
@@ -3338,7 +3338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountTimeouts {
 	Create: *string,
@@ -3412,7 +3412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountVirtualNetworkRule {
 	Id: *string,
@@ -3463,7 +3463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountAnalyticalStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountAnalyticalStorageOutputReference
 ```
@@ -3734,7 +3734,7 @@ func InternalValue() CosmosdbAccountAnalyticalStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountBackupOutputReference
 ```
@@ -4121,7 +4121,7 @@ func InternalValue() CosmosdbAccountBackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountCapabilitiesList
 ```
@@ -4281,7 +4281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountCapabilitiesOutputReference
 ```
@@ -4570,7 +4570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountCapacityOutputReference
 ```
@@ -4841,7 +4841,7 @@ func InternalValue() CosmosdbAccountCapacity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountConsistencyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountConsistencyPolicyOutputReference
 ```
@@ -5170,7 +5170,7 @@ func InternalValue() CosmosdbAccountConsistencyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountCorsRuleOutputReference
 ```
@@ -5536,7 +5536,7 @@ func InternalValue() CosmosdbAccountCorsRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountGeoLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountGeoLocationList
 ```
@@ -5696,7 +5696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountGeoLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountGeoLocationOutputReference
 ```
@@ -6047,7 +6047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountIdentityOutputReference
 ```
@@ -6369,7 +6369,7 @@ func InternalValue() CosmosdbAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountRestoreDatabaseList
 ```
@@ -6529,7 +6529,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountRestoreDatabaseOutputReference
 ```
@@ -6847,7 +6847,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreGremlinDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountRestoreGremlinDatabaseList
 ```
@@ -7007,7 +7007,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreGremlinDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountRestoreGremlinDatabaseOutputReference
 ```
@@ -7325,7 +7325,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountRestoreOutputReference
 ```
@@ -7731,7 +7731,7 @@ func InternalValue() CosmosdbAccountRestore
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountTimeoutsOutputReference
 ```
@@ -8096,7 +8096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountVirtualNetworkRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountVirtualNetworkRuleList
 ```
@@ -8256,7 +8256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountVirtualNetworkRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountVirtualNetworkRuleOutputReference
 ```

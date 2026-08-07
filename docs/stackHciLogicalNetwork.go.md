@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetwork(scope Construct, id *string, config StackHciLogicalNetworkConfig) StackHciLogicalNetwork
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.StackHciLogicalNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.StackHciLogicalNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ stackhcilogicalnetwork.StackHciLogicalNetwork_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.StackHciLogicalNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ stackhcilogicalnetwork.StackHciLogicalNetwork_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.StackHciLogicalNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -963,7 +963,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 &stackhcilogicalnetwork.StackHciLogicalNetworkConfig {
 	Connection: interface{},
@@ -977,12 +977,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogica
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Subnet: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciLogicalNetwork.StackHciLogicalNetworkSubnet,
+	Subnet: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciLogicalNetwork.StackHciLogicalNetworkSubnet,
 	VirtualSwitchName: *string,
 	DnsServers: *[]*string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciLogicalNetwork.StackHciLogicalNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciLogicalNetwork.StackHciLogicalNetworkTimeouts,
 }
 ```
 
@@ -1212,13 +1212,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 &stackhcilogicalnetwork.StackHciLogicalNetworkSubnet {
 	IpAllocationMethod: *string,
 	AddressPrefix: *string,
 	IpPool: interface{},
-	Route: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRoute,
+	Route: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRoute,
 	VlanId: *f64,
 }
 ```
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetIpPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 &stackhcilogicalnetwork.StackHciLogicalNetworkSubnetIpPool {
 	End: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 &stackhcilogicalnetwork.StackHciLogicalNetworkSubnetRoute {
 	AddressPrefix: *string,
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 &stackhcilogicalnetwork.StackHciLogicalNetworkTimeouts {
 	Create: *string,
@@ -1486,7 +1486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetIpPoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetworkSubnetIpPoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StackHciLogicalNetworkSubnetIpPoolList
 ```
@@ -1646,7 +1646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetIpPoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetworkSubnetIpPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StackHciLogicalNetworkSubnetIpPoolOutputReference
 ```
@@ -1957,7 +1957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetworkSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciLogicalNetworkSubnetOutputReference
 ```
@@ -2370,7 +2370,7 @@ func InternalValue() StackHciLogicalNetworkSubnet
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkSubnetRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetworkSubnetRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciLogicalNetworkSubnetRouteOutputReference
 ```
@@ -2692,7 +2692,7 @@ func InternalValue() StackHciLogicalNetworkSubnetRoute
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciLogicalNetwork.StackHciLogicalNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcilogicalnetwork"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcilogicalnetwork"
 
 stackhcilogicalnetwork.NewStackHciLogicalNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciLogicalNetworkTimeoutsOutputReference
 ```

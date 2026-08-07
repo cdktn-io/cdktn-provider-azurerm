@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGateway(scope Construct, id *string, config SpringCloudGatewayConfig) SpringCloudGateway
 ```
@@ -616,7 +616,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.SpringCloudGateway_IsConstruct(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.SpringCloudGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ springcloudgateway.SpringCloudGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.SpringCloudGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ springcloudgateway.SpringCloudGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.SpringCloudGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1312,7 +1312,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayApiMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayApiMetadata {
 	Description: *string,
@@ -1400,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayClientAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayClientAuthorization {
 	CertificateIds: *[]*string,
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayConfig {
 	Connection: interface{},
@@ -1458,22 +1458,22 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgat
 	Provisioners: *[]interface{},
 	Name: *string,
 	SpringCloudServiceId: *string,
-	ApiMetadata: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayApiMetadata,
+	ApiMetadata: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayApiMetadata,
 	ApplicationPerformanceMonitoringIds: *[]*string,
 	ApplicationPerformanceMonitoringTypes: *[]*string,
-	ClientAuthorization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayClientAuthorization,
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayCors,
+	ClientAuthorization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayClientAuthorization,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayCors,
 	EnvironmentVariables: *map[string]*string,
 	HttpsOnly: interface{},
 	Id: *string,
 	InstanceCount: *f64,
-	LocalResponseCachePerInstance: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstance,
-	LocalResponseCachePerRoute: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRoute,
+	LocalResponseCachePerInstance: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstance,
+	LocalResponseCachePerRoute: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRoute,
 	PublicNetworkAccessEnabled: interface{},
-	Quota: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayQuota,
+	Quota: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayQuota,
 	SensitiveEnvironmentVariables: *map[string]*string,
-	Sso: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewaySso,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudGateway.SpringCloudGatewayTimeouts,
+	Sso: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewaySso,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudGateway.SpringCloudGatewayTimeouts,
 }
 ```
 
@@ -1819,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayCors {
 	AllowedHeaders: *[]*string,
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayLocalResponseCachePerInstance {
 	Size: *string,
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayLocalResponseCachePerRoute {
 	Size: *string,
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayQuota {
 	Cpu: *string,
@@ -2073,7 +2073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewaySso.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewaySso {
 	ClientId: *string,
@@ -2147,7 +2147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 &springcloudgateway.SpringCloudGatewayTimeouts {
 	Create: *string,
@@ -2223,7 +2223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayApiMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayApiMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayApiMetadataOutputReference
 ```
@@ -2617,7 +2617,7 @@ func InternalValue() SpringCloudGatewayApiMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayClientAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayClientAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayClientAuthorizationOutputReference
 ```
@@ -2924,7 +2924,7 @@ func InternalValue() SpringCloudGatewayClientAuthorization
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayCorsOutputReference
 ```
@@ -3376,7 +3376,7 @@ func InternalValue() SpringCloudGatewayCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayLocalResponseCachePerInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayLocalResponseCachePerInstanceOutputReference
 ```
@@ -3683,7 +3683,7 @@ func InternalValue() SpringCloudGatewayLocalResponseCachePerInstance
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayLocalResponseCachePerRouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayLocalResponseCachePerRouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayLocalResponseCachePerRouteOutputReference
 ```
@@ -3990,7 +3990,7 @@ func InternalValue() SpringCloudGatewayLocalResponseCachePerRoute
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayQuotaOutputReference
 ```
@@ -4297,7 +4297,7 @@ func InternalValue() SpringCloudGatewayQuota
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewaySsoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewaySsoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewaySsoOutputReference
 ```
@@ -4662,7 +4662,7 @@ func InternalValue() SpringCloudGatewaySso
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudGateway.SpringCloudGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springcloudgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudgateway"
 
 springcloudgateway.NewSpringCloudGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudGatewayTimeoutsOutputReference
 ```

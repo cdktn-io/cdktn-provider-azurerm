@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.NewKubernetesClusterTrustedAccessRoleBinding(scope Construct, id *string, config KubernetesClusterTrustedAccessRoleBindingConfig) KubernetesClusterTrustedAccessRoleBinding
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBind
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBind
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 &kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBindingConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclus
 	Roles: *[]*string,
 	SourceResourceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBindingTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 &kubernetesclustertrustedaccessrolebinding.KubernetesClusterTrustedAccessRoleBindingTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterTrustedAccessRoleBinding.KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclustertrustedaccessrolebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclustertrustedaccessrolebinding"
 
 kubernetesclustertrustedaccessrolebinding.NewKubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterTrustedAccessRoleBindingTimeoutsOutputReference
 ```

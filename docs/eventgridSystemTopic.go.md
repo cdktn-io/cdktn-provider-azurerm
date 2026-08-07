@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.NewEventgridSystemTopic(scope Construct, id *string, config EventgridSystemTopicConfig) EventgridSystemTopic
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.EventgridSystemTopic_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.EventgridSystemTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ eventgridsystemtopic.EventgridSystemTopic_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.EventgridSystemTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ eventgridsystemtopic.EventgridSystemTopic_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.EventgridSystemTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -999,7 +999,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 &eventgridsystemtopic.EventgridSystemTopicConfig {
 	Connection: interface{},
@@ -1014,11 +1014,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsyste
 	ResourceGroupName: *string,
 	TopicType: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridSystemTopic.EventgridSystemTopicIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridSystemTopic.EventgridSystemTopicIdentity,
 	SourceArmResourceId: *string,
 	SourceResourceId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridSystemTopic.EventgridSystemTopicTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridSystemTopic.EventgridSystemTopicTimeouts,
 }
 ```
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopicIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 &eventgridsystemtopic.EventgridSystemTopicIdentity {
 	Type: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 &eventgridsystemtopic.EventgridSystemTopicTimeouts {
 	Create: *string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopicIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.NewEventgridSystemTopicIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridSystemTopicIdentityOutputReference
 ```
@@ -1692,7 +1692,7 @@ func InternalValue() EventgridSystemTopicIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridSystemTopic.EventgridSystemTopicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridsystemtopic"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridsystemtopic"
 
 eventgridsystemtopic.NewEventgridSystemTopicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridSystemTopicTimeoutsOutputReference
 ```

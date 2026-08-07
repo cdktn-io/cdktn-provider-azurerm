@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.NewMachineLearningComputeInstance(scope Construct, id *string, config MachineLearningComputeInstanceConfig) MachineLearningComputeInstance
 ```
@@ -529,7 +529,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.MachineLearningComputeInstance_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.MachineLearningComputeInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ machinelearningcomputeinstance.MachineLearningComputeInstance_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.MachineLearningComputeInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ machinelearningcomputeinstance.MachineLearningComputeInstance_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.MachineLearningComputeInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1126,7 +1126,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceAssignToUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 &machinelearningcomputeinstance.MachineLearningComputeInstanceAssignToUser {
 	ObjectId: *string,
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 &machinelearningcomputeinstance.MachineLearningComputeInstanceConfig {
 	Connection: interface{},
@@ -1185,17 +1185,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearnin
 	MachineLearningWorkspaceId: *string,
 	Name: *string,
 	VirtualMachineSize: *string,
-	AssignToUser: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningComputeInstance.MachineLearningComputeInstanceAssignToUser,
+	AssignToUser: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningComputeInstance.MachineLearningComputeInstanceAssignToUser,
 	AuthorizationType: *string,
 	Description: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningComputeInstance.MachineLearningComputeInstanceIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningComputeInstance.MachineLearningComputeInstanceIdentity,
 	LocalAuthEnabled: interface{},
 	NodePublicIpEnabled: interface{},
-	Ssh: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningComputeInstance.MachineLearningComputeInstanceSsh,
+	Ssh: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningComputeInstance.MachineLearningComputeInstanceSsh,
 	SubnetResourceId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.machineLearningComputeInstance.MachineLearningComputeInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.machineLearningComputeInstance.MachineLearningComputeInstanceTimeouts,
 }
 ```
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 &machinelearningcomputeinstance.MachineLearningComputeInstanceIdentity {
 	Type: *string,
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceSsh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 &machinelearningcomputeinstance.MachineLearningComputeInstanceSsh {
 	PublicKey: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 &machinelearningcomputeinstance.MachineLearningComputeInstanceTimeouts {
 	Create: *string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceAssignToUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.NewMachineLearningComputeInstanceAssignToUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningComputeInstanceAssignToUserOutputReference
 ```
@@ -1928,7 +1928,7 @@ func InternalValue() MachineLearningComputeInstanceAssignToUser
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.NewMachineLearningComputeInstanceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningComputeInstanceIdentityOutputReference
 ```
@@ -2250,7 +2250,7 @@ func InternalValue() MachineLearningComputeInstanceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceSshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.NewMachineLearningComputeInstanceSshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningComputeInstanceSshOutputReference
 ```
@@ -2543,7 +2543,7 @@ func InternalValue() MachineLearningComputeInstanceSsh
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.machineLearningComputeInstance.MachineLearningComputeInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/machinelearningcomputeinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/machinelearningcomputeinstance"
 
 machinelearningcomputeinstance.NewMachineLearningComputeInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MachineLearningComputeInstanceTimeoutsOutputReference
 ```

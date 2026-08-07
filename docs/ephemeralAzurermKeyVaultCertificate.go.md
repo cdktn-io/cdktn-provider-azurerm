@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultCertificate.EphemeralAzurermKeyVaultCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultcertificate"
 
 ephemeralazurermkeyvaultcertificate.NewEphemeralAzurermKeyVaultCertificate(scope Construct, id *string, config EphemeralAzurermKeyVaultCertificateConfig) EphemeralAzurermKeyVaultCertificate
 ```
@@ -302,7 +302,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultCertificate.EphemeralAzurermKeyVaultCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultcertificate"
 
 ephemeralazurermkeyvaultcertificate.EphemeralAzurermKeyVaultCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultCertificate.EphemeralAzurermKeyVaultCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultcertificate"
 
 ephemeralazurermkeyvaultcertificate.EphemeralAzurermKeyVaultCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralazurermkeyvaultcertificate.EphemeralAzurermKeyVaultCertificate_IsTerraf
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultCertificate.EphemeralAzurermKeyVaultCertificate.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultcertificate"
 
 ephemeralazurermkeyvaultcertificate.EphemeralAzurermKeyVaultCertificate_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultCertificate.EphemeralAzurermKeyVaultCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultcertificate"
 
 &ephemeralazurermkeyvaultcertificate.EphemeralAzurermKeyVaultCertificateConfig {
 	Count: interface{},

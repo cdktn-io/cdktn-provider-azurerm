@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtension(scope Construct, id *string, config VirtualMachineExtensionConfig) VirtualMachineExtension
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ virtualmachineextension.VirtualMachineExtension_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.VirtualMachineExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1115,7 +1115,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionConfig {
 	Connection: interface{},
@@ -1135,11 +1135,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachine
 	FailureSuppressionEnabled: interface{},
 	Id: *string,
 	ProtectedSettings: *string,
-	ProtectedSettingsFromKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineExtension.VirtualMachineExtensionProtectedSettingsFromKeyVault,
+	ProtectedSettingsFromKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineExtension.VirtualMachineExtensionProtectedSettingsFromKeyVault,
 	ProvisionAfterExtensions: *[]*string,
 	Settings: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineExtension.VirtualMachineExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineExtension.VirtualMachineExtensionTimeouts,
 }
 ```
 
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtensionProtectedSettingsFromKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionProtectedSettingsFromKeyVault {
 	SecretUrl: *string,
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 &virtualmachineextension.VirtualMachineExtensionTimeouts {
 	Create: *string,
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineExtensionProtectedSettingsFromKeyVaultOutputReference
 ```
@@ -1849,7 +1849,7 @@ func InternalValue() VirtualMachineExtensionProtectedSettingsFromKeyVault
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineExtension.VirtualMachineExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachineextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachineextension"
 
 virtualmachineextension.NewVirtualMachineExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineExtensionTimeoutsOutputReference
 ```

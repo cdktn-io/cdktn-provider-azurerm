@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.NewDataFactoryLinkedServiceSqlManagedInstance(scope Construct, id *string, config DataFactoryLinkedServiceSqlManagedInstanceConfig) DataFactoryLinkedServiceSqlManagedInstance
 ```
@@ -523,7 +523,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstance_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedIns
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedIns
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1120,7 +1120,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 &datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstanceConfig {
 	Connection: interface{},
@@ -1137,13 +1137,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylin
 	Description: *string,
 	Id: *string,
 	IntegrationRuntimeName: *string,
-	KeyVaultConnectionString: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionString,
-	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPassword,
+	KeyVaultConnectionString: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionString,
+	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPassword,
 	Parameters: *map[string]*string,
 	ServicePrincipalId: *string,
 	ServicePrincipalKey: *string,
 	Tenant: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceTimeouts,
 }
 ```
 
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 &datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionString {
 	LinkedServiceName: *string,
@@ -1473,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 &datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPassword {
 	LinkedServiceName: *string,
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 &datafactorylinkedservicesqlmanagedinstance.DataFactoryLinkedServiceSqlManagedInstanceTimeouts {
 	Create: *string,
@@ -1595,7 +1595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.NewDataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectionStringOutputReference
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() DataFactoryLinkedServiceSqlManagedInstanceKeyVaultConnectio
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.NewDataFactoryLinkedServiceSqlManagedInstanceKeyVaultPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPasswordOutputReference
 ```
@@ -2181,7 +2181,7 @@ func InternalValue() DataFactoryLinkedServiceSqlManagedInstanceKeyVaultPassword
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSqlManagedInstance.DataFactoryLinkedServiceSqlManagedInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesqlmanagedinstance"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesqlmanagedinstance"
 
 datafactorylinkedservicesqlmanagedinstance.NewDataFactoryLinkedServiceSqlManagedInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceSqlManagedInstanceTimeoutsOutputReference
 ```

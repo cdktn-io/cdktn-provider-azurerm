@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerSchedule(scope Construct, id *string, config DataFactoryTriggerScheduleConfig) DataFactoryTriggerSchedule
 ```
@@ -537,7 +537,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.DataFactoryTriggerSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.DataFactoryTriggerSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ datafactorytriggerschedule.DataFactoryTriggerSchedule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.DataFactoryTriggerSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ datafactorytriggerschedule.DataFactoryTriggerSchedule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.DataFactoryTriggerSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1178,7 +1178,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 &datafactorytriggerschedule.DataFactoryTriggerScheduleConfig {
 	Connection: interface{},
@@ -1200,9 +1200,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytri
 	Pipeline: interface{},
 	PipelineName: *string,
 	PipelineParameters: *map[string]*string,
-	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleSchedule,
+	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleSchedule,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleTimeouts,
 	TimeZone: *string,
 }
 ```
@@ -1513,7 +1513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedulePipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 &datafactorytriggerschedule.DataFactoryTriggerSchedulePipeline {
 	Name: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 &datafactorytriggerschedule.DataFactoryTriggerScheduleSchedule {
 	DaysOfMonth: *[]*f64,
@@ -1649,7 +1649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleScheduleMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 &datafactorytriggerschedule.DataFactoryTriggerScheduleScheduleMonthly {
 	Weekday: *string,
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 &datafactorytriggerschedule.DataFactoryTriggerScheduleTimeouts {
 	Create: *string,
@@ -1771,7 +1771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedulePipelineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerSchedulePipelineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryTriggerSchedulePipelineList
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerSchedulePipelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerSchedulePipelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryTriggerSchedulePipelineOutputReference
 ```
@@ -2249,7 +2249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleScheduleMonthlyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerScheduleScheduleMonthlyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryTriggerScheduleScheduleMonthlyList
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleScheduleMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerScheduleScheduleMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryTriggerScheduleScheduleMonthlyOutputReference
 ```
@@ -2727,7 +2727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerScheduleScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerScheduleScheduleOutputReference
 ```
@@ -3134,7 +3134,7 @@ func InternalValue() DataFactoryTriggerScheduleSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerSchedule.DataFactoryTriggerScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggerschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggerschedule"
 
 datafactorytriggerschedule.NewDataFactoryTriggerScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerScheduleTimeoutsOutputReference
 ```

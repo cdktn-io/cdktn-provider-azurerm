@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsCreator.MapsCreator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.NewMapsCreator(scope Construct, id *string, config MapsCreatorConfig) MapsCreator
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mapsCreator.MapsCreator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.MapsCreator_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mapsCreator.MapsCreator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.MapsCreator_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ mapscreator.MapsCreator_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mapsCreator.MapsCreator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.MapsCreator_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ mapscreator.MapsCreator_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mapsCreator.MapsCreator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.MapsCreator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsCreator.MapsCreatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 &mapscreator.MapsCreatorConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
 	StorageUnits: *f64,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mapsCreator.MapsCreatorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mapsCreator.MapsCreatorTimeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsCreator.MapsCreatorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 &mapscreator.MapsCreatorTimeouts {
 	Create: *string,
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsCreator.MapsCreatorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mapscreator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapscreator"
 
 mapscreator.NewMapsCreatorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MapsCreatorTimeoutsOutputReference
 ```

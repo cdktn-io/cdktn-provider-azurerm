@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinition(scope Construct, id *string, config DataAzurermPolicySetDefinitionConfig) DataAzurermPolicySetDefinition
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.DataAzurermPolicySetDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 &dataazurermpolicysetdefinition.DataAzurermPolicySetDefinitionConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpol
 	Id: *string,
 	ManagementGroupName: *string,
 	Name: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionTimeouts,
 }
 ```
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 &dataazurermpolicysetdefinition.DataAzurermPolicySetDefinitionPolicyDefinitionGroup {
 
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 &dataazurermpolicysetdefinition.DataAzurermPolicySetDefinitionPolicyDefinitionReference {
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpol
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 &dataazurermpolicysetdefinition.DataAzurermPolicySetDefinitionTimeouts {
 	Read: *string,
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinitionPolicyDefinitionGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermPolicySetDefinitionPolicyDefinitionGroupList
 ```
@@ -1186,7 +1186,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinitionPolicyDefinitionGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermPolicySetDefinitionPolicyDefinitionGroupOutputReference
 ```
@@ -1508,7 +1508,7 @@ func InternalValue() DataAzurermPolicySetDefinitionPolicyDefinitionGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinitionPolicyDefinitionReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermPolicySetDefinitionPolicyDefinitionReferenceList
 ```
@@ -1657,7 +1657,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionPolicyDefinitionReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinitionPolicyDefinitionReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermPolicySetDefinitionPolicyDefinitionReferenceOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() DataAzurermPolicySetDefinitionPolicyDefinitionReference
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPolicySetDefinition.DataAzurermPolicySetDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpolicysetdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermpolicysetdefinition"
 
 dataazurermpolicysetdefinition.NewDataAzurermPolicySetDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermPolicySetDefinitionTimeoutsOutputReference
 ```

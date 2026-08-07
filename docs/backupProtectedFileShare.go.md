@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShare.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.NewBackupProtectedFileShare(scope Construct, id *string, config BackupProtectedFileShareConfig) BackupProtectedFileShare
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.BackupProtectedFileShare_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.BackupProtectedFileShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ backupprotectedfileshare.BackupProtectedFileShare_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.BackupProtectedFileShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ backupprotectedfileshare.BackupProtectedFileShare_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.BackupProtectedFileShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 &backupprotectedfileshare.BackupProtectedFileShareConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotecte
 	SourceFileShareName: *string,
 	SourceStorageAccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.backupProtectedFileShare.BackupProtectedFileShareTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.backupProtectedFileShare.BackupProtectedFileShareTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 &backupprotectedfileshare.BackupProtectedFileShareTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.backupProtectedFileShare.BackupProtectedFileShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/backupprotectedfileshare"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/backupprotectedfileshare"
 
 backupprotectedfileshare.NewBackupProtectedFileShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupProtectedFileShareTimeoutsOutputReference
 ```

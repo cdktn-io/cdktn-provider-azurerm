@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.NewDataFactoryCredentialUserManagedIdentity(scope Construct, id *string, config DataFactoryCredentialUserManagedIdentityConfig) DataFactoryCredentialUserManagedIdentity
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentit
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentit
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 &datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentityConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycre
 	Annotations: *[]*string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentityTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentityTimeouts,
 }
 ```
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentityTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 &datafactorycredentialusermanagedidentity.DataFactoryCredentialUserManagedIdentityTimeouts {
 	Create: *string,
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCredentialUserManagedIdentity.DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorycredentialusermanagedidentity"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialusermanagedidentity"
 
 datafactorycredentialusermanagedidentity.NewDataFactoryCredentialUserManagedIdentityTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryCredentialUserManagedIdentityTimeoutsOutputReference
 ```

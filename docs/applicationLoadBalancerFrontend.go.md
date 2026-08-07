@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.NewApplicationLoadBalancerFrontend(scope Construct, id *string, config ApplicationLoadBalancerFrontendConfig) ApplicationLoadBalancerFrontend
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.ApplicationLoadBalancerFrontend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 &applicationloadbalancerfrontend.ApplicationLoadBalancerFrontendConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloa
 	Name: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontendTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontendTimeouts,
 }
 ```
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontendTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 &applicationloadbalancerfrontend.ApplicationLoadBalancerFrontendTimeouts {
 	Create: *string,
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationLoadBalancerFrontend.ApplicationLoadBalancerFrontendTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationloadbalancerfrontend"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/applicationloadbalancerfrontend"
 
 applicationloadbalancerfrontend.NewApplicationLoadBalancerFrontendTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationLoadBalancerFrontendTimeoutsOutputReference
 ```

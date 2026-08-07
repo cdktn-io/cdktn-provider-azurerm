@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.NewResourcePolicyRemediation(scope Construct, id *string, config ResourcePolicyRemediationConfig) ResourcePolicyRemediation
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.ResourcePolicyRemediation_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.ResourcePolicyRemediation_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ resourcepolicyremediation.ResourcePolicyRemediation_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.ResourcePolicyRemediation_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ resourcepolicyremediation.ResourcePolicyRemediation_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.ResourcePolicyRemediation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 &resourcepolicyremediation.ResourcePolicyRemediationConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicy
 	PolicyDefinitionReferenceId: *string,
 	ResourceCount: *f64,
 	ResourceDiscoveryMode: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourcePolicyRemediation.ResourcePolicyRemediationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourcePolicyRemediation.ResourcePolicyRemediationTimeouts,
 }
 ```
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 &resourcepolicyremediation.ResourcePolicyRemediationTimeouts {
 	Create: *string,
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourcePolicyRemediation.ResourcePolicyRemediationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyremediation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyremediation"
 
 resourcepolicyremediation.NewResourcePolicyRemediationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourcePolicyRemediationTimeoutsOutputReference
 ```

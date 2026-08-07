@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPool(scope Construct, id *string, config ManagedDevopsPoolConfig) ManagedDevopsPool
 ```
@@ -527,7 +527,7 @@ func ResetWorkFolder()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsConstruct(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ manageddevopspool.ManagedDevopsPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ manageddevopspool.ManagedDevopsPool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1124,11 +1124,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganization {
 	Organization: interface{},
-	Permission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission,
+	Permission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission,
 }
 ```
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationOrganization {
 	Parallelism: *f64,
@@ -1234,11 +1234,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationPermission {
 	Kind: *string,
-	AdministratorAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount,
+	AdministratorAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount,
 }
 ```
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount {
 	Groups: *[]*string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolConfig {
 	Connection: interface{},
@@ -1338,19 +1338,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopsp
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AzureDevopsOrganization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization,
+	AzureDevopsOrganization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization,
 	DevCenterProjectId: *string,
 	Location: *string,
 	MaximumConcurrency: *f64,
 	Name: *string,
 	ResourceGroupName: *string,
-	VirtualMachineScaleSetFabric: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric,
+	VirtualMachineScaleSetFabric: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolIdentity,
-	StatefulAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatefulAgent,
-	StatelessAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatelessAgent,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolIdentity,
+	StatefulAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgent,
+	StatelessAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgent,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolTimeouts,
 	WorkFolder: *string,
 }
 ```
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolIdentity {
 	IdentityIds: *[]*string,
@@ -1687,12 +1687,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgent {
-	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction,
+	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction,
 	GracePeriodTimeSpan: *string,
-	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction,
+	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction,
 	MaximumAgentLifetime: *string,
 }
 ```
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction {
 	PredictionPreference: *string,
@@ -1797,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePrediction {
 	AllWeekSchedule: *f64,
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule {
 	Count: *f64,
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule {
 	Count: *f64,
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule {
 	Count: *f64,
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule {
 	Count: *f64,
@@ -2139,7 +2139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule {
 	Count: *f64,
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule {
 	Count: *f64,
@@ -2231,7 +2231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule {
 	Count: *f64,
@@ -2277,11 +2277,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgent {
-	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction,
-	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction,
+	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction,
+	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction,
 }
 ```
 
@@ -2327,7 +2327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction {
 	PredictionPreference: *string,
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePrediction {
 	AllWeekSchedule: *f64,
@@ -2517,7 +2517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule {
 	Count: *f64,
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule {
 	Count: *f64,
@@ -2609,7 +2609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule {
 	Count: *f64,
@@ -2655,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule {
 	Count: *f64,
@@ -2701,7 +2701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule {
 	Count: *f64,
@@ -2747,7 +2747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule {
 	Count: *f64,
@@ -2793,7 +2793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule {
 	Count: *f64,
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolTimeouts {
 	Create: *string,
@@ -2913,14 +2913,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabric {
 	Image: interface{},
 	SkuName: *string,
 	OsDiskStorageAccountType: *string,
-	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity,
-	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage,
+	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity,
+	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage,
 	SubnetId: *string,
 }
 ```
@@ -3021,7 +3021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage {
 	Aliases: *[]*string,
@@ -3098,11 +3098,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity {
 	InteractiveLogonEnabled: interface{},
-	KeyVaultManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement,
+	KeyVaultManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement,
 }
 ```
 
@@ -3146,7 +3146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement {
 	KeyVaultCertificateIds: *[]*string,
@@ -3220,7 +3220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage {
 	DiskSizeInGb: *f64,
@@ -3296,7 +3296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOrganizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolAzureDevopsOrganizationOrganizationList
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference
 ```
@@ -3796,7 +3796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationOutputReference
 ```
@@ -4122,7 +4122,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganization
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference
 ```
@@ -4429,7 +4429,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministr
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganizationPermission
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolIdentityOutputReference
 ```
@@ -5035,7 +5035,7 @@ func InternalValue() ManagedDevopsPoolIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference
 ```
@@ -5313,7 +5313,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList
 ```
@@ -5473,7 +5473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference
 ```
@@ -5784,7 +5784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList
 ```
@@ -5944,7 +5944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference
 ```
@@ -6255,7 +6255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference
 ```
@@ -6856,7 +6856,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgentManualResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList
 ```
@@ -7016,7 +7016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference
 ```
@@ -7327,7 +7327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList
 ```
@@ -7487,7 +7487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference
 ```
@@ -7798,7 +7798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList
 ```
@@ -7958,7 +7958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference
 ```
@@ -8269,7 +8269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList
 ```
@@ -8429,7 +8429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference
 ```
@@ -8740,7 +8740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList
 ```
@@ -8900,7 +8900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference
 ```
@@ -9211,7 +9211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentOutputReference
 ```
@@ -9602,7 +9602,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference
 ```
@@ -9880,7 +9880,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList
 ```
@@ -10040,7 +10040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference
 ```
@@ -10351,7 +10351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList
 ```
@@ -10511,7 +10511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference
 ```
@@ -10822,7 +10822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference
 ```
@@ -11423,7 +11423,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgentManualResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList
 ```
@@ -11583,7 +11583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference
 ```
@@ -11894,7 +11894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList
 ```
@@ -12054,7 +12054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference
 ```
@@ -12365,7 +12365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList
 ```
@@ -12525,7 +12525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference
 ```
@@ -12836,7 +12836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList
 ```
@@ -12996,7 +12996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference
 ```
@@ -13307,7 +13307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList
 ```
@@ -13467,7 +13467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference
 ```
@@ -13778,7 +13778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentOutputReference
 ```
@@ -14111,7 +14111,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolTimeoutsOutputReference
 ```
@@ -14476,7 +14476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolVirtualMachineScaleSetFabricImageList
 ```
@@ -14636,7 +14636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference
 ```
@@ -15019,7 +15019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference
 ```
@@ -15467,7 +15467,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabric
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference
 ```
@@ -15825,7 +15825,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVau
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference
 ```
@@ -16145,7 +16145,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference
 ```

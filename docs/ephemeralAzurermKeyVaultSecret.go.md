@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultSecret.EphemeralAzurermKeyVaultSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultsecret"
 
 ephemeralazurermkeyvaultsecret.NewEphemeralAzurermKeyVaultSecret(scope Construct, id *string, config EphemeralAzurermKeyVaultSecretConfig) EphemeralAzurermKeyVaultSecret
 ```
@@ -302,7 +302,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultSecret.EphemeralAzurermKeyVaultSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultsecret"
 
 ephemeralazurermkeyvaultsecret.EphemeralAzurermKeyVaultSecret_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultSecret.EphemeralAzurermKeyVaultSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultsecret"
 
 ephemeralazurermkeyvaultsecret.EphemeralAzurermKeyVaultSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ ephemeralazurermkeyvaultsecret.EphemeralAzurermKeyVaultSecret_IsTerraformElement
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultSecret.EphemeralAzurermKeyVaultSecret.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultsecret"
 
 ephemeralazurermkeyvaultsecret.EphemeralAzurermKeyVaultSecret_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.ephemeralAzurermKeyVaultSecret.EphemeralAzurermKeyVaultSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/ephemeralazurermkeyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/ephemeralazurermkeyvaultsecret"
 
 &ephemeralazurermkeyvaultsecret.EphemeralAzurermKeyVaultSecretConfig {
 	Count: interface{},

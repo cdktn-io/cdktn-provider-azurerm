@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategy(scope Construct, id *string, config KubernetesFleetUpdateStrategyConfig) KubernetesFleetUpdateStrategy
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 &kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategyConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesflee
 	Name: *string,
 	Stage: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyTimeouts,
 }
 ```
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 &kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategyStage {
 	Group: interface{},
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStageGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 &kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategyStageGroup {
 	Name: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 &kubernetesfleetupdatestrategy.KubernetesFleetUpdateStrategyTimeouts {
 	Create: *string,
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStageGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategyStageGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesFleetUpdateStrategyStageGroupList
 ```
@@ -1348,7 +1348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStageGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategyStageGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesFleetUpdateStrategyStageGroupOutputReference
 ```
@@ -1637,7 +1637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategyStageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesFleetUpdateStrategyStageList
 ```
@@ -1797,7 +1797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategyStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesFleetUpdateStrategyStageOutputReference
 ```
@@ -2150,7 +2150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesFleetUpdateStrategy.KubernetesFleetUpdateStrategyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesfleetupdatestrategy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesfleetupdatestrategy"
 
 kubernetesfleetupdatestrategy.NewKubernetesFleetUpdateStrategyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesFleetUpdateStrategyTimeoutsOutputReference
 ```

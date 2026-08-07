@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.NewDataAzurermGraphServicesAccount(scope Construct, id *string, config DataAzurermGraphServicesAccountConfig) DataAzurermGraphServicesAccount
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.DataAzurermGraphServicesAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 &dataazurermgraphservicesaccount.DataAzurermGraphServicesAccountConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgra
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccountTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 &dataazurermgraphservicesaccount.DataAzurermGraphServicesAccountTimeouts {
 	Read: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermGraphServicesAccount.DataAzurermGraphServicesAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermgraphservicesaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermgraphservicesaccount"
 
 dataazurermgraphservicesaccount.NewDataAzurermGraphServicesAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermGraphServicesAccountTimeoutsOutputReference
 ```
