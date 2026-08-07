@@ -369,6 +369,9 @@ export class MssqlJobCredential extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -438,7 +441,7 @@ export class MssqlJobCredential extends cdktn.TerraformResource {
       job_agent_id: cdktn.stringToTerraform(this._jobAgentId),
       name: cdktn.stringToTerraform(this._name),
       password: cdktn.stringToTerraform(this._password),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
       username: cdktn.stringToTerraform(this._username),
       timeouts: mssqlJobCredentialTimeoutsToTerraform(this._timeouts.internalValue),
@@ -472,7 +475,7 @@ export class MssqlJobCredential extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

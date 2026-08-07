@@ -1302,6 +1302,9 @@ export class PostgresqlFlexibleServer extends cdktn.TerraformResource {
 
   // administrator_password_wo - computed: false, optional: true, required: false
   private _administratorPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get administratorPasswordWo() {
     return this.getStringAttribute('administrator_password_wo');
   }
@@ -1768,7 +1771,7 @@ export class PostgresqlFlexibleServer extends cdktn.TerraformResource {
     return {
       administrator_login: cdktn.stringToTerraform(this._administratorLogin),
       administrator_password: cdktn.stringToTerraform(this._administratorPassword),
-      administrator_password_wo: cdktn.stringToTerraform(this._administratorPasswordWo),
+      administrator_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._administratorPasswordWo)),
       administrator_password_wo_version: cdktn.numberToTerraform(this._administratorPasswordWoVersion),
       auto_grow_enabled: cdktn.booleanToTerraform(this._autoGrowEnabled),
       backup_retention_days: cdktn.numberToTerraform(this._backupRetentionDays),
@@ -1815,7 +1818,7 @@ export class PostgresqlFlexibleServer extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       administrator_password_wo: {
-        value: cdktn.stringToHclTerraform(this._administratorPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._administratorPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -511,6 +511,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.functions">Functions</a></code> | <code>github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.providerFunctions.AzurermProviderFunctions</code> | Provider-defined functions of the azurerm provider. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">AdoPipelineServiceConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput">AuxiliaryTenantIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -668,6 +669,18 @@ func Alias() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Functions`<sup>Required</sup> <a name="Functions" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.functions"></a>
+
+```go
+func Functions() AzurermProviderFunctions
+```
+
+- *Type:* github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.providerFunctions.AzurermProviderFunctions
+
+Provider-defined functions of the azurerm provider.
 
 ---
 

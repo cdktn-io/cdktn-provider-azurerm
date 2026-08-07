@@ -929,6 +929,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.functions">functions</a></code> | <code>cdktn_provider_azurerm.providerFunctions.AzurermProviderFunctions</code> | Provider-defined functions of the azurerm provider. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">ado_pipeline_service_connection_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput">auxiliary_tenant_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1086,6 +1087,18 @@ alias: str
 ```
 
 - *Type:* str
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.functions"></a>
+
+```python
+functions: AzurermProviderFunctions
+```
+
+- *Type:* cdktn_provider_azurerm.providerFunctions.AzurermProviderFunctions
+
+Provider-defined functions of the azurerm provider.
 
 ---
 

@@ -1255,6 +1255,9 @@ export class MysqlFlexibleServer extends cdktn.TerraformResource {
 
   // administrator_password_wo - computed: false, optional: true, required: false
   private _administratorPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get administratorPasswordWo() {
     return this.getStringAttribute('administrator_password_wo');
   }
@@ -1667,7 +1670,7 @@ export class MysqlFlexibleServer extends cdktn.TerraformResource {
     return {
       administrator_login: cdktn.stringToTerraform(this._administratorLogin),
       administrator_password: cdktn.stringToTerraform(this._administratorPassword),
-      administrator_password_wo: cdktn.stringToTerraform(this._administratorPasswordWo),
+      administrator_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._administratorPasswordWo)),
       administrator_password_wo_version: cdktn.numberToTerraform(this._administratorPasswordWoVersion),
       backup_retention_days: cdktn.numberToTerraform(this._backupRetentionDays),
       create_mode: cdktn.stringToTerraform(this._createMode),
@@ -1710,7 +1713,7 @@ export class MysqlFlexibleServer extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       administrator_password_wo: {
-        value: cdktn.stringToHclTerraform(this._administratorPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._administratorPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

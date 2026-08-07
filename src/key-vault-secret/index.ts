@@ -458,6 +458,9 @@ export class KeyVaultSecret extends cdktn.TerraformResource {
 
   // value_wo - computed: false, optional: true, required: false
   private _valueWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get valueWo() {
     return this.getStringAttribute('value_wo');
   }
@@ -528,7 +531,7 @@ export class KeyVaultSecret extends cdktn.TerraformResource {
       not_before_date: cdktn.stringToTerraform(this._notBeforeDate),
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       value: cdktn.stringToTerraform(this._value),
-      value_wo: cdktn.stringToTerraform(this._valueWo),
+      value_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._valueWo)),
       value_wo_version: cdktn.numberToTerraform(this._valueWoVersion),
       timeouts: keyVaultSecretTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -585,7 +588,7 @@ export class KeyVaultSecret extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       value_wo: {
-        value: cdktn.stringToHclTerraform(this._valueWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._valueWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
