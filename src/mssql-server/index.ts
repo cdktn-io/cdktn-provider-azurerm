@@ -708,6 +708,9 @@ export class MssqlServer extends cdktn.TerraformResource {
 
   // administrator_login_password_wo - computed: false, optional: true, required: false
   private _administratorLoginPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get administratorLoginPasswordWo() {
     return this.getStringAttribute('administrator_login_password_wo');
   }
@@ -1000,7 +1003,7 @@ export class MssqlServer extends cdktn.TerraformResource {
     return {
       administrator_login: cdktn.stringToTerraform(this._administratorLogin),
       administrator_login_password: cdktn.stringToTerraform(this._administratorLoginPassword),
-      administrator_login_password_wo: cdktn.stringToTerraform(this._administratorLoginPasswordWo),
+      administrator_login_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._administratorLoginPasswordWo)),
       administrator_login_password_wo_version: cdktn.numberToTerraform(this._administratorLoginPasswordWoVersion),
       connection_policy: cdktn.stringToTerraform(this._connectionPolicy),
       express_vulnerability_assessment_enabled: cdktn.booleanToTerraform(this._expressVulnerabilityAssessmentEnabled),
@@ -1036,7 +1039,7 @@ export class MssqlServer extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       administrator_login_password_wo: {
-        value: cdktn.stringToHclTerraform(this._administratorLoginPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._administratorLoginPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

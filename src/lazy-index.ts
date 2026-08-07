@@ -1544,5 +1544,8 @@ Object.defineProperty(exports, 'dataAzurermWebPubsub', { get: function () { retu
 Object.defineProperty(exports, 'dataAzurermWebPubsubPrivateLinkResource', { get: function () { return require('./data-azurerm-web-pubsub-private-link-resource'); } });
 Object.defineProperty(exports, 'dataAzurermWindowsFunctionApp', { get: function () { return require('./data-azurerm-windows-function-app'); } });
 Object.defineProperty(exports, 'dataAzurermWindowsWebApp', { get: function () { return require('./data-azurerm-windows-web-app'); } });
+Object.defineProperty(exports, 'ephemeralAzurermKeyVaultCertificate', { get: function () { return require('./ephemeral-azurerm-key-vault-certificate'); } });
+Object.defineProperty(exports, 'ephemeralAzurermKeyVaultSecret', { get: function () { return require('./ephemeral-azurerm-key-vault-secret'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
+Object.defineProperty(exports, 'providerFunctions', { get: function () { return require('./provider-functions'); } });
 

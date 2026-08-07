@@ -1544,5 +1544,8 @@ export * as dataAzurermWebPubsub from './data-azurerm-web-pubsub/index';
 export * as dataAzurermWebPubsubPrivateLinkResource from './data-azurerm-web-pubsub-private-link-resource/index';
 export * as dataAzurermWindowsFunctionApp from './data-azurerm-windows-function-app/index';
 export * as dataAzurermWindowsWebApp from './data-azurerm-windows-web-app/index';
+export * as ephemeralAzurermKeyVaultCertificate from './ephemeral-azurerm-key-vault-certificate/index';
+export * as ephemeralAzurermKeyVaultSecret from './ephemeral-azurerm-key-vault-secret/index';
 export * as provider from './provider/index';
+export * as providerFunctions from './provider-functions/index';
 

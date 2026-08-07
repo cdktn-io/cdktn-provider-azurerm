@@ -1643,6 +1643,7 @@ export function azurermProviderFeaturesToHclTerraform(struct?: AzurermProviderFe
 }
 
 
+import { AzurermProviderFunctions } from '../provider-functions/index';
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs azurerm}
 */
@@ -2253,6 +2254,21 @@ export class AzurermProvider extends cdktn.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get featuresInput() {
     return this._features;
+  }
+
+  // ==========================
+  // PROVIDER-DEFINED FUNCTIONS
+  // ==========================
+  private _functions?: AzurermProviderFunctions;
+
+  /**
+  * Provider-defined functions of the azurerm provider.
+  */
+  public get functions(): AzurermProviderFunctions {
+    if (!this._functions) {
+      this._functions = new AzurermProviderFunctions(this.terraformResourceType);
+    }
+    return this._functions;
   }
 
   // =========
