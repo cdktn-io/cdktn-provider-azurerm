@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecret(scope Construct, id *string, config DataAzurermCdnFrontdoorSecretConfig) DataAzurermCdnFrontdoorSecret
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 &dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecretConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdn
 	ProfileName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretTimeouts,
 }
 ```
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 &dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecretSecret {
 
@@ -914,7 +914,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdn
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecretCustomerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 &dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecretSecretCustomerCertificate {
 
@@ -927,7 +927,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdn
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 &dataazurermcdnfrontdoorsecret.DataAzurermCdnFrontdoorSecretTimeouts {
 	Read: *string,
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecretCustomerCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecretSecretCustomerCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermCdnFrontdoorSecretSecretCustomerCertificateList
 ```
@@ -1110,7 +1110,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermCdnFrontdoorSecretSecretCustomerCertificateOutputReference
 ```
@@ -1410,7 +1410,7 @@ func InternalValue() DataAzurermCdnFrontdoorSecretSecretCustomerCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecretSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermCdnFrontdoorSecretSecretList
 ```
@@ -1559,7 +1559,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecretSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermCdnFrontdoorSecretSecretOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() DataAzurermCdnFrontdoorSecretSecret
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermCdnFrontdoorSecret.DataAzurermCdnFrontdoorSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermcdnfrontdoorsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcdnfrontdoorsecret"
 
 dataazurermcdnfrontdoorsecret.NewDataAzurermCdnFrontdoorSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermCdnFrontdoorSecretTimeoutsOutputReference
 ```

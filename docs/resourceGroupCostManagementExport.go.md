@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.NewResourceGroupCostManagementExport(scope Construct, id *string, config ResourceGroupCostManagementExportConfig) ResourceGroupCostManagementExport
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.ResourceGroupCostManagementExport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -998,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 &resourcegroupcostmanagementexport.ResourceGroupCostManagementExportConfig {
 	Connection: interface{},
@@ -1008,8 +1008,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupc
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ExportDataOptions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataOptions,
-	ExportDataStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataStorageLocation,
+	ExportDataOptions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataOptions,
+	ExportDataStorageLocation: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataStorageLocation,
 	Name: *string,
 	RecurrencePeriodEndDate: *string,
 	RecurrencePeriodStartDate: *string,
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupc
 	Active: interface{},
 	FileFormat: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourceGroupCostManagementExport.ResourceGroupCostManagementExportTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourceGroupCostManagementExport.ResourceGroupCostManagementExportTimeouts,
 }
 ```
 
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 &resourcegroupcostmanagementexport.ResourceGroupCostManagementExportExportDataOptions {
 	TimeFrame: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 &resourcegroupcostmanagementexport.ResourceGroupCostManagementExportExportDataStorageLocation {
 	ContainerId: *string,
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 &resourcegroupcostmanagementexport.ResourceGroupCostManagementExportTimeouts {
 	Create: *string,
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.NewResourceGroupCostManagementExportExportDataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceGroupCostManagementExportExportDataOptionsOutputReference
 ```
@@ -1724,7 +1724,7 @@ func InternalValue() ResourceGroupCostManagementExportExportDataOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportExportDataStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.NewResourceGroupCostManagementExportExportDataStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceGroupCostManagementExportExportDataStorageLocationOutputReference
 ```
@@ -2017,7 +2017,7 @@ func InternalValue() ResourceGroupCostManagementExportExportDataStorageLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourceGroupCostManagementExport.ResourceGroupCostManagementExportTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcegroupcostmanagementexport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcegroupcostmanagementexport"
 
 resourcegroupcostmanagementexport.NewResourceGroupCostManagementExportTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourceGroupCostManagementExportTimeoutsOutputReference
 ```

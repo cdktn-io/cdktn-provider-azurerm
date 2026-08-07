@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.NewVideoIndexerAccount(scope Construct, id *string, config VideoIndexerAccountConfig) VideoIndexerAccount
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.VideoIndexerAccount_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.VideoIndexerAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ videoindexeraccount.VideoIndexerAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.VideoIndexerAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ videoindexeraccount.VideoIndexerAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.VideoIndexerAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 &videoindexeraccount.VideoIndexerAccountConfig {
 	Connection: interface{},
@@ -964,15 +964,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexerac
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.videoIndexerAccount.VideoIndexerAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.videoIndexerAccount.VideoIndexerAccountIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.videoIndexerAccount.VideoIndexerAccountStorage,
+	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.videoIndexerAccount.VideoIndexerAccountStorage,
 	Id: *string,
 	PublicNetworkAccess: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.videoIndexerAccount.VideoIndexerAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.videoIndexerAccount.VideoIndexerAccountTimeouts,
 }
 ```
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 &videoindexeraccount.VideoIndexerAccountIdentity {
 	Type: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 &videoindexeraccount.VideoIndexerAccountStorage {
 	StorageAccountId: *string,
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 &videoindexeraccount.VideoIndexerAccountTimeouts {
 	Create: *string,
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.NewVideoIndexerAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VideoIndexerAccountIdentityOutputReference
 ```
@@ -1681,7 +1681,7 @@ func InternalValue() VideoIndexerAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.NewVideoIndexerAccountStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VideoIndexerAccountStorageOutputReference
 ```
@@ -1981,7 +1981,7 @@ func InternalValue() VideoIndexerAccountStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.videoIndexerAccount.VideoIndexerAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/videoindexeraccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/videoindexeraccount"
 
 videoindexeraccount.NewVideoIndexerAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VideoIndexerAccountTimeoutsOutputReference
 ```

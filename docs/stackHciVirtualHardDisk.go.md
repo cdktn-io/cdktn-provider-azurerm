@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.NewStackHciVirtualHardDisk(scope Construct, id *string, config StackHciVirtualHardDiskConfig) StackHciVirtualHardDisk
 ```
@@ -483,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.StackHciVirtualHardDisk_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.StackHciVirtualHardDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ stackhcivirtualharddisk.StackHciVirtualHardDisk_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.StackHciVirtualHardDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ stackhcivirtualharddisk.StackHciVirtualHardDisk_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.StackHciVirtualHardDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1102,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 &stackhcivirtualharddisk.StackHciVirtualHardDiskConfig {
 	Connection: interface{},
@@ -1126,7 +1126,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtua
 	PhysicalSectorInBytes: *f64,
 	StoragePathId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.stackHciVirtualHardDisk.StackHciVirtualHardDiskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.stackHciVirtualHardDisk.StackHciVirtualHardDiskTimeouts,
 }
 ```
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 &stackhcivirtualharddisk.StackHciVirtualHardDiskTimeouts {
 	Create: *string,
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.stackHciVirtualHardDisk.StackHciVirtualHardDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/stackhcivirtualharddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/stackhcivirtualharddisk"
 
 stackhcivirtualharddisk.NewStackHciVirtualHardDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StackHciVirtualHardDiskTimeoutsOutputReference
 ```

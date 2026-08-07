@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.NewOracleAutonomousDatabaseCloneFromDatabase(scope Construct, id *string, config OracleAutonomousDatabaseCloneFromDatabaseConfig) OracleAutonomousDatabaseCloneFromDatabase
 ```
@@ -469,7 +469,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatab
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatab
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1352,7 +1352,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 &oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabaseConfig {
 	Connection: interface{},
@@ -1387,7 +1387,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomo
 	RefreshableModel: *string,
 	SubnetId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabaseTimeouts,
 	VirtualNetworkId: *string,
 }
 ```
@@ -1837,7 +1837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 &oracleautonomousdatabaseclonefromdatabase.OracleAutonomousDatabaseCloneFromDatabaseTimeouts {
 	Create: *string,
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.oracleAutonomousDatabaseCloneFromDatabase.OracleAutonomousDatabaseCloneFromDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/oracleautonomousdatabaseclonefromdatabase"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/oracleautonomousdatabaseclonefromdatabase"
 
 oracleautonomousdatabaseclonefromdatabase.NewOracleAutonomousDatabaseCloneFromDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleAutonomousDatabaseCloneFromDatabaseTimeoutsOutputReference
 ```

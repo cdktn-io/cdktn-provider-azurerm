@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NewNetworkManagerVerifierWorkspace(scope Construct, id *string, config NetworkManagerVerifierWorkspaceConfig) NetworkManagerVerifierWorkspace
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NetworkManagerVerifierWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 &networkmanagerverifierworkspace.NetworkManagerVerifierWorkspaceConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanager
 	Description: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts,
 }
 ```
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 &networkmanagerverifierworkspace.NetworkManagerVerifierWorkspaceTimeouts {
 	Create: *string,
@@ -1165,7 +1165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/networkmanagerverifierworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networkmanagerverifierworkspace"
 
 networkmanagerverifierworkspace.NewNetworkManagerVerifierWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagerVerifierWorkspaceTimeoutsOutputReference
 ```

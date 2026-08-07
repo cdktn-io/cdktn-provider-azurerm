@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.NewPostgresqlFlexibleServerBackup(scope Construct, id *string, config PostgresqlFlexibleServerBackupConfig) PostgresqlFlexibleServerBackup
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 &postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackupConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflex
 	Name: *string,
 	ServerId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts,
 }
 ```
 
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 &postgresqlflexibleserverbackup.PostgresqlFlexibleServerBackupTimeouts {
 	Create: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlFlexibleServerBackup.PostgresqlFlexibleServerBackupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlflexibleserverbackup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlflexibleserverbackup"
 
 postgresqlflexibleserverbackup.NewPostgresqlFlexibleServerBackupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresqlFlexibleServerBackupTimeoutsOutputReference
 ```

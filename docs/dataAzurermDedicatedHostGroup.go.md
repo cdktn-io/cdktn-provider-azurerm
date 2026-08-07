@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.NewDataAzurermDedicatedHostGroup(scope Construct, id *string, config DataAzurermDedicatedHostGroupConfig) DataAzurermDedicatedHostGroup
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 &dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroupConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermded
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroupTimeouts,
 }
 ```
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 &dataazurermdedicatedhostgroup.DataAzurermDedicatedHostGroupTimeouts {
 	Read: *string,
@@ -932,7 +932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermDedicatedHostGroup.DataAzurermDedicatedHostGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermdedicatedhostgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermdedicatedhostgroup"
 
 dataazurermdedicatedhostgroup.NewDataAzurermDedicatedHostGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermDedicatedHostGroupTimeoutsOutputReference
 ```

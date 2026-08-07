@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.NewManagementGroupPolicyExemption(scope Construct, id *string, config ManagementGroupPolicyExemptionConfig) ManagementGroupPolicyExemption
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.ManagementGroupPolicyExemption_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.ManagementGroupPolicyExemption_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ managementgrouppolicyexemption.ManagementGroupPolicyExemption_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.ManagementGroupPolicyExemption_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ managementgrouppolicyexemption.ManagementGroupPolicyExemption_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.ManagementGroupPolicyExemption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 &managementgrouppolicyexemption.ManagementGroupPolicyExemptionConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrou
 	Id: *string,
 	Metadata: *string,
 	PolicyDefinitionReferenceIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managementGroupPolicyExemption.ManagementGroupPolicyExemptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managementGroupPolicyExemption.ManagementGroupPolicyExemptionTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 &managementgrouppolicyexemption.ManagementGroupPolicyExemptionTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroupPolicyExemption.ManagementGroupPolicyExemptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrouppolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgrouppolicyexemption"
 
 managementgrouppolicyexemption.NewManagementGroupPolicyExemptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagementGroupPolicyExemptionTimeoutsOutputReference
 ```

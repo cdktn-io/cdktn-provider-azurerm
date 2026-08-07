@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.NewDataAzurermOracleDatabaseSystemVersions(scope Construct, id *string, config DataAzurermOracleDatabaseSystemVersionsConfig) DataAzurermOracleDatabaseSystemVersions
 ```
@@ -360,7 +360,7 @@ func ResetUpgradeSupported()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +814,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 &dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersionsConfig {
 	Connection: interface{},
@@ -830,7 +830,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 	Id: *string,
 	ShapeFamily: *string,
 	StorageManagement: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsTimeouts,
 	UpgradeSupported: interface{},
 }
 ```
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 &dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersionsTimeouts {
 	Read: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 &dataazurermoracledatabasesystemversions.DataAzurermOracleDatabaseSystemVersionsVersions {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.NewDataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleDatabaseSystemVersionsTimeoutsOutputReference
 ```
@@ -1358,7 +1358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.NewDataAzurermOracleDatabaseSystemVersionsVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleDatabaseSystemVersionsVersionsList
 ```
@@ -1507,7 +1507,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDatabaseSystemVersions.DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledatabasesystemversions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledatabasesystemversions"
 
 dataazurermoracledatabasesystemversions.NewDataAzurermOracleDatabaseSystemVersionsVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleDatabaseSystemVersionsVersionsOutputReference
 ```

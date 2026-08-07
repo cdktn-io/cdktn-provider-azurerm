@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.NewPrivateEndpointApplicationSecurityGroupAssociation(scope Construct, id *string, config PrivateEndpointApplicationSecurityGroupAssociationConfig) PrivateEndpointApplicationSecurityGroupAssociation
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSec
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSec
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 &privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociationConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpoin
 	ApplicationSecurityGroupId: *string,
 	PrivateEndpointId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociationTimeouts,
 }
 ```
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 &privateendpointapplicationsecuritygroupassociation.PrivateEndpointApplicationSecurityGroupAssociationTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateEndpointApplicationSecurityGroupAssociation.PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/privateendpointapplicationsecuritygroupassociation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/privateendpointapplicationsecuritygroupassociation"
 
 privateendpointapplicationsecuritygroupassociation.NewPrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateEndpointApplicationSecurityGroupAssociationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumption(scope Construct, id *string, config FunctionAppFlexConsumptionConfig) FunctionAppFlexConsumption
 ```
@@ -672,7 +672,7 @@ func ResetZipDeployFile()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.FunctionAppFlexConsumption_IsConstruct(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.FunctionAppFlexConsumption_IsTerraformElement(x interface{}) *bool
 ```
@@ -718,7 +718,7 @@ functionappflexconsumption.FunctionAppFlexConsumption_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.FunctionAppFlexConsumption_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ functionappflexconsumption.FunctionAppFlexConsumption_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.FunctionAppFlexConsumption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1808,7 +1808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReady.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAlwaysReady {
 	Name: *string,
@@ -1854,23 +1854,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettings {
 	Enabled: interface{},
-	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory,
+	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory,
 	AdditionalLoginParameters: *map[string]*string,
 	AllowedExternalRedirectUrls: *[]*string,
 	DefaultProvider: *string,
-	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook,
-	Github: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub,
-	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle,
+	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook,
+	Github: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub,
+	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle,
 	Issuer: *string,
-	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft,
+	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft,
 	RuntimeVersion: *string,
 	TokenRefreshExtensionHours: *f64,
 	TokenStoreEnabled: interface{},
-	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter,
+	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter,
 	UnauthenticatedClientAction: *string,
 }
 ```
@@ -2116,7 +2116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectory {
 	ClientId: *string,
@@ -2198,7 +2198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsFacebook {
 	AppId: *string,
@@ -2280,7 +2280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsGithub {
 	ClientId: *string,
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsGoogle {
 	ClientId: *string,
@@ -2444,7 +2444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoft {
 	ClientId: *string,
@@ -2526,7 +2526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsTwitter {
 	ConsumerKey: *string,
@@ -2592,30 +2592,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2 {
-	Login: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login,
-	ActiveDirectoryV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2,
-	AppleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2,
+	Login: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login,
+	ActiveDirectoryV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2,
+	AppleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2,
 	AuthEnabled: interface{},
-	AzureStaticWebAppV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2,
+	AzureStaticWebAppV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2,
 	ConfigFilePath: *string,
 	CustomOidcV2: interface{},
 	DefaultProvider: *string,
 	ExcludedPaths: *[]*string,
-	FacebookV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2,
+	FacebookV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2,
 	ForwardProxyConvention: *string,
 	ForwardProxyCustomHostHeaderName: *string,
 	ForwardProxyCustomSchemeHeaderName: *string,
-	GithubV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2,
-	GoogleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2,
+	GithubV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2,
+	GoogleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2,
 	HttpRouteApiPrefix: *string,
-	MicrosoftV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2,
+	MicrosoftV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2,
 	RequireAuthentication: interface{},
 	RequireHttps: interface{},
 	RuntimeVersion: *string,
-	TwitterV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2,
+	TwitterV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2,
 	UnauthenticatedAction: *string,
 }
 ```
@@ -2968,7 +2968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2 {
 	ClientId: *string,
@@ -3178,7 +3178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2 {
 	ClientId: *string,
@@ -3228,7 +3228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2 {
 	ClientId: *string,
@@ -3262,7 +3262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2 {
 	ClientId: *string,
@@ -3360,7 +3360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2 {
 	AppId: *string,
@@ -3442,7 +3442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2 {
 	ClientId: *string,
@@ -3508,7 +3508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2 {
 	ClientId: *string,
@@ -3590,7 +3590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2Login.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2Login {
 	AllowedExternalRedirectUrls: *[]*string,
@@ -3788,7 +3788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2 {
 	ClientId: *string,
@@ -3870,7 +3870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2 {
 	ConsumerKey: *string,
@@ -3920,7 +3920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionConfig {
 	Connection: interface{},
@@ -3936,14 +3936,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfle
 	RuntimeName: *string,
 	RuntimeVersion: *string,
 	ServicePlanId: *string,
-	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig,
+	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig,
 	StorageAuthenticationType: *string,
 	StorageContainerEndpoint: *string,
 	StorageContainerType: *string,
 	AlwaysReady: interface{},
 	AppSettings: *map[string]*string,
-	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings,
-	AuthSettingsV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2,
+	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettings,
+	AuthSettingsV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2,
 	ClientCertificateEnabled: interface{},
 	ClientCertificateExclusionPaths: *string,
 	ClientCertificateMode: *string,
@@ -3952,15 +3952,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfle
 	HttpConcurrency: *f64,
 	HttpsOnly: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity,
 	InstanceMemoryInMb: *f64,
 	MaximumInstanceCount: *f64,
 	PublicNetworkAccessEnabled: interface{},
-	StickySettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings,
+	StickySettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings,
 	StorageAccessKey: *string,
 	StorageUserAssignedIdentityId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts,
 	VirtualNetworkSubnetId: *string,
 	WebdeployPublishBasicAuthenticationEnabled: interface{},
 	ZipDeployFile: *string,
@@ -4543,7 +4543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionConnectionString {
 	Name: *string,
@@ -4609,7 +4609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionIdentity {
 	Type: *string,
@@ -4655,7 +4655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfig {
 	ApiDefinitionUrl: *string,
@@ -4663,10 +4663,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfle
 	AppCommandLine: *string,
 	ApplicationInsightsConnectionString: *string,
 	ApplicationInsightsKey: *string,
-	AppServiceLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs,
+	AppServiceLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs,
 	ContainerRegistryManagedIdentityClientId: *string,
 	ContainerRegistryUseManagedIdentity: interface{},
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors,
 	DefaultDocuments: *[]*string,
 	ElasticInstanceMinimum: *f64,
 	HealthCheckEvictionTimeInMin: *f64,
@@ -5153,7 +5153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogs {
 	DiskQuotaMb: *f64,
@@ -5203,7 +5203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigCors {
 	AllowedOrigins: *[]*string,
@@ -5253,7 +5253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigIpRestriction {
 	Action: *string,
@@ -5399,7 +5399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -5473,7 +5473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestriction {
 	Action: *string,
@@ -5619,7 +5619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -5693,7 +5693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionSiteCredential {
 
@@ -5706,7 +5706,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappfle
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionStickySettings {
 	AppSettingNames: *[]*string,
@@ -5752,7 +5752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 &functionappflexconsumption.FunctionAppFlexConsumptionTimeouts {
 	Create: *string,
@@ -5828,7 +5828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReadyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAlwaysReadyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionAlwaysReadyList
 ```
@@ -5988,7 +5988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAlwaysReadyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAlwaysReadyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionAlwaysReadyOutputReference
 ```
@@ -6306,7 +6306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsActiveDirectoryOutputReference
 ```
@@ -6664,7 +6664,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsFacebookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsFacebookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsFacebookOutputReference
 ```
@@ -7022,7 +7022,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsFacebook
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsGithubOutputReference
 ```
@@ -7380,7 +7380,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsGithub
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsGoogleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsGoogleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsGoogleOutputReference
 ```
@@ -7738,7 +7738,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsGoogle
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsMicrosoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsMicrosoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsMicrosoftOutputReference
 ```
@@ -8096,7 +8096,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsMicrosoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsOutputReference
 ```
@@ -8851,7 +8851,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsTwitterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsTwitterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsTwitterOutputReference
 ```
@@ -9180,7 +9180,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsTwitter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2OutputReference
 ```
@@ -9763,7 +9763,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2ActiveDirectoryV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2AppleV2OutputReference
 ```
@@ -10067,7 +10067,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2AppleV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2OutputReference
 ```
@@ -10338,7 +10338,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2AzureStaticWebAppV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2List
 ```
@@ -10498,7 +10498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionAuthSettingsV2CustomOidcV2OutputReference
 ```
@@ -10955,7 +10955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2FacebookV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2FacebookV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2FacebookV2OutputReference
 ```
@@ -11306,7 +11306,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2FacebookV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GithubV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2GithubV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2GithubV2OutputReference
 ```
@@ -11628,7 +11628,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2GithubV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2GoogleV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2GoogleV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2GoogleV2OutputReference
 ```
@@ -11979,7 +11979,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2GoogleV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2LoginOutputReference
 ```
@@ -12547,7 +12547,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2Login
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2OutputReference
 ```
@@ -12898,7 +12898,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2MicrosoftV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2OutputReference
 ```
@@ -13908,7 +13908,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionAuthSettingsV2TwitterV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionAuthSettingsV2TwitterV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionAuthSettingsV2TwitterV2OutputReference
 ```
@@ -14201,7 +14201,7 @@ func InternalValue() FunctionAppFlexConsumptionAuthSettingsV2TwitterV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionConnectionStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionConnectionStringList
 ```
@@ -14361,7 +14361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionConnectionStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionConnectionStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionConnectionStringOutputReference
 ```
@@ -14694,7 +14694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionIdentityOutputReference
 ```
@@ -15016,7 +15016,7 @@ func InternalValue() FunctionAppFlexConsumptionIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigAppServiceLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigAppServiceLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionSiteConfigAppServiceLogsOutputReference
 ```
@@ -15323,7 +15323,7 @@ func InternalValue() FunctionAppFlexConsumptionSiteConfigAppServiceLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionSiteConfigCorsOutputReference
 ```
@@ -15630,7 +15630,7 @@ func InternalValue() FunctionAppFlexConsumptionSiteConfigCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersList
 ```
@@ -15790,7 +15790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionSiteConfigIpRestrictionHeadersOutputReference
 ```
@@ -16173,7 +16173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionSiteConfigIpRestrictionList
 ```
@@ -16333,7 +16333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionSiteConfigIpRestrictionOutputReference
 ```
@@ -16845,7 +16845,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionSiteConfigOutputReference
 ```
@@ -18038,7 +18038,7 @@ func InternalValue() FunctionAppFlexConsumptionSiteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersList
 ```
@@ -18198,7 +18198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionSiteConfigScmIpRestrictionHeadersOutputReference
 ```
@@ -18581,7 +18581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigScmIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionSiteConfigScmIpRestrictionList
 ```
@@ -18741,7 +18741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteConfigScmIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteConfigScmIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionSiteConfigScmIpRestrictionOutputReference
 ```
@@ -19253,7 +19253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FunctionAppFlexConsumptionSiteCredentialList
 ```
@@ -19402,7 +19402,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionSiteCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionSiteCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FunctionAppFlexConsumptionSiteCredentialOutputReference
 ```
@@ -19691,7 +19691,7 @@ func InternalValue() FunctionAppFlexConsumptionSiteCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionStickySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionStickySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionStickySettingsOutputReference
 ```
@@ -19998,7 +19998,7 @@ func InternalValue() FunctionAppFlexConsumptionStickySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.functionAppFlexConsumption.FunctionAppFlexConsumptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/functionappflexconsumption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/functionappflexconsumption"
 
 functionappflexconsumption.NewFunctionAppFlexConsumptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FunctionAppFlexConsumptionTimeoutsOutputReference
 ```

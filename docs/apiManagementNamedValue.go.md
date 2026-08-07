@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.NewApiManagementNamedValue(scope Construct, id *string, config ApiManagementNamedValueConfig) ApiManagementNamedValue
 ```
@@ -468,7 +468,7 @@ func ResetValueFromKeyVault()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.ApiManagementNamedValue_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.ApiManagementNamedValue_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ apimanagementnamedvalue.ApiManagementNamedValue_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.ApiManagementNamedValue_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ apimanagementnamedvalue.ApiManagementNamedValue_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.ApiManagementNamedValue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -977,7 +977,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 &apimanagementnamedvalue.ApiManagementNamedValueConfig {
 	Connection: interface{},
@@ -994,9 +994,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementn
 	Id: *string,
 	Secret: interface{},
 	Tags: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementNamedValue.ApiManagementNamedValueTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementNamedValue.ApiManagementNamedValueTimeouts,
 	Value: *string,
-	ValueFromKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault,
+	ValueFromKeyVault: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault,
 }
 ```
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 &apimanagementnamedvalue.ApiManagementNamedValueTimeouts {
 	Create: *string,
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 &apimanagementnamedvalue.ApiManagementNamedValueValueFromKeyVault {
 	SecretId: *string,
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.NewApiManagementNamedValueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementNamedValueTimeoutsOutputReference
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementnamedvalue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementnamedvalue"
 
 apimanagementnamedvalue.NewApiManagementNamedValueValueFromKeyVaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementNamedValueValueFromKeyVaultOutputReference
 ```

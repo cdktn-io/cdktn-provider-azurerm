@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.NewEventgridPartnerRegistration(scope Construct, id *string, config EventgridPartnerRegistrationConfig) EventgridPartnerRegistration
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.EventgridPartnerRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.EventgridPartnerRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ eventgridpartnerregistration.EventgridPartnerRegistration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.EventgridPartnerRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ eventgridpartnerregistration.EventgridPartnerRegistration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.EventgridPartnerRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 &eventgridpartnerregistration.EventgridPartnerRegistrationConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartn
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.eventgridPartnerRegistration.EventgridPartnerRegistrationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridPartnerRegistration.EventgridPartnerRegistrationTimeouts,
 }
 ```
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 &eventgridpartnerregistration.EventgridPartnerRegistrationTimeouts {
 	Create: *string,
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridPartnerRegistration.EventgridPartnerRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/eventgridpartnerregistration"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridpartnerregistration"
 
 eventgridpartnerregistration.NewEventgridPartnerRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridPartnerRegistrationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTableProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTableProperties(scope Construct, id *string, config StorageAccountTablePropertiesConfig) StorageAccountTableProperties
 ```
@@ -507,7 +507,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTableProperties.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.StorageAccountTableProperties_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTableProperties.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.StorageAccountTableProperties_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ storageaccounttableproperties.StorageAccountTableProperties_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTableProperties.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.StorageAccountTableProperties_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ storageaccounttableproperties.StorageAccountTableProperties_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTableProperties.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.StorageAccountTableProperties_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesConfig {
 	Connection: interface{},
@@ -962,11 +962,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccount
 	Provisioners: *[]interface{},
 	StorageAccountId: *string,
 	CorsRule: interface{},
-	HourMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountTableProperties.StorageAccountTablePropertiesHourMetrics,
+	HourMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountTableProperties.StorageAccountTablePropertiesHourMetrics,
 	Id: *string,
-	Logging: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountTableProperties.StorageAccountTablePropertiesLogging,
-	MinuteMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountTableProperties.StorageAccountTablePropertiesMinuteMetrics,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageAccountTableProperties.StorageAccountTablePropertiesTimeouts,
+	Logging: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountTableProperties.StorageAccountTablePropertiesLogging,
+	MinuteMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountTableProperties.StorageAccountTablePropertiesMinuteMetrics,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountTableProperties.StorageAccountTablePropertiesTimeouts,
 }
 ```
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesCorsRule {
 	AllowedHeaders: *[]*string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesHourMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesHourMetrics {
 	Version: *string,
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesLogging {
 	Delete: interface{},
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesMinuteMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesMinuteMetrics {
 	Version: *string,
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 &storageaccounttableproperties.StorageAccountTablePropertiesTimeouts {
 	Create: *string,
@@ -1535,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountTablePropertiesCorsRuleList
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountTablePropertiesCorsRuleOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesHourMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesHourMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTablePropertiesHourMetricsOutputReference
 ```
@@ -2401,7 +2401,7 @@ func InternalValue() StorageAccountTablePropertiesHourMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTablePropertiesLoggingOutputReference
 ```
@@ -2767,7 +2767,7 @@ func InternalValue() StorageAccountTablePropertiesLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesMinuteMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesMinuteMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTablePropertiesMinuteMetricsOutputReference
 ```
@@ -3096,7 +3096,7 @@ func InternalValue() StorageAccountTablePropertiesMinuteMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountTableProperties.StorageAccountTablePropertiesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageaccounttableproperties"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccounttableproperties"
 
 storageaccounttableproperties.NewStorageAccountTablePropertiesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTablePropertiesTimeoutsOutputReference
 ```

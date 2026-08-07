@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.NewKeyVaultSecret(scope Construct, id *string, config KeyVaultSecretConfig) KeyVaultSecret
 ```
@@ -476,7 +476,7 @@ func ResetValueWoVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.KeyVaultSecret_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.KeyVaultSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ keyvaultsecret.KeyVaultSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.KeyVaultSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ keyvaultsecret.KeyVaultSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.KeyVaultSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1053,7 +1053,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 &keyvaultsecret.KeyVaultSecretConfig {
 	Connection: interface{},
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret
 	Id: *string,
 	NotBeforeDate: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.keyVaultSecret.KeyVaultSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultSecret.KeyVaultSecretTimeouts,
 	Value: *string,
 	ValueWo: *string,
 	ValueWoVersion: *f64,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 &keyvaultsecret.KeyVaultSecretTimeouts {
 	Create: *string,
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultSecret.KeyVaultSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/keyvaultsecret"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultsecret"
 
 keyvaultsecret.NewKeyVaultSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultSecretTimeoutsOutputReference
 ```

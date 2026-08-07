@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.NewResourcePolicyExemption(scope Construct, id *string, config ResourcePolicyExemptionConfig) ResourcePolicyExemption
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.ResourcePolicyExemption_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.ResourcePolicyExemption_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ resourcepolicyexemption.ResourcePolicyExemption_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.ResourcePolicyExemption_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ resourcepolicyexemption.ResourcePolicyExemption_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemption.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.ResourcePolicyExemption_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -993,7 +993,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 &resourcepolicyexemption.ResourcePolicyExemptionConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicy
 	Id: *string,
 	Metadata: *string,
 	PolicyDefinitionReferenceIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.resourcePolicyExemption.ResourcePolicyExemptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.resourcePolicyExemption.ResourcePolicyExemptionTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 &resourcepolicyexemption.ResourcePolicyExemptionTimeouts {
 	Create: *string,
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.resourcePolicyExemption.ResourcePolicyExemptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/resourcepolicyexemption"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/resourcepolicyexemption"
 
 resourcepolicyexemption.NewResourcePolicyExemptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ResourcePolicyExemptionTimeoutsOutputReference
 ```

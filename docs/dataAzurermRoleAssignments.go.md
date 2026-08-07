@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignments(scope Construct, id *string, config DataAzurermRoleAssignmentsConfig) DataAzurermRoleAssignments
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermrol
 	LimitAtScope: interface{},
 	PrincipalId: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts,
 }
 ```
 
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsRoleAssignments {
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermrol
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsTimeouts {
 	Read: *string,
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsRoleAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermRoleAssignmentsRoleAssignmentsList
 ```
@@ -1143,7 +1143,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsRoleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermRoleAssignmentsRoleAssignmentsOutputReference
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() DataAzurermRoleAssignmentsRoleAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermRoleAssignmentsTimeoutsOutputReference
 ```

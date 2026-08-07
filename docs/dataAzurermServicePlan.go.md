@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.NewDataAzurermServicePlan(scope Construct, id *string, config DataAzurermServicePlanConfig) DataAzurermServicePlan
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.DataAzurermServicePlan_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.DataAzurermServicePlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermserviceplan.DataAzurermServicePlan_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.DataAzurermServicePlan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermserviceplan.DataAzurermServicePlan_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.DataAzurermServicePlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 &dataazurermserviceplan.DataAzurermServicePlanConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermser
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermServicePlan.DataAzurermServicePlanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermServicePlan.DataAzurermServicePlanTimeouts,
 }
 ```
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 &dataazurermserviceplan.DataAzurermServicePlanTimeouts {
 	Read: *string,
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicePlan.DataAzurermServicePlanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermserviceplan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermserviceplan"
 
 dataazurermserviceplan.NewDataAzurermServicePlanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermServicePlanTimeoutsOutputReference
 ```

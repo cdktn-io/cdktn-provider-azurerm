@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.NewCosmosdbSqlStoredProcedure(scope Construct, id *string, config CosmosdbSqlStoredProcedureConfig) CosmosdbSqlStoredProcedure
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -892,7 +892,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 &cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedureConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlsto
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedureTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedureTimeouts,
 }
 ```
 
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 &cosmosdbsqlstoredprocedure.CosmosdbSqlStoredProcedureTimeouts {
 	Create: *string,
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlStoredProcedure.CosmosdbSqlStoredProcedureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlstoredprocedure"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlstoredprocedure"
 
 cosmosdbsqlstoredprocedure.NewCosmosdbSqlStoredProcedureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlStoredProcedureTimeoutsOutputReference
 ```

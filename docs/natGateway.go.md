@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.natGateway.NatGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NewNatGateway(scope Construct, id *string, config NatGatewayConfig) NatGateway
 ```
@@ -455,7 +455,7 @@ func ResetZones()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.natGateway.NatGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NatGateway_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.natGateway.NatGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NatGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ natgateway.NatGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.natGateway.NatGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NatGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ natgateway.NatGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.natGateway.NatGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NatGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.natGateway.NatGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 &natgateway.NatGatewayConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
 	IdleTimeoutInMinutes: *f64,
 	SkuName: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.natGateway.NatGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.natGateway.NatGatewayTimeouts,
 	Zones: *[]*string,
 }
 ```
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.natGateway.NatGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 &natgateway.NatGatewayTimeouts {
 	Create: *string,
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.natGateway.NatGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/natgateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/natgateway"
 
 natgateway.NewNatGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatGatewayTimeoutsOutputReference
 ```

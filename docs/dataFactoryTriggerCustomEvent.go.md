@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEvent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.NewDataFactoryTriggerCustomEvent(scope Construct, id *string, config DataFactoryTriggerCustomEventConfig) DataFactoryTriggerCustomEvent
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEvent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEvent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEvent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEvent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.DataFactoryTriggerCustomEvent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1057,7 +1057,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 &datafactorytriggercustomevent.DataFactoryTriggerCustomEventConfig {
 	Connection: interface{},
@@ -1079,7 +1079,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytri
 	Id: *string,
 	SubjectBeginsWith: *string,
 	SubjectEndsWith: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventTimeouts,
 }
 ```
 
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 &datafactorytriggercustomevent.DataFactoryTriggerCustomEventPipeline {
 	Name: *string,
@@ -1394,7 +1394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 &datafactorytriggercustomevent.DataFactoryTriggerCustomEventTimeouts {
 	Create: *string,
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventPipelineList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.NewDataFactoryTriggerCustomEventPipelineList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFactoryTriggerCustomEventPipelineList
 ```
@@ -1630,7 +1630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventPipelineOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.NewDataFactoryTriggerCustomEventPipelineOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFactoryTriggerCustomEventPipelineOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryTriggerCustomEvent.DataFactoryTriggerCustomEventTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorytriggercustomevent"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorytriggercustomevent"
 
 datafactorytriggercustomevent.NewDataFactoryTriggerCustomEventTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryTriggerCustomEventTimeoutsOutputReference
 ```

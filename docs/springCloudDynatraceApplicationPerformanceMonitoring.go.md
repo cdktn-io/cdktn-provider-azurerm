@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.NewSpringCloudDynatraceApplicationPerformanceMonitoring(scope Construct, id *string, config SpringCloudDynatraceApplicationPerformanceMonitoringConfig) SpringCloudDynatraceApplicationPerformanceMonitoring
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplica
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplica
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoring_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 &springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringConfig {
 	Connection: interface{},
@@ -1006,7 +1006,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddyn
 	EnvironmentId: *string,
 	GloballyEnabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringTimeouts,
 }
 ```
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 &springclouddynatraceapplicationperformancemonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringTimeouts {
 	Create: *string,
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudDynatraceApplicationPerformanceMonitoring.SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/springclouddynatraceapplicationperformancemonitoring"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springclouddynatraceapplicationperformancemonitoring"
 
 springclouddynatraceapplicationperformancemonitoring.NewSpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudDynatraceApplicationPerformanceMonitoringTimeoutsOutputReference
 ```

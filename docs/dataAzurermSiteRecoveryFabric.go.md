@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.NewDataAzurermSiteRecoveryFabric(scope Construct, id *string, config DataAzurermSiteRecoveryFabricConfig) DataAzurermSiteRecoveryFabric
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabric.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabric.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 &dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabricConfig {
 	Connection: interface{},
@@ -727,7 +727,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsit
 	RecoveryVaultName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabricTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabricTimeouts,
 }
 ```
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabricTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 &dataazurermsiterecoveryfabric.DataAzurermSiteRecoveryFabricTimeouts {
 	Read: *string,
@@ -924,7 +924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSiteRecoveryFabric.DataAzurermSiteRecoveryFabricTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermsiterecoveryfabric"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsiterecoveryfabric"
 
 dataazurermsiterecoveryfabric.NewDataAzurermSiteRecoveryFabricTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermSiteRecoveryFabricTimeoutsOutputReference
 ```

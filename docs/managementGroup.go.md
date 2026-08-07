@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroup.ManagementGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.NewManagementGroup(scope Construct, id *string, config ManagementGroupConfig) ManagementGroup
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managementGroup.ManagementGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.ManagementGroup_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managementGroup.ManagementGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.ManagementGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ managementgroup.ManagementGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managementGroup.ManagementGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.ManagementGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ managementgroup.ManagementGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managementGroup.ManagementGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.ManagementGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroup.ManagementGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 &managementgroup.ManagementGroupConfig {
 	Connection: interface{},
@@ -902,7 +902,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgrou
 	Name: *string,
 	ParentManagementGroupId: *string,
 	SubscriptionIds: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managementGroup.ManagementGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managementGroup.ManagementGroupTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managementGroup.ManagementGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 &managementgroup.ManagementGroupTimeouts {
 	Create: *string,
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managementGroup.ManagementGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managementgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managementgroup"
 
 managementgroup.NewManagementGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagementGroupTimeoutsOutputReference
 ```

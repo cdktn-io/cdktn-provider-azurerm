@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.NewWebPubsubCustomCertificate(scope Construct, id *string, config WebPubsubCustomCertificateConfig) WebPubsubCustomCertificate
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.WebPubsubCustomCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.WebPubsubCustomCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ webpubsubcustomcertificate.WebPubsubCustomCertificate_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.WebPubsubCustomCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ webpubsubcustomcertificate.WebPubsubCustomCertificate_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.WebPubsubCustomCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 &webpubsubcustomcertificate.WebPubsubCustomCertificateConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcusto
 	Name: *string,
 	WebPubsubId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.webPubsubCustomCertificate.WebPubsubCustomCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubCustomCertificate.WebPubsubCustomCertificateTimeouts,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 &webpubsubcustomcertificate.WebPubsubCustomCertificateTimeouts {
 	Create: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubCustomCertificate.WebPubsubCustomCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webpubsubcustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomcertificate"
 
 webpubsubcustomcertificate.NewWebPubsubCustomCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubCustomCertificateTimeoutsOutputReference
 ```

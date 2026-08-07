@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.NewDataFactoryPipeline(scope Construct, id *string, config DataFactoryPipelineConfig) DataFactoryPipeline
 ```
@@ -483,7 +483,7 @@ func ResetVariables()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.DataFactoryPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.DataFactoryPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ datafactorypipeline.DataFactoryPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.DataFactoryPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ datafactorypipeline.DataFactoryPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.DataFactoryPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1036,7 +1036,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 &datafactorypipeline.DataFactoryPipelineConfig {
 	Connection: interface{},
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypip
 	Id: *string,
 	MoniterMetricsAfterDuration: *string,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryPipeline.DataFactoryPipelineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryPipeline.DataFactoryPipelineTimeouts,
 	Variables: *map[string]*string,
 }
 ```
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 &datafactorypipeline.DataFactoryPipelineTimeouts {
 	Create: *string,
@@ -1387,7 +1387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorypipeline"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorypipeline"
 
 datafactorypipeline.NewDataFactoryPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryPipelineTimeoutsOutputReference
 ```

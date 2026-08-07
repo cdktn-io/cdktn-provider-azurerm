@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.NewDataAzurermOracleDbSystemShapes(scope Construct, id *string, config DataAzurermOracleDbSystemShapesConfig) DataAzurermOracleDbSystemShapes
 ```
@@ -332,7 +332,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 &dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapesConfig {
 	Connection: interface{},
@@ -710,7 +710,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 	Provisioners: *[]interface{},
 	Location: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesTimeouts,
 	Zone: *string,
 }
 ```
@@ -863,7 +863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesDbSystemShapes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 &dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapesDbSystemShapes {
 
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermora
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 &dataazurermoracledbsystemshapes.DataAzurermOracleDbSystemShapesTimeouts {
 	Read: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesDbSystemShapesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.NewDataAzurermOracleDbSystemShapesDbSystemShapesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermOracleDbSystemShapesDbSystemShapesList
 ```
@@ -1059,7 +1059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.NewDataAzurermOracleDbSystemShapesDbSystemShapesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermOracleDbSystemShapesDbSystemShapesOutputReference
 ```
@@ -1579,7 +1579,7 @@ func InternalValue() DataAzurermOracleDbSystemShapesDbSystemShapes
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermOracleDbSystemShapes.DataAzurermOracleDbSystemShapesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermoracledbsystemshapes"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermoracledbsystemshapes"
 
 dataazurermoracledbsystemshapes.NewDataAzurermOracleDbSystemShapesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermOracleDbSystemShapesTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.NewKubernetesClusterExtension(scope Construct, id *string, config KubernetesClusterExtensionConfig) KubernetesClusterExtension
 ```
@@ -489,7 +489,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.KubernetesClusterExtension_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.KubernetesClusterExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ kubernetesclusterextension.KubernetesClusterExtension_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.KubernetesClusterExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ kubernetesclusterextension.KubernetesClusterExtension_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.KubernetesClusterExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionAksAssignedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 &kubernetesclusterextension.KubernetesClusterExtensionAksAssignedIdentity {
 
@@ -1077,7 +1077,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 &kubernetesclusterextension.KubernetesClusterExtensionConfig {
 	Connection: interface{},
@@ -1093,11 +1093,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclus
 	ConfigurationProtectedSettings: *map[string]*string,
 	ConfigurationSettings: *map[string]*string,
 	Id: *string,
-	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesClusterExtension.KubernetesClusterExtensionPlan,
+	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesClusterExtension.KubernetesClusterExtensionPlan,
 	ReleaseNamespace: *string,
 	ReleaseTrain: *string,
 	TargetNamespace: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.kubernetesClusterExtension.KubernetesClusterExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.kubernetesClusterExtension.KubernetesClusterExtensionTimeouts,
 	Version: *string,
 }
 ```
@@ -1354,7 +1354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 &kubernetesclusterextension.KubernetesClusterExtensionPlan {
 	Name: *string,
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 &kubernetesclusterextension.KubernetesClusterExtensionTimeouts {
 	Create: *string,
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionAksAssignedIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.NewKubernetesClusterExtensionAksAssignedIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KubernetesClusterExtensionAksAssignedIdentityList
 ```
@@ -1667,7 +1667,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionAksAssignedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.NewKubernetesClusterExtensionAksAssignedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KubernetesClusterExtensionAksAssignedIdentityOutputReference
 ```
@@ -1967,7 +1967,7 @@ func InternalValue() KubernetesClusterExtensionAksAssignedIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.NewKubernetesClusterExtensionPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterExtensionPlanOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() KubernetesClusterExtensionPlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.kubernetesClusterExtension.KubernetesClusterExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/kubernetesclusterextension"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/kubernetesclusterextension"
 
 kubernetesclusterextension.NewKubernetesClusterExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KubernetesClusterExtensionTimeoutsOutputReference
 ```

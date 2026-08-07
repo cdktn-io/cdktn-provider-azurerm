@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageContainer.StorageContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.NewStorageContainer(scope Construct, id *string, config StorageContainerConfig) StorageContainer
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageContainer.StorageContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.StorageContainer_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageContainer.StorageContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.StorageContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ storagecontainer.StorageContainer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageContainer.StorageContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.StorageContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ storagecontainer.StorageContainer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageContainer.StorageContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.StorageContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageContainer.StorageContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 &storagecontainer.StorageContainerConfig {
 	Connection: interface{},
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontain
 	Metadata: *map[string]*string,
 	StorageAccountId: *string,
 	StorageAccountName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageContainer.StorageContainerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageContainer.StorageContainerTimeouts,
 }
 ```
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageContainer.StorageContainerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 &storagecontainer.StorageContainerTimeouts {
 	Create: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageContainer.StorageContainerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storagecontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagecontainer"
 
 storagecontainer.NewStorageContainerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageContainerTimeoutsOutputReference
 ```

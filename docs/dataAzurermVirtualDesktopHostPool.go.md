@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPool(scope Construct, id *string, config DataAzurermVirtualDesktopHostPoolConfig) DataAzurermVirtualDesktopHostPool
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 &dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPoolConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvir
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolTimeouts,
 }
 ```
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 &dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdates {
 
@@ -999,7 +999,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 &dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesSchedule {
 
@@ -1012,7 +1012,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvir
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 &dataazurermvirtualdesktophostpool.DataAzurermVirtualDesktopHostPoolTimeouts {
 	Read: *string,
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesList
 ```
@@ -1195,7 +1195,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesOutputReference
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() DataAzurermVirtualDesktopHostPoolScheduledAgentUpdates
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleList
 ```
@@ -1655,7 +1655,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesScheduleOutputReference
 ```
@@ -1944,7 +1944,7 @@ func InternalValue() DataAzurermVirtualDesktopHostPoolScheduledAgentUpdatesSched
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualDesktopHostPool.DataAzurermVirtualDesktopHostPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermvirtualdesktophostpool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualdesktophostpool"
 
 dataazurermvirtualdesktophostpool.NewDataAzurermVirtualDesktopHostPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermVirtualDesktopHostPoolTimeoutsOutputReference
 ```

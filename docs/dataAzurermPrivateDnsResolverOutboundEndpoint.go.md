@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.NewDataAzurermPrivateDnsResolverOutboundEndpoint(scope Construct, id *string, config DataAzurermPrivateDnsResolverOutboundEndpointConfig) DataAzurermPrivateDnsResolverOutboundEndpoint
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutbo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpoint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpoint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutbo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -713,7 +713,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 &dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpointConfig {
 	Connection: interface{},
@@ -726,7 +726,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermpri
 	Name: *string,
 	PrivateDnsResolverId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpointTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpointTimeouts,
 }
 ```
 
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 &dataazurermprivatednsresolveroutboundendpoint.DataAzurermPrivateDnsResolverOutboundEndpointTimeouts {
 	Read: *string,
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermPrivateDnsResolverOutboundEndpoint.DataAzurermPrivateDnsResolverOutboundEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermprivatednsresolveroutboundendpoint"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermprivatednsresolveroutboundendpoint"
 
 dataazurermprivatednsresolveroutboundendpoint.NewDataAzurermPrivateDnsResolverOutboundEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermPrivateDnsResolverOutboundEndpointTimeoutsOutputReference
 ```

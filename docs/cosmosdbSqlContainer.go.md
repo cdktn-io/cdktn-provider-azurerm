@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainer(scope Construct, id *string, config CosmosdbSqlContainerConfig) CosmosdbSqlContainer
 ```
@@ -542,7 +542,7 @@ func ResetUniqueKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.CosmosdbSqlContainer_IsConstruct(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.CosmosdbSqlContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ cosmosdbsqlcontainer.CosmosdbSqlContainer_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.CosmosdbSqlContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ cosmosdbsqlcontainer.CosmosdbSqlContainer_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.CosmosdbSqlContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1183,7 +1183,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerAutoscaleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerAutoscaleSettings {
 	MaxThroughput: *f64,
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerConfig {
 	Connection: interface{},
@@ -1231,15 +1231,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcon
 	PartitionKeyPaths: *[]*string,
 	ResourceGroupName: *string,
 	AnalyticalStorageTtl: *f64,
-	AutoscaleSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlContainer.CosmosdbSqlContainerAutoscaleSettings,
-	ConflictResolutionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlContainer.CosmosdbSqlContainerConflictResolutionPolicy,
+	AutoscaleSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlContainer.CosmosdbSqlContainerAutoscaleSettings,
+	ConflictResolutionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlContainer.CosmosdbSqlContainerConflictResolutionPolicy,
 	DefaultTtl: *f64,
 	Id: *string,
-	IndexingPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicy,
+	IndexingPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicy,
 	PartitionKeyKind: *string,
 	PartitionKeyVersion: *f64,
 	Throughput: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cosmosdbSqlContainer.CosmosdbSqlContainerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbSqlContainer.CosmosdbSqlContainerTimeouts,
 	UniqueKey: interface{},
 }
 ```
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerConflictResolutionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerConflictResolutionPolicy {
 	Mode: *string,
@@ -1614,7 +1614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicy {
 	CompositeIndex: interface{},
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicyCompositeIndex {
 	Index: interface{},
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexIndex {
 	Order: *string,
@@ -1790,7 +1790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyExcludedPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicyExcludedPath {
 	Path: *string,
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyIncludedPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicyIncludedPath {
 	Path: *string,
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicySpatialIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerIndexingPolicySpatialIndex {
 	Path: *string,
@@ -1886,7 +1886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerTimeouts {
 	Create: *string,
@@ -1960,7 +1960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerUniqueKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 &cosmosdbsqlcontainer.CosmosdbSqlContainerUniqueKey {
 	Paths: *[]*string,
@@ -1994,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerAutoscaleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerAutoscaleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlContainerAutoscaleSettingsOutputReference
 ```
@@ -2272,7 +2272,7 @@ func InternalValue() CosmosdbSqlContainerAutoscaleSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerConflictResolutionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerConflictResolutionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlContainerConflictResolutionPolicyOutputReference
 ```
@@ -2601,7 +2601,7 @@ func InternalValue() CosmosdbSqlContainerConflictResolutionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexList
 ```
@@ -2761,7 +2761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerIndexingPolicyCompositeIndexIndexOutputReference
 ```
@@ -3072,7 +3072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyCompositeIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerIndexingPolicyCompositeIndexList
 ```
@@ -3232,7 +3232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyCompositeIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyCompositeIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerIndexingPolicyCompositeIndexOutputReference
 ```
@@ -3534,7 +3534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyExcludedPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyExcludedPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerIndexingPolicyExcludedPathList
 ```
@@ -3694,7 +3694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyExcludedPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyExcludedPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerIndexingPolicyExcludedPathOutputReference
 ```
@@ -3983,7 +3983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyIncludedPathList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyIncludedPathList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerIndexingPolicyIncludedPathList
 ```
@@ -4143,7 +4143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyIncludedPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyIncludedPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerIndexingPolicyIncludedPathOutputReference
 ```
@@ -4432,7 +4432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlContainerIndexingPolicyOutputReference
 ```
@@ -4878,7 +4878,7 @@ func InternalValue() CosmosdbSqlContainerIndexingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicySpatialIndexList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicySpatialIndexList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerIndexingPolicySpatialIndexList
 ```
@@ -5038,7 +5038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerIndexingPolicySpatialIndexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerIndexingPolicySpatialIndexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerIndexingPolicySpatialIndexOutputReference
 ```
@@ -5338,7 +5338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbSqlContainerTimeoutsOutputReference
 ```
@@ -5703,7 +5703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerUniqueKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerUniqueKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbSqlContainerUniqueKeyList
 ```
@@ -5863,7 +5863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbSqlContainer.CosmosdbSqlContainerUniqueKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cosmosdbsqlcontainer"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbsqlcontainer"
 
 cosmosdbsqlcontainer.NewCosmosdbSqlContainerUniqueKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbSqlContainerUniqueKeyOutputReference
 ```

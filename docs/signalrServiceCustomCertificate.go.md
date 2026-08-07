@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.NewSignalrServiceCustomCertificate(scope Construct, id *string, config SignalrServiceCustomCertificateConfig) SignalrServiceCustomCertificate
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.SignalrServiceCustomCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.SignalrServiceCustomCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ signalrservicecustomcertificate.SignalrServiceCustomCertificate_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.SignalrServiceCustomCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ signalrservicecustomcertificate.SignalrServiceCustomCertificate_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.SignalrServiceCustomCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 &signalrservicecustomcertificate.SignalrServiceCustomCertificateConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservice
 	Name: *string,
 	SignalrServiceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.signalrServiceCustomCertificate.SignalrServiceCustomCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.signalrServiceCustomCertificate.SignalrServiceCustomCertificateTimeouts,
 }
 ```
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 &signalrservicecustomcertificate.SignalrServiceCustomCertificateTimeouts {
 	Create: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.signalrServiceCustomCertificate.SignalrServiceCustomCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/signalrservicecustomcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/signalrservicecustomcertificate"
 
 signalrservicecustomcertificate.NewSignalrServiceCustomCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignalrServiceCustomCertificateTimeoutsOutputReference
 ```

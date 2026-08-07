@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.NewVirtualMachineDataDiskAttachment(scope Construct, id *string, config VirtualMachineDataDiskAttachmentConfig) VirtualMachineDataDiskAttachment
 ```
@@ -441,7 +441,7 @@ func ResetWriteAcceleratorEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 &virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachmentConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachine
 	VirtualMachineId: *string,
 	CreateOption: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachmentTimeouts,
 	WriteAcceleratorEnabled: interface{},
 }
 ```
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 &virtualmachinedatadiskattachment.VirtualMachineDataDiskAttachmentTimeouts {
 	Create: *string,
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.virtualMachineDataDiskAttachment.VirtualMachineDataDiskAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/virtualmachinedatadiskattachment"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/virtualmachinedatadiskattachment"
 
 virtualmachinedatadiskattachment.NewVirtualMachineDataDiskAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineDataDiskAttachmentTimeoutsOutputReference
 ```

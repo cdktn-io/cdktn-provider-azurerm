@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.NewCognitiveAccountCustomerManagedKeyA(scope Construct, id *string, config CognitiveAccountCustomerManagedKeyAConfig) CognitiveAccountCustomerManagedKeyA
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_IsTerrafo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_IsTerrafo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 &cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyAConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccou
 	KeyVaultKeyId: *string,
 	Id: *string,
 	IdentityClientId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 &cognitiveaccountcustomermanagedkey.CognitiveAccountCustomerManagedKeyTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountCustomerManagedKey.CognitiveAccountCustomerManagedKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/cognitiveaccountcustomermanagedkey"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountcustomermanagedkey"
 
 cognitiveaccountcustomermanagedkey.NewCognitiveAccountCustomerManagedKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountCustomerManagedKeyTimeoutsOutputReference
 ```

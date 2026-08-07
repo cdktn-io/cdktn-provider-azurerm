@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.NewApiManagementIdentityProviderMicrosoft(scope Construct, id *string, config ApiManagementIdentityProviderMicrosoftConfig) ApiManagementIdentityProviderMicrosoft
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoft.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoft.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoft.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoft.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoft_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoftConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 &apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoftConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementi
 	ClientSecret: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoftTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoftTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoftTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 &apimanagementidentityprovidermicrosoft.ApiManagementIdentityProviderMicrosoftTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementIdentityProviderMicrosoft.ApiManagementIdentityProviderMicrosoftTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementidentityprovidermicrosoft"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementidentityprovidermicrosoft"
 
 apimanagementidentityprovidermicrosoft.NewApiManagementIdentityProviderMicrosoftTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementIdentityProviderMicrosoftTimeoutsOutputReference
 ```

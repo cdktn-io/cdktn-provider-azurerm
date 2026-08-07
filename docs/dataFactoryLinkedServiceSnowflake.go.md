@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.NewDataFactoryLinkedServiceSnowflake(scope Construct, id *string, config DataFactoryLinkedServiceSnowflakeConfig) DataFactoryLinkedServiceSnowflake
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflake.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflake.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflake.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflake.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflake_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1013,7 +1013,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 &datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflakeConfig {
 	Connection: interface{},
@@ -1031,9 +1031,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylin
 	Description: *string,
 	Id: *string,
 	IntegrationRuntimeName: *string,
-	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeKeyVaultPassword,
+	KeyVaultPassword: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeKeyVaultPassword,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeTimeouts,
 }
 ```
 
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeKeyVaultPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 &datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflakeKeyVaultPassword {
 	LinkedServiceName: *string,
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 &datafactorylinkedservicesnowflake.DataFactoryLinkedServiceSnowflakeTimeouts {
 	Create: *string,
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeKeyVaultPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.NewDataFactoryLinkedServiceSnowflakeKeyVaultPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceSnowflakeKeyVaultPasswordOutputReference
 ```
@@ -1691,7 +1691,7 @@ func InternalValue() DataFactoryLinkedServiceSnowflakeKeyVaultPassword
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceSnowflake.DataFactoryLinkedServiceSnowflakeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicesnowflake"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorylinkedservicesnowflake"
 
 datafactorylinkedservicesnowflake.NewDataFactoryLinkedServiceSnowflakeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceSnowflakeTimeoutsOutputReference
 ```

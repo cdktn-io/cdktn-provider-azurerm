@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlert(scope Construct, id *string, config MonitorMetricAlertConfig) MonitorMetricAlert
 ```
@@ -570,7 +570,7 @@ func ResetWindowSize()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlert.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.MonitorMetricAlert_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.MonitorMetricAlert_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ monitormetricalert.MonitorMetricAlert_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.MonitorMetricAlert_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ monitormetricalert.MonitorMetricAlert_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.MonitorMetricAlert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1255,7 +1255,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertAction {
 	ActionGroupId: *string,
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteria {
 	ComponentId: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertConfig {
 	Connection: interface{},
@@ -1375,11 +1375,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetrica
 	ResourceGroupName: *string,
 	Scopes: *[]*string,
 	Action: interface{},
-	ApplicationInsightsWebTestLocationAvailabilityCriteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorMetricAlert.MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteria,
+	ApplicationInsightsWebTestLocationAvailabilityCriteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorMetricAlert.MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteria,
 	AutoMitigate: interface{},
 	Criteria: interface{},
 	Description: *string,
-	DynamicCriteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorMetricAlert.MonitorMetricAlertDynamicCriteria,
+	DynamicCriteria: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorMetricAlert.MonitorMetricAlertDynamicCriteria,
 	Enabled: interface{},
 	Frequency: *string,
 	Id: *string,
@@ -1387,7 +1387,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetrica
 	Tags: *map[string]*string,
 	TargetResourceLocation: *string,
 	TargetResourceType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.monitorMetricAlert.MonitorMetricAlertTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.monitorMetricAlert.MonitorMetricAlertTimeouts,
 	WindowSize: *string,
 }
 ```
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertCriteria {
 	Aggregation: *string,
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteriaDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertCriteriaDimension {
 	Name: *string,
@@ -1910,7 +1910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertDynamicCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertDynamicCriteria {
 	Aggregation: *string,
@@ -2070,7 +2070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertDynamicCriteriaDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertDynamicCriteriaDimension {
 	Name: *string,
@@ -2130,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 &monitormetricalert.MonitorMetricAlertTimeouts {
 	Create: *string,
@@ -2206,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorMetricAlertActionList
 ```
@@ -2366,7 +2366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorMetricAlertActionOutputReference
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMetricAlertApplicationInsightsWebTestLocationAvailabilityCriteriaOutputReference
 ```
@@ -2999,7 +2999,7 @@ func InternalValue() MonitorMetricAlertApplicationInsightsWebTestLocationAvailab
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteriaDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertCriteriaDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorMetricAlertCriteriaDimensionList
 ```
@@ -3159,7 +3159,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteriaDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertCriteriaDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorMetricAlertCriteriaDimensionOutputReference
 ```
@@ -3492,7 +3492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorMetricAlertCriteriaList
 ```
@@ -3652,7 +3652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorMetricAlertCriteriaOutputReference
 ```
@@ -4100,7 +4100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertDynamicCriteriaDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertDynamicCriteriaDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorMetricAlertDynamicCriteriaDimensionList
 ```
@@ -4260,7 +4260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertDynamicCriteriaDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertDynamicCriteriaDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorMetricAlertDynamicCriteriaDimensionOutputReference
 ```
@@ -4593,7 +4593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertDynamicCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertDynamicCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMetricAlertDynamicCriteriaOutputReference
 ```
@@ -5110,7 +5110,7 @@ func InternalValue() MonitorMetricAlertDynamicCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.monitorMetricAlert.MonitorMetricAlertTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/monitormetricalert"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/monitormetricalert"
 
 monitormetricalert.NewMonitorMetricAlertTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorMetricAlertTimeoutsOutputReference
 ```

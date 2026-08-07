@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.NewAutomationSourceControl(scope Construct, id *string, config AutomationSourceControlConfig) AutomationSourceControl
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.AutomationSourceControl_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.AutomationSourceControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ automationsourcecontrol.AutomationSourceControl_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.AutomationSourceControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ automationsourcecontrol.AutomationSourceControl_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.AutomationSourceControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 &automationsourcecontrol.AutomationSourceControlConfig {
 	Connection: interface{},
@@ -1035,14 +1035,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsour
 	FolderPath: *string,
 	Name: *string,
 	RepositoryUrl: *string,
-	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationSourceControl.AutomationSourceControlSecurity,
+	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSourceControl.AutomationSourceControlSecurity,
 	SourceControlType: *string,
 	AutomaticSync: interface{},
 	Branch: *string,
 	Description: *string,
 	Id: *string,
 	PublishRunbookEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.automationSourceControl.AutomationSourceControlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSourceControl.AutomationSourceControlTimeouts,
 }
 ```
 
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 &automationsourcecontrol.AutomationSourceControlSecurity {
 	Token: *string,
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 &automationsourcecontrol.AutomationSourceControlTimeouts {
 	Create: *string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.NewAutomationSourceControlSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationSourceControlSecurityOutputReference
 ```
@@ -1756,7 +1756,7 @@ func InternalValue() AutomationSourceControlSecurity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSourceControl.AutomationSourceControlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/automationsourcecontrol"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsourcecontrol"
 
 automationsourcecontrol.NewAutomationSourceControlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationSourceControlTimeoutsOutputReference
 ```

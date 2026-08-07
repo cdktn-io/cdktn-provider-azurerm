@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicy(scope Construct, id *string, config RoleManagementPolicyConfig) RoleManagementPolicy
 ```
@@ -507,7 +507,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +553,7 @@ rolemanagementpolicy.RoleManagementPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ rolemanagementpolicy.RoleManagementPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.RoleManagementPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,10 +994,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRules {
-	ApprovalStage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage,
+	ApprovalStage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage,
 	MaximumDuration: *string,
 	RequireApproval: interface{},
 	RequiredConditionalAccessAuthenticationContext: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRulesApprovalStage {
 	PrimaryApprover: interface{},
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApprover {
 	ObjectId: *string,
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyActiveAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyConfig {
 	Connection: interface{},
@@ -1318,12 +1318,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagement
 	Provisioners: *[]interface{},
 	RoleDefinitionId: *string,
 	Scope: *string,
-	ActivationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyActivationRules,
-	ActiveAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules,
-	EligibleAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules,
+	ActivationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActivationRules,
+	ActiveAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRules,
+	EligibleAssignmentRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules,
 	Id: *string,
-	NotificationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRules,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyTimeouts,
+	NotificationRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRules,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyTimeouts,
 }
 ```
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyEligibleAssignmentRules {
 	ExpirationRequired: interface{},
@@ -1587,12 +1587,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRules {
-	ActiveAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments,
-	EligibleActivations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations,
-	EligibleAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments,
+	ActiveAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments,
+	EligibleActivations: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations,
+	EligibleAssignments: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments,
 }
 ```
 
@@ -1653,12 +1653,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignments {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -1851,7 +1851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -1917,12 +1917,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivations {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications,
 }
 ```
 
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -2049,7 +2049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2181,12 +2181,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignments {
-	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
-	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
-	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
+	AdminNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications,
+	ApproverNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications,
+	AssigneeNotifications: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications,
 }
 ```
 
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications {
 	DefaultRecipients: interface{},
@@ -2313,7 +2313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications {
 	DefaultRecipients: interface{},
@@ -2379,7 +2379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications {
 	DefaultRecipients: interface{},
@@ -2445,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 &rolemanagementpolicy.RoleManagementPolicyTimeouts {
 	Create: *string,
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActivationRulesApprovalStageOutputReference
 ```
@@ -2805,7 +2805,7 @@ func InternalValue() RoleManagementPolicyActivationRulesApprovalStage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList
 ```
@@ -2965,7 +2965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference
 ```
@@ -3276,7 +3276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActivationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActivationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActivationRulesOutputReference
 ```
@@ -3741,7 +3741,7 @@ func InternalValue() RoleManagementPolicyActivationRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyActiveAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyActiveAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyActiveAssignmentRulesOutputReference
 ```
@@ -4135,7 +4135,7 @@ func InternalValue() RoleManagementPolicyActiveAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyEligibleAssignmentRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyEligibleAssignmentRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyEligibleAssignmentRulesOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() RoleManagementPolicyEligibleAssignmentRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference
 ```
@@ -4764,7 +4764,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAdmin
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference
 ```
@@ -5086,7 +5086,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAppro
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -5408,7 +5408,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignmentsAssig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference
 ```
@@ -5783,7 +5783,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesActiveAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference
 ```
@@ -6105,7 +6105,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsAdm
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference
 ```
@@ -6427,7 +6427,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsApp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference
 ```
@@ -6749,7 +6749,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivationsAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleActivationsOutputReference
 ```
@@ -7124,7 +7124,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleActivations
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference
 ```
@@ -7446,7 +7446,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsAdm
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference
 ```
@@ -7768,7 +7768,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsApp
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference
 ```
@@ -8090,7 +8090,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignmentsAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference
 ```
@@ -8465,7 +8465,7 @@ func InternalValue() RoleManagementPolicyNotificationRulesEligibleAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyNotificationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyNotificationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyNotificationRulesOutputReference
 ```
@@ -8840,7 +8840,7 @@ func InternalValue() RoleManagementPolicyNotificationRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.roleManagementPolicy.RoleManagementPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/rolemanagementpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/rolemanagementpolicy"
 
 rolemanagementpolicy.NewRoleManagementPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RoleManagementPolicyTimeoutsOutputReference
 ```

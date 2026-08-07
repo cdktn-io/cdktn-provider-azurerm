@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.NewWebAppActiveSlot(scope Construct, id *string, config WebAppActiveSlotConfig) WebAppActiveSlot
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.WebAppActiveSlot_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.WebAppActiveSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ webappactiveslot.WebAppActiveSlot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.WebAppActiveSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ webappactiveslot.WebAppActiveSlot_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.WebAppActiveSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 &webappactiveslot.WebAppActiveSlotConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactivesl
 	SlotId: *string,
 	Id: *string,
 	OverwriteNetworkConfig: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.webAppActiveSlot.WebAppActiveSlotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webAppActiveSlot.WebAppActiveSlotTimeouts,
 }
 ```
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 &webappactiveslot.WebAppActiveSlotTimeouts {
 	Create: *string,
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webAppActiveSlot.WebAppActiveSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/webappactiveslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webappactiveslot"
 
 webappactiveslot.NewWebAppActiveSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebAppActiveSlotTimeoutsOutputReference
 ```

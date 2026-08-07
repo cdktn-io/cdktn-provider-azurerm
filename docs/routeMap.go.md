@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMap(scope Construct, id *string, config RouteMapConfig) RouteMap
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.routeMap.RouteMap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.RouteMap_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.routeMap.RouteMap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.RouteMap_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ routemap.RouteMap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.routeMap.RouteMap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.RouteMap_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ routemap.RouteMap_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.routeMap.RouteMap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.RouteMap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
 	VirtualHubId: *string,
 	Id: *string,
 	Rule: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.routeMap.RouteMapTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.routeMap.RouteMapTimeouts,
 }
 ```
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapRule {
 	Name: *string,
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapRuleAction {
 	Type: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapRuleActionParameter {
 	AsPath: *[]*string,
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapRuleMatchCriterion {
 	MatchCondition: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.routeMap.RouteMapTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 &routemap.RouteMapTimeouts {
 	Create: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouteMapRuleActionList
 ```
@@ -1521,7 +1521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouteMapRuleActionOutputReference
 ```
@@ -1852,7 +1852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleActionParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouteMapRuleActionParameterList
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleActionParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleActionParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouteMapRuleActionParameterOutputReference
 ```
@@ -2366,7 +2366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouteMapRuleList
 ```
@@ -2526,7 +2526,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleMatchCriterionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RouteMapRuleMatchCriterionList
 ```
@@ -2686,7 +2686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleMatchCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleMatchCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouteMapRuleMatchCriterionOutputReference
 ```
@@ -3062,7 +3062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RouteMapRuleOutputReference
 ```
@@ -3464,7 +3464,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeMap.RouteMapTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/routemap"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/routemap"
 
 routemap.NewRouteMapTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RouteMapTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.NewManagedApplication(scope Construct, id *string, config ManagedApplicationConfig) ManagedApplication
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.ManagedApplication_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.ManagedApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ managedapplication.ManagedApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.ManagedApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ managedapplication.ManagedApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedApplication.ManagedApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.ManagedApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 &managedapplication.ManagedApplicationConfig {
 	Connection: interface{},
@@ -1028,9 +1028,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplica
 	ApplicationDefinitionId: *string,
 	Id: *string,
 	ParameterValues: *string,
-	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedApplication.ManagedApplicationPlan,
+	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedApplication.ManagedApplicationPlan,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.managedApplication.ManagedApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedApplication.ManagedApplicationTimeouts,
 }
 ```
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 &managedapplication.ManagedApplicationPlan {
 	Name: *string,
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 &managedapplication.ManagedApplicationTimeouts {
 	Create: *string,
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationPlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.NewManagedApplicationPlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedApplicationPlanOutputReference
 ```
@@ -1803,7 +1803,7 @@ func InternalValue() ManagedApplicationPlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedApplication.ManagedApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/managedapplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/managedapplication"
 
 managedapplication.NewManagedApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedApplicationTimeoutsOutputReference
 ```

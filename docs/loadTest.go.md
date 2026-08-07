@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.loadTest.LoadTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.NewLoadTest(scope Construct, id *string, config LoadTestConfig) LoadTest
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.loadTest.LoadTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.LoadTest_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.loadTest.LoadTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.LoadTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ loadtest.LoadTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.loadTest.LoadTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.LoadTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ loadtest.LoadTest_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.loadTest.LoadTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.LoadTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.loadTest.LoadTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 &loadtest.LoadTestConfig {
 	Connection: interface{},
@@ -993,11 +993,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
 	Name: *string,
 	ResourceGroupName: *string,
 	Description: *string,
-	Encryption: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.loadTest.LoadTestEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.loadTest.LoadTestEncryption,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.loadTest.LoadTestIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.loadTest.LoadTestIdentity,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.loadTest.LoadTestTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.loadTest.LoadTestTimeouts,
 }
 ```
 
@@ -1216,10 +1216,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.loadTest.LoadTestEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 &loadtest.LoadTestEncryption {
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.loadTest.LoadTestEncryptionIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.loadTest.LoadTestEncryptionIdentity,
 	KeyUrl: *string,
 }
 ```
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.loadTest.LoadTestEncryptionIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 &loadtest.LoadTestEncryptionIdentity {
 	IdentityId: *string,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.loadTest.LoadTestIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 &loadtest.LoadTestIdentity {
 	Type: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.loadTest.LoadTestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 &loadtest.LoadTestTimeouts {
 	Create: *string,
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.loadTest.LoadTestEncryptionIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.NewLoadTestEncryptionIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadTestEncryptionIdentityOutputReference
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() LoadTestEncryptionIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.loadTest.LoadTestEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.NewLoadTestEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadTestEncryptionOutputReference
 ```
@@ -2031,7 +2031,7 @@ func InternalValue() LoadTestEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.loadTest.LoadTestIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.NewLoadTestIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadTestIdentityOutputReference
 ```
@@ -2353,7 +2353,7 @@ func InternalValue() LoadTestIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.loadTest.LoadTestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/loadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/loadtest"
 
 loadtest.NewLoadTestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoadTestTimeoutsOutputReference
 ```

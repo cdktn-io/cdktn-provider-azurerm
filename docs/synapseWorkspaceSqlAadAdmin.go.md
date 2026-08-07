@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.NewSynapseWorkspaceSqlAadAdmin(scope Construct, id *string, config SynapseWorkspaceSqlAadAdminConfig) SynapseWorkspaceSqlAadAdmin
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdmin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdmin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 &synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdminConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspa
 	SynapseWorkspaceId: *string,
 	TenantId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminTimeouts,
 }
 ```
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 &synapseworkspacesqlaadadmin.SynapseWorkspaceSqlAadAdminTimeouts {
 	Create: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.synapseWorkspaceSqlAadAdmin.SynapseWorkspaceSqlAadAdminTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/synapseworkspacesqlaadadmin"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/synapseworkspacesqlaadadmin"
 
 synapseworkspacesqlaadadmin.NewSynapseWorkspaceSqlAadAdminTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SynapseWorkspaceSqlAadAdminTimeoutsOutputReference
 ```

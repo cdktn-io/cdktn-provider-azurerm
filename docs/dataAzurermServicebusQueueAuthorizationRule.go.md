@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.NewDataAzurermServicebusQueueAuthorizationRule(scope Construct, id *string, config DataAzurermServicebusQueueAuthorizationRuleConfig) DataAzurermServicebusQueueAuthorizationRule
 ```
@@ -353,7 +353,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRule_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 &dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRuleConfig {
 	Connection: interface{},
@@ -889,7 +889,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermser
 	QueueId: *string,
 	QueueName: *string,
 	ResourceGroupName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRuleTimeouts,
 }
 ```
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 &dataazurermservicebusqueueauthorizationrule.DataAzurermServicebusQueueAuthorizationRuleTimeouts {
 	Read: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusQueueAuthorizationRule.DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermservicebusqueueauthorizationrule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueueauthorizationrule"
 
 dataazurermservicebusqueueauthorizationrule.NewDataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermServicebusQueueAuthorizationRuleTimeoutsOutputReference
 ```

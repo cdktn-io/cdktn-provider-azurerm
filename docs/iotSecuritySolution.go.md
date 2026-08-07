@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.NewIotSecuritySolution(scope Construct, id *string, config IotSecuritySolutionConfig) IotSecuritySolution
 ```
@@ -523,7 +523,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.IotSecuritySolution_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.IotSecuritySolution_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ iotsecuritysolution.IotSecuritySolution_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.IotSecuritySolution_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +583,7 @@ iotsecuritysolution.IotSecuritySolution_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.IotSecuritySolution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1186,7 +1186,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 &iotsecuritysolution.IotSecuritySolutionAdditionalWorkspace {
 	DataTypes: *[]*string,
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 &iotsecuritysolution.IotSecuritySolutionConfig {
 	Connection: interface{},
@@ -1256,9 +1256,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysol
 	LogUnmaskedIpsEnabled: interface{},
 	QueryForResources: *string,
 	QuerySubscriptionIds: *[]*string,
-	RecommendationsEnabled: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled,
+	RecommendationsEnabled: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.iotSecuritySolution.IotSecuritySolutionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.iotSecuritySolution.IotSecuritySolutionTimeouts,
 }
 ```
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 &iotsecuritysolution.IotSecuritySolutionRecommendationsEnabled {
 	AcrAuthentication: interface{},
@@ -1823,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 &iotsecuritysolution.IotSecuritySolutionTimeouts {
 	Create: *string,
@@ -1899,7 +1899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.NewIotSecuritySolutionAdditionalWorkspaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotSecuritySolutionAdditionalWorkspaceList
 ```
@@ -2059,7 +2059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.NewIotSecuritySolutionAdditionalWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IotSecuritySolutionAdditionalWorkspaceOutputReference
 ```
@@ -2370,7 +2370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.NewIotSecuritySolutionRecommendationsEnabledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotSecuritySolutionRecommendationsEnabledOutputReference
 ```
@@ -3083,7 +3083,7 @@ func InternalValue() IotSecuritySolutionRecommendationsEnabled
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/iotsecuritysolution"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/iotsecuritysolution"
 
 iotsecuritysolution.NewIotSecuritySolutionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IotSecuritySolutionTimeoutsOutputReference
 ```

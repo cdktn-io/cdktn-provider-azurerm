@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.NewMssqlJobTargetGroup(scope Construct, id *string, config MssqlJobTargetGroupConfig) MssqlJobTargetGroup
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.MssqlJobTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.MssqlJobTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ mssqljobtargetgroup.MssqlJobTargetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.MssqlJobTargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ mssqljobtargetgroup.MssqlJobTargetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.MssqlJobTargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 &mssqljobtargetgroup.MssqlJobTargetGroupConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtarget
 	Name: *string,
 	Id: *string,
 	JobTarget: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.mssqlJobTargetGroup.MssqlJobTargetGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mssqlJobTargetGroup.MssqlJobTargetGroupTimeouts,
 }
 ```
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupJobTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 &mssqljobtargetgroup.MssqlJobTargetGroupJobTarget {
 	ServerName: *string,
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 &mssqljobtargetgroup.MssqlJobTargetGroupTimeouts {
 	Create: *string,
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupJobTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.NewMssqlJobTargetGroupJobTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MssqlJobTargetGroupJobTargetList
 ```
@@ -1349,7 +1349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupJobTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.NewMssqlJobTargetGroupJobTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MssqlJobTargetGroupJobTargetOutputReference
 ```
@@ -1765,7 +1765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlJobTargetGroup.MssqlJobTargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/mssqljobtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mssqljobtargetgroup"
 
 mssqljobtargetgroup.NewMssqlJobTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MssqlJobTargetGroupTimeoutsOutputReference
 ```

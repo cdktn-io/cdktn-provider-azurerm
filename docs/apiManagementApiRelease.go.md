@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.NewApiManagementApiRelease(scope Construct, id *string, config ApiManagementApiReleaseConfig) ApiManagementApiRelease
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiRelease.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.ApiManagementApiRelease_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiRelease.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.ApiManagementApiRelease_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apimanagementapirelease.ApiManagementApiRelease_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiRelease.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.ApiManagementApiRelease_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apimanagementapirelease.ApiManagementApiRelease_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiRelease.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.ApiManagementApiRelease_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 &apimanagementapirelease.ApiManagementApiReleaseConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementa
 	Name: *string,
 	Id: *string,
 	Notes: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.apiManagementApiRelease.ApiManagementApiReleaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementApiRelease.ApiManagementApiReleaseTimeouts,
 }
 ```
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiReleaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 &apimanagementapirelease.ApiManagementApiReleaseTimeouts {
 	Create: *string,
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementApiRelease.ApiManagementApiReleaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/apimanagementapirelease"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementapirelease"
 
 apimanagementapirelease.NewApiManagementApiReleaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementApiReleaseTimeoutsOutputReference
 ```

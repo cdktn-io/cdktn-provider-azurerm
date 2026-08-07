@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.NewContainerConnectedRegistry(scope Construct, id *string, config ContainerConnectedRegistryConfig) ContainerConnectedRegistry
 ```
@@ -503,7 +503,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.ContainerConnectedRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.ContainerConnectedRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ containerconnectedregistry.ContainerConnectedRegistry_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.ContainerConnectedRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ containerconnectedregistry.ContainerConnectedRegistry_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.ContainerConnectedRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1100,7 +1100,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 &containerconnectedregistry.ContainerConnectedRegistryConfig {
 	Connection: interface{},
@@ -1123,7 +1123,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconne
 	SyncMessageTtl: *string,
 	SyncSchedule: *string,
 	SyncWindow: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.containerConnectedRegistry.ContainerConnectedRegistryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerConnectedRegistry.ContainerConnectedRegistryTimeouts,
 }
 ```
 
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 &containerconnectedregistry.ContainerConnectedRegistryNotification {
 	Action: *string,
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 &containerconnectedregistry.ContainerConnectedRegistryTimeouts {
 	Create: *string,
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.NewContainerConnectedRegistryNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerConnectedRegistryNotificationList
 ```
@@ -1715,7 +1715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.NewContainerConnectedRegistryNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerConnectedRegistryNotificationOutputReference
 ```
@@ -2084,7 +2084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerConnectedRegistry.ContainerConnectedRegistryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/containerconnectedregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerconnectedregistry"
 
 containerconnectedregistry.NewContainerConnectedRegistryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerConnectedRegistryTimeoutsOutputReference
 ```

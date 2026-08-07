@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.NewDataAzurermAadb2CDirectory(scope Construct, id *string, config DataAzurermAadb2CDirectoryConfig) DataAzurermAadb2CDirectory
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.DataAzurermAadb2CDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 &dataazurermaadb2cdirectory.DataAzurermAadb2CDirectoryConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaad
 	DomainName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectoryTimeouts,
 }
 ```
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 &dataazurermaadb2cdirectory.DataAzurermAadb2CDirectoryTimeouts {
 	Read: *string,
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAadb2CDirectory.DataAzurermAadb2CDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermaadb2cdirectory"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermaadb2cdirectory"
 
 dataazurermaadb2cdirectory.NewDataAzurermAadb2CDirectoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermAadb2CDirectoryTimeoutsOutputReference
 ```

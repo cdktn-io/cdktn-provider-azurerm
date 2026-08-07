@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botConnection.BotConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.NewBotConnection(scope Construct, id *string, config BotConnectionConfig) BotConnection
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.botConnection.BotConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.BotConnection_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.botConnection.BotConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.BotConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ botconnection.BotConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.botConnection.BotConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.BotConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ botconnection.BotConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.botConnection.BotConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.BotConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -972,7 +972,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botConnection.BotConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 &botconnection.BotConnectionConfig {
 	Connection: interface{},
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
 	Id: *string,
 	Parameters: *map[string]*string,
 	Scopes: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.botConnection.BotConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.botConnection.BotConnectionTimeouts,
 }
 ```
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.botConnection.BotConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 &botconnection.BotConnectionTimeouts {
 	Create: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botConnection.BotConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/botconnection"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/botconnection"
 
 botconnection.NewBotConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BotConnectionTimeoutsOutputReference
 ```

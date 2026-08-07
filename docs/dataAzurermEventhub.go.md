@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.NewDataAzurermEventhub(scope Construct, id *string, config DataAzurermEventhubConfig) DataAzurermEventhub
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.DataAzurermEventhub_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.DataAzurermEventhub_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermeventhub.DataAzurermEventhub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.DataAzurermEventhub_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermeventhub.DataAzurermEventhub_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.DataAzurermEventhub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 &dataazurermeventhub.DataAzurermEventhubConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeve
 	NamespaceName: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermEventhub.DataAzurermEventhubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermEventhub.DataAzurermEventhubTimeouts,
 }
 ```
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 &dataazurermeventhub.DataAzurermEventhubTimeouts {
 	Read: *string,
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermEventhub.DataAzurermEventhubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermeventhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermeventhub"
 
 dataazurermeventhub.NewDataAzurermEventhubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermEventhubTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministrator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.NewPostgresqlActiveDirectoryAdministrator(scope Construct, id *string, config PostgresqlActiveDirectoryAdministratorConfig) PostgresqlActiveDirectoryAdministrator
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministrator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministrator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 &postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministratorConfig {
 	Connection: interface{},
@@ -886,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlacti
 	ServerName: *string,
 	TenantId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministratorTimeouts,
 }
 ```
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 &postgresqlactivedirectoryadministrator.PostgresqlActiveDirectoryAdministratorTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.postgresqlActiveDirectoryAdministrator.PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/postgresqlactivedirectoryadministrator"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/postgresqlactivedirectoryadministrator"
 
 postgresqlactivedirectoryadministrator.NewPostgresqlActiveDirectoryAdministratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresqlActiveDirectoryAdministratorTimeoutsOutputReference
 ```
