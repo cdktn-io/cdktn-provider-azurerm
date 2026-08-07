@@ -909,6 +909,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>io.cdktn.cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.functions">functions</a></code> | <code>io.cdktn.providers.azurerm.provider_functions.AzurermProviderFunctions</code> | Provider-defined functions of the azurerm provider. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">adoPipelineServiceConnectionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIdsInput">auxiliaryTenantIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1066,6 +1067,18 @@ public java.lang.String getAlias();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `functions`<sup>Required</sup> <a name="functions" id="@cdktn/provider-azurerm.provider.AzurermProvider.property.functions"></a>
+
+```java
+public AzurermProviderFunctions getFunctions();
+```
+
+- *Type:* io.cdktn.providers.azurerm.provider_functions.AzurermProviderFunctions
+
+Provider-defined functions of the azurerm provider.
 
 ---
 
