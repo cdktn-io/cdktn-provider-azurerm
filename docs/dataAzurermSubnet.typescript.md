@@ -4,7 +4,7 @@
 
 ### DataAzurermSubnet <a name="DataAzurermSubnet" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet azurerm_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet azurerm_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermSubnet to impor
 
 The id of the existing DataAzurermSubnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,7 +449,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.privateEndpointNetworkPolicies">privateEndpointNetworkPolicies</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.privateLinkServiceNetworkPoliciesEnabled">privateLinkServiceNetworkPoliciesEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.routeTableId">routeTableId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.serviceEndpoints">serviceEndpoints</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.serviceEndpoint">serviceEndpoint</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList">DataAzurermSubnetServiceEndpointList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeoutsOutputReference">DataAzurermSubnetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -655,13 +655,13 @@ public readonly routeTableId: string;
 
 ---
 
-##### `serviceEndpoints`<sup>Required</sup> <a name="serviceEndpoints" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.serviceEndpoints"></a>
+##### `serviceEndpoint`<sup>Required</sup> <a name="serviceEndpoint" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnet.property.serviceEndpoint"></a>
 
 ```typescript
-public readonly serviceEndpoints: string[];
+public readonly serviceEndpoint: DataAzurermSubnetServiceEndpointList;
 ```
 
-- *Type:* string[]
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList">DataAzurermSubnetServiceEndpointList</a>
 
 ---
 
@@ -806,10 +806,10 @@ const dataAzurermSubnetConfig: dataAzurermSubnet.DataAzurermSubnetConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#name DataAzurermSubnet#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#resource_group_name DataAzurermSubnet#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.virtualNetworkName">virtualNetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#virtual_network_name DataAzurermSubnet#virtual_network_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#id DataAzurermSubnet#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#name DataAzurermSubnet#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#resource_group_name DataAzurermSubnet#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.virtualNetworkName">virtualNetworkName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#virtual_network_name DataAzurermSubnet#virtual_network_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#id DataAzurermSubnet#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeouts">DataAzurermSubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -892,7 +892,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#name DataAzurermSubnet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#name DataAzurermSubnet#name}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#resource_group_name DataAzurermSubnet#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#resource_group_name DataAzurermSubnet#resource_group_name}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly virtualNetworkName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#virtual_network_name DataAzurermSubnet#virtual_network_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#virtual_network_name DataAzurermSubnet#virtual_network_name}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#id DataAzurermSubnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#id DataAzurermSubnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,9 +945,20 @@ public readonly timeouts: DataAzurermSubnetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#timeouts DataAzurermSubnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#timeouts DataAzurermSubnet#timeouts}
 
 ---
+
+### DataAzurermSubnetServiceEndpoint <a name="DataAzurermSubnetServiceEndpoint" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpoint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpoint.Initializer"></a>
+
+```typescript
+import { dataAzurermSubnet } from '@cdktn/provider-azurerm'
+
+const dataAzurermSubnetServiceEndpoint: dataAzurermSubnet.DataAzurermSubnetServiceEndpoint = { ... }
+```
+
 
 ### DataAzurermSubnetTimeouts <a name="DataAzurermSubnetTimeouts" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeouts"></a>
 
@@ -963,7 +974,7 @@ const dataAzurermSubnetTimeouts: dataAzurermSubnet.DataAzurermSubnetTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#read DataAzurermSubnet#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#read DataAzurermSubnet#read}. |
 
 ---
 
@@ -975,11 +986,449 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/subnet#read DataAzurermSubnet#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/subnet#read DataAzurermSubnet#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAzurermSubnetServiceEndpointList <a name="DataAzurermSubnetServiceEndpointList" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer"></a>
+
+```typescript
+import { dataAzurermSubnet } from '@cdktn/provider-azurerm'
+
+new dataAzurermSubnet.DataAzurermSubnetServiceEndpointList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.get"></a>
+
+```typescript
+public get(index: number): DataAzurermSubnetServiceEndpointOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAzurermSubnetServiceEndpointOutputReference <a name="DataAzurermSubnetServiceEndpointOutputReference" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer"></a>
+
+```typescript
+import { dataAzurermSubnet } from '@cdktn/provider-azurerm'
+
+new dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.networkIdentifier">networkIdentifier</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpoint">DataAzurermSubnetServiceEndpoint</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkIdentifier`<sup>Required</sup> <a name="networkIdentifier" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.networkIdentifier"></a>
+
+```typescript
+public readonly networkIdentifier: string;
+```
+
+- *Type:* string
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpointOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzurermSubnetServiceEndpoint;
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetServiceEndpoint">DataAzurermSubnetServiceEndpoint</a>
+
+---
+
 
 ### DataAzurermSubnetTimeoutsOutputReference <a name="DataAzurermSubnetTimeoutsOutputReference" id="@cdktn/provider-azurerm.dataAzurermSubnet.DataAzurermSubnetTimeoutsOutputReference"></a>
 

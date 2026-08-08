@@ -4,12 +4,12 @@
 
 ### DataAzurermManagedRedis <a name="DataAzurermManagedRedis" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis azurerm_managed_redis}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis azurerm_managed_redis}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedis(scope Construct, id *string, config DataAzurermManagedRedisConfig) DataAzurermManagedRedis
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.DataAzurermManagedRedis_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.DataAzurermManagedRedis_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermmanagedredis.DataAzurermManagedRedis_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.DataAzurermManagedRedis_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermmanagedredis.DataAzurermManagedRedis_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedis.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.DataAzurermManagedRedis_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermManagedRedis to
 
 The id of the existing DataAzurermManagedRedis that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts,
 }
 ```
 
@@ -807,9 +807,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts">DataAzurermManagedRedisTimeouts</a></code> | timeouts block. |
 
 ---
@@ -892,7 +892,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#name DataAzurermManagedRedis#name}.
 
 ---
 
@@ -904,7 +904,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#resource_group_name DataAzurermManagedRedis#resource_group_name}.
 
 ---
 
@@ -916,7 +916,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#id DataAzurermManagedRedis#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -933,7 +933,7 @@ Timeouts DataAzurermManagedRedisTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#timeouts DataAzurermManagedRedis#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#timeouts DataAzurermManagedRedis#timeouts}
 
 ---
 
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisCustomerManagedKey {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisDefaultDatabase {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabaseModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisDefaultDatabaseModule {
 
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisIdentity {
 
@@ -994,7 +994,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 &dataazurermmanagedredis.DataAzurermManagedRedisTimeouts {
 	Read: *string,
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_redis#read DataAzurermManagedRedis#read}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisCustomerManagedKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisCustomerManagedKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedRedisCustomerManagedKeyList
 ```
@@ -1177,7 +1177,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisCustomerManagedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisCustomerManagedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedRedisCustomerManagedKeyOutputReference
 ```
@@ -1466,7 +1466,7 @@ func InternalValue() DataAzurermManagedRedisCustomerManagedKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisDefaultDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedRedisDefaultDatabaseList
 ```
@@ -1615,7 +1615,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabaseModuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisDefaultDatabaseModuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedRedisDefaultDatabaseModuleList
 ```
@@ -1764,7 +1764,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabaseModuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisDefaultDatabaseModuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedRedisDefaultDatabaseModuleOutputReference
 ```
@@ -2064,7 +2064,7 @@ func InternalValue() DataAzurermManagedRedisDefaultDatabaseModule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisDefaultDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisDefaultDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedRedisDefaultDatabaseOutputReference
 ```
@@ -2474,7 +2474,7 @@ func InternalValue() DataAzurermManagedRedisDefaultDatabase
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedRedisIdentityList
 ```
@@ -2623,7 +2623,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedRedisIdentityOutputReference
 ```
@@ -2934,7 +2934,7 @@ func InternalValue() DataAzurermManagedRedisIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedRedis.DataAzurermManagedRedisTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanagedredis"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanagedredis"
 
 dataazurermmanagedredis.NewDataAzurermManagedRedisTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermManagedRedisTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### CognitiveAccountConnectionEntraId <a name="CognitiveAccountConnectionEntraId" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id azurerm_cognitive_account_connection_entra_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id azurerm_cognitive_account_connection_entra_id}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.NewCognitiveAccountConnectionEntraId(scope Construct, id *string, config CognitiveAccountConnectionEntraIdConfig) CognitiveAccountConnectionEntraId
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the CognitiveAccountConnection
 
 The id of the existing CognitiveAccountConnectionEntraId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 &cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraIdConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 	Target: *string,
 	Id: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts,
 }
 ```
 
@@ -908,12 +908,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#category CognitiveAccountConnectionEntraId#category}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.cognitiveAccountId">CognitiveAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#cognitive_account_id CognitiveAccountConnectionEntraId#cognitive_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#name CognitiveAccountConnectionEntraId#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#target CognitiveAccountConnectionEntraId#target}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#id CognitiveAccountConnectionEntraId#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#metadata CognitiveAccountConnectionEntraId#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#category CognitiveAccountConnectionEntraId#category}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.cognitiveAccountId">CognitiveAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#cognitive_account_id CognitiveAccountConnectionEntraId#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#name CognitiveAccountConnectionEntraId#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#target CognitiveAccountConnectionEntraId#target}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#id CognitiveAccountConnectionEntraId#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#metadata CognitiveAccountConnectionEntraId#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts">CognitiveAccountConnectionEntraIdTimeouts</a></code> | timeouts block. |
 
 ---
@@ -996,7 +996,7 @@ Category *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#category CognitiveAccountConnectionEntraId#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#category CognitiveAccountConnectionEntraId#category}.
 
 ---
 
@@ -1008,7 +1008,7 @@ CognitiveAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#cognitive_account_id CognitiveAccountConnectionEntraId#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#cognitive_account_id CognitiveAccountConnectionEntraId#cognitive_account_id}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#name CognitiveAccountConnectionEntraId#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#name CognitiveAccountConnectionEntraId#name}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#target CognitiveAccountConnectionEntraId#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#target CognitiveAccountConnectionEntraId#target}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#id CognitiveAccountConnectionEntraId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#id CognitiveAccountConnectionEntraId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ Metadata *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#metadata CognitiveAccountConnectionEntraId#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#metadata CognitiveAccountConnectionEntraId#metadata}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Timeouts CognitiveAccountConnectionEntraIdTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#timeouts CognitiveAccountConnectionEntraId#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#timeouts CognitiveAccountConnectionEntraId#timeouts}
 
 ---
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 &cognitiveaccountconnectionentraid.CognitiveAccountConnectionEntraIdTimeouts {
 	Create: *string,
@@ -1096,10 +1096,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#create CognitiveAccountConnectionEntraId#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#delete CognitiveAccountConnectionEntraId#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#read CognitiveAccountConnectionEntraId#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#update CognitiveAccountConnectionEntraId#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#create CognitiveAccountConnectionEntraId#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#delete CognitiveAccountConnectionEntraId#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#read CognitiveAccountConnectionEntraId#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#update CognitiveAccountConnectionEntraId#update}. |
 
 ---
 
@@ -1111,7 +1111,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#create CognitiveAccountConnectionEntraId#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#create CognitiveAccountConnectionEntraId#create}.
 
 ---
 
@@ -1123,7 +1123,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#delete CognitiveAccountConnectionEntraId#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#delete CognitiveAccountConnectionEntraId#delete}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#read CognitiveAccountConnectionEntraId#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#read CognitiveAccountConnectionEntraId#read}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_entra_id#update CognitiveAccountConnectionEntraId#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_entra_id#update CognitiveAccountConnectionEntraId#update}.
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionEntraId.CognitiveAccountConnectionEntraIdTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cognitiveaccountconnectionentraid"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cognitiveaccountconnectionentraid"
 
 cognitiveaccountconnectionentraid.NewCognitiveAccountConnectionEntraIdTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitiveAccountConnectionEntraIdTimeoutsOutputReference
 ```

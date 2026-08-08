@@ -4,12 +4,12 @@
 
 ### AppServiceSourceControlSlot <a name="AppServiceSourceControlSlot" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot azurerm_app_service_source_control_slot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot azurerm_app_service_source_control_slot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.NewAppServiceSourceControlSlot(scope Construct, id *string, config AppServiceSourceControlSlotConfig) AppServiceSourceControlSlot
 ```
@@ -489,7 +489,7 @@ func ResetUseMercurial()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.AppServiceSourceControlSlot_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.AppServiceSourceControlSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ appservicesourcecontrolslot.AppServiceSourceControlSlot_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.AppServiceSourceControlSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ appservicesourcecontrolslot.AppServiceSourceControlSlot_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.AppServiceSourceControlSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +578,7 @@ The construct id used in the generated config for the AppServiceSourceControlSlo
 
 The id of the existing AppServiceSourceControlSlot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1020,7 +1020,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 &appservicesourcecontrolslot.AppServiceSourceControlSlotConfig {
 	Connection: interface{},
@@ -1032,11 +1032,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesour
 	Provisioners: *[]interface{},
 	SlotId: *string,
 	Branch: *string,
-	GithubActionConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfiguration,
+	GithubActionConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfiguration,
 	Id: *string,
 	RepoUrl: *string,
 	RollbackEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts,
 	UseLocalGit: interface{},
 	UseManualIntegration: interface{},
 	UseMercurial: interface{},
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesour
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.slotId">SlotId</a></code> | <code>*string</code> | The ID of the Linux or Windows Web App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.branch">Branch</a></code> | <code>*string</code> | The URL for the repository. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.githubActionConfiguration">GithubActionConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfiguration">AppServiceSourceControlSlotGithubActionConfiguration</a></code> | github_action_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#id AppServiceSourceControlSlot#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#id AppServiceSourceControlSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.repoUrl">RepoUrl</a></code> | <code>*string</code> | The branch name to use for deployments. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.rollbackEnabled">RollbackEnabled</a></code> | <code>interface{}</code> | Should the Deployment Rollback be enabled? Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts">AppServiceSourceControlSlotTimeouts</a></code> | timeouts block. |
@@ -1147,7 +1147,7 @@ SlotId *string
 
 The ID of the Linux or Windows Web App Slot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#slot_id AppServiceSourceControlSlot#slot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#slot_id AppServiceSourceControlSlot#slot_id}
 
 ---
 
@@ -1161,7 +1161,7 @@ Branch *string
 
 The URL for the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#branch AppServiceSourceControlSlot#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#branch AppServiceSourceControlSlot#branch}
 
 ---
 
@@ -1175,7 +1175,7 @@ GithubActionConfiguration AppServiceSourceControlSlotGithubActionConfiguration
 
 github_action_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#github_action_configuration AppServiceSourceControlSlot#github_action_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#github_action_configuration AppServiceSourceControlSlot#github_action_configuration}
 
 ---
 
@@ -1187,7 +1187,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#id AppServiceSourceControlSlot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#id AppServiceSourceControlSlot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1204,7 +1204,7 @@ RepoUrl *string
 
 The branch name to use for deployments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#repo_url AppServiceSourceControlSlot#repo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#repo_url AppServiceSourceControlSlot#repo_url}
 
 ---
 
@@ -1218,7 +1218,7 @@ RollbackEnabled interface{}
 
 Should the Deployment Rollback be enabled? Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#rollback_enabled AppServiceSourceControlSlot#rollback_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#rollback_enabled AppServiceSourceControlSlot#rollback_enabled}
 
 ---
 
@@ -1232,7 +1232,7 @@ Timeouts AppServiceSourceControlSlotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#timeouts AppServiceSourceControlSlot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#timeouts AppServiceSourceControlSlot#timeouts}
 
 ---
 
@@ -1246,7 +1246,7 @@ UseLocalGit interface{}
 
 Should the Slot use local Git configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#use_local_git AppServiceSourceControlSlot#use_local_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#use_local_git AppServiceSourceControlSlot#use_local_git}
 
 ---
 
@@ -1262,7 +1262,7 @@ Should code be deployed manually.
 
 Set to `true` to disable continuous integration, such as webhooks into online repos such as GitHub. Defaults to `false`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#use_manual_integration AppServiceSourceControlSlot#use_manual_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#use_manual_integration AppServiceSourceControlSlot#use_manual_integration}
 
 ---
 
@@ -1276,7 +1276,7 @@ UseMercurial interface{}
 
 The repository specified is Mercurial. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#use_mercurial AppServiceSourceControlSlot#use_mercurial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#use_mercurial AppServiceSourceControlSlot#use_mercurial}
 
 ---
 
@@ -1285,11 +1285,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 &appservicesourcecontrolslot.AppServiceSourceControlSlotGithubActionConfiguration {
-	CodeConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration,
-	ContainerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration,
+	CodeConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration,
+	ContainerConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration,
 	GenerateWorkflowFile: interface{},
 }
 ```
@@ -1314,7 +1314,7 @@ CodeConfiguration AppServiceSourceControlSlotGithubActionConfigurationCodeConfig
 
 code_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#code_configuration AppServiceSourceControlSlot#code_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#code_configuration AppServiceSourceControlSlot#code_configuration}
 
 ---
 
@@ -1328,7 +1328,7 @@ ContainerConfiguration AppServiceSourceControlSlotGithubActionConfigurationConta
 
 container_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#container_configuration AppServiceSourceControlSlot#container_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#container_configuration AppServiceSourceControlSlot#container_configuration}
 
 ---
 
@@ -1342,7 +1342,7 @@ GenerateWorkflowFile interface{}
 
 Should the service generate the GitHub Action Workflow file. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#generate_workflow_file AppServiceSourceControlSlot#generate_workflow_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#generate_workflow_file AppServiceSourceControlSlot#generate_workflow_file}
 
 ---
 
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 &appservicesourcecontrolslot.AppServiceSourceControlSlotGithubActionConfigurationCodeConfiguration {
 	RuntimeStack: *string,
@@ -1378,7 +1378,7 @@ RuntimeStack *string
 
 The value to use for the Runtime Stack in the workflow file content for code base apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#runtime_stack AppServiceSourceControlSlot#runtime_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#runtime_stack AppServiceSourceControlSlot#runtime_stack}
 
 ---
 
@@ -1392,7 +1392,7 @@ RuntimeVersion *string
 
 The value to use for the Runtime Version in the workflow file content for code base apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#runtime_version AppServiceSourceControlSlot#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#runtime_version AppServiceSourceControlSlot#runtime_version}
 
 ---
 
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 &appservicesourcecontrolslot.AppServiceSourceControlSlotGithubActionConfigurationContainerConfiguration {
 	ImageName: *string,
@@ -1432,7 +1432,7 @@ ImageName *string
 
 The image name for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#image_name AppServiceSourceControlSlot#image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#image_name AppServiceSourceControlSlot#image_name}
 
 ---
 
@@ -1446,7 +1446,7 @@ RegistryUrl *string
 
 The server URL for the container registry where the build will be hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#registry_url AppServiceSourceControlSlot#registry_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#registry_url AppServiceSourceControlSlot#registry_url}
 
 ---
 
@@ -1460,7 +1460,7 @@ RegistryPassword *string
 
 The password used to upload the image to the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#registry_password AppServiceSourceControlSlot#registry_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#registry_password AppServiceSourceControlSlot#registry_password}
 
 ---
 
@@ -1474,7 +1474,7 @@ RegistryUsername *string
 
 The username used to upload the image to the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#registry_username AppServiceSourceControlSlot#registry_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#registry_username AppServiceSourceControlSlot#registry_username}
 
 ---
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 &appservicesourcecontrolslot.AppServiceSourceControlSlotTimeouts {
 	Create: *string,
@@ -1496,9 +1496,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#create AppServiceSourceControlSlot#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#delete AppServiceSourceControlSlot#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#read AppServiceSourceControlSlot#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#create AppServiceSourceControlSlot#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#delete AppServiceSourceControlSlot#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#read AppServiceSourceControlSlot#read}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#create AppServiceSourceControlSlot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#create AppServiceSourceControlSlot#create}.
 
 ---
 
@@ -1522,7 +1522,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#delete AppServiceSourceControlSlot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#delete AppServiceSourceControlSlot#delete}.
 
 ---
 
@@ -1534,7 +1534,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control_slot#read AppServiceSourceControlSlot#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control_slot#read AppServiceSourceControlSlot#read}.
 
 ---
 
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.NewAppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSourceControlSlotGithubActionConfigurationCodeConfigurationOutputReference
 ```
@@ -1838,7 +1838,7 @@ func InternalValue() AppServiceSourceControlSlotGithubActionConfigurationCodeCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.NewAppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSourceControlSlotGithubActionConfigurationContainerConfigurationOutputReference
 ```
@@ -2189,7 +2189,7 @@ func InternalValue() AppServiceSourceControlSlotGithubActionConfigurationContain
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotGithubActionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.NewAppServiceSourceControlSlotGithubActionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSourceControlSlotGithubActionConfigurationOutputReference
 ```
@@ -2562,7 +2562,7 @@ func InternalValue() AppServiceSourceControlSlotGithubActionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControlSlot.AppServiceSourceControlSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicesourcecontrolslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicesourcecontrolslot"
 
 appservicesourcecontrolslot.NewAppServiceSourceControlSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceSourceControlSlotTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAzurermIothub <a name="DataAzurermIothub" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub azurerm_iothub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub azurerm_iothub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.NewDataAzurermIothub(scope Construct, id *string, config DataAzurermIothubConfig) DataAzurermIothub
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.DataAzurermIothub_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.DataAzurermIothub_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataazurermiothub.DataAzurermIothub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.DataAzurermIothub_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermiothub.DataAzurermIothub_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.DataAzurermIothub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAzurermIothub to impor
 
 The id of the existing DataAzurermIothub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 &dataazurermiothub.DataAzurermIothubConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermIothub.DataAzurermIothubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermIothub.DataAzurermIothubTimeouts,
 }
 ```
 
@@ -760,10 +760,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#name DataAzurermIothub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#resource_group_name DataAzurermIothub#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#id DataAzurermIothub#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#tags DataAzurermIothub#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#name DataAzurermIothub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#resource_group_name DataAzurermIothub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#id DataAzurermIothub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#tags DataAzurermIothub#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubTimeouts">DataAzurermIothubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -846,7 +846,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#name DataAzurermIothub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#name DataAzurermIothub#name}.
 
 ---
 
@@ -858,7 +858,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#resource_group_name DataAzurermIothub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#resource_group_name DataAzurermIothub#resource_group_name}.
 
 ---
 
@@ -870,7 +870,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#id DataAzurermIothub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#id DataAzurermIothub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -885,7 +885,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#tags DataAzurermIothub#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#tags DataAzurermIothub#tags}.
 
 ---
 
@@ -899,7 +899,7 @@ Timeouts DataAzurermIothubTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#timeouts DataAzurermIothub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#timeouts DataAzurermIothub#timeouts}
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 &dataazurermiothub.DataAzurermIothubIdentity {
 
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 &dataazurermiothub.DataAzurermIothubTimeouts {
 	Read: *string,
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#read DataAzurermIothub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#read DataAzurermIothub#read}. |
 
 ---
 
@@ -944,7 +944,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/iothub#read DataAzurermIothub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/iothub#read DataAzurermIothub#read}.
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.NewDataAzurermIothubIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermIothubIdentityList
 ```
@@ -1104,7 +1104,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.NewDataAzurermIothubIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermIothubIdentityOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() DataAzurermIothubIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermIothub.DataAzurermIothubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermiothub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermiothub"
 
 dataazurermiothub.NewDataAzurermIothubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermIothubTimeoutsOutputReference
 ```

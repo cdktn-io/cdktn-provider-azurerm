@@ -4,12 +4,12 @@
 
 ### PurviewAccount <a name="PurviewAccount" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account azurerm_purview_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account azurerm_purview_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.NewPurviewAccount(scope Construct, id *string, config PurviewAccountConfig) PurviewAccount
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.PurviewAccount_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.PurviewAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ purviewaccount.PurviewAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.PurviewAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ purviewaccount.PurviewAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.PurviewAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the PurviewAccount to import.
 
 The id of the existing PurviewAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 &purviewaccount.PurviewAccountConfig {
 	Connection: interface{},
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.purviewAccount.PurviewAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.purviewAccount.PurviewAccountIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
@@ -1073,7 +1073,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 	ManagedResourceGroupName: *string,
 	PublicNetworkEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.purviewAccount.PurviewAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.purviewAccount.PurviewAccountTimeouts,
 }
 ```
 
@@ -1089,14 +1089,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity">PurviewAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#location PurviewAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#name PurviewAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#resource_group_name PurviewAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#id PurviewAccount#id}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.managedEventHubEnabled">ManagedEventHubEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#managed_event_hub_enabled PurviewAccount#managed_event_hub_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.managedResourceGroupName">ManagedResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#managed_resource_group_name PurviewAccount#managed_resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.publicNetworkEnabled">PublicNetworkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#public_network_enabled PurviewAccount#public_network_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#tags PurviewAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#location PurviewAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#name PurviewAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#resource_group_name PurviewAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#id PurviewAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.managedEventHubEnabled">ManagedEventHubEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#managed_event_hub_enabled PurviewAccount#managed_event_hub_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.managedResourceGroupName">ManagedResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#managed_resource_group_name PurviewAccount#managed_resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.publicNetworkEnabled">PublicNetworkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#public_network_enabled PurviewAccount#public_network_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#tags PurviewAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts">PurviewAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1181,7 +1181,7 @@ Identity PurviewAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#identity PurviewAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#identity PurviewAccount#identity}
 
 ---
 
@@ -1193,7 +1193,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#location PurviewAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#location PurviewAccount#location}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#name PurviewAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#name PurviewAccount#name}.
 
 ---
 
@@ -1217,7 +1217,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#resource_group_name PurviewAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#resource_group_name PurviewAccount#resource_group_name}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#id PurviewAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#id PurviewAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1244,7 +1244,7 @@ ManagedEventHubEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#managed_event_hub_enabled PurviewAccount#managed_event_hub_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#managed_event_hub_enabled PurviewAccount#managed_event_hub_enabled}.
 
 ---
 
@@ -1256,7 +1256,7 @@ ManagedResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#managed_resource_group_name PurviewAccount#managed_resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#managed_resource_group_name PurviewAccount#managed_resource_group_name}.
 
 ---
 
@@ -1268,7 +1268,7 @@ PublicNetworkEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#public_network_enabled PurviewAccount#public_network_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#public_network_enabled PurviewAccount#public_network_enabled}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#tags PurviewAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#tags PurviewAccount#tags}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Timeouts PurviewAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#timeouts PurviewAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#timeouts PurviewAccount#timeouts}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 &purviewaccount.PurviewAccountIdentity {
 	Type: *string,
@@ -1315,8 +1315,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#type PurviewAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#identity_ids PurviewAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#type PurviewAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#identity_ids PurviewAccount#identity_ids}. |
 
 ---
 
@@ -1328,7 +1328,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#type PurviewAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#type PurviewAccount#type}.
 
 ---
 
@@ -1340,7 +1340,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#identity_ids PurviewAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#identity_ids PurviewAccount#identity_ids}.
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 &purviewaccount.PurviewAccountManagedResources {
 
@@ -1362,7 +1362,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 &purviewaccount.PurviewAccountTimeouts {
 	Create: *string,
@@ -1376,10 +1376,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#create PurviewAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#delete PurviewAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#read PurviewAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#update PurviewAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#create PurviewAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#delete PurviewAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#read PurviewAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#update PurviewAccount#update}. |
 
 ---
 
@@ -1391,7 +1391,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#create PurviewAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#create PurviewAccount#create}.
 
 ---
 
@@ -1403,7 +1403,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#delete PurviewAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#delete PurviewAccount#delete}.
 
 ---
 
@@ -1415,7 +1415,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#read PurviewAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#read PurviewAccount#read}.
 
 ---
 
@@ -1427,7 +1427,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/purview_account#update PurviewAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/purview_account#update PurviewAccount#update}.
 
 ---
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.NewPurviewAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PurviewAccountIdentityOutputReference
 ```
@@ -1760,7 +1760,7 @@ func InternalValue() PurviewAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.NewPurviewAccountManagedResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PurviewAccountManagedResourcesList
 ```
@@ -1909,7 +1909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountManagedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.NewPurviewAccountManagedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PurviewAccountManagedResourcesOutputReference
 ```
@@ -2209,7 +2209,7 @@ func InternalValue() PurviewAccountManagedResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.purviewAccount.PurviewAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/purviewaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/purviewaccount"
 
 purviewaccount.NewPurviewAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PurviewAccountTimeoutsOutputReference
 ```

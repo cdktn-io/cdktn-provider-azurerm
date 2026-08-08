@@ -4,12 +4,12 @@
 
 ### DataAzurermHealthcareDicomService <a name="DataAzurermHealthcareDicomService" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service azurerm_healthcare_dicom_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomService(scope Construct, id *string, config DataAzurermHealthcareDicomServiceConfig) DataAzurermHealthcareDicomService
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermHealthcareDicom
 
 The id of the existing DataAzurermHealthcareDicomService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceAuthentication {
 
@@ -803,7 +803,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 	Name: *string,
 	WorkspaceId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts,
 }
 ```
 
@@ -831,9 +831,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#name DataAzurermHealthcareDicomService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#workspace_id DataAzurermHealthcareDicomService#workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#id DataAzurermHealthcareDicomService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#name DataAzurermHealthcareDicomService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#workspace_id DataAzurermHealthcareDicomService#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#id DataAzurermHealthcareDicomService#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts">DataAzurermHealthcareDicomServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -916,7 +916,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#name DataAzurermHealthcareDicomService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#name DataAzurermHealthcareDicomService#name}.
 
 ---
 
@@ -928,7 +928,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#workspace_id DataAzurermHealthcareDicomService#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#workspace_id DataAzurermHealthcareDicomService#workspace_id}.
 
 ---
 
@@ -940,7 +940,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#id DataAzurermHealthcareDicomService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#id DataAzurermHealthcareDicomService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ Timeouts DataAzurermHealthcareDicomServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#timeouts DataAzurermHealthcareDicomService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#timeouts DataAzurermHealthcareDicomService#timeouts}
 
 ---
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceCors {
 
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceIdentity {
 
@@ -992,7 +992,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServicePrivateEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServicePrivateEndpoint {
 
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceStorage {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 &dataazurermhealthcaredicomservice.DataAzurermHealthcareDicomServiceTimeouts {
 	Read: *string,
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#read DataAzurermHealthcareDicomService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#read DataAzurermHealthcareDicomService#read}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/healthcare_dicom_service#read DataAzurermHealthcareDicomService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/healthcare_dicom_service#read DataAzurermHealthcareDicomService#read}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermHealthcareDicomServiceAuthenticationList
 ```
@@ -1201,7 +1201,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermHealthcareDicomServiceAuthenticationOutputReference
 ```
@@ -1490,7 +1490,7 @@ func InternalValue() DataAzurermHealthcareDicomServiceAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermHealthcareDicomServiceCorsList
 ```
@@ -1639,7 +1639,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermHealthcareDicomServiceCorsOutputReference
 ```
@@ -1961,7 +1961,7 @@ func InternalValue() DataAzurermHealthcareDicomServiceCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermHealthcareDicomServiceIdentityList
 ```
@@ -2110,7 +2110,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermHealthcareDicomServiceIdentityOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() DataAzurermHealthcareDicomServiceIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServicePrivateEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServicePrivateEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermHealthcareDicomServicePrivateEndpointList
 ```
@@ -2570,7 +2570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServicePrivateEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServicePrivateEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermHealthcareDicomServicePrivateEndpointOutputReference
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() DataAzurermHealthcareDicomServicePrivateEndpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceStorageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceStorageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermHealthcareDicomServiceStorageList
 ```
@@ -3008,7 +3008,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermHealthcareDicomServiceStorageOutputReference
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() DataAzurermHealthcareDicomServiceStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermHealthcareDicomService.DataAzurermHealthcareDicomServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermhealthcaredicomservice"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermhealthcaredicomservice"
 
 dataazurermhealthcaredicomservice.NewDataAzurermHealthcareDicomServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermHealthcareDicomServiceTimeoutsOutputReference
 ```

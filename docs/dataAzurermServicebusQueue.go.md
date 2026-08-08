@@ -4,12 +4,12 @@
 
 ### DataAzurermServicebusQueue <a name="DataAzurermServicebusQueue" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue azurerm_servicebus_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.NewDataAzurermServicebusQueue(scope Construct, id *string, config DataAzurermServicebusQueueConfig) DataAzurermServicebusQueue
 ```
@@ -70,9 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetNamespaceId">ResetNamespaceId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetNamespaceName">ResetNamespaceName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetResourceGroupName">ResetResourceGroupName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -308,24 +305,6 @@ func PutTimeouts(value DataAzurermServicebusQueueTimeouts)
 func ResetId()
 ```
 
-##### `ResetNamespaceId` <a name="ResetNamespaceId" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetNamespaceId"></a>
-
-```go
-func ResetNamespaceId()
-```
-
-##### `ResetNamespaceName` <a name="ResetNamespaceName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetNamespaceName"></a>
-
-```go
-func ResetNamespaceName()
-```
-
-##### `ResetResourceGroupName` <a name="ResetResourceGroupName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetResourceGroupName"></a>
-
-```go
-func ResetResourceGroupName()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.resetTimeouts"></a>
 
 ```go
@@ -346,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.DataAzurermServicebusQueue_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.DataAzurermServicebusQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +371,7 @@ dataazurermservicebusqueue.DataAzurermServicebusQueue_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.DataAzurermServicebusQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +385,7 @@ dataazurermservicebusqueue.DataAzurermServicebusQueue_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.DataAzurermServicebusQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +414,7 @@ The construct id used in the generated config for the DataAzurermServicebusQueue
 
 The id of the existing DataAzurermServicebusQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -468,9 +447,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.deadLetteringOnMessageExpiration">DeadLetteringOnMessageExpiration</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.defaultMessageTtl">DefaultMessageTtl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.duplicateDetectionHistoryTimeWindow">DuplicateDetectionHistoryTimeWindow</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enableBatchedOperations">EnableBatchedOperations</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enableExpress">EnableExpress</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enablePartitioning">EnablePartitioning</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.expressEnabled">ExpressEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.forwardDeadLetteredMessagesTo">ForwardDeadLetteredMessagesTo</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.forwardTo">ForwardTo</a></code> | <code>*string</code> | *No description.* |
@@ -485,14 +461,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceIdInput">NamespaceIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceNameInput">NamespaceNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -668,36 +640,6 @@ func DuplicateDetectionHistoryTimeWindow() *string
 
 ---
 
-##### `EnableBatchedOperations`<sup>Required</sup> <a name="EnableBatchedOperations" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enableBatchedOperations"></a>
-
-```go
-func EnableBatchedOperations() IResolvable
-```
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
-
----
-
-##### `EnableExpress`<sup>Required</sup> <a name="EnableExpress" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enableExpress"></a>
-
-```go
-func EnableExpress() IResolvable
-```
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
-
----
-
-##### `EnablePartitioning`<sup>Required</sup> <a name="EnablePartitioning" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.enablePartitioning"></a>
-
-```go
-func EnablePartitioning() IResolvable
-```
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
-
----
-
 ##### `ExpressEnabled`<sup>Required</sup> <a name="ExpressEnabled" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.expressEnabled"></a>
 
 ```go
@@ -838,26 +780,6 @@ func NamespaceIdInput() *string
 
 ---
 
-##### `NamespaceNameInput`<sup>Optional</sup> <a name="NamespaceNameInput" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceNameInput"></a>
-
-```go
-func NamespaceNameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.resourceGroupNameInput"></a>
-
-```go
-func ResourceGroupNameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.timeoutsInput"></a>
 
 ```go
@@ -898,26 +820,6 @@ func NamespaceId() *string
 
 ---
 
-##### `NamespaceName`<sup>Required</sup> <a name="NamespaceName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.namespaceName"></a>
-
-```go
-func NamespaceName() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueue.property.resourceGroupName"></a>
-
-```go
-func ResourceGroupName() *string
-```
-
-- *Type:* *string
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -943,7 +845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 &dataazurermservicebusqueue.DataAzurermServicebusQueueConfig {
 	Connection: interface{},
@@ -954,11 +856,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermser
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Id: *string,
 	NamespaceId: *string,
-	NamespaceName: *string,
-	ResourceGroupName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts,
+	Id: *string,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts,
 }
 ```
 
@@ -973,11 +873,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermser
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceName">NamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_name DataAzurermServicebusQueue#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#resource_group_name DataAzurermServicebusQueue#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts">DataAzurermServicebusQueueTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +958,19 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#name DataAzurermServicebusQueue#name}.
+
+---
+
+##### `NamespaceId`<sup>Required</sup> <a name="NamespaceId" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceId"></a>
+
+```go
+NamespaceId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}.
 
 ---
 
@@ -1072,46 +982,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#id DataAzurermServicebusQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `NamespaceId`<sup>Optional</sup> <a name="NamespaceId" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceId"></a>
-
-```go
-NamespaceId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_id DataAzurermServicebusQueue#namespace_id}.
-
----
-
-##### `NamespaceName`<sup>Optional</sup> <a name="NamespaceName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.namespaceName"></a>
-
-```go
-NamespaceName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#namespace_name DataAzurermServicebusQueue#namespace_name}.
-
----
-
-##### `ResourceGroupName`<sup>Optional</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueConfig.property.resourceGroupName"></a>
-
-```go
-ResourceGroupName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#resource_group_name DataAzurermServicebusQueue#resource_group_name}.
 
 ---
 
@@ -1125,7 +999,7 @@ Timeouts DataAzurermServicebusQueueTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#timeouts DataAzurermServicebusQueue#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#timeouts DataAzurermServicebusQueue#timeouts}
 
 ---
 
@@ -1134,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 &dataazurermservicebusqueue.DataAzurermServicebusQueueTimeouts {
 	Read: *string,
@@ -1145,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}. |
 
 ---
 
@@ -1157,7 +1031,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_queue#read DataAzurermServicebusQueue#read}.
 
 ---
 
@@ -1168,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusQueue.DataAzurermServicebusQueueTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermservicebusqueue"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermservicebusqueue"
 
 dataazurermservicebusqueue.NewDataAzurermServicebusQueueTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermServicebusQueueTimeoutsOutputReference
 ```

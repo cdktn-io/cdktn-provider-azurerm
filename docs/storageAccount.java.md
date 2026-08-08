@@ -4,7 +4,7 @@
 
 ### StorageAccount <a name="StorageAccount" id="@cdktn/provider-azurerm.storageAccount.StorageAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account azurerm_storage_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account azurerm_storage_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer"></a>
 
@@ -50,13 +50,11 @@ StorageAccount.Builder.create(Construct scope, java.lang.String id)
 //  .provisionedBillingModelVersion(java.lang.String)
 //  .publicNetworkAccessEnabled(java.lang.Boolean|IResolvable)
 //  .queueEncryptionKeyType(java.lang.String)
-//  .queueProperties(StorageAccountQueueProperties)
 //  .routing(StorageAccountRouting)
 //  .sasPolicy(StorageAccountSasPolicy)
 //  .sftpEnabled(java.lang.Boolean|IResolvable)
 //  .sharedAccessKeyEnabled(java.lang.Boolean|IResolvable)
 //  .shareProperties(StorageAccountShareProperties)
-//  .staticWebsite(StorageAccountStaticWebsite)
 //  .tableEncryptionKeyType(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(StorageAccountTimeouts)
@@ -74,46 +72,44 @@ StorageAccount.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountReplicationType">accountReplicationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountTier">accountTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountKind">accountKind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.allowedCopyScope">allowedCopyScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.allowNestedItemsToBePublic">allowNestedItemsToBePublic</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountReplicationType">accountReplicationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountTier">accountTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.accountKind">accountKind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.allowedCopyScope">allowedCopyScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.allowNestedItemsToBePublic">allowNestedItemsToBePublic</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.azureFilesAuthentication">azureFilesAuthentication</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication">StorageAccountAzureFilesAuthentication</a></code> | azure_files_authentication block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.blobProperties">blobProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties">StorageAccountBlobProperties</a></code> | blob_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.crossTenantReplicationEnabled">crossTenantReplicationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.crossTenantReplicationEnabled">crossTenantReplicationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.customDomain">customDomain</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain">StorageAccountCustomDomain</a></code> | custom_domain block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.customerManagedKey">customerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey">StorageAccountCustomerManagedKey</a></code> | customer_managed_key block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.defaultToOauthAuthentication">defaultToOauthAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.dnsEndpointType">dnsEndpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.edgeZone">edgeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.httpsTrafficOnlyEnabled">httpsTrafficOnlyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.defaultToOauthAuthentication">defaultToOauthAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.dnsEndpointType">dnsEndpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.edgeZone">edgeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.httpsTrafficOnlyEnabled">httpsTrafficOnlyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity">StorageAccountIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.immutabilityPolicy">immutabilityPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy">StorageAccountImmutabilityPolicy</a></code> | immutability_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.infrastructureEncryptionEnabled">infrastructureEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.isHnsEnabled">isHnsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.largeFileShareEnabled">largeFileShareEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.localUserEnabled">localUserEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.infrastructureEncryptionEnabled">infrastructureEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.isHnsEnabled">isHnsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.largeFileShareEnabled">largeFileShareEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.localUserEnabled">localUserEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.networkRules">networkRules</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules">StorageAccountNetworkRules</a></code> | network_rules block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.nfsv3Enabled">nfsv3Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.provisionedBillingModelVersion">provisionedBillingModelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.queueEncryptionKeyType">queueEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.queueProperties">queueProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | queue_properties block. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.nfsv3Enabled">nfsv3Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.provisionedBillingModelVersion">provisionedBillingModelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.queueEncryptionKeyType">queueEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.routing">routing</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting">StorageAccountRouting</a></code> | routing block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.sasPolicy">sasPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy">StorageAccountSasPolicy</a></code> | sas_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.sftpEnabled">sftpEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.sharedAccessKeyEnabled">sharedAccessKeyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.sftpEnabled">sftpEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.sharedAccessKeyEnabled">sharedAccessKeyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.shareProperties">shareProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a></code> | share_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.staticWebsite">staticWebsite</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | static_website block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.tableEncryptionKeyType">tableEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.tableEncryptionKeyType">tableEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts">StorageAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -182,7 +178,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
 
 ---
 
@@ -190,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
 
 ---
 
@@ -198,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}.
 
 ---
 
@@ -206,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}.
 
 ---
 
@@ -214,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
 
 ---
 
@@ -222,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
 
 ---
 
@@ -230,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
 
 ---
 
@@ -238,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
 
 ---
 
@@ -246,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
 
 ---
 
@@ -256,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure_files_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
 
 ---
 
@@ -266,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 blob_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
 
 ---
 
@@ -274,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
 
 ---
 
@@ -284,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
 
 ---
 
@@ -294,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
 
 ---
 
@@ -302,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
 
 ---
 
@@ -310,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
 
 ---
 
@@ -318,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
 
 ---
 
@@ -326,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
 
 ---
 
@@ -334,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -347,7 +343,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity StorageAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity StorageAccount#identity}
 
 ---
 
@@ -357,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 immutability_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
 
 ---
 
@@ -365,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
 
 ---
 
@@ -373,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
 
 ---
 
@@ -381,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
 
 ---
 
@@ -389,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
 
 ---
 
@@ -397,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
 
 ---
 
@@ -407,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#network_rules StorageAccount#network_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#network_rules StorageAccount#network_rules}
 
 ---
 
@@ -415,7 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
 
 ---
 
@@ -423,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
 
 ---
 
@@ -431,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
 
 ---
 
@@ -439,17 +435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
-
----
-
-##### `queueProperties`<sup>Optional</sup> <a name="queueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.queueProperties"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
-queue_properties block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_properties StorageAccount#queue_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
 
 ---
 
@@ -459,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#routing StorageAccount#routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#routing StorageAccount#routing}
 
 ---
 
@@ -469,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sas_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
 
 ---
 
@@ -477,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
 
 ---
 
@@ -485,7 +471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
 
 ---
 
@@ -495,17 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 share_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#share_properties StorageAccount#share_properties}
-
----
-
-##### `staticWebsite`<sup>Optional</sup> <a name="staticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer.parameter.staticWebsite"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
-
-static_website block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#static_website StorageAccount#static_website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#share_properties StorageAccount#share_properties}
 
 ---
 
@@ -513,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
 
 ---
 
@@ -521,7 +497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}.
 
 ---
 
@@ -531,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#timeouts StorageAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#timeouts StorageAccount#timeouts}
 
 ---
 
@@ -570,11 +546,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putIdentity">putIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putImmutabilityPolicy">putImmutabilityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putNetworkRules">putNetworkRules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties">putQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putRouting">putRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putSasPolicy">putSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putShareProperties">putShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite">putStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetAccessTier">resetAccessTier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetAccountKind">resetAccountKind</a></code> | *No description.* |
@@ -602,13 +576,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetProvisionedBillingModelVersion">resetProvisionedBillingModelVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetPublicNetworkAccessEnabled">resetPublicNetworkAccessEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueEncryptionKeyType">resetQueueEncryptionKeyType</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueProperties">resetQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetRouting">resetRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSasPolicy">resetSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSftpEnabled">resetSftpEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSharedAccessKeyEnabled">resetSharedAccessKeyEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetShareProperties">resetShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetStaticWebsite">resetStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTableEncryptionKeyType">resetTableEncryptionKeyType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -1010,18 +982,6 @@ public void putNetworkRules(StorageAccountNetworkRules value)
 
 ---
 
-##### `putQueueProperties` <a name="putQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties"></a>
-
-```java
-public void putQueueProperties(StorageAccountQueueProperties value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
----
-
 ##### `putRouting` <a name="putRouting" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putRouting"></a>
 
 ```java
@@ -1055,18 +1015,6 @@ public void putShareProperties(StorageAccountShareProperties value)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putShareProperties.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a>
-
----
-
-##### `putStaticWebsite` <a name="putStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite"></a>
-
-```java
-public void putStaticWebsite(StorageAccountStaticWebsite value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
 
 ---
 
@@ -1238,12 +1186,6 @@ public void resetPublicNetworkAccessEnabled()
 public void resetQueueEncryptionKeyType()
 ```
 
-##### `resetQueueProperties` <a name="resetQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueProperties"></a>
-
-```java
-public void resetQueueProperties()
-```
-
 ##### `resetRouting` <a name="resetRouting" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetRouting"></a>
 
 ```java
@@ -1272,12 +1214,6 @@ public void resetSharedAccessKeyEnabled()
 
 ```java
 public void resetShareProperties()
-```
-
-##### `resetStaticWebsite` <a name="resetStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetStaticWebsite"></a>
-
-```java
-public void resetStaticWebsite()
 ```
 
 ##### `resetTableEncryptionKeyType` <a name="resetTableEncryptionKeyType" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTableEncryptionKeyType"></a>
@@ -1401,7 +1337,7 @@ The construct id used in the generated config for the StorageAccount to import.
 
 The id of the existing StorageAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1474,7 +1410,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebInternetHost">primaryWebInternetHost</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebMicrosoftEndpoint">primaryWebMicrosoftEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebMicrosoftHost">primaryWebMicrosoftHost</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueProperties">queueProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference">StorageAccountQueuePropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routing">routing</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRoutingOutputReference">StorageAccountRoutingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sasPolicy">sasPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicyOutputReference">StorageAccountSasPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryAccessKey">secondaryAccessKey</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1514,7 +1449,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryWebMicrosoftEndpoint">secondaryWebMicrosoftEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryWebMicrosoftHost">secondaryWebMicrosoftHost</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.shareProperties">shareProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesOutputReference">StorageAccountSharePropertiesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsite">staticWebsite</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference">StorageAccountStaticWebsiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeoutsOutputReference">StorageAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.accessTierInput">accessTierInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.accountKindInput">accountKindInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1546,14 +1480,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.provisionedBillingModelVersionInput">provisionedBillingModelVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.publicNetworkAccessEnabledInput">publicNetworkAccessEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueEncryptionKeyTypeInput">queueEncryptionKeyTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queuePropertiesInput">queuePropertiesInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routingInput">routingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting">StorageAccountRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sasPolicyInput">sasPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy">StorageAccountSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sftpEnabledInput">sftpEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sharedAccessKeyEnabledInput">sharedAccessKeyEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sharePropertiesInput">sharePropertiesInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsiteInput">staticWebsiteInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.tableEncryptionKeyTypeInput">tableEncryptionKeyTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts">StorageAccountTimeouts</a></code> | *No description.* |
@@ -2160,16 +2092,6 @@ public java.lang.String getPrimaryWebMicrosoftHost();
 
 ---
 
-##### `queueProperties`<sup>Required</sup> <a name="queueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueProperties"></a>
-
-```java
-public StorageAccountQueuePropertiesOutputReference getQueueProperties();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference">StorageAccountQueuePropertiesOutputReference</a>
-
----
-
 ##### `routing`<sup>Required</sup> <a name="routing" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routing"></a>
 
 ```java
@@ -2560,16 +2482,6 @@ public StorageAccountSharePropertiesOutputReference getShareProperties();
 
 ---
 
-##### `staticWebsite`<sup>Required</sup> <a name="staticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsite"></a>
-
-```java
-public StorageAccountStaticWebsiteOutputReference getStaticWebsite();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference">StorageAccountStaticWebsiteOutputReference</a>
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeouts"></a>
 
 ```java
@@ -2880,16 +2792,6 @@ public java.lang.String getQueueEncryptionKeyTypeInput();
 
 ---
 
-##### `queuePropertiesInput`<sup>Optional</sup> <a name="queuePropertiesInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queuePropertiesInput"></a>
-
-```java
-public StorageAccountQueueProperties getQueuePropertiesInput();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
----
-
 ##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.resourceGroupNameInput"></a>
 
 ```java
@@ -2947,16 +2849,6 @@ public StorageAccountShareProperties getSharePropertiesInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a>
-
----
-
-##### `staticWebsiteInput`<sup>Optional</sup> <a name="staticWebsiteInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsiteInput"></a>
-
-```java
-public StorageAccountStaticWebsite getStaticWebsiteInput();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
 
 ---
 
@@ -3308,9 +3200,9 @@ StorageAccountAzureFilesAuthentication.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.directoryType">directoryType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#directory_type StorageAccount#directory_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.directoryType">directoryType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#directory_type StorageAccount#directory_type}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory">StorageAccountAzureFilesAuthenticationActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.defaultShareLevelPermission">defaultShareLevelPermission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.defaultShareLevelPermission">defaultShareLevelPermission</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}. |
 
 ---
 
@@ -3322,7 +3214,7 @@ public java.lang.String getDirectoryType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#directory_type StorageAccount#directory_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#directory_type StorageAccount#directory_type}.
 
 ---
 
@@ -3336,7 +3228,7 @@ public StorageAccountAzureFilesAuthenticationActiveDirectory getActiveDirectory(
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#active_directory StorageAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#active_directory StorageAccount#active_directory}
 
 ---
 
@@ -3348,7 +3240,7 @@ public java.lang.String getDefaultShareLevelPermission();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}.
 
 ---
 
@@ -3373,12 +3265,12 @@ StorageAccountAzureFilesAuthenticationActiveDirectory.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainGuid">domainGuid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_name StorageAccount#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainSid">domainSid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.forestName">forestName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#forest_name StorageAccount#forest_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.netbiosDomainName">netbiosDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.storageSid">storageSid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainGuid">domainGuid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainName">domainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_name StorageAccount#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainSid">domainSid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.forestName">forestName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#forest_name StorageAccount#forest_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.netbiosDomainName">netbiosDomainName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.storageSid">storageSid</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}. |
 
 ---
 
@@ -3390,7 +3282,7 @@ public java.lang.String getDomainGuid();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}.
 
 ---
 
@@ -3402,7 +3294,7 @@ public java.lang.String getDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_name StorageAccount#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_name StorageAccount#domain_name}.
 
 ---
 
@@ -3414,7 +3306,7 @@ public java.lang.String getDomainSid();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}.
 
 ---
 
@@ -3426,7 +3318,7 @@ public java.lang.String getForestName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#forest_name StorageAccount#forest_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#forest_name StorageAccount#forest_name}.
 
 ---
 
@@ -3438,7 +3330,7 @@ public java.lang.String getNetbiosDomainName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}.
 
 ---
 
@@ -3450,7 +3342,7 @@ public java.lang.String getStorageSid();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}.
 
 ---
 
@@ -3478,15 +3370,15 @@ StorageAccountBlobProperties.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedEnabled">changeFeedEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedRetentionInDays">changeFeedRetentionInDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedEnabled">changeFeedEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedRetentionInDays">changeFeedRetentionInDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.containerDeleteRetentionPolicy">containerDeleteRetentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy">StorageAccountBlobPropertiesContainerDeleteRetentionPolicy</a></code> | container_delete_retention_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.corsRule">corsRule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule">StorageAccountBlobPropertiesCorsRule</a>></code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.defaultServiceVersion">defaultServiceVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.defaultServiceVersion">defaultServiceVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.deleteRetentionPolicy">deleteRetentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy">StorageAccountBlobPropertiesDeleteRetentionPolicy</a></code> | delete_retention_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.lastAccessTimeEnabled">lastAccessTimeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.lastAccessTimeEnabled">lastAccessTimeEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.restorePolicy">restorePolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy">StorageAccountBlobPropertiesRestorePolicy</a></code> | restore_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.versioningEnabled">versioningEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.versioningEnabled">versioningEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}. |
 
 ---
 
@@ -3498,7 +3390,7 @@ public java.lang.Boolean|IResolvable getChangeFeedEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}.
 
 ---
 
@@ -3510,7 +3402,7 @@ public java.lang.Number getChangeFeedRetentionInDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}.
 
 ---
 
@@ -3524,7 +3416,7 @@ public StorageAccountBlobPropertiesContainerDeleteRetentionPolicy getContainerDe
 
 container_delete_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
 
 ---
 
@@ -3538,7 +3430,7 @@ public IResolvable|java.util.List<StorageAccountBlobPropertiesCorsRule> getCorsR
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
 
 ---
 
@@ -3550,7 +3442,7 @@ public java.lang.String getDefaultServiceVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}.
 
 ---
 
@@ -3564,7 +3456,7 @@ public StorageAccountBlobPropertiesDeleteRetentionPolicy getDeleteRetentionPolic
 
 delete_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
 
 ---
 
@@ -3576,7 +3468,7 @@ public java.lang.Boolean|IResolvable getLastAccessTimeEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}.
 
 ---
 
@@ -3590,7 +3482,7 @@ public StorageAccountBlobPropertiesRestorePolicy getRestorePolicy();
 
 restore_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
 
 ---
 
@@ -3602,7 +3494,7 @@ public java.lang.Boolean|IResolvable getVersioningEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}.
 
 ---
 
@@ -3622,7 +3514,7 @@ StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -3634,7 +3526,7 @@ public java.lang.Number getDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3658,11 +3550,11 @@ StorageAccountBlobPropertiesCorsRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
 
 ---
 
@@ -3674,7 +3566,7 @@ public java.util.List<java.lang.String> getAllowedHeaders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
 
 ---
 
@@ -3686,7 +3578,7 @@ public java.util.List<java.lang.String> getAllowedMethods();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
 
 ---
 
@@ -3698,7 +3590,7 @@ public java.util.List<java.lang.String> getAllowedOrigins();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
 
 ---
 
@@ -3710,7 +3602,7 @@ public java.util.List<java.lang.String> getExposedHeaders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
 
 ---
 
@@ -3722,7 +3614,7 @@ public java.lang.Number getMaxAgeInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
 
 ---
 
@@ -3743,8 +3635,8 @@ StorageAccountBlobPropertiesDeleteRetentionPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.permanentDeleteEnabled">permanentDeleteEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.permanentDeleteEnabled">permanentDeleteEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}. |
 
 ---
 
@@ -3756,7 +3648,7 @@ public java.lang.Number getDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3768,7 +3660,7 @@ public java.lang.Boolean|IResolvable getPermanentDeleteEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}.
 
 ---
 
@@ -3788,7 +3680,7 @@ StorageAccountBlobPropertiesRestorePolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -3800,7 +3692,7 @@ public java.lang.Number getDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3850,13 +3742,11 @@ StorageAccountConfig.builder()
 //  .provisionedBillingModelVersion(java.lang.String)
 //  .publicNetworkAccessEnabled(java.lang.Boolean|IResolvable)
 //  .queueEncryptionKeyType(java.lang.String)
-//  .queueProperties(StorageAccountQueueProperties)
 //  .routing(StorageAccountRouting)
 //  .sasPolicy(StorageAccountSasPolicy)
 //  .sftpEnabled(java.lang.Boolean|IResolvable)
 //  .sharedAccessKeyEnabled(java.lang.Boolean|IResolvable)
 //  .shareProperties(StorageAccountShareProperties)
-//  .staticWebsite(StorageAccountStaticWebsite)
 //  .tableEncryptionKeyType(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(StorageAccountTimeouts)
@@ -3874,46 +3764,44 @@ StorageAccountConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountReplicationType">accountReplicationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountTier">accountTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountKind">accountKind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowedCopyScope">allowedCopyScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowNestedItemsToBePublic">allowNestedItemsToBePublic</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountReplicationType">accountReplicationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountTier">accountTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountKind">accountKind</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowedCopyScope">allowedCopyScope</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowNestedItemsToBePublic">allowNestedItemsToBePublic</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.azureFilesAuthentication">azureFilesAuthentication</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication">StorageAccountAzureFilesAuthentication</a></code> | azure_files_authentication block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.blobProperties">blobProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties">StorageAccountBlobProperties</a></code> | blob_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.crossTenantReplicationEnabled">crossTenantReplicationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.crossTenantReplicationEnabled">crossTenantReplicationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.customDomain">customDomain</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain">StorageAccountCustomDomain</a></code> | custom_domain block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.customerManagedKey">customerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey">StorageAccountCustomerManagedKey</a></code> | customer_managed_key block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.defaultToOauthAuthentication">defaultToOauthAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.dnsEndpointType">dnsEndpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.edgeZone">edgeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.httpsTrafficOnlyEnabled">httpsTrafficOnlyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.defaultToOauthAuthentication">defaultToOauthAuthentication</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.dnsEndpointType">dnsEndpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.edgeZone">edgeZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.httpsTrafficOnlyEnabled">httpsTrafficOnlyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity">StorageAccountIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.immutabilityPolicy">immutabilityPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy">StorageAccountImmutabilityPolicy</a></code> | immutability_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.infrastructureEncryptionEnabled">infrastructureEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.isHnsEnabled">isHnsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.largeFileShareEnabled">largeFileShareEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.localUserEnabled">localUserEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.infrastructureEncryptionEnabled">infrastructureEncryptionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.isHnsEnabled">isHnsEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.largeFileShareEnabled">largeFileShareEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.localUserEnabled">localUserEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.minTlsVersion">minTlsVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.networkRules">networkRules</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules">StorageAccountNetworkRules</a></code> | network_rules block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.nfsv3Enabled">nfsv3Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisionedBillingModelVersion">provisionedBillingModelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueEncryptionKeyType">queueEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueProperties">queueProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | queue_properties block. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.nfsv3Enabled">nfsv3Enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisionedBillingModelVersion">provisionedBillingModelVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueEncryptionKeyType">queueEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.routing">routing</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting">StorageAccountRouting</a></code> | routing block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sasPolicy">sasPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy">StorageAccountSasPolicy</a></code> | sas_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sftpEnabled">sftpEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sharedAccessKeyEnabled">sharedAccessKeyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sftpEnabled">sftpEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sharedAccessKeyEnabled">sharedAccessKeyEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.shareProperties">shareProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a></code> | share_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.staticWebsite">staticWebsite</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | static_website block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tableEncryptionKeyType">tableEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tableEncryptionKeyType">tableEncryptionKeyType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts">StorageAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -3996,7 +3884,7 @@ public java.lang.String getAccountReplicationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
 
 ---
 
@@ -4008,7 +3896,7 @@ public java.lang.String getAccountTier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
 
 ---
 
@@ -4020,7 +3908,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}.
 
 ---
 
@@ -4032,7 +3920,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}.
 
 ---
 
@@ -4044,7 +3932,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
 
 ---
 
@@ -4056,7 +3944,7 @@ public java.lang.String getAccessTier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
 
 ---
 
@@ -4068,7 +3956,7 @@ public java.lang.String getAccountKind();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
 
 ---
 
@@ -4080,7 +3968,7 @@ public java.lang.String getAllowedCopyScope();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
 
 ---
 
@@ -4092,7 +3980,7 @@ public java.lang.Boolean|IResolvable getAllowNestedItemsToBePublic();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
 
 ---
 
@@ -4106,7 +3994,7 @@ public StorageAccountAzureFilesAuthentication getAzureFilesAuthentication();
 
 azure_files_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
 
 ---
 
@@ -4120,7 +4008,7 @@ public StorageAccountBlobProperties getBlobProperties();
 
 blob_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
 
 ---
 
@@ -4132,7 +4020,7 @@ public java.lang.Boolean|IResolvable getCrossTenantReplicationEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
 
 ---
 
@@ -4146,7 +4034,7 @@ public StorageAccountCustomDomain getCustomDomain();
 
 custom_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
 
 ---
 
@@ -4160,7 +4048,7 @@ public StorageAccountCustomerManagedKey getCustomerManagedKey();
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
 
 ---
 
@@ -4172,7 +4060,7 @@ public java.lang.Boolean|IResolvable getDefaultToOauthAuthentication();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
 
 ---
 
@@ -4184,7 +4072,7 @@ public java.lang.String getDnsEndpointType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
 
 ---
 
@@ -4196,7 +4084,7 @@ public java.lang.String getEdgeZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
 
 ---
 
@@ -4208,7 +4096,7 @@ public java.lang.Boolean|IResolvable getHttpsTrafficOnlyEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
 
 ---
 
@@ -4220,7 +4108,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4237,7 +4125,7 @@ public StorageAccountIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity StorageAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity StorageAccount#identity}
 
 ---
 
@@ -4251,7 +4139,7 @@ public StorageAccountImmutabilityPolicy getImmutabilityPolicy();
 
 immutability_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
 
 ---
 
@@ -4263,7 +4151,7 @@ public java.lang.Boolean|IResolvable getInfrastructureEncryptionEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
 
 ---
 
@@ -4275,7 +4163,7 @@ public java.lang.Boolean|IResolvable getIsHnsEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
 
 ---
 
@@ -4287,7 +4175,7 @@ public java.lang.Boolean|IResolvable getLargeFileShareEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
 
 ---
 
@@ -4299,7 +4187,7 @@ public java.lang.Boolean|IResolvable getLocalUserEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
 
 ---
 
@@ -4311,7 +4199,7 @@ public java.lang.String getMinTlsVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
 
 ---
 
@@ -4325,7 +4213,7 @@ public StorageAccountNetworkRules getNetworkRules();
 
 network_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#network_rules StorageAccount#network_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#network_rules StorageAccount#network_rules}
 
 ---
 
@@ -4337,7 +4225,7 @@ public java.lang.Boolean|IResolvable getNfsv3Enabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
 
 ---
 
@@ -4349,7 +4237,7 @@ public java.lang.String getProvisionedBillingModelVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
 
 ---
 
@@ -4361,7 +4249,7 @@ public java.lang.Boolean|IResolvable getPublicNetworkAccessEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
 
 ---
 
@@ -4373,21 +4261,7 @@ public java.lang.String getQueueEncryptionKeyType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
-
----
-
-##### `queueProperties`<sup>Optional</sup> <a name="queueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueProperties"></a>
-
-```java
-public StorageAccountQueueProperties getQueueProperties();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
-queue_properties block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_properties StorageAccount#queue_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
 
 ---
 
@@ -4401,7 +4275,7 @@ public StorageAccountRouting getRouting();
 
 routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#routing StorageAccount#routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#routing StorageAccount#routing}
 
 ---
 
@@ -4415,7 +4289,7 @@ public StorageAccountSasPolicy getSasPolicy();
 
 sas_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
 
 ---
 
@@ -4427,7 +4301,7 @@ public java.lang.Boolean|IResolvable getSftpEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
 
 ---
 
@@ -4439,7 +4313,7 @@ public java.lang.Boolean|IResolvable getSharedAccessKeyEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
 
 ---
 
@@ -4453,21 +4327,7 @@ public StorageAccountShareProperties getShareProperties();
 
 share_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#share_properties StorageAccount#share_properties}
-
----
-
-##### `staticWebsite`<sup>Optional</sup> <a name="staticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.staticWebsite"></a>
-
-```java
-public StorageAccountStaticWebsite getStaticWebsite();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
-
-static_website block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#static_website StorageAccount#static_website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#share_properties StorageAccount#share_properties}
 
 ---
 
@@ -4479,7 +4339,7 @@ public java.lang.String getTableEncryptionKeyType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
 
 ---
 
@@ -4491,7 +4351,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}.
 
 ---
 
@@ -4505,7 +4365,7 @@ public StorageAccountTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#timeouts StorageAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#timeouts StorageAccount#timeouts}
 
 ---
 
@@ -4526,8 +4386,8 @@ StorageAccountCustomDomain.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.useSubdomain">useSubdomain</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.useSubdomain">useSubdomain</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}. |
 
 ---
 
@@ -4539,7 +4399,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}.
 
 ---
 
@@ -4551,7 +4411,7 @@ public java.lang.Boolean|IResolvable getUseSubdomain();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}.
 
 ---
 
@@ -4563,9 +4423,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.azurerm.storage_account.StorageAccountCustomerManagedKey;
 
 StorageAccountCustomerManagedKey.builder()
+    .keyVaultKeyId(java.lang.String)
     .userAssignedIdentityId(java.lang.String)
-//  .keyVaultKeyId(java.lang.String)
-//  .managedHsmKeyId(java.lang.String)
     .build();
 ```
 
@@ -4573,9 +4432,20 @@ StorageAccountCustomerManagedKey.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.managedHsmKeyId">managedHsmKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#managed_hsm_key_id StorageAccount#managed_hsm_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}. |
+
+---
+
+##### `keyVaultKeyId`<sup>Required</sup> <a name="keyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId"></a>
+
+```java
+public java.lang.String getKeyVaultKeyId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}.
 
 ---
 
@@ -4587,31 +4457,7 @@ public java.lang.String getUserAssignedIdentityId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}.
-
----
-
-##### `keyVaultKeyId`<sup>Optional</sup> <a name="keyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId"></a>
-
-```java
-public java.lang.String getKeyVaultKeyId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}.
-
----
-
-##### `managedHsmKeyId`<sup>Optional</sup> <a name="managedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.managedHsmKeyId"></a>
-
-```java
-public java.lang.String getManagedHsmKeyId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#managed_hsm_key_id StorageAccount#managed_hsm_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}.
 
 ---
 
@@ -4632,8 +4478,8 @@ StorageAccountIdentity.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#type StorageAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#type StorageAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.identityIds">identityIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}. |
 
 ---
 
@@ -4645,7 +4491,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#type StorageAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#type StorageAccount#type}.
 
 ---
 
@@ -4657,7 +4503,7 @@ public java.util.List<java.lang.String> getIdentityIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}.
 
 ---
 
@@ -4679,9 +4525,9 @@ StorageAccountImmutabilityPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.allowProtectedAppendWrites">allowProtectedAppendWrites</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.periodSinceCreationInDays">periodSinceCreationInDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#state StorageAccount#state}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.allowProtectedAppendWrites">allowProtectedAppendWrites</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.periodSinceCreationInDays">periodSinceCreationInDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.state">state</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#state StorageAccount#state}. |
 
 ---
 
@@ -4693,7 +4539,7 @@ public java.lang.Boolean|IResolvable getAllowProtectedAppendWrites();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}.
 
 ---
 
@@ -4705,7 +4551,7 @@ public java.lang.Number getPeriodSinceCreationInDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}.
 
 ---
 
@@ -4717,7 +4563,7 @@ public java.lang.String getState();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#state StorageAccount#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#state StorageAccount#state}.
 
 ---
 
@@ -4741,11 +4587,11 @@ StorageAccountNetworkRules.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.defaultAction">defaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_action StorageAccount#default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.bypass">bypass</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#bypass StorageAccount#bypass}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.ipRules">ipRules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.defaultAction">defaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_action StorageAccount#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.bypass">bypass</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#bypass StorageAccount#bypass}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.ipRules">ipRules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.privateLinkAccess">privateLinkAccess</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess">StorageAccountNetworkRulesPrivateLinkAccess</a>></code> | private_link_access block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.virtualNetworkSubnetIds">virtualNetworkSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.virtualNetworkSubnetIds">virtualNetworkSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}. |
 
 ---
 
@@ -4757,7 +4603,7 @@ public java.lang.String getDefaultAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_action StorageAccount#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_action StorageAccount#default_action}.
 
 ---
 
@@ -4769,7 +4615,7 @@ public java.util.List<java.lang.String> getBypass();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#bypass StorageAccount#bypass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#bypass StorageAccount#bypass}.
 
 ---
 
@@ -4781,7 +4627,7 @@ public java.util.List<java.lang.String> getIpRules();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}.
 
 ---
 
@@ -4795,7 +4641,7 @@ public IResolvable|java.util.List<StorageAccountNetworkRulesPrivateLinkAccess> g
 
 private_link_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
 
 ---
 
@@ -4807,7 +4653,7 @@ public java.util.List<java.lang.String> getVirtualNetworkSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}.
 
 ---
 
@@ -4828,8 +4674,8 @@ StorageAccountNetworkRulesPrivateLinkAccess.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointResourceId">endpointResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointTenantId">endpointTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointResourceId">endpointResourceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointTenantId">endpointTenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}. |
 
 ---
 
@@ -4841,7 +4687,7 @@ public java.lang.String getEndpointResourceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}.
 
 ---
 
@@ -4853,413 +4699,7 @@ public java.lang.String getEndpointTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}.
-
----
-
-### StorageAccountQueueProperties <a name="StorageAccountQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueueProperties;
-
-StorageAccountQueueProperties.builder()
-//  .corsRule(IResolvable|java.util.List<StorageAccountQueuePropertiesCorsRule>)
-//  .hourMetrics(StorageAccountQueuePropertiesHourMetrics)
-//  .logging(StorageAccountQueuePropertiesLogging)
-//  .minuteMetrics(StorageAccountQueuePropertiesMinuteMetrics)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.corsRule">corsRule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>></code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.hourMetrics">hourMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | hour_metrics block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.logging">logging</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | logging block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.minuteMetrics">minuteMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | minute_metrics block. |
-
----
-
-##### `corsRule`<sup>Optional</sup> <a name="corsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.corsRule"></a>
-
-```java
-public IResolvable|java.util.List<StorageAccountQueuePropertiesCorsRule> getCorsRule();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>>
-
-cors_rule block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
-
----
-
-##### `hourMetrics`<sup>Optional</sup> <a name="hourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.hourMetrics"></a>
-
-```java
-public StorageAccountQueuePropertiesHourMetrics getHourMetrics();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
-hour_metrics block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#hour_metrics StorageAccount#hour_metrics}
-
----
-
-##### `logging`<sup>Optional</sup> <a name="logging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.logging"></a>
-
-```java
-public StorageAccountQueuePropertiesLogging getLogging();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
-logging block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#logging StorageAccount#logging}
-
----
-
-##### `minuteMetrics`<sup>Optional</sup> <a name="minuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.minuteMetrics"></a>
-
-```java
-public StorageAccountQueuePropertiesMinuteMetrics getMinuteMetrics();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
-minute_metrics block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#minute_metrics StorageAccount#minute_metrics}
-
----
-
-### StorageAccountQueuePropertiesCorsRule <a name="StorageAccountQueuePropertiesCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesCorsRule;
-
-StorageAccountQueuePropertiesCorsRule.builder()
-    .allowedHeaders(java.util.List<java.lang.String>)
-    .allowedMethods(java.util.List<java.lang.String>)
-    .allowedOrigins(java.util.List<java.lang.String>)
-    .exposedHeaders(java.util.List<java.lang.String>)
-    .maxAgeInSeconds(java.lang.Number)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
-
----
-
-##### `allowedHeaders`<sup>Required</sup> <a name="allowedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedHeaders"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedHeaders();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
-
----
-
-##### `allowedMethods`<sup>Required</sup> <a name="allowedMethods" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedMethods"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedMethods();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
-
----
-
-##### `allowedOrigins`<sup>Required</sup> <a name="allowedOrigins" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedOrigins"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedOrigins();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
-
----
-
-##### `exposedHeaders`<sup>Required</sup> <a name="exposedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.exposedHeaders"></a>
-
-```java
-public java.util.List<java.lang.String> getExposedHeaders();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
-
----
-
-##### `maxAgeInSeconds`<sup>Required</sup> <a name="maxAgeInSeconds" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.maxAgeInSeconds"></a>
-
-```java
-public java.lang.Number getMaxAgeInSeconds();
-```
-
-- *Type:* java.lang.Number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
-
----
-
-### StorageAccountQueuePropertiesHourMetrics <a name="StorageAccountQueuePropertiesHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesHourMetrics;
-
-StorageAccountQueuePropertiesHourMetrics.builder()
-    .enabled(java.lang.Boolean|IResolvable)
-    .version(java.lang.String)
-//  .includeApis(java.lang.Boolean|IResolvable)
-//  .retentionPolicyDays(java.lang.Number)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.includeApis">includeApis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.enabled"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabled();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}.
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `includeApis`<sup>Optional</sup> <a name="includeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.includeApis"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApis();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}.
-
----
-
-##### `retentionPolicyDays`<sup>Optional</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
-
----
-
-### StorageAccountQueuePropertiesLogging <a name="StorageAccountQueuePropertiesLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesLogging;
-
-StorageAccountQueuePropertiesLogging.builder()
-    .delete(java.lang.Boolean|IResolvable)
-    .read(java.lang.Boolean|IResolvable)
-    .version(java.lang.String)
-    .write(java.lang.Boolean|IResolvable)
-//  .retentionPolicyDays(java.lang.Number)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.delete">delete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.read">read</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.write">write</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#write StorageAccount#write}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.delete"></a>
-
-```java
-public java.lang.Boolean|IResolvable getDelete();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}.
-
----
-
-##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.read"></a>
-
-```java
-public java.lang.Boolean|IResolvable getRead();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}.
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `write`<sup>Required</sup> <a name="write" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.write"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWrite();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#write StorageAccount#write}.
-
----
-
-##### `retentionPolicyDays`<sup>Optional</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
-
----
-
-### StorageAccountQueuePropertiesMinuteMetrics <a name="StorageAccountQueuePropertiesMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesMinuteMetrics;
-
-StorageAccountQueuePropertiesMinuteMetrics.builder()
-    .enabled(java.lang.Boolean|IResolvable)
-    .version(java.lang.String)
-//  .includeApis(java.lang.Boolean|IResolvable)
-//  .retentionPolicyDays(java.lang.Number)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.version">version</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.includeApis">includeApis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.enabled"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabled();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}.
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `includeApis`<sup>Optional</sup> <a name="includeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.includeApis"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApis();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}.
-
----
-
-##### `retentionPolicyDays`<sup>Optional</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}.
 
 ---
 
@@ -5281,9 +4721,9 @@ StorageAccountRouting.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.choice">choice</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#choice StorageAccount#choice}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishInternetEndpoints">publishInternetEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishMicrosoftEndpoints">publishMicrosoftEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.choice">choice</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#choice StorageAccount#choice}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishInternetEndpoints">publishInternetEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishMicrosoftEndpoints">publishMicrosoftEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}. |
 
 ---
 
@@ -5295,7 +4735,7 @@ public java.lang.String getChoice();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#choice StorageAccount#choice}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#choice StorageAccount#choice}.
 
 ---
 
@@ -5307,7 +4747,7 @@ public java.lang.Boolean|IResolvable getPublishInternetEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}.
 
 ---
 
@@ -5319,7 +4759,7 @@ public java.lang.Boolean|IResolvable getPublishMicrosoftEndpoints();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}.
 
 ---
 
@@ -5340,8 +4780,8 @@ StorageAccountSasPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationPeriod">expirationPeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationAction">expirationAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationPeriod">expirationPeriod</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationAction">expirationAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}. |
 
 ---
 
@@ -5353,7 +4793,7 @@ public java.lang.String getExpirationPeriod();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}.
 
 ---
 
@@ -5365,7 +4805,7 @@ public java.lang.String getExpirationAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}.
 
 ---
 
@@ -5403,7 +4843,7 @@ public IResolvable|java.util.List<StorageAccountSharePropertiesCorsRule> getCors
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
 
 ---
 
@@ -5417,7 +4857,7 @@ public StorageAccountSharePropertiesRetentionPolicy getRetentionPolicy();
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
 
 ---
 
@@ -5431,7 +4871,7 @@ public StorageAccountSharePropertiesSmb getSmb();
 
 smb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#smb StorageAccount#smb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#smb StorageAccount#smb}
 
 ---
 
@@ -5455,11 +4895,11 @@ StorageAccountSharePropertiesCorsRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
 
 ---
 
@@ -5471,7 +4911,7 @@ public java.util.List<java.lang.String> getAllowedHeaders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
 
 ---
 
@@ -5483,7 +4923,7 @@ public java.util.List<java.lang.String> getAllowedMethods();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
 
 ---
 
@@ -5495,7 +4935,7 @@ public java.util.List<java.lang.String> getAllowedOrigins();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
 
 ---
 
@@ -5507,7 +4947,7 @@ public java.util.List<java.lang.String> getExposedHeaders();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
 
 ---
 
@@ -5519,7 +4959,7 @@ public java.lang.Number getMaxAgeInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
 
 ---
 
@@ -5539,7 +4979,7 @@ StorageAccountSharePropertiesRetentionPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicy.property.days">days</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -5551,7 +4991,7 @@ public java.lang.Number getDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -5575,11 +5015,11 @@ StorageAccountSharePropertiesSmb.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.authenticationTypes">authenticationTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.channelEncryptionType">channelEncryptionType</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.kerberosTicketEncryptionType">kerberosTicketEncryptionType</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.multichannelEnabled">multichannelEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.versions">versions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versions StorageAccount#versions}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.authenticationTypes">authenticationTypes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.channelEncryptionType">channelEncryptionType</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.kerberosTicketEncryptionType">kerberosTicketEncryptionType</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.multichannelEnabled">multichannelEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.versions">versions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versions StorageAccount#versions}. |
 
 ---
 
@@ -5591,7 +5031,7 @@ public java.util.List<java.lang.String> getAuthenticationTypes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}.
 
 ---
 
@@ -5603,7 +5043,7 @@ public java.util.List<java.lang.String> getChannelEncryptionType();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}.
 
 ---
 
@@ -5615,7 +5055,7 @@ public java.util.List<java.lang.String> getKerberosTicketEncryptionType();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}.
 
 ---
 
@@ -5627,7 +5067,7 @@ public java.lang.Boolean|IResolvable getMultichannelEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}.
 
 ---
 
@@ -5639,53 +5079,7 @@ public java.util.List<java.lang.String> getVersions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versions StorageAccount#versions}.
-
----
-
-### StorageAccountStaticWebsite <a name="StorageAccountStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountStaticWebsite;
-
-StorageAccountStaticWebsite.builder()
-//  .error404Document(java.lang.String)
-//  .indexDocument(java.lang.String)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.error404Document">error404Document</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#error_404_document StorageAccount#error_404_document}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.indexDocument">indexDocument</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#index_document StorageAccount#index_document}. |
-
----
-
-##### `error404Document`<sup>Optional</sup> <a name="error404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.error404Document"></a>
-
-```java
-public java.lang.String getError404Document();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#error_404_document StorageAccount#error_404_document}.
-
----
-
-##### `indexDocument`<sup>Optional</sup> <a name="indexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.indexDocument"></a>
-
-```java
-public java.lang.String getIndexDocument();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#index_document StorageAccount#index_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versions StorageAccount#versions}.
 
 ---
 
@@ -5708,10 +5102,10 @@ StorageAccountTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#create StorageAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#update StorageAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#create StorageAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete StorageAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#read StorageAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#update StorageAccount#update}. |
 
 ---
 
@@ -5723,7 +5117,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#create StorageAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#create StorageAccount#create}.
 
 ---
 
@@ -5735,7 +5129,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete StorageAccount#delete}.
 
 ---
 
@@ -5747,7 +5141,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#read StorageAccount#read}.
 
 ---
 
@@ -5759,7 +5153,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#update StorageAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#update StorageAccount#update}.
 
 ---
 
@@ -8821,8 +8215,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetKeyVaultKeyId">resetKeyVaultKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetManagedHsmKeyId">resetManagedHsmKeyId</a></code> | *No description.* |
 
 ---
 
@@ -8976,18 +8368,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetKeyVaultKeyId` <a name="resetKeyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetKeyVaultKeyId"></a>
-
-```java
-public void resetKeyVaultKeyId()
-```
-
-##### `resetManagedHsmKeyId` <a name="resetManagedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetManagedHsmKeyId"></a>
-
-```java
-public void resetManagedHsmKeyId()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -8996,10 +8376,8 @@ public void resetManagedHsmKeyId()
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.keyVaultKeyIdInput">keyVaultKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyIdInput">managedHsmKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityIdInput">userAssignedIdentityIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyId">managedHsmKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey">StorageAccountCustomerManagedKey</a></code> | *No description.* |
 
@@ -9039,16 +8417,6 @@ public java.lang.String getKeyVaultKeyIdInput();
 
 ---
 
-##### `managedHsmKeyIdInput`<sup>Optional</sup> <a name="managedHsmKeyIdInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyIdInput"></a>
-
-```java
-public java.lang.String getManagedHsmKeyIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `userAssignedIdentityIdInput`<sup>Optional</sup> <a name="userAssignedIdentityIdInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityIdInput"></a>
 
 ```java
@@ -9063,16 +8431,6 @@ public java.lang.String getUserAssignedIdentityIdInput();
 
 ```java
 public java.lang.String getKeyVaultKeyId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `managedHsmKeyId`<sup>Required</sup> <a name="managedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyId"></a>
-
-```java
-public java.lang.String getManagedHsmKeyId();
 ```
 
 - *Type:* java.lang.String
@@ -10611,2028 +9969,6 @@ public IResolvable|StorageAccountNetworkRulesPrivateLinkAccess getInternalValue(
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess">StorageAccountNetworkRulesPrivateLinkAccess</a>
-
----
-
-
-### StorageAccountQueuePropertiesCorsRuleList <a name="StorageAccountQueuePropertiesCorsRuleList" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesCorsRuleList;
-
-new StorageAccountQueuePropertiesCorsRuleList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get"></a>
-
-```java
-public StorageAccountQueuePropertiesCorsRuleOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.internalValue"></a>
-
-```java
-public IResolvable|java.util.List<StorageAccountQueuePropertiesCorsRule> getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>>
-
----
-
-
-### StorageAccountQueuePropertiesCorsRuleOutputReference <a name="StorageAccountQueuePropertiesCorsRuleOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesCorsRuleOutputReference;
-
-new StorageAccountQueuePropertiesCorsRuleOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeadersInput">allowedHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethodsInput">allowedMethodsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOriginsInput">allowedOriginsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeadersInput">exposedHeadersInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSecondsInput">maxAgeInSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeaders">allowedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethods">allowedMethods</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOrigins">allowedOrigins</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeaders">exposedHeaders</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSeconds">maxAgeInSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `allowedHeadersInput`<sup>Optional</sup> <a name="allowedHeadersInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeadersInput"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedHeadersInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `allowedMethodsInput`<sup>Optional</sup> <a name="allowedMethodsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethodsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedMethodsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `allowedOriginsInput`<sup>Optional</sup> <a name="allowedOriginsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOriginsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedOriginsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `exposedHeadersInput`<sup>Optional</sup> <a name="exposedHeadersInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeadersInput"></a>
-
-```java
-public java.util.List<java.lang.String> getExposedHeadersInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `maxAgeInSecondsInput`<sup>Optional</sup> <a name="maxAgeInSecondsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSecondsInput"></a>
-
-```java
-public java.lang.Number getMaxAgeInSecondsInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `allowedHeaders`<sup>Required</sup> <a name="allowedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeaders"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedHeaders();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `allowedMethods`<sup>Required</sup> <a name="allowedMethods" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethods"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedMethods();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `allowedOrigins`<sup>Required</sup> <a name="allowedOrigins" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOrigins"></a>
-
-```java
-public java.util.List<java.lang.String> getAllowedOrigins();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `exposedHeaders`<sup>Required</sup> <a name="exposedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeaders"></a>
-
-```java
-public java.util.List<java.lang.String> getExposedHeaders();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `maxAgeInSeconds`<sup>Required</sup> <a name="maxAgeInSeconds" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSeconds"></a>
-
-```java
-public java.lang.Number getMaxAgeInSeconds();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|StorageAccountQueuePropertiesCorsRule getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>
-
----
-
-
-### StorageAccountQueuePropertiesHourMetricsOutputReference <a name="StorageAccountQueuePropertiesHourMetricsOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesHourMetricsOutputReference;
-
-new StorageAccountQueuePropertiesHourMetricsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetIncludeApis">resetIncludeApis</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetRetentionPolicyDays">resetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetIncludeApis` <a name="resetIncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetIncludeApis"></a>
-
-```java
-public void resetIncludeApis()
-```
-
-##### `resetRetentionPolicyDays` <a name="resetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetRetentionPolicyDays"></a>
-
-```java
-public void resetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApisInput">includeApisInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDaysInput">retentionPolicyDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApis">includeApis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabledInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabledInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `includeApisInput`<sup>Optional</sup> <a name="includeApisInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApisInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApisInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDaysInput`<sup>Optional</sup> <a name="retentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDaysInput"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDaysInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `versionInput`<sup>Optional</sup> <a name="versionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.versionInput"></a>
-
-```java
-public java.lang.String getVersionInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabled"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabled();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `includeApis`<sup>Required</sup> <a name="includeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApis"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApis();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDays`<sup>Required</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.internalValue"></a>
-
-```java
-public StorageAccountQueuePropertiesHourMetrics getInternalValue();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-
-### StorageAccountQueuePropertiesLoggingOutputReference <a name="StorageAccountQueuePropertiesLoggingOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesLoggingOutputReference;
-
-new StorageAccountQueuePropertiesLoggingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resetRetentionPolicyDays">resetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetRetentionPolicyDays` <a name="resetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resetRetentionPolicyDays"></a>
-
-```java
-public void resetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.readInput">readInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDaysInput">retentionPolicyDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.writeInput">writeInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.delete">delete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.read">read</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.write">write</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.deleteInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getDeleteInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `readInput`<sup>Optional</sup> <a name="readInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.readInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getReadInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDaysInput`<sup>Optional</sup> <a name="retentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDaysInput"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDaysInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `versionInput`<sup>Optional</sup> <a name="versionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.versionInput"></a>
-
-```java
-public java.lang.String getVersionInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `writeInput`<sup>Optional</sup> <a name="writeInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.writeInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWriteInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.delete"></a>
-
-```java
-public java.lang.Boolean|IResolvable getDelete();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.read"></a>
-
-```java
-public java.lang.Boolean|IResolvable getRead();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDays`<sup>Required</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `write`<sup>Required</sup> <a name="write" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.write"></a>
-
-```java
-public java.lang.Boolean|IResolvable getWrite();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.internalValue"></a>
-
-```java
-public StorageAccountQueuePropertiesLogging getInternalValue();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-
-### StorageAccountQueuePropertiesMinuteMetricsOutputReference <a name="StorageAccountQueuePropertiesMinuteMetricsOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesMinuteMetricsOutputReference;
-
-new StorageAccountQueuePropertiesMinuteMetricsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetIncludeApis">resetIncludeApis</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetRetentionPolicyDays">resetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetIncludeApis` <a name="resetIncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetIncludeApis"></a>
-
-```java
-public void resetIncludeApis()
-```
-
-##### `resetRetentionPolicyDays` <a name="resetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetRetentionPolicyDays"></a>
-
-```java
-public void resetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApisInput">includeApisInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDaysInput">retentionPolicyDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApis">includeApis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDays">retentionPolicyDays</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabledInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabledInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `includeApisInput`<sup>Optional</sup> <a name="includeApisInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApisInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApisInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDaysInput`<sup>Optional</sup> <a name="retentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDaysInput"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDaysInput();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `versionInput`<sup>Optional</sup> <a name="versionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.versionInput"></a>
-
-```java
-public java.lang.String getVersionInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabled"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnabled();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `includeApis`<sup>Required</sup> <a name="includeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApis"></a>
-
-```java
-public java.lang.Boolean|IResolvable getIncludeApis();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `retentionPolicyDays`<sup>Required</sup> <a name="retentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDays"></a>
-
-```java
-public java.lang.Number getRetentionPolicyDays();
-```
-
-- *Type:* java.lang.Number
-
----
-
-##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.version"></a>
-
-```java
-public java.lang.String getVersion();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.internalValue"></a>
-
-```java
-public StorageAccountQueuePropertiesMinuteMetrics getInternalValue();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-
-### StorageAccountQueuePropertiesOutputReference <a name="StorageAccountQueuePropertiesOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountQueuePropertiesOutputReference;
-
-new StorageAccountQueuePropertiesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule">putCorsRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics">putHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging">putLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics">putMinuteMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetCorsRule">resetCorsRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetHourMetrics">resetHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetLogging">resetLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetMinuteMetrics">resetMinuteMetrics</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `putCorsRule` <a name="putCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule"></a>
-
-```java
-public void putCorsRule(IResolvable|java.util.List<StorageAccountQueuePropertiesCorsRule> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule.parameter.value"></a>
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>>
-
----
-
-##### `putHourMetrics` <a name="putHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics"></a>
-
-```java
-public void putHourMetrics(StorageAccountQueuePropertiesHourMetrics value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-##### `putLogging` <a name="putLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging"></a>
-
-```java
-public void putLogging(StorageAccountQueuePropertiesLogging value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-##### `putMinuteMetrics` <a name="putMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics"></a>
-
-```java
-public void putMinuteMetrics(StorageAccountQueuePropertiesMinuteMetrics value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-##### `resetCorsRule` <a name="resetCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetCorsRule"></a>
-
-```java
-public void resetCorsRule()
-```
-
-##### `resetHourMetrics` <a name="resetHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetHourMetrics"></a>
-
-```java
-public void resetHourMetrics()
-```
-
-##### `resetLogging` <a name="resetLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetLogging"></a>
-
-```java
-public void resetLogging()
-```
-
-##### `resetMinuteMetrics` <a name="resetMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetMinuteMetrics"></a>
-
-```java
-public void resetMinuteMetrics()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRule">corsRule</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList">StorageAccountQueuePropertiesCorsRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetrics">hourMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference">StorageAccountQueuePropertiesHourMetricsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.logging">logging</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference">StorageAccountQueuePropertiesLoggingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetrics">minuteMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference">StorageAccountQueuePropertiesMinuteMetricsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRuleInput">corsRuleInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetricsInput">hourMetricsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.loggingInput">loggingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetricsInput">minuteMetricsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `corsRule`<sup>Required</sup> <a name="corsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRule"></a>
-
-```java
-public StorageAccountQueuePropertiesCorsRuleList getCorsRule();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList">StorageAccountQueuePropertiesCorsRuleList</a>
-
----
-
-##### `hourMetrics`<sup>Required</sup> <a name="hourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetrics"></a>
-
-```java
-public StorageAccountQueuePropertiesHourMetricsOutputReference getHourMetrics();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference">StorageAccountQueuePropertiesHourMetricsOutputReference</a>
-
----
-
-##### `logging`<sup>Required</sup> <a name="logging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.logging"></a>
-
-```java
-public StorageAccountQueuePropertiesLoggingOutputReference getLogging();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference">StorageAccountQueuePropertiesLoggingOutputReference</a>
-
----
-
-##### `minuteMetrics`<sup>Required</sup> <a name="minuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetrics"></a>
-
-```java
-public StorageAccountQueuePropertiesMinuteMetricsOutputReference getMinuteMetrics();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference">StorageAccountQueuePropertiesMinuteMetricsOutputReference</a>
-
----
-
-##### `corsRuleInput`<sup>Optional</sup> <a name="corsRuleInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRuleInput"></a>
-
-```java
-public IResolvable|java.util.List<StorageAccountQueuePropertiesCorsRule> getCorsRuleInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule">StorageAccountQueuePropertiesCorsRule</a>>
-
----
-
-##### `hourMetricsInput`<sup>Optional</sup> <a name="hourMetricsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetricsInput"></a>
-
-```java
-public StorageAccountQueuePropertiesHourMetrics getHourMetricsInput();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-##### `loggingInput`<sup>Optional</sup> <a name="loggingInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.loggingInput"></a>
-
-```java
-public StorageAccountQueuePropertiesLogging getLoggingInput();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-##### `minuteMetricsInput`<sup>Optional</sup> <a name="minuteMetricsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetricsInput"></a>
-
-```java
-public StorageAccountQueuePropertiesMinuteMetrics getMinuteMetricsInput();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.internalValue"></a>
-
-```java
-public StorageAccountQueueProperties getInternalValue();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
 
 ---
 
@@ -14853,313 +12189,6 @@ public StorageAccountSharePropertiesSmb getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb">StorageAccountSharePropertiesSmb</a>
-
----
-
-
-### StorageAccountStaticWebsiteOutputReference <a name="StorageAccountStaticWebsiteOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.storage_account.StorageAccountStaticWebsiteOutputReference;
-
-new StorageAccountStaticWebsiteOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetError404Document">resetError404Document</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetIndexDocument">resetIndexDocument</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetError404Document` <a name="resetError404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetError404Document"></a>
-
-```java
-public void resetError404Document()
-```
-
-##### `resetIndexDocument` <a name="resetIndexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetIndexDocument"></a>
-
-```java
-public void resetIndexDocument()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404DocumentInput">error404DocumentInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocumentInput">indexDocumentInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404Document">error404Document</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocument">indexDocument</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `error404DocumentInput`<sup>Optional</sup> <a name="error404DocumentInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404DocumentInput"></a>
-
-```java
-public java.lang.String getError404DocumentInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `indexDocumentInput`<sup>Optional</sup> <a name="indexDocumentInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocumentInput"></a>
-
-```java
-public java.lang.String getIndexDocumentInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `error404Document`<sup>Required</sup> <a name="error404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404Document"></a>
-
-```java
-public java.lang.String getError404Document();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `indexDocument`<sup>Required</sup> <a name="indexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocument"></a>
-
-```java
-public java.lang.String getIndexDocument();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.internalValue"></a>
-
-```java
-public StorageAccountStaticWebsite getInternalValue();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApplicationInsights <a name="ApplicationInsights" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights azurerm_application_insights}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights azurerm_application_insights}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.Initializer"></a>
 
@@ -76,15 +76,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDailyDataCapInGb">resetDailyDataCapInGb</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDailyDataCapNotificationsDisabled">resetDailyDataCapNotificationsDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDailyDataCapNotificationsEnabled">resetDailyDataCapNotificationsEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDisableIpMasking">resetDisableIpMasking</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetForceCustomerStorageForProfiler">resetForceCustomerStorageForProfiler</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetInternetIngestionEnabled">resetInternetIngestionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetInternetQueryEnabled">resetInternetQueryEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetIpMaskingEnabled">resetIpMaskingEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetLocalAuthenticationDisabled">resetLocalAuthenticationDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetLocalAuthenticationEnabled">resetLocalAuthenticationEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetRetentionInDays">resetRetentionInDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetSamplingPercentage">resetSamplingPercentage</a></code> | *No description.* |
@@ -421,22 +418,10 @@ public putTimeouts(value: ApplicationInsightsTimeouts): void
 public resetDailyDataCapInGb(): void
 ```
 
-##### `resetDailyDataCapNotificationsDisabled` <a name="resetDailyDataCapNotificationsDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDailyDataCapNotificationsDisabled"></a>
-
-```typescript
-public resetDailyDataCapNotificationsDisabled(): void
-```
-
 ##### `resetDailyDataCapNotificationsEnabled` <a name="resetDailyDataCapNotificationsEnabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDailyDataCapNotificationsEnabled"></a>
 
 ```typescript
 public resetDailyDataCapNotificationsEnabled(): void
-```
-
-##### `resetDisableIpMasking` <a name="resetDisableIpMasking" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetDisableIpMasking"></a>
-
-```typescript
-public resetDisableIpMasking(): void
 ```
 
 ##### `resetForceCustomerStorageForProfiler` <a name="resetForceCustomerStorageForProfiler" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetForceCustomerStorageForProfiler"></a>
@@ -467,12 +452,6 @@ public resetInternetQueryEnabled(): void
 
 ```typescript
 public resetIpMaskingEnabled(): void
-```
-
-##### `resetLocalAuthenticationDisabled` <a name="resetLocalAuthenticationDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetLocalAuthenticationDisabled"></a>
-
-```typescript
-public resetLocalAuthenticationDisabled(): void
 ```
 
 ##### `resetLocalAuthenticationEnabled` <a name="resetLocalAuthenticationEnabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.resetLocalAuthenticationEnabled"></a>
@@ -614,7 +593,7 @@ The construct id used in the generated config for the ApplicationInsights to imp
 
 The id of the existing ApplicationInsights that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,15 +629,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeoutsOutputReference">ApplicationInsightsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.applicationTypeInput">applicationTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapInGbInput">dailyDataCapInGbInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsDisabledInput">dailyDataCapNotificationsDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsEnabledInput">dailyDataCapNotificationsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.disableIpMaskingInput">disableIpMaskingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.forceCustomerStorageForProfilerInput">forceCustomerStorageForProfilerInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.internetIngestionEnabledInput">internetIngestionEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.internetQueryEnabledInput">internetQueryEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.ipMaskingEnabledInput">ipMaskingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationDisabledInput">localAuthenticationDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationEnabledInput">localAuthenticationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -670,15 +646,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.workspaceIdInput">workspaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.applicationType">applicationType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapInGb">dailyDataCapInGb</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsDisabled">dailyDataCapNotificationsDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsEnabled">dailyDataCapNotificationsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.disableIpMasking">disableIpMasking</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.forceCustomerStorageForProfiler">forceCustomerStorageForProfiler</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.internetIngestionEnabled">internetIngestionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.internetQueryEnabled">internetQueryEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.ipMaskingEnabled">ipMaskingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationDisabled">localAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationEnabled">localAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -892,30 +865,10 @@ public readonly dailyDataCapInGbInput: number;
 
 ---
 
-##### `dailyDataCapNotificationsDisabledInput`<sup>Optional</sup> <a name="dailyDataCapNotificationsDisabledInput" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsDisabledInput"></a>
-
-```typescript
-public readonly dailyDataCapNotificationsDisabledInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
 ##### `dailyDataCapNotificationsEnabledInput`<sup>Optional</sup> <a name="dailyDataCapNotificationsEnabledInput" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsEnabledInput"></a>
 
 ```typescript
 public readonly dailyDataCapNotificationsEnabledInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
-##### `disableIpMaskingInput`<sup>Optional</sup> <a name="disableIpMaskingInput" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.disableIpMaskingInput"></a>
-
-```typescript
-public readonly disableIpMaskingInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
@@ -966,16 +919,6 @@ public readonly internetQueryEnabledInput: boolean | IResolvable;
 
 ```typescript
 public readonly ipMaskingEnabledInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
-##### `localAuthenticationDisabledInput`<sup>Optional</sup> <a name="localAuthenticationDisabledInput" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationDisabledInput"></a>
-
-```typescript
-public readonly localAuthenticationDisabledInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
@@ -1092,30 +1035,10 @@ public readonly dailyDataCapInGb: number;
 
 ---
 
-##### `dailyDataCapNotificationsDisabled`<sup>Required</sup> <a name="dailyDataCapNotificationsDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsDisabled"></a>
-
-```typescript
-public readonly dailyDataCapNotificationsDisabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
 ##### `dailyDataCapNotificationsEnabled`<sup>Required</sup> <a name="dailyDataCapNotificationsEnabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.dailyDataCapNotificationsEnabled"></a>
 
 ```typescript
 public readonly dailyDataCapNotificationsEnabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
-##### `disableIpMasking`<sup>Required</sup> <a name="disableIpMasking" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.disableIpMasking"></a>
-
-```typescript
-public readonly disableIpMasking: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
@@ -1166,16 +1089,6 @@ public readonly internetQueryEnabled: boolean | IResolvable;
 
 ```typescript
 public readonly ipMaskingEnabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
-##### `localAuthenticationDisabled`<sup>Required</sup> <a name="localAuthenticationDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.property.localAuthenticationDisabled"></a>
-
-```typescript
-public readonly localAuthenticationDisabled: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
@@ -1303,26 +1216,23 @@ const applicationInsightsConfig: applicationInsights.ApplicationInsightsConfig =
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.applicationType">applicationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#application_type ApplicationInsights#application_type}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#location ApplicationInsights#location}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#name ApplicationInsights#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapInGb">dailyDataCapInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapNotificationsDisabled">dailyDataCapNotificationsDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_notifications_disabled ApplicationInsights#daily_data_cap_notifications_disabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapNotificationsEnabled">dailyDataCapNotificationsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_notifications_enabled ApplicationInsights#daily_data_cap_notifications_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.disableIpMasking">disableIpMasking</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#disable_ip_masking ApplicationInsights#disable_ip_masking}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.forceCustomerStorageForProfiler">forceCustomerStorageForProfiler</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#id ApplicationInsights#id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.internetIngestionEnabled">internetIngestionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.internetQueryEnabled">internetQueryEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.ipMaskingEnabled">ipMaskingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#ip_masking_enabled ApplicationInsights#ip_masking_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.localAuthenticationDisabled">localAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#local_authentication_disabled ApplicationInsights#local_authentication_disabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.localAuthenticationEnabled">localAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#local_authentication_enabled ApplicationInsights#local_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.retentionInDays">retentionInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.samplingPercentage">samplingPercentage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#tags ApplicationInsights#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.applicationType">applicationType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#application_type ApplicationInsights#application_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#location ApplicationInsights#location}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#name ApplicationInsights#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapInGb">dailyDataCapInGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapNotificationsEnabled">dailyDataCapNotificationsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#daily_data_cap_notifications_enabled ApplicationInsights#daily_data_cap_notifications_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.forceCustomerStorageForProfiler">forceCustomerStorageForProfiler</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#id ApplicationInsights#id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.internetIngestionEnabled">internetIngestionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.internetQueryEnabled">internetQueryEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.ipMaskingEnabled">ipMaskingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#ip_masking_enabled ApplicationInsights#ip_masking_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.localAuthenticationEnabled">localAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#local_authentication_enabled ApplicationInsights#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.retentionInDays">retentionInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.samplingPercentage">samplingPercentage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#tags ApplicationInsights#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts">ApplicationInsightsTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}. |
 
 ---
 
@@ -1404,7 +1314,7 @@ public readonly applicationType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#application_type ApplicationInsights#application_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#application_type ApplicationInsights#application_type}.
 
 ---
 
@@ -1416,7 +1326,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#location ApplicationInsights#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#location ApplicationInsights#location}.
 
 ---
 
@@ -1428,7 +1338,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#name ApplicationInsights#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#name ApplicationInsights#name}.
 
 ---
 
@@ -1440,7 +1350,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#resource_group_name ApplicationInsights#resource_group_name}.
 
 ---
 
@@ -1452,19 +1362,7 @@ public readonly dailyDataCapInGb: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}.
-
----
-
-##### `dailyDataCapNotificationsDisabled`<sup>Optional</sup> <a name="dailyDataCapNotificationsDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.dailyDataCapNotificationsDisabled"></a>
-
-```typescript
-public readonly dailyDataCapNotificationsDisabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_notifications_disabled ApplicationInsights#daily_data_cap_notifications_disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#daily_data_cap_in_gb ApplicationInsights#daily_data_cap_in_gb}.
 
 ---
 
@@ -1476,19 +1374,7 @@ public readonly dailyDataCapNotificationsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#daily_data_cap_notifications_enabled ApplicationInsights#daily_data_cap_notifications_enabled}.
-
----
-
-##### `disableIpMasking`<sup>Optional</sup> <a name="disableIpMasking" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.disableIpMasking"></a>
-
-```typescript
-public readonly disableIpMasking: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#disable_ip_masking ApplicationInsights#disable_ip_masking}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#daily_data_cap_notifications_enabled ApplicationInsights#daily_data_cap_notifications_enabled}.
 
 ---
 
@@ -1500,7 +1386,7 @@ public readonly forceCustomerStorageForProfiler: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#force_customer_storage_for_profiler ApplicationInsights#force_customer_storage_for_profiler}.
 
 ---
 
@@ -1512,7 +1398,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#id ApplicationInsights#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#id ApplicationInsights#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1527,7 +1413,7 @@ public readonly internetIngestionEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#internet_ingestion_enabled ApplicationInsights#internet_ingestion_enabled}.
 
 ---
 
@@ -1539,7 +1425,7 @@ public readonly internetQueryEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#internet_query_enabled ApplicationInsights#internet_query_enabled}.
 
 ---
 
@@ -1551,19 +1437,7 @@ public readonly ipMaskingEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#ip_masking_enabled ApplicationInsights#ip_masking_enabled}.
-
----
-
-##### `localAuthenticationDisabled`<sup>Optional</sup> <a name="localAuthenticationDisabled" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.property.localAuthenticationDisabled"></a>
-
-```typescript
-public readonly localAuthenticationDisabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#local_authentication_disabled ApplicationInsights#local_authentication_disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#ip_masking_enabled ApplicationInsights#ip_masking_enabled}.
 
 ---
 
@@ -1575,7 +1449,7 @@ public readonly localAuthenticationEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#local_authentication_enabled ApplicationInsights#local_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#local_authentication_enabled ApplicationInsights#local_authentication_enabled}.
 
 ---
 
@@ -1587,7 +1461,7 @@ public readonly retentionInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#retention_in_days ApplicationInsights#retention_in_days}.
 
 ---
 
@@ -1599,7 +1473,7 @@ public readonly samplingPercentage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#sampling_percentage ApplicationInsights#sampling_percentage}.
 
 ---
 
@@ -1611,7 +1485,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#tags ApplicationInsights#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#tags ApplicationInsights#tags}.
 
 ---
 
@@ -1625,7 +1499,7 @@ public readonly timeouts: ApplicationInsightsTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#timeouts ApplicationInsights#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#timeouts ApplicationInsights#timeouts}
 
 ---
 
@@ -1637,7 +1511,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#workspace_id ApplicationInsights#workspace_id}.
 
 ---
 
@@ -1655,10 +1529,10 @@ const applicationInsightsTimeouts: applicationInsights.ApplicationInsightsTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#create ApplicationInsights#create}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#delete ApplicationInsights#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#read ApplicationInsights#read}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#update ApplicationInsights#update}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#create ApplicationInsights#create}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#delete ApplicationInsights#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#read ApplicationInsights#read}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#update ApplicationInsights#update}. |
 
 ---
 
@@ -1670,7 +1544,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#create ApplicationInsights#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#create ApplicationInsights#create}.
 
 ---
 
@@ -1682,7 +1556,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#delete ApplicationInsights#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#delete ApplicationInsights#delete}.
 
 ---
 
@@ -1694,7 +1568,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#read ApplicationInsights#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#read ApplicationInsights#read}.
 
 ---
 
@@ -1706,7 +1580,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/application_insights#update ApplicationInsights#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/application_insights#update ApplicationInsights#update}.
 
 ---
 

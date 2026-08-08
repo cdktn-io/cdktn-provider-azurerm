@@ -4,7 +4,7 @@
 
 ### StorageTable <a name="StorageTable" id="@cdktn/provider-azurerm.storageTable.StorageTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table azurerm_storage_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table azurerm_storage_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageTable.StorageTable.Initializer"></a>
 
@@ -78,8 +78,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.resetAcl">ResetAcl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.resetStorageAccountId">ResetStorageAccountId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.resetStorageAccountName">ResetStorageAccountName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -429,18 +427,6 @@ private void ResetAcl()
 private void ResetId()
 ```
 
-##### `ResetStorageAccountId` <a name="ResetStorageAccountId" id="@cdktn/provider-azurerm.storageTable.StorageTable.resetStorageAccountId"></a>
-
-```csharp
-private void ResetStorageAccountId()
-```
-
-##### `ResetStorageAccountName` <a name="ResetStorageAccountName" id="@cdktn/provider-azurerm.storageTable.StorageTable.resetStorageAccountName"></a>
-
-```csharp
-private void ResetStorageAccountName()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.storageTable.StorageTable.resetTimeouts"></a>
 
 ```csharp
@@ -550,7 +536,7 @@ The construct id used in the generated config for the StorageTable to import.
 
 The id of the existing StorageTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,12 +573,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountIdInput">StorageAccountIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountNameInput">StorageAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts">StorageTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountId">StorageAccountId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -808,16 +792,6 @@ public string StorageAccountIdInput { get; }
 
 ---
 
-##### `StorageAccountNameInput`<sup>Optional</sup> <a name="StorageAccountNameInput" id="@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountNameInput"></a>
-
-```csharp
-public string StorageAccountNameInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.storageTable.StorageTable.property.timeoutsInput"></a>
 
 ```csharp
@@ -852,16 +826,6 @@ public string Name { get; }
 
 ```csharp
 public string StorageAccountId { get; }
-```
-
-- *Type:* string
-
----
-
-##### `StorageAccountName`<sup>Required</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.storageTable.StorageTable.property.storageAccountName"></a>
-
-```csharp
-public string StorageAccountName { get; }
 ```
 
 - *Type:* string
@@ -905,7 +869,7 @@ new StorageTableAcl {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAcl.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#id StorageTable#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAcl.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#id StorageTable#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAcl.property.accessPolicy">AccessPolicy</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy">StorageTableAclAccessPolicy</a>[]</code> | access_policy block. |
 
 ---
@@ -918,7 +882,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#id StorageTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#id StorageTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +899,7 @@ public IResolvable|StorageTableAclAccessPolicy[] AccessPolicy { get; set; }
 
 access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#access_policy StorageTable#access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#access_policy StorageTable#access_policy}
 
 ---
 
@@ -957,9 +921,9 @@ new StorageTableAclAccessPolicy {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.expiry">Expiry</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#expiry StorageTable#expiry}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.permissions">Permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#permissions StorageTable#permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.start">Start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#start StorageTable#start}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.expiry">Expiry</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#expiry StorageTable#expiry}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.permissions">Permissions</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#permissions StorageTable#permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableAclAccessPolicy.property.start">Start</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#start StorageTable#start}. |
 
 ---
 
@@ -971,7 +935,7 @@ public string Expiry { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#expiry StorageTable#expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#expiry StorageTable#expiry}.
 
 ---
 
@@ -983,7 +947,7 @@ public string Permissions { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#permissions StorageTable#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#permissions StorageTable#permissions}.
 
 ---
 
@@ -995,7 +959,7 @@ public string Start { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#start StorageTable#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#start StorageTable#start}.
 
 ---
 
@@ -1015,10 +979,9 @@ new StorageTableConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
+    string StorageAccountId,
     IResolvable|StorageTableAcl[] Acl = null,
     string Id = null,
-    string StorageAccountId = null,
-    string StorageAccountName = null,
     StorageTableTimeouts Timeouts = null
 };
 ```
@@ -1034,11 +997,10 @@ new StorageTableConfig {
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#name StorageTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#name StorageTable#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountId">StorageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.acl">Acl</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageTable.StorageTableAcl">StorageTableAcl</a>[]</code> | acl block. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#id StorageTable#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountId">StorageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#storage_account_name StorageTable#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#id StorageTable#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts">StorageTableTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1121,7 +1083,19 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#name StorageTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#name StorageTable#name}.
+
+---
+
+##### `StorageAccountId`<sup>Required</sup> <a name="StorageAccountId" id="@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountId"></a>
+
+```csharp
+public string StorageAccountId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}.
 
 ---
 
@@ -1135,7 +1109,7 @@ public IResolvable|StorageTableAcl[] Acl { get; set; }
 
 acl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#acl StorageTable#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#acl StorageTable#acl}
 
 ---
 
@@ -1147,34 +1121,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#id StorageTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#id StorageTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `StorageAccountId`<sup>Optional</sup> <a name="StorageAccountId" id="@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountId"></a>
-
-```csharp
-public string StorageAccountId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#storage_account_id StorageTable#storage_account_id}.
-
----
-
-##### `StorageAccountName`<sup>Optional</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.storageTable.StorageTableConfig.property.storageAccountName"></a>
-
-```csharp
-public string StorageAccountName { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#storage_account_name StorageTable#storage_account_name}.
 
 ---
 
@@ -1188,7 +1138,7 @@ public StorageTableTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#timeouts StorageTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#timeouts StorageTable#timeouts}
 
 ---
 
@@ -1211,10 +1161,10 @@ new StorageTableTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#create StorageTable#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#delete StorageTable#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#read StorageTable#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#update StorageTable#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#create StorageTable#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#delete StorageTable#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#read StorageTable#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageTable.StorageTableTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#update StorageTable#update}. |
 
 ---
 
@@ -1226,7 +1176,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#create StorageTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#create StorageTable#create}.
 
 ---
 
@@ -1238,7 +1188,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#delete StorageTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#delete StorageTable#delete}.
 
 ---
 
@@ -1250,7 +1200,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#read StorageTable#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#read StorageTable#read}.
 
 ---
 
@@ -1262,7 +1212,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_table#update StorageTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_table#update StorageTable#update}.
 
 ---
 

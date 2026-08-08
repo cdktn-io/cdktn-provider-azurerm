@@ -4,12 +4,12 @@
 
 ### ElasticSanVolumeGroup <a name="ElasticSanVolumeGroup" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group azurerm_elastic_san_volume_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group azurerm_elastic_san_volume_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroup(scope Construct, id *string, config ElasticSanVolumeGroupConfig) ElasticSanVolumeGroup
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.ElasticSanVolumeGroup_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.ElasticSanVolumeGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ elasticsanvolumegroup.ElasticSanVolumeGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.ElasticSanVolumeGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ elasticsanvolumegroup.ElasticSanVolumeGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.ElasticSanVolumeGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -590,7 +590,7 @@ The construct id used in the generated config for the ElasticSanVolumeGroup to i
 
 The id of the existing ElasticSanVolumeGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 &elasticsanvolumegroup.ElasticSanVolumeGroupConfig {
 	Connection: interface{},
@@ -1000,13 +1000,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 	Provisioners: *[]interface{},
 	ElasticSanId: *string,
 	Name: *string,
-	Encryption: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption,
+	Encryption: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption,
 	EncryptionType: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity,
 	NetworkRule: interface{},
 	ProtocolType: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts,
 }
 ```
 
@@ -1021,14 +1021,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.elasticSanId">ElasticSanId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#elastic_san_id ElasticSanVolumeGroup#elastic_san_id}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#name ElasticSanVolumeGroup#name}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.elasticSanId">ElasticSanId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#elastic_san_id ElasticSanVolumeGroup#elastic_san_id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#name ElasticSanVolumeGroup#name}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.encryption">Encryption</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption">ElasticSanVolumeGroupEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#encryption_type ElasticSanVolumeGroup#encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#id ElasticSanVolumeGroup#id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#encryption_type ElasticSanVolumeGroup#encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#id ElasticSanVolumeGroup#id}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity">ElasticSanVolumeGroupIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.networkRule">NetworkRule</a></code> | <code>interface{}</code> | network_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.protocolType">ProtocolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#protocol_type ElasticSanVolumeGroup#protocol_type}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.protocolType">ProtocolType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#protocol_type ElasticSanVolumeGroup#protocol_type}. |
 | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts">ElasticSanVolumeGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1111,7 +1111,7 @@ ElasticSanId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#elastic_san_id ElasticSanVolumeGroup#elastic_san_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#elastic_san_id ElasticSanVolumeGroup#elastic_san_id}.
 
 ---
 
@@ -1123,7 +1123,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#name ElasticSanVolumeGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#name ElasticSanVolumeGroup#name}.
 
 ---
 
@@ -1137,7 +1137,7 @@ Encryption ElasticSanVolumeGroupEncryption
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#encryption ElasticSanVolumeGroup#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#encryption ElasticSanVolumeGroup#encryption}
 
 ---
 
@@ -1149,7 +1149,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#encryption_type ElasticSanVolumeGroup#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#encryption_type ElasticSanVolumeGroup#encryption_type}.
 
 ---
 
@@ -1161,7 +1161,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#id ElasticSanVolumeGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#id ElasticSanVolumeGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1178,7 +1178,7 @@ Identity ElasticSanVolumeGroupIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#identity ElasticSanVolumeGroup#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#identity ElasticSanVolumeGroup#identity}
 
 ---
 
@@ -1192,7 +1192,7 @@ NetworkRule interface{}
 
 network_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#network_rule ElasticSanVolumeGroup#network_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#network_rule ElasticSanVolumeGroup#network_rule}
 
 ---
 
@@ -1204,7 +1204,7 @@ ProtocolType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#protocol_type ElasticSanVolumeGroup#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#protocol_type ElasticSanVolumeGroup#protocol_type}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Timeouts ElasticSanVolumeGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#timeouts ElasticSanVolumeGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#timeouts ElasticSanVolumeGroup#timeouts}
 
 ---
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 &elasticsanvolumegroup.ElasticSanVolumeGroupEncryption {
 	KeyVaultKeyId: *string,
@@ -1239,8 +1239,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#key_vault_key_id ElasticSanVolumeGroup#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#user_assigned_identity_id ElasticSanVolumeGroup#user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#key_vault_key_id ElasticSanVolumeGroup#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryption.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#user_assigned_identity_id ElasticSanVolumeGroup#user_assigned_identity_id}. |
 
 ---
 
@@ -1252,7 +1252,7 @@ KeyVaultKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#key_vault_key_id ElasticSanVolumeGroup#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#key_vault_key_id ElasticSanVolumeGroup#key_vault_key_id}.
 
 ---
 
@@ -1264,7 +1264,7 @@ UserAssignedIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#user_assigned_identity_id ElasticSanVolumeGroup#user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#user_assigned_identity_id ElasticSanVolumeGroup#user_assigned_identity_id}.
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 &elasticsanvolumegroup.ElasticSanVolumeGroupIdentity {
 	Type: *string,
@@ -1285,8 +1285,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#type ElasticSanVolumeGroup#type}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#identity_ids ElasticSanVolumeGroup#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#type ElasticSanVolumeGroup#type}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#identity_ids ElasticSanVolumeGroup#identity_ids}. |
 
 ---
 
@@ -1298,7 +1298,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#type ElasticSanVolumeGroup#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#type ElasticSanVolumeGroup#type}.
 
 ---
 
@@ -1310,7 +1310,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#identity_ids ElasticSanVolumeGroup#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#identity_ids ElasticSanVolumeGroup#identity_ids}.
 
 ---
 
@@ -1319,7 +1319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 &elasticsanvolumegroup.ElasticSanVolumeGroupNetworkRule {
 	SubnetId: *string,
@@ -1331,8 +1331,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRule.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#subnet_id ElasticSanVolumeGroup#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#action ElasticSanVolumeGroup#action}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRule.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#subnet_id ElasticSanVolumeGroup#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#action ElasticSanVolumeGroup#action}. |
 
 ---
 
@@ -1344,7 +1344,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#subnet_id ElasticSanVolumeGroup#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#subnet_id ElasticSanVolumeGroup#subnet_id}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#action ElasticSanVolumeGroup#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#action ElasticSanVolumeGroup#action}.
 
 ---
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 &elasticsanvolumegroup.ElasticSanVolumeGroupTimeouts {
 	Create: *string,
@@ -1379,10 +1379,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#create ElasticSanVolumeGroup#create}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#delete ElasticSanVolumeGroup#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#read ElasticSanVolumeGroup#read}. |
-| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#update ElasticSanVolumeGroup#update}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#create ElasticSanVolumeGroup#create}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#delete ElasticSanVolumeGroup#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#read ElasticSanVolumeGroup#read}. |
+| <code><a href="#@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#update ElasticSanVolumeGroup#update}. |
 
 ---
 
@@ -1394,7 +1394,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#create ElasticSanVolumeGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#create ElasticSanVolumeGroup#create}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#delete ElasticSanVolumeGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#delete ElasticSanVolumeGroup#delete}.
 
 ---
 
@@ -1418,7 +1418,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#read ElasticSanVolumeGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#read ElasticSanVolumeGroup#read}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/elastic_san_volume_group#update ElasticSanVolumeGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/elastic_san_volume_group#update ElasticSanVolumeGroup#update}.
 
 ---
 
@@ -1441,7 +1441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroupEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticSanVolumeGroupEncryptionOutputReference
 ```
@@ -1774,7 +1774,7 @@ func InternalValue() ElasticSanVolumeGroupEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroupIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticSanVolumeGroupIdentityOutputReference
 ```
@@ -2096,7 +2096,7 @@ func InternalValue() ElasticSanVolumeGroupIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroupNetworkRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticSanVolumeGroupNetworkRuleList
 ```
@@ -2256,7 +2256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupNetworkRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroupNetworkRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ElasticSanVolumeGroupNetworkRuleOutputReference
 ```
@@ -2574,7 +2574,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.elasticSanVolumeGroup.ElasticSanVolumeGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/elasticsanvolumegroup"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/elasticsanvolumegroup"
 
 elasticsanvolumegroup.NewElasticSanVolumeGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ElasticSanVolumeGroupTimeoutsOutputReference
 ```

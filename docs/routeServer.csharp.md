@@ -4,7 +4,7 @@
 
 ### RouteServer <a name="RouteServer" id="@cdktn/provider-azurerm.routeServer.RouteServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server azurerm_route_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server azurerm_route_server}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.routeServer.RouteServer.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the RouteServer to import.
 
 The id of the existing RouteServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1047,16 +1047,16 @@ new RouteServerConfig {
 | <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#location RouteServer#location}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#name RouteServer#name}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#public_ip_address_id RouteServer#public_ip_address_id}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#resource_group_name RouteServer#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#sku RouteServer#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#subnet_id RouteServer#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.branchToBranchTrafficEnabled">BranchToBranchTrafficEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#branch_to_branch_traffic_enabled RouteServer#branch_to_branch_traffic_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.hubRoutingPreference">HubRoutingPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#hub_routing_preference RouteServer#hub_routing_preference}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#id RouteServer#id}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#tags RouteServer#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#location RouteServer#location}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#name RouteServer#name}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#public_ip_address_id RouteServer#public_ip_address_id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#resource_group_name RouteServer#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#sku RouteServer#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#subnet_id RouteServer#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.branchToBranchTrafficEnabled">BranchToBranchTrafficEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#branch_to_branch_traffic_enabled RouteServer#branch_to_branch_traffic_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.hubRoutingPreference">HubRoutingPreference</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#hub_routing_preference RouteServer#hub_routing_preference}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#id RouteServer#id}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#tags RouteServer#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts">RouteServerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1139,7 +1139,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#location RouteServer#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#location RouteServer#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#name RouteServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#name RouteServer#name}.
 
 ---
 
@@ -1163,7 +1163,7 @@ public string PublicIpAddressId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#public_ip_address_id RouteServer#public_ip_address_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#public_ip_address_id RouteServer#public_ip_address_id}.
 
 ---
 
@@ -1175,7 +1175,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#resource_group_name RouteServer#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#resource_group_name RouteServer#resource_group_name}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public string Sku { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#sku RouteServer#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#sku RouteServer#sku}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#subnet_id RouteServer#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#subnet_id RouteServer#subnet_id}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public bool|IResolvable BranchToBranchTrafficEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#branch_to_branch_traffic_enabled RouteServer#branch_to_branch_traffic_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#branch_to_branch_traffic_enabled RouteServer#branch_to_branch_traffic_enabled}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public string HubRoutingPreference { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#hub_routing_preference RouteServer#hub_routing_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#hub_routing_preference RouteServer#hub_routing_preference}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#id RouteServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#id RouteServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1250,7 +1250,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#tags RouteServer#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#tags RouteServer#tags}.
 
 ---
 
@@ -1264,7 +1264,7 @@ public RouteServerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#timeouts RouteServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#timeouts RouteServer#timeouts}
 
 ---
 
@@ -1287,10 +1287,10 @@ new RouteServerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#create RouteServer#create}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#delete RouteServer#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#read RouteServer#read}. |
-| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#update RouteServer#update}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#create RouteServer#create}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#delete RouteServer#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#read RouteServer#read}. |
+| <code><a href="#@cdktn/provider-azurerm.routeServer.RouteServerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#update RouteServer#update}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#create RouteServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#create RouteServer#create}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#delete RouteServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#delete RouteServer#delete}.
 
 ---
 
@@ -1326,7 +1326,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#read RouteServer#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#read RouteServer#read}.
 
 ---
 
@@ -1338,7 +1338,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/route_server#update RouteServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/route_server#update RouteServer#update}.
 
 ---
 

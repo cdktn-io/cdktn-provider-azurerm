@@ -4,7 +4,7 @@
 
 ### NginxDeployment <a name="NginxDeployment" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment azurerm_nginx_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment azurerm_nginx_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.Initializer"></a>
 
@@ -78,21 +78,17 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putFrontendPrivate">PutFrontendPrivate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putFrontendPublic">PutFrontendPublic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putIdentity">PutIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putLoggingStorageAccount">PutLoggingStorageAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putNetworkInterface">PutNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putWebApplicationFirewall">PutWebApplicationFirewall</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetAutomaticUpgradeChannel">ResetAutomaticUpgradeChannel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetAutoScaleProfile">ResetAutoScaleProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetCapacity">ResetCapacity</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetDiagnoseSupportEnabled">ResetDiagnoseSupportEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetEmail">ResetEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetFrontendPrivate">ResetFrontendPrivate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetFrontendPublic">ResetFrontendPublic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetIdentity">ResetIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetLoggingStorageAccount">ResetLoggingStorageAccount</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetManagedResourceGroup">ResetManagedResourceGroup</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetNetworkInterface">ResetNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -457,18 +453,6 @@ private void PutIdentity(NginxDeploymentIdentity Value)
 
 ---
 
-##### `PutLoggingStorageAccount` <a name="PutLoggingStorageAccount" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putLoggingStorageAccount"></a>
-
-```csharp
-private void PutLoggingStorageAccount(IResolvable|NginxDeploymentLoggingStorageAccount[] Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putLoggingStorageAccount.parameter.value"></a>
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]
-
----
-
 ##### `PutNetworkInterface` <a name="PutNetworkInterface" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.putNetworkInterface"></a>
 
 ```csharp
@@ -523,12 +507,6 @@ private void ResetAutoScaleProfile()
 private void ResetCapacity()
 ```
 
-##### `ResetDiagnoseSupportEnabled` <a name="ResetDiagnoseSupportEnabled" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetDiagnoseSupportEnabled"></a>
-
-```csharp
-private void ResetDiagnoseSupportEnabled()
-```
-
 ##### `ResetEmail` <a name="ResetEmail" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetEmail"></a>
 
 ```csharp
@@ -557,18 +535,6 @@ private void ResetId()
 
 ```csharp
 private void ResetIdentity()
-```
-
-##### `ResetLoggingStorageAccount` <a name="ResetLoggingStorageAccount" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetLoggingStorageAccount"></a>
-
-```csharp
-private void ResetLoggingStorageAccount()
-```
-
-##### `ResetManagedResourceGroup` <a name="ResetManagedResourceGroup" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetManagedResourceGroup"></a>
-
-```csharp
-private void ResetManagedResourceGroup()
 ```
 
 ##### `ResetNetworkInterface` <a name="ResetNetworkInterface" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.resetNetworkInterface"></a>
@@ -698,7 +664,7 @@ The construct id used in the generated config for the NginxDeployment to import.
 
 The id of the existing NginxDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +700,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.frontendPublic">FrontendPublic</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPublicOutputReference">NginxDeploymentFrontendPublicOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentityOutputReference">NginxDeploymentIdentityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.ipAddress">IpAddress</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.loggingStorageAccount">LoggingStorageAccount</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList">NginxDeploymentLoggingStorageAccountList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.networkInterface">NetworkInterface</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentNetworkInterfaceList">NginxDeploymentNetworkInterfaceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.nginxVersion">NginxVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeoutsOutputReference">NginxDeploymentTimeoutsOutputReference</a></code> | *No description.* |
@@ -742,15 +707,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.automaticUpgradeChannelInput">AutomaticUpgradeChannelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.autoScaleProfileInput">AutoScaleProfileInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile">NginxDeploymentAutoScaleProfile</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.capacityInput">CapacityInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.diagnoseSupportEnabledInput">DiagnoseSupportEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.frontendPrivateInput">FrontendPrivateInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate">NginxDeploymentFrontendPrivate</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.frontendPublicInput">FrontendPublicInput</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPublic">NginxDeploymentFrontendPublic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity">NginxDeploymentIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.loggingStorageAccountInput">LoggingStorageAccountInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.managedResourceGroupInput">ManagedResourceGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.networkInterfaceInput">NetworkInterfaceInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentNetworkInterface">NginxDeploymentNetworkInterface</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
@@ -760,11 +722,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.webApplicationFirewallInput">WebApplicationFirewallInput</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentWebApplicationFirewall">NginxDeploymentWebApplicationFirewall</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.automaticUpgradeChannel">AutomaticUpgradeChannel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.capacity">Capacity</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.diagnoseSupportEnabled">DiagnoseSupportEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.location">Location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.managedResourceGroup">ManagedResourceGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.sku">Sku</a></code> | <code>string</code> | *No description.* |
@@ -974,16 +934,6 @@ public string IpAddress { get; }
 
 ---
 
-##### `LoggingStorageAccount`<sup>Required</sup> <a name="LoggingStorageAccount" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.loggingStorageAccount"></a>
-
-```csharp
-public NginxDeploymentLoggingStorageAccountList LoggingStorageAccount { get; }
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList">NginxDeploymentLoggingStorageAccountList</a>
-
----
-
 ##### `NetworkInterface`<sup>Required</sup> <a name="NetworkInterface" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.networkInterface"></a>
 
 ```csharp
@@ -1054,16 +1004,6 @@ public double CapacityInput { get; }
 
 ---
 
-##### `DiagnoseSupportEnabledInput`<sup>Optional</sup> <a name="DiagnoseSupportEnabledInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.diagnoseSupportEnabledInput"></a>
-
-```csharp
-public bool|IResolvable DiagnoseSupportEnabledInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `EmailInput`<sup>Optional</sup> <a name="EmailInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.emailInput"></a>
 
 ```csharp
@@ -1118,26 +1058,6 @@ public string IdInput { get; }
 
 ```csharp
 public string LocationInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `LoggingStorageAccountInput`<sup>Optional</sup> <a name="LoggingStorageAccountInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.loggingStorageAccountInput"></a>
-
-```csharp
-public IResolvable|NginxDeploymentLoggingStorageAccount[] LoggingStorageAccountInput { get; }
-```
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]
-
----
-
-##### `ManagedResourceGroupInput`<sup>Optional</sup> <a name="ManagedResourceGroupInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.managedResourceGroupInput"></a>
-
-```csharp
-public string ManagedResourceGroupInput { get; }
 ```
 
 - *Type:* string
@@ -1234,16 +1154,6 @@ public double Capacity { get; }
 
 ---
 
-##### `DiagnoseSupportEnabled`<sup>Required</sup> <a name="DiagnoseSupportEnabled" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.diagnoseSupportEnabled"></a>
-
-```csharp
-public bool|IResolvable DiagnoseSupportEnabled { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.email"></a>
 
 ```csharp
@@ -1268,16 +1178,6 @@ public string Id { get; }
 
 ```csharp
 public string Location { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ManagedResourceGroup`<sup>Required</sup> <a name="ManagedResourceGroup" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeployment.property.managedResourceGroup"></a>
-
-```csharp
-public string ManagedResourceGroup { get; }
 ```
 
 - *Type:* string
@@ -1362,9 +1262,9 @@ new NginxDeploymentAutoScaleProfile {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.maxCapacity">MaxCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.minCapacity">MinCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.maxCapacity">MaxCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.minCapacity">MinCapacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}. |
 
 ---
 
@@ -1376,7 +1276,7 @@ public double MaxCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}.
 
 ---
 
@@ -1388,7 +1288,7 @@ public double MinCapacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}.
 
 ---
 
@@ -1400,7 +1300,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}.
 
 ---
 
@@ -1426,14 +1326,11 @@ new NginxDeploymentConfig {
     string AutomaticUpgradeChannel = null,
     IResolvable|NginxDeploymentAutoScaleProfile[] AutoScaleProfile = null,
     double Capacity = null,
-    bool|IResolvable DiagnoseSupportEnabled = null,
     string Email = null,
     IResolvable|NginxDeploymentFrontendPrivate[] FrontendPrivate = null,
     NginxDeploymentFrontendPublic FrontendPublic = null,
     string Id = null,
     NginxDeploymentIdentity Identity = null,
-    IResolvable|NginxDeploymentLoggingStorageAccount[] LoggingStorageAccount = null,
-    string ManagedResourceGroup = null,
     IResolvable|NginxDeploymentNetworkInterface[] NetworkInterface = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     NginxDeploymentTimeouts Timeouts = null,
@@ -1452,23 +1349,20 @@ new NginxDeploymentConfig {
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#location NginxDeployment#location}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#sku NginxDeployment#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.automaticUpgradeChannel">AutomaticUpgradeChannel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#location NginxDeployment#location}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#sku NginxDeployment#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.automaticUpgradeChannel">AutomaticUpgradeChannel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.autoScaleProfile">AutoScaleProfile</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentAutoScaleProfile">NginxDeploymentAutoScaleProfile</a>[]</code> | auto_scale_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.diagnoseSupportEnabled">DiagnoseSupportEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#email NginxDeployment#email}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.capacity">Capacity</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#email NginxDeployment#email}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.frontendPrivate">FrontendPrivate</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate">NginxDeploymentFrontendPrivate</a>[]</code> | frontend_private block. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.frontendPublic">FrontendPublic</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPublic">NginxDeploymentFrontendPublic</a></code> | frontend_public block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#id NginxDeployment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#id NginxDeployment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity">NginxDeploymentIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.loggingStorageAccount">LoggingStorageAccount</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]</code> | logging_storage_account block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.managedResourceGroup">ManagedResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#managed_resource_group NginxDeployment#managed_resource_group}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.networkInterface">NetworkInterface</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentNetworkInterface">NginxDeploymentNetworkInterface</a>[]</code> | network_interface block. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#tags NginxDeployment#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#tags NginxDeployment#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts">NginxDeploymentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.webApplicationFirewall">WebApplicationFirewall</a></code> | <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentWebApplicationFirewall">NginxDeploymentWebApplicationFirewall</a></code> | web_application_firewall block. |
 
@@ -1552,7 +1446,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#location NginxDeployment#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#location NginxDeployment#location}.
 
 ---
 
@@ -1564,7 +1458,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#name NginxDeployment#name}.
 
 ---
 
@@ -1576,7 +1470,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}.
 
 ---
 
@@ -1588,7 +1482,7 @@ public string Sku { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#sku NginxDeployment#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#sku NginxDeployment#sku}.
 
 ---
 
@@ -1600,7 +1494,7 @@ public string AutomaticUpgradeChannel { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}.
 
 ---
 
@@ -1614,7 +1508,7 @@ public IResolvable|NginxDeploymentAutoScaleProfile[] AutoScaleProfile { get; set
 
 auto_scale_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
 
 ---
 
@@ -1626,19 +1520,7 @@ public double Capacity { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}.
-
----
-
-##### `DiagnoseSupportEnabled`<sup>Optional</sup> <a name="DiagnoseSupportEnabled" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.diagnoseSupportEnabled"></a>
-
-```csharp
-public bool|IResolvable DiagnoseSupportEnabled { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}.
 
 ---
 
@@ -1650,7 +1532,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#email NginxDeployment#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#email NginxDeployment#email}.
 
 ---
 
@@ -1664,7 +1546,7 @@ public IResolvable|NginxDeploymentFrontendPrivate[] FrontendPrivate { get; set; 
 
 frontend_private block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
 
 ---
 
@@ -1678,7 +1560,7 @@ public NginxDeploymentFrontendPublic FrontendPublic { get; set; }
 
 frontend_public block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
 
 ---
 
@@ -1690,7 +1572,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#id NginxDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#id NginxDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1707,33 +1589,7 @@ public NginxDeploymentIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#identity NginxDeployment#identity}
-
----
-
-##### `LoggingStorageAccount`<sup>Optional</sup> <a name="LoggingStorageAccount" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.loggingStorageAccount"></a>
-
-```csharp
-public IResolvable|NginxDeploymentLoggingStorageAccount[] LoggingStorageAccount { get; set; }
-```
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]
-
-logging_storage_account block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#logging_storage_account NginxDeployment#logging_storage_account}
-
----
-
-##### `ManagedResourceGroup`<sup>Optional</sup> <a name="ManagedResourceGroup" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentConfig.property.managedResourceGroup"></a>
-
-```csharp
-public string ManagedResourceGroup { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#managed_resource_group NginxDeployment#managed_resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#identity NginxDeployment#identity}
 
 ---
 
@@ -1747,7 +1603,7 @@ public IResolvable|NginxDeploymentNetworkInterface[] NetworkInterface { get; set
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
 
 ---
 
@@ -1759,7 +1615,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#tags NginxDeployment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#tags NginxDeployment#tags}.
 
 ---
 
@@ -1773,7 +1629,7 @@ public NginxDeploymentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
 
 ---
 
@@ -1787,7 +1643,7 @@ public NginxDeploymentWebApplicationFirewall WebApplicationFirewall { get; set; 
 
 web_application_firewall block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
 
 ---
 
@@ -1809,9 +1665,9 @@ new NginxDeploymentFrontendPrivate {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.allocationMethod">AllocationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.allocationMethod">AllocationMethod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPrivate.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}. |
 
 ---
 
@@ -1823,7 +1679,7 @@ public string AllocationMethod { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}.
 
 ---
 
@@ -1835,7 +1691,7 @@ public string IpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}.
 
 ---
 
@@ -1847,7 +1703,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}.
 
 ---
 
@@ -1867,7 +1723,7 @@ new NginxDeploymentFrontendPublic {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPublic.property.ipAddress">IpAddress</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentFrontendPublic.property.ipAddress">IpAddress</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}. |
 
 ---
 
@@ -1879,7 +1735,7 @@ public string[] IpAddress { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}.
 
 ---
 
@@ -1900,8 +1756,8 @@ new NginxDeploymentIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#type NginxDeployment#type}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#type NginxDeployment#type}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}. |
 
 ---
 
@@ -1913,7 +1769,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#type NginxDeployment#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#type NginxDeployment#type}.
 
 ---
 
@@ -1925,53 +1781,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}.
-
----
-
-### NginxDeploymentLoggingStorageAccount <a name="NginxDeploymentLoggingStorageAccount" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount.Initializer"></a>
-
-```csharp
-using Io.Cdktn.Providers.Azurerm;
-
-new NginxDeploymentLoggingStorageAccount {
-    string ContainerName = null,
-    string Name = null
-};
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount.property.containerName">ContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}. |
-
----
-
-##### `ContainerName`<sup>Optional</sup> <a name="ContainerName" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount.property.containerName"></a>
-
-```csharp
-public string ContainerName { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}.
-
----
-
-##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount.property.name"></a>
-
-```csharp
-public string Name { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#name NginxDeployment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}.
 
 ---
 
@@ -1991,7 +1801,7 @@ new NginxDeploymentNetworkInterface {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentNetworkInterface.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentNetworkInterface.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}. |
 
 ---
 
@@ -2003,7 +1813,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}.
 
 ---
 
@@ -2026,10 +1836,10 @@ new NginxDeploymentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#create NginxDeployment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#delete NginxDeployment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#read NginxDeployment#read}. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#update NginxDeployment#update}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#create NginxDeployment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#delete NginxDeployment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#read NginxDeployment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#update NginxDeployment#update}. |
 
 ---
 
@@ -2041,7 +1851,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#create NginxDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#create NginxDeployment#create}.
 
 ---
 
@@ -2053,7 +1863,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#delete NginxDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#delete NginxDeployment#delete}.
 
 ---
 
@@ -2065,7 +1875,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#read NginxDeployment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#read NginxDeployment#read}.
 
 ---
 
@@ -2077,7 +1887,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#update NginxDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#update NginxDeployment#update}.
 
 ---
 
@@ -2097,7 +1907,7 @@ new NginxDeploymentWebApplicationFirewall {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentWebApplicationFirewall.property.activationStateEnabled">ActivationStateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentWebApplicationFirewall.property.activationStateEnabled">ActivationStateEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}. |
 
 ---
 
@@ -2109,7 +1919,7 @@ public bool|IResolvable ActivationStateEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}.
 
 ---
 
@@ -3762,491 +3572,6 @@ public NginxDeploymentIdentity InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentIdentity">NginxDeploymentIdentity</a>
-
----
-
-
-### NginxDeploymentLoggingStorageAccountList <a name="NginxDeploymentLoggingStorageAccountList" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer"></a>
-
-```csharp
-using Io.Cdktn.Providers.Azurerm;
-
-new NginxDeploymentLoggingStorageAccountList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* Io.Cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.get">Get</a></code> | *No description.* |
-
----
-
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.allWithMapKey"></a>
-
-```csharp
-private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* string
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.resolve.parameter._context"></a>
-
-- *Type:* Io.Cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.get"></a>
-
-```csharp
-private NginxDeploymentLoggingStorageAccountOutputReference Get(double Index)
-```
-
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.get.parameter.index"></a>
-
-- *Type:* double
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountList.property.internalValue"></a>
-
-```csharp
-public IResolvable|NginxDeploymentLoggingStorageAccount[] InternalValue { get; }
-```
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>[]
-
----
-
-
-### NginxDeploymentLoggingStorageAccountOutputReference <a name="NginxDeploymentLoggingStorageAccountOutputReference" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer"></a>
-
-```csharp
-using Io.Cdktn.Providers.Azurerm;
-
-new NginxDeploymentLoggingStorageAccountOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* Io.Cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* double
-
-the index of this item in the list.
-
----
-
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resetContainerName">ResetContainerName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resetName">ResetName</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getAnyMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanAttribute"></a>
-
-```csharp
-private IResolvable GetBooleanAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getListAttribute"></a>
-
-```csharp
-private string[] GetListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberAttribute"></a>
-
-```csharp
-private double GetNumberAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberListAttribute"></a>
-
-```csharp
-private double[] GetNumberListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringAttribute"></a>
-
-```csharp
-private string GetStringAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.interpolationForAttribute"></a>
-
-```csharp
-private IResolvable InterpolationForAttribute(string Property)
-```
-
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resolve.parameter._context"></a>
-
-- *Type:* Io.Cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetContainerName` <a name="ResetContainerName" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resetContainerName"></a>
-
-```csharp
-private void ResetContainerName()
-```
-
-##### `ResetName` <a name="ResetName" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.resetName"></a>
-
-```csharp
-private void ResetName()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.containerNameInput">ContainerNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.containerName">ContainerName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ContainerNameInput`<sup>Optional</sup> <a name="ContainerNameInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.containerNameInput"></a>
-
-```csharp
-public string ContainerNameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.nameInput"></a>
-
-```csharp
-public string NameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `ContainerName`<sup>Required</sup> <a name="ContainerName" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.containerName"></a>
-
-```csharp
-public string ContainerName { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.name"></a>
-
-```csharp
-public string Name { get; }
-```
-
-- *Type:* string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccountOutputReference.property.internalValue"></a>
-
-```csharp
-public IResolvable|NginxDeploymentLoggingStorageAccount InternalValue { get; }
-```
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.nginxDeployment.NginxDeploymentLoggingStorageAccount">NginxDeploymentLoggingStorageAccount</a>
 
 ---
 

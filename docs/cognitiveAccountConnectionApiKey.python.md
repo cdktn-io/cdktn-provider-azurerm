@@ -4,7 +4,7 @@
 
 ### CognitiveAccountConnectionApiKey <a name="CognitiveAccountConnectionApiKey" id="@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key azurerm_cognitive_account_connection_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key azurerm_cognitive_account_connection_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer"></a>
 
@@ -43,13 +43,13 @@ cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey(
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts">CognitiveAccountConnectionApiKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#timeouts CognitiveAccountConnectionApiKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#timeouts CognitiveAccountConnectionApiKey#timeouts}
 
 ---
 
@@ -582,7 +582,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}.
 
 ---
 
@@ -590,7 +590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}.
 
 ---
 
@@ -598,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}.
 
 ---
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}.
 
 ---
 
@@ -748,7 +748,7 @@ The construct id used in the generated config for the CognitiveAccountConnection
 
 The id of the existing CognitiveAccountConnectionApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1156,13 +1156,13 @@ cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig(
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.apiKey">api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.apiKey">api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.target">target</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts">CognitiveAccountConnectionApiKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1245,7 +1245,7 @@ api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#api_key CognitiveAccountConnectionApiKey#api_key}.
 
 ---
 
@@ -1257,7 +1257,7 @@ category: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#category CognitiveAccountConnectionApiKey#category}.
 
 ---
 
@@ -1269,7 +1269,7 @@ cognitive_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#cognitive_account_id CognitiveAccountConnectionApiKey#cognitive_account_id}.
 
 ---
 
@@ -1281,7 +1281,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#name CognitiveAccountConnectionApiKey#name}.
 
 ---
 
@@ -1293,7 +1293,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#id CognitiveAccountConnectionApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1308,7 +1308,7 @@ metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#metadata CognitiveAccountConnectionApiKey#metadata}.
 
 ---
 
@@ -1320,7 +1320,7 @@ target: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#target CognitiveAccountConnectionApiKey#target}.
 
 ---
 
@@ -1334,7 +1334,7 @@ timeouts: CognitiveAccountConnectionApiKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#timeouts CognitiveAccountConnectionApiKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#timeouts CognitiveAccountConnectionApiKey#timeouts}
 
 ---
 
@@ -1357,10 +1357,10 @@ cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountConnectionApiKey.CognitiveAccountConnectionApiKeyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}. |
 
 ---
 
@@ -1372,7 +1372,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#create CognitiveAccountConnectionApiKey#create}.
 
 ---
 
@@ -1384,7 +1384,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#delete CognitiveAccountConnectionApiKey#delete}.
 
 ---
 
@@ -1396,7 +1396,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#read CognitiveAccountConnectionApiKey#read}.
 
 ---
 
@@ -1408,7 +1408,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cognitive_account_connection_api_key#update CognitiveAccountConnectionApiKey#update}.
 
 ---
 

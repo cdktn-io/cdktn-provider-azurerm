@@ -4,12 +4,12 @@
 
 ### RedhatOpenshiftCluster <a name="RedhatOpenshiftCluster" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftCluster(scope Construct, id *string, config RedhatOpenshiftClusterConfig) RedhatOpenshiftCluster
 ```
@@ -525,7 +525,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ redhatopenshiftcluster.RedhatOpenshiftCluster_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.RedhatOpenshiftCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +614,7 @@ The construct id used in the generated config for the RedhatOpenshiftCluster to 
 
 The id of the existing RedhatOpenshiftCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1111,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterApiServerProfile {
 	Visibility: *string,
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile.property.visibility">Visibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile.property.visibility">Visibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}. |
 
 ---
 
@@ -1134,7 +1134,7 @@ Visibility *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterClusterProfile {
 	Domain: *string,
@@ -1158,11 +1158,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.managedResourceGroupName">ManagedResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.pullSecret">PullSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.managedResourceGroupName">ManagedResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile.property.pullSecret">PullSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#domain RedhatOpenshiftCluster#domain}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#version RedhatOpenshiftCluster#version}.
 
 ---
 
@@ -1198,7 +1198,7 @@ FipsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}.
 
 ---
 
@@ -1210,7 +1210,7 @@ ManagedResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}.
 
 ---
 
@@ -1222,7 +1222,7 @@ PullSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#pull_secret RedhatOpenshiftCluster#pull_secret}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterConfig {
 	Connection: interface{},
@@ -1241,19 +1241,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ApiServerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile,
-	ClusterProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile,
-	IngressProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile,
+	ApiServerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile,
+	ClusterProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile,
+	IngressProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile,
 	Location: *string,
-	MainProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile,
+	MainProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile,
 	Name: *string,
-	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile,
+	NetworkProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile,
 	ResourceGroupName: *string,
-	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal,
-	WorkerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile,
+	ServicePrincipal: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal,
+	WorkerProfile: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts,
 }
 ```
 
@@ -1271,15 +1271,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.apiServerProfile">ApiServerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfile">RedhatOpenshiftClusterApiServerProfile</a></code> | api_server_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.clusterProfile">ClusterProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfile">RedhatOpenshiftClusterClusterProfile</a></code> | cluster_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.ingressProfile">IngressProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile">RedhatOpenshiftClusterIngressProfile</a></code> | ingress_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.mainProfile">MainProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile">RedhatOpenshiftClusterMainProfile</a></code> | main_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.networkProfile">NetworkProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile">RedhatOpenshiftClusterNetworkProfile</a></code> | network_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.servicePrincipal">ServicePrincipal</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal">RedhatOpenshiftClusterServicePrincipal</a></code> | service_principal block. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.workerProfile">WorkerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile">RedhatOpenshiftClusterWorkerProfile</a></code> | worker_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts">RedhatOpenshiftClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1364,7 +1364,7 @@ ApiServerProfile RedhatOpenshiftClusterApiServerProfile
 
 api_server_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#api_server_profile RedhatOpenshiftCluster#api_server_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#api_server_profile RedhatOpenshiftCluster#api_server_profile}
 
 ---
 
@@ -1378,7 +1378,7 @@ ClusterProfile RedhatOpenshiftClusterClusterProfile
 
 cluster_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#cluster_profile RedhatOpenshiftCluster#cluster_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#cluster_profile RedhatOpenshiftCluster#cluster_profile}
 
 ---
 
@@ -1392,7 +1392,7 @@ IngressProfile RedhatOpenshiftClusterIngressProfile
 
 ingress_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#ingress_profile RedhatOpenshiftCluster#ingress_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#ingress_profile RedhatOpenshiftCluster#ingress_profile}
 
 ---
 
@@ -1404,7 +1404,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#location RedhatOpenshiftCluster#location}.
 
 ---
 
@@ -1418,7 +1418,7 @@ MainProfile RedhatOpenshiftClusterMainProfile
 
 main_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#main_profile RedhatOpenshiftCluster#main_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#main_profile RedhatOpenshiftCluster#main_profile}
 
 ---
 
@@ -1430,7 +1430,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#name RedhatOpenshiftCluster#name}.
 
 ---
 
@@ -1444,7 +1444,7 @@ NetworkProfile RedhatOpenshiftClusterNetworkProfile
 
 network_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#network_profile RedhatOpenshiftCluster#network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#network_profile RedhatOpenshiftCluster#network_profile}
 
 ---
 
@@ -1456,7 +1456,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#resource_group_name RedhatOpenshiftCluster#resource_group_name}.
 
 ---
 
@@ -1470,7 +1470,7 @@ ServicePrincipal RedhatOpenshiftClusterServicePrincipal
 
 service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#service_principal RedhatOpenshiftCluster#service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#service_principal RedhatOpenshiftCluster#service_principal}
 
 ---
 
@@ -1484,7 +1484,7 @@ WorkerProfile RedhatOpenshiftClusterWorkerProfile
 
 worker_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#worker_profile RedhatOpenshiftCluster#worker_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#worker_profile RedhatOpenshiftCluster#worker_profile}
 
 ---
 
@@ -1496,7 +1496,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1511,7 +1511,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#tags RedhatOpenshiftCluster#tags}.
 
 ---
 
@@ -1525,7 +1525,7 @@ Timeouts RedhatOpenshiftClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#timeouts RedhatOpenshiftCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#timeouts RedhatOpenshiftCluster#timeouts}
 
 ---
 
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterIngressProfile {
 	Visibility: *string,
@@ -1545,7 +1545,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile.property.visibility">Visibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfile.property.visibility">Visibility</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}. |
 
 ---
 
@@ -1557,7 +1557,7 @@ Visibility *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#visibility RedhatOpenshiftCluster#visibility}.
 
 ---
 
@@ -1566,7 +1566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterMainProfile {
 	SubnetId: *string,
@@ -1580,10 +1580,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.vmSize">VmSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.vmSize">VmSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfile.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}. |
 
 ---
 
@@ -1595,7 +1595,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}.
 
 ---
 
@@ -1607,7 +1607,7 @@ VmSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}.
 
 ---
 
@@ -1619,7 +1619,7 @@ DiskEncryptionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}.
 
 ---
 
@@ -1631,7 +1631,7 @@ EncryptionAtHostEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}.
 
 ---
 
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterNetworkProfile {
 	PodCidr: *string,
@@ -1654,10 +1654,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.podCidr">PodCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.serviceCidr">ServiceCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.outboundType">OutboundType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.preconfiguredNetworkSecurityGroupEnabled">PreconfiguredNetworkSecurityGroupEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.podCidr">PodCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.serviceCidr">ServiceCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.outboundType">OutboundType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfile.property.preconfiguredNetworkSecurityGroupEnabled">PreconfiguredNetworkSecurityGroupEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}. |
 
 ---
 
@@ -1669,7 +1669,7 @@ PodCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#pod_cidr RedhatOpenshiftCluster#pod_cidr}.
 
 ---
 
@@ -1681,7 +1681,7 @@ ServiceCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}.
 
 ---
 
@@ -1693,7 +1693,7 @@ OutboundType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#outbound_type RedhatOpenshiftCluster#outbound_type}.
 
 ---
 
@@ -1705,7 +1705,7 @@ PreconfiguredNetworkSecurityGroupEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}.
 
 ---
 
@@ -1714,7 +1714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterServicePrincipal {
 	ClientId: *string,
@@ -1726,8 +1726,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}. |
 
 ---
 
@@ -1739,7 +1739,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#client_id RedhatOpenshiftCluster#client_id}.
 
 ---
 
@@ -1751,7 +1751,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#client_secret RedhatOpenshiftCluster#client_secret}.
 
 ---
 
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterTimeouts {
 	Create: *string,
@@ -1774,10 +1774,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}. |
 
 ---
 
@@ -1789,7 +1789,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#create RedhatOpenshiftCluster#create}.
 
 ---
 
@@ -1801,7 +1801,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#delete RedhatOpenshiftCluster#delete}.
 
 ---
 
@@ -1813,7 +1813,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#read RedhatOpenshiftCluster#read}.
 
 ---
 
@@ -1825,7 +1825,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#update RedhatOpenshiftCluster#update}.
 
 ---
 
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 &redhatopenshiftcluster.RedhatOpenshiftClusterWorkerProfile {
 	DiskSizeGb: *f64,
@@ -1850,12 +1850,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.vmSize">VmSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.vmSize">VmSize</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfile.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}. |
 
 ---
 
@@ -1867,7 +1867,7 @@ DiskSizeGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_size_gb RedhatOpenshiftCluster#disk_size_gb}.
 
 ---
 
@@ -1879,7 +1879,7 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}.
 
 ---
 
@@ -1891,7 +1891,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}.
 
 ---
 
@@ -1903,7 +1903,7 @@ VmSize *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#vm_size RedhatOpenshiftCluster#vm_size}.
 
 ---
 
@@ -1915,7 +1915,7 @@ DiskEncryptionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#disk_encryption_set_id RedhatOpenshiftCluster#disk_encryption_set_id}.
 
 ---
 
@@ -1927,7 +1927,7 @@ EncryptionAtHostEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}.
 
 ---
 
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterApiServerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterApiServerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterApiServerProfileOutputReference
 ```
@@ -2231,7 +2231,7 @@ func InternalValue() RedhatOpenshiftClusterApiServerProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterClusterProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterClusterProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterClusterProfileOutputReference
 ```
@@ -2622,7 +2622,7 @@ func InternalValue() RedhatOpenshiftClusterClusterProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterIngressProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterIngressProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterIngressProfileOutputReference
 ```
@@ -2915,7 +2915,7 @@ func InternalValue() RedhatOpenshiftClusterIngressProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterMainProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterMainProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterMainProfileOutputReference
 ```
@@ -3266,7 +3266,7 @@ func InternalValue() RedhatOpenshiftClusterMainProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterNetworkProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterNetworkProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterNetworkProfileOutputReference
 ```
@@ -3617,7 +3617,7 @@ func InternalValue() RedhatOpenshiftClusterNetworkProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterServicePrincipalOutputReference
 ```
@@ -3910,7 +3910,7 @@ func InternalValue() RedhatOpenshiftClusterServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterTimeoutsOutputReference
 ```
@@ -4275,7 +4275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.redhatOpenshiftCluster.RedhatOpenshiftClusterWorkerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/redhatopenshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/redhatopenshiftcluster"
 
 redhatopenshiftcluster.NewRedhatOpenshiftClusterWorkerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedhatOpenshiftClusterWorkerProfileOutputReference
 ```

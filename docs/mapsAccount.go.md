@@ -4,12 +4,12 @@
 
 ### MapsAccount <a name="MapsAccount" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account azurerm_maps_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account azurerm_maps_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccount(scope Construct, id *string, config MapsAccountConfig) MapsAccount
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.MapsAccount_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.MapsAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ mapsaccount.MapsAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.MapsAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ mapsaccount.MapsAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.mapsAccount.MapsAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.MapsAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -590,7 +590,7 @@ The construct id used in the generated config for the MapsAccount to import.
 
 The id of the existing MapsAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1065,7 +1065,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 &mapsaccount.MapsAccountConfig {
 	Connection: interface{},
@@ -1079,13 +1079,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 	Name: *string,
 	ResourceGroupName: *string,
 	SkuName: *string,
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mapsAccount.MapsAccountCors,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.mapsAccount.MapsAccountCors,
 	DataStore: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mapsAccount.MapsAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.mapsAccount.MapsAccountIdentity,
 	LocalAuthenticationEnabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.mapsAccount.MapsAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.mapsAccount.MapsAccountTimeouts,
 }
 ```
 
@@ -1100,16 +1100,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#location MapsAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#name MapsAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#resource_group_name MapsAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#sku_name MapsAccount#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#location MapsAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#name MapsAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#resource_group_name MapsAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#sku_name MapsAccount#sku_name}. |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountCors">MapsAccountCors</a></code> | cors block. |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.dataStore">DataStore</a></code> | <code>interface{}</code> | data_store block. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#id MapsAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#id MapsAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity">MapsAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#local_authentication_enabled MapsAccount#local_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#tags MapsAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#local_authentication_enabled MapsAccount#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#tags MapsAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts">MapsAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1192,7 +1192,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#location MapsAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#location MapsAccount#location}.
 
 ---
 
@@ -1204,7 +1204,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#name MapsAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#name MapsAccount#name}.
 
 ---
 
@@ -1216,7 +1216,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#resource_group_name MapsAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#resource_group_name MapsAccount#resource_group_name}.
 
 ---
 
@@ -1228,7 +1228,7 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#sku_name MapsAccount#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#sku_name MapsAccount#sku_name}.
 
 ---
 
@@ -1242,7 +1242,7 @@ Cors MapsAccountCors
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#cors MapsAccount#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#cors MapsAccount#cors}
 
 ---
 
@@ -1256,7 +1256,7 @@ DataStore interface{}
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#data_store MapsAccount#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#data_store MapsAccount#data_store}
 
 ---
 
@@ -1268,7 +1268,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#id MapsAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#id MapsAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1285,7 +1285,7 @@ Identity MapsAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#identity MapsAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#identity MapsAccount#identity}
 
 ---
 
@@ -1297,7 +1297,7 @@ LocalAuthenticationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#local_authentication_enabled MapsAccount#local_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#local_authentication_enabled MapsAccount#local_authentication_enabled}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#tags MapsAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#tags MapsAccount#tags}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Timeouts MapsAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#timeouts MapsAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#timeouts MapsAccount#timeouts}
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 &mapsaccount.MapsAccountCors {
 	AllowedOrigins: *[]*string,
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountCors.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#allowed_origins MapsAccount#allowed_origins}.
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 &mapsaccount.MapsAccountDataStore {
 	UniqueName: *string,
@@ -1376,8 +1376,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStore.property.uniqueName">UniqueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#unique_name MapsAccount#unique_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStore.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#storage_account_id MapsAccount#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStore.property.uniqueName">UniqueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#unique_name MapsAccount#unique_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStore.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#storage_account_id MapsAccount#storage_account_id}. |
 
 ---
 
@@ -1389,7 +1389,7 @@ UniqueName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#unique_name MapsAccount#unique_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#unique_name MapsAccount#unique_name}.
 
 ---
 
@@ -1401,7 +1401,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#storage_account_id MapsAccount#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#storage_account_id MapsAccount#storage_account_id}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 &mapsaccount.MapsAccountIdentity {
 	Type: *string,
@@ -1422,8 +1422,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#type MapsAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#identity_ids MapsAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#type MapsAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#identity_ids MapsAccount#identity_ids}. |
 
 ---
 
@@ -1435,7 +1435,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#type MapsAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#type MapsAccount#type}.
 
 ---
 
@@ -1447,7 +1447,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#identity_ids MapsAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#identity_ids MapsAccount#identity_ids}.
 
 ---
 
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 &mapsaccount.MapsAccountTimeouts {
 	Create: *string,
@@ -1470,10 +1470,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#create MapsAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#delete MapsAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#read MapsAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#update MapsAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#create MapsAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#delete MapsAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#read MapsAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#update MapsAccount#update}. |
 
 ---
 
@@ -1485,7 +1485,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#create MapsAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#create MapsAccount#create}.
 
 ---
 
@@ -1497,7 +1497,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#delete MapsAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#delete MapsAccount#delete}.
 
 ---
 
@@ -1509,7 +1509,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#read MapsAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#read MapsAccount#read}.
 
 ---
 
@@ -1521,7 +1521,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/maps_account#update MapsAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/maps_account#update MapsAccount#update}.
 
 ---
 
@@ -1532,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccountCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MapsAccountCorsOutputReference
 ```
@@ -1803,7 +1803,7 @@ func InternalValue() MapsAccountCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccountDataStoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MapsAccountDataStoreList
 ```
@@ -1963,7 +1963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountDataStoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccountDataStoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MapsAccountDataStoreOutputReference
 ```
@@ -2281,7 +2281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MapsAccountIdentityOutputReference
 ```
@@ -2603,7 +2603,7 @@ func InternalValue() MapsAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mapsAccount.MapsAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/mapsaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/mapsaccount"
 
 mapsaccount.NewMapsAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MapsAccountTimeoutsOutputReference
 ```

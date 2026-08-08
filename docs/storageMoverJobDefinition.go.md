@@ -4,12 +4,12 @@
 
 ### StorageMoverJobDefinition <a name="StorageMoverJobDefinition" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition azurerm_storage_mover_job_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition azurerm_storage_mover_job_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.NewStorageMoverJobDefinition(scope Construct, id *string, config StorageMoverJobDefinitionConfig) StorageMoverJobDefinition
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.StorageMoverJobDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.StorageMoverJobDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ storagemoverjobdefinition.StorageMoverJobDefinition_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.StorageMoverJobDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ storagemoverjobdefinition.StorageMoverJobDefinition_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.StorageMoverJobDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the StorageMoverJobDefinition 
 
 The id of the existing StorageMoverJobDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 &storagemoverjobdefinition.StorageMoverJobDefinitionConfig {
 	Connection: interface{},
@@ -1006,7 +1006,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjo
 	Id: *string,
 	SourceSubPath: *string,
 	TargetSubPath: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts,
 }
 ```
 
@@ -1021,16 +1021,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjo
 | <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.copyMode">CopyMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#copy_mode StorageMoverJobDefinition#copy_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#name StorageMoverJobDefinition#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#source_name StorageMoverJobDefinition#source_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.storageMoverProjectId">StorageMoverProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#storage_mover_project_id StorageMoverJobDefinition#storage_mover_project_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.targetName">TargetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#target_name StorageMoverJobDefinition#target_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.agentName">AgentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#agent_name StorageMoverJobDefinition#agent_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#description StorageMoverJobDefinition#description}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#id StorageMoverJobDefinition#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.sourceSubPath">SourceSubPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#source_sub_path StorageMoverJobDefinition#source_sub_path}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.targetSubPath">TargetSubPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#target_sub_path StorageMoverJobDefinition#target_sub_path}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.copyMode">CopyMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#copy_mode StorageMoverJobDefinition#copy_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#name StorageMoverJobDefinition#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#source_name StorageMoverJobDefinition#source_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.storageMoverProjectId">StorageMoverProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#storage_mover_project_id StorageMoverJobDefinition#storage_mover_project_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.targetName">TargetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#target_name StorageMoverJobDefinition#target_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.agentName">AgentName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#agent_name StorageMoverJobDefinition#agent_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#description StorageMoverJobDefinition#description}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#id StorageMoverJobDefinition#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.sourceSubPath">SourceSubPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#source_sub_path StorageMoverJobDefinition#source_sub_path}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.targetSubPath">TargetSubPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#target_sub_path StorageMoverJobDefinition#target_sub_path}. |
 | <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts">StorageMoverJobDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1113,7 +1113,7 @@ CopyMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#copy_mode StorageMoverJobDefinition#copy_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#copy_mode StorageMoverJobDefinition#copy_mode}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#name StorageMoverJobDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#name StorageMoverJobDefinition#name}.
 
 ---
 
@@ -1137,7 +1137,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#source_name StorageMoverJobDefinition#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#source_name StorageMoverJobDefinition#source_name}.
 
 ---
 
@@ -1149,7 +1149,7 @@ StorageMoverProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#storage_mover_project_id StorageMoverJobDefinition#storage_mover_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#storage_mover_project_id StorageMoverJobDefinition#storage_mover_project_id}.
 
 ---
 
@@ -1161,7 +1161,7 @@ TargetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#target_name StorageMoverJobDefinition#target_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#target_name StorageMoverJobDefinition#target_name}.
 
 ---
 
@@ -1173,7 +1173,7 @@ AgentName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#agent_name StorageMoverJobDefinition#agent_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#agent_name StorageMoverJobDefinition#agent_name}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#description StorageMoverJobDefinition#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#description StorageMoverJobDefinition#description}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#id StorageMoverJobDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#id StorageMoverJobDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1212,7 +1212,7 @@ SourceSubPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#source_sub_path StorageMoverJobDefinition#source_sub_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#source_sub_path StorageMoverJobDefinition#source_sub_path}.
 
 ---
 
@@ -1224,7 +1224,7 @@ TargetSubPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#target_sub_path StorageMoverJobDefinition#target_sub_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#target_sub_path StorageMoverJobDefinition#target_sub_path}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Timeouts StorageMoverJobDefinitionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#timeouts StorageMoverJobDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#timeouts StorageMoverJobDefinition#timeouts}
 
 ---
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 &storagemoverjobdefinition.StorageMoverJobDefinitionTimeouts {
 	Create: *string,
@@ -1261,10 +1261,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#create StorageMoverJobDefinition#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#delete StorageMoverJobDefinition#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#read StorageMoverJobDefinition#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#update StorageMoverJobDefinition#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#create StorageMoverJobDefinition#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#delete StorageMoverJobDefinition#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#read StorageMoverJobDefinition#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#update StorageMoverJobDefinition#update}. |
 
 ---
 
@@ -1276,7 +1276,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#create StorageMoverJobDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#create StorageMoverJobDefinition#create}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#delete StorageMoverJobDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#delete StorageMoverJobDefinition#delete}.
 
 ---
 
@@ -1300,7 +1300,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#read StorageMoverJobDefinition#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#read StorageMoverJobDefinition#read}.
 
 ---
 
@@ -1312,7 +1312,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_mover_job_definition#update StorageMoverJobDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_mover_job_definition#update StorageMoverJobDefinition#update}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageMoverJobDefinition.StorageMoverJobDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storagemoverjobdefinition"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storagemoverjobdefinition"
 
 storagemoverjobdefinition.NewStorageMoverJobDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageMoverJobDefinitionTimeoutsOutputReference
 ```

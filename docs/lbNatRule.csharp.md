@@ -4,7 +4,7 @@
 
 ### LbNatRule <a name="LbNatRule" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule azurerm_lb_nat_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule azurerm_lb_nat_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.Initializer"></a>
 
@@ -76,8 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetBackendAddressPoolId">ResetBackendAddressPoolId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetEnableFloatingIp">ResetEnableFloatingIp</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetEnableTcpReset">ResetEnableTcpReset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetFloatingIpEnabled">ResetFloatingIpEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetFrontendPort">ResetFrontendPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetFrontendPortEnd">ResetFrontendPortEnd</a></code> | *No description.* |
@@ -416,18 +414,6 @@ private void PutTimeouts(LbNatRuleTimeouts Value)
 private void ResetBackendAddressPoolId()
 ```
 
-##### `ResetEnableFloatingIp` <a name="ResetEnableFloatingIp" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetEnableFloatingIp"></a>
-
-```csharp
-private void ResetEnableFloatingIp()
-```
-
-##### `ResetEnableTcpReset` <a name="ResetEnableTcpReset" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetEnableTcpReset"></a>
-
-```csharp
-private void ResetEnableTcpReset()
-```
-
 ##### `ResetFloatingIpEnabled` <a name="ResetFloatingIpEnabled" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.resetFloatingIpEnabled"></a>
 
 ```csharp
@@ -579,7 +565,7 @@ The construct id used in the generated config for the LbNatRule to import.
 
 The id of the existing LbNatRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -614,8 +600,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeoutsOutputReference">LbNatRuleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.backendAddressPoolIdInput">BackendAddressPoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.backendPortInput">BackendPortInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableFloatingIpInput">EnableFloatingIpInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableTcpResetInput">EnableTcpResetInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.floatingIpEnabledInput">FloatingIpEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.frontendIpConfigurationNameInput">FrontendIpConfigurationNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.frontendPortEndInput">FrontendPortEndInput</a></code> | <code>double</code> | *No description.* |
@@ -631,8 +615,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts">LbNatRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.backendAddressPoolId">BackendAddressPoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.backendPort">BackendPort</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableFloatingIp">EnableFloatingIp</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableTcpReset">EnableTcpReset</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.floatingIpEnabled">FloatingIpEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.frontendPort">FrontendPort</a></code> | <code>double</code> | *No description.* |
@@ -840,26 +822,6 @@ public double BackendPortInput { get; }
 
 ---
 
-##### `EnableFloatingIpInput`<sup>Optional</sup> <a name="EnableFloatingIpInput" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableFloatingIpInput"></a>
-
-```csharp
-public bool|IResolvable EnableFloatingIpInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
-##### `EnableTcpResetInput`<sup>Optional</sup> <a name="EnableTcpResetInput" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableTcpResetInput"></a>
-
-```csharp
-public bool|IResolvable EnableTcpResetInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `FloatingIpEnabledInput`<sup>Optional</sup> <a name="FloatingIpEnabledInput" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.floatingIpEnabledInput"></a>
 
 ```csharp
@@ -1007,26 +969,6 @@ public double BackendPort { get; }
 ```
 
 - *Type:* double
-
----
-
-##### `EnableFloatingIp`<sup>Required</sup> <a name="EnableFloatingIp" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableFloatingIp"></a>
-
-```csharp
-public bool|IResolvable EnableFloatingIp { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
-##### `EnableTcpReset`<sup>Required</sup> <a name="EnableTcpReset" id="@cdktn/provider-azurerm.lbNatRule.LbNatRule.property.enableTcpReset"></a>
-
-```csharp
-public bool|IResolvable EnableTcpReset { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -1192,8 +1134,6 @@ new LbNatRuleConfig {
     string Protocol,
     string ResourceGroupName,
     string BackendAddressPoolId = null,
-    bool|IResolvable EnableFloatingIp = null,
-    bool|IResolvable EnableTcpReset = null,
     bool|IResolvable FloatingIpEnabled = null,
     double FrontendPort = null,
     double FrontendPortEnd = null,
@@ -1216,22 +1156,20 @@ new LbNatRuleConfig {
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.backendPort">BackendPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#backend_port LbNatRule#backend_port}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_ip_configuration_name LbNatRule#frontend_ip_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.loadbalancerId">LoadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#loadbalancer_id LbNatRule#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#name LbNatRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#protocol LbNatRule#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#resource_group_name LbNatRule#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.backendAddressPoolId">BackendAddressPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#backend_address_pool_id LbNatRule#backend_address_pool_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.enableFloatingIp">EnableFloatingIp</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#enable_floating_ip LbNatRule#enable_floating_ip}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.enableTcpReset">EnableTcpReset</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#enable_tcp_reset LbNatRule#enable_tcp_reset}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.floatingIpEnabled">FloatingIpEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#floating_ip_enabled LbNatRule#floating_ip_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPort">FrontendPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port LbNatRule#frontend_port}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPortEnd">FrontendPortEnd</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port_end LbNatRule#frontend_port_end}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPortStart">FrontendPortStart</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port_start LbNatRule#frontend_port_start}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#id LbNatRule#id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#idle_timeout_in_minutes LbNatRule#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.tcpResetEnabled">TcpResetEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#tcp_reset_enabled LbNatRule#tcp_reset_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.backendPort">BackendPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#backend_port LbNatRule#backend_port}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_ip_configuration_name LbNatRule#frontend_ip_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.loadbalancerId">LoadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#loadbalancer_id LbNatRule#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#name LbNatRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#protocol LbNatRule#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#resource_group_name LbNatRule#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.backendAddressPoolId">BackendAddressPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#backend_address_pool_id LbNatRule#backend_address_pool_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.floatingIpEnabled">FloatingIpEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#floating_ip_enabled LbNatRule#floating_ip_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPort">FrontendPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port LbNatRule#frontend_port}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPortEnd">FrontendPortEnd</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port_end LbNatRule#frontend_port_end}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.frontendPortStart">FrontendPortStart</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port_start LbNatRule#frontend_port_start}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#id LbNatRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#idle_timeout_in_minutes LbNatRule#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.tcpResetEnabled">TcpResetEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#tcp_reset_enabled LbNatRule#tcp_reset_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts">LbNatRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1314,7 +1252,7 @@ public double BackendPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#backend_port LbNatRule#backend_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#backend_port LbNatRule#backend_port}.
 
 ---
 
@@ -1326,7 +1264,7 @@ public string FrontendIpConfigurationName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_ip_configuration_name LbNatRule#frontend_ip_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_ip_configuration_name LbNatRule#frontend_ip_configuration_name}.
 
 ---
 
@@ -1338,7 +1276,7 @@ public string LoadbalancerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#loadbalancer_id LbNatRule#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#loadbalancer_id LbNatRule#loadbalancer_id}.
 
 ---
 
@@ -1350,7 +1288,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#name LbNatRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#name LbNatRule#name}.
 
 ---
 
@@ -1362,7 +1300,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#protocol LbNatRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#protocol LbNatRule#protocol}.
 
 ---
 
@@ -1374,7 +1312,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#resource_group_name LbNatRule#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#resource_group_name LbNatRule#resource_group_name}.
 
 ---
 
@@ -1386,31 +1324,7 @@ public string BackendAddressPoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#backend_address_pool_id LbNatRule#backend_address_pool_id}.
-
----
-
-##### `EnableFloatingIp`<sup>Optional</sup> <a name="EnableFloatingIp" id="@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.enableFloatingIp"></a>
-
-```csharp
-public bool|IResolvable EnableFloatingIp { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#enable_floating_ip LbNatRule#enable_floating_ip}.
-
----
-
-##### `EnableTcpReset`<sup>Optional</sup> <a name="EnableTcpReset" id="@cdktn/provider-azurerm.lbNatRule.LbNatRuleConfig.property.enableTcpReset"></a>
-
-```csharp
-public bool|IResolvable EnableTcpReset { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#enable_tcp_reset LbNatRule#enable_tcp_reset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#backend_address_pool_id LbNatRule#backend_address_pool_id}.
 
 ---
 
@@ -1422,7 +1336,7 @@ public bool|IResolvable FloatingIpEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#floating_ip_enabled LbNatRule#floating_ip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#floating_ip_enabled LbNatRule#floating_ip_enabled}.
 
 ---
 
@@ -1434,7 +1348,7 @@ public double FrontendPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port LbNatRule#frontend_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port LbNatRule#frontend_port}.
 
 ---
 
@@ -1446,7 +1360,7 @@ public double FrontendPortEnd { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port_end LbNatRule#frontend_port_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port_end LbNatRule#frontend_port_end}.
 
 ---
 
@@ -1458,7 +1372,7 @@ public double FrontendPortStart { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#frontend_port_start LbNatRule#frontend_port_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#frontend_port_start LbNatRule#frontend_port_start}.
 
 ---
 
@@ -1470,7 +1384,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#id LbNatRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#id LbNatRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1485,7 +1399,7 @@ public double IdleTimeoutInMinutes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#idle_timeout_in_minutes LbNatRule#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#idle_timeout_in_minutes LbNatRule#idle_timeout_in_minutes}.
 
 ---
 
@@ -1497,7 +1411,7 @@ public bool|IResolvable TcpResetEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#tcp_reset_enabled LbNatRule#tcp_reset_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#tcp_reset_enabled LbNatRule#tcp_reset_enabled}.
 
 ---
 
@@ -1511,7 +1425,7 @@ public LbNatRuleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#timeouts LbNatRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#timeouts LbNatRule#timeouts}
 
 ---
 
@@ -1534,10 +1448,10 @@ new LbNatRuleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#create LbNatRule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#delete LbNatRule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#read LbNatRule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#update LbNatRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#create LbNatRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#delete LbNatRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#read LbNatRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.lbNatRule.LbNatRuleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#update LbNatRule#update}. |
 
 ---
 
@@ -1549,7 +1463,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#create LbNatRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#create LbNatRule#create}.
 
 ---
 
@@ -1561,7 +1475,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#delete LbNatRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#delete LbNatRule#delete}.
 
 ---
 
@@ -1573,7 +1487,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#read LbNatRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#read LbNatRule#read}.
 
 ---
 
@@ -1585,7 +1499,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_nat_rule#update LbNatRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_nat_rule#update LbNatRule#update}.
 
 ---
 

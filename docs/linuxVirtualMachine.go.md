@@ -4,12 +4,12 @@
 
 ### LinuxVirtualMachine <a name="LinuxVirtualMachine" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachine(scope Construct, id *string, config LinuxVirtualMachineConfig) LinuxVirtualMachine
 ```
@@ -129,7 +129,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetUserData">ResetUserData</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetVirtualMachineScaleSetId">ResetVirtualMachineScaleSetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetVmAgentPlatformUpdatesEnabled">ResetVmAgentPlatformUpdatesEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetVtpmEnabled">ResetVtpmEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetZone">ResetZone</a></code> | *No description.* |
 
@@ -846,12 +845,6 @@ func ResetUserData()
 func ResetVirtualMachineScaleSetId()
 ```
 
-##### `ResetVmAgentPlatformUpdatesEnabled` <a name="ResetVmAgentPlatformUpdatesEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetVmAgentPlatformUpdatesEnabled"></a>
-
-```go
-func ResetVmAgentPlatformUpdatesEnabled()
-```
-
 ##### `ResetVtpmEnabled` <a name="ResetVtpmEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.resetVtpmEnabled"></a>
 
 ```go
@@ -878,7 +871,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.LinuxVirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -910,7 +903,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.LinuxVirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -924,7 +917,7 @@ linuxvirtualmachine.LinuxVirtualMachine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.LinuxVirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -938,7 +931,7 @@ linuxvirtualmachine.LinuxVirtualMachine_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.LinuxVirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -967,7 +960,7 @@ The construct id used in the generated config for the LinuxVirtualMachine to imp
 
 The id of the existing LinuxVirtualMachine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,6 +1007,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.terminationNotification">TerminationNotification</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotificationOutputReference">LinuxVirtualMachineTerminationNotificationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeoutsOutputReference">LinuxVirtualMachineTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.virtualMachineId">VirtualMachineId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabled">VmAgentPlatformUpdatesEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.additionalCapabilitiesInput">AdditionalCapabilitiesInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities">LinuxVirtualMachineAdditionalCapabilities</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.adminPasswordInput">AdminPasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.adminSshKeyInput">AdminSshKeyInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -1063,7 +1057,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.userDataInput">UserDataInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.virtualMachineScaleSetIdInput">VirtualMachineScaleSetIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabledInput">VmAgentPlatformUpdatesEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vtpmEnabledInput">VtpmEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.adminPassword">AdminPassword</a></code> | <code>*string</code> | *No description.* |
@@ -1103,7 +1096,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.userData">UserData</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.virtualMachineScaleSetId">VirtualMachineScaleSetId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabled">VmAgentPlatformUpdatesEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vtpmEnabled">VtpmEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.zone">Zone</a></code> | <code>*string</code> | *No description.* |
 
@@ -1418,6 +1410,16 @@ func VirtualMachineId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `VmAgentPlatformUpdatesEnabled`<sup>Required</sup> <a name="VmAgentPlatformUpdatesEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabled"></a>
+
+```go
+func VmAgentPlatformUpdatesEnabled() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
@@ -1911,16 +1913,6 @@ func VirtualMachineScaleSetIdInput() *string
 
 ---
 
-##### `VmAgentPlatformUpdatesEnabledInput`<sup>Optional</sup> <a name="VmAgentPlatformUpdatesEnabledInput" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabledInput"></a>
-
-```go
-func VmAgentPlatformUpdatesEnabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `VtpmEnabledInput`<sup>Optional</sup> <a name="VtpmEnabledInput" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vtpmEnabledInput"></a>
 
 ```go
@@ -2311,16 +2303,6 @@ func VirtualMachineScaleSetId() *string
 
 ---
 
-##### `VmAgentPlatformUpdatesEnabled`<sup>Required</sup> <a name="VmAgentPlatformUpdatesEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vmAgentPlatformUpdatesEnabled"></a>
-
-```go
-func VmAgentPlatformUpdatesEnabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `VtpmEnabled`<sup>Required</sup> <a name="VtpmEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachine.property.vtpmEnabled"></a>
 
 ```go
@@ -2366,7 +2348,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineAdditionalCapabilities {
 	HibernationEnabled: interface{},
@@ -2378,8 +2360,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities.property.hibernationEnabled">HibernationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#hibernation_enabled LinuxVirtualMachine#hibernation_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities.property.ultraSsdEnabled">UltraSsdEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#ultra_ssd_enabled LinuxVirtualMachine#ultra_ssd_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities.property.hibernationEnabled">HibernationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#hibernation_enabled LinuxVirtualMachine#hibernation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities.property.ultraSsdEnabled">UltraSsdEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#ultra_ssd_enabled LinuxVirtualMachine#ultra_ssd_enabled}. |
 
 ---
 
@@ -2391,7 +2373,7 @@ HibernationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#hibernation_enabled LinuxVirtualMachine#hibernation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#hibernation_enabled LinuxVirtualMachine#hibernation_enabled}.
 
 ---
 
@@ -2403,7 +2385,7 @@ UltraSsdEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#ultra_ssd_enabled LinuxVirtualMachine#ultra_ssd_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#ultra_ssd_enabled LinuxVirtualMachine#ultra_ssd_enabled}.
 
 ---
 
@@ -2412,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineAdminSshKey {
 	PublicKey: *string,
@@ -2424,8 +2406,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKey.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#public_key LinuxVirtualMachine#public_key}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKey.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#username LinuxVirtualMachine#username}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKey.property.publicKey">PublicKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#public_key LinuxVirtualMachine#public_key}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKey.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#username LinuxVirtualMachine#username}. |
 
 ---
 
@@ -2437,7 +2419,7 @@ PublicKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#public_key LinuxVirtualMachine#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#public_key LinuxVirtualMachine#public_key}.
 
 ---
 
@@ -2449,7 +2431,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#username LinuxVirtualMachine#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#username LinuxVirtualMachine#username}.
 
 ---
 
@@ -2458,7 +2440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineBootDiagnostics {
 	StorageAccountUri: *string,
@@ -2469,7 +2451,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics.property.storageAccountUri">StorageAccountUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics.property.storageAccountUri">StorageAccountUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}. |
 
 ---
 
@@ -2481,7 +2463,7 @@ StorageAccountUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#storage_account_uri LinuxVirtualMachine#storage_account_uri}.
 
 ---
 
@@ -2490,7 +2472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineConfig {
 	Connection: interface{},
@@ -2503,16 +2485,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 	Location: *string,
 	Name: *string,
 	NetworkInterfaceIds: *[]*string,
-	OsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineOsDisk,
+	OsDisk: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineOsDisk,
 	ResourceGroupName: *string,
 	Size: *string,
-	AdditionalCapabilities: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities,
+	AdditionalCapabilities: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities,
 	AdminPassword: *string,
 	AdminSshKey: interface{},
 	AdminUsername: *string,
 	AllowExtensionOperations: interface{},
 	AvailabilitySetId: *string,
-	BootDiagnostics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics,
+	BootDiagnostics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics,
 	BypassPlatformSafetyChecksOnUserScheduleEnabled: interface{},
 	CapacityReservationGroupId: *string,
 	ComputerName: *string,
@@ -2527,14 +2509,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 	ExtensionsTimeBudget: *string,
 	GalleryApplication: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineIdentity,
 	LicenseType: *string,
 	MaxBidPrice: *f64,
-	OsImageNotification: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification,
+	OsImageNotification: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification,
 	OsManagedDiskId: *string,
 	PatchAssessmentMode: *string,
 	PatchMode: *string,
-	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachinePlan,
+	Plan: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachinePlan,
 	PlatformFaultDomain: *f64,
 	Priority: *string,
 	ProvisionVmAgent: interface{},
@@ -2543,13 +2525,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 	Secret: interface{},
 	SecureBootEnabled: interface{},
 	SourceImageId: *string,
-	SourceImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference,
+	SourceImageReference: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference,
 	Tags: *map[string]*string,
-	TerminationNotification: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineTimeouts,
+	TerminationNotification: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineTimeouts,
 	UserData: *string,
 	VirtualMachineScaleSetId: *string,
-	VmAgentPlatformUpdatesEnabled: interface{},
 	VtpmEnabled: interface{},
 	Zone: *string,
 }
@@ -2566,58 +2547,57 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#location LinuxVirtualMachine#location}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.networkInterfaceIds">NetworkInterfaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#network_interface_ids LinuxVirtualMachine#network_interface_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#location LinuxVirtualMachine#location}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.networkInterfaceIds">NetworkInterfaceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#network_interface_ids LinuxVirtualMachine#network_interface_ids}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.osDisk">OsDisk</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk">LinuxVirtualMachineOsDisk</a></code> | os_disk block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#resource_group_name LinuxVirtualMachine#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#size LinuxVirtualMachine#size}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#resource_group_name LinuxVirtualMachine#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.size">Size</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#size LinuxVirtualMachine#size}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.additionalCapabilities">AdditionalCapabilities</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilities">LinuxVirtualMachineAdditionalCapabilities</a></code> | additional_capabilities block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.adminPassword">AdminPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#admin_password LinuxVirtualMachine#admin_password}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.adminPassword">AdminPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#admin_password LinuxVirtualMachine#admin_password}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.adminSshKey">AdminSshKey</a></code> | <code>interface{}</code> | admin_ssh_key block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.adminUsername">AdminUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#admin_username LinuxVirtualMachine#admin_username}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.allowExtensionOperations">AllowExtensionOperations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#allow_extension_operations LinuxVirtualMachine#allow_extension_operations}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.availabilitySetId">AvailabilitySetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#availability_set_id LinuxVirtualMachine#availability_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.adminUsername">AdminUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#admin_username LinuxVirtualMachine#admin_username}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.allowExtensionOperations">AllowExtensionOperations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#allow_extension_operations LinuxVirtualMachine#allow_extension_operations}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.availabilitySetId">AvailabilitySetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#availability_set_id LinuxVirtualMachine#availability_set_id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.bootDiagnostics">BootDiagnostics</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineBootDiagnostics">LinuxVirtualMachineBootDiagnostics</a></code> | boot_diagnostics block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.bypassPlatformSafetyChecksOnUserScheduleEnabled">BypassPlatformSafetyChecksOnUserScheduleEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#bypass_platform_safety_checks_on_user_schedule_enabled LinuxVirtualMachine#bypass_platform_safety_checks_on_user_schedule_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.capacityReservationGroupId">CapacityReservationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#capacity_reservation_group_id LinuxVirtualMachine#capacity_reservation_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.computerName">ComputerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#computer_name LinuxVirtualMachine#computer_name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.customData">CustomData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#custom_data LinuxVirtualMachine#custom_data}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.dedicatedHostGroupId">DedicatedHostGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#dedicated_host_group_id LinuxVirtualMachine#dedicated_host_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.dedicatedHostId">DedicatedHostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#dedicated_host_id LinuxVirtualMachine#dedicated_host_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.disablePasswordAuthentication">DisablePasswordAuthentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disable_password_authentication LinuxVirtualMachine#disable_password_authentication}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.diskControllerType">DiskControllerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_controller_type LinuxVirtualMachine#disk_controller_type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.edgeZone">EdgeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#edge_zone LinuxVirtualMachine#edge_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#encryption_at_host_enabled LinuxVirtualMachine#encryption_at_host_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.evictionPolicy">EvictionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#eviction_policy LinuxVirtualMachine#eviction_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.extensionsTimeBudget">ExtensionsTimeBudget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#extensions_time_budget LinuxVirtualMachine#extensions_time_budget}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.bypassPlatformSafetyChecksOnUserScheduleEnabled">BypassPlatformSafetyChecksOnUserScheduleEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#bypass_platform_safety_checks_on_user_schedule_enabled LinuxVirtualMachine#bypass_platform_safety_checks_on_user_schedule_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.capacityReservationGroupId">CapacityReservationGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#capacity_reservation_group_id LinuxVirtualMachine#capacity_reservation_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.computerName">ComputerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#computer_name LinuxVirtualMachine#computer_name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.customData">CustomData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#custom_data LinuxVirtualMachine#custom_data}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.dedicatedHostGroupId">DedicatedHostGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#dedicated_host_group_id LinuxVirtualMachine#dedicated_host_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.dedicatedHostId">DedicatedHostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#dedicated_host_id LinuxVirtualMachine#dedicated_host_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.disablePasswordAuthentication">DisablePasswordAuthentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disable_password_authentication LinuxVirtualMachine#disable_password_authentication}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.diskControllerType">DiskControllerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_controller_type LinuxVirtualMachine#disk_controller_type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.edgeZone">EdgeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#edge_zone LinuxVirtualMachine#edge_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.encryptionAtHostEnabled">EncryptionAtHostEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#encryption_at_host_enabled LinuxVirtualMachine#encryption_at_host_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.evictionPolicy">EvictionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#eviction_policy LinuxVirtualMachine#eviction_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.extensionsTimeBudget">ExtensionsTimeBudget</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#extensions_time_budget LinuxVirtualMachine#extensions_time_budget}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.galleryApplication">GalleryApplication</a></code> | <code>interface{}</code> | gallery_application block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#id LinuxVirtualMachine#id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#id LinuxVirtualMachine#id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity">LinuxVirtualMachineIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.licenseType">LicenseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#license_type LinuxVirtualMachine#license_type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.maxBidPrice">MaxBidPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#max_bid_price LinuxVirtualMachine#max_bid_price}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.licenseType">LicenseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#license_type LinuxVirtualMachine#license_type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.maxBidPrice">MaxBidPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#max_bid_price LinuxVirtualMachine#max_bid_price}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.osImageNotification">OsImageNotification</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification">LinuxVirtualMachineOsImageNotification</a></code> | os_image_notification block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.osManagedDiskId">OsManagedDiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#os_managed_disk_id LinuxVirtualMachine#os_managed_disk_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.patchAssessmentMode">PatchAssessmentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#patch_assessment_mode LinuxVirtualMachine#patch_assessment_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.patchMode">PatchMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#patch_mode LinuxVirtualMachine#patch_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.osManagedDiskId">OsManagedDiskId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#os_managed_disk_id LinuxVirtualMachine#os_managed_disk_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.patchAssessmentMode">PatchAssessmentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#patch_assessment_mode LinuxVirtualMachine#patch_assessment_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.patchMode">PatchMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#patch_mode LinuxVirtualMachine#patch_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.plan">Plan</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan">LinuxVirtualMachinePlan</a></code> | plan block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.platformFaultDomain">PlatformFaultDomain</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#platform_fault_domain LinuxVirtualMachine#platform_fault_domain}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#priority LinuxVirtualMachine#priority}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.provisionVmAgent">ProvisionVmAgent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#provision_vm_agent LinuxVirtualMachine#provision_vm_agent}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.proximityPlacementGroupId">ProximityPlacementGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#proximity_placement_group_id LinuxVirtualMachine#proximity_placement_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.rebootSetting">RebootSetting</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#reboot_setting LinuxVirtualMachine#reboot_setting}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.platformFaultDomain">PlatformFaultDomain</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#platform_fault_domain LinuxVirtualMachine#platform_fault_domain}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.priority">Priority</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#priority LinuxVirtualMachine#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.provisionVmAgent">ProvisionVmAgent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#provision_vm_agent LinuxVirtualMachine#provision_vm_agent}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.proximityPlacementGroupId">ProximityPlacementGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#proximity_placement_group_id LinuxVirtualMachine#proximity_placement_group_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.rebootSetting">RebootSetting</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#reboot_setting LinuxVirtualMachine#reboot_setting}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.secret">Secret</a></code> | <code>interface{}</code> | secret block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.secureBootEnabled">SecureBootEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#secure_boot_enabled LinuxVirtualMachine#secure_boot_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.sourceImageId">SourceImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#source_image_id LinuxVirtualMachine#source_image_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.secureBootEnabled">SecureBootEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#secure_boot_enabled LinuxVirtualMachine#secure_boot_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.sourceImageId">SourceImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#source_image_id LinuxVirtualMachine#source_image_id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.sourceImageReference">SourceImageReference</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference">LinuxVirtualMachineSourceImageReference</a></code> | source_image_reference block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#tags LinuxVirtualMachine#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#tags LinuxVirtualMachine#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.terminationNotification">TerminationNotification</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification">LinuxVirtualMachineTerminationNotification</a></code> | termination_notification block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts">LinuxVirtualMachineTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#user_data LinuxVirtualMachine#user_data}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.virtualMachineScaleSetId">VirtualMachineScaleSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#virtual_machine_scale_set_id LinuxVirtualMachine#virtual_machine_scale_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.vmAgentPlatformUpdatesEnabled">VmAgentPlatformUpdatesEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#vm_agent_platform_updates_enabled LinuxVirtualMachine#vm_agent_platform_updates_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.vtpmEnabled">VtpmEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#vtpm_enabled LinuxVirtualMachine#vtpm_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#zone LinuxVirtualMachine#zone}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#user_data LinuxVirtualMachine#user_data}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.virtualMachineScaleSetId">VirtualMachineScaleSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#virtual_machine_scale_set_id LinuxVirtualMachine#virtual_machine_scale_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.vtpmEnabled">VtpmEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#vtpm_enabled LinuxVirtualMachine#vtpm_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#zone LinuxVirtualMachine#zone}. |
 
 ---
 
@@ -2699,7 +2679,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#location LinuxVirtualMachine#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#location LinuxVirtualMachine#location}.
 
 ---
 
@@ -2711,7 +2691,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
 
 ---
 
@@ -2723,7 +2703,7 @@ NetworkInterfaceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#network_interface_ids LinuxVirtualMachine#network_interface_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#network_interface_ids LinuxVirtualMachine#network_interface_ids}.
 
 ---
 
@@ -2737,7 +2717,7 @@ OsDisk LinuxVirtualMachineOsDisk
 
 os_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#os_disk LinuxVirtualMachine#os_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#os_disk LinuxVirtualMachine#os_disk}
 
 ---
 
@@ -2749,7 +2729,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#resource_group_name LinuxVirtualMachine#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#resource_group_name LinuxVirtualMachine#resource_group_name}.
 
 ---
 
@@ -2761,7 +2741,7 @@ Size *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#size LinuxVirtualMachine#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#size LinuxVirtualMachine#size}.
 
 ---
 
@@ -2775,7 +2755,7 @@ AdditionalCapabilities LinuxVirtualMachineAdditionalCapabilities
 
 additional_capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#additional_capabilities LinuxVirtualMachine#additional_capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#additional_capabilities LinuxVirtualMachine#additional_capabilities}
 
 ---
 
@@ -2787,7 +2767,7 @@ AdminPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#admin_password LinuxVirtualMachine#admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#admin_password LinuxVirtualMachine#admin_password}.
 
 ---
 
@@ -2801,7 +2781,7 @@ AdminSshKey interface{}
 
 admin_ssh_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#admin_ssh_key LinuxVirtualMachine#admin_ssh_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#admin_ssh_key LinuxVirtualMachine#admin_ssh_key}
 
 ---
 
@@ -2813,7 +2793,7 @@ AdminUsername *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#admin_username LinuxVirtualMachine#admin_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#admin_username LinuxVirtualMachine#admin_username}.
 
 ---
 
@@ -2825,7 +2805,7 @@ AllowExtensionOperations interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#allow_extension_operations LinuxVirtualMachine#allow_extension_operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#allow_extension_operations LinuxVirtualMachine#allow_extension_operations}.
 
 ---
 
@@ -2837,7 +2817,7 @@ AvailabilitySetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#availability_set_id LinuxVirtualMachine#availability_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#availability_set_id LinuxVirtualMachine#availability_set_id}.
 
 ---
 
@@ -2851,7 +2831,7 @@ BootDiagnostics LinuxVirtualMachineBootDiagnostics
 
 boot_diagnostics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#boot_diagnostics LinuxVirtualMachine#boot_diagnostics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#boot_diagnostics LinuxVirtualMachine#boot_diagnostics}
 
 ---
 
@@ -2863,7 +2843,7 @@ BypassPlatformSafetyChecksOnUserScheduleEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#bypass_platform_safety_checks_on_user_schedule_enabled LinuxVirtualMachine#bypass_platform_safety_checks_on_user_schedule_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#bypass_platform_safety_checks_on_user_schedule_enabled LinuxVirtualMachine#bypass_platform_safety_checks_on_user_schedule_enabled}.
 
 ---
 
@@ -2875,7 +2855,7 @@ CapacityReservationGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#capacity_reservation_group_id LinuxVirtualMachine#capacity_reservation_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#capacity_reservation_group_id LinuxVirtualMachine#capacity_reservation_group_id}.
 
 ---
 
@@ -2887,7 +2867,7 @@ ComputerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#computer_name LinuxVirtualMachine#computer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#computer_name LinuxVirtualMachine#computer_name}.
 
 ---
 
@@ -2899,7 +2879,7 @@ CustomData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#custom_data LinuxVirtualMachine#custom_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#custom_data LinuxVirtualMachine#custom_data}.
 
 ---
 
@@ -2911,7 +2891,7 @@ DedicatedHostGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#dedicated_host_group_id LinuxVirtualMachine#dedicated_host_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#dedicated_host_group_id LinuxVirtualMachine#dedicated_host_group_id}.
 
 ---
 
@@ -2923,7 +2903,7 @@ DedicatedHostId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#dedicated_host_id LinuxVirtualMachine#dedicated_host_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#dedicated_host_id LinuxVirtualMachine#dedicated_host_id}.
 
 ---
 
@@ -2935,7 +2915,7 @@ DisablePasswordAuthentication interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disable_password_authentication LinuxVirtualMachine#disable_password_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disable_password_authentication LinuxVirtualMachine#disable_password_authentication}.
 
 ---
 
@@ -2947,7 +2927,7 @@ DiskControllerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_controller_type LinuxVirtualMachine#disk_controller_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_controller_type LinuxVirtualMachine#disk_controller_type}.
 
 ---
 
@@ -2959,7 +2939,7 @@ EdgeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#edge_zone LinuxVirtualMachine#edge_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#edge_zone LinuxVirtualMachine#edge_zone}.
 
 ---
 
@@ -2971,7 +2951,7 @@ EncryptionAtHostEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#encryption_at_host_enabled LinuxVirtualMachine#encryption_at_host_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#encryption_at_host_enabled LinuxVirtualMachine#encryption_at_host_enabled}.
 
 ---
 
@@ -2983,7 +2963,7 @@ EvictionPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#eviction_policy LinuxVirtualMachine#eviction_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#eviction_policy LinuxVirtualMachine#eviction_policy}.
 
 ---
 
@@ -2995,7 +2975,7 @@ ExtensionsTimeBudget *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#extensions_time_budget LinuxVirtualMachine#extensions_time_budget}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#extensions_time_budget LinuxVirtualMachine#extensions_time_budget}.
 
 ---
 
@@ -3009,7 +2989,7 @@ GalleryApplication interface{}
 
 gallery_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#gallery_application LinuxVirtualMachine#gallery_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#gallery_application LinuxVirtualMachine#gallery_application}
 
 ---
 
@@ -3021,7 +3001,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#id LinuxVirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#id LinuxVirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3038,7 +3018,7 @@ Identity LinuxVirtualMachineIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#identity LinuxVirtualMachine#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#identity LinuxVirtualMachine#identity}
 
 ---
 
@@ -3050,7 +3030,7 @@ LicenseType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#license_type LinuxVirtualMachine#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#license_type LinuxVirtualMachine#license_type}.
 
 ---
 
@@ -3062,7 +3042,7 @@ MaxBidPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#max_bid_price LinuxVirtualMachine#max_bid_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#max_bid_price LinuxVirtualMachine#max_bid_price}.
 
 ---
 
@@ -3076,7 +3056,7 @@ OsImageNotification LinuxVirtualMachineOsImageNotification
 
 os_image_notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#os_image_notification LinuxVirtualMachine#os_image_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#os_image_notification LinuxVirtualMachine#os_image_notification}
 
 ---
 
@@ -3088,7 +3068,7 @@ OsManagedDiskId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#os_managed_disk_id LinuxVirtualMachine#os_managed_disk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#os_managed_disk_id LinuxVirtualMachine#os_managed_disk_id}.
 
 ---
 
@@ -3100,7 +3080,7 @@ PatchAssessmentMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#patch_assessment_mode LinuxVirtualMachine#patch_assessment_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#patch_assessment_mode LinuxVirtualMachine#patch_assessment_mode}.
 
 ---
 
@@ -3112,7 +3092,7 @@ PatchMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#patch_mode LinuxVirtualMachine#patch_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#patch_mode LinuxVirtualMachine#patch_mode}.
 
 ---
 
@@ -3126,7 +3106,7 @@ Plan LinuxVirtualMachinePlan
 
 plan block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#plan LinuxVirtualMachine#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#plan LinuxVirtualMachine#plan}
 
 ---
 
@@ -3138,7 +3118,7 @@ PlatformFaultDomain *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#platform_fault_domain LinuxVirtualMachine#platform_fault_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#platform_fault_domain LinuxVirtualMachine#platform_fault_domain}.
 
 ---
 
@@ -3150,7 +3130,7 @@ Priority *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#priority LinuxVirtualMachine#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#priority LinuxVirtualMachine#priority}.
 
 ---
 
@@ -3162,7 +3142,7 @@ ProvisionVmAgent interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#provision_vm_agent LinuxVirtualMachine#provision_vm_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#provision_vm_agent LinuxVirtualMachine#provision_vm_agent}.
 
 ---
 
@@ -3174,7 +3154,7 @@ ProximityPlacementGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#proximity_placement_group_id LinuxVirtualMachine#proximity_placement_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#proximity_placement_group_id LinuxVirtualMachine#proximity_placement_group_id}.
 
 ---
 
@@ -3186,7 +3166,7 @@ RebootSetting *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#reboot_setting LinuxVirtualMachine#reboot_setting}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#reboot_setting LinuxVirtualMachine#reboot_setting}.
 
 ---
 
@@ -3200,7 +3180,7 @@ Secret interface{}
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#secret LinuxVirtualMachine#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#secret LinuxVirtualMachine#secret}
 
 ---
 
@@ -3212,7 +3192,7 @@ SecureBootEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#secure_boot_enabled LinuxVirtualMachine#secure_boot_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#secure_boot_enabled LinuxVirtualMachine#secure_boot_enabled}.
 
 ---
 
@@ -3224,7 +3204,7 @@ SourceImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#source_image_id LinuxVirtualMachine#source_image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#source_image_id LinuxVirtualMachine#source_image_id}.
 
 ---
 
@@ -3238,7 +3218,7 @@ SourceImageReference LinuxVirtualMachineSourceImageReference
 
 source_image_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#source_image_reference LinuxVirtualMachine#source_image_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#source_image_reference LinuxVirtualMachine#source_image_reference}
 
 ---
 
@@ -3250,7 +3230,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#tags LinuxVirtualMachine#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#tags LinuxVirtualMachine#tags}.
 
 ---
 
@@ -3264,7 +3244,7 @@ TerminationNotification LinuxVirtualMachineTerminationNotification
 
 termination_notification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#termination_notification LinuxVirtualMachine#termination_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#termination_notification LinuxVirtualMachine#termination_notification}
 
 ---
 
@@ -3278,7 +3258,7 @@ Timeouts LinuxVirtualMachineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#timeouts LinuxVirtualMachine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#timeouts LinuxVirtualMachine#timeouts}
 
 ---
 
@@ -3290,7 +3270,7 @@ UserData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#user_data LinuxVirtualMachine#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#user_data LinuxVirtualMachine#user_data}.
 
 ---
 
@@ -3302,19 +3282,7 @@ VirtualMachineScaleSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#virtual_machine_scale_set_id LinuxVirtualMachine#virtual_machine_scale_set_id}.
-
----
-
-##### `VmAgentPlatformUpdatesEnabled`<sup>Optional</sup> <a name="VmAgentPlatformUpdatesEnabled" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineConfig.property.vmAgentPlatformUpdatesEnabled"></a>
-
-```go
-VmAgentPlatformUpdatesEnabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#vm_agent_platform_updates_enabled LinuxVirtualMachine#vm_agent_platform_updates_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#virtual_machine_scale_set_id LinuxVirtualMachine#virtual_machine_scale_set_id}.
 
 ---
 
@@ -3326,7 +3294,7 @@ VtpmEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#vtpm_enabled LinuxVirtualMachine#vtpm_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#vtpm_enabled LinuxVirtualMachine#vtpm_enabled}.
 
 ---
 
@@ -3338,7 +3306,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#zone LinuxVirtualMachine#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#zone LinuxVirtualMachine#zone}.
 
 ---
 
@@ -3347,7 +3315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineGalleryApplication {
 	VersionId: *string,
@@ -3363,12 +3331,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.versionId">VersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#version_id LinuxVirtualMachine#version_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.automaticUpgradeEnabled">AutomaticUpgradeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#automatic_upgrade_enabled LinuxVirtualMachine#automatic_upgrade_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.configurationBlobUri">ConfigurationBlobUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#configuration_blob_uri LinuxVirtualMachine#configuration_blob_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#order LinuxVirtualMachine#order}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#tag LinuxVirtualMachine#tag}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.treatFailureAsDeploymentFailureEnabled">TreatFailureAsDeploymentFailureEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#treat_failure_as_deployment_failure_enabled LinuxVirtualMachine#treat_failure_as_deployment_failure_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.versionId">VersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#version_id LinuxVirtualMachine#version_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.automaticUpgradeEnabled">AutomaticUpgradeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#automatic_upgrade_enabled LinuxVirtualMachine#automatic_upgrade_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.configurationBlobUri">ConfigurationBlobUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#configuration_blob_uri LinuxVirtualMachine#configuration_blob_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.order">Order</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#order LinuxVirtualMachine#order}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#tag LinuxVirtualMachine#tag}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplication.property.treatFailureAsDeploymentFailureEnabled">TreatFailureAsDeploymentFailureEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#treat_failure_as_deployment_failure_enabled LinuxVirtualMachine#treat_failure_as_deployment_failure_enabled}. |
 
 ---
 
@@ -3380,7 +3348,7 @@ VersionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#version_id LinuxVirtualMachine#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#version_id LinuxVirtualMachine#version_id}.
 
 ---
 
@@ -3392,7 +3360,7 @@ AutomaticUpgradeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#automatic_upgrade_enabled LinuxVirtualMachine#automatic_upgrade_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#automatic_upgrade_enabled LinuxVirtualMachine#automatic_upgrade_enabled}.
 
 ---
 
@@ -3404,7 +3372,7 @@ ConfigurationBlobUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#configuration_blob_uri LinuxVirtualMachine#configuration_blob_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#configuration_blob_uri LinuxVirtualMachine#configuration_blob_uri}.
 
 ---
 
@@ -3416,7 +3384,7 @@ Order *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#order LinuxVirtualMachine#order}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#order LinuxVirtualMachine#order}.
 
 ---
 
@@ -3428,7 +3396,7 @@ Tag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#tag LinuxVirtualMachine#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#tag LinuxVirtualMachine#tag}.
 
 ---
 
@@ -3440,7 +3408,7 @@ TreatFailureAsDeploymentFailureEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#treat_failure_as_deployment_failure_enabled LinuxVirtualMachine#treat_failure_as_deployment_failure_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#treat_failure_as_deployment_failure_enabled LinuxVirtualMachine#treat_failure_as_deployment_failure_enabled}.
 
 ---
 
@@ -3449,7 +3417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineIdentity {
 	Type: *string,
@@ -3461,8 +3429,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#type LinuxVirtualMachine#type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#identity_ids LinuxVirtualMachine#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#type LinuxVirtualMachine#type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#identity_ids LinuxVirtualMachine#identity_ids}. |
 
 ---
 
@@ -3474,7 +3442,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#type LinuxVirtualMachine#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#type LinuxVirtualMachine#type}.
 
 ---
 
@@ -3486,7 +3454,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#identity_ids LinuxVirtualMachine#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#identity_ids LinuxVirtualMachine#identity_ids}.
 
 ---
 
@@ -3495,11 +3463,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineOsDisk {
 	Caching: *string,
-	DiffDiskSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings,
+	DiffDiskSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings,
 	DiskEncryptionSetId: *string,
 	DiskSizeGb: *f64,
 	Name: *string,
@@ -3514,15 +3482,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.caching">Caching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#caching LinuxVirtualMachine#caching}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.caching">Caching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#caching LinuxVirtualMachine#caching}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.diffDiskSettings">DiffDiskSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings">LinuxVirtualMachineOsDiskDiffDiskSettings</a></code> | diff_disk_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_encryption_set_id LinuxVirtualMachine#disk_encryption_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_size_gb LinuxVirtualMachine#disk_size_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.secureVmDiskEncryptionSetId">SecureVmDiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#secure_vm_disk_encryption_set_id LinuxVirtualMachine#secure_vm_disk_encryption_set_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.securityEncryptionType">SecurityEncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#security_encryption_type LinuxVirtualMachine#security_encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#storage_account_type LinuxVirtualMachine#storage_account_type}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.writeAcceleratorEnabled">WriteAcceleratorEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#write_accelerator_enabled LinuxVirtualMachine#write_accelerator_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.diskEncryptionSetId">DiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_encryption_set_id LinuxVirtualMachine#disk_encryption_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_size_gb LinuxVirtualMachine#disk_size_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.secureVmDiskEncryptionSetId">SecureVmDiskEncryptionSetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#secure_vm_disk_encryption_set_id LinuxVirtualMachine#secure_vm_disk_encryption_set_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.securityEncryptionType">SecurityEncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#security_encryption_type LinuxVirtualMachine#security_encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#storage_account_type LinuxVirtualMachine#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDisk.property.writeAcceleratorEnabled">WriteAcceleratorEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#write_accelerator_enabled LinuxVirtualMachine#write_accelerator_enabled}. |
 
 ---
 
@@ -3534,7 +3502,7 @@ Caching *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#caching LinuxVirtualMachine#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#caching LinuxVirtualMachine#caching}.
 
 ---
 
@@ -3548,7 +3516,7 @@ DiffDiskSettings LinuxVirtualMachineOsDiskDiffDiskSettings
 
 diff_disk_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#diff_disk_settings LinuxVirtualMachine#diff_disk_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#diff_disk_settings LinuxVirtualMachine#diff_disk_settings}
 
 ---
 
@@ -3560,7 +3528,7 @@ DiskEncryptionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_encryption_set_id LinuxVirtualMachine#disk_encryption_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_encryption_set_id LinuxVirtualMachine#disk_encryption_set_id}.
 
 ---
 
@@ -3572,7 +3540,7 @@ DiskSizeGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#disk_size_gb LinuxVirtualMachine#disk_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#disk_size_gb LinuxVirtualMachine#disk_size_gb}.
 
 ---
 
@@ -3584,7 +3552,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
 
 ---
 
@@ -3596,7 +3564,7 @@ SecureVmDiskEncryptionSetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#secure_vm_disk_encryption_set_id LinuxVirtualMachine#secure_vm_disk_encryption_set_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#secure_vm_disk_encryption_set_id LinuxVirtualMachine#secure_vm_disk_encryption_set_id}.
 
 ---
 
@@ -3608,7 +3576,7 @@ SecurityEncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#security_encryption_type LinuxVirtualMachine#security_encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#security_encryption_type LinuxVirtualMachine#security_encryption_type}.
 
 ---
 
@@ -3620,7 +3588,7 @@ StorageAccountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#storage_account_type LinuxVirtualMachine#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#storage_account_type LinuxVirtualMachine#storage_account_type}.
 
 ---
 
@@ -3632,7 +3600,7 @@ WriteAcceleratorEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#write_accelerator_enabled LinuxVirtualMachine#write_accelerator_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#write_accelerator_enabled LinuxVirtualMachine#write_accelerator_enabled}.
 
 ---
 
@@ -3641,7 +3609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineOsDiskDiffDiskSettings {
 	Option: *string,
@@ -3653,8 +3621,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings.property.option">Option</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#option LinuxVirtualMachine#option}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings.property.placement">Placement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#placement LinuxVirtualMachine#placement}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings.property.option">Option</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#option LinuxVirtualMachine#option}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettings.property.placement">Placement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#placement LinuxVirtualMachine#placement}. |
 
 ---
 
@@ -3666,7 +3634,7 @@ Option *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#option LinuxVirtualMachine#option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#option LinuxVirtualMachine#option}.
 
 ---
 
@@ -3678,7 +3646,7 @@ Placement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#placement LinuxVirtualMachine#placement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#placement LinuxVirtualMachine#placement}.
 
 ---
 
@@ -3687,7 +3655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineOsImageNotification {
 	Timeout: *string,
@@ -3698,7 +3666,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification.property.timeout">Timeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsImageNotification.property.timeout">Timeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}. |
 
 ---
 
@@ -3710,7 +3678,7 @@ Timeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
 
 ---
 
@@ -3719,7 +3687,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachinePlan {
 	Name: *string,
@@ -3732,9 +3700,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.product">Product</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#product LinuxVirtualMachine#product}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.product">Product</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#product LinuxVirtualMachine#product}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlan.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}. |
 
 ---
 
@@ -3746,7 +3714,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#name LinuxVirtualMachine#name}.
 
 ---
 
@@ -3758,7 +3726,7 @@ Product *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#product LinuxVirtualMachine#product}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#product LinuxVirtualMachine#product}.
 
 ---
 
@@ -3770,7 +3738,7 @@ Publisher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}.
 
 ---
 
@@ -3779,7 +3747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineSecret {
 	Certificate: interface{},
@@ -3792,7 +3760,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecret.property.certificate">Certificate</a></code> | <code>interface{}</code> | certificate block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecret.property.keyVaultId">KeyVaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#key_vault_id LinuxVirtualMachine#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecret.property.keyVaultId">KeyVaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#key_vault_id LinuxVirtualMachine#key_vault_id}. |
 
 ---
 
@@ -3806,7 +3774,7 @@ Certificate interface{}
 
 certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#certificate LinuxVirtualMachine#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#certificate LinuxVirtualMachine#certificate}
 
 ---
 
@@ -3818,7 +3786,7 @@ KeyVaultId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#key_vault_id LinuxVirtualMachine#key_vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#key_vault_id LinuxVirtualMachine#key_vault_id}.
 
 ---
 
@@ -3827,7 +3795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineSecretCertificate {
 	Url: *string,
@@ -3838,7 +3806,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretCertificate.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretCertificate.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}. |
 
 ---
 
@@ -3850,7 +3818,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#url LinuxVirtualMachine#url}.
 
 ---
 
@@ -3859,7 +3827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineSourceImageReference {
 	Offer: *string,
@@ -3873,10 +3841,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#offer LinuxVirtualMachine#offer}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#sku LinuxVirtualMachine#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#version LinuxVirtualMachine#version}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.offer">Offer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#offer LinuxVirtualMachine#offer}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.publisher">Publisher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#sku LinuxVirtualMachine#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReference.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#version LinuxVirtualMachine#version}. |
 
 ---
 
@@ -3888,7 +3856,7 @@ Offer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#offer LinuxVirtualMachine#offer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#offer LinuxVirtualMachine#offer}.
 
 ---
 
@@ -3900,7 +3868,7 @@ Publisher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#publisher LinuxVirtualMachine#publisher}.
 
 ---
 
@@ -3912,7 +3880,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#sku LinuxVirtualMachine#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#sku LinuxVirtualMachine#sku}.
 
 ---
 
@@ -3924,7 +3892,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#version LinuxVirtualMachine#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#version LinuxVirtualMachine#version}.
 
 ---
 
@@ -3933,7 +3901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineTerminationNotification {
 	Enabled: interface{},
@@ -3945,8 +3913,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#enabled LinuxVirtualMachine#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification.property.timeout">Timeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#enabled LinuxVirtualMachine#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotification.property.timeout">Timeout</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}. |
 
 ---
 
@@ -3958,7 +3926,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#enabled LinuxVirtualMachine#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#enabled LinuxVirtualMachine#enabled}.
 
 ---
 
@@ -3970,7 +3938,7 @@ Timeout *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}.
 
 ---
 
@@ -3979,7 +3947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 &linuxvirtualmachine.LinuxVirtualMachineTimeouts {
 	Create: *string,
@@ -3993,10 +3961,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualma
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#create LinuxVirtualMachine#create}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#delete LinuxVirtualMachine#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#read LinuxVirtualMachine#read}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#update LinuxVirtualMachine#update}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#create LinuxVirtualMachine#create}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#delete LinuxVirtualMachine#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#read LinuxVirtualMachine#read}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#update LinuxVirtualMachine#update}. |
 
 ---
 
@@ -4008,7 +3976,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#create LinuxVirtualMachine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#create LinuxVirtualMachine#create}.
 
 ---
 
@@ -4020,7 +3988,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#delete LinuxVirtualMachine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#delete LinuxVirtualMachine#delete}.
 
 ---
 
@@ -4032,7 +4000,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#read LinuxVirtualMachine#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#read LinuxVirtualMachine#read}.
 
 ---
 
@@ -4044,7 +4012,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/linux_virtual_machine#update LinuxVirtualMachine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/linux_virtual_machine#update LinuxVirtualMachine#update}.
 
 ---
 
@@ -4055,7 +4023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdditionalCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineAdditionalCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineAdditionalCapabilitiesOutputReference
 ```
@@ -4362,7 +4330,7 @@ func InternalValue() LinuxVirtualMachineAdditionalCapabilities
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineAdminSshKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LinuxVirtualMachineAdminSshKeyList
 ```
@@ -4522,7 +4490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineAdminSshKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineAdminSshKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LinuxVirtualMachineAdminSshKeyOutputReference
 ```
@@ -4833,7 +4801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineBootDiagnosticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineBootDiagnosticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineBootDiagnosticsOutputReference
 ```
@@ -5111,7 +5079,7 @@ func InternalValue() LinuxVirtualMachineBootDiagnostics
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineGalleryApplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LinuxVirtualMachineGalleryApplicationList
 ```
@@ -5271,7 +5239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineGalleryApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineGalleryApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LinuxVirtualMachineGalleryApplicationOutputReference
 ```
@@ -5705,7 +5673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineIdentityOutputReference
 ```
@@ -6027,7 +5995,7 @@ func InternalValue() LinuxVirtualMachineIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference
 ```
@@ -6327,7 +6295,7 @@ func InternalValue() LinuxVirtualMachineOsDiskDiffDiskSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineOsDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineOsDiskOutputReference
 ```
@@ -6854,7 +6822,7 @@ func InternalValue() LinuxVirtualMachineOsDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineOsImageNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineOsImageNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineOsImageNotificationOutputReference
 ```
@@ -7132,7 +7100,7 @@ func InternalValue() LinuxVirtualMachineOsImageNotification
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachinePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachinePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachinePlanOutputReference
 ```
@@ -7447,7 +7415,7 @@ func InternalValue() LinuxVirtualMachinePlan
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineSecretCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LinuxVirtualMachineSecretCertificateList
 ```
@@ -7607,7 +7575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineSecretCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LinuxVirtualMachineSecretCertificateOutputReference
 ```
@@ -7896,7 +7864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineSecretList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LinuxVirtualMachineSecretList
 ```
@@ -8056,7 +8024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LinuxVirtualMachineSecretOutputReference
 ```
@@ -8380,7 +8348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineSourceImageReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineSourceImageReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineSourceImageReferenceOutputReference
 ```
@@ -8717,7 +8685,7 @@ func InternalValue() LinuxVirtualMachineSourceImageReference
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTerminationNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineTerminationNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineTerminationNotificationOutputReference
 ```
@@ -9017,7 +8985,7 @@ func InternalValue() LinuxVirtualMachineTerminationNotification
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.linuxVirtualMachine.LinuxVirtualMachineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/linuxvirtualmachine"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/linuxvirtualmachine"
 
 linuxvirtualmachine.NewLinuxVirtualMachineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LinuxVirtualMachineTimeoutsOutputReference
 ```

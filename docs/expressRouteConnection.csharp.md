@@ -4,7 +4,7 @@
 
 ### ExpressRouteConnection <a name="ExpressRouteConnection" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection azurerm_express_route_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection azurerm_express_route_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.Initializer"></a>
 
@@ -77,11 +77,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.putRouting">PutRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetAuthorizationKey">ResetAuthorizationKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetEnableInternetSecurity">ResetEnableInternetSecurity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetExpressRouteGatewayBypassEnabled">ResetExpressRouteGatewayBypassEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetInternetSecurityEnabled">ResetInternetSecurityEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetPrivateLinkFastPathEnabled">ResetPrivateLinkFastPathEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetRouting">ResetRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetRoutingWeight">ResetRoutingWeight</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -427,12 +425,6 @@ private void PutTimeouts(ExpressRouteConnectionTimeouts Value)
 private void ResetAuthorizationKey()
 ```
 
-##### `ResetEnableInternetSecurity` <a name="ResetEnableInternetSecurity" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetEnableInternetSecurity"></a>
-
-```csharp
-private void ResetEnableInternetSecurity()
-```
-
 ##### `ResetExpressRouteGatewayBypassEnabled` <a name="ResetExpressRouteGatewayBypassEnabled" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetExpressRouteGatewayBypassEnabled"></a>
 
 ```csharp
@@ -449,12 +441,6 @@ private void ResetId()
 
 ```csharp
 private void ResetInternetSecurityEnabled()
-```
-
-##### `ResetPrivateLinkFastPathEnabled` <a name="ResetPrivateLinkFastPathEnabled" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetPrivateLinkFastPathEnabled"></a>
-
-```csharp
-private void ResetPrivateLinkFastPathEnabled()
 ```
 
 ##### `ResetRouting` <a name="ResetRouting" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.resetRouting"></a>
@@ -578,7 +564,7 @@ The construct id used in the generated config for the ExpressRouteConnection to 
 
 The id of the existing ExpressRouteConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,26 +597,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routing">Routing</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingOutputReference">ExpressRouteConnectionRoutingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeoutsOutputReference">ExpressRouteConnectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.authorizationKeyInput">AuthorizationKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.enableInternetSecurityInput">EnableInternetSecurityInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteCircuitPeeringIdInput">ExpressRouteCircuitPeeringIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteGatewayBypassEnabledInput">ExpressRouteGatewayBypassEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteGatewayIdInput">ExpressRouteGatewayIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.internetSecurityEnabledInput">InternetSecurityEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.privateLinkFastPathEnabledInput">PrivateLinkFastPathEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routingInput">RoutingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting">ExpressRouteConnectionRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routingWeightInput">RoutingWeightInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts">ExpressRouteConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.authorizationKey">AuthorizationKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.enableInternetSecurity">EnableInternetSecurity</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteCircuitPeeringId">ExpressRouteCircuitPeeringId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteGatewayBypassEnabled">ExpressRouteGatewayBypassEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteGatewayId">ExpressRouteGatewayId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.internetSecurityEnabled">InternetSecurityEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.privateLinkFastPathEnabled">PrivateLinkFastPathEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routingWeight">RoutingWeight</a></code> | <code>double</code> | *No description.* |
 
 ---
@@ -807,16 +789,6 @@ public string AuthorizationKeyInput { get; }
 
 ---
 
-##### `EnableInternetSecurityInput`<sup>Optional</sup> <a name="EnableInternetSecurityInput" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.enableInternetSecurityInput"></a>
-
-```csharp
-public bool|IResolvable EnableInternetSecurityInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `ExpressRouteCircuitPeeringIdInput`<sup>Optional</sup> <a name="ExpressRouteCircuitPeeringIdInput" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.expressRouteCircuitPeeringIdInput"></a>
 
 ```csharp
@@ -877,16 +849,6 @@ public string NameInput { get; }
 
 ---
 
-##### `PrivateLinkFastPathEnabledInput`<sup>Optional</sup> <a name="PrivateLinkFastPathEnabledInput" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.privateLinkFastPathEnabledInput"></a>
-
-```csharp
-public bool|IResolvable PrivateLinkFastPathEnabledInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `RoutingInput`<sup>Optional</sup> <a name="RoutingInput" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routingInput"></a>
 
 ```csharp
@@ -924,16 +886,6 @@ public string AuthorizationKey { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `EnableInternetSecurity`<sup>Required</sup> <a name="EnableInternetSecurity" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.enableInternetSecurity"></a>
-
-```csharp
-public bool|IResolvable EnableInternetSecurity { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -997,16 +949,6 @@ public string Name { get; }
 
 ---
 
-##### `PrivateLinkFastPathEnabled`<sup>Required</sup> <a name="PrivateLinkFastPathEnabled" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.privateLinkFastPathEnabled"></a>
-
-```csharp
-public bool|IResolvable PrivateLinkFastPathEnabled { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
 ##### `RoutingWeight`<sup>Required</sup> <a name="RoutingWeight" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnection.property.routingWeight"></a>
 
 ```csharp
@@ -1056,11 +998,9 @@ new ExpressRouteConnectionConfig {
     string ExpressRouteGatewayId,
     string Name,
     string AuthorizationKey = null,
-    bool|IResolvable EnableInternetSecurity = null,
     bool|IResolvable ExpressRouteGatewayBypassEnabled = null,
     string Id = null,
     bool|IResolvable InternetSecurityEnabled = null,
-    bool|IResolvable PrivateLinkFastPathEnabled = null,
     ExpressRouteConnectionRouting Routing = null,
     double RoutingWeight = null,
     ExpressRouteConnectionTimeouts Timeouts = null
@@ -1078,17 +1018,15 @@ new ExpressRouteConnectionConfig {
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteCircuitPeeringId">ExpressRouteCircuitPeeringId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteGatewayId">ExpressRouteGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#name ExpressRouteConnection#name}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.authorizationKey">AuthorizationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.enableInternetSecurity">EnableInternetSecurity</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteGatewayBypassEnabled">ExpressRouteGatewayBypassEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#id ExpressRouteConnection#id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.internetSecurityEnabled">InternetSecurityEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#internet_security_enabled ExpressRouteConnection#internet_security_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.privateLinkFastPathEnabled">PrivateLinkFastPathEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#private_link_fast_path_enabled ExpressRouteConnection#private_link_fast_path_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteCircuitPeeringId">ExpressRouteCircuitPeeringId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteGatewayId">ExpressRouteGatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#name ExpressRouteConnection#name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.authorizationKey">AuthorizationKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.expressRouteGatewayBypassEnabled">ExpressRouteGatewayBypassEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#id ExpressRouteConnection#id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.internetSecurityEnabled">InternetSecurityEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#internet_security_enabled ExpressRouteConnection#internet_security_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.routing">Routing</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting">ExpressRouteConnectionRouting</a></code> | routing block. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.routingWeight">RoutingWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.routingWeight">RoutingWeight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts">ExpressRouteConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1171,7 +1109,7 @@ public string ExpressRouteCircuitPeeringId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}.
 
 ---
 
@@ -1183,7 +1121,7 @@ public string ExpressRouteGatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}.
 
 ---
 
@@ -1195,7 +1133,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#name ExpressRouteConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#name ExpressRouteConnection#name}.
 
 ---
 
@@ -1207,19 +1145,7 @@ public string AuthorizationKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}.
-
----
-
-##### `EnableInternetSecurity`<sup>Optional</sup> <a name="EnableInternetSecurity" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.enableInternetSecurity"></a>
-
-```csharp
-public bool|IResolvable EnableInternetSecurity { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}.
 
 ---
 
@@ -1231,7 +1157,7 @@ public bool|IResolvable ExpressRouteGatewayBypassEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}.
 
 ---
 
@@ -1243,7 +1169,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#id ExpressRouteConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#id ExpressRouteConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1258,19 +1184,7 @@ public bool|IResolvable InternetSecurityEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#internet_security_enabled ExpressRouteConnection#internet_security_enabled}.
-
----
-
-##### `PrivateLinkFastPathEnabled`<sup>Optional</sup> <a name="PrivateLinkFastPathEnabled" id="@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionConfig.property.privateLinkFastPathEnabled"></a>
-
-```csharp
-public bool|IResolvable PrivateLinkFastPathEnabled { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#private_link_fast_path_enabled ExpressRouteConnection#private_link_fast_path_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#internet_security_enabled ExpressRouteConnection#internet_security_enabled}.
 
 ---
 
@@ -1284,7 +1198,7 @@ public ExpressRouteConnectionRouting Routing { get; set; }
 
 routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#routing ExpressRouteConnection#routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#routing ExpressRouteConnection#routing}
 
 ---
 
@@ -1296,7 +1210,7 @@ public double RoutingWeight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}.
 
 ---
 
@@ -1310,7 +1224,7 @@ public ExpressRouteConnectionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#timeouts ExpressRouteConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#timeouts ExpressRouteConnection#timeouts}
 
 ---
 
@@ -1333,9 +1247,9 @@ new ExpressRouteConnectionRouting {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.associatedRouteTableId">AssociatedRouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.inboundRouteMapId">InboundRouteMapId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.outboundRouteMapId">OutboundRouteMapId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.associatedRouteTableId">AssociatedRouteTableId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.inboundRouteMapId">InboundRouteMapId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.outboundRouteMapId">OutboundRouteMapId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRouting.property.propagatedRouteTable">PropagatedRouteTable</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable">ExpressRouteConnectionRoutingPropagatedRouteTable</a></code> | propagated_route_table block. |
 
 ---
@@ -1348,7 +1262,7 @@ public string AssociatedRouteTableId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}.
 
 ---
 
@@ -1360,7 +1274,7 @@ public string InboundRouteMapId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}.
 
 ---
 
@@ -1372,7 +1286,7 @@ public string OutboundRouteMapId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}.
 
 ---
 
@@ -1386,7 +1300,7 @@ public ExpressRouteConnectionRoutingPropagatedRouteTable PropagatedRouteTable { 
 
 propagated_route_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#propagated_route_table ExpressRouteConnection#propagated_route_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#propagated_route_table ExpressRouteConnection#propagated_route_table}
 
 ---
 
@@ -1407,8 +1321,8 @@ new ExpressRouteConnectionRoutingPropagatedRouteTable {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable.property.labels">Labels</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable.property.routeTableIds">RouteTableIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable.property.labels">Labels</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionRoutingPropagatedRouteTable.property.routeTableIds">RouteTableIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}. |
 
 ---
 
@@ -1420,7 +1334,7 @@ public string[] Labels { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}.
 
 ---
 
@@ -1432,7 +1346,7 @@ public string[] RouteTableIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}.
 
 ---
 
@@ -1455,10 +1369,10 @@ new ExpressRouteConnectionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#create ExpressRouteConnection#create}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#read ExpressRouteConnection#read}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#update ExpressRouteConnection#update}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#create ExpressRouteConnection#create}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#read ExpressRouteConnection#read}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRouteConnection.ExpressRouteConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#update ExpressRouteConnection#update}. |
 
 ---
 
@@ -1470,7 +1384,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#create ExpressRouteConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#create ExpressRouteConnection#create}.
 
 ---
 
@@ -1482,7 +1396,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}.
 
 ---
 
@@ -1494,7 +1408,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#read ExpressRouteConnection#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#read ExpressRouteConnection#read}.
 
 ---
 
@@ -1506,7 +1420,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_connection#update ExpressRouteConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_connection#update ExpressRouteConnection#update}.
 
 ---
 

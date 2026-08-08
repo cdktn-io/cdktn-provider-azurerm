@@ -2,27 +2,27 @@
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AppServiceSourceControlA <a name="AppServiceSourceControlA" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA"></a>
+### AppServiceSourceControl <a name="AppServiceSourceControl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control azurerm_app_service_source_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control azurerm_app_service_source_control}.
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-new AppServiceSourceControlA(Construct Scope, string Id, AppServiceSourceControlAConfig Config);
+new AppServiceSourceControl(Construct Scope, string Id, AppServiceSourceControlConfig Config);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig">AppServiceSourceControlAConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig">AppServiceSourceControlConfig</a></code> | *No description.* |
 
 ---
 
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.scope"></a>
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.scope"></a>
 
 - *Type:* Constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig">AppServiceSourceControlAConfig</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig">AppServiceSourceControlConfig</a>
 
 ---
 
@@ -50,45 +50,45 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.with">With</a></code> | Applies one or more mixins to this construct. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putGithubActionConfiguration">PutGithubActionConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetBranch">ResetBranch</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetGithubActionConfiguration">ResetGithubActionConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetRepoUrl">ResetRepoUrl</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetRollbackEnabled">ResetRollbackEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseLocalGit">ResetUseLocalGit</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseManualIntegration">ResetUseManualIntegration</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseMercurial">ResetUseMercurial</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.with">With</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putGithubActionConfiguration">PutGithubActionConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetBranch">ResetBranch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetGithubActionConfiguration">ResetGithubActionConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetRepoUrl">ResetRepoUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetRollbackEnabled">ResetRollbackEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseLocalGit">ResetUseLocalGit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseManualIntegration">ResetUseManualIntegration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseMercurial">ResetUseMercurial</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toString"></a>
 
 ```csharp
 private string ToString()
@@ -96,7 +96,7 @@ private string ToString()
 
 Returns a string representation of this construct.
 
-##### `With` <a name="With" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.with"></a>
+##### `With` <a name="With" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.with"></a>
 
 ```csharp
 private IConstruct With(params IMixin[] Mixins)
@@ -109,7 +109,7 @@ start of the call, so constructs added by a mixin will not be visited.
 Use multiple `with()` calls if subsequent mixins should apply to added
 constructs.
 
-###### `Mixins`<sup>Required</sup> <a name="Mixins" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.with.parameter.mixins"></a>
+###### `Mixins`<sup>Required</sup> <a name="Mixins" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.with.parameter.mixins"></a>
 
 - *Type:* params Constructs.IMixin[]
 
@@ -117,25 +117,25 @@ The mixins to apply.
 
 ---
 
-##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addOverride"></a>
 
 ```csharp
 private void AddOverride(string Path, object Value)
 ```
 
-###### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addOverride.parameter.path"></a>
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addOverride.parameter.value"></a>
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addOverride.parameter.value"></a>
 
 - *Type:* object
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.overrideLogicalId"></a>
 
 ```csharp
 private void OverrideLogicalId(string NewLogicalId)
@@ -143,7 +143,7 @@ private void OverrideLogicalId(string NewLogicalId)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.overrideLogicalId.parameter.newLogicalId"></a>
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -151,7 +151,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetOverrideLogicalId"></a>
 
 ```csharp
 private void ResetOverrideLogicalId()
@@ -159,19 +159,19 @@ private void ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toHclTerraform"></a>
 
 ```csharp
 private object ToHclTerraform()
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toMetadata"></a>
 
 ```csharp
 private object ToMetadata()
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.toTerraform"></a>
 
 ```csharp
 private object ToTerraform()
@@ -179,7 +179,7 @@ private object ToTerraform()
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addMoveTarget"></a>
 
 ```csharp
 private void AddMoveTarget(string MoveTarget)
@@ -187,7 +187,7 @@ private void AddMoveTarget(string MoveTarget)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.addMoveTarget.parameter.moveTarget"></a>
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -195,151 +195,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getAnyMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanAttribute"></a>
 
 ```csharp
 private IResolvable GetBooleanAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getListAttribute"></a>
 
 ```csharp
 private string[] GetListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberAttribute"></a>
 
 ```csharp
 private double GetNumberAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberListAttribute"></a>
 
 ```csharp
 private double[] GetNumberListAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringAttribute"></a>
 
 ```csharp
 private string GetStringAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringMapAttribute"></a>
 
 ```csharp
 private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.hasResourceMove"></a>
 
 ```csharp
 private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.importFrom"></a>
 
 ```csharp
 private void ImportFrom(string Id, TerraformProvider Provider = null)
 ```
 
-###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.importFrom.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.importFrom.parameter.provider"></a>
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.importFrom.parameter.provider"></a>
 
 - *Type:* Io.Cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.interpolationForAttribute"></a>
 
 ```csharp
 private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ```
 
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveFromId"></a>
 
 ```csharp
 private void MoveFromId(string Id)
@@ -349,7 +349,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using its instance function.
 
-###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveFromId.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -357,7 +357,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveTo"></a>
 
 ```csharp
 private void MoveTo(string MoveTarget, string|double Index = null)
@@ -365,7 +365,7 @@ private void MoveTo(string MoveTarget, string|double Index = null)
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveTo.parameter.moveTarget"></a>
+###### `MoveTarget`<sup>Required</sup> <a name="MoveTarget" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -373,7 +373,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveTo.parameter.index"></a>
+###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveTo.parameter.index"></a>
 
 - *Type:* string|double
 
@@ -381,7 +381,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveToId"></a>
 
 ```csharp
 private void MoveToId(string Id)
@@ -389,7 +389,7 @@ private void MoveToId(string Id)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.moveToId.parameter.id"></a>
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -397,79 +397,79 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutGithubActionConfiguration` <a name="PutGithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putGithubActionConfiguration"></a>
+##### `PutGithubActionConfiguration` <a name="PutGithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putGithubActionConfiguration"></a>
 
 ```csharp
 private void PutGithubActionConfiguration(AppServiceSourceControlGithubActionConfiguration Value)
 ```
 
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putGithubActionConfiguration.parameter.value"></a>
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putGithubActionConfiguration.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfiguration">AppServiceSourceControlGithubActionConfiguration</a>
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putTimeouts"></a>
 
 ```csharp
 private void PutTimeouts(AppServiceSourceControlTimeouts Value)
 ```
 
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.putTimeouts.parameter.value"></a>
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.putTimeouts.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts">AppServiceSourceControlTimeouts</a>
 
 ---
 
-##### `ResetBranch` <a name="ResetBranch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetBranch"></a>
+##### `ResetBranch` <a name="ResetBranch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetBranch"></a>
 
 ```csharp
 private void ResetBranch()
 ```
 
-##### `ResetGithubActionConfiguration` <a name="ResetGithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetGithubActionConfiguration"></a>
+##### `ResetGithubActionConfiguration` <a name="ResetGithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetGithubActionConfiguration"></a>
 
 ```csharp
 private void ResetGithubActionConfiguration()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetId"></a>
 
 ```csharp
 private void ResetId()
 ```
 
-##### `ResetRepoUrl` <a name="ResetRepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetRepoUrl"></a>
+##### `ResetRepoUrl` <a name="ResetRepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetRepoUrl"></a>
 
 ```csharp
 private void ResetRepoUrl()
 ```
 
-##### `ResetRollbackEnabled` <a name="ResetRollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetRollbackEnabled"></a>
+##### `ResetRollbackEnabled` <a name="ResetRollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetRollbackEnabled"></a>
 
 ```csharp
 private void ResetRollbackEnabled()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetTimeouts"></a>
 
 ```csharp
 private void ResetTimeouts()
 ```
 
-##### `ResetUseLocalGit` <a name="ResetUseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseLocalGit"></a>
+##### `ResetUseLocalGit` <a name="ResetUseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseLocalGit"></a>
 
 ```csharp
 private void ResetUseLocalGit()
 ```
 
-##### `ResetUseManualIntegration` <a name="ResetUseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseManualIntegration"></a>
+##### `ResetUseManualIntegration` <a name="ResetUseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseManualIntegration"></a>
 
 ```csharp
 private void ResetUseManualIntegration()
 ```
 
-##### `ResetUseMercurial` <a name="ResetUseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.resetUseMercurial"></a>
+##### `ResetUseMercurial` <a name="ResetUseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.resetUseMercurial"></a>
 
 ```csharp
 private void ResetUseMercurial()
@@ -479,19 +479,19 @@ private void ResetUseMercurial()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a AppServiceSourceControlA resource upon running "cdktn plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a AppServiceSourceControl resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isConstruct"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-AppServiceSourceControlA.IsConstruct(object X);
+AppServiceSourceControl.IsConstruct(object X);
 ```
 
 Checks if `x` is a construct.
@@ -510,7 +510,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isConstruct.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isConstruct.parameter.x"></a>
 
 - *Type:* object
 
@@ -518,45 +518,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformElement"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-AppServiceSourceControlA.IsTerraformElement(object X);
+AppServiceSourceControl.IsTerraformElement(object X);
 ```
 
-###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformElement.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformElement.parameter.x"></a>
 
 - *Type:* object
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformResource"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-AppServiceSourceControlA.IsTerraformResource(object X);
+AppServiceSourceControl.IsTerraformResource(object X);
 ```
 
-###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.isTerraformResource.parameter.x"></a>
+###### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.isTerraformResource.parameter.x"></a>
 
 - *Type:* object
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-AppServiceSourceControlA.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+AppServiceSourceControl.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
 ```
 
-Generates CDKTN code for importing a AppServiceSourceControlA resource upon running "cdktn plan <stack-name>".
+Generates CDKTN code for importing a AppServiceSourceControl resource upon running "cdktn plan <stack-name>".
 
-###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport.parameter.scope"></a>
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* Constructs.Construct
 
@@ -564,29 +564,29 @@ The scope in which to define this construct.
 
 ---
 
-###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport.parameter.importToId"></a>
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
-The construct id used in the generated config for the AppServiceSourceControlA to import.
+The construct id used in the generated config for the AppServiceSourceControl to import.
 
 ---
 
-###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport.parameter.importFromId"></a>
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
-The id of the existing AppServiceSourceControlA that should be imported.
+The id of the existing AppServiceSourceControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.generateConfigForImport.parameter.provider"></a>
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* Io.Cdktn.TerraformProvider
 
-? Optional instance of the provider where the AppServiceSourceControlA to import is found.
+? Optional instance of the provider where the AppServiceSourceControl to import is found.
 
 ---
 
@@ -594,46 +594,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.cdktfStack">CdktfStack</a></code> | <code>Io.Cdktn.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>Io.Cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.githubActionConfiguration">GithubActionConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfigurationOutputReference">AppServiceSourceControlGithubActionConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.scmType">ScmType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeoutsOutputReference">AppServiceSourceControlTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.usesGithubAction">UsesGithubAction</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.appIdInput">AppIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.githubActionConfigurationInput">GithubActionConfigurationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfiguration">AppServiceSourceControlGithubActionConfiguration</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.repoUrlInput">RepoUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.rollbackEnabledInput">RollbackEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts">AppServiceSourceControlTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useLocalGitInput">UseLocalGitInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useManualIntegrationInput">UseManualIntegrationInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useMercurialInput">UseMercurialInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.appId">AppId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.repoUrl">RepoUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.rollbackEnabled">RollbackEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useLocalGit">UseLocalGit</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useManualIntegration">UseManualIntegration</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useMercurial">UseMercurial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.cdktfStack">CdktfStack</a></code> | <code>Io.Cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>Io.Cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.githubActionConfiguration">GithubActionConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfigurationOutputReference">AppServiceSourceControlGithubActionConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.scmType">ScmType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeoutsOutputReference">AppServiceSourceControlTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.usesGithubAction">UsesGithubAction</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.appIdInput">AppIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.branchInput">BranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.githubActionConfigurationInput">GithubActionConfigurationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfiguration">AppServiceSourceControlGithubActionConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.repoUrlInput">RepoUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.rollbackEnabledInput">RollbackEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts">AppServiceSourceControlTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useLocalGitInput">UseLocalGitInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useManualIntegrationInput">UseManualIntegrationInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useMercurialInput">UseMercurialInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.appId">AppId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.branch">Branch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.repoUrl">RepoUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.rollbackEnabled">RollbackEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useLocalGit">UseLocalGit</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useManualIntegration">UseManualIntegration</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useMercurial">UseMercurial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.node"></a>
 
 ```csharp
 public Node Node { get; }
@@ -645,7 +645,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.cdktfStack"></a>
 
 ```csharp
 public TerraformStack CdktfStack { get; }
@@ -655,7 +655,7 @@ public TerraformStack CdktfStack { get; }
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.fqn"></a>
 
 ```csharp
 public string Fqn { get; }
@@ -665,7 +665,7 @@ public string Fqn { get; }
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.friendlyUniqueId"></a>
 
 ```csharp
 public string FriendlyUniqueId { get; }
@@ -675,7 +675,7 @@ public string FriendlyUniqueId { get; }
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformMetaArguments"></a>
 
 ```csharp
 public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
@@ -685,7 +685,7 @@ public System.Collections.Generic.IDictionary<string, object> TerraformMetaArgum
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformResourceType"></a>
 
 ```csharp
 public string TerraformResourceType { get; }
@@ -695,7 +695,7 @@ public string TerraformResourceType { get; }
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.terraformGeneratorMetadata"></a>
 
 ```csharp
 public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
@@ -705,7 +705,7 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.connection"></a>
 
 ```csharp
 public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
@@ -715,7 +715,7 @@ public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.count"></a>
 
 ```csharp
 public double|TerraformCount Count { get; }
@@ -725,7 +725,7 @@ public double|TerraformCount Count { get; }
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.dependsOn"></a>
 
 ```csharp
 public string[] DependsOn { get; }
@@ -735,7 +735,7 @@ public string[] DependsOn { get; }
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.forEach"></a>
 
 ```csharp
 public ITerraformIterator ForEach { get; }
@@ -745,7 +745,7 @@ public ITerraformIterator ForEach { get; }
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.lifecycle"></a>
 
 ```csharp
 public TerraformResourceLifecycle Lifecycle { get; }
@@ -755,7 +755,7 @@ public TerraformResourceLifecycle Lifecycle { get; }
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.provider"></a>
 
 ```csharp
 public TerraformProvider Provider { get; }
@@ -765,7 +765,7 @@ public TerraformProvider Provider { get; }
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.provisioners"></a>
 
 ```csharp
 public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
@@ -775,7 +775,7 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `GithubActionConfiguration`<sup>Required</sup> <a name="GithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.githubActionConfiguration"></a>
+##### `GithubActionConfiguration`<sup>Required</sup> <a name="GithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.githubActionConfiguration"></a>
 
 ```csharp
 public AppServiceSourceControlGithubActionConfigurationOutputReference GithubActionConfiguration { get; }
@@ -785,7 +785,7 @@ public AppServiceSourceControlGithubActionConfigurationOutputReference GithubAct
 
 ---
 
-##### `ScmType`<sup>Required</sup> <a name="ScmType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.scmType"></a>
+##### `ScmType`<sup>Required</sup> <a name="ScmType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.scmType"></a>
 
 ```csharp
 public string ScmType { get; }
@@ -795,7 +795,7 @@ public string ScmType { get; }
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.timeouts"></a>
 
 ```csharp
 public AppServiceSourceControlTimeoutsOutputReference Timeouts { get; }
@@ -805,7 +805,7 @@ public AppServiceSourceControlTimeoutsOutputReference Timeouts { get; }
 
 ---
 
-##### `UsesGithubAction`<sup>Required</sup> <a name="UsesGithubAction" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.usesGithubAction"></a>
+##### `UsesGithubAction`<sup>Required</sup> <a name="UsesGithubAction" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.usesGithubAction"></a>
 
 ```csharp
 public IResolvable UsesGithubAction { get; }
@@ -815,7 +815,7 @@ public IResolvable UsesGithubAction { get; }
 
 ---
 
-##### `AppIdInput`<sup>Optional</sup> <a name="AppIdInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.appIdInput"></a>
+##### `AppIdInput`<sup>Optional</sup> <a name="AppIdInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.appIdInput"></a>
 
 ```csharp
 public string AppIdInput { get; }
@@ -825,7 +825,7 @@ public string AppIdInput { get; }
 
 ---
 
-##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.branchInput"></a>
+##### `BranchInput`<sup>Optional</sup> <a name="BranchInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.branchInput"></a>
 
 ```csharp
 public string BranchInput { get; }
@@ -835,7 +835,7 @@ public string BranchInput { get; }
 
 ---
 
-##### `GithubActionConfigurationInput`<sup>Optional</sup> <a name="GithubActionConfigurationInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.githubActionConfigurationInput"></a>
+##### `GithubActionConfigurationInput`<sup>Optional</sup> <a name="GithubActionConfigurationInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.githubActionConfigurationInput"></a>
 
 ```csharp
 public AppServiceSourceControlGithubActionConfiguration GithubActionConfigurationInput { get; }
@@ -845,7 +845,7 @@ public AppServiceSourceControlGithubActionConfiguration GithubActionConfiguratio
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.idInput"></a>
 
 ```csharp
 public string IdInput { get; }
@@ -855,7 +855,7 @@ public string IdInput { get; }
 
 ---
 
-##### `RepoUrlInput`<sup>Optional</sup> <a name="RepoUrlInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.repoUrlInput"></a>
+##### `RepoUrlInput`<sup>Optional</sup> <a name="RepoUrlInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.repoUrlInput"></a>
 
 ```csharp
 public string RepoUrlInput { get; }
@@ -865,7 +865,7 @@ public string RepoUrlInput { get; }
 
 ---
 
-##### `RollbackEnabledInput`<sup>Optional</sup> <a name="RollbackEnabledInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.rollbackEnabledInput"></a>
+##### `RollbackEnabledInput`<sup>Optional</sup> <a name="RollbackEnabledInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.rollbackEnabledInput"></a>
 
 ```csharp
 public bool|IResolvable RollbackEnabledInput { get; }
@@ -875,7 +875,7 @@ public bool|IResolvable RollbackEnabledInput { get; }
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.timeoutsInput"></a>
 
 ```csharp
 public IResolvable|AppServiceSourceControlTimeouts TimeoutsInput { get; }
@@ -885,7 +885,7 @@ public IResolvable|AppServiceSourceControlTimeouts TimeoutsInput { get; }
 
 ---
 
-##### `UseLocalGitInput`<sup>Optional</sup> <a name="UseLocalGitInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useLocalGitInput"></a>
+##### `UseLocalGitInput`<sup>Optional</sup> <a name="UseLocalGitInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useLocalGitInput"></a>
 
 ```csharp
 public bool|IResolvable UseLocalGitInput { get; }
@@ -895,7 +895,7 @@ public bool|IResolvable UseLocalGitInput { get; }
 
 ---
 
-##### `UseManualIntegrationInput`<sup>Optional</sup> <a name="UseManualIntegrationInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useManualIntegrationInput"></a>
+##### `UseManualIntegrationInput`<sup>Optional</sup> <a name="UseManualIntegrationInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useManualIntegrationInput"></a>
 
 ```csharp
 public bool|IResolvable UseManualIntegrationInput { get; }
@@ -905,7 +905,7 @@ public bool|IResolvable UseManualIntegrationInput { get; }
 
 ---
 
-##### `UseMercurialInput`<sup>Optional</sup> <a name="UseMercurialInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useMercurialInput"></a>
+##### `UseMercurialInput`<sup>Optional</sup> <a name="UseMercurialInput" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useMercurialInput"></a>
 
 ```csharp
 public bool|IResolvable UseMercurialInput { get; }
@@ -915,7 +915,7 @@ public bool|IResolvable UseMercurialInput { get; }
 
 ---
 
-##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.appId"></a>
+##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.appId"></a>
 
 ```csharp
 public string AppId { get; }
@@ -925,7 +925,7 @@ public string AppId { get; }
 
 ---
 
-##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.branch"></a>
+##### `Branch`<sup>Required</sup> <a name="Branch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.branch"></a>
 
 ```csharp
 public string Branch { get; }
@@ -935,7 +935,7 @@ public string Branch { get; }
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.id"></a>
 
 ```csharp
 public string Id { get; }
@@ -945,7 +945,7 @@ public string Id { get; }
 
 ---
 
-##### `RepoUrl`<sup>Required</sup> <a name="RepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.repoUrl"></a>
+##### `RepoUrl`<sup>Required</sup> <a name="RepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.repoUrl"></a>
 
 ```csharp
 public string RepoUrl { get; }
@@ -955,7 +955,7 @@ public string RepoUrl { get; }
 
 ---
 
-##### `RollbackEnabled`<sup>Required</sup> <a name="RollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.rollbackEnabled"></a>
+##### `RollbackEnabled`<sup>Required</sup> <a name="RollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.rollbackEnabled"></a>
 
 ```csharp
 public bool|IResolvable RollbackEnabled { get; }
@@ -965,7 +965,7 @@ public bool|IResolvable RollbackEnabled { get; }
 
 ---
 
-##### `UseLocalGit`<sup>Required</sup> <a name="UseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useLocalGit"></a>
+##### `UseLocalGit`<sup>Required</sup> <a name="UseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useLocalGit"></a>
 
 ```csharp
 public bool|IResolvable UseLocalGit { get; }
@@ -975,7 +975,7 @@ public bool|IResolvable UseLocalGit { get; }
 
 ---
 
-##### `UseManualIntegration`<sup>Required</sup> <a name="UseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useManualIntegration"></a>
+##### `UseManualIntegration`<sup>Required</sup> <a name="UseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useManualIntegration"></a>
 
 ```csharp
 public bool|IResolvable UseManualIntegration { get; }
@@ -985,7 +985,7 @@ public bool|IResolvable UseManualIntegration { get; }
 
 ---
 
-##### `UseMercurial`<sup>Required</sup> <a name="UseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.useMercurial"></a>
+##### `UseMercurial`<sup>Required</sup> <a name="UseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.useMercurial"></a>
 
 ```csharp
 public bool|IResolvable UseMercurial { get; }
@@ -999,11 +999,11 @@ public bool|IResolvable UseMercurial { get; }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlA.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControl.property.tfResourceType"></a>
 
 ```csharp
 public string TfResourceType { get; }
@@ -1015,14 +1015,14 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AppServiceSourceControlAConfig <a name="AppServiceSourceControlAConfig" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig"></a>
+### AppServiceSourceControlConfig <a name="AppServiceSourceControlConfig" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Azurerm;
 
-new AppServiceSourceControlAConfig {
+new AppServiceSourceControlConfig {
     SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
     double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
@@ -1047,27 +1047,27 @@ new AppServiceSourceControlAConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.dependsOn">DependsOn</a></code> | <code>Io.Cdktn.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.appId">AppId</a></code> | <code>string</code> | The ID of the Windows or Linux Web App. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.branch">Branch</a></code> | <code>string</code> | The branch name to use for deployments. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.githubActionConfiguration">GithubActionConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfiguration">AppServiceSourceControlGithubActionConfiguration</a></code> | github_action_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#id AppServiceSourceControlA#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.repoUrl">RepoUrl</a></code> | <code>string</code> | The URL for the repository. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.rollbackEnabled">RollbackEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Deployment Rollback be enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts">AppServiceSourceControlTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useLocalGit">UseLocalGit</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the App use local Git configuration. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useManualIntegration">UseManualIntegration</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should code be deployed manually. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useMercurial">UseMercurial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | The repository specified is Mercurial. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.connection">Connection</a></code> | <code>Io.Cdktn.SSHProvisionerConnection\|Io.Cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.count">Count</a></code> | <code>double\|Io.Cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.dependsOn">DependsOn</a></code> | <code>Io.Cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.appId">AppId</a></code> | <code>string</code> | The ID of the Windows or Linux Web App. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.branch">Branch</a></code> | <code>string</code> | The branch name to use for deployments. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.githubActionConfiguration">GithubActionConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlGithubActionConfiguration">AppServiceSourceControlGithubActionConfiguration</a></code> | github_action_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#id AppServiceSourceControl#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.repoUrl">RepoUrl</a></code> | <code>string</code> | The URL for the repository. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.rollbackEnabled">RollbackEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the Deployment Rollback be enabled? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts">AppServiceSourceControlTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useLocalGit">UseLocalGit</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should the App use local Git configuration. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useManualIntegration">UseManualIntegration</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Should code be deployed manually. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useMercurial">UseMercurial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | The repository specified is Mercurial. Defaults to `false`. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.connection"></a>
 
 ```csharp
 public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
@@ -1077,7 +1077,7 @@ public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.count"></a>
 
 ```csharp
 public double|TerraformCount Count { get; set; }
@@ -1087,7 +1087,7 @@ public double|TerraformCount Count { get; set; }
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.dependsOn"></a>
 
 ```csharp
 public ITerraformDependable[] DependsOn { get; set; }
@@ -1097,7 +1097,7 @@ public ITerraformDependable[] DependsOn { get; set; }
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.forEach"></a>
 
 ```csharp
 public ITerraformIterator ForEach { get; set; }
@@ -1107,7 +1107,7 @@ public ITerraformIterator ForEach { get; set; }
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.lifecycle"></a>
 
 ```csharp
 public TerraformResourceLifecycle Lifecycle { get; set; }
@@ -1117,7 +1117,7 @@ public TerraformResourceLifecycle Lifecycle { get; set; }
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.provider"></a>
 
 ```csharp
 public TerraformProvider Provider { get; set; }
@@ -1127,7 +1127,7 @@ public TerraformProvider Provider { get; set; }
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.provisioners"></a>
 
 ```csharp
 public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
@@ -1137,7 +1137,7 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.appId"></a>
+##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.appId"></a>
 
 ```csharp
 public string AppId { get; set; }
@@ -1147,11 +1147,11 @@ public string AppId { get; set; }
 
 The ID of the Windows or Linux Web App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#app_id AppServiceSourceControlA#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#app_id AppServiceSourceControl#app_id}
 
 ---
 
-##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.branch"></a>
+##### `Branch`<sup>Optional</sup> <a name="Branch" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.branch"></a>
 
 ```csharp
 public string Branch { get; set; }
@@ -1161,11 +1161,11 @@ public string Branch { get; set; }
 
 The branch name to use for deployments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#branch AppServiceSourceControlA#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#branch AppServiceSourceControl#branch}
 
 ---
 
-##### `GithubActionConfiguration`<sup>Optional</sup> <a name="GithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.githubActionConfiguration"></a>
+##### `GithubActionConfiguration`<sup>Optional</sup> <a name="GithubActionConfiguration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.githubActionConfiguration"></a>
 
 ```csharp
 public AppServiceSourceControlGithubActionConfiguration GithubActionConfiguration { get; set; }
@@ -1175,11 +1175,11 @@ public AppServiceSourceControlGithubActionConfiguration GithubActionConfiguratio
 
 github_action_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#github_action_configuration AppServiceSourceControlA#github_action_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#github_action_configuration AppServiceSourceControl#github_action_configuration}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.id"></a>
 
 ```csharp
 public string Id { get; set; }
@@ -1187,14 +1187,14 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#id AppServiceSourceControlA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#id AppServiceSourceControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `RepoUrl`<sup>Optional</sup> <a name="RepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.repoUrl"></a>
+##### `RepoUrl`<sup>Optional</sup> <a name="RepoUrl" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.repoUrl"></a>
 
 ```csharp
 public string RepoUrl { get; set; }
@@ -1204,11 +1204,11 @@ public string RepoUrl { get; set; }
 
 The URL for the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#repo_url AppServiceSourceControlA#repo_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#repo_url AppServiceSourceControl#repo_url}
 
 ---
 
-##### `RollbackEnabled`<sup>Optional</sup> <a name="RollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.rollbackEnabled"></a>
+##### `RollbackEnabled`<sup>Optional</sup> <a name="RollbackEnabled" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.rollbackEnabled"></a>
 
 ```csharp
 public bool|IResolvable RollbackEnabled { get; set; }
@@ -1218,11 +1218,11 @@ public bool|IResolvable RollbackEnabled { get; set; }
 
 Should the Deployment Rollback be enabled? Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#rollback_enabled AppServiceSourceControlA#rollback_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#rollback_enabled AppServiceSourceControl#rollback_enabled}
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.timeouts"></a>
 
 ```csharp
 public AppServiceSourceControlTimeouts Timeouts { get; set; }
@@ -1232,11 +1232,11 @@ public AppServiceSourceControlTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#timeouts AppServiceSourceControlA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#timeouts AppServiceSourceControl#timeouts}
 
 ---
 
-##### `UseLocalGit`<sup>Optional</sup> <a name="UseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useLocalGit"></a>
+##### `UseLocalGit`<sup>Optional</sup> <a name="UseLocalGit" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useLocalGit"></a>
 
 ```csharp
 public bool|IResolvable UseLocalGit { get; set; }
@@ -1246,11 +1246,11 @@ public bool|IResolvable UseLocalGit { get; set; }
 
 Should the App use local Git configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#use_local_git AppServiceSourceControlA#use_local_git}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#use_local_git AppServiceSourceControl#use_local_git}
 
 ---
 
-##### `UseManualIntegration`<sup>Optional</sup> <a name="UseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useManualIntegration"></a>
+##### `UseManualIntegration`<sup>Optional</sup> <a name="UseManualIntegration" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useManualIntegration"></a>
 
 ```csharp
 public bool|IResolvable UseManualIntegration { get; set; }
@@ -1262,11 +1262,11 @@ Should code be deployed manually.
 
 Set to `false` to enable continuous integration, such as webhooks into online repos such as GitHub. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#use_manual_integration AppServiceSourceControlA#use_manual_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#use_manual_integration AppServiceSourceControl#use_manual_integration}
 
 ---
 
-##### `UseMercurial`<sup>Optional</sup> <a name="UseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlAConfig.property.useMercurial"></a>
+##### `UseMercurial`<sup>Optional</sup> <a name="UseMercurial" id="@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlConfig.property.useMercurial"></a>
 
 ```csharp
 public bool|IResolvable UseMercurial { get; set; }
@@ -1276,7 +1276,7 @@ public bool|IResolvable UseMercurial { get; set; }
 
 The repository specified is Mercurial. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#use_mercurial AppServiceSourceControlA#use_mercurial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#use_mercurial AppServiceSourceControl#use_mercurial}
 
 ---
 
@@ -1314,7 +1314,7 @@ public AppServiceSourceControlGithubActionConfigurationCodeConfiguration CodeCon
 
 code_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#code_configuration AppServiceSourceControlA#code_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#code_configuration AppServiceSourceControl#code_configuration}
 
 ---
 
@@ -1328,7 +1328,7 @@ public AppServiceSourceControlGithubActionConfigurationContainerConfiguration Co
 
 container_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#container_configuration AppServiceSourceControlA#container_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#container_configuration AppServiceSourceControl#container_configuration}
 
 ---
 
@@ -1342,7 +1342,7 @@ public bool|IResolvable GenerateWorkflowFile { get; set; }
 
 Should the service generate the GitHub Action Workflow file. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#generate_workflow_file AppServiceSourceControlA#generate_workflow_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#generate_workflow_file AppServiceSourceControl#generate_workflow_file}
 
 ---
 
@@ -1378,7 +1378,7 @@ public string RuntimeStack { get; set; }
 
 The value to use for the Runtime Stack in the workflow file content for code base apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#runtime_stack AppServiceSourceControlA#runtime_stack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#runtime_stack AppServiceSourceControl#runtime_stack}
 
 ---
 
@@ -1392,7 +1392,7 @@ public string RuntimeVersion { get; set; }
 
 The value to use for the Runtime Version in the workflow file content for code base apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#runtime_version AppServiceSourceControlA#runtime_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#runtime_version AppServiceSourceControl#runtime_version}
 
 ---
 
@@ -1432,7 +1432,7 @@ public string ImageName { get; set; }
 
 The image name for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#image_name AppServiceSourceControlA#image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#image_name AppServiceSourceControl#image_name}
 
 ---
 
@@ -1446,7 +1446,7 @@ public string RegistryUrl { get; set; }
 
 The server URL for the container registry where the build will be hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#registry_url AppServiceSourceControlA#registry_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#registry_url AppServiceSourceControl#registry_url}
 
 ---
 
@@ -1460,7 +1460,7 @@ public string RegistryPassword { get; set; }
 
 The password used to upload the image to the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#registry_password AppServiceSourceControlA#registry_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#registry_password AppServiceSourceControl#registry_password}
 
 ---
 
@@ -1474,7 +1474,7 @@ public string RegistryUsername { get; set; }
 
 The username used to upload the image to the container registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#registry_username AppServiceSourceControlA#registry_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#registry_username AppServiceSourceControl#registry_username}
 
 ---
 
@@ -1496,9 +1496,9 @@ new AppServiceSourceControlTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#create AppServiceSourceControlA#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#delete AppServiceSourceControlA#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#read AppServiceSourceControlA#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#create AppServiceSourceControl#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#delete AppServiceSourceControl#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceSourceControl.AppServiceSourceControlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#read AppServiceSourceControl#read}. |
 
 ---
 
@@ -1510,7 +1510,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#create AppServiceSourceControlA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#create AppServiceSourceControl#create}.
 
 ---
 
@@ -1522,7 +1522,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#delete AppServiceSourceControlA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#delete AppServiceSourceControl#delete}.
 
 ---
 
@@ -1534,7 +1534,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_source_control#read AppServiceSourceControlA#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_source_control#read AppServiceSourceControl#read}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### KeyVaultCertificateContacts <a name="KeyVaultCertificateContacts" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.NewKeyVaultCertificateContacts(scope Construct, id *string, config KeyVaultCertificateContactsConfig) KeyVaultCertificateContacts
 ```
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.putContact">PutContact</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.resetContact">ResetContact</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -415,12 +414,6 @@ func PutTimeouts(value KeyVaultCertificateContactsTimeouts)
 
 ---
 
-##### `ResetContact` <a name="ResetContact" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.resetContact"></a>
-
-```go
-func ResetContact()
-```
-
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.resetId"></a>
 
 ```go
@@ -447,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.KeyVaultCertificateContacts_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.KeyVaultCertificateContacts_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +486,7 @@ keyvaultcertificatecontacts.KeyVaultCertificateContacts_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.KeyVaultCertificateContacts_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +500,7 @@ keyvaultcertificatecontacts.KeyVaultCertificateContacts_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContacts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.KeyVaultCertificateContacts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +529,7 @@ The construct id used in the generated config for the KeyVaultCertificateContact
 
 The id of the existing KeyVaultCertificateContacts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 &keyvaultcertificatecontacts.KeyVaultCertificateContactsConfig {
 	Connection: interface{},
@@ -834,10 +827,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertif
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	KeyVaultId: *string,
 	Contact: interface{},
+	KeyVaultId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts,
 }
 ```
 
@@ -852,9 +845,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertif
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.keyVaultId">KeyVaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#key_vault_id KeyVaultCertificateContacts#key_vault_id}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.contact">Contact</a></code> | <code>interface{}</code> | contact block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#id KeyVaultCertificateContacts#id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.keyVaultId">KeyVaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#key_vault_id KeyVaultCertificateContacts#key_vault_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#id KeyVaultCertificateContacts#id}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts">KeyVaultCertificateContactsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -929,19 +922,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `KeyVaultId`<sup>Required</sup> <a name="KeyVaultId" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.keyVaultId"></a>
-
-```go
-KeyVaultId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#key_vault_id KeyVaultCertificateContacts#key_vault_id}.
-
----
-
-##### `Contact`<sup>Optional</sup> <a name="Contact" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.contact"></a>
+##### `Contact`<sup>Required</sup> <a name="Contact" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.contact"></a>
 
 ```go
 Contact interface{}
@@ -951,7 +932,19 @@ Contact interface{}
 
 contact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#contact KeyVaultCertificateContacts#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#contact KeyVaultCertificateContacts#contact}
+
+---
+
+##### `KeyVaultId`<sup>Required</sup> <a name="KeyVaultId" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsConfig.property.keyVaultId"></a>
+
+```go
+KeyVaultId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#key_vault_id KeyVaultCertificateContacts#key_vault_id}.
 
 ---
 
@@ -963,7 +956,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#id KeyVaultCertificateContacts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#id KeyVaultCertificateContacts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +973,7 @@ Timeouts KeyVaultCertificateContactsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#timeouts KeyVaultCertificateContacts#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#timeouts KeyVaultCertificateContacts#timeouts}
 
 ---
 
@@ -989,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 &keyvaultcertificatecontacts.KeyVaultCertificateContactsContact {
 	Email: *string,
@@ -1002,9 +995,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#email KeyVaultCertificateContacts#email}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#name KeyVaultCertificateContacts#name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.phone">Phone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#phone KeyVaultCertificateContacts#phone}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#email KeyVaultCertificateContacts#email}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#name KeyVaultCertificateContacts#name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContact.property.phone">Phone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#phone KeyVaultCertificateContacts#phone}. |
 
 ---
 
@@ -1016,7 +1009,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#email KeyVaultCertificateContacts#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#email KeyVaultCertificateContacts#email}.
 
 ---
 
@@ -1028,7 +1021,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#name KeyVaultCertificateContacts#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#name KeyVaultCertificateContacts#name}.
 
 ---
 
@@ -1040,7 +1033,7 @@ Phone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#phone KeyVaultCertificateContacts#phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#phone KeyVaultCertificateContacts#phone}.
 
 ---
 
@@ -1049,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 &keyvaultcertificatecontacts.KeyVaultCertificateContactsTimeouts {
 	Create: *string,
@@ -1063,10 +1056,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#create KeyVaultCertificateContacts#create}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#delete KeyVaultCertificateContacts#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#read KeyVaultCertificateContacts#read}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#update KeyVaultCertificateContacts#update}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#create KeyVaultCertificateContacts#create}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#delete KeyVaultCertificateContacts#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#read KeyVaultCertificateContacts#read}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#update KeyVaultCertificateContacts#update}. |
 
 ---
 
@@ -1078,7 +1071,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#create KeyVaultCertificateContacts#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#create KeyVaultCertificateContacts#create}.
 
 ---
 
@@ -1090,7 +1083,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#delete KeyVaultCertificateContacts#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#delete KeyVaultCertificateContacts#delete}.
 
 ---
 
@@ -1102,7 +1095,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#read KeyVaultCertificateContacts#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#read KeyVaultCertificateContacts#read}.
 
 ---
 
@@ -1114,7 +1107,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault_certificate_contacts#update KeyVaultCertificateContacts#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault_certificate_contacts#update KeyVaultCertificateContacts#update}.
 
 ---
 
@@ -1125,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContactList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.NewKeyVaultCertificateContactsContactList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyVaultCertificateContactsContactList
 ```
@@ -1285,7 +1278,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsContactOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.NewKeyVaultCertificateContactsContactOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyVaultCertificateContactsContactOutputReference
 ```
@@ -1632,7 +1625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVaultCertificateContacts.KeyVaultCertificateContactsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/keyvaultcertificatecontacts"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/keyvaultcertificatecontacts"
 
 keyvaultcertificatecontacts.NewKeyVaultCertificateContactsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KeyVaultCertificateContactsTimeoutsOutputReference
 ```

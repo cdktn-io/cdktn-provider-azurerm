@@ -4,7 +4,7 @@
 
 ### DataAzurermStorageShare <a name="DataAzurermStorageShare" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share azurerm_storage_share}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share azurerm_storage_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer"></a>
 
@@ -22,11 +22,10 @@ dataAzurermStorageShare.DataAzurermStorageShare(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  storage_account_id: str,
   acl: IResolvable | typing.List[DataAzurermStorageShareAcl] = None,
   id: str = None,
   metadata: typing.Mapping[str] = None,
-  storage_account_id: str = None,
-  storage_account_name: str = None,
   timeouts: DataAzurermStorageShareTimeouts = None
 )
 ```
@@ -42,12 +41,11 @@ dataAzurermStorageShare.DataAzurermStorageShare(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#name DataAzurermStorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#name DataAzurermStorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.acl">acl</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareAcl">DataAzurermStorageShareAcl</a>]</code> | acl block. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#id DataAzurermStorageShare#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_name DataAzurermStorageShare#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#id DataAzurermStorageShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeouts">DataAzurermStorageShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +114,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#name DataAzurermStorageShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#name DataAzurermStorageShare#name}.
+
+---
+
+##### `storage_account_id`<sup>Required</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}.
 
 ---
 
@@ -126,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 acl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#acl DataAzurermStorageShare#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#acl DataAzurermStorageShare#acl}
 
 ---
 
@@ -134,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#id DataAzurermStorageShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#id DataAzurermStorageShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,23 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}.
-
----
-
-##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}.
-
----
-
-##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.Initializer.parameter.storageAccountName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_name DataAzurermStorageShare#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}.
 
 ---
 
@@ -171,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#timeouts DataAzurermStorageShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#timeouts DataAzurermStorageShare#timeouts}
 
 ---
 
@@ -202,8 +192,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetAcl">reset_acl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetMetadata">reset_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetStorageAccountId">reset_storage_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetStorageAccountName">reset_storage_account_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -474,7 +462,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#read DataAzurermStorageShare#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#read DataAzurermStorageShare#read}.
 
 ---
 
@@ -494,18 +482,6 @@ def reset_id() -> None
 
 ```python
 def reset_metadata() -> None
-```
-
-##### `reset_storage_account_id` <a name="reset_storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetStorageAccountId"></a>
-
-```python
-def reset_storage_account_id() -> None
-```
-
-##### `reset_storage_account_name` <a name="reset_storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetStorageAccountName"></a>
-
-```python
-def reset_storage_account_name() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.resetTimeouts"></a>
@@ -628,7 +604,7 @@ The construct id used in the generated config for the DataAzurermStorageShare to
 
 The id of the existing DataAzurermStorageShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,20 +635,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.acl">acl</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareAclList">DataAzurermStorageShareAclList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.quota">quota</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.rbacScopeId">rbac_scope_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.resourceManagerId">resource_manager_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeoutsOutputReference">DataAzurermStorageShareTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.aclInput">acl_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareAcl">DataAzurermStorageShareAcl</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountIdInput">storage_account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountNameInput">storage_account_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeouts">DataAzurermStorageShareTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -828,16 +801,6 @@ rbac_scope_id: str
 
 ---
 
-##### `resource_manager_id`<sup>Required</sup> <a name="resource_manager_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.resourceManagerId"></a>
-
-```python
-resource_manager_id: str
-```
-
-- *Type:* str
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.timeouts"></a>
 
 ```python
@@ -898,16 +861,6 @@ storage_account_id_input: str
 
 ---
 
-##### `storage_account_name_input`<sup>Optional</sup> <a name="storage_account_name_input" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountNameInput"></a>
-
-```python
-storage_account_name_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.timeoutsInput"></a>
 
 ```python
@@ -952,16 +905,6 @@ name: str
 
 ```python
 storage_account_id: str
-```
-
-- *Type:* str
-
----
-
-##### `storage_account_name`<sup>Required</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShare.property.storageAccountName"></a>
-
-```python
-storage_account_name: str
 ```
 
 - *Type:* str
@@ -1026,11 +969,10 @@ dataAzurermStorageShare.DataAzurermStorageShareConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  storage_account_id: str,
   acl: IResolvable | typing.List[DataAzurermStorageShareAcl] = None,
   id: str = None,
   metadata: typing.Mapping[str] = None,
-  storage_account_id: str = None,
-  storage_account_name: str = None,
   timeouts: DataAzurermStorageShareTimeouts = None
 )
 ```
@@ -1046,12 +988,11 @@ dataAzurermStorageShare.DataAzurermStorageShareConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#name DataAzurermStorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#name DataAzurermStorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.acl">acl</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareAcl">DataAzurermStorageShareAcl</a>]</code> | acl block. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#id DataAzurermStorageShare#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountId">storage_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_name DataAzurermStorageShare#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#id DataAzurermStorageShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeouts">DataAzurermStorageShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1134,7 +1075,19 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#name DataAzurermStorageShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#name DataAzurermStorageShare#name}.
+
+---
+
+##### `storage_account_id`<sup>Required</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountId"></a>
+
+```python
+storage_account_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}.
 
 ---
 
@@ -1148,7 +1101,7 @@ acl: IResolvable | typing.List[DataAzurermStorageShareAcl]
 
 acl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#acl DataAzurermStorageShare#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#acl DataAzurermStorageShare#acl}
 
 ---
 
@@ -1160,7 +1113,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#id DataAzurermStorageShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#id DataAzurermStorageShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1175,31 +1128,7 @@ metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}.
-
----
-
-##### `storage_account_id`<sup>Optional</sup> <a name="storage_account_id" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountId"></a>
-
-```python
-storage_account_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_id DataAzurermStorageShare#storage_account_id}.
-
----
-
-##### `storage_account_name`<sup>Optional</sup> <a name="storage_account_name" id="@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareConfig.property.storageAccountName"></a>
-
-```python
-storage_account_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#storage_account_name DataAzurermStorageShare#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#metadata DataAzurermStorageShare#metadata}.
 
 ---
 
@@ -1213,7 +1142,7 @@ timeouts: DataAzurermStorageShareTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#timeouts DataAzurermStorageShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#timeouts DataAzurermStorageShare#timeouts}
 
 ---
 
@@ -1233,7 +1162,7 @@ dataAzurermStorageShare.DataAzurermStorageShareTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#read DataAzurermStorageShare#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageShare.DataAzurermStorageShareTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#read DataAzurermStorageShare#read}. |
 
 ---
 
@@ -1245,7 +1174,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_share#read DataAzurermStorageShare#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_share#read DataAzurermStorageShare#read}.
 
 ---
 

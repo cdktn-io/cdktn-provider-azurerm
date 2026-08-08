@@ -4,7 +4,7 @@
 
 ### DataAzurermApplicationGateway <a name="DataAzurermApplicationGateway" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway azurerm_application_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway azurerm_application_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer"></a>
 
@@ -39,9 +39,9 @@ dataAzurermApplicationGateway.DataAzurermApplicationGateway(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts">DataAzurermApplicationGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
 
 ---
 
@@ -423,7 +423,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
 
 ---
 
@@ -553,7 +553,7 @@ The construct id used in the generated config for the DataAzurermApplicationGate
 
 The id of the existing DataAzurermApplicationGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,7 +581,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.authenticationCertificate">authentication_certificate</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList">DataAzurermApplicationGatewayAuthenticationCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.autoscaleConfiguration">autoscale_configuration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationList">DataAzurermApplicationGatewayAutoscaleConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backend">backend</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList">DataAzurermApplicationGatewayBackendList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backendAddressPool">backend_address_pool</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPoolList">DataAzurermApplicationGatewayBackendAddressPoolList</a></code> | *No description.* |
@@ -746,16 +745,6 @@ provider: TerraformProvider
 ```
 
 - *Type:* cdktn.TerraformProvider
-
----
-
-##### `authentication_certificate`<sup>Required</sup> <a name="authentication_certificate" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.authenticationCertificate"></a>
-
-```python
-authentication_certificate: DataAzurermApplicationGatewayAuthenticationCertificateList
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList">DataAzurermApplicationGatewayAuthenticationCertificateList</a>
 
 ---
 
@@ -1199,17 +1188,6 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataAzurermApplicationGatewayAuthenticationCertificate <a name="DataAzurermApplicationGatewayAuthenticationCertificate" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificate"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificate.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificate()
-```
-
-
 ### DataAzurermApplicationGatewayAutoscaleConfiguration <a name="DataAzurermApplicationGatewayAutoscaleConfiguration" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfiguration"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfiguration.Initializer"></a>
@@ -1251,17 +1229,6 @@ dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPool()
 from cdktn_provider_azurerm import data_azurerm_application_gateway
 
 dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettings()
-```
-
-
-### DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate <a name="DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate()
 ```
 
 
@@ -1309,9 +1276,9 @@ dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts">DataAzurermApplicationGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1394,7 +1361,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
 
 ---
 
@@ -1406,7 +1373,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
 
 ---
 
@@ -1418,7 +1385,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1435,7 +1402,7 @@ timeouts: DataAzurermApplicationGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
 
 ---
 
@@ -1763,7 +1730,7 @@ dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
 
 ---
 
@@ -1775,7 +1742,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
 
 ---
 
@@ -1857,481 +1824,6 @@ dataAzurermApplicationGateway.DataAzurermApplicationGatewayWafConfigurationExclu
 
 
 ## Classes <a name="Classes" id="Classes"></a>
-
-### DataAzurermApplicationGatewayAuthenticationCertificateList <a name="DataAzurermApplicationGatewayAuthenticationCertificateList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> DataAzurermApplicationGatewayAuthenticationCertificateOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-
-### DataAzurermApplicationGatewayAuthenticationCertificateOutputReference <a name="DataAzurermApplicationGatewayAuthenticationCertificateOutputReference" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificate">DataAzurermApplicationGatewayAuthenticationCertificate</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateOutputReference.property.internalValue"></a>
-
-```python
-internal_value: DataAzurermApplicationGatewayAuthenticationCertificate
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificate">DataAzurermApplicationGatewayAuthenticationCertificate</a>
-
----
-
 
 ### DataAzurermApplicationGatewayAutoscaleConfigurationList <a name="DataAzurermApplicationGatewayAutoscaleConfigurationList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationList"></a>
 
@@ -3305,481 +2797,6 @@ internal_value: DataAzurermApplicationGatewayBackendAddressPool
 ---
 
 
-### DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList <a name="DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.get">get</a></code> | *No description.* |
-
----
-
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.allWithMapKey"></a>
-
-```python
-def all_with_map_key(
-  map_key_attribute_name: str
-) -> DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* str
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-
-### DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference <a name="DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer"></a>
-
-```python
-from cdktn_provider_azurerm import data_azurerm_application_gateway
-
-dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktn.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate">DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.name"></a>
-
-```python
-name: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateOutputReference.property.internalValue"></a>
-
-```python
-internal_value: DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate">DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificate</a>
-
----
-
-
 ### DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList <a name="DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList.Initializer"></a>
@@ -4670,7 +3687,6 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.affinityCookieName">affinity_cookie_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.authenticationCertificate">authentication_certificate</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList">DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.certificateChainValidationEnabled">certificate_chain_validation_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.connectionDraining">connection_draining</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList">DataAzurermApplicationGatewayBackendHttpSettingsConnectionDrainingList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.cookieBasedAffinity">cookie_based_affinity</a></code> | <code>str</code> | *No description.* |
@@ -4723,16 +3739,6 @@ affinity_cookie_name: str
 ```
 
 - *Type:* str
-
----
-
-##### `authentication_certificate`<sup>Required</sup> <a name="authentication_certificate" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsOutputReference.property.authenticationCertificate"></a>
-
-```python
-authentication_certificate: DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList">DataAzurermApplicationGatewayBackendHttpSettingsAuthenticationCertificateList</a>
 
 ---
 

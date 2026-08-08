@@ -4,7 +4,7 @@
 
 ### CustomIpPrefix <a name="CustomIpPrefix" id="@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix azurerm_custom_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefix.Initializer"></a>
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the CustomIpPrefix to import.
 
 The id of the existing CustomIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,19 +1067,19 @@ const customIpPrefixConfig: customIpPrefix.CustomIpPrefixConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#cidr CustomIpPrefix#cidr}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#location CustomIpPrefix#location}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#name CustomIpPrefix#name}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#resource_group_name CustomIpPrefix#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.commissioningEnabled">commissioningEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#commissioning_enabled CustomIpPrefix#commissioning_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#id CustomIpPrefix#id}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.internetAdvertisingDisabled">internetAdvertisingDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#internet_advertising_disabled CustomIpPrefix#internet_advertising_disabled}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.parentCustomIpPrefixId">parentCustomIpPrefixId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#parent_custom_ip_prefix_id CustomIpPrefix#parent_custom_ip_prefix_id}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.roaValidityEndDate">roaValidityEndDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#roa_validity_end_date CustomIpPrefix#roa_validity_end_date}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#tags CustomIpPrefix#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#cidr CustomIpPrefix#cidr}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#location CustomIpPrefix#location}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#name CustomIpPrefix#name}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#resource_group_name CustomIpPrefix#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.commissioningEnabled">commissioningEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#commissioning_enabled CustomIpPrefix#commissioning_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#id CustomIpPrefix#id}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.internetAdvertisingDisabled">internetAdvertisingDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#internet_advertising_disabled CustomIpPrefix#internet_advertising_disabled}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.parentCustomIpPrefixId">parentCustomIpPrefixId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#parent_custom_ip_prefix_id CustomIpPrefix#parent_custom_ip_prefix_id}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.roaValidityEndDate">roaValidityEndDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#roa_validity_end_date CustomIpPrefix#roa_validity_end_date}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#tags CustomIpPrefix#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts">CustomIpPrefixTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.wanValidationSignedMessage">wanValidationSignedMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#wan_validation_signed_message CustomIpPrefix#wan_validation_signed_message}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.zones">zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#zones CustomIpPrefix#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.wanValidationSignedMessage">wanValidationSignedMessage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#wan_validation_signed_message CustomIpPrefix#wan_validation_signed_message}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixConfig.property.zones">zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#zones CustomIpPrefix#zones}. |
 
 ---
 
@@ -1161,7 +1161,7 @@ public readonly cidr: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#cidr CustomIpPrefix#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#cidr CustomIpPrefix#cidr}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#location CustomIpPrefix#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#location CustomIpPrefix#location}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#name CustomIpPrefix#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#name CustomIpPrefix#name}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#resource_group_name CustomIpPrefix#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#resource_group_name CustomIpPrefix#resource_group_name}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly commissioningEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#commissioning_enabled CustomIpPrefix#commissioning_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#commissioning_enabled CustomIpPrefix#commissioning_enabled}.
 
 ---
 
@@ -1221,7 +1221,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#id CustomIpPrefix#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#id CustomIpPrefix#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1236,7 +1236,7 @@ public readonly internetAdvertisingDisabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#internet_advertising_disabled CustomIpPrefix#internet_advertising_disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#internet_advertising_disabled CustomIpPrefix#internet_advertising_disabled}.
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly parentCustomIpPrefixId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#parent_custom_ip_prefix_id CustomIpPrefix#parent_custom_ip_prefix_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#parent_custom_ip_prefix_id CustomIpPrefix#parent_custom_ip_prefix_id}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly roaValidityEndDate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#roa_validity_end_date CustomIpPrefix#roa_validity_end_date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#roa_validity_end_date CustomIpPrefix#roa_validity_end_date}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#tags CustomIpPrefix#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#tags CustomIpPrefix#tags}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly timeouts: CustomIpPrefixTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#timeouts CustomIpPrefix#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#timeouts CustomIpPrefix#timeouts}
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly wanValidationSignedMessage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#wan_validation_signed_message CustomIpPrefix#wan_validation_signed_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#wan_validation_signed_message CustomIpPrefix#wan_validation_signed_message}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly zones: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#zones CustomIpPrefix#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#zones CustomIpPrefix#zones}.
 
 ---
 
@@ -1328,10 +1328,10 @@ const customIpPrefixTimeouts: customIpPrefix.CustomIpPrefixTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#create CustomIpPrefix#create}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#delete CustomIpPrefix#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#read CustomIpPrefix#read}. |
-| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#update CustomIpPrefix#update}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#create CustomIpPrefix#create}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#delete CustomIpPrefix#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#read CustomIpPrefix#read}. |
+| <code><a href="#@cdktn/provider-azurerm.customIpPrefix.CustomIpPrefixTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#update CustomIpPrefix#update}. |
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#create CustomIpPrefix#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#create CustomIpPrefix#create}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#delete CustomIpPrefix#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#delete CustomIpPrefix#delete}.
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#read CustomIpPrefix#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#read CustomIpPrefix#read}.
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/custom_ip_prefix#update CustomIpPrefix#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/custom_ip_prefix#update CustomIpPrefix#update}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### HealthcareWorkspace <a name="HealthcareWorkspace" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace azurerm_healthcare_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace azurerm_healthcare_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.NewHealthcareWorkspace(scope Construct, id *string, config HealthcareWorkspaceConfig) HealthcareWorkspace
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.HealthcareWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.HealthcareWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ healthcareworkspace.HealthcareWorkspace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.HealthcareWorkspace_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ healthcareworkspace.HealthcareWorkspace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.HealthcareWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the HealthcareWorkspace to imp
 
 The id of the existing HealthcareWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 &healthcareworkspace.HealthcareWorkspaceConfig {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcarework
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.healthcareWorkspace.HealthcareWorkspaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.healthcareWorkspace.HealthcareWorkspaceTimeouts,
 }
 ```
 
@@ -896,11 +896,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcarework
 | <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#location HealthcareWorkspace#location}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#resource_group_name HealthcareWorkspace#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#tags HealthcareWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#location HealthcareWorkspace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#resource_group_name HealthcareWorkspace#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#tags HealthcareWorkspace#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts">HealthcareWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -983,7 +983,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#location HealthcareWorkspace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#location HealthcareWorkspace#location}.
 
 ---
 
@@ -995,7 +995,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#name HealthcareWorkspace#name}.
 
 ---
 
@@ -1007,7 +1007,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#resource_group_name HealthcareWorkspace#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#resource_group_name HealthcareWorkspace#resource_group_name}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#id HealthcareWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1034,7 +1034,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#tags HealthcareWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#tags HealthcareWorkspace#tags}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Timeouts HealthcareWorkspaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#timeouts HealthcareWorkspace#timeouts}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspacePrivateEndpointConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 &healthcareworkspace.HealthcareWorkspacePrivateEndpointConnection {
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcarework
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 &healthcareworkspace.HealthcareWorkspaceTimeouts {
 	Create: *string,
@@ -1084,10 +1084,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcarework
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#read HealthcareWorkspace#read}. |
-| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#read HealthcareWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}. |
 
 ---
 
@@ -1099,7 +1099,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#create HealthcareWorkspace#create}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#delete HealthcareWorkspace#delete}.
 
 ---
 
@@ -1123,7 +1123,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#read HealthcareWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#read HealthcareWorkspace#read}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/healthcare_workspace#update HealthcareWorkspace#update}.
 
 ---
 
@@ -1146,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspacePrivateEndpointConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.NewHealthcareWorkspacePrivateEndpointConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HealthcareWorkspacePrivateEndpointConnectionList
 ```
@@ -1295,7 +1295,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspacePrivateEndpointConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.NewHealthcareWorkspacePrivateEndpointConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HealthcareWorkspacePrivateEndpointConnectionOutputReference
 ```
@@ -1584,7 +1584,7 @@ func InternalValue() HealthcareWorkspacePrivateEndpointConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.healthcareWorkspace.HealthcareWorkspaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/healthcareworkspace"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/healthcareworkspace"
 
 healthcareworkspace.NewHealthcareWorkspaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareWorkspaceTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAzurermElasticSan <a name="DataAzurermElasticSan" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san azurerm_elastic_san}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san azurerm_elastic_san}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.NewDataAzurermElasticSan(scope Construct, id *string, config DataAzurermElasticSanConfig) DataAzurermElasticSan
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.DataAzurermElasticSan_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.DataAzurermElasticSan_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermelasticsan.DataAzurermElasticSan_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.DataAzurermElasticSan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermelasticsan.DataAzurermElasticSan_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.DataAzurermElasticSan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermElasticSan to i
 
 The id of the existing DataAzurermElasticSan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 &dataazurermelasticsan.DataAzurermElasticSanConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermElasticSan.DataAzurermElasticSanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermElasticSan.DataAzurermElasticSanTimeouts,
 }
 ```
 
@@ -829,9 +829,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#name DataAzurermElasticSan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#resource_group_name DataAzurermElasticSan#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#id DataAzurermElasticSan#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#name DataAzurermElasticSan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#resource_group_name DataAzurermElasticSan#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#id DataAzurermElasticSan#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanTimeouts">DataAzurermElasticSanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -914,7 +914,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#name DataAzurermElasticSan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#name DataAzurermElasticSan#name}.
 
 ---
 
@@ -926,7 +926,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#resource_group_name DataAzurermElasticSan#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#resource_group_name DataAzurermElasticSan#resource_group_name}.
 
 ---
 
@@ -938,7 +938,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#id DataAzurermElasticSan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#id DataAzurermElasticSan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -955,7 +955,7 @@ Timeouts DataAzurermElasticSanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#timeouts DataAzurermElasticSan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#timeouts DataAzurermElasticSan#timeouts}
 
 ---
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanSku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 &dataazurermelasticsan.DataAzurermElasticSanSku {
 
@@ -977,7 +977,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 &dataazurermelasticsan.DataAzurermElasticSanTimeouts {
 	Read: *string,
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermela
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}. |
 
 ---
 
@@ -1000,7 +1000,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/elastic_san#read DataAzurermElasticSan#read}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanSkuList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.NewDataAzurermElasticSanSkuList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermElasticSanSkuList
 ```
@@ -1160,7 +1160,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanSkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.NewDataAzurermElasticSanSkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermElasticSanSkuOutputReference
 ```
@@ -1449,7 +1449,7 @@ func InternalValue() DataAzurermElasticSanSku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermElasticSan.DataAzurermElasticSanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermelasticsan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermelasticsan"
 
 dataazurermelasticsan.NewDataAzurermElasticSanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermElasticSanTimeoutsOutputReference
 ```

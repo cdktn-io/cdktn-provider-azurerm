@@ -4,12 +4,12 @@
 
 ### AppServiceCertificateBinding <a name="AppServiceCertificateBinding" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding azurerm_app_service_certificate_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.NewAppServiceCertificateBinding(scope Construct, id *string, config AppServiceCertificateBindingConfig) AppServiceCertificateBinding
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.AppServiceCertificateBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.AppServiceCertificateBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ appservicecertificatebinding.AppServiceCertificateBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.AppServiceCertificateBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ appservicecertificatebinding.AppServiceCertificateBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.AppServiceCertificateBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AppServiceCertificateBindi
 
 The id of the existing AppServiceCertificateBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 &appservicecertificatebinding.AppServiceCertificateBindingConfig {
 	Connection: interface{},
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecert
 	HostnameBindingId: *string,
 	SslState: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts,
 }
 ```
 
@@ -888,10 +888,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecert
 | <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#certificate_id AppServiceCertificateBinding#certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.hostnameBindingId">HostnameBindingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#hostname_binding_id AppServiceCertificateBinding#hostname_binding_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.sslState">SslState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#ssl_state AppServiceCertificateBinding#ssl_state}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#id AppServiceCertificateBinding#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.certificateId">CertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#certificate_id AppServiceCertificateBinding#certificate_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.hostnameBindingId">HostnameBindingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#hostname_binding_id AppServiceCertificateBinding#hostname_binding_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.sslState">SslState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#ssl_state AppServiceCertificateBinding#ssl_state}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#id AppServiceCertificateBinding#id}. |
 | <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts">AppServiceCertificateBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -974,7 +974,7 @@ CertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#certificate_id AppServiceCertificateBinding#certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#certificate_id AppServiceCertificateBinding#certificate_id}.
 
 ---
 
@@ -986,7 +986,7 @@ HostnameBindingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#hostname_binding_id AppServiceCertificateBinding#hostname_binding_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#hostname_binding_id AppServiceCertificateBinding#hostname_binding_id}.
 
 ---
 
@@ -998,7 +998,7 @@ SslState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#ssl_state AppServiceCertificateBinding#ssl_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#ssl_state AppServiceCertificateBinding#ssl_state}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#id AppServiceCertificateBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#id AppServiceCertificateBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1027,7 @@ Timeouts AppServiceCertificateBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#timeouts AppServiceCertificateBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#timeouts AppServiceCertificateBinding#timeouts}
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 &appservicecertificatebinding.AppServiceCertificateBindingTimeouts {
 	Create: *string,
@@ -1049,9 +1049,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecert
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#create AppServiceCertificateBinding#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#delete AppServiceCertificateBinding#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#read AppServiceCertificateBinding#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#create AppServiceCertificateBinding#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#delete AppServiceCertificateBinding#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#read AppServiceCertificateBinding#read}. |
 
 ---
 
@@ -1063,7 +1063,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#create AppServiceCertificateBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#create AppServiceCertificateBinding#create}.
 
 ---
 
@@ -1075,7 +1075,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#delete AppServiceCertificateBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#delete AppServiceCertificateBinding#delete}.
 
 ---
 
@@ -1087,7 +1087,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/app_service_certificate_binding#read AppServiceCertificateBinding#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/app_service_certificate_binding#read AppServiceCertificateBinding#read}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appServiceCertificateBinding.AppServiceCertificateBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/appservicecertificatebinding"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/appservicecertificatebinding"
 
 appservicecertificatebinding.NewAppServiceCertificateBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppServiceCertificateBindingTimeoutsOutputReference
 ```

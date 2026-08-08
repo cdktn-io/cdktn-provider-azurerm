@@ -4,7 +4,7 @@
 
 ### IotSecuritySolution <a name="IotSecuritySolution" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution azurerm_iot_security_solution}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution azurerm_iot_security_solution}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer"></a>
 
@@ -35,7 +35,7 @@ iotSecuritySolution.IotSecuritySolution(
   log_unmasked_ips_enabled: bool | IResolvable = None,
   query_for_resources: str = None,
   query_subscription_ids: typing.List[str] = None,
-  recommendations_enabled: IotSecuritySolutionRecommendationsEnabled = None,
+  recommendations: IotSecuritySolutionRecommendations = None,
   tags: typing.Mapping[str] = None,
   timeouts: IotSecuritySolutionTimeouts = None
 )
@@ -52,22 +52,22 @@ iotSecuritySolution.IotSecuritySolution(
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.iothubIds">iothub_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#location IotSecuritySolution#location}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#name IotSecuritySolution#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.iothubIds">iothub_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#location IotSecuritySolution#location}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#name IotSecuritySolution#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.additionalWorkspace">additional_workspace</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace">IotSecuritySolutionAdditionalWorkspace</a>]</code> | additional_workspace block. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.disabledDataSources">disabled_data_sources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.eventsToExport">events_to_export</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#id IotSecuritySolution#id}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.logUnmaskedIpsEnabled">log_unmasked_ips_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.queryForResources">query_for_resources</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.querySubscriptionIds">query_subscription_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.recommendationsEnabled">recommendations_enabled</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a></code> | recommendations_enabled block. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.disabledDataSources">disabled_data_sources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.eventsToExport">events_to_export</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#id IotSecuritySolution#id}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.logUnmaskedIpsEnabled">log_unmasked_ips_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.queryForResources">query_for_resources</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.querySubscriptionIds">query_subscription_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.recommendations">recommendations</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a></code> | recommendations block. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts">IotSecuritySolutionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -136,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#location IotSecuritySolution#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#location IotSecuritySolution#location}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#name IotSecuritySolution#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#name IotSecuritySolution#name}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 additional_workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#additional_workspace IotSecuritySolution#additional_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#additional_workspace IotSecuritySolution#additional_workspace}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}.
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}.
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#id IotSecuritySolution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#id IotSecuritySolution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +221,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}.
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}.
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}.
 
 ---
 
@@ -245,17 +245,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}.
 
 ---
 
-##### `recommendations_enabled`<sup>Optional</sup> <a name="recommendations_enabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.recommendationsEnabled"></a>
+##### `recommendations`<sup>Optional</sup> <a name="recommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.Initializer.parameter.recommendations"></a>
 
-- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a>
 
-recommendations_enabled block.
+recommendations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#recommendations_enabled IotSecuritySolution#recommendations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#recommendations IotSecuritySolution#recommendations}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}.
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#timeouts IotSecuritySolution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#timeouts IotSecuritySolution#timeouts}
 
 ---
 
@@ -306,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putAdditionalWorkspace">put_additional_workspace</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled">put_recommendations_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations">put_recommendations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetAdditionalWorkspace">reset_additional_workspace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetDisabledDataSources">reset_disabled_data_sources</a></code> | *No description.* |
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetLogUnmaskedIpsEnabled">reset_log_unmasked_ips_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetQueryForResources">reset_query_for_resources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetQuerySubscriptionIds">reset_query_subscription_ids</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetRecommendationsEnabled">reset_recommendations_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetRecommendations">reset_recommendations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -685,10 +685,10 @@ def put_additional_workspace(
 
 ---
 
-##### `put_recommendations_enabled` <a name="put_recommendations_enabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled"></a>
+##### `put_recommendations` <a name="put_recommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations"></a>
 
 ```python
-def put_recommendations_enabled(
+def put_recommendations(
   acr_authentication: bool | IResolvable = None,
   agent_send_unutilized_msg: bool | IResolvable = None,
   baseline: bool | IResolvable = None,
@@ -708,131 +708,131 @@ def put_recommendations_enabled(
 ) -> None
 ```
 
-###### `acr_authentication`<sup>Optional</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.acrAuthentication"></a>
+###### `acr_authentication`<sup>Optional</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.acrAuthentication"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}.
 
 ---
 
-###### `agent_send_unutilized_msg`<sup>Optional</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.agentSendUnutilizedMsg"></a>
+###### `agent_send_unutilized_msg`<sup>Optional</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.agentSendUnutilizedMsg"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}.
 
 ---
 
-###### `baseline`<sup>Optional</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.baseline"></a>
+###### `baseline`<sup>Optional</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.baseline"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}.
 
 ---
 
-###### `edge_hub_mem_optimize`<sup>Optional</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.edgeHubMemOptimize"></a>
+###### `edge_hub_mem_optimize`<sup>Optional</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.edgeHubMemOptimize"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}.
 
 ---
 
-###### `edge_logging_option`<sup>Optional</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.edgeLoggingOption"></a>
+###### `edge_logging_option`<sup>Optional</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.edgeLoggingOption"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}.
 
 ---
 
-###### `inconsistent_module_settings`<sup>Optional</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.inconsistentModuleSettings"></a>
+###### `inconsistent_module_settings`<sup>Optional</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.inconsistentModuleSettings"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}.
 
 ---
 
-###### `install_agent`<sup>Optional</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.installAgent"></a>
+###### `install_agent`<sup>Optional</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.installAgent"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}.
 
 ---
 
-###### `ip_filter_deny_all`<sup>Optional</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.ipFilterDenyAll"></a>
+###### `ip_filter_deny_all`<sup>Optional</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.ipFilterDenyAll"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}.
 
 ---
 
-###### `ip_filter_permissive_rule`<sup>Optional</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.ipFilterPermissiveRule"></a>
+###### `ip_filter_permissive_rule`<sup>Optional</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.ipFilterPermissiveRule"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}.
 
 ---
 
-###### `open_ports`<sup>Optional</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.openPorts"></a>
+###### `open_ports`<sup>Optional</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.openPorts"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}.
 
 ---
 
-###### `permissive_firewall_policy`<sup>Optional</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.permissiveFirewallPolicy"></a>
+###### `permissive_firewall_policy`<sup>Optional</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.permissiveFirewallPolicy"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}.
 
 ---
 
-###### `permissive_input_firewall_rules`<sup>Optional</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.permissiveInputFirewallRules"></a>
+###### `permissive_input_firewall_rules`<sup>Optional</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.permissiveInputFirewallRules"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}.
 
 ---
 
-###### `permissive_output_firewall_rules`<sup>Optional</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.permissiveOutputFirewallRules"></a>
+###### `permissive_output_firewall_rules`<sup>Optional</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.permissiveOutputFirewallRules"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}.
 
 ---
 
-###### `privileged_docker_options`<sup>Optional</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.privilegedDockerOptions"></a>
+###### `privileged_docker_options`<sup>Optional</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.privilegedDockerOptions"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}.
 
 ---
 
-###### `shared_credentials`<sup>Optional</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.sharedCredentials"></a>
+###### `shared_credentials`<sup>Optional</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.sharedCredentials"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}.
 
 ---
 
-###### `vulnerable_tls_cipher_suite`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendationsEnabled.parameter.vulnerableTlsCipherSuite"></a>
+###### `vulnerable_tls_cipher_suite`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.putRecommendations.parameter.vulnerableTlsCipherSuite"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}.
 
 ---
 
@@ -851,7 +851,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#create IotSecuritySolution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#create IotSecuritySolution#create}.
 
 ---
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}.
 
 ---
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#read IotSecuritySolution#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#read IotSecuritySolution#read}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#update IotSecuritySolution#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#update IotSecuritySolution#update}.
 
 ---
 
@@ -933,10 +933,10 @@ def reset_query_for_resources() -> None
 def reset_query_subscription_ids() -> None
 ```
 
-##### `reset_recommendations_enabled` <a name="reset_recommendations_enabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetRecommendationsEnabled"></a>
+##### `reset_recommendations` <a name="reset_recommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetRecommendations"></a>
 
 ```python
-def reset_recommendations_enabled() -> None
+def reset_recommendations() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.resetTags"></a>
@@ -1065,7 +1065,7 @@ The construct id used in the generated config for the IotSecuritySolution to imp
 
 The id of the existing IotSecuritySolution that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1096,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.additionalWorkspace">additional_workspace</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspaceList">IotSecuritySolutionAdditionalWorkspaceList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsEnabled">recommendations_enabled</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference">IotSecuritySolutionRecommendationsEnabledOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendations">recommendations</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference">IotSecuritySolutionRecommendationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeoutsOutputReference">IotSecuritySolutionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.additionalWorkspaceInput">additional_workspace_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace">IotSecuritySolutionAdditionalWorkspace</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.disabledDataSourcesInput">disabled_data_sources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1111,7 +1111,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.queryForResourcesInput">query_for_resources_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.querySubscriptionIdsInput">query_subscription_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsEnabledInput">recommendations_enabled_input</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsInput">recommendations_input</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts">IotSecuritySolutionTimeouts</a></code> | *No description.* |
@@ -1284,13 +1284,13 @@ additional_workspace: IotSecuritySolutionAdditionalWorkspaceList
 
 ---
 
-##### `recommendations_enabled`<sup>Required</sup> <a name="recommendations_enabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsEnabled"></a>
+##### `recommendations`<sup>Required</sup> <a name="recommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendations"></a>
 
 ```python
-recommendations_enabled: IotSecuritySolutionRecommendationsEnabledOutputReference
+recommendations: IotSecuritySolutionRecommendationsOutputReference
 ```
 
-- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference">IotSecuritySolutionRecommendationsEnabledOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference">IotSecuritySolutionRecommendationsOutputReference</a>
 
 ---
 
@@ -1434,13 +1434,13 @@ query_subscription_ids_input: typing.List[str]
 
 ---
 
-##### `recommendations_enabled_input`<sup>Optional</sup> <a name="recommendations_enabled_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsEnabledInput"></a>
+##### `recommendations_input`<sup>Optional</sup> <a name="recommendations_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolution.property.recommendationsInput"></a>
 
 ```python
-recommendations_enabled_input: IotSecuritySolutionRecommendationsEnabled
+recommendations_input: IotSecuritySolutionRecommendations
 ```
 
-- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a>
 
 ---
 
@@ -1651,8 +1651,8 @@ iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace.property.dataTypes">data_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#data_types IotSecuritySolution#data_types}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#workspace_id IotSecuritySolution#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace.property.dataTypes">data_types</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#data_types IotSecuritySolution#data_types}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#workspace_id IotSecuritySolution#workspace_id}. |
 
 ---
 
@@ -1664,7 +1664,7 @@ data_types: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#data_types IotSecuritySolution#data_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#data_types IotSecuritySolution#data_types}.
 
 ---
 
@@ -1676,7 +1676,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#workspace_id IotSecuritySolution#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#workspace_id IotSecuritySolution#workspace_id}.
 
 ---
 
@@ -1709,7 +1709,7 @@ iotSecuritySolution.IotSecuritySolutionConfig(
   log_unmasked_ips_enabled: bool | IResolvable = None,
   query_for_resources: str = None,
   query_subscription_ids: typing.List[str] = None,
-  recommendations_enabled: IotSecuritySolutionRecommendationsEnabled = None,
+  recommendations: IotSecuritySolutionRecommendations = None,
   tags: typing.Mapping[str] = None,
   timeouts: IotSecuritySolutionTimeouts = None
 )
@@ -1726,22 +1726,22 @@ iotSecuritySolution.IotSecuritySolutionConfig(
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.iothubIds">iothub_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#location IotSecuritySolution#location}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#name IotSecuritySolution#name}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.iothubIds">iothub_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#location IotSecuritySolution#location}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#name IotSecuritySolution#name}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.additionalWorkspace">additional_workspace</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionAdditionalWorkspace">IotSecuritySolutionAdditionalWorkspace</a>]</code> | additional_workspace block. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.disabledDataSources">disabled_data_sources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.eventsToExport">events_to_export</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#id IotSecuritySolution#id}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.logUnmaskedIpsEnabled">log_unmasked_ips_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.queryForResources">query_for_resources</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.querySubscriptionIds">query_subscription_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.recommendationsEnabled">recommendations_enabled</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a></code> | recommendations_enabled block. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.disabledDataSources">disabled_data_sources</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.eventsToExport">events_to_export</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#id IotSecuritySolution#id}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.logAnalyticsWorkspaceId">log_analytics_workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.logUnmaskedIpsEnabled">log_unmasked_ips_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.queryForResources">query_for_resources</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.querySubscriptionIds">query_subscription_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.recommendations">recommendations</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a></code> | recommendations block. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts">IotSecuritySolutionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1824,7 +1824,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#display_name IotSecuritySolution#display_name}.
 
 ---
 
@@ -1836,7 +1836,7 @@ iothub_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#iothub_ids IotSecuritySolution#iothub_ids}.
 
 ---
 
@@ -1848,7 +1848,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#location IotSecuritySolution#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#location IotSecuritySolution#location}.
 
 ---
 
@@ -1860,7 +1860,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#name IotSecuritySolution#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#name IotSecuritySolution#name}.
 
 ---
 
@@ -1872,7 +1872,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#resource_group_name IotSecuritySolution#resource_group_name}.
 
 ---
 
@@ -1886,7 +1886,7 @@ additional_workspace: IResolvable | typing.List[IotSecuritySolutionAdditionalWor
 
 additional_workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#additional_workspace IotSecuritySolution#additional_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#additional_workspace IotSecuritySolution#additional_workspace}
 
 ---
 
@@ -1898,7 +1898,7 @@ disabled_data_sources: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}.
 
 ---
 
@@ -1910,7 +1910,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}.
 
 ---
 
@@ -1922,7 +1922,7 @@ events_to_export: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}.
 
 ---
 
@@ -1934,7 +1934,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#id IotSecuritySolution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#id IotSecuritySolution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1949,7 +1949,7 @@ log_analytics_workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_analytics_workspace_id IotSecuritySolution#log_analytics_workspace_id}.
 
 ---
 
@@ -1961,7 +1961,7 @@ log_unmasked_ips_enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}.
 
 ---
 
@@ -1973,7 +1973,7 @@ query_for_resources: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_for_resources IotSecuritySolution#query_for_resources}.
 
 ---
 
@@ -1985,21 +1985,21 @@ query_subscription_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#query_subscription_ids IotSecuritySolution#query_subscription_ids}.
 
 ---
 
-##### `recommendations_enabled`<sup>Optional</sup> <a name="recommendations_enabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.recommendationsEnabled"></a>
+##### `recommendations`<sup>Optional</sup> <a name="recommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionConfig.property.recommendations"></a>
 
 ```python
-recommendations_enabled: IotSecuritySolutionRecommendationsEnabled
+recommendations: IotSecuritySolutionRecommendations
 ```
 
-- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a>
 
-recommendations_enabled block.
+recommendations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#recommendations_enabled IotSecuritySolution#recommendations_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#recommendations IotSecuritySolution#recommendations}
 
 ---
 
@@ -2011,7 +2011,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#tags IotSecuritySolution#tags}.
 
 ---
 
@@ -2025,18 +2025,18 @@ timeouts: IotSecuritySolutionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#timeouts IotSecuritySolution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#timeouts IotSecuritySolution#timeouts}
 
 ---
 
-### IotSecuritySolutionRecommendationsEnabled <a name="IotSecuritySolutionRecommendationsEnabled" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled"></a>
+### IotSecuritySolutionRecommendations <a name="IotSecuritySolutionRecommendations" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations"></a>
 
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.Initializer"></a>
 
 ```python
 from cdktn_provider_azurerm import iot_security_solution
 
-iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled(
+iotSecuritySolution.IotSecuritySolutionRecommendations(
   acr_authentication: bool | IResolvable = None,
   agent_send_unutilized_msg: bool | IResolvable = None,
   baseline: bool | IResolvable = None,
@@ -2060,26 +2060,26 @@ iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.acrAuthentication">acr_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.agentSendUnutilizedMsg">agent_send_unutilized_msg</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.baseline">baseline</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.edgeHubMemOptimize">edge_hub_mem_optimize</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.edgeLoggingOption">edge_logging_option</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.inconsistentModuleSettings">inconsistent_module_settings</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.installAgent">install_agent</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.ipFilterDenyAll">ip_filter_deny_all</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.ipFilterPermissiveRule">ip_filter_permissive_rule</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.openPorts">open_ports</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveFirewallPolicy">permissive_firewall_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveInputFirewallRules">permissive_input_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveOutputFirewallRules">permissive_output_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.privilegedDockerOptions">privileged_docker_options</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.sharedCredentials">shared_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.vulnerableTlsCipherSuite">vulnerable_tls_cipher_suite</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.acrAuthentication">acr_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.agentSendUnutilizedMsg">agent_send_unutilized_msg</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.baseline">baseline</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.edgeHubMemOptimize">edge_hub_mem_optimize</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.edgeLoggingOption">edge_logging_option</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.inconsistentModuleSettings">inconsistent_module_settings</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.installAgent">install_agent</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.ipFilterDenyAll">ip_filter_deny_all</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.ipFilterPermissiveRule">ip_filter_permissive_rule</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.openPorts">open_ports</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveFirewallPolicy">permissive_firewall_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveInputFirewallRules">permissive_input_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveOutputFirewallRules">permissive_output_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.privilegedDockerOptions">privileged_docker_options</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.sharedCredentials">shared_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.vulnerableTlsCipherSuite">vulnerable_tls_cipher_suite</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}. |
 
 ---
 
-##### `acr_authentication`<sup>Optional</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.acrAuthentication"></a>
+##### `acr_authentication`<sup>Optional</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.acrAuthentication"></a>
 
 ```python
 acr_authentication: bool | IResolvable
@@ -2087,11 +2087,11 @@ acr_authentication: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}.
 
 ---
 
-##### `agent_send_unutilized_msg`<sup>Optional</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.agentSendUnutilizedMsg"></a>
+##### `agent_send_unutilized_msg`<sup>Optional</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.agentSendUnutilizedMsg"></a>
 
 ```python
 agent_send_unutilized_msg: bool | IResolvable
@@ -2099,11 +2099,11 @@ agent_send_unutilized_msg: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}.
 
 ---
 
-##### `baseline`<sup>Optional</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.baseline"></a>
+##### `baseline`<sup>Optional</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.baseline"></a>
 
 ```python
 baseline: bool | IResolvable
@@ -2111,11 +2111,11 @@ baseline: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}.
 
 ---
 
-##### `edge_hub_mem_optimize`<sup>Optional</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.edgeHubMemOptimize"></a>
+##### `edge_hub_mem_optimize`<sup>Optional</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.edgeHubMemOptimize"></a>
 
 ```python
 edge_hub_mem_optimize: bool | IResolvable
@@ -2123,11 +2123,11 @@ edge_hub_mem_optimize: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}.
 
 ---
 
-##### `edge_logging_option`<sup>Optional</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.edgeLoggingOption"></a>
+##### `edge_logging_option`<sup>Optional</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.edgeLoggingOption"></a>
 
 ```python
 edge_logging_option: bool | IResolvable
@@ -2135,11 +2135,11 @@ edge_logging_option: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}.
 
 ---
 
-##### `inconsistent_module_settings`<sup>Optional</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.inconsistentModuleSettings"></a>
+##### `inconsistent_module_settings`<sup>Optional</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.inconsistentModuleSettings"></a>
 
 ```python
 inconsistent_module_settings: bool | IResolvable
@@ -2147,11 +2147,11 @@ inconsistent_module_settings: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}.
 
 ---
 
-##### `install_agent`<sup>Optional</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.installAgent"></a>
+##### `install_agent`<sup>Optional</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.installAgent"></a>
 
 ```python
 install_agent: bool | IResolvable
@@ -2159,11 +2159,11 @@ install_agent: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}.
 
 ---
 
-##### `ip_filter_deny_all`<sup>Optional</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.ipFilterDenyAll"></a>
+##### `ip_filter_deny_all`<sup>Optional</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.ipFilterDenyAll"></a>
 
 ```python
 ip_filter_deny_all: bool | IResolvable
@@ -2171,11 +2171,11 @@ ip_filter_deny_all: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}.
 
 ---
 
-##### `ip_filter_permissive_rule`<sup>Optional</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.ipFilterPermissiveRule"></a>
+##### `ip_filter_permissive_rule`<sup>Optional</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.ipFilterPermissiveRule"></a>
 
 ```python
 ip_filter_permissive_rule: bool | IResolvable
@@ -2183,11 +2183,11 @@ ip_filter_permissive_rule: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}.
 
 ---
 
-##### `open_ports`<sup>Optional</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.openPorts"></a>
+##### `open_ports`<sup>Optional</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.openPorts"></a>
 
 ```python
 open_ports: bool | IResolvable
@@ -2195,11 +2195,11 @@ open_ports: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}.
 
 ---
 
-##### `permissive_firewall_policy`<sup>Optional</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveFirewallPolicy"></a>
+##### `permissive_firewall_policy`<sup>Optional</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveFirewallPolicy"></a>
 
 ```python
 permissive_firewall_policy: bool | IResolvable
@@ -2207,11 +2207,11 @@ permissive_firewall_policy: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}.
 
 ---
 
-##### `permissive_input_firewall_rules`<sup>Optional</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveInputFirewallRules"></a>
+##### `permissive_input_firewall_rules`<sup>Optional</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveInputFirewallRules"></a>
 
 ```python
 permissive_input_firewall_rules: bool | IResolvable
@@ -2219,11 +2219,11 @@ permissive_input_firewall_rules: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}.
 
 ---
 
-##### `permissive_output_firewall_rules`<sup>Optional</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.permissiveOutputFirewallRules"></a>
+##### `permissive_output_firewall_rules`<sup>Optional</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.permissiveOutputFirewallRules"></a>
 
 ```python
 permissive_output_firewall_rules: bool | IResolvable
@@ -2231,11 +2231,11 @@ permissive_output_firewall_rules: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}.
 
 ---
 
-##### `privileged_docker_options`<sup>Optional</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.privilegedDockerOptions"></a>
+##### `privileged_docker_options`<sup>Optional</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.privilegedDockerOptions"></a>
 
 ```python
 privileged_docker_options: bool | IResolvable
@@ -2243,11 +2243,11 @@ privileged_docker_options: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}.
 
 ---
 
-##### `shared_credentials`<sup>Optional</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.sharedCredentials"></a>
+##### `shared_credentials`<sup>Optional</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.sharedCredentials"></a>
 
 ```python
 shared_credentials: bool | IResolvable
@@ -2255,11 +2255,11 @@ shared_credentials: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}.
 
 ---
 
-##### `vulnerable_tls_cipher_suite`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled.property.vulnerableTlsCipherSuite"></a>
+##### `vulnerable_tls_cipher_suite`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations.property.vulnerableTlsCipherSuite"></a>
 
 ```python
 vulnerable_tls_cipher_suite: bool | IResolvable
@@ -2267,7 +2267,7 @@ vulnerable_tls_cipher_suite: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}.
 
 ---
 
@@ -2290,10 +2290,10 @@ iotSecuritySolution.IotSecuritySolutionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#create IotSecuritySolution#create}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#read IotSecuritySolution#read}. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#update IotSecuritySolution#update}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#create IotSecuritySolution#create}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#read IotSecuritySolution#read}. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#update IotSecuritySolution#update}. |
 
 ---
 
@@ -2305,7 +2305,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#create IotSecuritySolution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#create IotSecuritySolution#create}.
 
 ---
 
@@ -2317,7 +2317,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#delete IotSecuritySolution#delete}.
 
 ---
 
@@ -2329,7 +2329,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#read IotSecuritySolution#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#read IotSecuritySolution#read}.
 
 ---
 
@@ -2341,7 +2341,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/iot_security_solution#update IotSecuritySolution#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/iot_security_solution#update IotSecuritySolution#update}.
 
 ---
 
@@ -2855,14 +2855,14 @@ internal_value: IResolvable | IotSecuritySolutionAdditionalWorkspace
 ---
 
 
-### IotSecuritySolutionRecommendationsEnabledOutputReference <a name="IotSecuritySolutionRecommendationsEnabledOutputReference" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference"></a>
+### IotSecuritySolutionRecommendationsOutputReference <a name="IotSecuritySolutionRecommendationsOutputReference" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.Initializer"></a>
 
 ```python
 from cdktn_provider_azurerm import iot_security_solution
 
-iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference(
+iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str
 )
@@ -2870,12 +2870,12 @@ iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktn.IInterpolatingParent
 
@@ -2883,7 +2883,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2895,45 +2895,45 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetAcrAuthentication">reset_acr_authentication</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetAgentSendUnutilizedMsg">reset_agent_send_unutilized_msg</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetBaseline">reset_baseline</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetEdgeHubMemOptimize">reset_edge_hub_mem_optimize</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetEdgeLoggingOption">reset_edge_logging_option</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetInconsistentModuleSettings">reset_inconsistent_module_settings</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetInstallAgent">reset_install_agent</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetIpFilterDenyAll">reset_ip_filter_deny_all</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetIpFilterPermissiveRule">reset_ip_filter_permissive_rule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetOpenPorts">reset_open_ports</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveFirewallPolicy">reset_permissive_firewall_policy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveInputFirewallRules">reset_permissive_input_firewall_rules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveOutputFirewallRules">reset_permissive_output_firewall_rules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPrivilegedDockerOptions">reset_privileged_docker_options</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetSharedCredentials">reset_shared_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetVulnerableTlsCipherSuite">reset_vulnerable_tls_cipher_suite</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetAcrAuthentication">reset_acr_authentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetAgentSendUnutilizedMsg">reset_agent_send_unutilized_msg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetBaseline">reset_baseline</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetEdgeHubMemOptimize">reset_edge_hub_mem_optimize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetEdgeLoggingOption">reset_edge_logging_option</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetInconsistentModuleSettings">reset_inconsistent_module_settings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetInstallAgent">reset_install_agent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetIpFilterDenyAll">reset_ip_filter_deny_all</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetIpFilterPermissiveRule">reset_ip_filter_permissive_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetOpenPorts">reset_open_ports</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveFirewallPolicy">reset_permissive_firewall_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveInputFirewallRules">reset_permissive_input_firewall_rules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveOutputFirewallRules">reset_permissive_output_firewall_rules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPrivilegedDockerOptions">reset_privileged_docker_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetSharedCredentials">reset_shared_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetVulnerableTlsCipherSuite">reset_vulnerable_tls_cipher_suite</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2941,13 +2941,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2955,13 +2955,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2969,13 +2969,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2983,13 +2983,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2997,13 +2997,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3011,13 +3011,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3025,13 +3025,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3039,13 +3039,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3053,13 +3053,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3067,13 +3067,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3083,13 +3083,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3099,97 +3099,97 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_acr_authentication` <a name="reset_acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetAcrAuthentication"></a>
+##### `reset_acr_authentication` <a name="reset_acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetAcrAuthentication"></a>
 
 ```python
 def reset_acr_authentication() -> None
 ```
 
-##### `reset_agent_send_unutilized_msg` <a name="reset_agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetAgentSendUnutilizedMsg"></a>
+##### `reset_agent_send_unutilized_msg` <a name="reset_agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetAgentSendUnutilizedMsg"></a>
 
 ```python
 def reset_agent_send_unutilized_msg() -> None
 ```
 
-##### `reset_baseline` <a name="reset_baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetBaseline"></a>
+##### `reset_baseline` <a name="reset_baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetBaseline"></a>
 
 ```python
 def reset_baseline() -> None
 ```
 
-##### `reset_edge_hub_mem_optimize` <a name="reset_edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetEdgeHubMemOptimize"></a>
+##### `reset_edge_hub_mem_optimize` <a name="reset_edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetEdgeHubMemOptimize"></a>
 
 ```python
 def reset_edge_hub_mem_optimize() -> None
 ```
 
-##### `reset_edge_logging_option` <a name="reset_edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetEdgeLoggingOption"></a>
+##### `reset_edge_logging_option` <a name="reset_edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetEdgeLoggingOption"></a>
 
 ```python
 def reset_edge_logging_option() -> None
 ```
 
-##### `reset_inconsistent_module_settings` <a name="reset_inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetInconsistentModuleSettings"></a>
+##### `reset_inconsistent_module_settings` <a name="reset_inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetInconsistentModuleSettings"></a>
 
 ```python
 def reset_inconsistent_module_settings() -> None
 ```
 
-##### `reset_install_agent` <a name="reset_install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetInstallAgent"></a>
+##### `reset_install_agent` <a name="reset_install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetInstallAgent"></a>
 
 ```python
 def reset_install_agent() -> None
 ```
 
-##### `reset_ip_filter_deny_all` <a name="reset_ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetIpFilterDenyAll"></a>
+##### `reset_ip_filter_deny_all` <a name="reset_ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetIpFilterDenyAll"></a>
 
 ```python
 def reset_ip_filter_deny_all() -> None
 ```
 
-##### `reset_ip_filter_permissive_rule` <a name="reset_ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetIpFilterPermissiveRule"></a>
+##### `reset_ip_filter_permissive_rule` <a name="reset_ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetIpFilterPermissiveRule"></a>
 
 ```python
 def reset_ip_filter_permissive_rule() -> None
 ```
 
-##### `reset_open_ports` <a name="reset_open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetOpenPorts"></a>
+##### `reset_open_ports` <a name="reset_open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetOpenPorts"></a>
 
 ```python
 def reset_open_ports() -> None
 ```
 
-##### `reset_permissive_firewall_policy` <a name="reset_permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveFirewallPolicy"></a>
+##### `reset_permissive_firewall_policy` <a name="reset_permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveFirewallPolicy"></a>
 
 ```python
 def reset_permissive_firewall_policy() -> None
 ```
 
-##### `reset_permissive_input_firewall_rules` <a name="reset_permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveInputFirewallRules"></a>
+##### `reset_permissive_input_firewall_rules` <a name="reset_permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveInputFirewallRules"></a>
 
 ```python
 def reset_permissive_input_firewall_rules() -> None
 ```
 
-##### `reset_permissive_output_firewall_rules` <a name="reset_permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPermissiveOutputFirewallRules"></a>
+##### `reset_permissive_output_firewall_rules` <a name="reset_permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPermissiveOutputFirewallRules"></a>
 
 ```python
 def reset_permissive_output_firewall_rules() -> None
 ```
 
-##### `reset_privileged_docker_options` <a name="reset_privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetPrivilegedDockerOptions"></a>
+##### `reset_privileged_docker_options` <a name="reset_privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetPrivilegedDockerOptions"></a>
 
 ```python
 def reset_privileged_docker_options() -> None
 ```
 
-##### `reset_shared_credentials` <a name="reset_shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetSharedCredentials"></a>
+##### `reset_shared_credentials` <a name="reset_shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetSharedCredentials"></a>
 
 ```python
 def reset_shared_credentials() -> None
 ```
 
-##### `reset_vulnerable_tls_cipher_suite` <a name="reset_vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.resetVulnerableTlsCipherSuite"></a>
+##### `reset_vulnerable_tls_cipher_suite` <a name="reset_vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.resetVulnerableTlsCipherSuite"></a>
 
 ```python
 def reset_vulnerable_tls_cipher_suite() -> None
@@ -3200,45 +3200,45 @@ def reset_vulnerable_tls_cipher_suite() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.acrAuthenticationInput">acr_authentication_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.agentSendUnutilizedMsgInput">agent_send_unutilized_msg_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.baselineInput">baseline_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeHubMemOptimizeInput">edge_hub_mem_optimize_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeLoggingOptionInput">edge_logging_option_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.inconsistentModuleSettingsInput">inconsistent_module_settings_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.installAgentInput">install_agent_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterDenyAllInput">ip_filter_deny_all_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterPermissiveRuleInput">ip_filter_permissive_rule_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.openPortsInput">open_ports_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveFirewallPolicyInput">permissive_firewall_policy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveInputFirewallRulesInput">permissive_input_firewall_rules_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveOutputFirewallRulesInput">permissive_output_firewall_rules_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.privilegedDockerOptionsInput">privileged_docker_options_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.sharedCredentialsInput">shared_credentials_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.vulnerableTlsCipherSuiteInput">vulnerable_tls_cipher_suite_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.acrAuthentication">acr_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.agentSendUnutilizedMsg">agent_send_unutilized_msg</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.baseline">baseline</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeHubMemOptimize">edge_hub_mem_optimize</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeLoggingOption">edge_logging_option</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.inconsistentModuleSettings">inconsistent_module_settings</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.installAgent">install_agent</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterDenyAll">ip_filter_deny_all</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterPermissiveRule">ip_filter_permissive_rule</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.openPorts">open_ports</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveFirewallPolicy">permissive_firewall_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveInputFirewallRules">permissive_input_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveOutputFirewallRules">permissive_output_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.privilegedDockerOptions">privileged_docker_options</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.sharedCredentials">shared_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.vulnerableTlsCipherSuite">vulnerable_tls_cipher_suite</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.acrAuthenticationInput">acr_authentication_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.agentSendUnutilizedMsgInput">agent_send_unutilized_msg_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.baselineInput">baseline_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeHubMemOptimizeInput">edge_hub_mem_optimize_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeLoggingOptionInput">edge_logging_option_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.inconsistentModuleSettingsInput">inconsistent_module_settings_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.installAgentInput">install_agent_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterDenyAllInput">ip_filter_deny_all_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterPermissiveRuleInput">ip_filter_permissive_rule_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.openPortsInput">open_ports_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveFirewallPolicyInput">permissive_firewall_policy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveInputFirewallRulesInput">permissive_input_firewall_rules_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveOutputFirewallRulesInput">permissive_output_firewall_rules_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.privilegedDockerOptionsInput">privileged_docker_options_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.sharedCredentialsInput">shared_credentials_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.vulnerableTlsCipherSuiteInput">vulnerable_tls_cipher_suite_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.acrAuthentication">acr_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.agentSendUnutilizedMsg">agent_send_unutilized_msg</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.baseline">baseline</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeHubMemOptimize">edge_hub_mem_optimize</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeLoggingOption">edge_logging_option</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.inconsistentModuleSettings">inconsistent_module_settings</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.installAgent">install_agent</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterDenyAll">ip_filter_deny_all</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterPermissiveRule">ip_filter_permissive_rule</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.openPorts">open_ports</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveFirewallPolicy">permissive_firewall_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveInputFirewallRules">permissive_input_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveOutputFirewallRules">permissive_output_firewall_rules</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.privilegedDockerOptions">privileged_docker_options</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.sharedCredentials">shared_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.vulnerableTlsCipherSuite">vulnerable_tls_cipher_suite</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3252,7 +3252,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3262,7 +3262,7 @@ fqn: str
 
 ---
 
-##### `acr_authentication_input`<sup>Optional</sup> <a name="acr_authentication_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.acrAuthenticationInput"></a>
+##### `acr_authentication_input`<sup>Optional</sup> <a name="acr_authentication_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.acrAuthenticationInput"></a>
 
 ```python
 acr_authentication_input: bool | IResolvable
@@ -3272,7 +3272,7 @@ acr_authentication_input: bool | IResolvable
 
 ---
 
-##### `agent_send_unutilized_msg_input`<sup>Optional</sup> <a name="agent_send_unutilized_msg_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.agentSendUnutilizedMsgInput"></a>
+##### `agent_send_unutilized_msg_input`<sup>Optional</sup> <a name="agent_send_unutilized_msg_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.agentSendUnutilizedMsgInput"></a>
 
 ```python
 agent_send_unutilized_msg_input: bool | IResolvable
@@ -3282,7 +3282,7 @@ agent_send_unutilized_msg_input: bool | IResolvable
 
 ---
 
-##### `baseline_input`<sup>Optional</sup> <a name="baseline_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.baselineInput"></a>
+##### `baseline_input`<sup>Optional</sup> <a name="baseline_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.baselineInput"></a>
 
 ```python
 baseline_input: bool | IResolvable
@@ -3292,7 +3292,7 @@ baseline_input: bool | IResolvable
 
 ---
 
-##### `edge_hub_mem_optimize_input`<sup>Optional</sup> <a name="edge_hub_mem_optimize_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeHubMemOptimizeInput"></a>
+##### `edge_hub_mem_optimize_input`<sup>Optional</sup> <a name="edge_hub_mem_optimize_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeHubMemOptimizeInput"></a>
 
 ```python
 edge_hub_mem_optimize_input: bool | IResolvable
@@ -3302,7 +3302,7 @@ edge_hub_mem_optimize_input: bool | IResolvable
 
 ---
 
-##### `edge_logging_option_input`<sup>Optional</sup> <a name="edge_logging_option_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeLoggingOptionInput"></a>
+##### `edge_logging_option_input`<sup>Optional</sup> <a name="edge_logging_option_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeLoggingOptionInput"></a>
 
 ```python
 edge_logging_option_input: bool | IResolvable
@@ -3312,7 +3312,7 @@ edge_logging_option_input: bool | IResolvable
 
 ---
 
-##### `inconsistent_module_settings_input`<sup>Optional</sup> <a name="inconsistent_module_settings_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.inconsistentModuleSettingsInput"></a>
+##### `inconsistent_module_settings_input`<sup>Optional</sup> <a name="inconsistent_module_settings_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.inconsistentModuleSettingsInput"></a>
 
 ```python
 inconsistent_module_settings_input: bool | IResolvable
@@ -3322,7 +3322,7 @@ inconsistent_module_settings_input: bool | IResolvable
 
 ---
 
-##### `install_agent_input`<sup>Optional</sup> <a name="install_agent_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.installAgentInput"></a>
+##### `install_agent_input`<sup>Optional</sup> <a name="install_agent_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.installAgentInput"></a>
 
 ```python
 install_agent_input: bool | IResolvable
@@ -3332,7 +3332,7 @@ install_agent_input: bool | IResolvable
 
 ---
 
-##### `ip_filter_deny_all_input`<sup>Optional</sup> <a name="ip_filter_deny_all_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterDenyAllInput"></a>
+##### `ip_filter_deny_all_input`<sup>Optional</sup> <a name="ip_filter_deny_all_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterDenyAllInput"></a>
 
 ```python
 ip_filter_deny_all_input: bool | IResolvable
@@ -3342,7 +3342,7 @@ ip_filter_deny_all_input: bool | IResolvable
 
 ---
 
-##### `ip_filter_permissive_rule_input`<sup>Optional</sup> <a name="ip_filter_permissive_rule_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterPermissiveRuleInput"></a>
+##### `ip_filter_permissive_rule_input`<sup>Optional</sup> <a name="ip_filter_permissive_rule_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterPermissiveRuleInput"></a>
 
 ```python
 ip_filter_permissive_rule_input: bool | IResolvable
@@ -3352,7 +3352,7 @@ ip_filter_permissive_rule_input: bool | IResolvable
 
 ---
 
-##### `open_ports_input`<sup>Optional</sup> <a name="open_ports_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.openPortsInput"></a>
+##### `open_ports_input`<sup>Optional</sup> <a name="open_ports_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.openPortsInput"></a>
 
 ```python
 open_ports_input: bool | IResolvable
@@ -3362,7 +3362,7 @@ open_ports_input: bool | IResolvable
 
 ---
 
-##### `permissive_firewall_policy_input`<sup>Optional</sup> <a name="permissive_firewall_policy_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveFirewallPolicyInput"></a>
+##### `permissive_firewall_policy_input`<sup>Optional</sup> <a name="permissive_firewall_policy_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveFirewallPolicyInput"></a>
 
 ```python
 permissive_firewall_policy_input: bool | IResolvable
@@ -3372,7 +3372,7 @@ permissive_firewall_policy_input: bool | IResolvable
 
 ---
 
-##### `permissive_input_firewall_rules_input`<sup>Optional</sup> <a name="permissive_input_firewall_rules_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveInputFirewallRulesInput"></a>
+##### `permissive_input_firewall_rules_input`<sup>Optional</sup> <a name="permissive_input_firewall_rules_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveInputFirewallRulesInput"></a>
 
 ```python
 permissive_input_firewall_rules_input: bool | IResolvable
@@ -3382,7 +3382,7 @@ permissive_input_firewall_rules_input: bool | IResolvable
 
 ---
 
-##### `permissive_output_firewall_rules_input`<sup>Optional</sup> <a name="permissive_output_firewall_rules_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveOutputFirewallRulesInput"></a>
+##### `permissive_output_firewall_rules_input`<sup>Optional</sup> <a name="permissive_output_firewall_rules_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveOutputFirewallRulesInput"></a>
 
 ```python
 permissive_output_firewall_rules_input: bool | IResolvable
@@ -3392,7 +3392,7 @@ permissive_output_firewall_rules_input: bool | IResolvable
 
 ---
 
-##### `privileged_docker_options_input`<sup>Optional</sup> <a name="privileged_docker_options_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.privilegedDockerOptionsInput"></a>
+##### `privileged_docker_options_input`<sup>Optional</sup> <a name="privileged_docker_options_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.privilegedDockerOptionsInput"></a>
 
 ```python
 privileged_docker_options_input: bool | IResolvable
@@ -3402,7 +3402,7 @@ privileged_docker_options_input: bool | IResolvable
 
 ---
 
-##### `shared_credentials_input`<sup>Optional</sup> <a name="shared_credentials_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.sharedCredentialsInput"></a>
+##### `shared_credentials_input`<sup>Optional</sup> <a name="shared_credentials_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.sharedCredentialsInput"></a>
 
 ```python
 shared_credentials_input: bool | IResolvable
@@ -3412,7 +3412,7 @@ shared_credentials_input: bool | IResolvable
 
 ---
 
-##### `vulnerable_tls_cipher_suite_input`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.vulnerableTlsCipherSuiteInput"></a>
+##### `vulnerable_tls_cipher_suite_input`<sup>Optional</sup> <a name="vulnerable_tls_cipher_suite_input" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.vulnerableTlsCipherSuiteInput"></a>
 
 ```python
 vulnerable_tls_cipher_suite_input: bool | IResolvable
@@ -3422,7 +3422,7 @@ vulnerable_tls_cipher_suite_input: bool | IResolvable
 
 ---
 
-##### `acr_authentication`<sup>Required</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.acrAuthentication"></a>
+##### `acr_authentication`<sup>Required</sup> <a name="acr_authentication" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.acrAuthentication"></a>
 
 ```python
 acr_authentication: bool | IResolvable
@@ -3432,7 +3432,7 @@ acr_authentication: bool | IResolvable
 
 ---
 
-##### `agent_send_unutilized_msg`<sup>Required</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.agentSendUnutilizedMsg"></a>
+##### `agent_send_unutilized_msg`<sup>Required</sup> <a name="agent_send_unutilized_msg" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.agentSendUnutilizedMsg"></a>
 
 ```python
 agent_send_unutilized_msg: bool | IResolvable
@@ -3442,7 +3442,7 @@ agent_send_unutilized_msg: bool | IResolvable
 
 ---
 
-##### `baseline`<sup>Required</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.baseline"></a>
+##### `baseline`<sup>Required</sup> <a name="baseline" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.baseline"></a>
 
 ```python
 baseline: bool | IResolvable
@@ -3452,7 +3452,7 @@ baseline: bool | IResolvable
 
 ---
 
-##### `edge_hub_mem_optimize`<sup>Required</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeHubMemOptimize"></a>
+##### `edge_hub_mem_optimize`<sup>Required</sup> <a name="edge_hub_mem_optimize" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeHubMemOptimize"></a>
 
 ```python
 edge_hub_mem_optimize: bool | IResolvable
@@ -3462,7 +3462,7 @@ edge_hub_mem_optimize: bool | IResolvable
 
 ---
 
-##### `edge_logging_option`<sup>Required</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.edgeLoggingOption"></a>
+##### `edge_logging_option`<sup>Required</sup> <a name="edge_logging_option" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.edgeLoggingOption"></a>
 
 ```python
 edge_logging_option: bool | IResolvable
@@ -3472,7 +3472,7 @@ edge_logging_option: bool | IResolvable
 
 ---
 
-##### `inconsistent_module_settings`<sup>Required</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.inconsistentModuleSettings"></a>
+##### `inconsistent_module_settings`<sup>Required</sup> <a name="inconsistent_module_settings" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.inconsistentModuleSettings"></a>
 
 ```python
 inconsistent_module_settings: bool | IResolvable
@@ -3482,7 +3482,7 @@ inconsistent_module_settings: bool | IResolvable
 
 ---
 
-##### `install_agent`<sup>Required</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.installAgent"></a>
+##### `install_agent`<sup>Required</sup> <a name="install_agent" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.installAgent"></a>
 
 ```python
 install_agent: bool | IResolvable
@@ -3492,7 +3492,7 @@ install_agent: bool | IResolvable
 
 ---
 
-##### `ip_filter_deny_all`<sup>Required</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterDenyAll"></a>
+##### `ip_filter_deny_all`<sup>Required</sup> <a name="ip_filter_deny_all" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterDenyAll"></a>
 
 ```python
 ip_filter_deny_all: bool | IResolvable
@@ -3502,7 +3502,7 @@ ip_filter_deny_all: bool | IResolvable
 
 ---
 
-##### `ip_filter_permissive_rule`<sup>Required</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.ipFilterPermissiveRule"></a>
+##### `ip_filter_permissive_rule`<sup>Required</sup> <a name="ip_filter_permissive_rule" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.ipFilterPermissiveRule"></a>
 
 ```python
 ip_filter_permissive_rule: bool | IResolvable
@@ -3512,7 +3512,7 @@ ip_filter_permissive_rule: bool | IResolvable
 
 ---
 
-##### `open_ports`<sup>Required</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.openPorts"></a>
+##### `open_ports`<sup>Required</sup> <a name="open_ports" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.openPorts"></a>
 
 ```python
 open_ports: bool | IResolvable
@@ -3522,7 +3522,7 @@ open_ports: bool | IResolvable
 
 ---
 
-##### `permissive_firewall_policy`<sup>Required</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveFirewallPolicy"></a>
+##### `permissive_firewall_policy`<sup>Required</sup> <a name="permissive_firewall_policy" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveFirewallPolicy"></a>
 
 ```python
 permissive_firewall_policy: bool | IResolvable
@@ -3532,7 +3532,7 @@ permissive_firewall_policy: bool | IResolvable
 
 ---
 
-##### `permissive_input_firewall_rules`<sup>Required</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveInputFirewallRules"></a>
+##### `permissive_input_firewall_rules`<sup>Required</sup> <a name="permissive_input_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveInputFirewallRules"></a>
 
 ```python
 permissive_input_firewall_rules: bool | IResolvable
@@ -3542,7 +3542,7 @@ permissive_input_firewall_rules: bool | IResolvable
 
 ---
 
-##### `permissive_output_firewall_rules`<sup>Required</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.permissiveOutputFirewallRules"></a>
+##### `permissive_output_firewall_rules`<sup>Required</sup> <a name="permissive_output_firewall_rules" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.permissiveOutputFirewallRules"></a>
 
 ```python
 permissive_output_firewall_rules: bool | IResolvable
@@ -3552,7 +3552,7 @@ permissive_output_firewall_rules: bool | IResolvable
 
 ---
 
-##### `privileged_docker_options`<sup>Required</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.privilegedDockerOptions"></a>
+##### `privileged_docker_options`<sup>Required</sup> <a name="privileged_docker_options" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.privilegedDockerOptions"></a>
 
 ```python
 privileged_docker_options: bool | IResolvable
@@ -3562,7 +3562,7 @@ privileged_docker_options: bool | IResolvable
 
 ---
 
-##### `shared_credentials`<sup>Required</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.sharedCredentials"></a>
+##### `shared_credentials`<sup>Required</sup> <a name="shared_credentials" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.sharedCredentials"></a>
 
 ```python
 shared_credentials: bool | IResolvable
@@ -3572,7 +3572,7 @@ shared_credentials: bool | IResolvable
 
 ---
 
-##### `vulnerable_tls_cipher_suite`<sup>Required</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.vulnerableTlsCipherSuite"></a>
+##### `vulnerable_tls_cipher_suite`<sup>Required</sup> <a name="vulnerable_tls_cipher_suite" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.vulnerableTlsCipherSuite"></a>
 
 ```python
 vulnerable_tls_cipher_suite: bool | IResolvable
@@ -3582,13 +3582,13 @@ vulnerable_tls_cipher_suite: bool | IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabledOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: IotSecuritySolutionRecommendationsEnabled
+internal_value: IotSecuritySolutionRecommendations
 ```
 
-- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendationsEnabled">IotSecuritySolutionRecommendationsEnabled</a>
+- *Type:* <a href="#@cdktn/provider-azurerm.iotSecuritySolution.IotSecuritySolutionRecommendations">IotSecuritySolutionRecommendations</a>
 
 ---
 

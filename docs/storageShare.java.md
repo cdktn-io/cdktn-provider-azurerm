@@ -4,7 +4,7 @@
 
 ### StorageShare <a name="StorageShare" id="@cdktn/provider-azurerm.storageShare.StorageShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share azurerm_storage_share}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share azurerm_storage_share}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageShare.StorageShare.Initializer"></a>
 
@@ -21,13 +21,12 @@ StorageShare.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .quota(java.lang.Number)
+    .storageAccountId(java.lang.String)
 //  .accessTier(java.lang.String)
 //  .acl(IResolvable|java.util.List<StorageShareAcl>)
 //  .enabledProtocol(java.lang.String)
 //  .id(java.lang.String)
 //  .metadata(java.util.Map<java.lang.String, java.lang.String>)
-//  .storageAccountId(java.lang.String)
-//  .storageAccountName(java.lang.String)
 //  .timeouts(StorageShareTimeouts)
     .build();
 ```
@@ -43,15 +42,14 @@ StorageShare.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#name StorageShare#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.quota">quota</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#quota StorageShare#quota}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#access_tier StorageShare#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#name StorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.quota">quota</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#quota StorageShare#quota}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#access_tier StorageShare#access_tier}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.acl">acl</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageShare.StorageShareAcl">StorageShareAcl</a>></code> | acl block. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.enabledProtocol">enabledProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#metadata StorageShare#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountName">storageAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.enabledProtocol">enabledProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#metadata StorageShare#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts">StorageShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#name StorageShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#name StorageShare#name}.
 
 ---
 
@@ -128,7 +126,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#quota StorageShare#quota}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#quota StorageShare#quota}.
+
+---
+
+##### `storageAccountId`<sup>Required</sup> <a name="storageAccountId" id="@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}.
 
 ---
 
@@ -136,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#access_tier StorageShare#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#access_tier StorageShare#access_tier}.
 
 ---
 
@@ -146,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 acl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#acl StorageShare#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#acl StorageShare#acl}
 
 ---
 
@@ -154,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
 
 ---
 
@@ -162,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,23 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#metadata StorageShare#metadata}.
-
----
-
-##### `storageAccountId`<sup>Optional</sup> <a name="storageAccountId" id="@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountId"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}.
-
----
-
-##### `storageAccountName`<sup>Optional</sup> <a name="storageAccountName" id="@cdktn/provider-azurerm.storageShare.StorageShare.Initializer.parameter.storageAccountName"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#metadata StorageShare#metadata}.
 
 ---
 
@@ -199,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#timeouts StorageShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#timeouts StorageShare#timeouts}
 
 ---
 
@@ -238,8 +228,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetEnabledProtocol">resetEnabledProtocol</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetMetadata">resetMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetStorageAccountId">resetStorageAccountId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetStorageAccountName">resetStorageAccountName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -609,18 +597,6 @@ public void resetId()
 public void resetMetadata()
 ```
 
-##### `resetStorageAccountId` <a name="resetStorageAccountId" id="@cdktn/provider-azurerm.storageShare.StorageShare.resetStorageAccountId"></a>
-
-```java
-public void resetStorageAccountId()
-```
-
-##### `resetStorageAccountName` <a name="resetStorageAccountName" id="@cdktn/provider-azurerm.storageShare.StorageShare.resetStorageAccountName"></a>
-
-```java
-public void resetStorageAccountName()
-```
-
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azurerm.storageShare.StorageShare.resetTimeouts"></a>
 
 ```java
@@ -730,7 +706,7 @@ The construct id used in the generated config for the StorageShare to import.
 
 The id of the existing StorageShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +738,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.acl">acl</a></code> | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclList">StorageShareAclList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.rbacScopeId">rbacScopeId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.resourceManagerId">resourceManagerId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeoutsOutputReference">StorageShareTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.accessTierInput">accessTierInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -773,7 +748,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.quotaInput">quotaInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountIdInput">storageAccountIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountNameInput">storageAccountNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts">StorageShareTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.accessTier">accessTier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.enabledProtocol">enabledProtocol</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -782,7 +756,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.quota">quota</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountName">storageAccountName</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -948,16 +921,6 @@ public java.lang.String getRbacScopeId();
 
 ---
 
-##### `resourceManagerId`<sup>Required</sup> <a name="resourceManagerId" id="@cdktn/provider-azurerm.storageShare.StorageShare.property.resourceManagerId"></a>
-
-```java
-public java.lang.String getResourceManagerId();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-azurerm.storageShare.StorageShare.property.timeouts"></a>
 
 ```java
@@ -1058,16 +1021,6 @@ public java.lang.String getStorageAccountIdInput();
 
 ---
 
-##### `storageAccountNameInput`<sup>Optional</sup> <a name="storageAccountNameInput" id="@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountNameInput"></a>
-
-```java
-public java.lang.String getStorageAccountNameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-azurerm.storageShare.StorageShare.property.timeoutsInput"></a>
 
 ```java
@@ -1148,16 +1101,6 @@ public java.lang.String getStorageAccountId();
 
 ---
 
-##### `storageAccountName`<sup>Required</sup> <a name="storageAccountName" id="@cdktn/provider-azurerm.storageShare.StorageShare.property.storageAccountName"></a>
-
-```java
-public java.lang.String getStorageAccountName();
-```
-
-- *Type:* java.lang.String
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1195,7 +1138,7 @@ StorageShareAcl.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAcl.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAcl.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAcl.property.accessPolicy">accessPolicy</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy">StorageShareAclAccessPolicy</a>></code> | access_policy block. |
 
 ---
@@ -1208,7 +1151,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1168,7 @@ public IResolvable|java.util.List<StorageShareAclAccessPolicy> getAccessPolicy()
 
 access_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#access_policy StorageShare#access_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#access_policy StorageShare#access_policy}
 
 ---
 
@@ -1247,9 +1190,9 @@ StorageShareAclAccessPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.permissions">permissions</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#permissions StorageShare#permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.expiry">expiry</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#expiry StorageShare#expiry}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#start StorageShare#start}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.permissions">permissions</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#permissions StorageShare#permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.expiry">expiry</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#expiry StorageShare#expiry}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareAclAccessPolicy.property.start">start</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#start StorageShare#start}. |
 
 ---
 
@@ -1261,7 +1204,7 @@ public java.lang.String getPermissions();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#permissions StorageShare#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#permissions StorageShare#permissions}.
 
 ---
 
@@ -1273,7 +1216,7 @@ public java.lang.String getExpiry();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#expiry StorageShare#expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#expiry StorageShare#expiry}.
 
 ---
 
@@ -1285,7 +1228,7 @@ public java.lang.String getStart();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#start StorageShare#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#start StorageShare#start}.
 
 ---
 
@@ -1306,13 +1249,12 @@ StorageShareConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .quota(java.lang.Number)
+    .storageAccountId(java.lang.String)
 //  .accessTier(java.lang.String)
 //  .acl(IResolvable|java.util.List<StorageShareAcl>)
 //  .enabledProtocol(java.lang.String)
 //  .id(java.lang.String)
 //  .metadata(java.util.Map<java.lang.String, java.lang.String>)
-//  .storageAccountId(java.lang.String)
-//  .storageAccountName(java.lang.String)
 //  .timeouts(StorageShareTimeouts)
     .build();
 ```
@@ -1328,15 +1270,14 @@ StorageShareConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#name StorageShare#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.quota">quota</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#quota StorageShare#quota}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#access_tier StorageShare#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#name StorageShare#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.quota">quota</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#quota StorageShare#quota}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.accessTier">accessTier</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#access_tier StorageShare#access_tier}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.acl">acl</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.storageShare.StorageShareAcl">StorageShareAcl</a>></code> | acl block. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.enabledProtocol">enabledProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#metadata StorageShare#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountName">storageAccountName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.enabledProtocol">enabledProtocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#metadata StorageShare#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts">StorageShareTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1419,7 +1360,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#name StorageShare#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#name StorageShare#name}.
 
 ---
 
@@ -1431,7 +1372,19 @@ public java.lang.Number getQuota();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#quota StorageShare#quota}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#quota StorageShare#quota}.
+
+---
+
+##### `storageAccountId`<sup>Required</sup> <a name="storageAccountId" id="@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountId"></a>
+
+```java
+public java.lang.String getStorageAccountId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}.
 
 ---
 
@@ -1443,7 +1396,7 @@ public java.lang.String getAccessTier();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#access_tier StorageShare#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#access_tier StorageShare#access_tier}.
 
 ---
 
@@ -1457,7 +1410,7 @@ public IResolvable|java.util.List<StorageShareAcl> getAcl();
 
 acl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#acl StorageShare#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#acl StorageShare#acl}
 
 ---
 
@@ -1469,7 +1422,7 @@ public java.lang.String getEnabledProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#enabled_protocol StorageShare#enabled_protocol}.
 
 ---
 
@@ -1481,7 +1434,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#id StorageShare#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#id StorageShare#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1496,31 +1449,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#metadata StorageShare#metadata}.
-
----
-
-##### `storageAccountId`<sup>Optional</sup> <a name="storageAccountId" id="@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountId"></a>
-
-```java
-public java.lang.String getStorageAccountId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_id StorageShare#storage_account_id}.
-
----
-
-##### `storageAccountName`<sup>Optional</sup> <a name="storageAccountName" id="@cdktn/provider-azurerm.storageShare.StorageShareConfig.property.storageAccountName"></a>
-
-```java
-public java.lang.String getStorageAccountName();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#storage_account_name StorageShare#storage_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#metadata StorageShare#metadata}.
 
 ---
 
@@ -1534,7 +1463,7 @@ public StorageShareTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#timeouts StorageShare#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#timeouts StorageShare#timeouts}
 
 ---
 
@@ -1557,10 +1486,10 @@ StorageShareTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#create StorageShare#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#delete StorageShare#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#read StorageShare#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#update StorageShare#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#create StorageShare#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#delete StorageShare#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#read StorageShare#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageShare.StorageShareTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#update StorageShare#update}. |
 
 ---
 
@@ -1572,7 +1501,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#create StorageShare#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#create StorageShare#create}.
 
 ---
 
@@ -1584,7 +1513,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#delete StorageShare#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#delete StorageShare#delete}.
 
 ---
 
@@ -1596,7 +1525,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#read StorageShare#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#read StorageShare#read}.
 
 ---
 
@@ -1608,7 +1537,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_share#update StorageShare#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_share#update StorageShare#update}.
 
 ---
 

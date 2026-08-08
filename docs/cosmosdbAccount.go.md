@@ -4,12 +4,12 @@
 
 ### CosmosdbAccount <a name="CosmosdbAccount" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account azurerm_cosmosdb_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccount(scope Construct, id *string, config CosmosdbAccountConfig) CosmosdbAccount
 ```
@@ -103,9 +103,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetIsVirtualNetworkFilterEnabled">ResetIsVirtualNetworkFilterEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetKeyVaultKeyId">ResetKeyVaultKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetKind">ResetKind</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetLocalAuthenticationDisabled">ResetLocalAuthenticationDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetLocalAuthenticationEnabled">ResetLocalAuthenticationEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetManagedHsmKeyId">ResetManagedHsmKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetMinimalTlsVersion">ResetMinimalTlsVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetMongoServerVersion">ResetMongoServerVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetMultipleWriteLocationsEnabled">ResetMultipleWriteLocationsEnabled</a></code> | *No description.* |
@@ -669,22 +667,10 @@ func ResetKeyVaultKeyId()
 func ResetKind()
 ```
 
-##### `ResetLocalAuthenticationDisabled` <a name="ResetLocalAuthenticationDisabled" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetLocalAuthenticationDisabled"></a>
-
-```go
-func ResetLocalAuthenticationDisabled()
-```
-
 ##### `ResetLocalAuthenticationEnabled` <a name="ResetLocalAuthenticationEnabled" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetLocalAuthenticationEnabled"></a>
 
 ```go
 func ResetLocalAuthenticationEnabled()
-```
-
-##### `ResetManagedHsmKeyId` <a name="ResetManagedHsmKeyId" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetManagedHsmKeyId"></a>
-
-```go
-func ResetManagedHsmKeyId()
 ```
 
 ##### `ResetMinimalTlsVersion` <a name="ResetMinimalTlsVersion" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.resetMinimalTlsVersion"></a>
@@ -767,7 +753,7 @@ func ResetVirtualNetworkRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsConstruct(x interface{}) *bool
 ```
@@ -799,7 +785,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -813,7 +799,7 @@ cosmosdbaccount.CosmosdbAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -827,7 +813,7 @@ cosmosdbaccount.CosmosdbAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.CosmosdbAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +842,7 @@ The construct id used in the generated config for the CosmosdbAccount to import.
 
 The id of the existing CosmosdbAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,10 +918,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.isVirtualNetworkFilterEnabledInput">IsVirtualNetworkFilterEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.keyVaultKeyIdInput">KeyVaultKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.kindInput">KindInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationDisabledInput">LocalAuthenticationDisabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationEnabledInput">LocalAuthenticationEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.managedHsmKeyIdInput">ManagedHsmKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.minimalTlsVersionInput">MinimalTlsVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.mongoServerVersionInput">MongoServerVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.multipleWriteLocationsEnabledInput">MultipleWriteLocationsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -962,10 +946,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.isVirtualNetworkFilterEnabled">IsVirtualNetworkFilterEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationDisabled">LocalAuthenticationDisabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.minimalTlsVersion">MinimalTlsVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.mongoServerVersion">MongoServerVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.multipleWriteLocationsEnabled">MultipleWriteLocationsEnabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -1582,16 +1564,6 @@ func KindInput() *string
 
 ---
 
-##### `LocalAuthenticationDisabledInput`<sup>Optional</sup> <a name="LocalAuthenticationDisabledInput" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationDisabledInput"></a>
-
-```go
-func LocalAuthenticationDisabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `LocalAuthenticationEnabledInput`<sup>Optional</sup> <a name="LocalAuthenticationEnabledInput" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationEnabledInput"></a>
 
 ```go
@@ -1606,16 +1578,6 @@ func LocalAuthenticationEnabledInput() interface{}
 
 ```go
 func LocationInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ManagedHsmKeyIdInput`<sup>Optional</sup> <a name="ManagedHsmKeyIdInput" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.managedHsmKeyIdInput"></a>
-
-```go
-func ManagedHsmKeyIdInput() *string
 ```
 
 - *Type:* *string
@@ -1882,16 +1844,6 @@ func Kind() *string
 
 ---
 
-##### `LocalAuthenticationDisabled`<sup>Required</sup> <a name="LocalAuthenticationDisabled" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationDisabled"></a>
-
-```go
-func LocalAuthenticationDisabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `LocalAuthenticationEnabled`<sup>Required</sup> <a name="LocalAuthenticationEnabled" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.localAuthenticationEnabled"></a>
 
 ```go
@@ -1906,16 +1858,6 @@ func LocalAuthenticationEnabled() interface{}
 
 ```go
 func Location() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ManagedHsmKeyId`<sup>Required</sup> <a name="ManagedHsmKeyId" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccount.property.managedHsmKeyId"></a>
-
-```go
-func ManagedHsmKeyId() *string
 ```
 
 - *Type:* *string
@@ -2057,7 +1999,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountAnalyticalStorage {
 	SchemaType: *string,
@@ -2068,7 +2010,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorage.property.schemaType">SchemaType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorage.property.schemaType">SchemaType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}. |
 
 ---
 
@@ -2080,7 +2022,7 @@ SchemaType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#schema_type CosmosdbAccount#schema_type}.
 
 ---
 
@@ -2089,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountBackup {
 	Type: *string,
@@ -2104,11 +2046,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#type CosmosdbAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.intervalInMinutes">IntervalInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#interval_in_minutes CosmosdbAccount#interval_in_minutes}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.retentionInHours">RetentionInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#retention_in_hours CosmosdbAccount#retention_in_hours}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.storageRedundancy">StorageRedundancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#storage_redundancy CosmosdbAccount#storage_redundancy}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tier CosmosdbAccount#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#type CosmosdbAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.intervalInMinutes">IntervalInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#interval_in_minutes CosmosdbAccount#interval_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.retentionInHours">RetentionInHours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#retention_in_hours CosmosdbAccount#retention_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.storageRedundancy">StorageRedundancy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#storage_redundancy CosmosdbAccount#storage_redundancy}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tier CosmosdbAccount#tier}. |
 
 ---
 
@@ -2120,7 +2062,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#type CosmosdbAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#type CosmosdbAccount#type}.
 
 ---
 
@@ -2132,7 +2074,7 @@ IntervalInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#interval_in_minutes CosmosdbAccount#interval_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#interval_in_minutes CosmosdbAccount#interval_in_minutes}.
 
 ---
 
@@ -2144,7 +2086,7 @@ RetentionInHours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#retention_in_hours CosmosdbAccount#retention_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#retention_in_hours CosmosdbAccount#retention_in_hours}.
 
 ---
 
@@ -2156,7 +2098,7 @@ StorageRedundancy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#storage_redundancy CosmosdbAccount#storage_redundancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#storage_redundancy CosmosdbAccount#storage_redundancy}.
 
 ---
 
@@ -2168,7 +2110,7 @@ Tier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tier CosmosdbAccount#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tier CosmosdbAccount#tier}.
 
 ---
 
@@ -2177,7 +2119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCapabilities {
 	Name: *string,
@@ -2188,7 +2130,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilities.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilities.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
 
 ---
 
@@ -2200,7 +2142,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
 
 ---
 
@@ -2209,7 +2151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCapacity {
 	TotalThroughputLimit: *f64,
@@ -2220,7 +2162,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacity.property.totalThroughputLimit">TotalThroughputLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#total_throughput_limit CosmosdbAccount#total_throughput_limit}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacity.property.totalThroughputLimit">TotalThroughputLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#total_throughput_limit CosmosdbAccount#total_throughput_limit}. |
 
 ---
 
@@ -2232,7 +2174,7 @@ TotalThroughputLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#total_throughput_limit CosmosdbAccount#total_throughput_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#total_throughput_limit CosmosdbAccount#total_throughput_limit}.
 
 ---
 
@@ -2241,7 +2183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountConfig {
 	Connection: interface{},
@@ -2251,33 +2193,31 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ConsistencyPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountConsistencyPolicy,
+	ConsistencyPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountConsistencyPolicy,
 	GeoLocation: interface{},
 	Location: *string,
 	Name: *string,
 	OfferType: *string,
 	ResourceGroupName: *string,
 	AccessKeyMetadataWritesEnabled: interface{},
-	AnalyticalStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountAnalyticalStorage,
+	AnalyticalStorage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountAnalyticalStorage,
 	AnalyticalStorageEnabled: interface{},
 	AutomaticFailoverEnabled: interface{},
-	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountBackup,
+	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountBackup,
 	BurstCapacityEnabled: interface{},
 	Capabilities: interface{},
-	Capacity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountCapacity,
-	CorsRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountCorsRule,
+	Capacity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountCapacity,
+	CorsRule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountCorsRule,
 	CreateMode: *string,
 	DefaultIdentityType: *string,
 	FreeTierEnabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountIdentity,
 	IpRangeFilter: *[]*string,
 	IsVirtualNetworkFilterEnabled: interface{},
 	KeyVaultKeyId: *string,
 	Kind: *string,
-	LocalAuthenticationDisabled: interface{},
 	LocalAuthenticationEnabled: interface{},
-	ManagedHsmKeyId: *string,
 	MinimalTlsVersion: *string,
 	MongoServerVersion: *string,
 	MultipleWriteLocationsEnabled: interface{},
@@ -2285,9 +2225,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 	NetworkAclBypassIds: *[]*string,
 	PartitionMergeEnabled: interface{},
 	PublicNetworkAccessEnabled: interface{},
-	Restore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountRestore,
+	Restore: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountRestore,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.cosmosdbAccount.CosmosdbAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.cosmosdbAccount.CosmosdbAccountTimeouts,
 	VirtualNetworkRule: interface{},
 }
 ```
@@ -2305,40 +2245,38 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.consistencyPolicy">ConsistencyPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy">CosmosdbAccountConsistencyPolicy</a></code> | consistency_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.geoLocation">GeoLocation</a></code> | <code>interface{}</code> | geo_location block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#location CosmosdbAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.offerType">OfferType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#offer_type CosmosdbAccount#offer_type}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#resource_group_name CosmosdbAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.accessKeyMetadataWritesEnabled">AccessKeyMetadataWritesEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#access_key_metadata_writes_enabled CosmosdbAccount#access_key_metadata_writes_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#location CosmosdbAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.offerType">OfferType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#offer_type CosmosdbAccount#offer_type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#resource_group_name CosmosdbAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.accessKeyMetadataWritesEnabled">AccessKeyMetadataWritesEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#access_key_metadata_writes_enabled CosmosdbAccount#access_key_metadata_writes_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.analyticalStorage">AnalyticalStorage</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorage">CosmosdbAccountAnalyticalStorage</a></code> | analytical_storage block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.analyticalStorageEnabled">AnalyticalStorageEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#analytical_storage_enabled CosmosdbAccount#analytical_storage_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.automaticFailoverEnabled">AutomaticFailoverEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#automatic_failover_enabled CosmosdbAccount#automatic_failover_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.analyticalStorageEnabled">AnalyticalStorageEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#analytical_storage_enabled CosmosdbAccount#analytical_storage_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.automaticFailoverEnabled">AutomaticFailoverEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#automatic_failover_enabled CosmosdbAccount#automatic_failover_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.backup">Backup</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackup">CosmosdbAccountBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.burstCapacityEnabled">BurstCapacityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#burst_capacity_enabled CosmosdbAccount#burst_capacity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.burstCapacityEnabled">BurstCapacityEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#burst_capacity_enabled CosmosdbAccount#burst_capacity_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.capabilities">Capabilities</a></code> | <code>interface{}</code> | capabilities block. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.capacity">Capacity</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacity">CosmosdbAccountCapacity</a></code> | capacity block. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.corsRule">CorsRule</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule">CosmosdbAccountCorsRule</a></code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.createMode">CreateMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#create_mode CosmosdbAccount#create_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.defaultIdentityType">DefaultIdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#default_identity_type CosmosdbAccount#default_identity_type}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.freeTierEnabled">FreeTierEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#free_tier_enabled CosmosdbAccount#free_tier_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#id CosmosdbAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.createMode">CreateMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#create_mode CosmosdbAccount#create_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.defaultIdentityType">DefaultIdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#default_identity_type CosmosdbAccount#default_identity_type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.freeTierEnabled">FreeTierEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#free_tier_enabled CosmosdbAccount#free_tier_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#id CosmosdbAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity">CosmosdbAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.ipRangeFilter">IpRangeFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#ip_range_filter CosmosdbAccount#ip_range_filter}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.isVirtualNetworkFilterEnabled">IsVirtualNetworkFilterEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#is_virtual_network_filter_enabled CosmosdbAccount#is_virtual_network_filter_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#key_vault_key_id CosmosdbAccount#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#kind CosmosdbAccount#kind}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.localAuthenticationDisabled">LocalAuthenticationDisabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#local_authentication_disabled CosmosdbAccount#local_authentication_disabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#local_authentication_enabled CosmosdbAccount#local_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#managed_hsm_key_id CosmosdbAccount#managed_hsm_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.minimalTlsVersion">MinimalTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#minimal_tls_version CosmosdbAccount#minimal_tls_version}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.mongoServerVersion">MongoServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#mongo_server_version CosmosdbAccount#mongo_server_version}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.multipleWriteLocationsEnabled">MultipleWriteLocationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#multiple_write_locations_enabled CosmosdbAccount#multiple_write_locations_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.networkAclBypassForAzureServices">NetworkAclBypassForAzureServices</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#network_acl_bypass_for_azure_services CosmosdbAccount#network_acl_bypass_for_azure_services}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.networkAclBypassIds">NetworkAclBypassIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#network_acl_bypass_ids CosmosdbAccount#network_acl_bypass_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.partitionMergeEnabled">PartitionMergeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#partition_merge_enabled CosmosdbAccount#partition_merge_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#public_network_access_enabled CosmosdbAccount#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.ipRangeFilter">IpRangeFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#ip_range_filter CosmosdbAccount#ip_range_filter}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.isVirtualNetworkFilterEnabled">IsVirtualNetworkFilterEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#is_virtual_network_filter_enabled CosmosdbAccount#is_virtual_network_filter_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#key_vault_key_id CosmosdbAccount#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#kind CosmosdbAccount#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.localAuthenticationEnabled">LocalAuthenticationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#local_authentication_enabled CosmosdbAccount#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.minimalTlsVersion">MinimalTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#minimal_tls_version CosmosdbAccount#minimal_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.mongoServerVersion">MongoServerVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#mongo_server_version CosmosdbAccount#mongo_server_version}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.multipleWriteLocationsEnabled">MultipleWriteLocationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#multiple_write_locations_enabled CosmosdbAccount#multiple_write_locations_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.networkAclBypassForAzureServices">NetworkAclBypassForAzureServices</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#network_acl_bypass_for_azure_services CosmosdbAccount#network_acl_bypass_for_azure_services}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.networkAclBypassIds">NetworkAclBypassIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#network_acl_bypass_ids CosmosdbAccount#network_acl_bypass_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.partitionMergeEnabled">PartitionMergeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#partition_merge_enabled CosmosdbAccount#partition_merge_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#public_network_access_enabled CosmosdbAccount#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.restore">Restore</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore">CosmosdbAccountRestore</a></code> | restore block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tags CosmosdbAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tags CosmosdbAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts">CosmosdbAccountTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.virtualNetworkRule">VirtualNetworkRule</a></code> | <code>interface{}</code> | virtual_network_rule block. |
 
@@ -2424,7 +2362,7 @@ ConsistencyPolicy CosmosdbAccountConsistencyPolicy
 
 consistency_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#consistency_policy CosmosdbAccount#consistency_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#consistency_policy CosmosdbAccount#consistency_policy}
 
 ---
 
@@ -2438,7 +2376,7 @@ GeoLocation interface{}
 
 geo_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#geo_location CosmosdbAccount#geo_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#geo_location CosmosdbAccount#geo_location}
 
 ---
 
@@ -2450,7 +2388,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#location CosmosdbAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#location CosmosdbAccount#location}.
 
 ---
 
@@ -2462,7 +2400,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
 
 ---
 
@@ -2474,7 +2412,7 @@ OfferType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#offer_type CosmosdbAccount#offer_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#offer_type CosmosdbAccount#offer_type}.
 
 ---
 
@@ -2486,7 +2424,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#resource_group_name CosmosdbAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#resource_group_name CosmosdbAccount#resource_group_name}.
 
 ---
 
@@ -2498,7 +2436,7 @@ AccessKeyMetadataWritesEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#access_key_metadata_writes_enabled CosmosdbAccount#access_key_metadata_writes_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#access_key_metadata_writes_enabled CosmosdbAccount#access_key_metadata_writes_enabled}.
 
 ---
 
@@ -2512,7 +2450,7 @@ AnalyticalStorage CosmosdbAccountAnalyticalStorage
 
 analytical_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#analytical_storage CosmosdbAccount#analytical_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#analytical_storage CosmosdbAccount#analytical_storage}
 
 ---
 
@@ -2524,7 +2462,7 @@ AnalyticalStorageEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#analytical_storage_enabled CosmosdbAccount#analytical_storage_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#analytical_storage_enabled CosmosdbAccount#analytical_storage_enabled}.
 
 ---
 
@@ -2536,7 +2474,7 @@ AutomaticFailoverEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#automatic_failover_enabled CosmosdbAccount#automatic_failover_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#automatic_failover_enabled CosmosdbAccount#automatic_failover_enabled}.
 
 ---
 
@@ -2550,7 +2488,7 @@ Backup CosmosdbAccountBackup
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#backup CosmosdbAccount#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#backup CosmosdbAccount#backup}
 
 ---
 
@@ -2562,7 +2500,7 @@ BurstCapacityEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#burst_capacity_enabled CosmosdbAccount#burst_capacity_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#burst_capacity_enabled CosmosdbAccount#burst_capacity_enabled}.
 
 ---
 
@@ -2576,7 +2514,7 @@ Capabilities interface{}
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#capabilities CosmosdbAccount#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#capabilities CosmosdbAccount#capabilities}
 
 ---
 
@@ -2590,7 +2528,7 @@ Capacity CosmosdbAccountCapacity
 
 capacity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#capacity CosmosdbAccount#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#capacity CosmosdbAccount#capacity}
 
 ---
 
@@ -2604,7 +2542,7 @@ CorsRule CosmosdbAccountCorsRule
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#cors_rule CosmosdbAccount#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#cors_rule CosmosdbAccount#cors_rule}
 
 ---
 
@@ -2616,7 +2554,7 @@ CreateMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#create_mode CosmosdbAccount#create_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#create_mode CosmosdbAccount#create_mode}.
 
 ---
 
@@ -2628,7 +2566,7 @@ DefaultIdentityType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#default_identity_type CosmosdbAccount#default_identity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#default_identity_type CosmosdbAccount#default_identity_type}.
 
 ---
 
@@ -2640,7 +2578,7 @@ FreeTierEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#free_tier_enabled CosmosdbAccount#free_tier_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#free_tier_enabled CosmosdbAccount#free_tier_enabled}.
 
 ---
 
@@ -2652,7 +2590,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#id CosmosdbAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#id CosmosdbAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2669,7 +2607,7 @@ Identity CosmosdbAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#identity CosmosdbAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#identity CosmosdbAccount#identity}
 
 ---
 
@@ -2681,7 +2619,7 @@ IpRangeFilter *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#ip_range_filter CosmosdbAccount#ip_range_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#ip_range_filter CosmosdbAccount#ip_range_filter}.
 
 ---
 
@@ -2693,7 +2631,7 @@ IsVirtualNetworkFilterEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#is_virtual_network_filter_enabled CosmosdbAccount#is_virtual_network_filter_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#is_virtual_network_filter_enabled CosmosdbAccount#is_virtual_network_filter_enabled}.
 
 ---
 
@@ -2705,7 +2643,7 @@ KeyVaultKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#key_vault_key_id CosmosdbAccount#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#key_vault_key_id CosmosdbAccount#key_vault_key_id}.
 
 ---
 
@@ -2717,19 +2655,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#kind CosmosdbAccount#kind}.
-
----
-
-##### `LocalAuthenticationDisabled`<sup>Optional</sup> <a name="LocalAuthenticationDisabled" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.localAuthenticationDisabled"></a>
-
-```go
-LocalAuthenticationDisabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#local_authentication_disabled CosmosdbAccount#local_authentication_disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#kind CosmosdbAccount#kind}.
 
 ---
 
@@ -2741,19 +2667,7 @@ LocalAuthenticationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#local_authentication_enabled CosmosdbAccount#local_authentication_enabled}.
-
----
-
-##### `ManagedHsmKeyId`<sup>Optional</sup> <a name="ManagedHsmKeyId" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConfig.property.managedHsmKeyId"></a>
-
-```go
-ManagedHsmKeyId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#managed_hsm_key_id CosmosdbAccount#managed_hsm_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#local_authentication_enabled CosmosdbAccount#local_authentication_enabled}.
 
 ---
 
@@ -2765,7 +2679,7 @@ MinimalTlsVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#minimal_tls_version CosmosdbAccount#minimal_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#minimal_tls_version CosmosdbAccount#minimal_tls_version}.
 
 ---
 
@@ -2777,7 +2691,7 @@ MongoServerVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#mongo_server_version CosmosdbAccount#mongo_server_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#mongo_server_version CosmosdbAccount#mongo_server_version}.
 
 ---
 
@@ -2789,7 +2703,7 @@ MultipleWriteLocationsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#multiple_write_locations_enabled CosmosdbAccount#multiple_write_locations_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#multiple_write_locations_enabled CosmosdbAccount#multiple_write_locations_enabled}.
 
 ---
 
@@ -2801,7 +2715,7 @@ NetworkAclBypassForAzureServices interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#network_acl_bypass_for_azure_services CosmosdbAccount#network_acl_bypass_for_azure_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#network_acl_bypass_for_azure_services CosmosdbAccount#network_acl_bypass_for_azure_services}.
 
 ---
 
@@ -2813,7 +2727,7 @@ NetworkAclBypassIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#network_acl_bypass_ids CosmosdbAccount#network_acl_bypass_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#network_acl_bypass_ids CosmosdbAccount#network_acl_bypass_ids}.
 
 ---
 
@@ -2825,7 +2739,7 @@ PartitionMergeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#partition_merge_enabled CosmosdbAccount#partition_merge_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#partition_merge_enabled CosmosdbAccount#partition_merge_enabled}.
 
 ---
 
@@ -2837,7 +2751,7 @@ PublicNetworkAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#public_network_access_enabled CosmosdbAccount#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#public_network_access_enabled CosmosdbAccount#public_network_access_enabled}.
 
 ---
 
@@ -2851,7 +2765,7 @@ Restore CosmosdbAccountRestore
 
 restore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#restore CosmosdbAccount#restore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#restore CosmosdbAccount#restore}
 
 ---
 
@@ -2863,7 +2777,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tags CosmosdbAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tags CosmosdbAccount#tags}.
 
 ---
 
@@ -2877,7 +2791,7 @@ Timeouts CosmosdbAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#timeouts CosmosdbAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#timeouts CosmosdbAccount#timeouts}
 
 ---
 
@@ -2891,7 +2805,7 @@ VirtualNetworkRule interface{}
 
 virtual_network_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#virtual_network_rule CosmosdbAccount#virtual_network_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#virtual_network_rule CosmosdbAccount#virtual_network_rule}
 
 ---
 
@@ -2900,7 +2814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountConsistencyPolicy {
 	ConsistencyLevel: *string,
@@ -2913,9 +2827,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.consistencyLevel">ConsistencyLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#consistency_level CosmosdbAccount#consistency_level}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.maxIntervalInSeconds">MaxIntervalInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_interval_in_seconds CosmosdbAccount#max_interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.maxStalenessPrefix">MaxStalenessPrefix</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_staleness_prefix CosmosdbAccount#max_staleness_prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.consistencyLevel">ConsistencyLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#consistency_level CosmosdbAccount#consistency_level}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.maxIntervalInSeconds">MaxIntervalInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_interval_in_seconds CosmosdbAccount#max_interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicy.property.maxStalenessPrefix">MaxStalenessPrefix</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_staleness_prefix CosmosdbAccount#max_staleness_prefix}. |
 
 ---
 
@@ -2927,7 +2841,7 @@ ConsistencyLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#consistency_level CosmosdbAccount#consistency_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#consistency_level CosmosdbAccount#consistency_level}.
 
 ---
 
@@ -2939,7 +2853,7 @@ MaxIntervalInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_interval_in_seconds CosmosdbAccount#max_interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_interval_in_seconds CosmosdbAccount#max_interval_in_seconds}.
 
 ---
 
@@ -2951,7 +2865,7 @@ MaxStalenessPrefix *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_staleness_prefix CosmosdbAccount#max_staleness_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_staleness_prefix CosmosdbAccount#max_staleness_prefix}.
 
 ---
 
@@ -2960,7 +2874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountCorsRule {
 	AllowedHeaders: *[]*string,
@@ -2975,11 +2889,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_headers CosmosdbAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_methods CosmosdbAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_origins CosmosdbAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#exposed_headers CosmosdbAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_age_in_seconds CosmosdbAccount#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_headers CosmosdbAccount#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_methods CosmosdbAccount#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_origins CosmosdbAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#exposed_headers CosmosdbAccount#exposed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_age_in_seconds CosmosdbAccount#max_age_in_seconds}. |
 
 ---
 
@@ -2991,7 +2905,7 @@ AllowedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_headers CosmosdbAccount#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_headers CosmosdbAccount#allowed_headers}.
 
 ---
 
@@ -3003,7 +2917,7 @@ AllowedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_methods CosmosdbAccount#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_methods CosmosdbAccount#allowed_methods}.
 
 ---
 
@@ -3015,7 +2929,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#allowed_origins CosmosdbAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#allowed_origins CosmosdbAccount#allowed_origins}.
 
 ---
 
@@ -3027,7 +2941,7 @@ ExposedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#exposed_headers CosmosdbAccount#exposed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#exposed_headers CosmosdbAccount#exposed_headers}.
 
 ---
 
@@ -3039,7 +2953,7 @@ MaxAgeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#max_age_in_seconds CosmosdbAccount#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#max_age_in_seconds CosmosdbAccount#max_age_in_seconds}.
 
 ---
 
@@ -3048,7 +2962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountGeoLocation {
 	FailoverPriority: *f64,
@@ -3061,9 +2975,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.failoverPriority">FailoverPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#failover_priority CosmosdbAccount#failover_priority}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#location CosmosdbAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.zoneRedundant">ZoneRedundant</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#zone_redundant CosmosdbAccount#zone_redundant}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.failoverPriority">FailoverPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#failover_priority CosmosdbAccount#failover_priority}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#location CosmosdbAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocation.property.zoneRedundant">ZoneRedundant</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#zone_redundant CosmosdbAccount#zone_redundant}. |
 
 ---
 
@@ -3075,7 +2989,7 @@ FailoverPriority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#failover_priority CosmosdbAccount#failover_priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#failover_priority CosmosdbAccount#failover_priority}.
 
 ---
 
@@ -3087,7 +3001,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#location CosmosdbAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#location CosmosdbAccount#location}.
 
 ---
 
@@ -3099,7 +3013,7 @@ ZoneRedundant interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#zone_redundant CosmosdbAccount#zone_redundant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#zone_redundant CosmosdbAccount#zone_redundant}.
 
 ---
 
@@ -3108,7 +3022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountIdentity {
 	Type: *string,
@@ -3120,8 +3034,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#type CosmosdbAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#identity_ids CosmosdbAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#type CosmosdbAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#identity_ids CosmosdbAccount#identity_ids}. |
 
 ---
 
@@ -3133,7 +3047,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#type CosmosdbAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#type CosmosdbAccount#type}.
 
 ---
 
@@ -3145,7 +3059,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#identity_ids CosmosdbAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#identity_ids CosmosdbAccount#identity_ids}.
 
 ---
 
@@ -3154,7 +3068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestore {
 	RestoreTimestampInUtc: *string,
@@ -3169,11 +3083,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.restoreTimestampInUtc">RestoreTimestampInUtc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#restore_timestamp_in_utc CosmosdbAccount#restore_timestamp_in_utc}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.sourceCosmosdbAccountId">SourceCosmosdbAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#source_cosmosdb_account_id CosmosdbAccount#source_cosmosdb_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.restoreTimestampInUtc">RestoreTimestampInUtc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#restore_timestamp_in_utc CosmosdbAccount#restore_timestamp_in_utc}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.sourceCosmosdbAccountId">SourceCosmosdbAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#source_cosmosdb_account_id CosmosdbAccount#source_cosmosdb_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.database">Database</a></code> | <code>interface{}</code> | database block. |
 | <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.gremlinDatabase">GremlinDatabase</a></code> | <code>interface{}</code> | gremlin_database block. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.tablesToRestore">TablesToRestore</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tables_to_restore CosmosdbAccount#tables_to_restore}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestore.property.tablesToRestore">TablesToRestore</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tables_to_restore CosmosdbAccount#tables_to_restore}. |
 
 ---
 
@@ -3185,7 +3099,7 @@ RestoreTimestampInUtc *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#restore_timestamp_in_utc CosmosdbAccount#restore_timestamp_in_utc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#restore_timestamp_in_utc CosmosdbAccount#restore_timestamp_in_utc}.
 
 ---
 
@@ -3197,7 +3111,7 @@ SourceCosmosdbAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#source_cosmosdb_account_id CosmosdbAccount#source_cosmosdb_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#source_cosmosdb_account_id CosmosdbAccount#source_cosmosdb_account_id}.
 
 ---
 
@@ -3211,7 +3125,7 @@ Database interface{}
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#database CosmosdbAccount#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#database CosmosdbAccount#database}
 
 ---
 
@@ -3225,7 +3139,7 @@ GremlinDatabase interface{}
 
 gremlin_database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#gremlin_database CosmosdbAccount#gremlin_database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#gremlin_database CosmosdbAccount#gremlin_database}
 
 ---
 
@@ -3237,7 +3151,7 @@ TablesToRestore *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#tables_to_restore CosmosdbAccount#tables_to_restore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#tables_to_restore CosmosdbAccount#tables_to_restore}.
 
 ---
 
@@ -3246,7 +3160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestoreDatabase {
 	Name: *string,
@@ -3258,8 +3172,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.property.collectionNames">CollectionNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#collection_names CosmosdbAccount#collection_names}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabase.property.collectionNames">CollectionNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#collection_names CosmosdbAccount#collection_names}. |
 
 ---
 
@@ -3271,7 +3185,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
 
 ---
 
@@ -3283,7 +3197,7 @@ CollectionNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#collection_names CosmosdbAccount#collection_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#collection_names CosmosdbAccount#collection_names}.
 
 ---
 
@@ -3292,7 +3206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountRestoreGremlinDatabase {
 	Name: *string,
@@ -3304,8 +3218,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.property.graphNames">GraphNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#graph_names CosmosdbAccount#graph_names}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabase.property.graphNames">GraphNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#graph_names CosmosdbAccount#graph_names}. |
 
 ---
 
@@ -3317,7 +3231,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#name CosmosdbAccount#name}.
 
 ---
 
@@ -3329,7 +3243,7 @@ GraphNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#graph_names CosmosdbAccount#graph_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#graph_names CosmosdbAccount#graph_names}.
 
 ---
 
@@ -3338,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountTimeouts {
 	Create: *string,
@@ -3352,10 +3266,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#create CosmosdbAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#delete CosmosdbAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#read CosmosdbAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#update CosmosdbAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#create CosmosdbAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#delete CosmosdbAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#read CosmosdbAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#update CosmosdbAccount#update}. |
 
 ---
 
@@ -3367,7 +3281,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#create CosmosdbAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#create CosmosdbAccount#create}.
 
 ---
 
@@ -3379,7 +3293,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#delete CosmosdbAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#delete CosmosdbAccount#delete}.
 
 ---
 
@@ -3391,7 +3305,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#read CosmosdbAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#read CosmosdbAccount#read}.
 
 ---
 
@@ -3403,7 +3317,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#update CosmosdbAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#update CosmosdbAccount#update}.
 
 ---
 
@@ -3412,7 +3326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 &cosmosdbaccount.CosmosdbAccountVirtualNetworkRule {
 	Id: *string,
@@ -3424,8 +3338,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccoun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#id CosmosdbAccount#id}. |
-| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.property.ignoreMissingVnetServiceEndpoint">IgnoreMissingVnetServiceEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#ignore_missing_vnet_service_endpoint CosmosdbAccount#ignore_missing_vnet_service_endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#id CosmosdbAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRule.property.ignoreMissingVnetServiceEndpoint">IgnoreMissingVnetServiceEndpoint</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#ignore_missing_vnet_service_endpoint CosmosdbAccount#ignore_missing_vnet_service_endpoint}. |
 
 ---
 
@@ -3437,7 +3351,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#id CosmosdbAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#id CosmosdbAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3452,7 +3366,7 @@ IgnoreMissingVnetServiceEndpoint interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/cosmosdb_account#ignore_missing_vnet_service_endpoint CosmosdbAccount#ignore_missing_vnet_service_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/cosmosdb_account#ignore_missing_vnet_service_endpoint CosmosdbAccount#ignore_missing_vnet_service_endpoint}.
 
 ---
 
@@ -3463,7 +3377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountAnalyticalStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountAnalyticalStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountAnalyticalStorageOutputReference
 ```
@@ -3734,7 +3648,7 @@ func InternalValue() CosmosdbAccountAnalyticalStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountBackupOutputReference
 ```
@@ -4121,7 +4035,7 @@ func InternalValue() CosmosdbAccountBackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountCapabilitiesList
 ```
@@ -4281,7 +4195,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountCapabilitiesOutputReference
 ```
@@ -4570,7 +4484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCapacityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCapacityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountCapacityOutputReference
 ```
@@ -4841,7 +4755,7 @@ func InternalValue() CosmosdbAccountCapacity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountConsistencyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountConsistencyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountConsistencyPolicyOutputReference
 ```
@@ -5170,7 +5084,7 @@ func InternalValue() CosmosdbAccountConsistencyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountCorsRuleOutputReference
 ```
@@ -5536,7 +5450,7 @@ func InternalValue() CosmosdbAccountCorsRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountGeoLocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountGeoLocationList
 ```
@@ -5696,7 +5610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountGeoLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountGeoLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountGeoLocationOutputReference
 ```
@@ -6047,7 +5961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountIdentityOutputReference
 ```
@@ -6369,7 +6283,7 @@ func InternalValue() CosmosdbAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountRestoreDatabaseList
 ```
@@ -6529,7 +6443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountRestoreDatabaseOutputReference
 ```
@@ -6847,7 +6761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreGremlinDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountRestoreGremlinDatabaseList
 ```
@@ -7007,7 +6921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreGremlinDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreGremlinDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountRestoreGremlinDatabaseOutputReference
 ```
@@ -7325,7 +7239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountRestoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountRestoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountRestoreOutputReference
 ```
@@ -7731,7 +7645,7 @@ func InternalValue() CosmosdbAccountRestore
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CosmosdbAccountTimeoutsOutputReference
 ```
@@ -8096,7 +8010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountVirtualNetworkRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CosmosdbAccountVirtualNetworkRuleList
 ```
@@ -8256,7 +8170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cosmosdbAccount.CosmosdbAccountVirtualNetworkRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/cosmosdbaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/cosmosdbaccount"
 
 cosmosdbaccount.NewCosmosdbAccountVirtualNetworkRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CosmosdbAccountVirtualNetworkRuleOutputReference
 ```

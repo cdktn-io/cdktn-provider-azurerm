@@ -4,12 +4,12 @@
 
 ### NetworkSecurityPerimeter <a name="NetworkSecurityPerimeter" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter azurerm_network_security_perimeter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter azurerm_network_security_perimeter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NewNetworkSecurityPerimeter(scope Construct, id *string, config NetworkSecurityPerimeterConfig) NetworkSecurityPerimeter
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NetworkSecurityPerimeter_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NetworkSecurityPerimeter_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ networksecurityperimeter.NetworkSecurityPerimeter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NetworkSecurityPerimeter_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ networksecurityperimeter.NetworkSecurityPerimeter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NetworkSecurityPerimeter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the NetworkSecurityPerimeter t
 
 The id of the existing NetworkSecurityPerimeter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 &networksecurityperimeter.NetworkSecurityPerimeterConfig {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurit
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts,
 }
 ```
 
@@ -885,11 +885,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurit
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#location NetworkSecurityPerimeter#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#name NetworkSecurityPerimeter#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#resource_group_name NetworkSecurityPerimeter#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#id NetworkSecurityPerimeter#id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#tags NetworkSecurityPerimeter#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#location NetworkSecurityPerimeter#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#name NetworkSecurityPerimeter#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#resource_group_name NetworkSecurityPerimeter#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#id NetworkSecurityPerimeter#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#tags NetworkSecurityPerimeter#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts">NetworkSecurityPerimeterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -972,7 +972,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#location NetworkSecurityPerimeter#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#location NetworkSecurityPerimeter#location}.
 
 ---
 
@@ -984,7 +984,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#name NetworkSecurityPerimeter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#name NetworkSecurityPerimeter#name}.
 
 ---
 
@@ -996,7 +996,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#resource_group_name NetworkSecurityPerimeter#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#resource_group_name NetworkSecurityPerimeter#resource_group_name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#id NetworkSecurityPerimeter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#id NetworkSecurityPerimeter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#tags NetworkSecurityPerimeter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#tags NetworkSecurityPerimeter#tags}.
 
 ---
 
@@ -1037,7 +1037,7 @@ Timeouts NetworkSecurityPerimeterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#timeouts NetworkSecurityPerimeter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#timeouts NetworkSecurityPerimeter#timeouts}
 
 ---
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 &networksecurityperimeter.NetworkSecurityPerimeterTimeouts {
 	Create: *string,
@@ -1060,10 +1060,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#create NetworkSecurityPerimeter#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#delete NetworkSecurityPerimeter#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#read NetworkSecurityPerimeter#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#update NetworkSecurityPerimeter#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#create NetworkSecurityPerimeter#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#delete NetworkSecurityPerimeter#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#read NetworkSecurityPerimeter#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#update NetworkSecurityPerimeter#update}. |
 
 ---
 
@@ -1075,7 +1075,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#create NetworkSecurityPerimeter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#create NetworkSecurityPerimeter#create}.
 
 ---
 
@@ -1087,7 +1087,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#delete NetworkSecurityPerimeter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#delete NetworkSecurityPerimeter#delete}.
 
 ---
 
@@ -1099,7 +1099,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#read NetworkSecurityPerimeter#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#read NetworkSecurityPerimeter#read}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_security_perimeter#update NetworkSecurityPerimeter#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_security_perimeter#update NetworkSecurityPerimeter#update}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkSecurityPerimeter.NetworkSecurityPerimeterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/networksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/networksecurityperimeter"
 
 networksecurityperimeter.NewNetworkSecurityPerimeterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityPerimeterTimeoutsOutputReference
 ```

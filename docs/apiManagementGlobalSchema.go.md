@@ -4,12 +4,12 @@
 
 ### ApiManagementGlobalSchema <a name="ApiManagementGlobalSchema" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema azurerm_api_management_global_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema azurerm_api_management_global_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.NewApiManagementGlobalSchema(scope Construct, id *string, config ApiManagementGlobalSchemaConfig) ApiManagementGlobalSchema
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.ApiManagementGlobalSchema_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.ApiManagementGlobalSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ apimanagementglobalschema.ApiManagementGlobalSchema_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.ApiManagementGlobalSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ apimanagementglobalschema.ApiManagementGlobalSchema_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.ApiManagementGlobalSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ApiManagementGlobalSchema 
 
 The id of the existing ApiManagementGlobalSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 &apimanagementglobalschema.ApiManagementGlobalSchemaConfig {
 	Connection: interface{},
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementg
 	Value: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts,
 }
 ```
 
@@ -931,13 +931,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementg
 | <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.schemaId">SchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.apiManagementName">ApiManagementName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.schemaId">SchemaId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts">ApiManagementGlobalSchemaTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1020,7 +1020,7 @@ ApiManagementName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}.
 
 ---
 
@@ -1032,7 +1032,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}.
 
 ---
 
@@ -1044,7 +1044,7 @@ SchemaId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}.
 
 ---
 
@@ -1092,7 +1092,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1109,7 +1109,7 @@ Timeouts ApiManagementGlobalSchemaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#timeouts ApiManagementGlobalSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#timeouts ApiManagementGlobalSchema#timeouts}
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 &apimanagementglobalschema.ApiManagementGlobalSchemaTimeouts {
 	Create: *string,
@@ -1132,10 +1132,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}. |
 
 ---
 
@@ -1147,7 +1147,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}.
 
 ---
 
@@ -1159,7 +1159,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}.
 
 ---
 
@@ -1183,7 +1183,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementGlobalSchema.ApiManagementGlobalSchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementglobalschema"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementglobalschema"
 
 apimanagementglobalschema.NewApiManagementGlobalSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementGlobalSchemaTimeoutsOutputReference
 ```

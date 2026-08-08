@@ -4,12 +4,12 @@
 
 ### ExpressRoutePort <a name="ExpressRoutePort" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port azurerm_express_route_port}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port azurerm_express_route_port}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.NewExpressRoutePort(scope Construct, id *string, config ExpressRoutePortConfig) ExpressRoutePort
 ```
@@ -501,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.ExpressRoutePort_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.ExpressRoutePort_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ expressrouteport.ExpressRoutePort_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.ExpressRoutePort_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ expressrouteport.ExpressRoutePort_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePort.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.ExpressRoutePort_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -590,7 +590,7 @@ The construct id used in the generated config for the ExpressRoutePort to import
 
 The id of the existing ExpressRoutePort that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1109,7 +1109,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 &expressrouteport.ExpressRoutePortConfig {
 	Connection: interface{},
@@ -1127,11 +1127,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 	ResourceGroupName: *string,
 	BillingType: *string,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRoutePort.ExpressRoutePortIdentity,
-	Link1: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRoutePort.ExpressRoutePortLink1,
-	Link2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRoutePort.ExpressRoutePortLink2,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.expressRoutePort.ExpressRoutePortIdentity,
+	Link1: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.expressRoutePort.ExpressRoutePortLink1,
+	Link2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.expressRoutePort.ExpressRoutePortLink2,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.expressRoutePort.ExpressRoutePortTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.expressRoutePort.ExpressRoutePortTimeouts,
 }
 ```
 
@@ -1146,18 +1146,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.bandwidthInGbps">BandwidthInGbps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#bandwidth_in_gbps ExpressRoutePort#bandwidth_in_gbps}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.encapsulation">Encapsulation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#encapsulation ExpressRoutePort#encapsulation}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#location ExpressRoutePort#location}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#name ExpressRoutePort#name}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.peeringLocation">PeeringLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#peering_location ExpressRoutePort#peering_location}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#resource_group_name ExpressRoutePort#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.billingType">BillingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#billing_type ExpressRoutePort#billing_type}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#id ExpressRoutePort#id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.bandwidthInGbps">BandwidthInGbps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#bandwidth_in_gbps ExpressRoutePort#bandwidth_in_gbps}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.encapsulation">Encapsulation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#encapsulation ExpressRoutePort#encapsulation}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#location ExpressRoutePort#location}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#name ExpressRoutePort#name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.peeringLocation">PeeringLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#peering_location ExpressRoutePort#peering_location}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#resource_group_name ExpressRoutePort#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.billingType">BillingType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#billing_type ExpressRoutePort#billing_type}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#id ExpressRoutePort#id}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity">ExpressRoutePortIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.link1">Link1</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1">ExpressRoutePortLink1</a></code> | link1 block. |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.link2">Link2</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2">ExpressRoutePortLink2</a></code> | link2 block. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#tags ExpressRoutePort#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#tags ExpressRoutePort#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts">ExpressRoutePortTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1240,7 +1240,7 @@ BandwidthInGbps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#bandwidth_in_gbps ExpressRoutePort#bandwidth_in_gbps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#bandwidth_in_gbps ExpressRoutePort#bandwidth_in_gbps}.
 
 ---
 
@@ -1252,7 +1252,7 @@ Encapsulation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#encapsulation ExpressRoutePort#encapsulation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#encapsulation ExpressRoutePort#encapsulation}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#location ExpressRoutePort#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#location ExpressRoutePort#location}.
 
 ---
 
@@ -1276,7 +1276,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#name ExpressRoutePort#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#name ExpressRoutePort#name}.
 
 ---
 
@@ -1288,7 +1288,7 @@ PeeringLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#peering_location ExpressRoutePort#peering_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#peering_location ExpressRoutePort#peering_location}.
 
 ---
 
@@ -1300,7 +1300,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#resource_group_name ExpressRoutePort#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#resource_group_name ExpressRoutePort#resource_group_name}.
 
 ---
 
@@ -1312,7 +1312,7 @@ BillingType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#billing_type ExpressRoutePort#billing_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#billing_type ExpressRoutePort#billing_type}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#id ExpressRoutePort#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#id ExpressRoutePort#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1341,7 +1341,7 @@ Identity ExpressRoutePortIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#identity ExpressRoutePort#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#identity ExpressRoutePort#identity}
 
 ---
 
@@ -1355,7 +1355,7 @@ Link1 ExpressRoutePortLink1
 
 link1 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#link1 ExpressRoutePort#link1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#link1 ExpressRoutePort#link1}
 
 ---
 
@@ -1369,7 +1369,7 @@ Link2 ExpressRoutePortLink2
 
 link2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#link2 ExpressRoutePort#link2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#link2 ExpressRoutePort#link2}
 
 ---
 
@@ -1381,7 +1381,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#tags ExpressRoutePort#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#tags ExpressRoutePort#tags}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Timeouts ExpressRoutePortTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#timeouts ExpressRoutePort#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#timeouts ExpressRoutePort#timeouts}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 &expressrouteport.ExpressRoutePortIdentity {
 	Type: *string,
@@ -1416,8 +1416,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#type ExpressRoutePort#type}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#identity_ids ExpressRoutePort#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#type ExpressRoutePort#type}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#identity_ids ExpressRoutePort#identity_ids}. |
 
 ---
 
@@ -1429,7 +1429,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#type ExpressRoutePort#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#type ExpressRoutePort#type}.
 
 ---
 
@@ -1441,7 +1441,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#identity_ids ExpressRoutePort#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#identity_ids ExpressRoutePort#identity_ids}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 &expressrouteport.ExpressRoutePortLink1 {
 	AdminEnabled: interface{},
@@ -1465,11 +1465,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCakKeyvaultSecretId">MacsecCakKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCipher">MacsecCipher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCknKeyvaultSecretId">MacsecCknKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecSciEnabled">MacsecSciEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCakKeyvaultSecretId">MacsecCakKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCipher">MacsecCipher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecCknKeyvaultSecretId">MacsecCknKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1.property.macsecSciEnabled">MacsecSciEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}. |
 
 ---
 
@@ -1481,7 +1481,7 @@ AdminEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}.
 
 ---
 
@@ -1493,7 +1493,7 @@ MacsecCakKeyvaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}.
 
 ---
 
@@ -1505,7 +1505,7 @@ MacsecCipher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}.
 
 ---
 
@@ -1517,7 +1517,7 @@ MacsecCknKeyvaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}.
 
 ---
 
@@ -1529,7 +1529,7 @@ MacsecSciEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}.
 
 ---
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 &expressrouteport.ExpressRoutePortLink2 {
 	AdminEnabled: interface{},
@@ -1553,11 +1553,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCakKeyvaultSecretId">MacsecCakKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCipher">MacsecCipher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCknKeyvaultSecretId">MacsecCknKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecSciEnabled">MacsecSciEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCakKeyvaultSecretId">MacsecCakKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCipher">MacsecCipher</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecCknKeyvaultSecretId">MacsecCknKeyvaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2.property.macsecSciEnabled">MacsecSciEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}. |
 
 ---
 
@@ -1569,7 +1569,7 @@ AdminEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#admin_enabled ExpressRoutePort#admin_enabled}.
 
 ---
 
@@ -1581,7 +1581,7 @@ MacsecCakKeyvaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cak_keyvault_secret_id ExpressRoutePort#macsec_cak_keyvault_secret_id}.
 
 ---
 
@@ -1593,7 +1593,7 @@ MacsecCipher *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_cipher ExpressRoutePort#macsec_cipher}.
 
 ---
 
@@ -1605,7 +1605,7 @@ MacsecCknKeyvaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_ckn_keyvault_secret_id ExpressRoutePort#macsec_ckn_keyvault_secret_id}.
 
 ---
 
@@ -1617,7 +1617,7 @@ MacsecSciEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#macsec_sci_enabled ExpressRoutePort#macsec_sci_enabled}.
 
 ---
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 &expressrouteport.ExpressRoutePortTimeouts {
 	Create: *string,
@@ -1640,10 +1640,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressroutepo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#create ExpressRoutePort#create}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#delete ExpressRoutePort#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#read ExpressRoutePort#read}. |
-| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#update ExpressRoutePort#update}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#create ExpressRoutePort#create}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#delete ExpressRoutePort#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#read ExpressRoutePort#read}. |
+| <code><a href="#@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#update ExpressRoutePort#update}. |
 
 ---
 
@@ -1655,7 +1655,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#create ExpressRoutePort#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#create ExpressRoutePort#create}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#delete ExpressRoutePort#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#delete ExpressRoutePort#delete}.
 
 ---
 
@@ -1679,7 +1679,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#read ExpressRoutePort#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#read ExpressRoutePort#read}.
 
 ---
 
@@ -1691,7 +1691,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/express_route_port#update ExpressRoutePort#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/express_route_port#update ExpressRoutePort#update}.
 
 ---
 
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.NewExpressRoutePortIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRoutePortIdentityOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() ExpressRoutePortIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink1OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.NewExpressRoutePortLink1OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRoutePortLink1OutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() ExpressRoutePortLink1
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortLink2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.NewExpressRoutePortLink2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRoutePortLink2OutputReference
 ```
@@ -2944,7 +2944,7 @@ func InternalValue() ExpressRoutePortLink2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.expressRoutePort.ExpressRoutePortTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/expressrouteport"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/expressrouteport"
 
 expressrouteport.NewExpressRoutePortTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExpressRoutePortTimeoutsOutputReference
 ```

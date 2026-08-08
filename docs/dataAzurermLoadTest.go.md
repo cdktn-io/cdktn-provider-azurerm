@@ -4,12 +4,12 @@
 
 ### DataAzurermLoadTest <a name="DataAzurermLoadTest" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test azurerm_load_test}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test azurerm_load_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTest(scope Construct, id *string, config DataAzurermLoadTestConfig) DataAzurermLoadTest
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.DataAzurermLoadTest_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.DataAzurermLoadTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermloadtest.DataAzurermLoadTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.DataAzurermLoadTest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermloadtest.DataAzurermLoadTest_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.DataAzurermLoadTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermLoadTest to imp
 
 The id of the existing DataAzurermLoadTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 &dataazurermloadtest.DataAzurermLoadTestConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermLoadTest.DataAzurermLoadTestTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermLoadTest.DataAzurermLoadTestTimeouts,
 }
 ```
 
@@ -774,9 +774,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#name DataAzurermLoadTest#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#resource_group_name DataAzurermLoadTest#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#id DataAzurermLoadTest#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#name DataAzurermLoadTest#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#resource_group_name DataAzurermLoadTest#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#id DataAzurermLoadTest#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestTimeouts">DataAzurermLoadTestTimeouts</a></code> | timeouts block. |
 
 ---
@@ -859,7 +859,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#name DataAzurermLoadTest#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#name DataAzurermLoadTest#name}.
 
 ---
 
@@ -871,7 +871,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#resource_group_name DataAzurermLoadTest#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#resource_group_name DataAzurermLoadTest#resource_group_name}.
 
 ---
 
@@ -883,7 +883,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#id DataAzurermLoadTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#id DataAzurermLoadTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ Timeouts DataAzurermLoadTestTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#timeouts DataAzurermLoadTest#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#timeouts DataAzurermLoadTest#timeouts}
 
 ---
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 &dataazurermloadtest.DataAzurermLoadTestEncryption {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryptionIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 &dataazurermloadtest.DataAzurermLoadTestEncryptionIdentity {
 
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 &dataazurermloadtest.DataAzurermLoadTestIdentity {
 
@@ -948,7 +948,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 &dataazurermloadtest.DataAzurermLoadTestTimeouts {
 	Read: *string,
@@ -959,7 +959,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#read DataAzurermLoadTest#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#read DataAzurermLoadTest#read}. |
 
 ---
 
@@ -971,7 +971,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/load_test#read DataAzurermLoadTest#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/load_test#read DataAzurermLoadTest#read}.
 
 ---
 
@@ -982,7 +982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryptionIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestEncryptionIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLoadTestEncryptionIdentityList
 ```
@@ -1131,7 +1131,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryptionIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestEncryptionIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLoadTestEncryptionIdentityOutputReference
 ```
@@ -1420,7 +1420,7 @@ func InternalValue() DataAzurermLoadTestEncryptionIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLoadTestEncryptionList
 ```
@@ -1569,7 +1569,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLoadTestEncryptionOutputReference
 ```
@@ -1858,7 +1858,7 @@ func InternalValue() DataAzurermLoadTestEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermLoadTestIdentityList
 ```
@@ -2007,7 +2007,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermLoadTestIdentityOutputReference
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() DataAzurermLoadTestIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermLoadTest.DataAzurermLoadTestTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermloadtest"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermloadtest"
 
 dataazurermloadtest.NewDataAzurermLoadTestTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermLoadTestTimeoutsOutputReference
 ```

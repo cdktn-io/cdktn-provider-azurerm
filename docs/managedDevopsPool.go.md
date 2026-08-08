@@ -4,12 +4,12 @@
 
 ### ManagedDevopsPool <a name="ManagedDevopsPool" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool azurerm_managed_devops_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool azurerm_managed_devops_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPool(scope Construct, id *string, config ManagedDevopsPoolConfig) ManagedDevopsPool
 ```
@@ -527,7 +527,7 @@ func ResetWorkFolder()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsConstruct(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ manageddevopspool.ManagedDevopsPool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ manageddevopspool.ManagedDevopsPool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.ManagedDevopsPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ The construct id used in the generated config for the ManagedDevopsPool to impor
 
 The id of the existing ManagedDevopsPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1124,11 +1124,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganization {
 	Organization: interface{},
-	Permission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission,
+	Permission: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Organization interface{}
 
 organization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#organization ManagedDevopsPool#organization}
 
 ---
 
@@ -1165,7 +1165,7 @@ Permission ManagedDevopsPoolAzureDevopsOrganizationPermission
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#permission ManagedDevopsPool#permission}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationOrganization {
 	Parallelism: *f64,
@@ -1187,9 +1187,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.parallelism">Parallelism</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.projects">Projects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.parallelism">Parallelism</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganization.property.projects">Projects</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ Parallelism *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#parallelism ManagedDevopsPool#parallelism}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#url ManagedDevopsPool#url}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Projects *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#projects ManagedDevopsPool#projects}.
 
 ---
 
@@ -1234,11 +1234,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationPermission {
 	Kind: *string,
-	AdministratorAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount,
+	AdministratorAccount: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount,
 }
 ```
 
@@ -1246,7 +1246,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermission.property.administratorAccount">AdministratorAccount</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount">ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount</a></code> | administrator_account block. |
 
 ---
@@ -1259,7 +1259,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#kind ManagedDevopsPool#kind}.
 
 ---
 
@@ -1273,7 +1273,7 @@ AdministratorAccount ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministr
 
 administrator_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#administrator_account ManagedDevopsPool#administrator_account}
 
 ---
 
@@ -1282,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount {
 	Groups: *[]*string,
@@ -1294,8 +1294,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccount.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#groups ManagedDevopsPool#groups}.
 
 ---
 
@@ -1319,7 +1319,7 @@ Users *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#users ManagedDevopsPool#users}.
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolConfig {
 	Connection: interface{},
@@ -1338,19 +1338,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AzureDevopsOrganization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization,
+	AzureDevopsOrganization: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization,
 	DevCenterProjectId: *string,
 	Location: *string,
 	MaximumConcurrency: *f64,
 	Name: *string,
 	ResourceGroupName: *string,
-	VirtualMachineScaleSetFabric: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric,
+	VirtualMachineScaleSetFabric: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolIdentity,
-	StatefulAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgent,
-	StatelessAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgent,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolIdentity,
+	StatefulAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatefulAgent,
+	StatelessAgent: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatelessAgent,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolTimeouts,
 	WorkFolder: *string,
 }
 ```
@@ -1367,19 +1367,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.azureDevopsOrganization">AzureDevopsOrganization</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganization">ManagedDevopsPoolAzureDevopsOrganization</a></code> | azure_devops_organization block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.devCenterProjectId">DevCenterProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.devCenterProjectId">DevCenterProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.virtualMachineScaleSetFabric">VirtualMachineScaleSetFabric</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric">ManagedDevopsPoolVirtualMachineScaleSetFabric</a></code> | virtual_machine_scale_set_fabric block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity">ManagedDevopsPoolIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.statefulAgent">StatefulAgent</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent">ManagedDevopsPoolStatefulAgent</a></code> | stateful_agent block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.statelessAgent">StatelessAgent</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgent">ManagedDevopsPoolStatelessAgent</a></code> | stateless_agent block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts">ManagedDevopsPoolTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.workFolder">WorkFolder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolConfig.property.workFolder">WorkFolder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ AzureDevopsOrganization ManagedDevopsPoolAzureDevopsOrganization
 
 azure_devops_organization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#azure_devops_organization ManagedDevopsPool#azure_devops_organization}
 
 ---
 
@@ -1475,7 +1475,7 @@ DevCenterProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#dev_center_project_id ManagedDevopsPool#dev_center_project_id}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#location ManagedDevopsPool#location}.
 
 ---
 
@@ -1499,7 +1499,7 @@ MaximumConcurrency *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#maximum_concurrency ManagedDevopsPool#maximum_concurrency}.
 
 ---
 
@@ -1511,7 +1511,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#name ManagedDevopsPool#name}.
 
 ---
 
@@ -1523,7 +1523,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#resource_group_name ManagedDevopsPool#resource_group_name}.
 
 ---
 
@@ -1537,7 +1537,7 @@ VirtualMachineScaleSetFabric ManagedDevopsPoolVirtualMachineScaleSetFabric
 
 virtual_machine_scale_set_fabric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#virtual_machine_scale_set_fabric ManagedDevopsPool#virtual_machine_scale_set_fabric}
 
 ---
 
@@ -1549,7 +1549,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1566,7 +1566,7 @@ Identity ManagedDevopsPoolIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#identity ManagedDevopsPool#identity}
 
 ---
 
@@ -1580,7 +1580,7 @@ StatefulAgent ManagedDevopsPoolStatefulAgent
 
 stateful_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#stateful_agent ManagedDevopsPool#stateful_agent}
 
 ---
 
@@ -1594,7 +1594,7 @@ StatelessAgent ManagedDevopsPoolStatelessAgent
 
 stateless_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#stateless_agent ManagedDevopsPool#stateless_agent}
 
 ---
 
@@ -1606,7 +1606,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#tags ManagedDevopsPool#tags}.
 
 ---
 
@@ -1620,7 +1620,7 @@ Timeouts ManagedDevopsPoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#timeouts ManagedDevopsPool#timeouts}
 
 ---
 
@@ -1632,7 +1632,7 @@ WorkFolder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#work_folder ManagedDevopsPool#work_folder}.
 
 ---
 
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolIdentity {
 	IdentityIds: *[]*string,
@@ -1653,8 +1653,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}. |
 
 ---
 
@@ -1666,7 +1666,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#identity_ids ManagedDevopsPool#identity_ids}.
 
 ---
 
@@ -1678,7 +1678,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#type ManagedDevopsPool#type}.
 
 ---
 
@@ -1687,12 +1687,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgent {
-	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction,
+	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction,
 	GracePeriodTimeSpan: *string,
-	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction,
+	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction,
 	MaximumAgentLifetime: *string,
 }
 ```
@@ -1702,9 +1702,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.automaticResourcePrediction">AutomaticResourcePrediction</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction">ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction</a></code> | automatic_resource_prediction block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.gracePeriodTimeSpan">GracePeriodTimeSpan</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.gracePeriodTimeSpan">GracePeriodTimeSpan</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.manualResourcePrediction">ManualResourcePrediction</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction">ManagedDevopsPoolStatefulAgentManualResourcePrediction</a></code> | manual_resource_prediction block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.maximumAgentLifetime">MaximumAgentLifetime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgent.property.maximumAgentLifetime">MaximumAgentLifetime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}. |
 
 ---
 
@@ -1718,7 +1718,7 @@ AutomaticResourcePrediction ManagedDevopsPoolStatefulAgentAutomaticResourcePredi
 
 automatic_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
 
 ---
 
@@ -1730,7 +1730,7 @@ GracePeriodTimeSpan *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#grace_period_time_span ManagedDevopsPool#grace_period_time_span}.
 
 ---
 
@@ -1744,7 +1744,7 @@ ManualResourcePrediction ManagedDevopsPoolStatefulAgentManualResourcePrediction
 
 manual_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
 
 ---
 
@@ -1756,7 +1756,7 @@ MaximumAgentLifetime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#maximum_agent_lifetime ManagedDevopsPool#maximum_agent_lifetime}.
 
 ---
 
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction {
 	PredictionPreference: *string,
@@ -1776,7 +1776,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
 
 ---
 
@@ -1788,7 +1788,7 @@ PredictionPreference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
 
 ---
 
@@ -1797,7 +1797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePrediction {
 	AllWeekSchedule: *f64,
@@ -1816,13 +1816,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.fridaySchedule">FridaySchedule</a></code> | <code>interface{}</code> | friday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.mondaySchedule">MondaySchedule</a></code> | <code>interface{}</code> | monday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.saturdaySchedule">SaturdaySchedule</a></code> | <code>interface{}</code> | saturday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.sundaySchedule">SundaySchedule</a></code> | <code>interface{}</code> | sunday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.thursdaySchedule">ThursdaySchedule</a></code> | <code>interface{}</code> | thursday_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.tuesdaySchedule">TuesdaySchedule</a></code> | <code>interface{}</code> | tuesday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePrediction.property.wednesdaySchedule">WednesdaySchedule</a></code> | <code>interface{}</code> | wednesday_schedule block. |
 
@@ -1836,7 +1836,7 @@ AllWeekSchedule *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
 
 ---
 
@@ -1850,7 +1850,7 @@ FridaySchedule interface{}
 
 friday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
 
 ---
 
@@ -1864,7 +1864,7 @@ MondaySchedule interface{}
 
 monday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
 
 ---
 
@@ -1878,7 +1878,7 @@ SaturdaySchedule interface{}
 
 saturday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
 
 ---
 
@@ -1892,7 +1892,7 @@ SundaySchedule interface{}
 
 sunday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
 
 ---
 
@@ -1906,7 +1906,7 @@ ThursdaySchedule interface{}
 
 thursday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
 
 ---
 
@@ -1918,7 +1918,7 @@ TimeZoneName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
 
 ---
 
@@ -1932,7 +1932,7 @@ TuesdaySchedule interface{}
 
 tuesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
 
 ---
 
@@ -1946,7 +1946,7 @@ WednesdaySchedule interface{}
 
 wednesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
 
 ---
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule {
 	Count: *f64,
@@ -1967,8 +1967,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -1980,7 +1980,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -1992,7 +1992,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2001,7 +2001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule {
 	Count: *f64,
@@ -2013,8 +2013,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2026,7 +2026,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2038,7 +2038,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule {
 	Count: *f64,
@@ -2059,8 +2059,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2072,7 +2072,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2084,7 +2084,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule {
 	Count: *f64,
@@ -2105,8 +2105,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2118,7 +2118,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2130,7 +2130,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2139,7 +2139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule {
 	Count: *f64,
@@ -2151,8 +2151,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2164,7 +2164,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2176,7 +2176,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule {
 	Count: *f64,
@@ -2197,8 +2197,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2210,7 +2210,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2222,7 +2222,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2231,7 +2231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule {
 	Count: *f64,
@@ -2243,8 +2243,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2256,7 +2256,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2268,7 +2268,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2277,11 +2277,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgent {
-	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction,
-	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction,
+	AutomaticResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction,
+	ManualResourcePrediction: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction,
 }
 ```
 
@@ -2304,7 +2304,7 @@ AutomaticResourcePrediction ManagedDevopsPoolStatelessAgentAutomaticResourcePred
 
 automatic_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#automatic_resource_prediction ManagedDevopsPool#automatic_resource_prediction}
 
 ---
 
@@ -2318,7 +2318,7 @@ ManualResourcePrediction ManagedDevopsPoolStatelessAgentManualResourcePrediction
 
 manual_resource_prediction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#manual_resource_prediction ManagedDevopsPool#manual_resource_prediction}
 
 ---
 
@@ -2327,7 +2327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction {
 	PredictionPreference: *string,
@@ -2338,7 +2338,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction.property.predictionPreference">PredictionPreference</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}. |
 
 ---
 
@@ -2350,7 +2350,7 @@ PredictionPreference *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#prediction_preference ManagedDevopsPool#prediction_preference}.
 
 ---
 
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePrediction {
 	AllWeekSchedule: *f64,
@@ -2378,13 +2378,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.allWeekSchedule">AllWeekSchedule</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.fridaySchedule">FridaySchedule</a></code> | <code>interface{}</code> | friday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.mondaySchedule">MondaySchedule</a></code> | <code>interface{}</code> | monday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.saturdaySchedule">SaturdaySchedule</a></code> | <code>interface{}</code> | saturday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.sundaySchedule">SundaySchedule</a></code> | <code>interface{}</code> | sunday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.thursdaySchedule">ThursdaySchedule</a></code> | <code>interface{}</code> | thursday_schedule block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.timeZoneName">TimeZoneName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.tuesdaySchedule">TuesdaySchedule</a></code> | <code>interface{}</code> | tuesday_schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePrediction.property.wednesdaySchedule">WednesdaySchedule</a></code> | <code>interface{}</code> | wednesday_schedule block. |
 
@@ -2398,7 +2398,7 @@ AllWeekSchedule *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#all_week_schedule ManagedDevopsPool#all_week_schedule}.
 
 ---
 
@@ -2412,7 +2412,7 @@ FridaySchedule interface{}
 
 friday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#friday_schedule ManagedDevopsPool#friday_schedule}
 
 ---
 
@@ -2426,7 +2426,7 @@ MondaySchedule interface{}
 
 monday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#monday_schedule ManagedDevopsPool#monday_schedule}
 
 ---
 
@@ -2440,7 +2440,7 @@ SaturdaySchedule interface{}
 
 saturday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#saturday_schedule ManagedDevopsPool#saturday_schedule}
 
 ---
 
@@ -2454,7 +2454,7 @@ SundaySchedule interface{}
 
 sunday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#sunday_schedule ManagedDevopsPool#sunday_schedule}
 
 ---
 
@@ -2468,7 +2468,7 @@ ThursdaySchedule interface{}
 
 thursday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#thursday_schedule ManagedDevopsPool#thursday_schedule}
 
 ---
 
@@ -2480,7 +2480,7 @@ TimeZoneName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time_zone_name ManagedDevopsPool#time_zone_name}.
 
 ---
 
@@ -2494,7 +2494,7 @@ TuesdaySchedule interface{}
 
 tuesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#tuesday_schedule ManagedDevopsPool#tuesday_schedule}
 
 ---
 
@@ -2508,7 +2508,7 @@ WednesdaySchedule interface{}
 
 wednesday_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#wednesday_schedule ManagedDevopsPool#wednesday_schedule}
 
 ---
 
@@ -2517,7 +2517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule {
 	Count: *f64,
@@ -2529,8 +2529,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2542,7 +2542,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2554,7 +2554,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2563,7 +2563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule {
 	Count: *f64,
@@ -2575,8 +2575,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2588,7 +2588,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2600,7 +2600,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2609,7 +2609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule {
 	Count: *f64,
@@ -2621,8 +2621,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2634,7 +2634,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2646,7 +2646,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2655,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule {
 	Count: *f64,
@@ -2667,8 +2667,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2680,7 +2680,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2692,7 +2692,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2701,7 +2701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule {
 	Count: *f64,
@@ -2713,8 +2713,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2726,7 +2726,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2738,7 +2738,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2747,7 +2747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule {
 	Count: *f64,
@@ -2759,8 +2759,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2772,7 +2772,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2784,7 +2784,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2793,7 +2793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule {
 	Count: *f64,
@@ -2805,8 +2805,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdaySchedule.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}. |
 
 ---
 
@@ -2818,7 +2818,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#count ManagedDevopsPool#count}.
 
 ---
 
@@ -2830,7 +2830,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#time ManagedDevopsPool#time}.
 
 ---
 
@@ -2839,7 +2839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolTimeouts {
 	Create: *string,
@@ -2853,10 +2853,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}. |
 
 ---
 
@@ -2868,7 +2868,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#create ManagedDevopsPool#create}.
 
 ---
 
@@ -2880,7 +2880,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#delete ManagedDevopsPool#delete}.
 
 ---
 
@@ -2892,7 +2892,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#read ManagedDevopsPool#read}.
 
 ---
 
@@ -2904,7 +2904,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#update ManagedDevopsPool#update}.
 
 ---
 
@@ -2913,14 +2913,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabric {
 	Image: interface{},
 	SkuName: *string,
 	OsDiskStorageAccountType: *string,
-	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity,
-	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage,
+	Security: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity,
+	Storage: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage,
 	SubnetId: *string,
 }
 ```
@@ -2930,11 +2930,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.image">Image</a></code> | <code>interface{}</code> | image block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.osDiskStorageAccountType">OsDiskStorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.osDiskStorageAccountType">OsDiskStorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.security">Security</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity">ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity</a></code> | security block. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.storage">Storage</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage">ManagedDevopsPoolVirtualMachineScaleSetFabricStorage</a></code> | storage block. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabric.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}. |
 
 ---
 
@@ -2948,7 +2948,7 @@ Image interface{}
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#image ManagedDevopsPool#image}
 
 ---
 
@@ -2960,7 +2960,7 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#sku_name ManagedDevopsPool#sku_name}.
 
 ---
 
@@ -2972,7 +2972,7 @@ OsDiskStorageAccountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#os_disk_storage_account_type ManagedDevopsPool#os_disk_storage_account_type}.
 
 ---
 
@@ -2986,7 +2986,7 @@ Security ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity
 
 security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#security ManagedDevopsPool#security}
 
 ---
 
@@ -3000,7 +3000,7 @@ Storage ManagedDevopsPoolVirtualMachineScaleSetFabricStorage
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#storage ManagedDevopsPool#storage}
 
 ---
 
@@ -3012,7 +3012,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#subnet_id ManagedDevopsPool#subnet_id}.
 
 ---
 
@@ -3021,7 +3021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage {
 	Aliases: *[]*string,
@@ -3035,10 +3035,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.aliases">Aliases</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.buffer">Buffer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.wellKnownImageName">WellKnownImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.aliases">Aliases</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.buffer">Buffer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImage.property.wellKnownImageName">WellKnownImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}. |
 
 ---
 
@@ -3050,7 +3050,7 @@ Aliases *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#aliases ManagedDevopsPool#aliases}.
 
 ---
 
@@ -3062,7 +3062,7 @@ Buffer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#buffer ManagedDevopsPool#buffer}.
 
 ---
 
@@ -3074,7 +3074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#id ManagedDevopsPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3089,7 +3089,7 @@ WellKnownImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#well_known_image_name ManagedDevopsPool#well_known_image_name}.
 
 ---
 
@@ -3098,11 +3098,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity {
 	InteractiveLogonEnabled: interface{},
-	KeyVaultManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement,
+	KeyVaultManagement: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement,
 }
 ```
 
@@ -3110,7 +3110,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.interactiveLogonEnabled">InteractiveLogonEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.interactiveLogonEnabled">InteractiveLogonEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity.property.keyVaultManagement">KeyVaultManagement</a></code> | <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement">ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement</a></code> | key_vault_management block. |
 
 ---
@@ -3123,7 +3123,7 @@ InteractiveLogonEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#interactive_logon_enabled ManagedDevopsPool#interactive_logon_enabled}.
 
 ---
 
@@ -3137,7 +3137,7 @@ KeyVaultManagement ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVault
 
 key_vault_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#key_vault_management ManagedDevopsPool#key_vault_management}
 
 ---
 
@@ -3146,7 +3146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement {
 	KeyVaultCertificateIds: *[]*string,
@@ -3160,10 +3160,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyVaultCertificateIds">KeyVaultCertificateIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreLocation">CertificateStoreLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreName">CertificateStoreName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyExportEnabled">KeyExportEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyVaultCertificateIds">KeyVaultCertificateIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreLocation">CertificateStoreLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.certificateStoreName">CertificateStoreName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagement.property.keyExportEnabled">KeyExportEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}. |
 
 ---
 
@@ -3175,7 +3175,7 @@ KeyVaultCertificateIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#key_vault_certificate_ids ManagedDevopsPool#key_vault_certificate_ids}.
 
 ---
 
@@ -3187,7 +3187,7 @@ CertificateStoreLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#certificate_store_location ManagedDevopsPool#certificate_store_location}.
 
 ---
 
@@ -3199,7 +3199,7 @@ CertificateStoreName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#certificate_store_name ManagedDevopsPool#certificate_store_name}.
 
 ---
 
@@ -3211,7 +3211,7 @@ KeyExportEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#key_export_enabled ManagedDevopsPool#key_export_enabled}.
 
 ---
 
@@ -3220,7 +3220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 &manageddevopspool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage {
 	DiskSizeInGb: *f64,
@@ -3234,10 +3234,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopsp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.diskSizeInGb">DiskSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.caching">Caching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.driveLetter">DriveLetter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}. |
-| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.diskSizeInGb">DiskSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.caching">Caching</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.driveLetter">DriveLetter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}. |
+| <code><a href="#@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorage.property.storageAccountType">StorageAccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}. |
 
 ---
 
@@ -3249,7 +3249,7 @@ DiskSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#disk_size_in_gb ManagedDevopsPool#disk_size_in_gb}.
 
 ---
 
@@ -3261,7 +3261,7 @@ Caching *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#caching ManagedDevopsPool#caching}.
 
 ---
 
@@ -3273,7 +3273,7 @@ DriveLetter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#drive_letter ManagedDevopsPool#drive_letter}.
 
 ---
 
@@ -3285,7 +3285,7 @@ StorageAccountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/managed_devops_pool#storage_account_type ManagedDevopsPool#storage_account_type}.
 
 ---
 
@@ -3296,7 +3296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganizationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOrganizationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolAzureDevopsOrganizationOrganizationList
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolAzureDevopsOrganizationOrganizationOutputReference
 ```
@@ -3796,7 +3796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationOutputReference
 ```
@@ -4122,7 +4122,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganization
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministratorAccountOutputReference
 ```
@@ -4429,7 +4429,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganizationPermissionAdministr
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolAzureDevopsOrganizationPermissionOutputReference
 ```
@@ -4742,7 +4742,7 @@ func InternalValue() ManagedDevopsPoolAzureDevopsOrganizationPermission
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolIdentityOutputReference
 ```
@@ -5035,7 +5035,7 @@ func InternalValue() ManagedDevopsPoolIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentAutomaticResourcePredictionOutputReference
 ```
@@ -5313,7 +5313,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgentAutomaticResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleList
 ```
@@ -5473,7 +5473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionFridayScheduleOutputReference
 ```
@@ -5784,7 +5784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleList
 ```
@@ -5944,7 +5944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionMondayScheduleOutputReference
 ```
@@ -6255,7 +6255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentManualResourcePredictionOutputReference
 ```
@@ -6856,7 +6856,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgentManualResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleList
 ```
@@ -7016,7 +7016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSaturdayScheduleOutputReference
 ```
@@ -7327,7 +7327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleList
 ```
@@ -7487,7 +7487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionSundayScheduleOutputReference
 ```
@@ -7798,7 +7798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleList
 ```
@@ -7958,7 +7958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionThursdayScheduleOutputReference
 ```
@@ -8269,7 +8269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleList
 ```
@@ -8429,7 +8429,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionTuesdayScheduleOutputReference
 ```
@@ -8740,7 +8740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleList
 ```
@@ -8900,7 +8900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatefulAgentManualResourcePredictionWednesdayScheduleOutputReference
 ```
@@ -9211,7 +9211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatefulAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatefulAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatefulAgentOutputReference
 ```
@@ -9602,7 +9602,7 @@ func InternalValue() ManagedDevopsPoolStatefulAgent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentAutomaticResourcePredictionOutputReference
 ```
@@ -9880,7 +9880,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgentAutomaticResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleList
 ```
@@ -10040,7 +10040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionFridayScheduleOutputReference
 ```
@@ -10351,7 +10351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleList
 ```
@@ -10511,7 +10511,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionMondayScheduleOutputReference
 ```
@@ -10822,7 +10822,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentManualResourcePredictionOutputReference
 ```
@@ -11423,7 +11423,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgentManualResourcePrediction
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleList
 ```
@@ -11583,7 +11583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSaturdayScheduleOutputReference
 ```
@@ -11894,7 +11894,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleList
 ```
@@ -12054,7 +12054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionSundayScheduleOutputReference
 ```
@@ -12365,7 +12365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleList
 ```
@@ -12525,7 +12525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionThursdayScheduleOutputReference
 ```
@@ -12836,7 +12836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleList
 ```
@@ -12996,7 +12996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionTuesdayScheduleOutputReference
 ```
@@ -13307,7 +13307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleList
 ```
@@ -13467,7 +13467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolStatelessAgentManualResourcePredictionWednesdayScheduleOutputReference
 ```
@@ -13778,7 +13778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolStatelessAgentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolStatelessAgentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolStatelessAgentOutputReference
 ```
@@ -14111,7 +14111,7 @@ func InternalValue() ManagedDevopsPoolStatelessAgent
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolTimeoutsOutputReference
 ```
@@ -14476,7 +14476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedDevopsPoolVirtualMachineScaleSetFabricImageList
 ```
@@ -14636,7 +14636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedDevopsPoolVirtualMachineScaleSetFabricImageOutputReference
 ```
@@ -15019,7 +15019,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricOutputReference
 ```
@@ -15467,7 +15467,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabric
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVaultManagementOutputReference
 ```
@@ -15825,7 +15825,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityKeyVau
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricSecurityOutputReference
 ```
@@ -16145,7 +16145,7 @@ func InternalValue() ManagedDevopsPoolVirtualMachineScaleSetFabricSecurity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.managedDevopsPool.ManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/manageddevopspool"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/manageddevopspool"
 
 manageddevopspool.NewManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ManagedDevopsPoolVirtualMachineScaleSetFabricStorageOutputReference
 ```

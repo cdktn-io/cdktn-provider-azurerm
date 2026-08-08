@@ -4,7 +4,7 @@
 
 ### Lb <a name="Lb" id="@cdktn/provider-azurerm.lb.Lb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb azurerm_lb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb azurerm_lb}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lb.Lb.Initializer"></a>
 
@@ -79,10 +79,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetEdgeZone">ResetEdgeZone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetFrontendIpConfiguration">ResetFrontendIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetPublicIpAddressId">ResetPublicIpAddressId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetSku">ResetSku</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetSkuTier">ResetSkuTier</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetSubnetId">ResetSubnetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -439,12 +437,6 @@ private void ResetFrontendIpConfiguration()
 private void ResetId()
 ```
 
-##### `ResetPublicIpAddressId` <a name="ResetPublicIpAddressId" id="@cdktn/provider-azurerm.lb.Lb.resetPublicIpAddressId"></a>
-
-```csharp
-private void ResetPublicIpAddressId()
-```
-
 ##### `ResetSku` <a name="ResetSku" id="@cdktn/provider-azurerm.lb.Lb.resetSku"></a>
 
 ```csharp
@@ -455,12 +447,6 @@ private void ResetSku()
 
 ```csharp
 private void ResetSkuTier()
-```
-
-##### `ResetSubnetId` <a name="ResetSubnetId" id="@cdktn/provider-azurerm.lb.Lb.resetSubnetId"></a>
-
-```csharp
-private void ResetSubnetId()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.lb.Lb.resetTags"></a>
@@ -578,7 +564,7 @@ The construct id used in the generated config for the Lb to import.
 
 The id of the existing Lb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -617,22 +603,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.publicIpAddressIdInput">PublicIpAddressIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.skuInput">SkuInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.skuTierInput">SkuTierInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.subnetIdInput">SubnetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.lb.LbTimeouts">LbTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.edgeZone">EdgeZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.location">Location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.sku">Sku</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.skuTier">SkuTier</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.subnetId">SubnetId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.Lb.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 
 ---
@@ -869,16 +851,6 @@ public string NameInput { get; }
 
 ---
 
-##### `PublicIpAddressIdInput`<sup>Optional</sup> <a name="PublicIpAddressIdInput" id="@cdktn/provider-azurerm.lb.Lb.property.publicIpAddressIdInput"></a>
-
-```csharp
-public string PublicIpAddressIdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.lb.Lb.property.resourceGroupNameInput"></a>
 
 ```csharp
@@ -903,16 +875,6 @@ public string SkuInput { get; }
 
 ```csharp
 public string SkuTierInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `SubnetIdInput`<sup>Optional</sup> <a name="SubnetIdInput" id="@cdktn/provider-azurerm.lb.Lb.property.subnetIdInput"></a>
-
-```csharp
-public string SubnetIdInput { get; }
 ```
 
 - *Type:* string
@@ -979,16 +941,6 @@ public string Name { get; }
 
 ---
 
-##### `PublicIpAddressId`<sup>Required</sup> <a name="PublicIpAddressId" id="@cdktn/provider-azurerm.lb.Lb.property.publicIpAddressId"></a>
-
-```csharp
-public string PublicIpAddressId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ResourceGroupName`<sup>Required</sup> <a name="ResourceGroupName" id="@cdktn/provider-azurerm.lb.Lb.property.resourceGroupName"></a>
 
 ```csharp
@@ -1013,16 +965,6 @@ public string Sku { get; }
 
 ```csharp
 public string SkuTier { get; }
-```
-
-- *Type:* string
-
----
-
-##### `SubnetId`<sup>Required</sup> <a name="SubnetId" id="@cdktn/provider-azurerm.lb.Lb.property.subnetId"></a>
-
-```csharp
-public string SubnetId { get; }
 ```
 
 - *Type:* string
@@ -1080,10 +1022,8 @@ new LbConfig {
     string EdgeZone = null,
     IResolvable|LbFrontendIpConfiguration[] FrontendIpConfiguration = null,
     string Id = null,
-    string PublicIpAddressId = null,
     string Sku = null,
     string SkuTier = null,
-    string SubnetId = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     LbTimeouts Timeouts = null
 };
@@ -1100,17 +1040,15 @@ new LbConfig {
 | <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#location Lb#location}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#name Lb#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#resource_group_name Lb#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.edgeZone">EdgeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#edge_zone Lb#edge_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#location Lb#location}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#name Lb#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#resource_group_name Lb#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.edgeZone">EdgeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#edge_zone Lb#edge_zone}. |
 | <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.frontendIpConfiguration">FrontendIpConfiguration</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration">LbFrontendIpConfiguration</a>[]</code> | frontend_ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#id Lb#id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#sku Lb#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.skuTier">SkuTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#sku_tier Lb#sku_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#subnet_id Lb#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#tags Lb#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#id Lb#id}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.sku">Sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#sku Lb#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.skuTier">SkuTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#sku_tier Lb#sku_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#tags Lb#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.lb.LbConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts">LbTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1193,7 +1131,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#location Lb#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#location Lb#location}.
 
 ---
 
@@ -1205,7 +1143,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#name Lb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#name Lb#name}.
 
 ---
 
@@ -1217,7 +1155,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#resource_group_name Lb#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#resource_group_name Lb#resource_group_name}.
 
 ---
 
@@ -1229,7 +1167,7 @@ public string EdgeZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#edge_zone Lb#edge_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#edge_zone Lb#edge_zone}.
 
 ---
 
@@ -1243,7 +1181,7 @@ public IResolvable|LbFrontendIpConfiguration[] FrontendIpConfiguration { get; se
 
 frontend_ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#frontend_ip_configuration Lb#frontend_ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#frontend_ip_configuration Lb#frontend_ip_configuration}
 
 ---
 
@@ -1255,22 +1193,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#id Lb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#id Lb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `PublicIpAddressId`<sup>Optional</sup> <a name="PublicIpAddressId" id="@cdktn/provider-azurerm.lb.LbConfig.property.publicIpAddressId"></a>
-
-```csharp
-public string PublicIpAddressId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}.
 
 ---
 
@@ -1282,7 +1208,7 @@ public string Sku { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#sku Lb#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#sku Lb#sku}.
 
 ---
 
@@ -1294,19 +1220,7 @@ public string SkuTier { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#sku_tier Lb#sku_tier}.
-
----
-
-##### `SubnetId`<sup>Optional</sup> <a name="SubnetId" id="@cdktn/provider-azurerm.lb.LbConfig.property.subnetId"></a>
-
-```csharp
-public string SubnetId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#subnet_id Lb#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#sku_tier Lb#sku_tier}.
 
 ---
 
@@ -1318,7 +1232,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#tags Lb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#tags Lb#tags}.
 
 ---
 
@@ -1332,7 +1246,7 @@ public LbTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#timeouts Lb#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#timeouts Lb#timeouts}
 
 ---
 
@@ -1360,15 +1274,15 @@ new LbFrontendIpConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#name Lb#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.gatewayLoadBalancerFrontendIpConfigurationId">GatewayLoadBalancerFrontendIpConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#gateway_load_balancer_frontend_ip_configuration_id Lb#gateway_load_balancer_frontend_ip_configuration_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address Lb#private_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address_allocation Lb#private_ip_address_allocation}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address_version Lb#private_ip_address_version}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.publicIpPrefixId">PublicIpPrefixId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_prefix_id Lb#public_ip_prefix_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#subnet_id Lb#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#zones Lb#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#name Lb#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.gatewayLoadBalancerFrontendIpConfigurationId">GatewayLoadBalancerFrontendIpConfigurationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#gateway_load_balancer_frontend_ip_configuration_id Lb#gateway_load_balancer_frontend_ip_configuration_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address Lb#private_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address_allocation Lb#private_ip_address_allocation}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.privateIpAddressVersion">PrivateIpAddressVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address_version Lb#private_ip_address_version}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.publicIpPrefixId">PublicIpPrefixId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#public_ip_prefix_id Lb#public_ip_prefix_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#subnet_id Lb#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbFrontendIpConfiguration.property.zones">Zones</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#zones Lb#zones}. |
 
 ---
 
@@ -1380,7 +1294,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#name Lb#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#name Lb#name}.
 
 ---
 
@@ -1392,7 +1306,7 @@ public string GatewayLoadBalancerFrontendIpConfigurationId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#gateway_load_balancer_frontend_ip_configuration_id Lb#gateway_load_balancer_frontend_ip_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#gateway_load_balancer_frontend_ip_configuration_id Lb#gateway_load_balancer_frontend_ip_configuration_id}.
 
 ---
 
@@ -1404,7 +1318,7 @@ public string PrivateIpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address Lb#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address Lb#private_ip_address}.
 
 ---
 
@@ -1416,7 +1330,7 @@ public string PrivateIpAddressAllocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address_allocation Lb#private_ip_address_allocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address_allocation Lb#private_ip_address_allocation}.
 
 ---
 
@@ -1428,7 +1342,7 @@ public string PrivateIpAddressVersion { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#private_ip_address_version Lb#private_ip_address_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#private_ip_address_version Lb#private_ip_address_version}.
 
 ---
 
@@ -1440,7 +1354,7 @@ public string PublicIpAddressId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#public_ip_address_id Lb#public_ip_address_id}.
 
 ---
 
@@ -1452,7 +1366,7 @@ public string PublicIpPrefixId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#public_ip_prefix_id Lb#public_ip_prefix_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#public_ip_prefix_id Lb#public_ip_prefix_id}.
 
 ---
 
@@ -1464,7 +1378,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#subnet_id Lb#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#subnet_id Lb#subnet_id}.
 
 ---
 
@@ -1476,7 +1390,7 @@ public string[] Zones { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#zones Lb#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#zones Lb#zones}.
 
 ---
 
@@ -1499,10 +1413,10 @@ new LbTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#create Lb#create}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#delete Lb#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#read Lb#read}. |
-| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#update Lb#update}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#create Lb#create}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#delete Lb#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#read Lb#read}. |
+| <code><a href="#@cdktn/provider-azurerm.lb.LbTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#update Lb#update}. |
 
 ---
 
@@ -1514,7 +1428,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#create Lb#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#create Lb#create}.
 
 ---
 
@@ -1526,7 +1440,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#delete Lb#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#delete Lb#delete}.
 
 ---
 
@@ -1538,7 +1452,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#read Lb#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#read Lb#read}.
 
 ---
 
@@ -1550,7 +1464,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb#update Lb#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb#update Lb#update}.
 
 ---
 

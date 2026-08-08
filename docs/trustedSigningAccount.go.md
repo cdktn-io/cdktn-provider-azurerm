@@ -4,12 +4,12 @@
 
 ### TrustedSigningAccount <a name="TrustedSigningAccount" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account azurerm_trusted_signing_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account azurerm_trusted_signing_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.NewTrustedSigningAccount(scope Construct, id *string, config TrustedSigningAccountConfig) TrustedSigningAccount
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.TrustedSigningAccount_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.TrustedSigningAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ trustedsigningaccount.TrustedSigningAccount_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.TrustedSigningAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ trustedsigningaccount.TrustedSigningAccount_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.TrustedSigningAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the TrustedSigningAccount to i
 
 The id of the existing TrustedSigningAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 &trustedsigningaccount.TrustedSigningAccountConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigning
 	SkuName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.trustedSigningAccount.TrustedSigningAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.trustedSigningAccount.TrustedSigningAccountTimeouts,
 }
 ```
 
@@ -919,12 +919,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigning
 | <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#location TrustedSigningAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#name TrustedSigningAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#resource_group_name TrustedSigningAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#sku_name TrustedSigningAccount#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#id TrustedSigningAccount#id}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#tags TrustedSigningAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#location TrustedSigningAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#name TrustedSigningAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#resource_group_name TrustedSigningAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.skuName">SkuName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#sku_name TrustedSigningAccount#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#id TrustedSigningAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#tags TrustedSigningAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts">TrustedSigningAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1007,7 +1007,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#location TrustedSigningAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#location TrustedSigningAccount#location}.
 
 ---
 
@@ -1019,7 +1019,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#name TrustedSigningAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#name TrustedSigningAccount#name}.
 
 ---
 
@@ -1031,7 +1031,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#resource_group_name TrustedSigningAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#resource_group_name TrustedSigningAccount#resource_group_name}.
 
 ---
 
@@ -1043,7 +1043,7 @@ SkuName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#sku_name TrustedSigningAccount#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#sku_name TrustedSigningAccount#sku_name}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#id TrustedSigningAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#id TrustedSigningAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#tags TrustedSigningAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#tags TrustedSigningAccount#tags}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Timeouts TrustedSigningAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#timeouts TrustedSigningAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#timeouts TrustedSigningAccount#timeouts}
 
 ---
 
@@ -1093,7 +1093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 &trustedsigningaccount.TrustedSigningAccountTimeouts {
 	Create: *string,
@@ -1107,10 +1107,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigning
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#create TrustedSigningAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#delete TrustedSigningAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#read TrustedSigningAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#update TrustedSigningAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#create TrustedSigningAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#delete TrustedSigningAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#read TrustedSigningAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#update TrustedSigningAccount#update}. |
 
 ---
 
@@ -1122,7 +1122,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#create TrustedSigningAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#create TrustedSigningAccount#create}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#delete TrustedSigningAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#delete TrustedSigningAccount#delete}.
 
 ---
 
@@ -1146,7 +1146,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#read TrustedSigningAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#read TrustedSigningAccount#read}.
 
 ---
 
@@ -1158,7 +1158,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/trusted_signing_account#update TrustedSigningAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/trusted_signing_account#update TrustedSigningAccount#update}.
 
 ---
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.trustedSigningAccount.TrustedSigningAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/trustedsigningaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/trustedsigningaccount"
 
 trustedsigningaccount.NewTrustedSigningAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TrustedSigningAccountTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### SpringCloudCertificate <a name="SpringCloudCertificate" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.NewSpringCloudCertificate(scope Construct, id *string, config SpringCloudCertificateConfig) SpringCloudCertificate
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.SpringCloudCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.SpringCloudCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ springcloudcertificate.SpringCloudCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.SpringCloudCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ springcloudcertificate.SpringCloudCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.SpringCloudCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SpringCloudCertificate to 
 
 The id of the existing SpringCloudCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 &springcloudcertificate.SpringCloudCertificateConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcer
 	ExcludePrivateKey: interface{},
 	Id: *string,
 	KeyVaultCertificateId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.springCloudCertificate.SpringCloudCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.springCloudCertificate.SpringCloudCertificateTimeouts,
 }
 ```
 
@@ -956,13 +956,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcer
 | <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#name SpringCloudCertificate#name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#resource_group_name SpringCloudCertificate#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#service_name SpringCloudCertificate#service_name}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.certificateContent">CertificateContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#certificate_content SpringCloudCertificate#certificate_content}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.excludePrivateKey">ExcludePrivateKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#exclude_private_key SpringCloudCertificate#exclude_private_key}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#id SpringCloudCertificate#id}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#key_vault_certificate_id SpringCloudCertificate#key_vault_certificate_id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#name SpringCloudCertificate#name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#resource_group_name SpringCloudCertificate#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#service_name SpringCloudCertificate#service_name}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.certificateContent">CertificateContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#certificate_content SpringCloudCertificate#certificate_content}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.excludePrivateKey">ExcludePrivateKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#exclude_private_key SpringCloudCertificate#exclude_private_key}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#id SpringCloudCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.keyVaultCertificateId">KeyVaultCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#key_vault_certificate_id SpringCloudCertificate#key_vault_certificate_id}. |
 | <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts">SpringCloudCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1045,7 +1045,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#name SpringCloudCertificate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#name SpringCloudCertificate#name}.
 
 ---
 
@@ -1057,7 +1057,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#resource_group_name SpringCloudCertificate#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#resource_group_name SpringCloudCertificate#resource_group_name}.
 
 ---
 
@@ -1069,7 +1069,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#service_name SpringCloudCertificate#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#service_name SpringCloudCertificate#service_name}.
 
 ---
 
@@ -1081,7 +1081,7 @@ CertificateContent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#certificate_content SpringCloudCertificate#certificate_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#certificate_content SpringCloudCertificate#certificate_content}.
 
 ---
 
@@ -1093,7 +1093,7 @@ ExcludePrivateKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#exclude_private_key SpringCloudCertificate#exclude_private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#exclude_private_key SpringCloudCertificate#exclude_private_key}.
 
 ---
 
@@ -1105,7 +1105,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#id SpringCloudCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#id SpringCloudCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ KeyVaultCertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#key_vault_certificate_id SpringCloudCertificate#key_vault_certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#key_vault_certificate_id SpringCloudCertificate#key_vault_certificate_id}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Timeouts SpringCloudCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#timeouts SpringCloudCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#timeouts SpringCloudCertificate#timeouts}
 
 ---
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 &springcloudcertificate.SpringCloudCertificateTimeouts {
 	Create: *string,
@@ -1156,9 +1156,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#create SpringCloudCertificate#create}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#delete SpringCloudCertificate#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#read SpringCloudCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#create SpringCloudCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#delete SpringCloudCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#read SpringCloudCertificate#read}. |
 
 ---
 
@@ -1170,7 +1170,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#create SpringCloudCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#create SpringCloudCertificate#create}.
 
 ---
 
@@ -1182,7 +1182,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#delete SpringCloudCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#delete SpringCloudCertificate#delete}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/spring_cloud_certificate#read SpringCloudCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/spring_cloud_certificate#read SpringCloudCertificate#read}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.springCloudCertificate.SpringCloudCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/springcloudcertificate"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/springcloudcertificate"
 
 springcloudcertificate.NewSpringCloudCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpringCloudCertificateTimeoutsOutputReference
 ```

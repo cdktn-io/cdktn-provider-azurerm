@@ -4,7 +4,7 @@
 
 ### NetworkManagerVerifierWorkspace <a name="NetworkManagerVerifierWorkspace" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace azurerm_network_manager_verifier_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace azurerm_network_manager_verifier_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer"></a>
 
@@ -42,12 +42,12 @@ networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace(
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspace.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts">NetworkManagerVerifierWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#timeouts NetworkManagerVerifierWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#timeouts NetworkManagerVerifierWorkspace#timeouts}
 
 ---
 
@@ -572,7 +572,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}.
 
 ---
 
@@ -580,7 +580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}.
 
 ---
 
@@ -588,7 +588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}.
 
 ---
 
@@ -596,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}.
 
 ---
 
@@ -738,7 +738,7 @@ The construct id used in the generated config for the NetworkManagerVerifierWork
 
 The id of the existing NetworkManagerVerifierWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,12 +1123,12 @@ networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig(
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.networkManagerId">network_manager_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts">NetworkManagerVerifierWorkspaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1211,7 +1211,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#location NetworkManagerVerifierWorkspace#location}.
 
 ---
 
@@ -1223,7 +1223,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#name NetworkManagerVerifierWorkspace#name}.
 
 ---
 
@@ -1235,7 +1235,7 @@ network_manager_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#network_manager_id NetworkManagerVerifierWorkspace#network_manager_id}.
 
 ---
 
@@ -1247,7 +1247,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#description NetworkManagerVerifierWorkspace#description}.
 
 ---
 
@@ -1259,7 +1259,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#id NetworkManagerVerifierWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1274,7 +1274,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#tags NetworkManagerVerifierWorkspace#tags}.
 
 ---
 
@@ -1288,7 +1288,7 @@ timeouts: NetworkManagerVerifierWorkspaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#timeouts NetworkManagerVerifierWorkspace#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#timeouts NetworkManagerVerifierWorkspace#timeouts}
 
 ---
 
@@ -1311,10 +1311,10 @@ networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerVerifierWorkspace.NetworkManagerVerifierWorkspaceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}. |
 
 ---
 
@@ -1326,7 +1326,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#create NetworkManagerVerifierWorkspace#create}.
 
 ---
 
@@ -1338,7 +1338,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#delete NetworkManagerVerifierWorkspace#delete}.
 
 ---
 
@@ -1350,7 +1350,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#read NetworkManagerVerifierWorkspace#read}.
 
 ---
 
@@ -1362,7 +1362,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_verifier_workspace#update NetworkManagerVerifierWorkspace#update}.
 
 ---
 

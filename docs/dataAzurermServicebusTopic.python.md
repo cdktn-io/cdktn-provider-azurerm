@@ -4,7 +4,7 @@
 
 ### DataAzurermServicebusTopic <a name="DataAzurermServicebusTopic" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic azurerm_servicebus_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic azurerm_servicebus_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer"></a>
 
@@ -22,10 +22,8 @@ dataAzurermServicebusTopic.DataAzurermServicebusTopic(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  namespace_id: str,
   id: str = None,
-  namespace_id: str = None,
-  namespace_name: str = None,
-  resource_group_name: str = None,
   timeouts: DataAzurermServicebusTopicTimeouts = None
 )
 ```
@@ -41,11 +39,9 @@ dataAzurermServicebusTopic.DataAzurermServicebusTopic(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceId">namespace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceName">namespace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_name DataAzurermServicebusTopic#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#resource_group_name DataAzurermServicebusTopic#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceId">namespace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts">DataAzurermServicebusTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +110,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}.
+
+---
+
+##### `namespace_id`<sup>Required</sup> <a name="namespace_id" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}.
 
 ---
 
@@ -122,34 +126,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `namespace_id`<sup>Optional</sup> <a name="namespace_id" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}.
-
----
-
-##### `namespace_name`<sup>Optional</sup> <a name="namespace_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.namespaceName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_name DataAzurermServicebusTopic#namespace_name}.
-
----
-
-##### `resource_group_name`<sup>Optional</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.Initializer.parameter.resourceGroupName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#resource_group_name DataAzurermServicebusTopic#resource_group_name}.
 
 ---
 
@@ -159,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#timeouts DataAzurermServicebusTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#timeouts DataAzurermServicebusTopic#timeouts}
 
 ---
 
@@ -187,9 +167,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetNamespaceId">reset_namespace_id</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetNamespaceName">reset_namespace_name</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetResourceGroupName">reset_resource_group_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -446,7 +423,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}.
 
 ---
 
@@ -454,24 +431,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_id() -> None
-```
-
-##### `reset_namespace_id` <a name="reset_namespace_id" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetNamespaceId"></a>
-
-```python
-def reset_namespace_id() -> None
-```
-
-##### `reset_namespace_name` <a name="reset_namespace_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetNamespaceName"></a>
-
-```python
-def reset_namespace_name() -> None
-```
-
-##### `reset_resource_group_name` <a name="reset_resource_group_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetResourceGroupName"></a>
-
-```python
-def reset_resource_group_name() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.resetTimeouts"></a>
@@ -594,7 +553,7 @@ The construct id used in the generated config for the DataAzurermServicebusTopic
 
 The id of the existing DataAzurermServicebusTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -626,9 +585,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.batchedOperationsEnabled">batched_operations_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.defaultMessageTtl">default_message_ttl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.duplicateDetectionHistoryTimeWindow">duplicate_detection_history_time_window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enableBatchedOperations">enable_batched_operations</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enableExpress">enable_express</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enablePartitioning">enable_partitioning</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.expressEnabled">express_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.maxSizeInMegabytes">max_size_in_megabytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.partitioningEnabled">partitioning_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -639,14 +595,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceNameInput">namespace_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts">DataAzurermServicebusTopicTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceName">namespace_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -812,36 +764,6 @@ duplicate_detection_history_time_window: str
 
 ---
 
-##### `enable_batched_operations`<sup>Required</sup> <a name="enable_batched_operations" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enableBatchedOperations"></a>
-
-```python
-enable_batched_operations: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
-##### `enable_express`<sup>Required</sup> <a name="enable_express" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enableExpress"></a>
-
-```python
-enable_express: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
-##### `enable_partitioning`<sup>Required</sup> <a name="enable_partitioning" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.enablePartitioning"></a>
-
-```python
-enable_partitioning: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
 ##### `express_enabled`<sup>Required</sup> <a name="express_enabled" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.expressEnabled"></a>
 
 ```python
@@ -942,26 +864,6 @@ namespace_id_input: str
 
 ---
 
-##### `namespace_name_input`<sup>Optional</sup> <a name="namespace_name_input" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceNameInput"></a>
-
-```python
-namespace_name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.resourceGroupNameInput"></a>
-
-```python
-resource_group_name_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.timeoutsInput"></a>
 
 ```python
@@ -996,26 +898,6 @@ name: str
 
 ```python
 namespace_id: str
-```
-
-- *Type:* str
-
----
-
-##### `namespace_name`<sup>Required</sup> <a name="namespace_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.namespaceName"></a>
-
-```python
-namespace_name: str
-```
-
-- *Type:* str
-
----
-
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopic.property.resourceGroupName"></a>
-
-```python
-resource_group_name: str
 ```
 
 - *Type:* str
@@ -1058,10 +940,8 @@ dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  namespace_id: str,
   id: str = None,
-  namespace_id: str = None,
-  namespace_name: str = None,
-  resource_group_name: str = None,
   timeouts: DataAzurermServicebusTopicTimeouts = None
 )
 ```
@@ -1077,11 +957,9 @@ dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig(
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceId">namespace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceName">namespace_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_name DataAzurermServicebusTopic#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#resource_group_name DataAzurermServicebusTopic#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceId">namespace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts">DataAzurermServicebusTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1164,7 +1042,19 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#name DataAzurermServicebusTopic#name}.
+
+---
+
+##### `namespace_id`<sup>Required</sup> <a name="namespace_id" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceId"></a>
+
+```python
+namespace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}.
 
 ---
 
@@ -1176,46 +1066,10 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#id DataAzurermServicebusTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `namespace_id`<sup>Optional</sup> <a name="namespace_id" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceId"></a>
-
-```python
-namespace_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_id DataAzurermServicebusTopic#namespace_id}.
-
----
-
-##### `namespace_name`<sup>Optional</sup> <a name="namespace_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.namespaceName"></a>
-
-```python
-namespace_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#namespace_name DataAzurermServicebusTopic#namespace_name}.
-
----
-
-##### `resource_group_name`<sup>Optional</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicConfig.property.resourceGroupName"></a>
-
-```python
-resource_group_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#resource_group_name DataAzurermServicebusTopic#resource_group_name}.
 
 ---
 
@@ -1229,7 +1083,7 @@ timeouts: DataAzurermServicebusTopicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#timeouts DataAzurermServicebusTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#timeouts DataAzurermServicebusTopic#timeouts}
 
 ---
 
@@ -1249,7 +1103,7 @@ dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermServicebusTopic.DataAzurermServicebusTopicTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}. |
 
 ---
 
@@ -1261,7 +1115,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/servicebus_topic#read DataAzurermServicebusTopic#read}.
 
 ---
 

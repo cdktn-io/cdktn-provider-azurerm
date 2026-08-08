@@ -4,12 +4,12 @@
 
 ### ApiManagementStandaloneGateway <a name="ApiManagementStandaloneGateway" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway azurerm_api_management_standalone_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.NewApiManagementStandaloneGateway(scope Construct, id *string, config ApiManagementStandaloneGatewayConfig) ApiManagementStandaloneGateway
 ```
@@ -461,7 +461,7 @@ func ResetVirtualNetworkType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.ApiManagementStandaloneGateway_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.ApiManagementStandaloneGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apimanagementstandalonegateway.ApiManagementStandaloneGateway_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.ApiManagementStandaloneGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ apimanagementstandalonegateway.ApiManagementStandaloneGateway_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.ApiManagementStandaloneGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the ApiManagementStandaloneGat
 
 The id of the existing ApiManagementStandaloneGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 &apimanagementstandalonegateway.ApiManagementStandaloneGatewayConfig {
 	Connection: interface{},
@@ -961,11 +961,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagements
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
-	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku,
+	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku,
 	BackendSubnetId: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts,
 	VirtualNetworkType: *string,
 }
 ```
@@ -981,15 +981,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagements
 | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#location ApiManagementStandaloneGateway#location}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#resource_group_name ApiManagementStandaloneGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#location ApiManagementStandaloneGateway#location}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#resource_group_name ApiManagementStandaloneGateway#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku">ApiManagementStandaloneGatewaySku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.backendSubnetId">BackendSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#backend_subnet_id ApiManagementStandaloneGateway#backend_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#id ApiManagementStandaloneGateway#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#tags ApiManagementStandaloneGateway#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.backendSubnetId">BackendSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#backend_subnet_id ApiManagementStandaloneGateway#backend_subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#id ApiManagementStandaloneGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#tags ApiManagementStandaloneGateway#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts">ApiManagementStandaloneGatewayTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.virtualNetworkType">VirtualNetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#virtual_network_type ApiManagementStandaloneGateway#virtual_network_type}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayConfig.property.virtualNetworkType">VirtualNetworkType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#virtual_network_type ApiManagementStandaloneGateway#virtual_network_type}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#location ApiManagementStandaloneGateway#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#location ApiManagementStandaloneGateway#location}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}.
 
 ---
 
@@ -1095,7 +1095,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#resource_group_name ApiManagementStandaloneGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#resource_group_name ApiManagementStandaloneGateway#resource_group_name}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Sku ApiManagementStandaloneGatewaySku
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#sku ApiManagementStandaloneGateway#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#sku ApiManagementStandaloneGateway#sku}
 
 ---
 
@@ -1121,7 +1121,7 @@ BackendSubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#backend_subnet_id ApiManagementStandaloneGateway#backend_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#backend_subnet_id ApiManagementStandaloneGateway#backend_subnet_id}.
 
 ---
 
@@ -1133,7 +1133,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#id ApiManagementStandaloneGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#id ApiManagementStandaloneGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1148,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#tags ApiManagementStandaloneGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#tags ApiManagementStandaloneGateway#tags}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Timeouts ApiManagementStandaloneGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#timeouts ApiManagementStandaloneGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#timeouts ApiManagementStandaloneGateway#timeouts}
 
 ---
 
@@ -1174,7 +1174,7 @@ VirtualNetworkType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#virtual_network_type ApiManagementStandaloneGateway#virtual_network_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#virtual_network_type ApiManagementStandaloneGateway#virtual_network_type}.
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 &apimanagementstandalonegateway.ApiManagementStandaloneGatewaySku {
 	Name: *string,
@@ -1195,8 +1195,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagements
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku.property.capacity">Capacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#capacity ApiManagementStandaloneGateway#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySku.property.capacity">Capacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#capacity ApiManagementStandaloneGateway#capacity}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#name ApiManagementStandaloneGateway#name}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Capacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#capacity ApiManagementStandaloneGateway#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#capacity ApiManagementStandaloneGateway#capacity}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 &apimanagementstandalonegateway.ApiManagementStandaloneGatewayTimeouts {
 	Create: *string,
@@ -1243,10 +1243,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagements
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#create ApiManagementStandaloneGateway#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#delete ApiManagementStandaloneGateway#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#read ApiManagementStandaloneGateway#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#update ApiManagementStandaloneGateway#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#create ApiManagementStandaloneGateway#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#delete ApiManagementStandaloneGateway#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#read ApiManagementStandaloneGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#update ApiManagementStandaloneGateway#update}. |
 
 ---
 
@@ -1258,7 +1258,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#create ApiManagementStandaloneGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#create ApiManagementStandaloneGateway#create}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#delete ApiManagementStandaloneGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#delete ApiManagementStandaloneGateway#delete}.
 
 ---
 
@@ -1282,7 +1282,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#read ApiManagementStandaloneGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#read ApiManagementStandaloneGateway#read}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/api_management_standalone_gateway#update ApiManagementStandaloneGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/api_management_standalone_gateway#update ApiManagementStandaloneGateway#update}.
 
 ---
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewaySkuOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.NewApiManagementStandaloneGatewaySkuOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementStandaloneGatewaySkuOutputReference
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() ApiManagementStandaloneGatewaySku
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementStandaloneGateway.ApiManagementStandaloneGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/apimanagementstandalonegateway"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/apimanagementstandalonegateway"
 
 apimanagementstandalonegateway.NewApiManagementStandaloneGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApiManagementStandaloneGatewayTimeoutsOutputReference
 ```

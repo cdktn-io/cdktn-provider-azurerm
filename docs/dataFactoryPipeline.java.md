@@ -4,7 +4,7 @@
 
 ### DataFactoryPipeline <a name="DataFactoryPipeline" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline azurerm_data_factory_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer"></a>
 
@@ -27,7 +27,7 @@ DataFactoryPipeline.Builder.create(Construct scope, java.lang.String id)
 //  .description(java.lang.String)
 //  .folder(java.lang.String)
 //  .id(java.lang.String)
-//  .moniterMetricsAfterDuration(java.lang.String)
+//  .monitorMetricsAfterDuration(java.lang.String)
 //  .parameters(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(DataFactoryPipelineTimeouts)
 //  .variables(java.util.Map<java.lang.String, java.lang.String>)
@@ -45,18 +45,18 @@ DataFactoryPipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.dataFactoryId">dataFactoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.activitiesJson">activitiesJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.annotations">annotations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.concurrency">concurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.moniterMetricsAfterDuration">moniterMetricsAfterDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#moniter_metrics_after_duration DataFactoryPipeline#moniter_metrics_after_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.dataFactoryId">dataFactoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.activitiesJson">activitiesJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.annotations">annotations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.concurrency">concurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.monitorMetricsAfterDuration">monitorMetricsAfterDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#monitor_metrics_after_duration DataFactoryPipeline#monitor_metrics_after_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts">DataFactoryPipelineTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.variables">variables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.variables">variables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}.
 
 ---
 
@@ -180,18 +180,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `moniterMetricsAfterDuration`<sup>Optional</sup> <a name="moniterMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.moniterMetricsAfterDuration"></a>
+##### `monitorMetricsAfterDuration`<sup>Optional</sup> <a name="monitorMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.Initializer.parameter.monitorMetricsAfterDuration"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#moniter_metrics_after_duration DataFactoryPipeline#moniter_metrics_after_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#monitor_metrics_after_duration DataFactoryPipeline#monitor_metrics_after_duration}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}.
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetFolder">resetFolder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetMoniterMetricsAfterDuration">resetMoniterMetricsAfterDuration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetMonitorMetricsAfterDuration">resetMonitorMetricsAfterDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetParameters">resetParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetVariables">resetVariables</a></code> | *No description.* |
@@ -622,10 +622,10 @@ public void resetFolder()
 public void resetId()
 ```
 
-##### `resetMoniterMetricsAfterDuration` <a name="resetMoniterMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetMoniterMetricsAfterDuration"></a>
+##### `resetMonitorMetricsAfterDuration` <a name="resetMonitorMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetMonitorMetricsAfterDuration"></a>
 
 ```java
-public void resetMoniterMetricsAfterDuration()
+public void resetMonitorMetricsAfterDuration()
 ```
 
 ##### `resetParameters` <a name="resetParameters" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.resetParameters"></a>
@@ -749,7 +749,7 @@ The construct id used in the generated config for the DataFactoryPipeline to imp
 
 The id of the existing DataFactoryPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.folderInput">folderInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.moniterMetricsAfterDurationInput">moniterMetricsAfterDurationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.monitorMetricsAfterDurationInput">monitorMetricsAfterDurationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.parametersInput">parametersInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts">DataFactoryPipelineTimeouts</a></code> | *No description.* |
@@ -799,7 +799,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.folder">folder</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.moniterMetricsAfterDuration">moniterMetricsAfterDuration</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.monitorMetricsAfterDuration">monitorMetricsAfterDuration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.variables">variables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1028,10 +1028,10 @@ public java.lang.String getIdInput();
 
 ---
 
-##### `moniterMetricsAfterDurationInput`<sup>Optional</sup> <a name="moniterMetricsAfterDurationInput" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.moniterMetricsAfterDurationInput"></a>
+##### `monitorMetricsAfterDurationInput`<sup>Optional</sup> <a name="monitorMetricsAfterDurationInput" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.monitorMetricsAfterDurationInput"></a>
 
 ```java
-public java.lang.String getMoniterMetricsAfterDurationInput();
+public java.lang.String getMonitorMetricsAfterDurationInput();
 ```
 
 - *Type:* java.lang.String
@@ -1148,10 +1148,10 @@ public java.lang.String getId();
 
 ---
 
-##### `moniterMetricsAfterDuration`<sup>Required</sup> <a name="moniterMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.moniterMetricsAfterDuration"></a>
+##### `monitorMetricsAfterDuration`<sup>Required</sup> <a name="monitorMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipeline.property.monitorMetricsAfterDuration"></a>
 
 ```java
-public java.lang.String getMoniterMetricsAfterDuration();
+public java.lang.String getMonitorMetricsAfterDuration();
 ```
 
 - *Type:* java.lang.String
@@ -1231,7 +1231,7 @@ DataFactoryPipelineConfig.builder()
 //  .description(java.lang.String)
 //  .folder(java.lang.String)
 //  .id(java.lang.String)
-//  .moniterMetricsAfterDuration(java.lang.String)
+//  .monitorMetricsAfterDuration(java.lang.String)
 //  .parameters(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(DataFactoryPipelineTimeouts)
 //  .variables(java.util.Map<java.lang.String, java.lang.String>)
@@ -1249,18 +1249,18 @@ DataFactoryPipelineConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.dataFactoryId">dataFactoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.activitiesJson">activitiesJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.annotations">annotations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.concurrency">concurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.moniterMetricsAfterDuration">moniterMetricsAfterDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#moniter_metrics_after_duration DataFactoryPipeline#moniter_metrics_after_duration}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.dataFactoryId">dataFactoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.activitiesJson">activitiesJson</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.annotations">annotations</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.concurrency">concurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.monitorMetricsAfterDuration">monitorMetricsAfterDuration</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#monitor_metrics_after_duration DataFactoryPipeline#monitor_metrics_after_duration}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts">DataFactoryPipelineTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.variables">variables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.variables">variables</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}. |
 
 ---
 
@@ -1342,7 +1342,7 @@ public java.lang.String getDataFactoryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#data_factory_id DataFactoryPipeline#data_factory_id}.
 
 ---
 
@@ -1354,7 +1354,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#name DataFactoryPipeline#name}.
 
 ---
 
@@ -1366,7 +1366,7 @@ public java.lang.String getActivitiesJson();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#activities_json DataFactoryPipeline#activities_json}.
 
 ---
 
@@ -1378,7 +1378,7 @@ public java.util.List<java.lang.String> getAnnotations();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#annotations DataFactoryPipeline#annotations}.
 
 ---
 
@@ -1390,7 +1390,7 @@ public java.lang.Number getConcurrency();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#concurrency DataFactoryPipeline#concurrency}.
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#description DataFactoryPipeline#description}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getFolder();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#folder DataFactoryPipeline#folder}.
 
 ---
 
@@ -1426,22 +1426,22 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#id DataFactoryPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `moniterMetricsAfterDuration`<sup>Optional</sup> <a name="moniterMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.moniterMetricsAfterDuration"></a>
+##### `monitorMetricsAfterDuration`<sup>Optional</sup> <a name="monitorMetricsAfterDuration" id="@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineConfig.property.monitorMetricsAfterDuration"></a>
 
 ```java
-public java.lang.String getMoniterMetricsAfterDuration();
+public java.lang.String getMonitorMetricsAfterDuration();
 ```
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#moniter_metrics_after_duration DataFactoryPipeline#moniter_metrics_after_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#monitor_metrics_after_duration DataFactoryPipeline#monitor_metrics_after_duration}.
 
 ---
 
@@ -1453,7 +1453,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#parameters DataFactoryPipeline#parameters}.
 
 ---
 
@@ -1467,7 +1467,7 @@ public DataFactoryPipelineTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#timeouts DataFactoryPipeline#timeouts}
 
 ---
 
@@ -1479,7 +1479,7 @@ public java.util.Map<java.lang.String, java.lang.String> getVariables();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#variables DataFactoryPipeline#variables}.
 
 ---
 
@@ -1502,10 +1502,10 @@ DataFactoryPipelineTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryPipeline.DataFactoryPipelineTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}. |
 
 ---
 
@@ -1517,7 +1517,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#create DataFactoryPipeline#create}.
 
 ---
 
@@ -1529,7 +1529,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#delete DataFactoryPipeline#delete}.
 
 ---
 
@@ -1541,7 +1541,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#read DataFactoryPipeline#read}.
 
 ---
 
@@ -1553,7 +1553,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_pipeline#update DataFactoryPipeline#update}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataFactoryCredentialServicePrincipal <a name="DataFactoryCredentialServicePrincipal" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.NewDataFactoryCredentialServicePrincipal(scope Construct, id *string, config DataFactoryCredentialServicePrincipalConfig) DataFactoryCredentialServicePrincipal
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the DataFactoryCredentialServi
 
 The id of the existing DataFactoryCredentialServicePrincipal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 &datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipalConfig {
 	Connection: interface{},
@@ -965,8 +965,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycre
 	Annotations: *[]*string,
 	Description: *string,
 	Id: *string,
-	ServicePrincipalKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts,
+	ServicePrincipalKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts,
 }
 ```
 
@@ -987,7 +987,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycre
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | The Tenant ID of the Service Principal. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.annotations">Annotations</a></code> | <code>*[]*string</code> | (Optional) List of string annotations. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.description">Description</a></code> | <code>*string</code> | (Optional) Short text description. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#id DataFactoryCredentialServicePrincipal#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#id DataFactoryCredentialServicePrincipal#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.servicePrincipalKey">ServicePrincipalKey</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey">DataFactoryCredentialServicePrincipalServicePrincipalKey</a></code> | service_principal_key block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts">DataFactoryCredentialServicePrincipalTimeouts</a></code> | timeouts block. |
 
@@ -1073,7 +1073,7 @@ DataFactoryId *string
 
 The resource ID of the parent Data Factory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#data_factory_id DataFactoryCredentialServicePrincipal#data_factory_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#data_factory_id DataFactoryCredentialServicePrincipal#data_factory_id}
 
 ---
 
@@ -1087,7 +1087,7 @@ Name *string
 
 The desired name of the credential resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#name DataFactoryCredentialServicePrincipal#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#name DataFactoryCredentialServicePrincipal#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ ServicePrincipalId *string
 
 The Client ID of the Service Principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#service_principal_id DataFactoryCredentialServicePrincipal#service_principal_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#service_principal_id DataFactoryCredentialServicePrincipal#service_principal_id}
 
 ---
 
@@ -1115,7 +1115,7 @@ TenantId *string
 
 The Tenant ID of the Service Principal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#tenant_id DataFactoryCredentialServicePrincipal#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#tenant_id DataFactoryCredentialServicePrincipal#tenant_id}
 
 ---
 
@@ -1129,7 +1129,7 @@ Annotations *[]*string
 
 (Optional) List of string annotations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#annotations DataFactoryCredentialServicePrincipal#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#annotations DataFactoryCredentialServicePrincipal#annotations}
 
 ---
 
@@ -1143,7 +1143,7 @@ Description *string
 
 (Optional) Short text description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#description DataFactoryCredentialServicePrincipal#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#description DataFactoryCredentialServicePrincipal#description}
 
 ---
 
@@ -1155,7 +1155,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#id DataFactoryCredentialServicePrincipal#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#id DataFactoryCredentialServicePrincipal#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1172,7 @@ ServicePrincipalKey DataFactoryCredentialServicePrincipalServicePrincipalKey
 
 service_principal_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#service_principal_key DataFactoryCredentialServicePrincipal#service_principal_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#service_principal_key DataFactoryCredentialServicePrincipal#service_principal_key}
 
 ---
 
@@ -1186,7 +1186,7 @@ Timeouts DataFactoryCredentialServicePrincipalTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#timeouts DataFactoryCredentialServicePrincipal#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#timeouts DataFactoryCredentialServicePrincipal#timeouts}
 
 ---
 
@@ -1195,7 +1195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 &datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey {
 	LinkedServiceName: *string,
@@ -1208,9 +1208,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.linkedServiceName">LinkedServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#linked_service_name DataFactoryCredentialServicePrincipal#linked_service_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#secret_name DataFactoryCredentialServicePrincipal#secret_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.secretVersion">SecretVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#secret_version DataFactoryCredentialServicePrincipal#secret_version}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.linkedServiceName">LinkedServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#linked_service_name DataFactoryCredentialServicePrincipal#linked_service_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.secretName">SecretName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#secret_name DataFactoryCredentialServicePrincipal#secret_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKey.property.secretVersion">SecretVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#secret_version DataFactoryCredentialServicePrincipal#secret_version}. |
 
 ---
 
@@ -1222,7 +1222,7 @@ LinkedServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#linked_service_name DataFactoryCredentialServicePrincipal#linked_service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#linked_service_name DataFactoryCredentialServicePrincipal#linked_service_name}.
 
 ---
 
@@ -1234,7 +1234,7 @@ SecretName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#secret_name DataFactoryCredentialServicePrincipal#secret_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#secret_name DataFactoryCredentialServicePrincipal#secret_name}.
 
 ---
 
@@ -1246,7 +1246,7 @@ SecretVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#secret_version DataFactoryCredentialServicePrincipal#secret_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#secret_version DataFactoryCredentialServicePrincipal#secret_version}.
 
 ---
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 &datafactorycredentialserviceprincipal.DataFactoryCredentialServicePrincipalTimeouts {
 	Create: *string,
@@ -1269,10 +1269,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#create DataFactoryCredentialServicePrincipal#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#delete DataFactoryCredentialServicePrincipal#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#read DataFactoryCredentialServicePrincipal#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#update DataFactoryCredentialServicePrincipal#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#create DataFactoryCredentialServicePrincipal#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#delete DataFactoryCredentialServicePrincipal#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#read DataFactoryCredentialServicePrincipal#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#update DataFactoryCredentialServicePrincipal#update}. |
 
 ---
 
@@ -1284,7 +1284,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#create DataFactoryCredentialServicePrincipal#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#create DataFactoryCredentialServicePrincipal#create}.
 
 ---
 
@@ -1296,7 +1296,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#delete DataFactoryCredentialServicePrincipal#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#delete DataFactoryCredentialServicePrincipal#delete}.
 
 ---
 
@@ -1308,7 +1308,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#read DataFactoryCredentialServicePrincipal#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#read DataFactoryCredentialServicePrincipal#read}.
 
 ---
 
@@ -1320,7 +1320,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/data_factory_credential_service_principal#update DataFactoryCredentialServicePrincipal#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/data_factory_credential_service_principal#update DataFactoryCredentialServicePrincipal#update}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.NewDataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference
 ```
@@ -1653,7 +1653,7 @@ func InternalValue() DataFactoryCredentialServicePrincipalServicePrincipalKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryCredentialServicePrincipal.DataFactoryCredentialServicePrincipalTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/datafactorycredentialserviceprincipal"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/datafactorycredentialserviceprincipal"
 
 datafactorycredentialserviceprincipal.NewDataFactoryCredentialServicePrincipalTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryCredentialServicePrincipalTimeoutsOutputReference
 ```

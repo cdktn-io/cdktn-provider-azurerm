@@ -4,7 +4,7 @@
 
 ### AutomationAccount <a name="AutomationAccount" id="@cdktn/provider-azurerm.automationAccount.AutomationAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account azurerm_automation_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account azurerm_automation_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationAccount.AutomationAccount.Initializer"></a>
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the AutomationAccount to impor
 
 The id of the existing AutomationAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1090,16 +1090,16 @@ const automationAccountConfig: automationAccount.AutomationAccountConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#location AutomationAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#name AutomationAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#resource_group_name AutomationAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.skuName">skuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#sku_name AutomationAccount#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#location AutomationAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#name AutomationAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#resource_group_name AutomationAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.skuName">skuName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#sku_name AutomationAccount#sku_name}. |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.encryption">encryption</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption">AutomationAccountEncryption</a>[]</code> | encryption block. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#id AutomationAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#id AutomationAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountIdentity">AutomationAccountIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.localAuthenticationEnabled">localAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#local_authentication_enabled AutomationAccount#local_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#public_network_access_enabled AutomationAccount#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#tags AutomationAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.localAuthenticationEnabled">localAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#local_authentication_enabled AutomationAccount#local_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#public_network_access_enabled AutomationAccount#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#tags AutomationAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts">AutomationAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1182,7 +1182,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#location AutomationAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#location AutomationAccount#location}.
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#name AutomationAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#name AutomationAccount#name}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#resource_group_name AutomationAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#resource_group_name AutomationAccount#resource_group_name}.
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly skuName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#sku_name AutomationAccount#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#sku_name AutomationAccount#sku_name}.
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly encryption: IResolvable | AutomationAccountEncryption[];
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#encryption AutomationAccount#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#encryption AutomationAccount#encryption}
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#id AutomationAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#id AutomationAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1261,7 +1261,7 @@ public readonly identity: AutomationAccountIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#identity AutomationAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#identity AutomationAccount#identity}
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly localAuthenticationEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#local_authentication_enabled AutomationAccount#local_authentication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#local_authentication_enabled AutomationAccount#local_authentication_enabled}.
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#public_network_access_enabled AutomationAccount#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#public_network_access_enabled AutomationAccount#public_network_access_enabled}.
 
 ---
 
@@ -1297,7 +1297,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#tags AutomationAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#tags AutomationAccount#tags}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly timeouts: AutomationAccountTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#timeouts AutomationAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#timeouts AutomationAccount#timeouts}
 
 ---
 
@@ -1329,9 +1329,8 @@ const automationAccountEncryption: automationAccount.AutomationAccountEncryption
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#key_vault_key_id AutomationAccount#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.keySource">keySource</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#key_source AutomationAccount#key_source}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#user_assigned_identity_id AutomationAccount#user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#key_vault_key_id AutomationAccount#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#user_assigned_identity_id AutomationAccount#user_assigned_identity_id}. |
 
 ---
 
@@ -1343,19 +1342,7 @@ public readonly keyVaultKeyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#key_vault_key_id AutomationAccount#key_vault_key_id}.
-
----
-
-##### `keySource`<sup>Optional</sup> <a name="keySource" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption.property.keySource"></a>
-
-```typescript
-public readonly keySource: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#key_source AutomationAccount#key_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#key_vault_key_id AutomationAccount#key_vault_key_id}.
 
 ---
 
@@ -1367,7 +1354,7 @@ public readonly userAssignedIdentityId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#user_assigned_identity_id AutomationAccount#user_assigned_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#user_assigned_identity_id AutomationAccount#user_assigned_identity_id}.
 
 ---
 
@@ -1385,8 +1372,8 @@ const automationAccountIdentity: automationAccount.AutomationAccountIdentity = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#type AutomationAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#identity_ids AutomationAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#type AutomationAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#identity_ids AutomationAccount#identity_ids}. |
 
 ---
 
@@ -1398,7 +1385,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#type AutomationAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#type AutomationAccount#type}.
 
 ---
 
@@ -1410,7 +1397,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#identity_ids AutomationAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#identity_ids AutomationAccount#identity_ids}.
 
 ---
 
@@ -1439,10 +1426,10 @@ const automationAccountTimeouts: automationAccount.AutomationAccountTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#create AutomationAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#delete AutomationAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#read AutomationAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#update AutomationAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#create AutomationAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#delete AutomationAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#read AutomationAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#update AutomationAccount#update}. |
 
 ---
 
@@ -1454,7 +1441,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#create AutomationAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#create AutomationAccount#create}.
 
 ---
 
@@ -1466,7 +1453,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#delete AutomationAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#delete AutomationAccount#delete}.
 
 ---
 
@@ -1478,7 +1465,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#read AutomationAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#read AutomationAccount#read}.
 
 ---
 
@@ -1490,7 +1477,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_account#update AutomationAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_account#update AutomationAccount#update}.
 
 ---
 
@@ -1724,7 +1711,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.resetKeySource">resetKeySource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.resetUserAssignedIdentityId">resetUserAssignedIdentityId</a></code> | *No description.* |
 
 ---
@@ -1879,12 +1865,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetKeySource` <a name="resetKeySource" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.resetKeySource"></a>
-
-```typescript
-public resetKeySource(): void
-```
-
 ##### `resetUserAssignedIdentityId` <a name="resetUserAssignedIdentityId" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.resetUserAssignedIdentityId"></a>
 
 ```typescript
@@ -1898,10 +1878,8 @@ public resetUserAssignedIdentityId(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keySourceInput">keySourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keyVaultKeyIdInput">keyVaultKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.userAssignedIdentityIdInput">userAssignedIdentityIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keySource">keySource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keyVaultKeyId">keyVaultKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.userAssignedIdentityId">userAssignedIdentityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryption">AutomationAccountEncryption</a></code> | *No description.* |
@@ -1932,16 +1910,6 @@ public readonly fqn: string;
 
 ---
 
-##### `keySourceInput`<sup>Optional</sup> <a name="keySourceInput" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keySourceInput"></a>
-
-```typescript
-public readonly keySourceInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `keyVaultKeyIdInput`<sup>Optional</sup> <a name="keyVaultKeyIdInput" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keyVaultKeyIdInput"></a>
 
 ```typescript
@@ -1956,16 +1924,6 @@ public readonly keyVaultKeyIdInput: string;
 
 ```typescript
 public readonly userAssignedIdentityIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `keySource`<sup>Required</sup> <a name="keySource" id="@cdktn/provider-azurerm.automationAccount.AutomationAccountEncryptionOutputReference.property.keySource"></a>
-
-```typescript
-public readonly keySource: string;
 ```
 
 - *Type:* string

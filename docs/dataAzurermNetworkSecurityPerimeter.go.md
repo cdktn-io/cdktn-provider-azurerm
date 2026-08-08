@@ -4,12 +4,12 @@
 
 ### DataAzurermNetworkSecurityPerimeter <a name="DataAzurermNetworkSecurityPerimeter" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter azurerm_network_security_perimeter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter azurerm_network_security_perimeter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.NewDataAzurermNetworkSecurityPerimeter(scope Construct, id *string, config DataAzurermNetworkSecurityPerimeterConfig) DataAzurermNetworkSecurityPerimeter
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermNetworkSecurity
 
 The id of the existing DataAzurermNetworkSecurityPerimeter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,7 +702,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 &dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeterConfig {
 	Connection: interface{},
@@ -715,7 +715,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnet
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts,
 }
 ```
 
@@ -730,9 +730,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnet
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts">DataAzurermNetworkSecurityPerimeterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -815,7 +815,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}.
 
 ---
 
@@ -827,7 +827,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}.
 
 ---
 
@@ -839,7 +839,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ Timeouts DataAzurermNetworkSecurityPerimeterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#timeouts DataAzurermNetworkSecurityPerimeter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#timeouts DataAzurermNetworkSecurityPerimeter#timeouts}
 
 ---
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 &dataazurermnetworksecurityperimeter.DataAzurermNetworkSecurityPerimeterTimeouts {
 	Read: *string,
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}. |
 
 ---
 
@@ -888,7 +888,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}.
 
 ---
 
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermnetworksecurityperimeter"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermnetworksecurityperimeter"
 
 dataazurermnetworksecurityperimeter.NewDataAzurermNetworkSecurityPerimeterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermNetworkSecurityPerimeterTimeoutsOutputReference
 ```

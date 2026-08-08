@@ -4,12 +4,12 @@
 
 ### DataAzurermManagedDisk <a name="DataAzurermManagedDisk" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk azurerm_managed_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk azurerm_managed_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDisk(scope Construct, id *string, config DataAzurermManagedDiskConfig) DataAzurermManagedDisk
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.DataAzurermManagedDisk_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.DataAzurermManagedDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermmanageddisk.DataAzurermManagedDisk_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.DataAzurermManagedDisk_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermmanageddisk.DataAzurermManagedDisk_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.DataAzurermManagedDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermManagedDisk to 
 
 The id of the existing DataAzurermManagedDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 &dataazurermmanageddisk.DataAzurermManagedDiskConfig {
 	Connection: interface{},
@@ -880,7 +880,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts,
 }
 ```
 
@@ -895,9 +895,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#name DataAzurermManagedDisk#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#resource_group_name DataAzurermManagedDisk#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#id DataAzurermManagedDisk#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#name DataAzurermManagedDisk#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#resource_group_name DataAzurermManagedDisk#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#id DataAzurermManagedDisk#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts">DataAzurermManagedDiskTimeouts</a></code> | timeouts block. |
 
 ---
@@ -980,7 +980,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#name DataAzurermManagedDisk#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#name DataAzurermManagedDisk#name}.
 
 ---
 
@@ -992,7 +992,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#resource_group_name DataAzurermManagedDisk#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#resource_group_name DataAzurermManagedDisk#resource_group_name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#id DataAzurermManagedDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#id DataAzurermManagedDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1021,7 +1021,7 @@ Timeouts DataAzurermManagedDiskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#timeouts DataAzurermManagedDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#timeouts DataAzurermManagedDisk#timeouts}
 
 ---
 
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 &dataazurermmanageddisk.DataAzurermManagedDiskEncryptionSettings {
 
@@ -1043,7 +1043,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 &dataazurermmanageddisk.DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKey {
 
@@ -1056,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 &dataazurermmanageddisk.DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKey {
 
@@ -1069,7 +1069,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 &dataazurermmanageddisk.DataAzurermManagedDiskTimeouts {
 	Read: *string,
@@ -1080,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}. |
 
 ---
 
@@ -1092,7 +1092,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/managed_disk#read DataAzurermManagedDisk#read}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyList
 ```
@@ -1252,7 +1252,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() DataAzurermManagedDiskEncryptionSettingsDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyList
 ```
@@ -1690,7 +1690,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() DataAzurermManagedDiskEncryptionSettingsKeyEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermManagedDiskEncryptionSettingsList
 ```
@@ -2128,7 +2128,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskEncryptionSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskEncryptionSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermManagedDiskEncryptionSettingsOutputReference
 ```
@@ -2428,7 +2428,7 @@ func InternalValue() DataAzurermManagedDiskEncryptionSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermManagedDisk.DataAzurermManagedDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermmanageddisk"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermmanageddisk"
 
 dataazurermmanageddisk.NewDataAzurermManagedDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermManagedDiskTimeoutsOutputReference
 ```

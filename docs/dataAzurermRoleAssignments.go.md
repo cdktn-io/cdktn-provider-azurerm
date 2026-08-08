@@ -4,12 +4,12 @@
 
 ### DataAzurermRoleAssignments <a name="DataAzurermRoleAssignments" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments azurerm_role_assignments}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments azurerm_role_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignments(scope Construct, id *string, config DataAzurermRoleAssignmentsConfig) DataAzurermRoleAssignments
 ```
@@ -346,7 +346,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataazurermroleassignments.DataAzurermRoleAssignments_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.DataAzurermRoleAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataAzurermRoleAssignments
 
 The id of the existing DataAzurermRoleAssignments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 	LimitAtScope: interface{},
 	PrincipalId: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts,
 }
 ```
 
@@ -786,11 +786,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#scope DataAzurermRoleAssignments#scope}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#id DataAzurermRoleAssignments#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.limitAtScope">LimitAtScope</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#limit_at_scope DataAzurermRoleAssignments#limit_at_scope}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.principalId">PrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#principal_id DataAzurermRoleAssignments#principal_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#tenant_id DataAzurermRoleAssignments#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#scope DataAzurermRoleAssignments#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#id DataAzurermRoleAssignments#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.limitAtScope">LimitAtScope</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#limit_at_scope DataAzurermRoleAssignments#limit_at_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.principalId">PrincipalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#principal_id DataAzurermRoleAssignments#principal_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#tenant_id DataAzurermRoleAssignments#tenant_id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts">DataAzurermRoleAssignmentsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -873,7 +873,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#scope DataAzurermRoleAssignments#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#scope DataAzurermRoleAssignments#scope}.
 
 ---
 
@@ -885,7 +885,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#id DataAzurermRoleAssignments#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#id DataAzurermRoleAssignments#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ LimitAtScope interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#limit_at_scope DataAzurermRoleAssignments#limit_at_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#limit_at_scope DataAzurermRoleAssignments#limit_at_scope}.
 
 ---
 
@@ -912,7 +912,7 @@ PrincipalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#principal_id DataAzurermRoleAssignments#principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#principal_id DataAzurermRoleAssignments#principal_id}.
 
 ---
 
@@ -924,7 +924,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#tenant_id DataAzurermRoleAssignments#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#tenant_id DataAzurermRoleAssignments#tenant_id}.
 
 ---
 
@@ -938,7 +938,7 @@ Timeouts DataAzurermRoleAssignmentsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#timeouts DataAzurermRoleAssignments#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#timeouts DataAzurermRoleAssignments#timeouts}
 
 ---
 
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsRoleAssignments {
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 &dataazurermroleassignments.DataAzurermRoleAssignmentsTimeouts {
 	Read: *string,
@@ -971,7 +971,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermrol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#read DataAzurermRoleAssignments#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#read DataAzurermRoleAssignments#read}. |
 
 ---
 
@@ -983,7 +983,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/role_assignments#read DataAzurermRoleAssignments#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/role_assignments#read DataAzurermRoleAssignments#read}.
 
 ---
 
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsRoleAssignmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermRoleAssignmentsRoleAssignmentsList
 ```
@@ -1143,7 +1143,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsRoleAssignmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsRoleAssignmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermRoleAssignmentsRoleAssignmentsOutputReference
 ```
@@ -1520,7 +1520,7 @@ func InternalValue() DataAzurermRoleAssignmentsRoleAssignments
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermRoleAssignments.DataAzurermRoleAssignmentsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermroleassignments"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermroleassignments"
 
 dataazurermroleassignments.NewDataAzurermRoleAssignmentsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermRoleAssignmentsTimeoutsOutputReference
 ```

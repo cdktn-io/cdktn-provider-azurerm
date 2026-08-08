@@ -4,7 +4,7 @@
 
 ### NetworkWatcherFlowLog <a name="NetworkWatcherFlowLog" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.Initializer"></a>
 
@@ -79,9 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.putTrafficAnalytics">putTrafficAnalytics</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetLocation">resetLocation</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetNetworkSecurityGroupId">resetNetworkSecurityGroupId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTags">resetTags</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTargetResourceId">resetTargetResourceId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTrafficAnalytics">resetTrafficAnalytics</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetVersion">resetVersion</a></code> | *No description.* |
@@ -445,22 +443,10 @@ public resetId(): void
 public resetLocation(): void
 ```
 
-##### `resetNetworkSecurityGroupId` <a name="resetNetworkSecurityGroupId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetNetworkSecurityGroupId"></a>
-
-```typescript
-public resetNetworkSecurityGroupId(): void
-```
-
 ##### `resetTags` <a name="resetTags" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTags"></a>
 
 ```typescript
 public resetTags(): void
-```
-
-##### `resetTargetResourceId` <a name="resetTargetResourceId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTargetResourceId"></a>
-
-```typescript
-public resetTargetResourceId(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.resetTimeouts"></a>
@@ -584,7 +570,7 @@ The construct id used in the generated config for the NetworkWatcherFlowLog to i
 
 The id of the existing NetworkWatcherFlowLog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,7 +607,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkSecurityGroupIdInput">networkSecurityGroupIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkWatcherNameInput">networkWatcherNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.retentionPolicyInput">retentionPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy">NetworkWatcherFlowLogRetentionPolicy</a></code> | *No description.* |
@@ -635,7 +620,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkSecurityGroupId">networkSecurityGroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkWatcherName">networkWatcherName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.storageAccountId">storageAccountId</a></code> | <code>string</code> | *No description.* |
@@ -857,16 +841,6 @@ public readonly nameInput: string;
 
 ---
 
-##### `networkSecurityGroupIdInput`<sup>Optional</sup> <a name="networkSecurityGroupIdInput" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkSecurityGroupIdInput"></a>
-
-```typescript
-public readonly networkSecurityGroupIdInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `networkWatcherNameInput`<sup>Optional</sup> <a name="networkWatcherNameInput" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkWatcherNameInput"></a>
 
 ```typescript
@@ -997,16 +971,6 @@ public readonly name: string;
 
 ---
 
-##### `networkSecurityGroupId`<sup>Required</sup> <a name="networkSecurityGroupId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkSecurityGroupId"></a>
-
-```typescript
-public readonly networkSecurityGroupId: string;
-```
-
-- *Type:* string
-
----
-
 ##### `networkWatcherName`<sup>Required</sup> <a name="networkWatcherName" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLog.property.networkWatcherName"></a>
 
 ```typescript
@@ -1108,20 +1072,19 @@ const networkWatcherFlowLogConfig: networkWatcherFlowLog.NetworkWatcherFlowLogCo
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#name NetworkWatcherFlowLog#name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.networkWatcherName">networkWatcherName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#network_watcher_name NetworkWatcherFlowLog#network_watcher_name}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#resource_group_name NetworkWatcherFlowLog#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#name NetworkWatcherFlowLog#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.networkWatcherName">networkWatcherName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#network_watcher_name NetworkWatcherFlowLog#network_watcher_name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#resource_group_name NetworkWatcherFlowLog#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.retentionPolicy">retentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy">NetworkWatcherFlowLogRetentionPolicy</a></code> | retention_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.storageAccountId">storageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#storage_account_id NetworkWatcherFlowLog#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#id NetworkWatcherFlowLog#id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#location NetworkWatcherFlowLog#location}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.networkSecurityGroupId">networkSecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#network_security_group_id NetworkWatcherFlowLog#network_security_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#tags NetworkWatcherFlowLog#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.targetResourceId">targetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#target_resource_id NetworkWatcherFlowLog#target_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.storageAccountId">storageAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#storage_account_id NetworkWatcherFlowLog#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.targetResourceId">targetResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#target_resource_id NetworkWatcherFlowLog#target_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#id NetworkWatcherFlowLog#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#location NetworkWatcherFlowLog#location}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#tags NetworkWatcherFlowLog#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts">NetworkWatcherFlowLogTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.trafficAnalytics">trafficAnalytics</a></code> | <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics">NetworkWatcherFlowLogTrafficAnalytics</a></code> | traffic_analytics block. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.version">version</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#version NetworkWatcherFlowLog#version}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.version">version</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#version NetworkWatcherFlowLog#version}. |
 
 ---
 
@@ -1203,7 +1166,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
 
 ---
 
@@ -1215,7 +1178,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#name NetworkWatcherFlowLog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#name NetworkWatcherFlowLog#name}.
 
 ---
 
@@ -1227,7 +1190,7 @@ public readonly networkWatcherName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#network_watcher_name NetworkWatcherFlowLog#network_watcher_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#network_watcher_name NetworkWatcherFlowLog#network_watcher_name}.
 
 ---
 
@@ -1239,7 +1202,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#resource_group_name NetworkWatcherFlowLog#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#resource_group_name NetworkWatcherFlowLog#resource_group_name}.
 
 ---
 
@@ -1253,7 +1216,7 @@ public readonly retentionPolicy: NetworkWatcherFlowLogRetentionPolicy;
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#retention_policy NetworkWatcherFlowLog#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#retention_policy NetworkWatcherFlowLog#retention_policy}
 
 ---
 
@@ -1265,7 +1228,19 @@ public readonly storageAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#storage_account_id NetworkWatcherFlowLog#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#storage_account_id NetworkWatcherFlowLog#storage_account_id}.
+
+---
+
+##### `targetResourceId`<sup>Required</sup> <a name="targetResourceId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.targetResourceId"></a>
+
+```typescript
+public readonly targetResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#target_resource_id NetworkWatcherFlowLog#target_resource_id}.
 
 ---
 
@@ -1277,7 +1252,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#id NetworkWatcherFlowLog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#id NetworkWatcherFlowLog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,19 +1267,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#location NetworkWatcherFlowLog#location}.
-
----
-
-##### `networkSecurityGroupId`<sup>Optional</sup> <a name="networkSecurityGroupId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.networkSecurityGroupId"></a>
-
-```typescript
-public readonly networkSecurityGroupId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#network_security_group_id NetworkWatcherFlowLog#network_security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#location NetworkWatcherFlowLog#location}.
 
 ---
 
@@ -1316,19 +1279,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#tags NetworkWatcherFlowLog#tags}.
-
----
-
-##### `targetResourceId`<sup>Optional</sup> <a name="targetResourceId" id="@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogConfig.property.targetResourceId"></a>
-
-```typescript
-public readonly targetResourceId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#target_resource_id NetworkWatcherFlowLog#target_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#tags NetworkWatcherFlowLog#tags}.
 
 ---
 
@@ -1342,7 +1293,7 @@ public readonly timeouts: NetworkWatcherFlowLogTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#timeouts NetworkWatcherFlowLog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#timeouts NetworkWatcherFlowLog#timeouts}
 
 ---
 
@@ -1356,7 +1307,7 @@ public readonly trafficAnalytics: NetworkWatcherFlowLogTrafficAnalytics;
 
 traffic_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#traffic_analytics NetworkWatcherFlowLog#traffic_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#traffic_analytics NetworkWatcherFlowLog#traffic_analytics}
 
 ---
 
@@ -1368,7 +1319,7 @@ public readonly version: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#version NetworkWatcherFlowLog#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#version NetworkWatcherFlowLog#version}.
 
 ---
 
@@ -1386,8 +1337,8 @@ const networkWatcherFlowLogRetentionPolicy: networkWatcherFlowLog.NetworkWatcher
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#days NetworkWatcherFlowLog#days}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy.property.days">days</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#days NetworkWatcherFlowLog#days}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogRetentionPolicy.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
 
 ---
 
@@ -1399,7 +1350,7 @@ public readonly days: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#days NetworkWatcherFlowLog#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#days NetworkWatcherFlowLog#days}.
 
 ---
 
@@ -1411,7 +1362,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
 
 ---
 
@@ -1429,10 +1380,10 @@ const networkWatcherFlowLogTimeouts: networkWatcherFlowLog.NetworkWatcherFlowLog
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#create NetworkWatcherFlowLog#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#delete NetworkWatcherFlowLog#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#read NetworkWatcherFlowLog#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#update NetworkWatcherFlowLog#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#create NetworkWatcherFlowLog#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#delete NetworkWatcherFlowLog#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#read NetworkWatcherFlowLog#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#update NetworkWatcherFlowLog#update}. |
 
 ---
 
@@ -1444,7 +1395,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#create NetworkWatcherFlowLog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#create NetworkWatcherFlowLog#create}.
 
 ---
 
@@ -1456,7 +1407,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#delete NetworkWatcherFlowLog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#delete NetworkWatcherFlowLog#delete}.
 
 ---
 
@@ -1468,7 +1419,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#read NetworkWatcherFlowLog#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#read NetworkWatcherFlowLog#read}.
 
 ---
 
@@ -1480,7 +1431,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#update NetworkWatcherFlowLog#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#update NetworkWatcherFlowLog#update}.
 
 ---
 
@@ -1498,11 +1449,11 @@ const networkWatcherFlowLogTrafficAnalytics: networkWatcherFlowLog.NetworkWatche
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_id NetworkWatcherFlowLog#workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceRegion">workspaceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_region NetworkWatcherFlowLog#workspace_region}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceResourceId">workspaceResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_resource_id NetworkWatcherFlowLog#workspace_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.intervalInMinutes">intervalInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#interval_in_minutes NetworkWatcherFlowLog#interval_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_id NetworkWatcherFlowLog#workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceRegion">workspaceRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_region NetworkWatcherFlowLog#workspace_region}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.workspaceResourceId">workspaceResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_resource_id NetworkWatcherFlowLog#workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkWatcherFlowLog.NetworkWatcherFlowLogTrafficAnalytics.property.intervalInMinutes">intervalInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#interval_in_minutes NetworkWatcherFlowLog#interval_in_minutes}. |
 
 ---
 
@@ -1514,7 +1465,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}.
 
 ---
 
@@ -1526,7 +1477,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_id NetworkWatcherFlowLog#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_id NetworkWatcherFlowLog#workspace_id}.
 
 ---
 
@@ -1538,7 +1489,7 @@ public readonly workspaceRegion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_region NetworkWatcherFlowLog#workspace_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_region NetworkWatcherFlowLog#workspace_region}.
 
 ---
 
@@ -1550,7 +1501,7 @@ public readonly workspaceResourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#workspace_resource_id NetworkWatcherFlowLog#workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#workspace_resource_id NetworkWatcherFlowLog#workspace_resource_id}.
 
 ---
 
@@ -1562,7 +1513,7 @@ public readonly intervalInMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_watcher_flow_log#interval_in_minutes NetworkWatcherFlowLog#interval_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_watcher_flow_log#interval_in_minutes NetworkWatcherFlowLog#interval_in_minutes}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CommunicationService <a name="CommunicationService" id="@cdktn/provider-azurerm.communicationService.CommunicationService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service azurerm_communication_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service azurerm_communication_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer"></a>
 
@@ -19,9 +19,9 @@ CommunicationService.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .dataLocation(java.lang.String)
     .name(java.lang.String)
     .resourceGroupName(java.lang.String)
-//  .dataLocation(java.lang.String)
 //  .id(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(CommunicationServiceTimeouts)
@@ -39,11 +39,11 @@ CommunicationService.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#name CommunicationService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.dataLocation">dataLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#data_location CommunicationService#data_location}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#id CommunicationService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#tags CommunicationService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.dataLocation">dataLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#data_location CommunicationService#data_location}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#name CommunicationService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#id CommunicationService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#tags CommunicationService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts">CommunicationServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,11 +108,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `dataLocation`<sup>Required</sup> <a name="dataLocation" id="@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.dataLocation"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#data_location CommunicationService#data_location}.
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#name CommunicationService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#name CommunicationService#name}.
 
 ---
 
@@ -120,15 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}.
-
----
-
-##### `dataLocation`<sup>Optional</sup> <a name="dataLocation" id="@cdktn/provider-azurerm.communicationService.CommunicationService.Initializer.parameter.dataLocation"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#data_location CommunicationService#data_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#id CommunicationService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#id CommunicationService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#tags CommunicationService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#tags CommunicationService#tags}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#timeouts CommunicationService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#timeouts CommunicationService#timeouts}
 
 ---
 
@@ -190,7 +190,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.resetDataLocation">resetDataLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationService.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -520,12 +519,6 @@ public void putTimeouts(CommunicationServiceTimeouts value)
 
 ---
 
-##### `resetDataLocation` <a name="resetDataLocation" id="@cdktn/provider-azurerm.communicationService.CommunicationService.resetDataLocation"></a>
-
-```java
-public void resetDataLocation()
-```
-
 ##### `resetId` <a name="resetId" id="@cdktn/provider-azurerm.communicationService.CommunicationService.resetId"></a>
 
 ```java
@@ -647,7 +640,7 @@ The construct id used in the generated config for the CommunicationService to im
 
 The id of the existing CommunicationService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1044,9 +1037,9 @@ CommunicationServiceConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .dataLocation(java.lang.String)
     .name(java.lang.String)
     .resourceGroupName(java.lang.String)
-//  .dataLocation(java.lang.String)
 //  .id(java.lang.String)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(CommunicationServiceTimeouts)
@@ -1064,11 +1057,11 @@ CommunicationServiceConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#name CommunicationService#name}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.dataLocation">dataLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#data_location CommunicationService#data_location}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#id CommunicationService#id}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#tags CommunicationService#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.dataLocation">dataLocation</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#data_location CommunicationService#data_location}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#name CommunicationService#name}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#id CommunicationService#id}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#tags CommunicationService#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts">CommunicationServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1143,6 +1136,18 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `dataLocation`<sup>Required</sup> <a name="dataLocation" id="@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.dataLocation"></a>
+
+```java
+public java.lang.String getDataLocation();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#data_location CommunicationService#data_location}.
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.name"></a>
 
 ```java
@@ -1151,7 +1156,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#name CommunicationService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#name CommunicationService#name}.
 
 ---
 
@@ -1163,19 +1168,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}.
-
----
-
-##### `dataLocation`<sup>Optional</sup> <a name="dataLocation" id="@cdktn/provider-azurerm.communicationService.CommunicationServiceConfig.property.dataLocation"></a>
-
-```java
-public java.lang.String getDataLocation();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#data_location CommunicationService#data_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#resource_group_name CommunicationService#resource_group_name}.
 
 ---
 
@@ -1187,7 +1180,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#id CommunicationService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#id CommunicationService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1195,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#tags CommunicationService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#tags CommunicationService#tags}.
 
 ---
 
@@ -1216,7 +1209,7 @@ public CommunicationServiceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#timeouts CommunicationService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#timeouts CommunicationService#timeouts}
 
 ---
 
@@ -1239,10 +1232,10 @@ CommunicationServiceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#create CommunicationService#create}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#delete CommunicationService#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#read CommunicationService#read}. |
-| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#update CommunicationService#update}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#create CommunicationService#create}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#delete CommunicationService#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#read CommunicationService#read}. |
+| <code><a href="#@cdktn/provider-azurerm.communicationService.CommunicationServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#update CommunicationService#update}. |
 
 ---
 
@@ -1254,7 +1247,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#create CommunicationService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#create CommunicationService#create}.
 
 ---
 
@@ -1266,7 +1259,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#delete CommunicationService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#delete CommunicationService#delete}.
 
 ---
 
@@ -1278,7 +1271,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#read CommunicationService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#read CommunicationService#read}.
 
 ---
 
@@ -1290,7 +1283,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/communication_service#update CommunicationService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/communication_service#update CommunicationService#update}.
 
 ---
 

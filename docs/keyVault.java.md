@@ -4,7 +4,7 @@
 
 ### KeyVault <a name="KeyVault" id="@cdktn/provider-azurerm.keyVault.KeyVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault azurerm_key_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault azurerm_key_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVault.KeyVault.Initializer"></a>
 
@@ -21,20 +21,18 @@ KeyVault.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .location(java.lang.String)
     .name(java.lang.String)
+    .rbacAuthorizationEnabled(java.lang.Boolean|IResolvable)
     .resourceGroupName(java.lang.String)
     .skuName(java.lang.String)
     .tenantId(java.lang.String)
 //  .accessPolicy(IResolvable|java.util.List<KeyVaultAccessPolicy>)
-//  .contact(IResolvable|java.util.List<KeyVaultContact>)
 //  .enabledForDeployment(java.lang.Boolean|IResolvable)
 //  .enabledForDiskEncryption(java.lang.Boolean|IResolvable)
 //  .enabledForTemplateDeployment(java.lang.Boolean|IResolvable)
-//  .enableRbacAuthorization(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .networkAcls(KeyVaultNetworkAcls)
 //  .publicNetworkAccessEnabled(java.lang.Boolean|IResolvable)
 //  .purgeProtectionEnabled(java.lang.Boolean|IResolvable)
-//  .rbacAuthorizationEnabled(java.lang.Boolean|IResolvable)
 //  .softDeleteRetentionDays(java.lang.Number)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(KeyVaultTimeouts)
@@ -52,24 +50,22 @@ KeyVault.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#location KeyVault#location}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#sku_name KeyVault#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.accessPolicy">accessPolicy</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#access_policy KeyVault#access_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.contact">contact</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>></code> | contact block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enableRbacAuthorization">enableRbacAuthorization</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enable_rbac_authorization KeyVault#enable_rbac_authorization}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#id KeyVault#id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#location KeyVault#location}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#name KeyVault#name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.rbacAuthorizationEnabled">rbacAuthorizationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#sku_name KeyVault#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.accessPolicy">accessPolicy</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#access_policy KeyVault#access_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#id KeyVault#id}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.networkAcls">networkAcls</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls">KeyVaultNetworkAcls</a></code> | network_acls block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.rbacAuthorizationEnabled">rbacAuthorizationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tags KeyVault#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tags KeyVault#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -138,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#location KeyVault#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#location KeyVault#location}.
 
 ---
 
@@ -146,7 +142,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#name KeyVault#name}.
+
+---
+
+##### `rbacAuthorizationEnabled`<sup>Required</sup> <a name="rbacAuthorizationEnabled" id="@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.rbacAuthorizationEnabled"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}.
 
 ---
 
@@ -154,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}.
 
 ---
 
@@ -162,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#sku_name KeyVault#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#sku_name KeyVault#sku_name}.
 
 ---
 
@@ -170,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
 
 ---
 
@@ -178,17 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#access_policy KeyVault#access_policy}.
-
----
-
-##### `contact`<sup>Optional</sup> <a name="contact" id="@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.contact"></a>
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>>
-
-contact block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#contact KeyVault#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#access_policy KeyVault#access_policy}.
 
 ---
 
@@ -196,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}.
 
 ---
 
@@ -204,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}.
 
 ---
 
@@ -212,15 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}.
-
----
-
-##### `enableRbacAuthorization`<sup>Optional</sup> <a name="enableRbacAuthorization" id="@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.enableRbacAuthorization"></a>
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enable_rbac_authorization KeyVault#enable_rbac_authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}.
 
 ---
 
@@ -228,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#id KeyVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#id KeyVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 network_acls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#network_acls KeyVault#network_acls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#network_acls KeyVault#network_acls}
 
 ---
 
@@ -249,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}.
 
 ---
 
@@ -257,15 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}.
-
----
-
-##### `rbacAuthorizationEnabled`<sup>Optional</sup> <a name="rbacAuthorizationEnabled" id="@cdktn/provider-azurerm.keyVault.KeyVault.Initializer.parameter.rbacAuthorizationEnabled"></a>
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}.
 
 ---
 
@@ -273,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}.
 
 ---
 
@@ -281,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tags KeyVault#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tags KeyVault#tags}.
 
 ---
 
@@ -291,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#timeouts KeyVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#timeouts KeyVault#timeouts}
 
 ---
 
@@ -324,20 +302,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.putAccessPolicy">putAccessPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.putContact">putContact</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.putNetworkAcls">putNetworkAcls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetAccessPolicy">resetAccessPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetContact">resetContact</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetEnabledForDeployment">resetEnabledForDeployment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetEnabledForDiskEncryption">resetEnabledForDiskEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetEnabledForTemplateDeployment">resetEnabledForTemplateDeployment</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetEnableRbacAuthorization">resetEnableRbacAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetNetworkAcls">resetNetworkAcls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetPublicNetworkAccessEnabled">resetPublicNetworkAccessEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetPurgeProtectionEnabled">resetPurgeProtectionEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetRbacAuthorizationEnabled">resetRbacAuthorizationEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetSoftDeleteRetentionDays">resetSoftDeleteRetentionDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -667,18 +641,6 @@ public void putAccessPolicy(IResolvable|java.util.List<KeyVaultAccessPolicy> val
 
 ---
 
-##### `putContact` <a name="putContact" id="@cdktn/provider-azurerm.keyVault.KeyVault.putContact"></a>
-
-```java
-public void putContact(IResolvable|java.util.List<KeyVaultContact> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.keyVault.KeyVault.putContact.parameter.value"></a>
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>>
-
----
-
 ##### `putNetworkAcls` <a name="putNetworkAcls" id="@cdktn/provider-azurerm.keyVault.KeyVault.putNetworkAcls"></a>
 
 ```java
@@ -709,12 +671,6 @@ public void putTimeouts(KeyVaultTimeouts value)
 public void resetAccessPolicy()
 ```
 
-##### `resetContact` <a name="resetContact" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetContact"></a>
-
-```java
-public void resetContact()
-```
-
 ##### `resetEnabledForDeployment` <a name="resetEnabledForDeployment" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetEnabledForDeployment"></a>
 
 ```java
@@ -731,12 +687,6 @@ public void resetEnabledForDiskEncryption()
 
 ```java
 public void resetEnabledForTemplateDeployment()
-```
-
-##### `resetEnableRbacAuthorization` <a name="resetEnableRbacAuthorization" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetEnableRbacAuthorization"></a>
-
-```java
-public void resetEnableRbacAuthorization()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetId"></a>
@@ -761,12 +711,6 @@ public void resetPublicNetworkAccessEnabled()
 
 ```java
 public void resetPurgeProtectionEnabled()
-```
-
-##### `resetRbacAuthorizationEnabled` <a name="resetRbacAuthorizationEnabled" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetRbacAuthorizationEnabled"></a>
-
-```java
-public void resetRbacAuthorizationEnabled()
 ```
 
 ##### `resetSoftDeleteRetentionDays` <a name="resetSoftDeleteRetentionDays" id="@cdktn/provider-azurerm.keyVault.KeyVault.resetSoftDeleteRetentionDays"></a>
@@ -890,7 +834,7 @@ The construct id used in the generated config for the KeyVault to import.
 
 The id of the existing KeyVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,16 +865,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.accessPolicy">accessPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicyList">KeyVaultAccessPolicyList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.contact">contact</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList">KeyVaultContactList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.networkAcls">networkAcls</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAclsOutputReference">KeyVaultNetworkAclsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeoutsOutputReference">KeyVaultTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.vaultUri">vaultUri</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.accessPolicyInput">accessPolicyInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.contactInput">contactInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForDeploymentInput">enabledForDeploymentInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForDiskEncryptionInput">enabledForDiskEncryptionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForTemplateDeploymentInput">enabledForTemplateDeploymentInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enableRbacAuthorizationInput">enableRbacAuthorizationInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -947,7 +888,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.enableRbacAuthorization">enableRbacAuthorization</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVault.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1114,16 +1054,6 @@ public KeyVaultAccessPolicyList getAccessPolicy();
 
 ---
 
-##### `contact`<sup>Required</sup> <a name="contact" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.contact"></a>
-
-```java
-public KeyVaultContactList getContact();
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList">KeyVaultContactList</a>
-
----
-
 ##### `networkAcls`<sup>Required</sup> <a name="networkAcls" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.networkAcls"></a>
 
 ```java
@@ -1164,16 +1094,6 @@ public IResolvable|java.util.List<KeyVaultAccessPolicy> getAccessPolicyInput();
 
 ---
 
-##### `contactInput`<sup>Optional</sup> <a name="contactInput" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.contactInput"></a>
-
-```java
-public IResolvable|java.util.List<KeyVaultContact> getContactInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>>
-
----
-
 ##### `enabledForDeploymentInput`<sup>Optional</sup> <a name="enabledForDeploymentInput" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.enabledForDeploymentInput"></a>
 
 ```java
@@ -1198,16 +1118,6 @@ public java.lang.Boolean|IResolvable getEnabledForDiskEncryptionInput();
 
 ```java
 public java.lang.Boolean|IResolvable getEnabledForTemplateDeploymentInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `enableRbacAuthorizationInput`<sup>Optional</sup> <a name="enableRbacAuthorizationInput" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.enableRbacAuthorizationInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnableRbacAuthorizationInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -1374,16 +1284,6 @@ public java.lang.Boolean|IResolvable getEnabledForTemplateDeployment();
 
 ---
 
-##### `enableRbacAuthorization`<sup>Required</sup> <a name="enableRbacAuthorization" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.enableRbacAuthorization"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnableRbacAuthorization();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.keyVault.KeyVault.property.id"></a>
 
 ```java
@@ -1536,13 +1436,13 @@ KeyVaultAccessPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#application_id KeyVault#application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.certificatePermissions">certificatePermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.keyPermissions">keyPermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#key_permissions KeyVault#key_permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#object_id KeyVault#object_id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.secretPermissions">secretPermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.storagePermissions">storagePermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.applicationId">applicationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#application_id KeyVault#application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.certificatePermissions">certificatePermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.keyPermissions">keyPermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#key_permissions KeyVault#key_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#object_id KeyVault#object_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.secretPermissions">secretPermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.storagePermissions">storagePermissions</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
 
 ---
 
@@ -1554,7 +1454,7 @@ public java.lang.String getApplicationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#application_id KeyVault#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#application_id KeyVault#application_id}.
 
 ---
 
@@ -1566,7 +1466,7 @@ public java.util.List<java.lang.String> getCertificatePermissions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#certificate_permissions KeyVault#certificate_permissions}.
 
 ---
 
@@ -1578,7 +1478,7 @@ public java.util.List<java.lang.String> getKeyPermissions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#key_permissions KeyVault#key_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#key_permissions KeyVault#key_permissions}.
 
 ---
 
@@ -1590,7 +1490,7 @@ public java.lang.String getObjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#object_id KeyVault#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#object_id KeyVault#object_id}.
 
 ---
 
@@ -1602,7 +1502,7 @@ public java.util.List<java.lang.String> getSecretPermissions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#secret_permissions KeyVault#secret_permissions}.
 
 ---
 
@@ -1614,7 +1514,7 @@ public java.util.List<java.lang.String> getStoragePermissions();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#storage_permissions KeyVault#storage_permissions}.
 
 ---
 
@@ -1626,7 +1526,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
 
 ---
 
@@ -1647,20 +1547,18 @@ KeyVaultConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .location(java.lang.String)
     .name(java.lang.String)
+    .rbacAuthorizationEnabled(java.lang.Boolean|IResolvable)
     .resourceGroupName(java.lang.String)
     .skuName(java.lang.String)
     .tenantId(java.lang.String)
 //  .accessPolicy(IResolvable|java.util.List<KeyVaultAccessPolicy>)
-//  .contact(IResolvable|java.util.List<KeyVaultContact>)
 //  .enabledForDeployment(java.lang.Boolean|IResolvable)
 //  .enabledForDiskEncryption(java.lang.Boolean|IResolvable)
 //  .enabledForTemplateDeployment(java.lang.Boolean|IResolvable)
-//  .enableRbacAuthorization(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .networkAcls(KeyVaultNetworkAcls)
 //  .publicNetworkAccessEnabled(java.lang.Boolean|IResolvable)
 //  .purgeProtectionEnabled(java.lang.Boolean|IResolvable)
-//  .rbacAuthorizationEnabled(java.lang.Boolean|IResolvable)
 //  .softDeleteRetentionDays(java.lang.Number)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(KeyVaultTimeouts)
@@ -1678,24 +1576,22 @@ KeyVaultConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#location KeyVault#location}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#sku_name KeyVault#sku_name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.accessPolicy">accessPolicy</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#access_policy KeyVault#access_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.contact">contact</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>></code> | contact block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enableRbacAuthorization">enableRbacAuthorization</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enable_rbac_authorization KeyVault#enable_rbac_authorization}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#id KeyVault#id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#location KeyVault#location}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#name KeyVault#name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.rbacAuthorizationEnabled">rbacAuthorizationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.skuName">skuName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#sku_name KeyVault#sku_name}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.accessPolicy">accessPolicy</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#access_policy KeyVault#access_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForDeployment">enabledForDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForDiskEncryption">enabledForDiskEncryption</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enabledForTemplateDeployment">enabledForTemplateDeployment</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#id KeyVault#id}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.networkAcls">networkAcls</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls">KeyVaultNetworkAcls</a></code> | network_acls block. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.rbacAuthorizationEnabled">rbacAuthorizationEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tags KeyVault#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.purgeProtectionEnabled">purgeProtectionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.softDeleteRetentionDays">softDeleteRetentionDays</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tags KeyVault#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts">KeyVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1778,7 +1674,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#location KeyVault#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#location KeyVault#location}.
 
 ---
 
@@ -1790,7 +1686,19 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#name KeyVault#name}.
+
+---
+
+##### `rbacAuthorizationEnabled`<sup>Required</sup> <a name="rbacAuthorizationEnabled" id="@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.rbacAuthorizationEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getRbacAuthorizationEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}.
 
 ---
 
@@ -1802,7 +1710,7 @@ public java.lang.String getResourceGroupName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#resource_group_name KeyVault#resource_group_name}.
 
 ---
 
@@ -1814,7 +1722,7 @@ public java.lang.String getSkuName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#sku_name KeyVault#sku_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#sku_name KeyVault#sku_name}.
 
 ---
 
@@ -1826,7 +1734,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tenant_id KeyVault#tenant_id}.
 
 ---
 
@@ -1838,21 +1746,7 @@ public IResolvable|java.util.List<KeyVaultAccessPolicy> getAccessPolicy();
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#access_policy KeyVault#access_policy}.
-
----
-
-##### `contact`<sup>Optional</sup> <a name="contact" id="@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.contact"></a>
-
-```java
-public IResolvable|java.util.List<KeyVaultContact> getContact();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>>
-
-contact block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#contact KeyVault#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#access_policy KeyVault#access_policy}.
 
 ---
 
@@ -1864,7 +1758,7 @@ public java.lang.Boolean|IResolvable getEnabledForDeployment();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_deployment KeyVault#enabled_for_deployment}.
 
 ---
 
@@ -1876,7 +1770,7 @@ public java.lang.Boolean|IResolvable getEnabledForDiskEncryption();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_disk_encryption KeyVault#enabled_for_disk_encryption}.
 
 ---
 
@@ -1888,19 +1782,7 @@ public java.lang.Boolean|IResolvable getEnabledForTemplateDeployment();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}.
-
----
-
-##### `enableRbacAuthorization`<sup>Optional</sup> <a name="enableRbacAuthorization" id="@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.enableRbacAuthorization"></a>
-
-```java
-public java.lang.Boolean|IResolvable getEnableRbacAuthorization();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#enable_rbac_authorization KeyVault#enable_rbac_authorization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#enabled_for_template_deployment KeyVault#enabled_for_template_deployment}.
 
 ---
 
@@ -1912,7 +1794,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#id KeyVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#id KeyVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1929,7 +1811,7 @@ public KeyVaultNetworkAcls getNetworkAcls();
 
 network_acls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#network_acls KeyVault#network_acls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#network_acls KeyVault#network_acls}
 
 ---
 
@@ -1941,7 +1823,7 @@ public java.lang.Boolean|IResolvable getPublicNetworkAccessEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#public_network_access_enabled KeyVault#public_network_access_enabled}.
 
 ---
 
@@ -1953,19 +1835,7 @@ public java.lang.Boolean|IResolvable getPurgeProtectionEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}.
-
----
-
-##### `rbacAuthorizationEnabled`<sup>Optional</sup> <a name="rbacAuthorizationEnabled" id="@cdktn/provider-azurerm.keyVault.KeyVaultConfig.property.rbacAuthorizationEnabled"></a>
-
-```java
-public java.lang.Boolean|IResolvable getRbacAuthorizationEnabled();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#rbac_authorization_enabled KeyVault#rbac_authorization_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#purge_protection_enabled KeyVault#purge_protection_enabled}.
 
 ---
 
@@ -1977,7 +1847,7 @@ public java.lang.Number getSoftDeleteRetentionDays();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#soft_delete_retention_days KeyVault#soft_delete_retention_days}.
 
 ---
 
@@ -1989,7 +1859,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#tags KeyVault#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#tags KeyVault#tags}.
 
 ---
 
@@ -2003,67 +1873,7 @@ public KeyVaultTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#timeouts KeyVault#timeouts}
-
----
-
-### KeyVaultContact <a name="KeyVaultContact" id="@cdktn/provider-azurerm.keyVault.KeyVaultContact"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.keyVault.KeyVaultContact.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.key_vault.KeyVaultContact;
-
-KeyVaultContact.builder()
-    .email(java.lang.String)
-//  .name(java.lang.String)
-//  .phone(java.lang.String)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#email KeyVault#email}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.phone">phone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#phone KeyVault#phone}. |
-
----
-
-##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.email"></a>
-
-```java
-public java.lang.String getEmail();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#email KeyVault#email}.
-
----
-
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.name"></a>
-
-```java
-public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#name KeyVault#name}.
-
----
-
-##### `phone`<sup>Optional</sup> <a name="phone" id="@cdktn/provider-azurerm.keyVault.KeyVaultContact.property.phone"></a>
-
-```java
-public java.lang.String getPhone();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#phone KeyVault#phone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#timeouts KeyVault#timeouts}
 
 ---
 
@@ -2086,10 +1896,10 @@ KeyVaultNetworkAcls.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.bypass">bypass</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#bypass KeyVault#bypass}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.defaultAction">defaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#default_action KeyVault#default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.ipRules">ipRules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#ip_rules KeyVault#ip_rules}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.virtualNetworkSubnetIds">virtualNetworkSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.bypass">bypass</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#bypass KeyVault#bypass}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.defaultAction">defaultAction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#default_action KeyVault#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.ipRules">ipRules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#ip_rules KeyVault#ip_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultNetworkAcls.property.virtualNetworkSubnetIds">virtualNetworkSubnetIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}. |
 
 ---
 
@@ -2101,7 +1911,7 @@ public java.lang.String getBypass();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#bypass KeyVault#bypass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#bypass KeyVault#bypass}.
 
 ---
 
@@ -2113,7 +1923,7 @@ public java.lang.String getDefaultAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#default_action KeyVault#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#default_action KeyVault#default_action}.
 
 ---
 
@@ -2125,7 +1935,7 @@ public java.util.List<java.lang.String> getIpRules();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#ip_rules KeyVault#ip_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#ip_rules KeyVault#ip_rules}.
 
 ---
 
@@ -2137,7 +1947,7 @@ public java.util.List<java.lang.String> getVirtualNetworkSubnetIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#virtual_network_subnet_ids KeyVault#virtual_network_subnet_ids}.
 
 ---
 
@@ -2160,10 +1970,10 @@ KeyVaultTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#create KeyVault#create}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#delete KeyVault#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#read KeyVault#read}. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#update KeyVault#update}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#create KeyVault#create}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#delete KeyVault#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#read KeyVault#read}. |
+| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#update KeyVault#update}. |
 
 ---
 
@@ -2175,7 +1985,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#create KeyVault#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#create KeyVault#create}.
 
 ---
 
@@ -2187,7 +1997,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#delete KeyVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#delete KeyVault#delete}.
 
 ---
 
@@ -2199,7 +2009,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#read KeyVault#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#read KeyVault#read}.
 
 ---
 
@@ -2211,7 +2021,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/key_vault#update KeyVault#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/key_vault#update KeyVault#update}.
 
 ---
 
@@ -2843,513 +2653,6 @@ public IResolvable|KeyVaultAccessPolicy getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultAccessPolicy">KeyVaultAccessPolicy</a>
-
----
-
-
-### KeyVaultContactList <a name="KeyVaultContactList" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.key_vault.KeyVaultContactList;
-
-new KeyVaultContactList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.get">get</a></code> | *No description.* |
-
----
-
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.allWithMapKey"></a>
-
-```java
-public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.get"></a>
-
-```java
-public KeyVaultContactOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactList.property.internalValue"></a>
-
-```java
-public IResolvable|java.util.List<KeyVaultContact> getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>>
-
----
-
-
-### KeyVaultContactOutputReference <a name="KeyVaultContactOutputReference" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer"></a>
-
-```java
-import io.cdktn.providers.azurerm.key_vault.KeyVaultContactOutputReference;
-
-new KeyVaultContactOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* io.cdktn.cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resetName">resetName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resetPhone">resetPhone</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resolve.parameter._context"></a>
-
-- *Type:* io.cdktn.cdktn.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetName` <a name="resetName" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resetName"></a>
-
-```java
-public void resetName()
-```
-
-##### `resetPhone` <a name="resetPhone" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.resetPhone"></a>
-
-```java
-public void resetPhone()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.phoneInput">phoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.phone">phone</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `emailInput`<sup>Optional</sup> <a name="emailInput" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.emailInput"></a>
-
-```java
-public java.lang.String getEmailInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.nameInput"></a>
-
-```java
-public java.lang.String getNameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `phoneInput`<sup>Optional</sup> <a name="phoneInput" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.phoneInput"></a>
-
-```java
-public java.lang.String getPhoneInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.email"></a>
-
-```java
-public java.lang.String getEmail();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.name"></a>
-
-```java
-public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `phone`<sup>Required</sup> <a name="phone" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.phone"></a>
-
-```java
-public java.lang.String getPhone();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.keyVault.KeyVaultContactOutputReference.property.internalValue"></a>
-
-```java
-public IResolvable|KeyVaultContact getInternalValue();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-azurerm.keyVault.KeyVaultContact">KeyVaultContact</a>
 
 ---
 

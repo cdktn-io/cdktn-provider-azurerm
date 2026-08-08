@@ -4,12 +4,12 @@
 
 ### EventgridEventSubscription <a name="EventgridEventSubscription" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription azurerm_eventgrid_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription azurerm_eventgrid_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscription(scope Construct, id *string, config EventgridEventSubscriptionConfig) EventgridEventSubscription
 ```
@@ -92,15 +92,15 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetDeliveryIdentity">ResetDeliveryIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetDeliveryProperty">ResetDeliveryProperty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetEventDeliverySchema">ResetEventDeliverySchema</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetEventhubEndpointId">ResetEventhubEndpointId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetEventhubId">ResetEventhubId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetExpirationTimeUtc">ResetExpirationTimeUtc</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetHybridConnectionEndpointId">ResetHybridConnectionEndpointId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetHybridConnectionId">ResetHybridConnectionId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetIncludedEventTypes">ResetIncludedEventTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetRetryPolicy">ResetRetryPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusQueueEndpointId">ResetServiceBusQueueEndpointId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusTopicEndpointId">ResetServiceBusTopicEndpointId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusQueueId">ResetServiceBusQueueId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusTopicId">ResetServiceBusTopicId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetStorageBlobDeadLetterDestination">ResetStorageBlobDeadLetterDestination</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetStorageQueueEndpoint">ResetStorageQueueEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetSubjectFilter">ResetSubjectFilter</a></code> | *No description.* |
@@ -592,10 +592,10 @@ func ResetDeliveryProperty()
 func ResetEventDeliverySchema()
 ```
 
-##### `ResetEventhubEndpointId` <a name="ResetEventhubEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetEventhubEndpointId"></a>
+##### `ResetEventhubId` <a name="ResetEventhubId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetEventhubId"></a>
 
 ```go
-func ResetEventhubEndpointId()
+func ResetEventhubId()
 ```
 
 ##### `ResetExpirationTimeUtc` <a name="ResetExpirationTimeUtc" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetExpirationTimeUtc"></a>
@@ -604,10 +604,10 @@ func ResetEventhubEndpointId()
 func ResetExpirationTimeUtc()
 ```
 
-##### `ResetHybridConnectionEndpointId` <a name="ResetHybridConnectionEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetHybridConnectionEndpointId"></a>
+##### `ResetHybridConnectionId` <a name="ResetHybridConnectionId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetHybridConnectionId"></a>
 
 ```go
-func ResetHybridConnectionEndpointId()
+func ResetHybridConnectionId()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetId"></a>
@@ -634,16 +634,16 @@ func ResetLabels()
 func ResetRetryPolicy()
 ```
 
-##### `ResetServiceBusQueueEndpointId` <a name="ResetServiceBusQueueEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusQueueEndpointId"></a>
+##### `ResetServiceBusQueueId` <a name="ResetServiceBusQueueId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusQueueId"></a>
 
 ```go
-func ResetServiceBusQueueEndpointId()
+func ResetServiceBusQueueId()
 ```
 
-##### `ResetServiceBusTopicEndpointId` <a name="ResetServiceBusTopicEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusTopicEndpointId"></a>
+##### `ResetServiceBusTopicId` <a name="ResetServiceBusTopicId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetServiceBusTopicId"></a>
 
 ```go
-func ResetServiceBusTopicEndpointId()
+func ResetServiceBusTopicId()
 ```
 
 ##### `ResetStorageBlobDeadLetterDestination` <a name="ResetStorageBlobDeadLetterDestination" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.resetStorageBlobDeadLetterDestination"></a>
@@ -690,7 +690,7 @@ func ResetWebhookEndpoint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.EventgridEventSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.EventgridEventSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -736,7 +736,7 @@ eventgrideventsubscription.EventgridEventSubscription_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.EventgridEventSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -750,7 +750,7 @@ eventgrideventsubscription.EventgridEventSubscription_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.EventgridEventSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +779,7 @@ The construct id used in the generated config for the EventgridEventSubscription
 
 The id of the existing EventgridEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,17 +827,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.deliveryIdentityInput">DeliveryIdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity">EventgridEventSubscriptionDeliveryIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.deliveryPropertyInput">DeliveryPropertyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventDeliverySchemaInput">EventDeliverySchemaInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubEndpointIdInput">EventhubEndpointIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubIdInput">EventhubIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.expirationTimeUtcInput">ExpirationTimeUtcInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionEndpointIdInput">HybridConnectionEndpointIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionIdInput">HybridConnectionIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.includedEventTypesInput">IncludedEventTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.labelsInput">LabelsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.retryPolicyInput">RetryPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy">EventgridEventSubscriptionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.scopeInput">ScopeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueEndpointIdInput">ServiceBusQueueEndpointIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicEndpointIdInput">ServiceBusTopicEndpointIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueIdInput">ServiceBusQueueIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicIdInput">ServiceBusTopicIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.storageBlobDeadLetterDestinationInput">StorageBlobDeadLetterDestinationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination">EventgridEventSubscriptionStorageBlobDeadLetterDestination</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.storageQueueEndpointInput">StorageQueueEndpointInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint">EventgridEventSubscriptionStorageQueueEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.subjectFilterInput">SubjectFilterInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter">EventgridEventSubscriptionSubjectFilter</a></code> | *No description.* |
@@ -845,16 +845,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.webhookEndpointInput">WebhookEndpointInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint">EventgridEventSubscriptionWebhookEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.advancedFilteringOnArraysEnabled">AdvancedFilteringOnArraysEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventDeliverySchema">EventDeliverySchema</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubEndpointId">EventhubEndpointId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubId">EventhubId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.expirationTimeUtc">ExpirationTimeUtc</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionEndpointId">HybridConnectionEndpointId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionId">HybridConnectionId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.includedEventTypes">IncludedEventTypes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.labels">Labels</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.scope">Scope</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueEndpointId">ServiceBusQueueEndpointId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicEndpointId">ServiceBusTopicEndpointId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueId">ServiceBusQueueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicId">ServiceBusTopicId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -1180,10 +1180,10 @@ func EventDeliverySchemaInput() *string
 
 ---
 
-##### `EventhubEndpointIdInput`<sup>Optional</sup> <a name="EventhubEndpointIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubEndpointIdInput"></a>
+##### `EventhubIdInput`<sup>Optional</sup> <a name="EventhubIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubIdInput"></a>
 
 ```go
-func EventhubEndpointIdInput() *string
+func EventhubIdInput() *string
 ```
 
 - *Type:* *string
@@ -1200,10 +1200,10 @@ func ExpirationTimeUtcInput() *string
 
 ---
 
-##### `HybridConnectionEndpointIdInput`<sup>Optional</sup> <a name="HybridConnectionEndpointIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionEndpointIdInput"></a>
+##### `HybridConnectionIdInput`<sup>Optional</sup> <a name="HybridConnectionIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionIdInput"></a>
 
 ```go
-func HybridConnectionEndpointIdInput() *string
+func HybridConnectionIdInput() *string
 ```
 
 - *Type:* *string
@@ -1270,20 +1270,20 @@ func ScopeInput() *string
 
 ---
 
-##### `ServiceBusQueueEndpointIdInput`<sup>Optional</sup> <a name="ServiceBusQueueEndpointIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueEndpointIdInput"></a>
+##### `ServiceBusQueueIdInput`<sup>Optional</sup> <a name="ServiceBusQueueIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueIdInput"></a>
 
 ```go
-func ServiceBusQueueEndpointIdInput() *string
+func ServiceBusQueueIdInput() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `ServiceBusTopicEndpointIdInput`<sup>Optional</sup> <a name="ServiceBusTopicEndpointIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicEndpointIdInput"></a>
+##### `ServiceBusTopicIdInput`<sup>Optional</sup> <a name="ServiceBusTopicIdInput" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicIdInput"></a>
 
 ```go
-func ServiceBusTopicEndpointIdInput() *string
+func ServiceBusTopicIdInput() *string
 ```
 
 - *Type:* *string
@@ -1360,10 +1360,10 @@ func EventDeliverySchema() *string
 
 ---
 
-##### `EventhubEndpointId`<sup>Required</sup> <a name="EventhubEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubEndpointId"></a>
+##### `EventhubId`<sup>Required</sup> <a name="EventhubId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.eventhubId"></a>
 
 ```go
-func EventhubEndpointId() *string
+func EventhubId() *string
 ```
 
 - *Type:* *string
@@ -1380,10 +1380,10 @@ func ExpirationTimeUtc() *string
 
 ---
 
-##### `HybridConnectionEndpointId`<sup>Required</sup> <a name="HybridConnectionEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionEndpointId"></a>
+##### `HybridConnectionId`<sup>Required</sup> <a name="HybridConnectionId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.hybridConnectionId"></a>
 
 ```go
-func HybridConnectionEndpointId() *string
+func HybridConnectionId() *string
 ```
 
 - *Type:* *string
@@ -1440,20 +1440,20 @@ func Scope() *string
 
 ---
 
-##### `ServiceBusQueueEndpointId`<sup>Required</sup> <a name="ServiceBusQueueEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueEndpointId"></a>
+##### `ServiceBusQueueId`<sup>Required</sup> <a name="ServiceBusQueueId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusQueueId"></a>
 
 ```go
-func ServiceBusQueueEndpointId() *string
+func ServiceBusQueueId() *string
 ```
 
 - *Type:* *string
 
 ---
 
-##### `ServiceBusTopicEndpointId`<sup>Required</sup> <a name="ServiceBusTopicEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicEndpointId"></a>
+##### `ServiceBusTopicId`<sup>Required</sup> <a name="ServiceBusTopicId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscription.property.serviceBusTopicId"></a>
 
 ```go
-func ServiceBusTopicEndpointId() *string
+func ServiceBusTopicId() *string
 ```
 
 - *Type:* *string
@@ -1485,7 +1485,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilter {
 	BoolEquals: interface{},
@@ -1546,7 +1546,7 @@ BoolEquals interface{}
 
 bool_equals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#bool_equals EventgridEventSubscription#bool_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#bool_equals EventgridEventSubscription#bool_equals}
 
 ---
 
@@ -1560,7 +1560,7 @@ IsNotNull interface{}
 
 is_not_null block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#is_not_null EventgridEventSubscription#is_not_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#is_not_null EventgridEventSubscription#is_not_null}
 
 ---
 
@@ -1574,7 +1574,7 @@ IsNullOrUndefined interface{}
 
 is_null_or_undefined block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#is_null_or_undefined EventgridEventSubscription#is_null_or_undefined}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#is_null_or_undefined EventgridEventSubscription#is_null_or_undefined}
 
 ---
 
@@ -1588,7 +1588,7 @@ NumberGreaterThan interface{}
 
 number_greater_than block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_greater_than EventgridEventSubscription#number_greater_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_greater_than EventgridEventSubscription#number_greater_than}
 
 ---
 
@@ -1602,7 +1602,7 @@ NumberGreaterThanOrEquals interface{}
 
 number_greater_than_or_equals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_greater_than_or_equals EventgridEventSubscription#number_greater_than_or_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_greater_than_or_equals EventgridEventSubscription#number_greater_than_or_equals}
 
 ---
 
@@ -1616,7 +1616,7 @@ NumberIn interface{}
 
 number_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_in EventgridEventSubscription#number_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_in EventgridEventSubscription#number_in}
 
 ---
 
@@ -1630,7 +1630,7 @@ NumberInRange interface{}
 
 number_in_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_in_range EventgridEventSubscription#number_in_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_in_range EventgridEventSubscription#number_in_range}
 
 ---
 
@@ -1644,7 +1644,7 @@ NumberLessThan interface{}
 
 number_less_than block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_less_than EventgridEventSubscription#number_less_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_less_than EventgridEventSubscription#number_less_than}
 
 ---
 
@@ -1658,7 +1658,7 @@ NumberLessThanOrEquals interface{}
 
 number_less_than_or_equals block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_less_than_or_equals EventgridEventSubscription#number_less_than_or_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_less_than_or_equals EventgridEventSubscription#number_less_than_or_equals}
 
 ---
 
@@ -1672,7 +1672,7 @@ NumberNotIn interface{}
 
 number_not_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_not_in EventgridEventSubscription#number_not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_not_in EventgridEventSubscription#number_not_in}
 
 ---
 
@@ -1686,7 +1686,7 @@ NumberNotInRange interface{}
 
 number_not_in_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#number_not_in_range EventgridEventSubscription#number_not_in_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#number_not_in_range EventgridEventSubscription#number_not_in_range}
 
 ---
 
@@ -1700,7 +1700,7 @@ StringBeginsWith interface{}
 
 string_begins_with block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_begins_with EventgridEventSubscription#string_begins_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_begins_with EventgridEventSubscription#string_begins_with}
 
 ---
 
@@ -1714,7 +1714,7 @@ StringContains interface{}
 
 string_contains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_contains EventgridEventSubscription#string_contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_contains EventgridEventSubscription#string_contains}
 
 ---
 
@@ -1728,7 +1728,7 @@ StringEndsWith interface{}
 
 string_ends_with block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_ends_with EventgridEventSubscription#string_ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_ends_with EventgridEventSubscription#string_ends_with}
 
 ---
 
@@ -1742,7 +1742,7 @@ StringIn interface{}
 
 string_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_in EventgridEventSubscription#string_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_in EventgridEventSubscription#string_in}
 
 ---
 
@@ -1756,7 +1756,7 @@ StringNotBeginsWith interface{}
 
 string_not_begins_with block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_not_begins_with EventgridEventSubscription#string_not_begins_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_not_begins_with EventgridEventSubscription#string_not_begins_with}
 
 ---
 
@@ -1770,7 +1770,7 @@ StringNotContains interface{}
 
 string_not_contains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_not_contains EventgridEventSubscription#string_not_contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_not_contains EventgridEventSubscription#string_not_contains}
 
 ---
 
@@ -1784,7 +1784,7 @@ StringNotEndsWith interface{}
 
 string_not_ends_with block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_not_ends_with EventgridEventSubscription#string_not_ends_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_not_ends_with EventgridEventSubscription#string_not_ends_with}
 
 ---
 
@@ -1798,7 +1798,7 @@ StringNotIn interface{}
 
 string_not_in block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#string_not_in EventgridEventSubscription#string_not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#string_not_in EventgridEventSubscription#string_not_in}
 
 ---
 
@@ -1807,7 +1807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals {
 	Key: *string,
@@ -1819,8 +1819,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEquals.property.value">Value</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -1832,7 +1832,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -1844,7 +1844,7 @@ Value interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNotNull.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterIsNotNull {
 	Key: *string,
@@ -1864,7 +1864,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNotNull.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNotNull.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
 
 ---
 
@@ -1876,7 +1876,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefined.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefined {
 	Key: *string,
@@ -1896,7 +1896,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefined.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefined.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan {
 	Key: *string,
@@ -1929,8 +1929,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThan.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -1942,7 +1942,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -1954,7 +1954,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -1963,7 +1963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals {
 	Key: *string,
@@ -1975,8 +1975,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEquals.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -1988,7 +1988,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2000,7 +2000,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberIn {
 	Key: *string,
@@ -2021,8 +2021,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberIn.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberIn.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2034,7 +2034,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2046,7 +2046,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2055,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange {
 	Key: *string,
@@ -2067,8 +2067,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange.property.values">Values</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRange.property.values">Values</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2080,7 +2080,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2092,7 +2092,7 @@ Values interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2101,7 +2101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan {
 	Key: *string,
@@ -2113,8 +2113,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThan.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -2126,7 +2126,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2138,7 +2138,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -2147,7 +2147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals {
 	Key: *string,
@@ -2159,8 +2159,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEquals.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -2172,7 +2172,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2184,7 +2184,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -2193,7 +2193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn {
 	Key: *string,
@@ -2205,8 +2205,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotIn.property.values">Values</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2218,7 +2218,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2230,7 +2230,7 @@ Values *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange {
 	Key: *string,
@@ -2251,8 +2251,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange.property.values">Values</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRange.property.values">Values</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2264,7 +2264,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2276,7 +2276,7 @@ Values interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2285,7 +2285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith {
 	Key: *string,
@@ -2297,8 +2297,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2310,7 +2310,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2322,7 +2322,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2331,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringContains {
 	Key: *string,
@@ -2343,8 +2343,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContains.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContains.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContains.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContains.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2356,7 +2356,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2368,7 +2368,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2377,7 +2377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith {
 	Key: *string,
@@ -2389,8 +2389,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2402,7 +2402,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2414,7 +2414,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringIn {
 	Key: *string,
@@ -2435,8 +2435,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringIn.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringIn.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2448,7 +2448,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2460,7 +2460,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2469,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith {
 	Key: *string,
@@ -2481,8 +2481,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2494,7 +2494,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2506,7 +2506,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2515,7 +2515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains {
 	Key: *string,
@@ -2527,8 +2527,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContains.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2540,7 +2540,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2552,7 +2552,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2561,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith {
 	Key: *string,
@@ -2573,8 +2573,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWith.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2586,7 +2586,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2598,7 +2598,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn {
 	Key: *string,
@@ -2619,8 +2619,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotIn.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}. |
 
 ---
 
@@ -2632,7 +2632,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#key EventgridEventSubscription#key}.
 
 ---
 
@@ -2644,7 +2644,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#values EventgridEventSubscription#values}.
 
 ---
 
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionAzureFunctionEndpoint {
 	FunctionId: *string,
@@ -2666,9 +2666,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.functionId">FunctionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#function_id EventgridEventSubscription#function_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.maxEventsPerBatch">MaxEventsPerBatch</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.preferredBatchSizeInKilobytes">PreferredBatchSizeInKilobytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.functionId">FunctionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#function_id EventgridEventSubscription#function_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.maxEventsPerBatch">MaxEventsPerBatch</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint.property.preferredBatchSizeInKilobytes">PreferredBatchSizeInKilobytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}. |
 
 ---
 
@@ -2680,7 +2680,7 @@ FunctionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#function_id EventgridEventSubscription#function_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#function_id EventgridEventSubscription#function_id}.
 
 ---
 
@@ -2692,7 +2692,7 @@ MaxEventsPerBatch *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}.
 
 ---
 
@@ -2704,7 +2704,7 @@ PreferredBatchSizeInKilobytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}.
 
 ---
 
@@ -2713,7 +2713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionConfig {
 	Connection: interface{},
@@ -2725,27 +2725,27 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 	Provisioners: *[]interface{},
 	Name: *string,
 	Scope: *string,
-	AdvancedFilter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilter,
+	AdvancedFilter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilter,
 	AdvancedFilteringOnArraysEnabled: interface{},
-	AzureFunctionEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint,
-	DeadLetterIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity,
-	DeliveryIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity,
+	AzureFunctionEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint,
+	DeadLetterIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity,
+	DeliveryIdentity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity,
 	DeliveryProperty: interface{},
 	EventDeliverySchema: *string,
-	EventhubEndpointId: *string,
+	EventhubId: *string,
 	ExpirationTimeUtc: *string,
-	HybridConnectionEndpointId: *string,
+	HybridConnectionId: *string,
 	Id: *string,
 	IncludedEventTypes: *[]*string,
 	Labels: *[]*string,
-	RetryPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy,
-	ServiceBusQueueEndpointId: *string,
-	ServiceBusTopicEndpointId: *string,
-	StorageBlobDeadLetterDestination: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination,
-	StorageQueueEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint,
-	SubjectFilter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionTimeouts,
-	WebhookEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint,
+	RetryPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy,
+	ServiceBusQueueId: *string,
+	ServiceBusTopicId: *string,
+	StorageBlobDeadLetterDestination: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination,
+	StorageQueueEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint,
+	SubjectFilter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionTimeouts,
+	WebhookEndpoint: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint,
 }
 ```
 
@@ -2760,24 +2760,24 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#name EventgridEventSubscription#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#scope EventgridEventSubscription#scope}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#name EventgridEventSubscription#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#scope EventgridEventSubscription#scope}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.advancedFilter">AdvancedFilter</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilter">EventgridEventSubscriptionAdvancedFilter</a></code> | advanced_filter block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.advancedFilteringOnArraysEnabled">AdvancedFilteringOnArraysEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#advanced_filtering_on_arrays_enabled EventgridEventSubscription#advanced_filtering_on_arrays_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.advancedFilteringOnArraysEnabled">AdvancedFilteringOnArraysEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#advanced_filtering_on_arrays_enabled EventgridEventSubscription#advanced_filtering_on_arrays_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.azureFunctionEndpoint">AzureFunctionEndpoint</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpoint">EventgridEventSubscriptionAzureFunctionEndpoint</a></code> | azure_function_endpoint block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.deadLetterIdentity">DeadLetterIdentity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity">EventgridEventSubscriptionDeadLetterIdentity</a></code> | dead_letter_identity block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.deliveryIdentity">DeliveryIdentity</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity">EventgridEventSubscriptionDeliveryIdentity</a></code> | delivery_identity block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.deliveryProperty">DeliveryProperty</a></code> | <code>interface{}</code> | delivery_property block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventDeliverySchema">EventDeliverySchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#event_delivery_schema EventgridEventSubscription#event_delivery_schema}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventhubEndpointId">EventhubEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#eventhub_endpoint_id EventgridEventSubscription#eventhub_endpoint_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.expirationTimeUtc">ExpirationTimeUtc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#expiration_time_utc EventgridEventSubscription#expiration_time_utc}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.hybridConnectionEndpointId">HybridConnectionEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#hybrid_connection_endpoint_id EventgridEventSubscription#hybrid_connection_endpoint_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#id EventgridEventSubscription#id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.includedEventTypes">IncludedEventTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#included_event_types EventgridEventSubscription#included_event_types}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.labels">Labels</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#labels EventgridEventSubscription#labels}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventDeliverySchema">EventDeliverySchema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#event_delivery_schema EventgridEventSubscription#event_delivery_schema}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventhubId">EventhubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#eventhub_id EventgridEventSubscription#eventhub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.expirationTimeUtc">ExpirationTimeUtc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#expiration_time_utc EventgridEventSubscription#expiration_time_utc}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.hybridConnectionId">HybridConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#hybrid_connection_id EventgridEventSubscription#hybrid_connection_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#id EventgridEventSubscription#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.includedEventTypes">IncludedEventTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#included_event_types EventgridEventSubscription#included_event_types}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.labels">Labels</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#labels EventgridEventSubscription#labels}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy">EventgridEventSubscriptionRetryPolicy</a></code> | retry_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusQueueEndpointId">ServiceBusQueueEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#service_bus_queue_endpoint_id EventgridEventSubscription#service_bus_queue_endpoint_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusTopicEndpointId">ServiceBusTopicEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#service_bus_topic_endpoint_id EventgridEventSubscription#service_bus_topic_endpoint_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusQueueId">ServiceBusQueueId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#service_bus_queue_id EventgridEventSubscription#service_bus_queue_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusTopicId">ServiceBusTopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#service_bus_topic_id EventgridEventSubscription#service_bus_topic_id}. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.storageBlobDeadLetterDestination">StorageBlobDeadLetterDestination</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination">EventgridEventSubscriptionStorageBlobDeadLetterDestination</a></code> | storage_blob_dead_letter_destination block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.storageQueueEndpoint">StorageQueueEndpoint</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint">EventgridEventSubscriptionStorageQueueEndpoint</a></code> | storage_queue_endpoint block. |
 | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.subjectFilter">SubjectFilter</a></code> | <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter">EventgridEventSubscriptionSubjectFilter</a></code> | subject_filter block. |
@@ -2864,7 +2864,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#name EventgridEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#name EventgridEventSubscription#name}.
 
 ---
 
@@ -2876,7 +2876,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#scope EventgridEventSubscription#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#scope EventgridEventSubscription#scope}.
 
 ---
 
@@ -2890,7 +2890,7 @@ AdvancedFilter EventgridEventSubscriptionAdvancedFilter
 
 advanced_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#advanced_filter EventgridEventSubscription#advanced_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#advanced_filter EventgridEventSubscription#advanced_filter}
 
 ---
 
@@ -2902,7 +2902,7 @@ AdvancedFilteringOnArraysEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#advanced_filtering_on_arrays_enabled EventgridEventSubscription#advanced_filtering_on_arrays_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#advanced_filtering_on_arrays_enabled EventgridEventSubscription#advanced_filtering_on_arrays_enabled}.
 
 ---
 
@@ -2916,7 +2916,7 @@ AzureFunctionEndpoint EventgridEventSubscriptionAzureFunctionEndpoint
 
 azure_function_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#azure_function_endpoint EventgridEventSubscription#azure_function_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#azure_function_endpoint EventgridEventSubscription#azure_function_endpoint}
 
 ---
 
@@ -2930,7 +2930,7 @@ DeadLetterIdentity EventgridEventSubscriptionDeadLetterIdentity
 
 dead_letter_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#dead_letter_identity EventgridEventSubscription#dead_letter_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#dead_letter_identity EventgridEventSubscription#dead_letter_identity}
 
 ---
 
@@ -2944,7 +2944,7 @@ DeliveryIdentity EventgridEventSubscriptionDeliveryIdentity
 
 delivery_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#delivery_identity EventgridEventSubscription#delivery_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#delivery_identity EventgridEventSubscription#delivery_identity}
 
 ---
 
@@ -2958,7 +2958,7 @@ DeliveryProperty interface{}
 
 delivery_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#delivery_property EventgridEventSubscription#delivery_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#delivery_property EventgridEventSubscription#delivery_property}
 
 ---
 
@@ -2970,19 +2970,19 @@ EventDeliverySchema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#event_delivery_schema EventgridEventSubscription#event_delivery_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#event_delivery_schema EventgridEventSubscription#event_delivery_schema}.
 
 ---
 
-##### `EventhubEndpointId`<sup>Optional</sup> <a name="EventhubEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventhubEndpointId"></a>
+##### `EventhubId`<sup>Optional</sup> <a name="EventhubId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.eventhubId"></a>
 
 ```go
-EventhubEndpointId *string
+EventhubId *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#eventhub_endpoint_id EventgridEventSubscription#eventhub_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#eventhub_id EventgridEventSubscription#eventhub_id}.
 
 ---
 
@@ -2994,19 +2994,19 @@ ExpirationTimeUtc *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#expiration_time_utc EventgridEventSubscription#expiration_time_utc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#expiration_time_utc EventgridEventSubscription#expiration_time_utc}.
 
 ---
 
-##### `HybridConnectionEndpointId`<sup>Optional</sup> <a name="HybridConnectionEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.hybridConnectionEndpointId"></a>
+##### `HybridConnectionId`<sup>Optional</sup> <a name="HybridConnectionId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.hybridConnectionId"></a>
 
 ```go
-HybridConnectionEndpointId *string
+HybridConnectionId *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#hybrid_connection_endpoint_id EventgridEventSubscription#hybrid_connection_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#hybrid_connection_id EventgridEventSubscription#hybrid_connection_id}.
 
 ---
 
@@ -3018,7 +3018,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#id EventgridEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#id EventgridEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3033,7 +3033,7 @@ IncludedEventTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#included_event_types EventgridEventSubscription#included_event_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#included_event_types EventgridEventSubscription#included_event_types}.
 
 ---
 
@@ -3045,7 +3045,7 @@ Labels *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#labels EventgridEventSubscription#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#labels EventgridEventSubscription#labels}.
 
 ---
 
@@ -3059,31 +3059,31 @@ RetryPolicy EventgridEventSubscriptionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#retry_policy EventgridEventSubscription#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#retry_policy EventgridEventSubscription#retry_policy}
 
 ---
 
-##### `ServiceBusQueueEndpointId`<sup>Optional</sup> <a name="ServiceBusQueueEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusQueueEndpointId"></a>
+##### `ServiceBusQueueId`<sup>Optional</sup> <a name="ServiceBusQueueId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusQueueId"></a>
 
 ```go
-ServiceBusQueueEndpointId *string
+ServiceBusQueueId *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#service_bus_queue_endpoint_id EventgridEventSubscription#service_bus_queue_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#service_bus_queue_id EventgridEventSubscription#service_bus_queue_id}.
 
 ---
 
-##### `ServiceBusTopicEndpointId`<sup>Optional</sup> <a name="ServiceBusTopicEndpointId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusTopicEndpointId"></a>
+##### `ServiceBusTopicId`<sup>Optional</sup> <a name="ServiceBusTopicId" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionConfig.property.serviceBusTopicId"></a>
 
 ```go
-ServiceBusTopicEndpointId *string
+ServiceBusTopicId *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#service_bus_topic_endpoint_id EventgridEventSubscription#service_bus_topic_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#service_bus_topic_id EventgridEventSubscription#service_bus_topic_id}.
 
 ---
 
@@ -3097,7 +3097,7 @@ StorageBlobDeadLetterDestination EventgridEventSubscriptionStorageBlobDeadLetter
 
 storage_blob_dead_letter_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_blob_dead_letter_destination EventgridEventSubscription#storage_blob_dead_letter_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_blob_dead_letter_destination EventgridEventSubscription#storage_blob_dead_letter_destination}
 
 ---
 
@@ -3111,7 +3111,7 @@ StorageQueueEndpoint EventgridEventSubscriptionStorageQueueEndpoint
 
 storage_queue_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_queue_endpoint EventgridEventSubscription#storage_queue_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_queue_endpoint EventgridEventSubscription#storage_queue_endpoint}
 
 ---
 
@@ -3125,7 +3125,7 @@ SubjectFilter EventgridEventSubscriptionSubjectFilter
 
 subject_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#subject_filter EventgridEventSubscription#subject_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#subject_filter EventgridEventSubscription#subject_filter}
 
 ---
 
@@ -3139,7 +3139,7 @@ Timeouts EventgridEventSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#timeouts EventgridEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#timeouts EventgridEventSubscription#timeouts}
 
 ---
 
@@ -3153,7 +3153,7 @@ WebhookEndpoint EventgridEventSubscriptionWebhookEndpoint
 
 webhook_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#webhook_endpoint EventgridEventSubscription#webhook_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#webhook_endpoint EventgridEventSubscription#webhook_endpoint}
 
 ---
 
@@ -3162,7 +3162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionDeadLetterIdentity {
 	Type: *string,
@@ -3174,8 +3174,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity.property.userAssignedIdentity">UserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentity.property.userAssignedIdentity">UserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}. |
 
 ---
 
@@ -3187,7 +3187,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
 
 ---
 
@@ -3199,7 +3199,7 @@ UserAssignedIdentity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}.
 
 ---
 
@@ -3208,7 +3208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionDeliveryIdentity {
 	Type: *string,
@@ -3220,8 +3220,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity.property.userAssignedIdentity">UserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentity.property.userAssignedIdentity">UserAssignedIdentity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}. |
 
 ---
 
@@ -3233,7 +3233,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
 
 ---
 
@@ -3245,7 +3245,7 @@ UserAssignedIdentity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#user_assigned_identity EventgridEventSubscription#user_assigned_identity}.
 
 ---
 
@@ -3254,7 +3254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionDeliveryProperty {
 	HeaderName: *string,
@@ -3269,11 +3269,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#header_name EventgridEventSubscription#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.secret">Secret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#secret EventgridEventSubscription#secret}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.sourceField">SourceField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#source_field EventgridEventSubscription#source_field}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#header_name EventgridEventSubscription#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.secret">Secret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#secret EventgridEventSubscription#secret}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.sourceField">SourceField</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#source_field EventgridEventSubscription#source_field}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryProperty.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}. |
 
 ---
 
@@ -3285,7 +3285,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#header_name EventgridEventSubscription#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#header_name EventgridEventSubscription#header_name}.
 
 ---
 
@@ -3297,7 +3297,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#type EventgridEventSubscription#type}.
 
 ---
 
@@ -3309,7 +3309,7 @@ Secret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#secret EventgridEventSubscription#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#secret EventgridEventSubscription#secret}.
 
 ---
 
@@ -3321,7 +3321,7 @@ SourceField *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#source_field EventgridEventSubscription#source_field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#source_field EventgridEventSubscription#source_field}.
 
 ---
 
@@ -3333,7 +3333,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#value EventgridEventSubscription#value}.
 
 ---
 
@@ -3342,7 +3342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionRetryPolicy {
 	EventTimeToLive: *f64,
@@ -3354,8 +3354,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy.property.eventTimeToLive">EventTimeToLive</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#event_time_to_live EventgridEventSubscription#event_time_to_live}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy.property.maxDeliveryAttempts">MaxDeliveryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_delivery_attempts EventgridEventSubscription#max_delivery_attempts}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy.property.eventTimeToLive">EventTimeToLive</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#event_time_to_live EventgridEventSubscription#event_time_to_live}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicy.property.maxDeliveryAttempts">MaxDeliveryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_delivery_attempts EventgridEventSubscription#max_delivery_attempts}. |
 
 ---
 
@@ -3367,7 +3367,7 @@ EventTimeToLive *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#event_time_to_live EventgridEventSubscription#event_time_to_live}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#event_time_to_live EventgridEventSubscription#event_time_to_live}.
 
 ---
 
@@ -3379,7 +3379,7 @@ MaxDeliveryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_delivery_attempts EventgridEventSubscription#max_delivery_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_delivery_attempts EventgridEventSubscription#max_delivery_attempts}.
 
 ---
 
@@ -3388,7 +3388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination {
 	StorageAccountId: *string,
@@ -3400,8 +3400,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination.property.storageBlobContainerName">StorageBlobContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_blob_container_name EventgridEventSubscription#storage_blob_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestination.property.storageBlobContainerName">StorageBlobContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_blob_container_name EventgridEventSubscription#storage_blob_container_name}. |
 
 ---
 
@@ -3413,7 +3413,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}.
 
 ---
 
@@ -3425,7 +3425,7 @@ StorageBlobContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_blob_container_name EventgridEventSubscription#storage_blob_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_blob_container_name EventgridEventSubscription#storage_blob_container_name}.
 
 ---
 
@@ -3434,7 +3434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionStorageQueueEndpoint {
 	QueueName: *string,
@@ -3447,9 +3447,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.queueName">QueueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#queue_name EventgridEventSubscription#queue_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.queueMessageTimeToLiveInSeconds">QueueMessageTimeToLiveInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#queue_message_time_to_live_in_seconds EventgridEventSubscription#queue_message_time_to_live_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.queueName">QueueName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#queue_name EventgridEventSubscription#queue_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpoint.property.queueMessageTimeToLiveInSeconds">QueueMessageTimeToLiveInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#queue_message_time_to_live_in_seconds EventgridEventSubscription#queue_message_time_to_live_in_seconds}. |
 
 ---
 
@@ -3461,7 +3461,7 @@ QueueName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#queue_name EventgridEventSubscription#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#queue_name EventgridEventSubscription#queue_name}.
 
 ---
 
@@ -3473,7 +3473,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#storage_account_id EventgridEventSubscription#storage_account_id}.
 
 ---
 
@@ -3485,7 +3485,7 @@ QueueMessageTimeToLiveInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#queue_message_time_to_live_in_seconds EventgridEventSubscription#queue_message_time_to_live_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#queue_message_time_to_live_in_seconds EventgridEventSubscription#queue_message_time_to_live_in_seconds}.
 
 ---
 
@@ -3494,7 +3494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionSubjectFilter {
 	CaseSensitive: interface{},
@@ -3507,9 +3507,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#case_sensitive EventgridEventSubscription#case_sensitive}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.subjectBeginsWith">SubjectBeginsWith</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#subject_begins_with EventgridEventSubscription#subject_begins_with}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.subjectEndsWith">SubjectEndsWith</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#subject_ends_with EventgridEventSubscription#subject_ends_with}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.caseSensitive">CaseSensitive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#case_sensitive EventgridEventSubscription#case_sensitive}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.subjectBeginsWith">SubjectBeginsWith</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#subject_begins_with EventgridEventSubscription#subject_begins_with}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilter.property.subjectEndsWith">SubjectEndsWith</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#subject_ends_with EventgridEventSubscription#subject_ends_with}. |
 
 ---
 
@@ -3521,7 +3521,7 @@ CaseSensitive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#case_sensitive EventgridEventSubscription#case_sensitive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#case_sensitive EventgridEventSubscription#case_sensitive}.
 
 ---
 
@@ -3533,7 +3533,7 @@ SubjectBeginsWith *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#subject_begins_with EventgridEventSubscription#subject_begins_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#subject_begins_with EventgridEventSubscription#subject_begins_with}.
 
 ---
 
@@ -3545,7 +3545,7 @@ SubjectEndsWith *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#subject_ends_with EventgridEventSubscription#subject_ends_with}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#subject_ends_with EventgridEventSubscription#subject_ends_with}.
 
 ---
 
@@ -3554,7 +3554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionTimeouts {
 	Create: *string,
@@ -3568,10 +3568,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#create EventgridEventSubscription#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#delete EventgridEventSubscription#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#read EventgridEventSubscription#read}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#update EventgridEventSubscription#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#create EventgridEventSubscription#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#delete EventgridEventSubscription#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#read EventgridEventSubscription#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#update EventgridEventSubscription#update}. |
 
 ---
 
@@ -3583,7 +3583,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#create EventgridEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#create EventgridEventSubscription#create}.
 
 ---
 
@@ -3595,7 +3595,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#delete EventgridEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#delete EventgridEventSubscription#delete}.
 
 ---
 
@@ -3607,7 +3607,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#read EventgridEventSubscription#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#read EventgridEventSubscription#read}.
 
 ---
 
@@ -3619,7 +3619,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#update EventgridEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#update EventgridEventSubscription#update}.
 
 ---
 
@@ -3628,7 +3628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 &eventgrideventsubscription.EventgridEventSubscriptionWebhookEndpoint {
 	Url: *string,
@@ -3643,11 +3643,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgridevent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#url EventgridEventSubscription#url}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.activeDirectoryAppIdOrUri">ActiveDirectoryAppIdOrUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#active_directory_app_id_or_uri EventgridEventSubscription#active_directory_app_id_or_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.activeDirectoryTenantId">ActiveDirectoryTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#active_directory_tenant_id EventgridEventSubscription#active_directory_tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.maxEventsPerBatch">MaxEventsPerBatch</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}. |
-| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.preferredBatchSizeInKilobytes">PreferredBatchSizeInKilobytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#url EventgridEventSubscription#url}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.activeDirectoryAppIdOrUri">ActiveDirectoryAppIdOrUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#active_directory_app_id_or_uri EventgridEventSubscription#active_directory_app_id_or_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.activeDirectoryTenantId">ActiveDirectoryTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#active_directory_tenant_id EventgridEventSubscription#active_directory_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.maxEventsPerBatch">MaxEventsPerBatch</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}. |
+| <code><a href="#@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpoint.property.preferredBatchSizeInKilobytes">PreferredBatchSizeInKilobytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}. |
 
 ---
 
@@ -3659,7 +3659,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#url EventgridEventSubscription#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#url EventgridEventSubscription#url}.
 
 ---
 
@@ -3671,7 +3671,7 @@ ActiveDirectoryAppIdOrUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#active_directory_app_id_or_uri EventgridEventSubscription#active_directory_app_id_or_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#active_directory_app_id_or_uri EventgridEventSubscription#active_directory_app_id_or_uri}.
 
 ---
 
@@ -3683,7 +3683,7 @@ ActiveDirectoryTenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#active_directory_tenant_id EventgridEventSubscription#active_directory_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#active_directory_tenant_id EventgridEventSubscription#active_directory_tenant_id}.
 
 ---
 
@@ -3695,7 +3695,7 @@ MaxEventsPerBatch *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#max_events_per_batch EventgridEventSubscription#max_events_per_batch}.
 
 ---
 
@@ -3707,7 +3707,7 @@ PreferredBatchSizeInKilobytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventgrid_event_subscription#preferred_batch_size_in_kilobytes EventgridEventSubscription#preferred_batch_size_in_kilobytes}.
 
 ---
 
@@ -3718,7 +3718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEqualsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterBoolEqualsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterBoolEqualsList
 ```
@@ -3878,7 +3878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterBoolEqualsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterBoolEqualsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterBoolEqualsOutputReference
 ```
@@ -4189,7 +4189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNotNullList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterIsNotNullList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterIsNotNullList
 ```
@@ -4349,7 +4349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNotNullOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterIsNotNullOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterIsNotNullOutputReference
 ```
@@ -4638,7 +4638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedList
 ```
@@ -4798,7 +4798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterIsNullOrUndefinedOutputReference
 ```
@@ -5087,7 +5087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberGreaterThanList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberGreaterThanList
 ```
@@ -5247,7 +5247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsList
 ```
@@ -5407,7 +5407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOrEqualsOutputReference
 ```
@@ -5718,7 +5718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberGreaterThanOutputReference
 ```
@@ -6029,7 +6029,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberInList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberInList
 ```
@@ -6189,7 +6189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberInOutputReference
 ```
@@ -6500,7 +6500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberInRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberInRangeList
 ```
@@ -6660,7 +6660,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberInRangeOutputReference
 ```
@@ -6971,7 +6971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberLessThanList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberLessThanList
 ```
@@ -7131,7 +7131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsList
 ```
@@ -7291,7 +7291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberLessThanOrEqualsOutputReference
 ```
@@ -7602,7 +7602,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberLessThanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberLessThanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberLessThanOutputReference
 ```
@@ -7913,7 +7913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberNotInList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberNotInList
 ```
@@ -8073,7 +8073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberNotInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberNotInOutputReference
 ```
@@ -8384,7 +8384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberNotInRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterNumberNotInRangeList
 ```
@@ -8544,7 +8544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterNumberNotInRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterNumberNotInRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterNumberNotInRangeOutputReference
 ```
@@ -8855,7 +8855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionAdvancedFilterOutputReference
 ```
@@ -9902,7 +9902,7 @@ func InternalValue() EventgridEventSubscriptionAdvancedFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWithList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringBeginsWithList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringBeginsWithList
 ```
@@ -10062,7 +10062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringBeginsWithOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringBeginsWithOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringBeginsWithOutputReference
 ```
@@ -10373,7 +10373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringContainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringContainsList
 ```
@@ -10533,7 +10533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringContainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringContainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringContainsOutputReference
 ```
@@ -10844,7 +10844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWithList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringEndsWithList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringEndsWithList
 ```
@@ -11004,7 +11004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringEndsWithOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringEndsWithOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringEndsWithOutputReference
 ```
@@ -11315,7 +11315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringInList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringInList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringInList
 ```
@@ -11475,7 +11475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringInOutputReference
 ```
@@ -11786,7 +11786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWithList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotBeginsWithList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotBeginsWithList
 ```
@@ -11946,7 +11946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotBeginsWithOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotBeginsWithOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotBeginsWithOutputReference
 ```
@@ -12257,7 +12257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotContainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotContainsList
 ```
@@ -12417,7 +12417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotContainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotContainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotContainsOutputReference
 ```
@@ -12728,7 +12728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWithList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotEndsWithList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotEndsWithList
 ```
@@ -12888,7 +12888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotEndsWithOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotEndsWithOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotEndsWithOutputReference
 ```
@@ -13199,7 +13199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotInList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotInList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotInList
 ```
@@ -13359,7 +13359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAdvancedFilterStringNotInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAdvancedFilterStringNotInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionAdvancedFilterStringNotInOutputReference
 ```
@@ -13670,7 +13670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionAzureFunctionEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionAzureFunctionEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionAzureFunctionEndpointOutputReference
 ```
@@ -13999,7 +13999,7 @@ func InternalValue() EventgridEventSubscriptionAzureFunctionEndpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeadLetterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionDeadLetterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionDeadLetterIdentityOutputReference
 ```
@@ -14299,7 +14299,7 @@ func InternalValue() EventgridEventSubscriptionDeadLetterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionDeliveryIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionDeliveryIdentityOutputReference
 ```
@@ -14599,7 +14599,7 @@ func InternalValue() EventgridEventSubscriptionDeliveryIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionDeliveryPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventgridEventSubscriptionDeliveryPropertyList
 ```
@@ -14759,7 +14759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionDeliveryPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionDeliveryPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventgridEventSubscriptionDeliveryPropertyOutputReference
 ```
@@ -15157,7 +15157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionRetryPolicyOutputReference
 ```
@@ -15450,7 +15450,7 @@ func InternalValue() EventgridEventSubscriptionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageBlobDeadLetterDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionStorageBlobDeadLetterDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionStorageBlobDeadLetterDestinationOutputReference
 ```
@@ -15743,7 +15743,7 @@ func InternalValue() EventgridEventSubscriptionStorageBlobDeadLetterDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionStorageQueueEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionStorageQueueEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionStorageQueueEndpointOutputReference
 ```
@@ -16065,7 +16065,7 @@ func InternalValue() EventgridEventSubscriptionStorageQueueEndpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionSubjectFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionSubjectFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionSubjectFilterOutputReference
 ```
@@ -16401,7 +16401,7 @@ func InternalValue() EventgridEventSubscriptionSubjectFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionTimeoutsOutputReference
 ```
@@ -16766,7 +16766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventgridEventSubscription.EventgridEventSubscriptionWebhookEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/eventgrideventsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/eventgrideventsubscription"
 
 eventgrideventsubscription.NewEventgridEventSubscriptionWebhookEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventgridEventSubscriptionWebhookEndpointOutputReference
 ```

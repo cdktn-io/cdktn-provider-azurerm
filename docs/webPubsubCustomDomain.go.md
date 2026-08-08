@@ -4,12 +4,12 @@
 
 ### WebPubsubCustomDomain <a name="WebPubsubCustomDomain" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain azurerm_web_pubsub_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.NewWebPubsubCustomDomain(scope Construct, id *string, config WebPubsubCustomDomainConfig) WebPubsubCustomDomain
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.WebPubsubCustomDomain_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.WebPubsubCustomDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ webpubsubcustomdomain.WebPubsubCustomDomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.WebPubsubCustomDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ webpubsubcustomdomain.WebPubsubCustomDomain_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.WebPubsubCustomDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WebPubsubCustomDomain to i
 
 The id of the existing WebPubsubCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 &webpubsubcustomdomain.WebPubsubCustomDomainConfig {
 	Connection: interface{},
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcusto
 	WebPubsubCustomCertificateId: *string,
 	WebPubsubId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts,
 }
 ```
 
@@ -878,11 +878,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcusto
 | <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#domain_name WebPubsubCustomDomain#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#name WebPubsubCustomDomain#name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.webPubsubCustomCertificateId">WebPubsubCustomCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#web_pubsub_custom_certificate_id WebPubsubCustomDomain#web_pubsub_custom_certificate_id}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.webPubsubId">WebPubsubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#web_pubsub_id WebPubsubCustomDomain#web_pubsub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#id WebPubsubCustomDomain#id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#domain_name WebPubsubCustomDomain#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#name WebPubsubCustomDomain#name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.webPubsubCustomCertificateId">WebPubsubCustomCertificateId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#web_pubsub_custom_certificate_id WebPubsubCustomDomain#web_pubsub_custom_certificate_id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.webPubsubId">WebPubsubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#web_pubsub_id WebPubsubCustomDomain#web_pubsub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#id WebPubsubCustomDomain#id}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts">WebPubsubCustomDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -965,7 +965,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#domain_name WebPubsubCustomDomain#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#domain_name WebPubsubCustomDomain#domain_name}.
 
 ---
 
@@ -977,7 +977,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#name WebPubsubCustomDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#name WebPubsubCustomDomain#name}.
 
 ---
 
@@ -989,7 +989,7 @@ WebPubsubCustomCertificateId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#web_pubsub_custom_certificate_id WebPubsubCustomDomain#web_pubsub_custom_certificate_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#web_pubsub_custom_certificate_id WebPubsubCustomDomain#web_pubsub_custom_certificate_id}.
 
 ---
 
@@ -1001,7 +1001,7 @@ WebPubsubId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#web_pubsub_id WebPubsubCustomDomain#web_pubsub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#web_pubsub_id WebPubsubCustomDomain#web_pubsub_id}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#id WebPubsubCustomDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#id WebPubsubCustomDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1030,7 @@ Timeouts WebPubsubCustomDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#timeouts WebPubsubCustomDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#timeouts WebPubsubCustomDomain#timeouts}
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 &webpubsubcustomdomain.WebPubsubCustomDomainTimeouts {
 	Create: *string,
@@ -1052,9 +1052,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcusto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#create WebPubsubCustomDomain#create}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#delete WebPubsubCustomDomain#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#read WebPubsubCustomDomain#read}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#create WebPubsubCustomDomain#create}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#delete WebPubsubCustomDomain#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#read WebPubsubCustomDomain#read}. |
 
 ---
 
@@ -1066,7 +1066,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#create WebPubsubCustomDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#create WebPubsubCustomDomain#create}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#delete WebPubsubCustomDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#delete WebPubsubCustomDomain#delete}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_custom_domain#read WebPubsubCustomDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_custom_domain#read WebPubsubCustomDomain#read}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubCustomDomain.WebPubsubCustomDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubcustomdomain"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubcustomdomain"
 
 webpubsubcustomdomain.NewWebPubsubCustomDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubCustomDomainTimeoutsOutputReference
 ```

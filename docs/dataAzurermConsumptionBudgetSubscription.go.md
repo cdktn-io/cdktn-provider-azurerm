@@ -4,12 +4,12 @@
 
 ### DataAzurermConsumptionBudgetSubscription <a name="DataAzurermConsumptionBudgetSubscription" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription azurerm_consumption_budget_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscription(scope Construct, id *string, config DataAzurermConsumptionBudgetSubscriptionConfig) DataAzurermConsumptionBudgetSubscription
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptio
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermConsumptionBudg
 
 The id of the existing DataAzurermConsumptionBudgetSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 	Name: *string,
 	SubscriptionId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts,
 }
 ```
 
@@ -763,9 +763,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.subscriptionId">SubscriptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.subscriptionId">SubscriptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts">DataAzurermConsumptionBudgetSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -848,7 +848,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#name DataAzurermConsumptionBudgetSubscription#name}.
 
 ---
 
@@ -860,7 +860,7 @@ SubscriptionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#subscription_id DataAzurermConsumptionBudgetSubscription#subscription_id}.
 
 ---
 
@@ -872,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#id DataAzurermConsumptionBudgetSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ Timeouts DataAzurermConsumptionBudgetSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#timeouts DataAzurermConsumptionBudgetSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#timeouts DataAzurermConsumptionBudgetSubscription#timeouts}
 
 ---
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilter {
 
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilterDimension {
 
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilterNot {
 
@@ -937,7 +937,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotDimension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotDimension {
 
@@ -950,7 +950,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotTag {
 
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionFilterTag {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionNotification {
 
@@ -989,7 +989,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts {
 	Read: *string,
@@ -1000,7 +1000,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/consumption_budget_subscription#read DataAzurermConsumptionBudgetSubscription#read}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 &dataazurermconsumptionbudgetsubscription.DataAzurermConsumptionBudgetSubscriptionTimePeriod {
 
@@ -1036,7 +1036,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermcon
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterDimensionList
 ```
@@ -1185,7 +1185,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterDimensionOutputReference
 ```
@@ -1485,7 +1485,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilterDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterList
 ```
@@ -1634,7 +1634,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotDimensionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionList
 ```
@@ -1783,7 +1783,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotDimensionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotDimensionOutputReference
 ```
@@ -2083,7 +2083,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilterNotDimension
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotList
 ```
@@ -2232,7 +2232,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotOutputReference
 ```
@@ -2521,7 +2521,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilterNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotTagList
 ```
@@ -2670,7 +2670,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterNotTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterNotTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterNotTagOutputReference
 ```
@@ -2970,7 +2970,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilterNotTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterOutputReference
 ```
@@ -3270,7 +3270,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterTagList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterTagList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterTagList
 ```
@@ -3419,7 +3419,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionFilterTagOutputReference
 ```
@@ -3719,7 +3719,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionFilterTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionNotificationList
 ```
@@ -3868,7 +3868,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionNotificationOutputReference
 ```
@@ -4212,7 +4212,7 @@ func InternalValue() DataAzurermConsumptionBudgetSubscriptionNotification
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermConsumptionBudgetSubscriptionTimeoutsOutputReference
 ```
@@ -4490,7 +4490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimePeriodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionTimePeriodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermConsumptionBudgetSubscriptionTimePeriodList
 ```
@@ -4639,7 +4639,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermConsumptionBudgetSubscription.DataAzurermConsumptionBudgetSubscriptionTimePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermconsumptionbudgetsubscription"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermconsumptionbudgetsubscription"
 
 dataazurermconsumptionbudgetsubscription.NewDataAzurermConsumptionBudgetSubscriptionTimePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermConsumptionBudgetSubscriptionTimePeriodOutputReference
 ```

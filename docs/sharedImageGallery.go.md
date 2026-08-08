@@ -4,12 +4,12 @@
 
 ### SharedImageGallery <a name="SharedImageGallery" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery azurerm_shared_image_gallery}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.NewSharedImageGallery(scope Construct, id *string, config SharedImageGalleryConfig) SharedImageGallery
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.SharedImageGallery_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.SharedImageGallery_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ sharedimagegallery.SharedImageGallery_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.SharedImageGallery_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ sharedimagegallery.SharedImageGallery_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.SharedImageGallery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the SharedImageGallery to impo
 
 The id of the existing SharedImageGallery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 &sharedimagegallery.SharedImageGalleryConfig {
 	Connection: interface{},
@@ -952,9 +952,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegal
 	ResourceGroupName: *string,
 	Description: *string,
 	Id: *string,
-	Sharing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImageGallery.SharedImageGallerySharing,
+	Sharing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageGallery.SharedImageGallerySharing,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImageGallery.SharedImageGalleryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageGallery.SharedImageGalleryTimeouts,
 }
 ```
 
@@ -969,13 +969,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegal
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#location SharedImageGallery#location}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#name SharedImageGallery#name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#resource_group_name SharedImageGallery#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#description SharedImageGallery#description}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#id SharedImageGallery#id}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#location SharedImageGallery#location}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#name SharedImageGallery#name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#resource_group_name SharedImageGallery#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#description SharedImageGallery#description}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#id SharedImageGallery#id}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.sharing">Sharing</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharing">SharedImageGallerySharing</a></code> | sharing block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#tags SharedImageGallery#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#tags SharedImageGallery#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts">SharedImageGalleryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1058,7 +1058,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#location SharedImageGallery#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#location SharedImageGallery#location}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#name SharedImageGallery#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#name SharedImageGallery#name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#resource_group_name SharedImageGallery#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#resource_group_name SharedImageGallery#resource_group_name}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#description SharedImageGallery#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#description SharedImageGallery#description}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#id SharedImageGallery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#id SharedImageGallery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1123,7 @@ Sharing SharedImageGallerySharing
 
 sharing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#sharing SharedImageGallery#sharing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#sharing SharedImageGallery#sharing}
 
 ---
 
@@ -1135,7 +1135,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#tags SharedImageGallery#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#tags SharedImageGallery#tags}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Timeouts SharedImageGalleryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#timeouts SharedImageGallery#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#timeouts SharedImageGallery#timeouts}
 
 ---
 
@@ -1158,11 +1158,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 &sharedimagegallery.SharedImageGallerySharing {
 	Permission: *string,
-	CommunityGallery: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.sharedImageGallery.SharedImageGallerySharingCommunityGallery,
+	CommunityGallery: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.sharedImageGallery.SharedImageGallerySharingCommunityGallery,
 }
 ```
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharing.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#permission SharedImageGallery#permission}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharing.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#permission SharedImageGallery#permission}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharing.property.communityGallery">CommunityGallery</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery">SharedImageGallerySharingCommunityGallery</a></code> | community_gallery block. |
 
 ---
@@ -1183,7 +1183,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#permission SharedImageGallery#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#permission SharedImageGallery#permission}.
 
 ---
 
@@ -1197,7 +1197,7 @@ CommunityGallery SharedImageGallerySharingCommunityGallery
 
 community_gallery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#community_gallery SharedImageGallery#community_gallery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#community_gallery SharedImageGallery#community_gallery}
 
 ---
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 &sharedimagegallery.SharedImageGallerySharingCommunityGallery {
 	Eula: *string,
@@ -1220,10 +1220,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.eula">Eula</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#eula SharedImageGallery#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#prefix SharedImageGallery#prefix}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.publisherEmail">PublisherEmail</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#publisher_email SharedImageGallery#publisher_email}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.publisherUri">PublisherUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#publisher_uri SharedImageGallery#publisher_uri}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.eula">Eula</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#eula SharedImageGallery#eula}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#prefix SharedImageGallery#prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.publisherEmail">PublisherEmail</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#publisher_email SharedImageGallery#publisher_email}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGallery.property.publisherUri">PublisherUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#publisher_uri SharedImageGallery#publisher_uri}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ Eula *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#eula SharedImageGallery#eula}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#eula SharedImageGallery#eula}.
 
 ---
 
@@ -1247,7 +1247,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#prefix SharedImageGallery#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#prefix SharedImageGallery#prefix}.
 
 ---
 
@@ -1259,7 +1259,7 @@ PublisherEmail *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#publisher_email SharedImageGallery#publisher_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#publisher_email SharedImageGallery#publisher_email}.
 
 ---
 
@@ -1271,7 +1271,7 @@ PublisherUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#publisher_uri SharedImageGallery#publisher_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#publisher_uri SharedImageGallery#publisher_uri}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 &sharedimagegallery.SharedImageGalleryTimeouts {
 	Create: *string,
@@ -1294,10 +1294,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#create SharedImageGallery#create}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#delete SharedImageGallery#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#read SharedImageGallery#read}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#update SharedImageGallery#update}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#create SharedImageGallery#create}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#delete SharedImageGallery#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#read SharedImageGallery#read}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#update SharedImageGallery#update}. |
 
 ---
 
@@ -1309,7 +1309,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#create SharedImageGallery#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#create SharedImageGallery#create}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#delete SharedImageGallery#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#delete SharedImageGallery#delete}.
 
 ---
 
@@ -1333,7 +1333,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#read SharedImageGallery#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#read SharedImageGallery#read}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/shared_image_gallery#update SharedImageGallery#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/shared_image_gallery#update SharedImageGallery#update}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingCommunityGalleryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.NewSharedImageGallerySharingCommunityGalleryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageGallerySharingCommunityGalleryOutputReference
 ```
@@ -1704,7 +1704,7 @@ func InternalValue() SharedImageGallerySharingCommunityGallery
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGallerySharingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.NewSharedImageGallerySharingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageGallerySharingOutputReference
 ```
@@ -2017,7 +2017,7 @@ func InternalValue() SharedImageGallerySharing
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.sharedImageGallery.SharedImageGalleryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/sharedimagegallery"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/sharedimagegallery"
 
 sharedimagegallery.NewSharedImageGalleryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SharedImageGalleryTimeoutsOutputReference
 ```

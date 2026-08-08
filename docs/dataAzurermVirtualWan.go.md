@@ -4,12 +4,12 @@
 
 ### DataAzurermVirtualWan <a name="DataAzurermVirtualWan" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan azurerm_virtual_wan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan azurerm_virtual_wan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.NewDataAzurermVirtualWan(scope Construct, id *string, config DataAzurermVirtualWanConfig) DataAzurermVirtualWan
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.DataAzurermVirtualWan_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.DataAzurermVirtualWan_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermvirtualwan.DataAzurermVirtualWan_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.DataAzurermVirtualWan_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermvirtualwan.DataAzurermVirtualWan_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.DataAzurermVirtualWan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermVirtualWan to i
 
 The id of the existing DataAzurermVirtualWan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 &dataazurermvirtualwan.DataAzurermVirtualWanConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts,
 }
 ```
 
@@ -796,9 +796,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#name DataAzurermVirtualWan#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#resource_group_name DataAzurermVirtualWan#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#id DataAzurermVirtualWan#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#name DataAzurermVirtualWan#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#resource_group_name DataAzurermVirtualWan#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#id DataAzurermVirtualWan#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts">DataAzurermVirtualWanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -881,7 +881,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#name DataAzurermVirtualWan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#name DataAzurermVirtualWan#name}.
 
 ---
 
@@ -893,7 +893,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#resource_group_name DataAzurermVirtualWan#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#resource_group_name DataAzurermVirtualWan#resource_group_name}.
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#id DataAzurermVirtualWan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#id DataAzurermVirtualWan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ Timeouts DataAzurermVirtualWanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#timeouts DataAzurermVirtualWan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#timeouts DataAzurermVirtualWan#timeouts}
 
 ---
 
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 &dataazurermvirtualwan.DataAzurermVirtualWanTimeouts {
 	Read: *string,
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvir
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#read DataAzurermVirtualWan#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#read DataAzurermVirtualWan#read}. |
 
 ---
 
@@ -954,7 +954,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/virtual_wan#read DataAzurermVirtualWan#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/virtual_wan#read DataAzurermVirtualWan#read}.
 
 ---
 
@@ -965,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermVirtualWan.DataAzurermVirtualWanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermvirtualwan"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermvirtualwan"
 
 dataazurermvirtualwan.NewDataAzurermVirtualWanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermVirtualWanTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### AutomationSchedule <a name="AutomationSchedule" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule azurerm_automation_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule azurerm_automation_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.NewAutomationSchedule(scope Construct, id *string, config AutomationScheduleConfig) AutomationSchedule
 ```
@@ -496,7 +496,7 @@ func ResetWeekDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.AutomationSchedule_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.AutomationSchedule_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ automationschedule.AutomationSchedule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.AutomationSchedule_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ automationschedule.AutomationSchedule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.automationSchedule.AutomationSchedule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.AutomationSchedule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ The construct id used in the generated config for the AutomationSchedule to impo
 
 The id of the existing AutomationSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1093,7 +1093,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 &automationschedule.AutomationScheduleConfig {
 	Connection: interface{},
@@ -1112,9 +1112,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsche
 	Id: *string,
 	Interval: *f64,
 	MonthDays: *[]*f64,
-	MonthlyOccurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSchedule.AutomationScheduleMonthlyOccurrence,
+	MonthlyOccurrence: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.automationSchedule.AutomationScheduleMonthlyOccurrence,
 	StartTime: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.automationSchedule.AutomationScheduleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.automationSchedule.AutomationScheduleTimeouts,
 	Timezone: *string,
 	WeekDays: *[]*string,
 }
@@ -1131,20 +1131,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsche
 | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#automation_account_name AutomationSchedule#automation_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#frequency AutomationSchedule#frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#name AutomationSchedule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#resource_group_name AutomationSchedule#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#description AutomationSchedule#description}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.expiryTime">ExpiryTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#expiry_time AutomationSchedule#expiry_time}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#id AutomationSchedule#id}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#interval AutomationSchedule#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.monthDays">MonthDays</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#month_days AutomationSchedule#month_days}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.automationAccountName">AutomationAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#automation_account_name AutomationSchedule#automation_account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.frequency">Frequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#frequency AutomationSchedule#frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#name AutomationSchedule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#resource_group_name AutomationSchedule#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#description AutomationSchedule#description}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.expiryTime">ExpiryTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#expiry_time AutomationSchedule#expiry_time}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#id AutomationSchedule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#interval AutomationSchedule#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.monthDays">MonthDays</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#month_days AutomationSchedule#month_days}. |
 | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.monthlyOccurrence">MonthlyOccurrence</a></code> | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence">AutomationScheduleMonthlyOccurrence</a></code> | monthly_occurrence block. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#start_time AutomationSchedule#start_time}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#start_time AutomationSchedule#start_time}. |
 | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts">AutomationScheduleTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.timezone">Timezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#timezone AutomationSchedule#timezone}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.weekDays">WeekDays</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#week_days AutomationSchedule#week_days}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.timezone">Timezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#timezone AutomationSchedule#timezone}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleConfig.property.weekDays">WeekDays</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#week_days AutomationSchedule#week_days}. |
 
 ---
 
@@ -1226,7 +1226,7 @@ AutomationAccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#automation_account_name AutomationSchedule#automation_account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#automation_account_name AutomationSchedule#automation_account_name}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Frequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#frequency AutomationSchedule#frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#frequency AutomationSchedule#frequency}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#name AutomationSchedule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#name AutomationSchedule#name}.
 
 ---
 
@@ -1262,7 +1262,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#resource_group_name AutomationSchedule#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#resource_group_name AutomationSchedule#resource_group_name}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#description AutomationSchedule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#description AutomationSchedule#description}.
 
 ---
 
@@ -1286,7 +1286,7 @@ ExpiryTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#expiry_time AutomationSchedule#expiry_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#expiry_time AutomationSchedule#expiry_time}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#id AutomationSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#id AutomationSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1313,7 +1313,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#interval AutomationSchedule#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#interval AutomationSchedule#interval}.
 
 ---
 
@@ -1325,7 +1325,7 @@ MonthDays *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#month_days AutomationSchedule#month_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#month_days AutomationSchedule#month_days}.
 
 ---
 
@@ -1339,7 +1339,7 @@ MonthlyOccurrence AutomationScheduleMonthlyOccurrence
 
 monthly_occurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#monthly_occurrence AutomationSchedule#monthly_occurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#monthly_occurrence AutomationSchedule#monthly_occurrence}
 
 ---
 
@@ -1351,7 +1351,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#start_time AutomationSchedule#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#start_time AutomationSchedule#start_time}.
 
 ---
 
@@ -1365,7 +1365,7 @@ Timeouts AutomationScheduleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#timeouts AutomationSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#timeouts AutomationSchedule#timeouts}
 
 ---
 
@@ -1377,7 +1377,7 @@ Timezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#timezone AutomationSchedule#timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#timezone AutomationSchedule#timezone}.
 
 ---
 
@@ -1389,7 +1389,7 @@ WeekDays *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#week_days AutomationSchedule#week_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#week_days AutomationSchedule#week_days}.
 
 ---
 
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 &automationschedule.AutomationScheduleMonthlyOccurrence {
 	Day: *string,
@@ -1410,8 +1410,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsche
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.property.day">Day</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#day AutomationSchedule#day}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.property.occurrence">Occurrence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#occurrence AutomationSchedule#occurrence}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.property.day">Day</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#day AutomationSchedule#day}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrence.property.occurrence">Occurrence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#occurrence AutomationSchedule#occurrence}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ Day *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#day AutomationSchedule#day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#day AutomationSchedule#day}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Occurrence *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#occurrence AutomationSchedule#occurrence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#occurrence AutomationSchedule#occurrence}.
 
 ---
 
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 &automationschedule.AutomationScheduleTimeouts {
 	Create: *string,
@@ -1458,10 +1458,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationsche
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#create AutomationSchedule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#delete AutomationSchedule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#read AutomationSchedule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#update AutomationSchedule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#create AutomationSchedule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#delete AutomationSchedule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#read AutomationSchedule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#update AutomationSchedule#update}. |
 
 ---
 
@@ -1473,7 +1473,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#create AutomationSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#create AutomationSchedule#create}.
 
 ---
 
@@ -1485,7 +1485,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#delete AutomationSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#delete AutomationSchedule#delete}.
 
 ---
 
@@ -1497,7 +1497,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#read AutomationSchedule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#read AutomationSchedule#read}.
 
 ---
 
@@ -1509,7 +1509,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/automation_schedule#update AutomationSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/automation_schedule#update AutomationSchedule#update}.
 
 ---
 
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleMonthlyOccurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.NewAutomationScheduleMonthlyOccurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationScheduleMonthlyOccurrenceOutputReference
 ```
@@ -1813,7 +1813,7 @@ func InternalValue() AutomationScheduleMonthlyOccurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.automationSchedule.AutomationScheduleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/automationschedule"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/automationschedule"
 
 automationschedule.NewAutomationScheduleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutomationScheduleTimeoutsOutputReference
 ```

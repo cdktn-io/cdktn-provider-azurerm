@@ -4,7 +4,7 @@
 
 ### Eventhub <a name="Eventhub" id="@cdktn/provider-azurerm.eventhub.Eventhub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub azurerm_eventhub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub azurerm_eventhub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer"></a>
 
@@ -20,13 +20,11 @@ Eventhub.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+    .namespaceId(java.lang.String)
     .partitionCount(java.lang.Number)
 //  .captureDescription(EventhubCaptureDescription)
 //  .id(java.lang.String)
 //  .messageRetention(java.lang.Number)
-//  .namespaceId(java.lang.String)
-//  .namespaceName(java.lang.String)
-//  .resourceGroupName(java.lang.String)
 //  .retentionDescription(EventhubRetentionDescription)
 //  .status(java.lang.String)
 //  .timeouts(EventhubTimeouts)
@@ -44,16 +42,14 @@ Eventhub.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.partitionCount">partitionCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.partitionCount">partitionCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.captureDescription">captureDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription">EventhubCaptureDescription</a></code> | capture_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.messageRetention">messageRetention</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceName">namespaceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#id Eventhub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.messageRetention">messageRetention</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.retentionDescription">retentionDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription">EventhubRetentionDescription</a></code> | retention_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#status Eventhub#status}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts">EventhubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +118,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}.
+
+---
+
+##### `namespaceId`<sup>Required</sup> <a name="namespaceId" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
 
 ---
 
@@ -130,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#partition_count Eventhub#partition_count}.
 
 ---
 
@@ -140,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 capture_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#capture_description Eventhub#capture_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#capture_description Eventhub#capture_description}
 
 ---
 
@@ -148,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#id Eventhub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,31 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}.
-
----
-
-##### `namespaceId`<sup>Optional</sup> <a name="namespaceId" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceId"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
-
----
-
-##### `namespaceName`<sup>Optional</sup> <a name="namespaceName" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.namespaceName"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}.
-
----
-
-##### `resourceGroupName`<sup>Optional</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.eventhub.Eventhub.Initializer.parameter.resourceGroupName"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#message_retention Eventhub#message_retention}.
 
 ---
 
@@ -193,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_description Eventhub#retention_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#retention_description Eventhub#retention_description}
 
 ---
 
@@ -201,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#status Eventhub#status}.
 
 ---
 
@@ -211,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#timeouts Eventhub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#timeouts Eventhub#timeouts}
 
 ---
 
@@ -249,9 +229,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetCaptureDescription">resetCaptureDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetMessageRetention">resetMessageRetention</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetNamespaceId">resetNamespaceId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetNamespaceName">resetNamespaceName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetResourceGroupName">resetResourceGroupName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetRetentionDescription">resetRetentionDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -623,24 +600,6 @@ public void resetId()
 public void resetMessageRetention()
 ```
 
-##### `resetNamespaceId` <a name="resetNamespaceId" id="@cdktn/provider-azurerm.eventhub.Eventhub.resetNamespaceId"></a>
-
-```java
-public void resetNamespaceId()
-```
-
-##### `resetNamespaceName` <a name="resetNamespaceName" id="@cdktn/provider-azurerm.eventhub.Eventhub.resetNamespaceName"></a>
-
-```java
-public void resetNamespaceName()
-```
-
-##### `resetResourceGroupName` <a name="resetResourceGroupName" id="@cdktn/provider-azurerm.eventhub.Eventhub.resetResourceGroupName"></a>
-
-```java
-public void resetResourceGroupName()
-```
-
 ##### `resetRetentionDescription` <a name="resetRetentionDescription" id="@cdktn/provider-azurerm.eventhub.Eventhub.resetRetentionDescription"></a>
 
 ```java
@@ -762,7 +721,7 @@ The construct id used in the generated config for the Eventhub to import.
 
 The id of the existing Eventhub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,9 +760,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.messageRetentionInput">messageRetentionInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceIdInput">namespaceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceNameInput">namespaceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.partitionCountInput">partitionCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.retentionDescriptionInput">retentionDescriptionInput</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription">EventhubRetentionDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts">EventhubTimeouts</a></code> | *No description.* |
@@ -811,9 +768,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.messageRetention">messageRetention</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceName">namespaceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.partitionCount">partitionCount</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.Eventhub.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -1050,16 +1005,6 @@ public java.lang.String getNamespaceIdInput();
 
 ---
 
-##### `namespaceNameInput`<sup>Optional</sup> <a name="namespaceNameInput" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceNameInput"></a>
-
-```java
-public java.lang.String getNamespaceNameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `partitionCountInput`<sup>Optional</sup> <a name="partitionCountInput" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.partitionCountInput"></a>
 
 ```java
@@ -1067,16 +1012,6 @@ public java.lang.Number getPartitionCountInput();
 ```
 
 - *Type:* java.lang.Number
-
----
-
-##### `resourceGroupNameInput`<sup>Optional</sup> <a name="resourceGroupNameInput" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.resourceGroupNameInput"></a>
-
-```java
-public java.lang.String getResourceGroupNameInput();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -1150,16 +1085,6 @@ public java.lang.String getNamespaceId();
 
 ---
 
-##### `namespaceName`<sup>Required</sup> <a name="namespaceName" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.namespaceName"></a>
-
-```java
-public java.lang.String getNamespaceName();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `partitionCount`<sup>Required</sup> <a name="partitionCount" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.partitionCount"></a>
 
 ```java
@@ -1167,16 +1092,6 @@ public java.lang.Number getPartitionCount();
 ```
 
 - *Type:* java.lang.Number
-
----
-
-##### `resourceGroupName`<sup>Required</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.eventhub.Eventhub.property.resourceGroupName"></a>
-
-```java
-public java.lang.String getResourceGroupName();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -1232,11 +1147,11 @@ EventhubCaptureDescription.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination">EventhubCaptureDescriptionDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#enabled Eventhub#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.encoding">encoding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#encoding Eventhub#encoding}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.intervalInSeconds">intervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.sizeLimitInBytes">sizeLimitInBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.skipEmptyArchives">skipEmptyArchives</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#enabled Eventhub#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.encoding">encoding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#encoding Eventhub#encoding}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.intervalInSeconds">intervalInSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.sizeLimitInBytes">sizeLimitInBytes</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription.property.skipEmptyArchives">skipEmptyArchives</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}. |
 
 ---
 
@@ -1250,7 +1165,7 @@ public EventhubCaptureDescriptionDestination getDestination();
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#destination Eventhub#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#destination Eventhub#destination}
 
 ---
 
@@ -1262,7 +1177,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#enabled Eventhub#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#enabled Eventhub#enabled}.
 
 ---
 
@@ -1274,7 +1189,7 @@ public java.lang.String getEncoding();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#encoding Eventhub#encoding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#encoding Eventhub#encoding}.
 
 ---
 
@@ -1286,7 +1201,7 @@ public java.lang.Number getIntervalInSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#interval_in_seconds Eventhub#interval_in_seconds}.
 
 ---
 
@@ -1298,7 +1213,7 @@ public java.lang.Number getSizeLimitInBytes();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#size_limit_in_bytes Eventhub#size_limit_in_bytes}.
 
 ---
 
@@ -1310,7 +1225,7 @@ public java.lang.Boolean|IResolvable getSkipEmptyArchives();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#skip_empty_archives Eventhub#skip_empty_archives}.
 
 ---
 
@@ -1335,12 +1250,12 @@ EventhubCaptureDescriptionDestination.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.archiveNameFormat">archiveNameFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.blobContainerName">blobContainerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationId">storageAuthenticationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.archiveNameFormat">archiveNameFormat</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.blobContainerName">blobContainerName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAccountId">storageAccountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationId">storageAuthenticationId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescriptionDestination.property.storageAuthenticationType">storageAuthenticationType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}. |
 
 ---
 
@@ -1352,7 +1267,7 @@ public java.lang.String getArchiveNameFormat();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#archive_name_format Eventhub#archive_name_format}.
 
 ---
 
@@ -1364,7 +1279,7 @@ public java.lang.String getBlobContainerName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#blob_container_name Eventhub#blob_container_name}.
 
 ---
 
@@ -1376,7 +1291,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}.
 
 ---
 
@@ -1388,7 +1303,7 @@ public java.lang.String getStorageAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_account_id Eventhub#storage_account_id}.
 
 ---
 
@@ -1400,7 +1315,7 @@ public java.lang.String getStorageAuthenticationId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_authentication_id Eventhub#storage_authentication_id}.
 
 ---
 
@@ -1412,7 +1327,7 @@ public java.lang.String getStorageAuthenticationType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#storage_authentication_type Eventhub#storage_authentication_type}.
 
 ---
 
@@ -1432,13 +1347,11 @@ EventhubConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
+    .namespaceId(java.lang.String)
     .partitionCount(java.lang.Number)
 //  .captureDescription(EventhubCaptureDescription)
 //  .id(java.lang.String)
 //  .messageRetention(java.lang.Number)
-//  .namespaceId(java.lang.String)
-//  .namespaceName(java.lang.String)
-//  .resourceGroupName(java.lang.String)
 //  .retentionDescription(EventhubRetentionDescription)
 //  .status(java.lang.String)
 //  .timeouts(EventhubTimeouts)
@@ -1456,16 +1369,14 @@ EventhubConfig.builder()
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.partitionCount">partitionCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.partitionCount">partitionCount</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#partition_count Eventhub#partition_count}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.captureDescription">captureDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubCaptureDescription">EventhubCaptureDescription</a></code> | capture_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.messageRetention">messageRetention</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId">namespaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceName">namespaceName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#id Eventhub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.messageRetention">messageRetention</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#message_retention Eventhub#message_retention}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.retentionDescription">retentionDescription</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription">EventhubRetentionDescription</a></code> | retention_description block. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#status Eventhub#status}. |
 | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts">EventhubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1548,7 +1459,19 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#name Eventhub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#name Eventhub#name}.
+
+---
+
+##### `namespaceId`<sup>Required</sup> <a name="namespaceId" id="@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId"></a>
+
+```java
+public java.lang.String getNamespaceId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
 
 ---
 
@@ -1560,7 +1483,7 @@ public java.lang.Number getPartitionCount();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#partition_count Eventhub#partition_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#partition_count Eventhub#partition_count}.
 
 ---
 
@@ -1574,7 +1497,7 @@ public EventhubCaptureDescription getCaptureDescription();
 
 capture_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#capture_description Eventhub#capture_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#capture_description Eventhub#capture_description}
 
 ---
 
@@ -1586,7 +1509,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#id Eventhub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#id Eventhub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1601,43 +1524,7 @@ public java.lang.Number getMessageRetention();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#message_retention Eventhub#message_retention}.
-
----
-
-##### `namespaceId`<sup>Optional</sup> <a name="namespaceId" id="@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceId"></a>
-
-```java
-public java.lang.String getNamespaceId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_id Eventhub#namespace_id}.
-
----
-
-##### `namespaceName`<sup>Optional</sup> <a name="namespaceName" id="@cdktn/provider-azurerm.eventhub.EventhubConfig.property.namespaceName"></a>
-
-```java
-public java.lang.String getNamespaceName();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#namespace_name Eventhub#namespace_name}.
-
----
-
-##### `resourceGroupName`<sup>Optional</sup> <a name="resourceGroupName" id="@cdktn/provider-azurerm.eventhub.EventhubConfig.property.resourceGroupName"></a>
-
-```java
-public java.lang.String getResourceGroupName();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#resource_group_name Eventhub#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#message_retention Eventhub#message_retention}.
 
 ---
 
@@ -1651,7 +1538,7 @@ public EventhubRetentionDescription getRetentionDescription();
 
 retention_description block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_description Eventhub#retention_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#retention_description Eventhub#retention_description}
 
 ---
 
@@ -1663,7 +1550,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#status Eventhub#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#status Eventhub#status}.
 
 ---
 
@@ -1677,7 +1564,7 @@ public EventhubTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#timeouts Eventhub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#timeouts Eventhub#timeouts}
 
 ---
 
@@ -1699,9 +1586,9 @@ EventhubRetentionDescription.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.cleanupPolicy">cleanupPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.retentionTimeInHours">retentionTimeInHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.tombstoneRetentionTimeInHours">tombstoneRetentionTimeInHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.cleanupPolicy">cleanupPolicy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.retentionTimeInHours">retentionTimeInHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubRetentionDescription.property.tombstoneRetentionTimeInHours">tombstoneRetentionTimeInHours</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}. |
 
 ---
 
@@ -1713,7 +1600,7 @@ public java.lang.String getCleanupPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#cleanup_policy Eventhub#cleanup_policy}.
 
 ---
 
@@ -1725,7 +1612,7 @@ public java.lang.Number getRetentionTimeInHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#retention_time_in_hours Eventhub#retention_time_in_hours}.
 
 ---
 
@@ -1737,7 +1624,7 @@ public java.lang.Number getTombstoneRetentionTimeInHours();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#tombstone_retention_time_in_hours Eventhub#tombstone_retention_time_in_hours}.
 
 ---
 
@@ -1760,10 +1647,10 @@ EventhubTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#create Eventhub#create}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#delete Eventhub#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#read Eventhub#read}. |
-| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#update Eventhub#update}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#create Eventhub#create}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#delete Eventhub#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#read Eventhub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.eventhub.EventhubTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#update Eventhub#update}. |
 
 ---
 
@@ -1775,7 +1662,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#create Eventhub#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#create Eventhub#create}.
 
 ---
 
@@ -1787,7 +1674,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#delete Eventhub#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#delete Eventhub#delete}.
 
 ---
 
@@ -1799,7 +1686,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#read Eventhub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#read Eventhub#read}.
 
 ---
 
@@ -1811,7 +1698,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/eventhub#update Eventhub#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/eventhub#update Eventhub#update}.
 
 ---
 

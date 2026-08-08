@@ -4,12 +4,12 @@
 
 ### StorageBlob <a name="StorageBlob" id="@cdktn/provider-azurerm.storageBlob.StorageBlob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob azurerm_storage_blob}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob azurerm_storage_blob}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.NewStorageBlob(scope Construct, id *string, config StorageBlobConfig) StorageBlob
 ```
@@ -87,9 +87,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetSource">ResetSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetSourceContent">ResetSourceContent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetSourceUri">ResetSourceUri</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageAccountName">ResetStorageAccountName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageContainerId">ResetStorageContainerId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageContainerName">ResetStorageContainerName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -487,24 +484,6 @@ func ResetSourceContent()
 func ResetSourceUri()
 ```
 
-##### `ResetStorageAccountName` <a name="ResetStorageAccountName" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageAccountName"></a>
-
-```go
-func ResetStorageAccountName()
-```
-
-##### `ResetStorageContainerId` <a name="ResetStorageContainerId" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageContainerId"></a>
-
-```go
-func ResetStorageContainerId()
-```
-
-##### `ResetStorageContainerName` <a name="ResetStorageContainerName" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.resetStorageContainerName"></a>
-
-```go
-func ResetStorageContainerName()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.resetTimeouts"></a>
 
 ```go
@@ -525,7 +504,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.StorageBlob_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.StorageBlob_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +550,7 @@ storageblob.StorageBlob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.StorageBlob_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +564,7 @@ storageblob.StorageBlob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.StorageBlob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -614,7 +593,7 @@ The construct id used in the generated config for the StorageBlob to import.
 
 The id of the existing StorageBlob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,9 +638,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.sourceContentInput">SourceContentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.sourceInput">SourceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.sourceUriInput">SourceUriInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageAccountNameInput">StorageAccountNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerIdInput">StorageContainerIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerNameInput">StorageContainerNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.accessTier">AccessTier</a></code> | <code>*string</code> | *No description.* |
@@ -677,9 +654,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.source">Source</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.sourceContent">SourceContent</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.sourceUri">SourceUri</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageAccountName">StorageAccountName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerId">StorageContainerId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerName">StorageContainerName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlob.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -976,30 +951,10 @@ func SourceUriInput() *string
 
 ---
 
-##### `StorageAccountNameInput`<sup>Optional</sup> <a name="StorageAccountNameInput" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageAccountNameInput"></a>
-
-```go
-func StorageAccountNameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `StorageContainerIdInput`<sup>Optional</sup> <a name="StorageContainerIdInput" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerIdInput"></a>
 
 ```go
 func StorageContainerIdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `StorageContainerNameInput`<sup>Optional</sup> <a name="StorageContainerNameInput" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerNameInput"></a>
-
-```go
-func StorageContainerNameInput() *string
 ```
 
 - *Type:* *string
@@ -1156,30 +1111,10 @@ func SourceUri() *string
 
 ---
 
-##### `StorageAccountName`<sup>Required</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageAccountName"></a>
-
-```go
-func StorageAccountName() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `StorageContainerId`<sup>Required</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerId"></a>
 
 ```go
 func StorageContainerId() *string
-```
-
-- *Type:* *string
-
----
-
-##### `StorageContainerName`<sup>Required</sup> <a name="StorageContainerName" id="@cdktn/provider-azurerm.storageBlob.StorageBlob.property.storageContainerName"></a>
-
-```go
-func StorageContainerName() *string
 ```
 
 - *Type:* *string
@@ -1221,7 +1156,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 &storageblob.StorageBlobConfig {
 	Connection: interface{},
@@ -1232,6 +1167,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	StorageContainerId: *string,
 	Type: *string,
 	AccessTier: *string,
 	CacheControl: *string,
@@ -1245,10 +1181,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
 	Source: *string,
 	SourceContent: *string,
 	SourceUri: *string,
-	StorageAccountName: *string,
-	StorageContainerId: *string,
-	StorageContainerName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageBlob.StorageBlobTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageBlob.StorageBlobTimeouts,
 }
 ```
 
@@ -1263,23 +1196,21 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#name StorageBlob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#type StorageBlob#type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.accessTier">AccessTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#access_tier StorageBlob#access_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.cacheControl">CacheControl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.contentMd5">ContentMd5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#content_type StorageBlob#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.encryptionScope">EncryptionScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#id StorageBlob#id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#metadata StorageBlob#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.parallelism">Parallelism</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#size StorageBlob#size}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source StorageBlob#source}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.sourceContent">SourceContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source_content StorageBlob#source_content}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.sourceUri">SourceUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageAccountName">StorageAccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerId">StorageContainerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_container_id StorageBlob#storage_container_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerName">StorageContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#name StorageBlob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerId">StorageContainerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#storage_container_id StorageBlob#storage_container_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#type StorageBlob#type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.accessTier">AccessTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#access_tier StorageBlob#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.cacheControl">CacheControl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#cache_control StorageBlob#cache_control}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.contentMd5">ContentMd5</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#content_type StorageBlob#content_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.encryptionScope">EncryptionScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#id StorageBlob#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#metadata StorageBlob#metadata}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.parallelism">Parallelism</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#parallelism StorageBlob#parallelism}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#size StorageBlob#size}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source StorageBlob#source}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.sourceContent">SourceContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source_content StorageBlob#source_content}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.sourceUri">SourceUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source_uri StorageBlob#source_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts">StorageBlobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1362,7 +1293,19 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#name StorageBlob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#name StorageBlob#name}.
+
+---
+
+##### `StorageContainerId`<sup>Required</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerId"></a>
+
+```go
+StorageContainerId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#storage_container_id StorageBlob#storage_container_id}.
 
 ---
 
@@ -1374,7 +1317,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#type StorageBlob#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#type StorageBlob#type}.
 
 ---
 
@@ -1386,7 +1329,7 @@ AccessTier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#access_tier StorageBlob#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#access_tier StorageBlob#access_tier}.
 
 ---
 
@@ -1398,7 +1341,7 @@ CacheControl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#cache_control StorageBlob#cache_control}.
 
 ---
 
@@ -1410,7 +1353,7 @@ ContentMd5 *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}.
 
 ---
 
@@ -1422,7 +1365,7 @@ ContentType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#content_type StorageBlob#content_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#content_type StorageBlob#content_type}.
 
 ---
 
@@ -1434,7 +1377,7 @@ EncryptionScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}.
 
 ---
 
@@ -1446,7 +1389,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#id StorageBlob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#id StorageBlob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1461,7 +1404,7 @@ Metadata *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#metadata StorageBlob#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#metadata StorageBlob#metadata}.
 
 ---
 
@@ -1473,7 +1416,7 @@ Parallelism *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#parallelism StorageBlob#parallelism}.
 
 ---
 
@@ -1485,7 +1428,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#size StorageBlob#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#size StorageBlob#size}.
 
 ---
 
@@ -1497,7 +1440,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source StorageBlob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source StorageBlob#source}.
 
 ---
 
@@ -1509,7 +1452,7 @@ SourceContent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source_content StorageBlob#source_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source_content StorageBlob#source_content}.
 
 ---
 
@@ -1521,43 +1464,7 @@ SourceUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}.
-
----
-
-##### `StorageAccountName`<sup>Optional</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageAccountName"></a>
-
-```go
-StorageAccountName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}.
-
----
-
-##### `StorageContainerId`<sup>Optional</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerId"></a>
-
-```go
-StorageContainerId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_container_id StorageBlob#storage_container_id}.
-
----
-
-##### `StorageContainerName`<sup>Optional</sup> <a name="StorageContainerName" id="@cdktn/provider-azurerm.storageBlob.StorageBlobConfig.property.storageContainerName"></a>
-
-```go
-StorageContainerName *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#source_uri StorageBlob#source_uri}.
 
 ---
 
@@ -1571,7 +1478,7 @@ Timeouts StorageBlobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#timeouts StorageBlob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#timeouts StorageBlob#timeouts}
 
 ---
 
@@ -1580,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 &storageblob.StorageBlobTimeouts {
 	Create: *string,
@@ -1594,10 +1501,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#create StorageBlob#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#delete StorageBlob#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#read StorageBlob#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#update StorageBlob#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#create StorageBlob#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#delete StorageBlob#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#read StorageBlob#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageBlob.StorageBlobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#update StorageBlob#update}. |
 
 ---
 
@@ -1609,7 +1516,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#create StorageBlob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#create StorageBlob#create}.
 
 ---
 
@@ -1621,7 +1528,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#delete StorageBlob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#delete StorageBlob#delete}.
 
 ---
 
@@ -1633,7 +1540,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#read StorageBlob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#read StorageBlob#read}.
 
 ---
 
@@ -1645,7 +1552,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_blob#update StorageBlob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_blob#update StorageBlob#update}.
 
 ---
 
@@ -1656,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageBlob.StorageBlobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageblob"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageblob"
 
 storageblob.NewStorageBlobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageBlobTimeoutsOutputReference
 ```

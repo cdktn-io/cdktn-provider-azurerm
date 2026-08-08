@@ -4,12 +4,12 @@
 
 ### DataAzurermExtendedLocationCustomLocation <a name="DataAzurermExtendedLocationCustomLocation" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location azurerm_extended_location_custom_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocation(scope Construct, id *string, config DataAzurermExtendedLocationCustomLocationConfig) DataAzurermExtendedLocationCustomLocation
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocat
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermExtendedLocatio
 
 The id of the existing DataAzurermExtendedLocationCustomLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationAuthentication {
 
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermext
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermext
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts,
 }
 ```
 
@@ -798,9 +798,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermext
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#name DataAzurermExtendedLocationCustomLocation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#resource_group_name DataAzurermExtendedLocationCustomLocation#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#id DataAzurermExtendedLocationCustomLocation#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#name DataAzurermExtendedLocationCustomLocation#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#resource_group_name DataAzurermExtendedLocationCustomLocation#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#id DataAzurermExtendedLocationCustomLocation#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts">DataAzurermExtendedLocationCustomLocationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -883,7 +883,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#name DataAzurermExtendedLocationCustomLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#name DataAzurermExtendedLocationCustomLocation#name}.
 
 ---
 
@@ -895,7 +895,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#resource_group_name DataAzurermExtendedLocationCustomLocation#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#resource_group_name DataAzurermExtendedLocationCustomLocation#resource_group_name}.
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#id DataAzurermExtendedLocationCustomLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#id DataAzurermExtendedLocationCustomLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ Timeouts DataAzurermExtendedLocationCustomLocationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#timeouts DataAzurermExtendedLocationCustomLocation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#timeouts DataAzurermExtendedLocationCustomLocation#timeouts}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 &dataazurermextendedlocationcustomlocation.DataAzurermExtendedLocationCustomLocationTimeouts {
 	Read: *string,
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermext
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#read DataAzurermExtendedLocationCustomLocation#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#read DataAzurermExtendedLocationCustomLocation#read}. |
 
 ---
 
@@ -956,7 +956,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/extended_location_custom_location#read DataAzurermExtendedLocationCustomLocation#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/extended_location_custom_location#read DataAzurermExtendedLocationCustomLocation#read}.
 
 ---
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthenticationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationAuthenticationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermExtendedLocationCustomLocationAuthenticationList
 ```
@@ -1116,7 +1116,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermExtendedLocationCustomLocationAuthenticationOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() DataAzurermExtendedLocationCustomLocationAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermExtendedLocationCustomLocation.DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermextendedlocationcustomlocation"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermextendedlocationcustomlocation"
 
 dataazurermextendedlocationcustomlocation.NewDataAzurermExtendedLocationCustomLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermExtendedLocationCustomLocationTimeoutsOutputReference
 ```

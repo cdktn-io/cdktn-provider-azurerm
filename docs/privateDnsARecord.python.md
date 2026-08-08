@@ -4,7 +4,7 @@
 
 ### PrivateDnsARecord <a name="PrivateDnsARecord" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record azurerm_private_dns_a_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record azurerm_private_dns_a_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer"></a>
 
@@ -22,10 +22,9 @@ privateDnsARecord.PrivateDnsARecord(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  private_dns_zone_id: str,
   records: typing.List[str],
-  resource_group_name: str,
   ttl: typing.Union[int, float],
-  zone_name: str,
   id: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: PrivateDnsARecordTimeouts = None
@@ -43,13 +42,12 @@ privateDnsARecord.PrivateDnsARecord(
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#resource_group_name PrivateDnsARecord#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.zoneName">zone_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#zone_name PrivateDnsARecord#zone_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.privateDnsZoneId">private_dns_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#private_dns_zone_id PrivateDnsARecord#private_dns_zone_id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts">PrivateDnsARecordTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +116,15 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}.
+
+---
+
+##### `private_dns_zone_id`<sup>Required</sup> <a name="private_dns_zone_id" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.privateDnsZoneId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#private_dns_zone_id PrivateDnsARecord#private_dns_zone_id}.
 
 ---
 
@@ -126,15 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}.
-
----
-
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.resourceGroupName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#resource_group_name PrivateDnsARecord#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}.
 
 ---
 
@@ -142,15 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}.
-
----
-
-##### `zone_name`<sup>Required</sup> <a name="zone_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.Initializer.parameter.zoneName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#zone_name PrivateDnsARecord#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}.
 
 ---
 
@@ -158,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}.
 
 ---
 
@@ -179,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#timeouts PrivateDnsARecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#timeouts PrivateDnsARecord#timeouts}
 
 ---
 
@@ -581,7 +571,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}.
 
 ---
 
@@ -589,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}.
 
 ---
 
@@ -597,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}.
 
 ---
 
@@ -605,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}.
 
 ---
 
@@ -741,7 +731,7 @@ The construct id used in the generated config for the PrivateDnsARecord to impor
 
 The id of the existing PrivateDnsARecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -775,19 +765,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeoutsOutputReference">PrivateDnsARecordTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.privateDnsZoneIdInput">private_dns_zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.recordsInput">records_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts">PrivateDnsARecordTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.zoneNameInput">zone_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.privateDnsZoneId">private_dns_zone_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.records">records</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.zoneName">zone_name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -973,6 +961,16 @@ name_input: str
 
 ---
 
+##### `private_dns_zone_id_input`<sup>Optional</sup> <a name="private_dns_zone_id_input" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.privateDnsZoneIdInput"></a>
+
+```python
+private_dns_zone_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `records_input`<sup>Optional</sup> <a name="records_input" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.recordsInput"></a>
 
 ```python
@@ -980,16 +978,6 @@ records_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `resource_group_name_input`<sup>Optional</sup> <a name="resource_group_name_input" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.resourceGroupNameInput"></a>
-
-```python
-resource_group_name_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1023,16 +1011,6 @@ ttl_input: typing.Union[int, float]
 
 ---
 
-##### `zone_name_input`<sup>Optional</sup> <a name="zone_name_input" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.zoneNameInput"></a>
-
-```python
-zone_name_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.id"></a>
 
 ```python
@@ -1053,6 +1031,16 @@ name: str
 
 ---
 
+##### `private_dns_zone_id`<sup>Required</sup> <a name="private_dns_zone_id" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.privateDnsZoneId"></a>
+
+```python
+private_dns_zone_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `records`<sup>Required</sup> <a name="records" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.records"></a>
 
 ```python
@@ -1060,16 +1048,6 @@ records: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
-
----
-
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.resourceGroupName"></a>
-
-```python
-resource_group_name: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1090,16 +1068,6 @@ ttl: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
-
----
-
-##### `zone_name`<sup>Required</sup> <a name="zone_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecord.property.zoneName"></a>
-
-```python
-zone_name: str
-```
-
-- *Type:* str
 
 ---
 
@@ -1139,10 +1107,9 @@ privateDnsARecord.PrivateDnsARecordConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  private_dns_zone_id: str,
   records: typing.List[str],
-  resource_group_name: str,
   ttl: typing.Union[int, float],
-  zone_name: str,
   id: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: PrivateDnsARecordTimeouts = None
@@ -1160,13 +1127,12 @@ privateDnsARecord.PrivateDnsARecordConfig(
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#resource_group_name PrivateDnsARecord#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.zoneName">zone_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#zone_name PrivateDnsARecord#zone_name}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.privateDnsZoneId">private_dns_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#private_dns_zone_id PrivateDnsARecord#private_dns_zone_id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts">PrivateDnsARecordTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1249,7 +1215,19 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#name PrivateDnsARecord#name}.
+
+---
+
+##### `private_dns_zone_id`<sup>Required</sup> <a name="private_dns_zone_id" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.privateDnsZoneId"></a>
+
+```python
+private_dns_zone_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#private_dns_zone_id PrivateDnsARecord#private_dns_zone_id}.
 
 ---
 
@@ -1261,19 +1239,7 @@ records: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}.
-
----
-
-##### `resource_group_name`<sup>Required</sup> <a name="resource_group_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.resourceGroupName"></a>
-
-```python
-resource_group_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#resource_group_name PrivateDnsARecord#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#records PrivateDnsARecord#records}.
 
 ---
 
@@ -1285,19 +1251,7 @@ ttl: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}.
-
----
-
-##### `zone_name`<sup>Required</sup> <a name="zone_name" id="@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordConfig.property.zoneName"></a>
-
-```python
-zone_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#zone_name PrivateDnsARecord#zone_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#ttl PrivateDnsARecord#ttl}.
 
 ---
 
@@ -1309,7 +1263,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#id PrivateDnsARecord#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1278,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#tags PrivateDnsARecord#tags}.
 
 ---
 
@@ -1338,7 +1292,7 @@ timeouts: PrivateDnsARecordTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#timeouts PrivateDnsARecord#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#timeouts PrivateDnsARecord#timeouts}
 
 ---
 
@@ -1361,10 +1315,10 @@ privateDnsARecord.PrivateDnsARecordTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}. |
-| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}. |
+| <code><a href="#@cdktn/provider-azurerm.privateDnsARecord.PrivateDnsARecordTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}. |
 
 ---
 
@@ -1376,7 +1330,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#create PrivateDnsARecord#create}.
 
 ---
 
@@ -1388,7 +1342,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#delete PrivateDnsARecord#delete}.
 
 ---
 
@@ -1400,7 +1354,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#read PrivateDnsARecord#read}.
 
 ---
 
@@ -1412,7 +1366,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/private_dns_a_record#update PrivateDnsARecord#update}.
 
 ---
 

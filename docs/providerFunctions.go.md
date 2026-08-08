@@ -11,7 +11,7 @@ Provider-defined functions of the azurerm provider.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.providerFunctions.AzurermProviderFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/providerfunctions"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/providerfunctions"
 
 providerfunctions.NewAzurermProviderFunctions(providerLocalName *string) AzurermProviderFunctions
 ```

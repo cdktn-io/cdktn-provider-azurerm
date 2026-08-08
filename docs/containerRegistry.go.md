@@ -4,12 +4,12 @@
 
 ### ContainerRegistry <a name="ContainerRegistry" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry azurerm_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry azurerm_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistry(scope Construct, id *string, config ContainerRegistryConfig) ContainerRegistry
 ```
@@ -97,7 +97,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetRoleAssignmentMode">ResetRoleAssignmentMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetTrustPolicyEnabled">ResetTrustPolicyEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetZoneRedundancyEnabled">ResetZoneRedundancyEnabled</a></code> | *No description.* |
 
 ---
@@ -579,12 +578,6 @@ func ResetTags()
 func ResetTimeouts()
 ```
 
-##### `ResetTrustPolicyEnabled` <a name="ResetTrustPolicyEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetTrustPolicyEnabled"></a>
-
-```go
-func ResetTrustPolicyEnabled()
-```
-
 ##### `ResetZoneRedundancyEnabled` <a name="ResetZoneRedundancyEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.resetZoneRedundancyEnabled"></a>
 
 ```go
@@ -605,7 +598,7 @@ func ResetZoneRedundancyEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.ContainerRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -637,7 +630,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.ContainerRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -651,7 +644,7 @@ containerregistry.ContainerRegistry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.ContainerRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -665,7 +658,7 @@ containerregistry.ContainerRegistry_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.ContainerRegistry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +687,7 @@ The construct id used in the generated config for the ContainerRegistry to impor
 
 The id of the existing ContainerRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +748,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.skuInput">SkuInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.trustPolicyEnabledInput">TrustPolicyEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.zoneRedundancyEnabledInput">ZoneRedundancyEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.anonymousPullEnabled">AnonymousPullEnabled</a></code> | <code>interface{}</code> | *No description.* |
@@ -774,7 +766,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.roleAssignmentMode">RoleAssignmentMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.sku">Sku</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.trustPolicyEnabled">TrustPolicyEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -1231,16 +1222,6 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `TrustPolicyEnabledInput`<sup>Optional</sup> <a name="TrustPolicyEnabledInput" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.trustPolicyEnabledInput"></a>
-
-```go
-func TrustPolicyEnabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `ZoneRedundancyEnabledInput`<sup>Optional</sup> <a name="ZoneRedundancyEnabledInput" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.zoneRedundancyEnabledInput"></a>
 
 ```go
@@ -1421,16 +1402,6 @@ func Tags() *map[string]*string
 
 ---
 
-##### `TrustPolicyEnabled`<sup>Required</sup> <a name="TrustPolicyEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.trustPolicyEnabled"></a>
-
-```go
-func TrustPolicyEnabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `ZoneRedundancyEnabled`<sup>Required</sup> <a name="ZoneRedundancyEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistry.property.zoneRedundancyEnabled"></a>
 
 ```go
@@ -1466,7 +1437,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryConfig {
 	Connection: interface{},
@@ -1488,7 +1459,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 	ExportPolicyEnabled: interface{},
 	Georeplications: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistry.ContainerRegistryIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.containerRegistry.ContainerRegistryIdentity,
 	NetworkRuleBypassForTasksEnabled: interface{},
 	NetworkRuleBypassOption: *string,
 	NetworkRuleSet: interface{},
@@ -1497,8 +1468,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 	RetentionPolicyInDays: *f64,
 	RoleAssignmentMode: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.containerRegistry.ContainerRegistryTimeouts,
-	TrustPolicyEnabled: interface{},
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.containerRegistry.ContainerRegistryTimeouts,
 	ZoneRedundancyEnabled: interface{},
 }
 ```
@@ -1514,30 +1484,29 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#location ContainerRegistry#location}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#name ContainerRegistry#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#resource_group_name ContainerRegistry#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#sku ContainerRegistry#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#admin_enabled ContainerRegistry#admin_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.anonymousPullEnabled">AnonymousPullEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#anonymous_pull_enabled ContainerRegistry#anonymous_pull_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.azureadAuthenticationAsArmPolicyEnabled">AzureadAuthenticationAsArmPolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#azuread_authentication_as_arm_policy_enabled ContainerRegistry#azuread_authentication_as_arm_policy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.dataEndpointEnabled">DataEndpointEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#data_endpoint_enabled ContainerRegistry#data_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.encryption">Encryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#encryption ContainerRegistry#encryption}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.exportPolicyEnabled">ExportPolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#export_policy_enabled ContainerRegistry#export_policy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#location ContainerRegistry#location}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#resource_group_name ContainerRegistry#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#sku ContainerRegistry#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.adminEnabled">AdminEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#admin_enabled ContainerRegistry#admin_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.anonymousPullEnabled">AnonymousPullEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#anonymous_pull_enabled ContainerRegistry#anonymous_pull_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.azureadAuthenticationAsArmPolicyEnabled">AzureadAuthenticationAsArmPolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#azuread_authentication_as_arm_policy_enabled ContainerRegistry#azuread_authentication_as_arm_policy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.dataEndpointEnabled">DataEndpointEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#data_endpoint_enabled ContainerRegistry#data_endpoint_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.encryption">Encryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#encryption ContainerRegistry#encryption}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.exportPolicyEnabled">ExportPolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#export_policy_enabled ContainerRegistry#export_policy_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.georeplications">Georeplications</a></code> | <code>interface{}</code> | georeplications block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#id ContainerRegistry#id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#id ContainerRegistry#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity">ContainerRegistryIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleBypassForTasksEnabled">NetworkRuleBypassForTasksEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_bypass_for_tasks_enabled ContainerRegistry#network_rule_bypass_for_tasks_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleBypassOption">NetworkRuleBypassOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_bypass_option ContainerRegistry#network_rule_bypass_option}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleSet">NetworkRuleSet</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_set ContainerRegistry#network_rule_set}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#public_network_access_enabled ContainerRegistry#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.quarantinePolicyEnabled">QuarantinePolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#quarantine_policy_enabled ContainerRegistry#quarantine_policy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.retentionPolicyInDays">RetentionPolicyInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#retention_policy_in_days ContainerRegistry#retention_policy_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.roleAssignmentMode">RoleAssignmentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#role_assignment_mode ContainerRegistry#role_assignment_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#tags ContainerRegistry#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleBypassForTasksEnabled">NetworkRuleBypassForTasksEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_bypass_for_tasks_enabled ContainerRegistry#network_rule_bypass_for_tasks_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleBypassOption">NetworkRuleBypassOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_bypass_option ContainerRegistry#network_rule_bypass_option}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.networkRuleSet">NetworkRuleSet</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_set ContainerRegistry#network_rule_set}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#public_network_access_enabled ContainerRegistry#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.quarantinePolicyEnabled">QuarantinePolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#quarantine_policy_enabled ContainerRegistry#quarantine_policy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.retentionPolicyInDays">RetentionPolicyInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#retention_policy_in_days ContainerRegistry#retention_policy_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.roleAssignmentMode">RoleAssignmentMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#role_assignment_mode ContainerRegistry#role_assignment_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#tags ContainerRegistry#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts">ContainerRegistryTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.trustPolicyEnabled">TrustPolicyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#trust_policy_enabled ContainerRegistry#trust_policy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}. |
 
 ---
 
@@ -1619,7 +1588,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#location ContainerRegistry#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#location ContainerRegistry#location}.
 
 ---
 
@@ -1631,7 +1600,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#name ContainerRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#name ContainerRegistry#name}.
 
 ---
 
@@ -1643,7 +1612,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#resource_group_name ContainerRegistry#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#resource_group_name ContainerRegistry#resource_group_name}.
 
 ---
 
@@ -1655,7 +1624,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#sku ContainerRegistry#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#sku ContainerRegistry#sku}.
 
 ---
 
@@ -1667,7 +1636,7 @@ AdminEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#admin_enabled ContainerRegistry#admin_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#admin_enabled ContainerRegistry#admin_enabled}.
 
 ---
 
@@ -1679,7 +1648,7 @@ AnonymousPullEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#anonymous_pull_enabled ContainerRegistry#anonymous_pull_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#anonymous_pull_enabled ContainerRegistry#anonymous_pull_enabled}.
 
 ---
 
@@ -1691,7 +1660,7 @@ AzureadAuthenticationAsArmPolicyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#azuread_authentication_as_arm_policy_enabled ContainerRegistry#azuread_authentication_as_arm_policy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#azuread_authentication_as_arm_policy_enabled ContainerRegistry#azuread_authentication_as_arm_policy_enabled}.
 
 ---
 
@@ -1703,7 +1672,7 @@ DataEndpointEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#data_endpoint_enabled ContainerRegistry#data_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#data_endpoint_enabled ContainerRegistry#data_endpoint_enabled}.
 
 ---
 
@@ -1715,7 +1684,7 @@ Encryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#encryption ContainerRegistry#encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#encryption ContainerRegistry#encryption}.
 
 ---
 
@@ -1727,7 +1696,7 @@ ExportPolicyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#export_policy_enabled ContainerRegistry#export_policy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#export_policy_enabled ContainerRegistry#export_policy_enabled}.
 
 ---
 
@@ -1741,7 +1710,7 @@ Georeplications interface{}
 
 georeplications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#georeplications ContainerRegistry#georeplications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#georeplications ContainerRegistry#georeplications}
 
 ---
 
@@ -1753,7 +1722,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#id ContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#id ContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1770,7 +1739,7 @@ Identity ContainerRegistryIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#identity ContainerRegistry#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#identity ContainerRegistry#identity}
 
 ---
 
@@ -1782,7 +1751,7 @@ NetworkRuleBypassForTasksEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_bypass_for_tasks_enabled ContainerRegistry#network_rule_bypass_for_tasks_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_bypass_for_tasks_enabled ContainerRegistry#network_rule_bypass_for_tasks_enabled}.
 
 ---
 
@@ -1794,7 +1763,7 @@ NetworkRuleBypassOption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_bypass_option ContainerRegistry#network_rule_bypass_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_bypass_option ContainerRegistry#network_rule_bypass_option}.
 
 ---
 
@@ -1806,7 +1775,7 @@ NetworkRuleSet interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#network_rule_set ContainerRegistry#network_rule_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#network_rule_set ContainerRegistry#network_rule_set}.
 
 ---
 
@@ -1818,7 +1787,7 @@ PublicNetworkAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#public_network_access_enabled ContainerRegistry#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#public_network_access_enabled ContainerRegistry#public_network_access_enabled}.
 
 ---
 
@@ -1830,7 +1799,7 @@ QuarantinePolicyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#quarantine_policy_enabled ContainerRegistry#quarantine_policy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#quarantine_policy_enabled ContainerRegistry#quarantine_policy_enabled}.
 
 ---
 
@@ -1842,7 +1811,7 @@ RetentionPolicyInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#retention_policy_in_days ContainerRegistry#retention_policy_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#retention_policy_in_days ContainerRegistry#retention_policy_in_days}.
 
 ---
 
@@ -1854,7 +1823,7 @@ RoleAssignmentMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#role_assignment_mode ContainerRegistry#role_assignment_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#role_assignment_mode ContainerRegistry#role_assignment_mode}.
 
 ---
 
@@ -1866,7 +1835,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#tags ContainerRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#tags ContainerRegistry#tags}.
 
 ---
 
@@ -1880,19 +1849,7 @@ Timeouts ContainerRegistryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
-
----
-
-##### `TrustPolicyEnabled`<sup>Optional</sup> <a name="TrustPolicyEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryConfig.property.trustPolicyEnabled"></a>
-
-```go
-TrustPolicyEnabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#trust_policy_enabled ContainerRegistry#trust_policy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
 
 ---
 
@@ -1904,7 +1861,7 @@ ZoneRedundancyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}.
 
 ---
 
@@ -1913,7 +1870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryEncryption {
 	IdentityClientId: *string,
@@ -1925,8 +1882,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryption.property.identityClientId">IdentityClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#identity_client_id ContainerRegistry#identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryption.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#key_vault_key_id ContainerRegistry#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryption.property.identityClientId">IdentityClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#identity_client_id ContainerRegistry#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryption.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#key_vault_key_id ContainerRegistry#key_vault_key_id}. |
 
 ---
 
@@ -1938,7 +1895,7 @@ IdentityClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#identity_client_id ContainerRegistry#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#identity_client_id ContainerRegistry#identity_client_id}.
 
 ---
 
@@ -1950,7 +1907,7 @@ KeyVaultKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#key_vault_key_id ContainerRegistry#key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#key_vault_key_id ContainerRegistry#key_vault_key_id}.
 
 ---
 
@@ -1959,11 +1916,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryGeoreplications {
+	GlobalEndpointRoutingEnabled: interface{},
 	Location: *string,
-	RegionalEndpointEnabled: interface{},
 	Tags: *map[string]*string,
 	ZoneRedundancyEnabled: interface{},
 }
@@ -1973,10 +1930,22 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#location ContainerRegistry#location}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.regionalEndpointEnabled">RegionalEndpointEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#regional_endpoint_enabled ContainerRegistry#regional_endpoint_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#tags ContainerRegistry#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.globalEndpointRoutingEnabled">GlobalEndpointRoutingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#global_endpoint_routing_enabled ContainerRegistry#global_endpoint_routing_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#location ContainerRegistry#location}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#tags ContainerRegistry#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}. |
+
+---
+
+##### `GlobalEndpointRoutingEnabled`<sup>Required</sup> <a name="GlobalEndpointRoutingEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.globalEndpointRoutingEnabled"></a>
+
+```go
+GlobalEndpointRoutingEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#global_endpoint_routing_enabled ContainerRegistry#global_endpoint_routing_enabled}.
 
 ---
 
@@ -1988,19 +1957,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#location ContainerRegistry#location}.
-
----
-
-##### `RegionalEndpointEnabled`<sup>Optional</sup> <a name="RegionalEndpointEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplications.property.regionalEndpointEnabled"></a>
-
-```go
-RegionalEndpointEnabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#regional_endpoint_enabled ContainerRegistry#regional_endpoint_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#location ContainerRegistry#location}.
 
 ---
 
@@ -2012,7 +1969,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#tags ContainerRegistry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#tags ContainerRegistry#tags}.
 
 ---
 
@@ -2024,7 +1981,7 @@ ZoneRedundancyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#zone_redundancy_enabled ContainerRegistry#zone_redundancy_enabled}.
 
 ---
 
@@ -2033,7 +1990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryIdentity {
 	Type: *string,
@@ -2045,8 +2002,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#type ContainerRegistry#type}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#identity_ids ContainerRegistry#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#type ContainerRegistry#type}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#identity_ids ContainerRegistry#identity_ids}. |
 
 ---
 
@@ -2058,7 +2015,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#type ContainerRegistry#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#type ContainerRegistry#type}.
 
 ---
 
@@ -2070,7 +2027,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#identity_ids ContainerRegistry#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#identity_ids ContainerRegistry#identity_ids}.
 
 ---
 
@@ -2079,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryNetworkRuleSet {
 	DefaultAction: *string,
@@ -2091,8 +2048,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSet.property.defaultAction">DefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#default_action ContainerRegistry#default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSet.property.ipRule">IpRule</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#ip_rule ContainerRegistry#ip_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSet.property.defaultAction">DefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#default_action ContainerRegistry#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSet.property.ipRule">IpRule</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#ip_rule ContainerRegistry#ip_rule}. |
 
 ---
 
@@ -2104,7 +2061,7 @@ DefaultAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#default_action ContainerRegistry#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#default_action ContainerRegistry#default_action}.
 
 ---
 
@@ -2116,7 +2073,7 @@ IpRule interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#ip_rule ContainerRegistry#ip_rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#ip_rule ContainerRegistry#ip_rule}.
 
 ---
 
@@ -2125,7 +2082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryNetworkRuleSetIpRule {
 	Action: *string,
@@ -2137,8 +2094,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#action ContainerRegistry#action}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRule.property.ipRange">IpRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#ip_range ContainerRegistry#ip_range}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRule.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#action ContainerRegistry#action}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRule.property.ipRange">IpRange</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#ip_range ContainerRegistry#ip_range}. |
 
 ---
 
@@ -2150,7 +2107,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#action ContainerRegistry#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#action ContainerRegistry#action}.
 
 ---
 
@@ -2162,7 +2119,7 @@ IpRange *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#ip_range ContainerRegistry#ip_range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#ip_range ContainerRegistry#ip_range}.
 
 ---
 
@@ -2171,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 &containerregistry.ContainerRegistryTimeouts {
 	Create: *string,
@@ -2185,10 +2142,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#create ContainerRegistry#create}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#delete ContainerRegistry#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#read ContainerRegistry#read}. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#update ContainerRegistry#update}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#create ContainerRegistry#create}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#delete ContainerRegistry#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#read ContainerRegistry#read}. |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#update ContainerRegistry#update}. |
 
 ---
 
@@ -2200,7 +2157,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#create ContainerRegistry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#create ContainerRegistry#create}.
 
 ---
 
@@ -2212,7 +2169,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#delete ContainerRegistry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#delete ContainerRegistry#delete}.
 
 ---
 
@@ -2224,7 +2181,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#read ContainerRegistry#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#read ContainerRegistry#read}.
 
 ---
 
@@ -2236,7 +2193,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/container_registry#update ContainerRegistry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/container_registry#update ContainerRegistry#update}.
 
 ---
 
@@ -2247,7 +2204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryEncryptionList
 ```
@@ -2407,7 +2364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryEncryptionOutputReference
 ```
@@ -2732,7 +2689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryGeoreplicationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryGeoreplicationsList
 ```
@@ -2892,7 +2849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryGeoreplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryGeoreplicationsOutputReference
 ```
@@ -2955,7 +2912,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resetRegionalEndpointEnabled">ResetRegionalEndpointEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resetZoneRedundancyEnabled">ResetZoneRedundancyEnabled</a></code> | *No description.* |
 
@@ -3111,12 +3067,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetRegionalEndpointEnabled` <a name="ResetRegionalEndpointEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resetRegionalEndpointEnabled"></a>
-
-```go
-func ResetRegionalEndpointEnabled()
-```
-
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.resetTags"></a>
 
 ```go
@@ -3136,12 +3086,12 @@ func ResetZoneRedundancyEnabled()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.globalEndpointRoutingEnabledInput">GlobalEndpointRoutingEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.regionalEndpointEnabledInput">RegionalEndpointEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.zoneRedundancyEnabledInput">ZoneRedundancyEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.globalEndpointRoutingEnabled">GlobalEndpointRoutingEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.regionalEndpointEnabled">RegionalEndpointEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.zoneRedundancyEnabled">ZoneRedundancyEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -3172,6 +3122,16 @@ func Fqn() *string
 
 ---
 
+##### `GlobalEndpointRoutingEnabledInput`<sup>Optional</sup> <a name="GlobalEndpointRoutingEnabledInput" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.globalEndpointRoutingEnabledInput"></a>
+
+```go
+func GlobalEndpointRoutingEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.locationInput"></a>
 
 ```go
@@ -3179,16 +3139,6 @@ func LocationInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `RegionalEndpointEnabledInput`<sup>Optional</sup> <a name="RegionalEndpointEnabledInput" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.regionalEndpointEnabledInput"></a>
-
-```go
-func RegionalEndpointEnabledInput() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -3212,6 +3162,16 @@ func ZoneRedundancyEnabledInput() interface{}
 
 ---
 
+##### `GlobalEndpointRoutingEnabled`<sup>Required</sup> <a name="GlobalEndpointRoutingEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.globalEndpointRoutingEnabled"></a>
+
+```go
+func GlobalEndpointRoutingEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.location"></a>
 
 ```go
@@ -3219,16 +3179,6 @@ func Location() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `RegionalEndpointEnabled`<sup>Required</sup> <a name="RegionalEndpointEnabled" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryGeoreplicationsOutputReference.property.regionalEndpointEnabled"></a>
-
-```go
-func RegionalEndpointEnabled() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -3268,7 +3218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryIdentityOutputReference
 ```
@@ -3590,7 +3540,7 @@ func InternalValue() ContainerRegistryIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryNetworkRuleSetIpRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryNetworkRuleSetIpRuleList
 ```
@@ -3750,7 +3700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetIpRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryNetworkRuleSetIpRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryNetworkRuleSetIpRuleOutputReference
 ```
@@ -4075,7 +4025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryNetworkRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryNetworkRuleSetList
 ```
@@ -4235,7 +4185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryNetworkRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryNetworkRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryNetworkRuleSetOutputReference
 ```
@@ -4573,7 +4523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.containerRegistry.ContainerRegistryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/containerregistry"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/containerregistry"
 
 containerregistry.NewContainerRegistryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryTimeoutsOutputReference
 ```

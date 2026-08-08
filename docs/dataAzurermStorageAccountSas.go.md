@@ -4,12 +4,12 @@
 
 ### DataAzurermStorageAccountSas <a name="DataAzurermStorageAccountSas" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas azurerm_storage_account_sas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSas(scope Construct, id *string, config DataAzurermStorageAccountSasConfig) DataAzurermStorageAccountSas
 ```
@@ -392,7 +392,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ dataazurermstorageaccountsas.DataAzurermStorageAccountSas_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSas.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.DataAzurermStorageAccountSas_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DataAzurermStorageAccountS
 
 The id of the existing DataAzurermStorageAccountSas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasConfig {
 	Connection: interface{},
@@ -924,15 +924,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 	Provisioners: *[]interface{},
 	ConnectionString: *string,
 	Expiry: *string,
-	ResourceTypes: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes,
-	Services: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices,
+	ResourceTypes: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes,
+	Services: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices,
 	Start: *string,
 	HttpsOnly: interface{},
 	Id: *string,
 	IpAddresses: *string,
-	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions,
 	SignedVersion: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts,
 }
 ```
 
@@ -947,16 +947,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.expiry">Expiry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.connectionString">ConnectionString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.expiry">Expiry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.resourceTypes">ResourceTypes</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes">DataAzurermStorageAccountSasResourceTypes</a></code> | resource_types block. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.services">Services</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices">DataAzurermStorageAccountSasServices</a></code> | services block. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.httpsOnly">HttpsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.ipAddresses">IpAddresses</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.start">Start</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.httpsOnly">HttpsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.ipAddresses">IpAddresses</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.permissions">Permissions</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions">DataAzurermStorageAccountSasPermissions</a></code> | permissions block. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.signedVersion">SignedVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.signedVersion">SignedVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts">DataAzurermStorageAccountSasTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1039,7 +1039,7 @@ ConnectionString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Expiry *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}.
 
 ---
 
@@ -1065,7 +1065,7 @@ ResourceTypes DataAzurermStorageAccountSasResourceTypes
 
 resource_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#resource_types DataAzurermStorageAccountSas#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#resource_types DataAzurermStorageAccountSas#resource_types}
 
 ---
 
@@ -1079,7 +1079,7 @@ Services DataAzurermStorageAccountSasServices
 
 services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#services DataAzurermStorageAccountSas#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#services DataAzurermStorageAccountSas#services}
 
 ---
 
@@ -1091,7 +1091,7 @@ Start *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}.
 
 ---
 
@@ -1103,7 +1103,7 @@ HttpsOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1130,7 +1130,7 @@ IpAddresses *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}.
 
 ---
 
@@ -1144,7 +1144,7 @@ Permissions DataAzurermStorageAccountSasPermissions
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#permissions DataAzurermStorageAccountSas#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#permissions DataAzurermStorageAccountSas#permissions}
 
 ---
 
@@ -1156,7 +1156,7 @@ SignedVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}.
 
 ---
 
@@ -1170,7 +1170,7 @@ Timeouts DataAzurermStorageAccountSasTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#timeouts DataAzurermStorageAccountSas#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#timeouts DataAzurermStorageAccountSas#timeouts}
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasPermissions {
 	Add: interface{},
@@ -1199,16 +1199,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.add">Add</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.create">Create</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.filter">Filter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.list">List</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.process">Process</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.read">Read</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.tag">Tag</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.update">Update</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.write">Write</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.add">Add</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.create">Create</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.filter">Filter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.list">List</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.process">Process</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.read">Read</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.tag">Tag</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.update">Update</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissions.property.write">Write</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}. |
 
 ---
 
@@ -1220,7 +1220,7 @@ Add interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}.
 
 ---
 
@@ -1232,7 +1232,7 @@ Create interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ Delete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}.
 
 ---
 
@@ -1256,7 +1256,7 @@ Filter interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}.
 
 ---
 
@@ -1268,7 +1268,7 @@ List interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Process interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Read interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}.
 
 ---
 
@@ -1304,7 +1304,7 @@ Tag interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Update interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}.
 
 ---
 
@@ -1328,7 +1328,7 @@ Write interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}.
 
 ---
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasResourceTypes {
 	Container: interface{},
@@ -1350,9 +1350,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.container">Container</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.object">Object</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.service">Service</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.container">Container</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.object">Object</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypes.property.service">Service</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}. |
 
 ---
 
@@ -1364,7 +1364,7 @@ Container interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}.
 
 ---
 
@@ -1376,7 +1376,7 @@ Object interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Service interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}.
 
 ---
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasServices {
 	Blob: interface{},
@@ -1411,10 +1411,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.blob">Blob</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.file">File</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.queue">Queue</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.table">Table</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.blob">Blob</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.file">File</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.queue">Queue</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServices.property.table">Table</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}. |
 
 ---
 
@@ -1426,7 +1426,7 @@ Blob interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}.
 
 ---
 
@@ -1438,7 +1438,7 @@ File interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Queue interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}.
 
 ---
 
@@ -1462,7 +1462,7 @@ Table interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 &dataazurermstorageaccountsas.DataAzurermStorageAccountSasTimeouts {
 	Read: *string,
@@ -1482,7 +1482,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}. |
 
 ---
 
@@ -1494,7 +1494,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}.
 
 ---
 
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasPermissionsOutputReference
 ```
@@ -2044,7 +2044,7 @@ func InternalValue() DataAzurermStorageAccountSasPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasResourceTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasResourceTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasResourceTypesOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() DataAzurermStorageAccountSasResourceTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasServicesOutputReference
 ```
@@ -2696,7 +2696,7 @@ func InternalValue() DataAzurermStorageAccountSasServices
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageAccountSas.DataAzurermStorageAccountSasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermstorageaccountsas"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermstorageaccountsas"
 
 dataazurermstorageaccountsas.NewDataAzurermStorageAccountSasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermStorageAccountSasTimeoutsOutputReference
 ```

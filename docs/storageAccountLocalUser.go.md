@@ -4,12 +4,12 @@
 
 ### StorageAccountLocalUser <a name="StorageAccountLocalUser" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user azurerm_storage_account_local_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user azurerm_storage_account_local_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUser(scope Construct, id *string, config StorageAccountLocalUserConfig) StorageAccountLocalUser
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ storageaccountlocaluser.StorageAccountLocalUser_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ storageaccountlocaluser.StorageAccountLocalUser_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.StorageAccountLocalUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the StorageAccountLocalUser to
 
 The id of the existing StorageAccountLocalUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserConfig {
 	Connection: interface{},
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 	SshAuthorizedKey: interface{},
 	SshKeyEnabled: interface{},
 	SshPasswordEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountLocalUser.StorageAccountLocalUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccountLocalUser.StorageAccountLocalUserTimeouts,
 }
 ```
 
@@ -1030,14 +1030,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#name StorageAccountLocalUser#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#storage_account_id StorageAccountLocalUser#storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#home_directory StorageAccountLocalUser#home_directory}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#id StorageAccountLocalUser#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#name StorageAccountLocalUser#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.storageAccountId">StorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#storage_account_id StorageAccountLocalUser#storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#home_directory StorageAccountLocalUser#home_directory}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#id StorageAccountLocalUser#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.permissionScope">PermissionScope</a></code> | <code>interface{}</code> | permission_scope block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.sshAuthorizedKey">SshAuthorizedKey</a></code> | <code>interface{}</code> | ssh_authorized_key block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.sshKeyEnabled">SshKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#ssh_key_enabled StorageAccountLocalUser#ssh_key_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.sshPasswordEnabled">SshPasswordEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#ssh_password_enabled StorageAccountLocalUser#ssh_password_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.sshKeyEnabled">SshKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#ssh_key_enabled StorageAccountLocalUser#ssh_key_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.sshPasswordEnabled">SshPasswordEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#ssh_password_enabled StorageAccountLocalUser#ssh_password_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts">StorageAccountLocalUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1120,7 +1120,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#name StorageAccountLocalUser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#name StorageAccountLocalUser#name}.
 
 ---
 
@@ -1132,7 +1132,7 @@ StorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#storage_account_id StorageAccountLocalUser#storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#storage_account_id StorageAccountLocalUser#storage_account_id}.
 
 ---
 
@@ -1144,7 +1144,7 @@ HomeDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#home_directory StorageAccountLocalUser#home_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#home_directory StorageAccountLocalUser#home_directory}.
 
 ---
 
@@ -1156,7 +1156,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#id StorageAccountLocalUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#id StorageAccountLocalUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ PermissionScope interface{}
 
 permission_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#permission_scope StorageAccountLocalUser#permission_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#permission_scope StorageAccountLocalUser#permission_scope}
 
 ---
 
@@ -1187,7 +1187,7 @@ SshAuthorizedKey interface{}
 
 ssh_authorized_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#ssh_authorized_key StorageAccountLocalUser#ssh_authorized_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#ssh_authorized_key StorageAccountLocalUser#ssh_authorized_key}
 
 ---
 
@@ -1199,7 +1199,7 @@ SshKeyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#ssh_key_enabled StorageAccountLocalUser#ssh_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#ssh_key_enabled StorageAccountLocalUser#ssh_key_enabled}.
 
 ---
 
@@ -1211,7 +1211,7 @@ SshPasswordEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#ssh_password_enabled StorageAccountLocalUser#ssh_password_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#ssh_password_enabled StorageAccountLocalUser#ssh_password_enabled}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Timeouts StorageAccountLocalUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#timeouts StorageAccountLocalUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#timeouts StorageAccountLocalUser#timeouts}
 
 ---
 
@@ -1234,10 +1234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserPermissionScope {
-	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions,
 	ResourceName: *string,
 	Service: *string,
 }
@@ -1248,8 +1248,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.property.permissions">Permissions</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions">StorageAccountLocalUserPermissionScopePermissions</a></code> | permissions block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#resource_name StorageAccountLocalUser#resource_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#service StorageAccountLocalUser#service}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.property.resourceName">ResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#resource_name StorageAccountLocalUser#resource_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScope.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#service StorageAccountLocalUser#service}. |
 
 ---
 
@@ -1263,7 +1263,7 @@ Permissions StorageAccountLocalUserPermissionScopePermissions
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#permissions StorageAccountLocalUser#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#permissions StorageAccountLocalUser#permissions}
 
 ---
 
@@ -1275,7 +1275,7 @@ ResourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#resource_name StorageAccountLocalUser#resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#resource_name StorageAccountLocalUser#resource_name}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#service StorageAccountLocalUser#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#service StorageAccountLocalUser#service}.
 
 ---
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserPermissionScopePermissions {
 	Create: interface{},
@@ -1311,11 +1311,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.create">Create</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.list">List</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#list StorageAccountLocalUser#list}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.read">Read</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.write">Write</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#write StorageAccountLocalUser#write}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.create">Create</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.list">List</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#list StorageAccountLocalUser#list}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.read">Read</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissions.property.write">Write</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#write StorageAccountLocalUser#write}. |
 
 ---
 
@@ -1327,7 +1327,7 @@ Create interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Delete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}.
 
 ---
 
@@ -1351,7 +1351,7 @@ List interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#list StorageAccountLocalUser#list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#list StorageAccountLocalUser#list}.
 
 ---
 
@@ -1363,7 +1363,7 @@ Read interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}.
 
 ---
 
@@ -1375,7 +1375,7 @@ Write interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#write StorageAccountLocalUser#write}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#write StorageAccountLocalUser#write}.
 
 ---
 
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserSshAuthorizedKey {
 	Key: *string,
@@ -1396,8 +1396,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#key StorageAccountLocalUser#key}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#description StorageAccountLocalUser#description}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#key StorageAccountLocalUser#key}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKey.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#description StorageAccountLocalUser#description}. |
 
 ---
 
@@ -1409,7 +1409,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#key StorageAccountLocalUser#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#key StorageAccountLocalUser#key}.
 
 ---
 
@@ -1421,7 +1421,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#description StorageAccountLocalUser#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#description StorageAccountLocalUser#description}.
 
 ---
 
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 &storageaccountlocaluser.StorageAccountLocalUserTimeouts {
 	Create: *string,
@@ -1444,10 +1444,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#update StorageAccountLocalUser#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#update StorageAccountLocalUser#update}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#create StorageAccountLocalUser#create}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#delete StorageAccountLocalUser#delete}.
 
 ---
 
@@ -1483,7 +1483,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#read StorageAccountLocalUser#read}.
 
 ---
 
@@ -1495,7 +1495,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account_local_user#update StorageAccountLocalUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account_local_user#update StorageAccountLocalUser#update}.
 
 ---
 
@@ -1506,7 +1506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountLocalUserPermissionScopeList
 ```
@@ -1666,7 +1666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountLocalUserPermissionScopeOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserPermissionScopePermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserPermissionScopePermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountLocalUserPermissionScopePermissionsOutputReference
 ```
@@ -2406,7 +2406,7 @@ func InternalValue() StorageAccountLocalUserPermissionScopePermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserSshAuthorizedKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountLocalUserSshAuthorizedKeyList
 ```
@@ -2566,7 +2566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserSshAuthorizedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserSshAuthorizedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountLocalUserSshAuthorizedKeyOutputReference
 ```
@@ -2884,7 +2884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccountLocalUser.StorageAccountLocalUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccountlocaluser"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccountlocaluser"
 
 storageaccountlocaluser.NewStorageAccountLocalUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountLocalUserTimeoutsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### DataAzurermStorageBlob <a name="DataAzurermStorageBlob" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob azurerm_storage_blob}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob azurerm_storage_blob}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.Initializer"></a>
 
@@ -71,9 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetMetadata">ResetMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageAccountName">ResetStorageAccountName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageContainerId">ResetStorageContainerId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageContainerName">ResetStorageContainerName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -315,24 +312,6 @@ private void ResetId()
 private void ResetMetadata()
 ```
 
-##### `ResetStorageAccountName` <a name="ResetStorageAccountName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageAccountName"></a>
-
-```csharp
-private void ResetStorageAccountName()
-```
-
-##### `ResetStorageContainerId` <a name="ResetStorageContainerId" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageContainerId"></a>
-
-```csharp
-private void ResetStorageContainerId()
-```
-
-##### `ResetStorageContainerName` <a name="ResetStorageContainerName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetStorageContainerName"></a>
-
-```csharp
-private void ResetStorageContainerName()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.resetTimeouts"></a>
 
 ```csharp
@@ -442,7 +421,7 @@ The construct id used in the generated config for the DataAzurermStorageBlob to 
 
 The id of the existing DataAzurermStorageBlob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -480,16 +459,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.metadataInput">MetadataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageAccountNameInput">StorageAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerIdInput">StorageContainerIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerNameInput">StorageContainerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts">DataAzurermStorageBlobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerId">StorageContainerId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerName">StorageContainerName</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -715,30 +690,10 @@ public string NameInput { get; }
 
 ---
 
-##### `StorageAccountNameInput`<sup>Optional</sup> <a name="StorageAccountNameInput" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageAccountNameInput"></a>
-
-```csharp
-public string StorageAccountNameInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `StorageContainerIdInput`<sup>Optional</sup> <a name="StorageContainerIdInput" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerIdInput"></a>
 
 ```csharp
 public string StorageContainerIdInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `StorageContainerNameInput`<sup>Optional</sup> <a name="StorageContainerNameInput" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerNameInput"></a>
-
-```csharp
-public string StorageContainerNameInput { get; }
 ```
 
 - *Type:* string
@@ -785,30 +740,10 @@ public string Name { get; }
 
 ---
 
-##### `StorageAccountName`<sup>Required</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageAccountName"></a>
-
-```csharp
-public string StorageAccountName { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `StorageContainerId`<sup>Required</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerId"></a>
 
 ```csharp
 public string StorageContainerId { get; }
-```
-
-- *Type:* string
-
----
-
-##### `StorageContainerName`<sup>Required</sup> <a name="StorageContainerName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlob.property.storageContainerName"></a>
-
-```csharp
-public string StorageContainerName { get; }
 ```
 
 - *Type:* string
@@ -851,11 +786,9 @@ new DataAzurermStorageBlobConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
+    string StorageContainerId,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Metadata = null,
-    string StorageAccountName = null,
-    string StorageContainerId = null,
-    string StorageContainerName = null,
     DataAzurermStorageBlobTimeouts Timeouts = null
 };
 ```
@@ -871,12 +804,10 @@ new DataAzurermStorageBlobConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#name DataAzurermStorageBlob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#id DataAzurermStorageBlob#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#metadata DataAzurermStorageBlob#metadata}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageAccountName">StorageAccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_account_name DataAzurermStorageBlob#storage_account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerId">StorageContainerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_container_id DataAzurermStorageBlob#storage_container_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerName">StorageContainerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_container_name DataAzurermStorageBlob#storage_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#name DataAzurermStorageBlob#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerId">StorageContainerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#storage_container_id DataAzurermStorageBlob#storage_container_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#id DataAzurermStorageBlob#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#metadata DataAzurermStorageBlob#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts">DataAzurermStorageBlobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -959,7 +890,19 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#name DataAzurermStorageBlob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#name DataAzurermStorageBlob#name}.
+
+---
+
+##### `StorageContainerId`<sup>Required</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerId"></a>
+
+```csharp
+public string StorageContainerId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#storage_container_id DataAzurermStorageBlob#storage_container_id}.
 
 ---
 
@@ -971,7 +914,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#id DataAzurermStorageBlob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#id DataAzurermStorageBlob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,43 +929,7 @@ public System.Collections.Generic.IDictionary<string, string> Metadata { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#metadata DataAzurermStorageBlob#metadata}.
-
----
-
-##### `StorageAccountName`<sup>Optional</sup> <a name="StorageAccountName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageAccountName"></a>
-
-```csharp
-public string StorageAccountName { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_account_name DataAzurermStorageBlob#storage_account_name}.
-
----
-
-##### `StorageContainerId`<sup>Optional</sup> <a name="StorageContainerId" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerId"></a>
-
-```csharp
-public string StorageContainerId { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_container_id DataAzurermStorageBlob#storage_container_id}.
-
----
-
-##### `StorageContainerName`<sup>Optional</sup> <a name="StorageContainerName" id="@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobConfig.property.storageContainerName"></a>
-
-```csharp
-public string StorageContainerName { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#storage_container_name DataAzurermStorageBlob#storage_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#metadata DataAzurermStorageBlob#metadata}.
 
 ---
 
@@ -1036,7 +943,7 @@ public DataAzurermStorageBlobTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#timeouts DataAzurermStorageBlob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#timeouts DataAzurermStorageBlob#timeouts}
 
 ---
 
@@ -1056,7 +963,7 @@ new DataAzurermStorageBlobTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#read DataAzurermStorageBlob#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermStorageBlob.DataAzurermStorageBlobTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#read DataAzurermStorageBlob#read}. |
 
 ---
 
@@ -1068,7 +975,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/storage_blob#read DataAzurermStorageBlob#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/storage_blob#read DataAzurermStorageBlob#read}.
 
 ---
 

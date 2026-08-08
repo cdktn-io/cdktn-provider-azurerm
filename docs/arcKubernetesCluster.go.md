@@ -4,12 +4,12 @@
 
 ### ArcKubernetesCluster <a name="ArcKubernetesCluster" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster azurerm_arc_kubernetes_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster azurerm_arc_kubernetes_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesCluster(scope Construct, id *string, config ArcKubernetesClusterConfig) ArcKubernetesCluster
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ arckubernetescluster.ArcKubernetesCluster_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ arckubernetescluster.ArcKubernetesCluster_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.ArcKubernetesCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the ArcKubernetesCluster to im
 
 The id of the existing ArcKubernetesCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterConfig {
 	Connection: interface{},
@@ -1000,13 +1000,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetesc
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AgentPublicKeyCertificate: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcKubernetesCluster.ArcKubernetesClusterIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.arcKubernetesCluster.ArcKubernetesClusterIdentity,
 	Location: *string,
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.arcKubernetesCluster.ArcKubernetesClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.arcKubernetesCluster.ArcKubernetesClusterTimeouts,
 }
 ```
 
@@ -1021,13 +1021,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetesc
 | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.agentPublicKeyCertificate">AgentPublicKeyCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#agent_public_key_certificate ArcKubernetesCluster#agent_public_key_certificate}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.agentPublicKeyCertificate">AgentPublicKeyCertificate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#agent_public_key_certificate ArcKubernetesCluster#agent_public_key_certificate}. |
 | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentity">ArcKubernetesClusterIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#location ArcKubernetesCluster#location}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#name ArcKubernetesCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#resource_group_name ArcKubernetesCluster#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#id ArcKubernetesCluster#id}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#tags ArcKubernetesCluster#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#location ArcKubernetesCluster#location}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#name ArcKubernetesCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#resource_group_name ArcKubernetesCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#id ArcKubernetesCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#tags ArcKubernetesCluster#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts">ArcKubernetesClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1110,7 +1110,7 @@ AgentPublicKeyCertificate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#agent_public_key_certificate ArcKubernetesCluster#agent_public_key_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#agent_public_key_certificate ArcKubernetesCluster#agent_public_key_certificate}.
 
 ---
 
@@ -1124,7 +1124,7 @@ Identity ArcKubernetesClusterIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#identity ArcKubernetesCluster#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#identity ArcKubernetesCluster#identity}
 
 ---
 
@@ -1136,7 +1136,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#location ArcKubernetesCluster#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#location ArcKubernetesCluster#location}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#name ArcKubernetesCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#name ArcKubernetesCluster#name}.
 
 ---
 
@@ -1160,7 +1160,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#resource_group_name ArcKubernetesCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#resource_group_name ArcKubernetesCluster#resource_group_name}.
 
 ---
 
@@ -1172,7 +1172,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#id ArcKubernetesCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#id ArcKubernetesCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1187,7 +1187,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#tags ArcKubernetesCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#tags ArcKubernetesCluster#tags}.
 
 ---
 
@@ -1201,7 +1201,7 @@ Timeouts ArcKubernetesClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#timeouts ArcKubernetesCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#timeouts ArcKubernetesCluster#timeouts}
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterIdentity {
 	Type: *string,
@@ -1221,7 +1221,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetesc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}. |
 
 ---
 
@@ -1233,7 +1233,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#type ArcKubernetesCluster#type}.
 
 ---
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 &arckubernetescluster.ArcKubernetesClusterTimeouts {
 	Create: *string,
@@ -1256,10 +1256,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetesc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#create ArcKubernetesCluster#create}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#delete ArcKubernetesCluster#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#read ArcKubernetesCluster#read}. |
-| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#update ArcKubernetesCluster#update}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#create ArcKubernetesCluster#create}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#delete ArcKubernetesCluster#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#read ArcKubernetesCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#update ArcKubernetesCluster#update}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#create ArcKubernetesCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#create ArcKubernetesCluster#create}.
 
 ---
 
@@ -1283,7 +1283,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#delete ArcKubernetesCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#delete ArcKubernetesCluster#delete}.
 
 ---
 
@@ -1295,7 +1295,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#read ArcKubernetesCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#read ArcKubernetesCluster#read}.
 
 ---
 
@@ -1307,7 +1307,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/arc_kubernetes_cluster#update ArcKubernetesCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/arc_kubernetes_cluster#update ArcKubernetesCluster#update}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesClusterIdentityOutputReference
 ```
@@ -1611,7 +1611,7 @@ func InternalValue() ArcKubernetesClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.arcKubernetesCluster.ArcKubernetesClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/arckubernetescluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/arckubernetescluster"
 
 arckubernetescluster.NewArcKubernetesClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArcKubernetesClusterTimeoutsOutputReference
 ```

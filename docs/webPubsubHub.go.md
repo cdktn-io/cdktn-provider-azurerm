@@ -4,12 +4,12 @@
 
 ### WebPubsubHub <a name="WebPubsubHub" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub azurerm_web_pubsub_hub}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub azurerm_web_pubsub_hub}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHub(scope Construct, id *string, config WebPubsubHubConfig) WebPubsubHub
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.WebPubsubHub_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.WebPubsubHub_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ webpubsubhub.WebPubsubHub_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.WebPubsubHub_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ webpubsubhub.WebPubsubHub_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHub.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.WebPubsubHub_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the WebPubsubHub to import.
 
 The id of the existing WebPubsubHub that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 &webpubsubhub.WebPubsubHubConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 	EventHandler: interface{},
 	EventListener: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubHub.WebPubsubHubTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.webPubsubHub.WebPubsubHubTimeouts,
 }
 ```
 
@@ -948,12 +948,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#name WebPubsubHub#name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.webPubsubId">WebPubsubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#web_pubsub_id WebPubsubHub#web_pubsub_id}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.anonymousConnectionsEnabled">AnonymousConnectionsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#anonymous_connections_enabled WebPubsubHub#anonymous_connections_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#name WebPubsubHub#name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.webPubsubId">WebPubsubId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#web_pubsub_id WebPubsubHub#web_pubsub_id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.anonymousConnectionsEnabled">AnonymousConnectionsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#anonymous_connections_enabled WebPubsubHub#anonymous_connections_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.eventHandler">EventHandler</a></code> | <code>interface{}</code> | event_handler block. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.eventListener">EventListener</a></code> | <code>interface{}</code> | event_listener block. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#id WebPubsubHub#id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#id WebPubsubHub#id}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts">WebPubsubHubTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1036,7 +1036,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#name WebPubsubHub#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#name WebPubsubHub#name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ WebPubsubId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#web_pubsub_id WebPubsubHub#web_pubsub_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#web_pubsub_id WebPubsubHub#web_pubsub_id}.
 
 ---
 
@@ -1060,7 +1060,7 @@ AnonymousConnectionsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#anonymous_connections_enabled WebPubsubHub#anonymous_connections_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#anonymous_connections_enabled WebPubsubHub#anonymous_connections_enabled}.
 
 ---
 
@@ -1074,7 +1074,7 @@ EventHandler interface{}
 
 event_handler block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#event_handler WebPubsubHub#event_handler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#event_handler WebPubsubHub#event_handler}
 
 ---
 
@@ -1088,7 +1088,7 @@ EventListener interface{}
 
 event_listener block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#event_listener WebPubsubHub#event_listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#event_listener WebPubsubHub#event_listener}
 
 ---
 
@@ -1100,7 +1100,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#id WebPubsubHub#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#id WebPubsubHub#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ Timeouts WebPubsubHubTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#timeouts WebPubsubHub#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#timeouts WebPubsubHub#timeouts}
 
 ---
 
@@ -1126,11 +1126,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 &webpubsubhub.WebPubsubHubEventHandler {
 	UrlTemplate: *string,
-	Auth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.webPubsubHub.WebPubsubHubEventHandlerAuth,
+	Auth: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.webPubsubHub.WebPubsubHubEventHandlerAuth,
 	SystemEvents: *[]*string,
 	UserEventPattern: *string,
 }
@@ -1140,10 +1140,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.urlTemplate">UrlTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#url_template WebPubsubHub#url_template}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.urlTemplate">UrlTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#url_template WebPubsubHub#url_template}. |
 | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.auth">Auth</a></code> | <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerAuth">WebPubsubHubEventHandlerAuth</a></code> | auth block. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.systemEvents">SystemEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#system_events WebPubsubHub#system_events}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.userEventPattern">UserEventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#user_event_pattern WebPubsubHub#user_event_pattern}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.systemEvents">SystemEvents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#system_events WebPubsubHub#system_events}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandler.property.userEventPattern">UserEventPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#user_event_pattern WebPubsubHub#user_event_pattern}. |
 
 ---
 
@@ -1155,7 +1155,7 @@ UrlTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#url_template WebPubsubHub#url_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#url_template WebPubsubHub#url_template}.
 
 ---
 
@@ -1169,7 +1169,7 @@ Auth WebPubsubHubEventHandlerAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#auth WebPubsubHub#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#auth WebPubsubHub#auth}
 
 ---
 
@@ -1181,7 +1181,7 @@ SystemEvents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#system_events WebPubsubHub#system_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#system_events WebPubsubHub#system_events}.
 
 ---
 
@@ -1193,7 +1193,7 @@ UserEventPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#user_event_pattern WebPubsubHub#user_event_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#user_event_pattern WebPubsubHub#user_event_pattern}.
 
 ---
 
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 &webpubsubhub.WebPubsubHubEventHandlerAuth {
 	ManagedIdentityId: *string,
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerAuth.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#managed_identity_id WebPubsubHub#managed_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerAuth.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#managed_identity_id WebPubsubHub#managed_identity_id}. |
 
 ---
 
@@ -1225,7 +1225,7 @@ ManagedIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#managed_identity_id WebPubsubHub#managed_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#managed_identity_id WebPubsubHub#managed_identity_id}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 &webpubsubhub.WebPubsubHubEventListener {
 	EventhubName: *string,
@@ -1248,10 +1248,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.eventhubName">EventhubName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#eventhub_name WebPubsubHub#eventhub_name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.eventhubNamespaceName">EventhubNamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#eventhub_namespace_name WebPubsubHub#eventhub_namespace_name}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.systemEventNameFilter">SystemEventNameFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#system_event_name_filter WebPubsubHub#system_event_name_filter}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.userEventNameFilter">UserEventNameFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#user_event_name_filter WebPubsubHub#user_event_name_filter}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.eventhubName">EventhubName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#eventhub_name WebPubsubHub#eventhub_name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.eventhubNamespaceName">EventhubNamespaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#eventhub_namespace_name WebPubsubHub#eventhub_namespace_name}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.systemEventNameFilter">SystemEventNameFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#system_event_name_filter WebPubsubHub#system_event_name_filter}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListener.property.userEventNameFilter">UserEventNameFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#user_event_name_filter WebPubsubHub#user_event_name_filter}. |
 
 ---
 
@@ -1263,7 +1263,7 @@ EventhubName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#eventhub_name WebPubsubHub#eventhub_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#eventhub_name WebPubsubHub#eventhub_name}.
 
 ---
 
@@ -1275,7 +1275,7 @@ EventhubNamespaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#eventhub_namespace_name WebPubsubHub#eventhub_namespace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#eventhub_namespace_name WebPubsubHub#eventhub_namespace_name}.
 
 ---
 
@@ -1287,7 +1287,7 @@ SystemEventNameFilter *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#system_event_name_filter WebPubsubHub#system_event_name_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#system_event_name_filter WebPubsubHub#system_event_name_filter}.
 
 ---
 
@@ -1299,7 +1299,7 @@ UserEventNameFilter *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#user_event_name_filter WebPubsubHub#user_event_name_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#user_event_name_filter WebPubsubHub#user_event_name_filter}.
 
 ---
 
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 &webpubsubhub.WebPubsubHubTimeouts {
 	Create: *string,
@@ -1322,10 +1322,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#create WebPubsubHub#create}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#delete WebPubsubHub#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#read WebPubsubHub#read}. |
-| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#update WebPubsubHub#update}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#create WebPubsubHub#create}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#delete WebPubsubHub#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#read WebPubsubHub#read}. |
+| <code><a href="#@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#update WebPubsubHub#update}. |
 
 ---
 
@@ -1337,7 +1337,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#create WebPubsubHub#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#create WebPubsubHub#create}.
 
 ---
 
@@ -1349,7 +1349,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#delete WebPubsubHub#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#delete WebPubsubHub#delete}.
 
 ---
 
@@ -1361,7 +1361,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#read WebPubsubHub#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#read WebPubsubHub#read}.
 
 ---
 
@@ -1373,7 +1373,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/web_pubsub_hub#update WebPubsubHub#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/web_pubsub_hub#update WebPubsubHub#update}.
 
 ---
 
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubEventHandlerAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubHubEventHandlerAuthOutputReference
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() WebPubsubHubEventHandlerAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubEventHandlerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebPubsubHubEventHandlerList
 ```
@@ -1815,7 +1815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventHandlerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubEventHandlerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebPubsubHubEventHandlerOutputReference
 ```
@@ -2204,7 +2204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListenerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubEventListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WebPubsubHubEventListenerList
 ```
@@ -2364,7 +2364,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubEventListenerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubEventListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WebPubsubHubEventListenerOutputReference
 ```
@@ -2733,7 +2733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.webPubsubHub.WebPubsubHubTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/webpubsubhub"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/webpubsubhub"
 
 webpubsubhub.NewWebPubsubHubTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WebPubsubHubTimeoutsOutputReference
 ```

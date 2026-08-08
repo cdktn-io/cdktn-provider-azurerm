@@ -4,7 +4,7 @@
 
 ### LbOutboundRule <a name="LbOutboundRule" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule azurerm_lb_outbound_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.putFrontendIpConfiguration">putFrontendIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetAllocatedOutboundPorts">resetAllocatedOutboundPorts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetEnableTcpReset">resetEnableTcpReset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetFrontendIpConfiguration">resetFrontendIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetIdleTimeoutInMinutes">resetIdleTimeoutInMinutes</a></code> | *No description.* |
@@ -425,12 +424,6 @@ public putTimeouts(value: LbOutboundRuleTimeouts): void
 public resetAllocatedOutboundPorts(): void
 ```
 
-##### `resetEnableTcpReset` <a name="resetEnableTcpReset" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetEnableTcpReset"></a>
-
-```typescript
-public resetEnableTcpReset(): void
-```
-
 ##### `resetFrontendIpConfiguration` <a name="resetFrontendIpConfiguration" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.resetFrontendIpConfiguration"></a>
 
 ```typescript
@@ -564,7 +557,7 @@ The construct id used in the generated config for the LbOutboundRule to import.
 
 The id of the existing LbOutboundRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,7 +591,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeoutsOutputReference">LbOutboundRuleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.allocatedOutboundPortsInput">allocatedOutboundPortsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.backendAddressPoolIdInput">backendAddressPoolIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.enableTcpResetInput">enableTcpResetInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.frontendIpConfigurationInput">frontendIpConfigurationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleFrontendIpConfiguration">LbOutboundRuleFrontendIpConfiguration</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.idleTimeoutInMinutesInput">idleTimeoutInMinutesInput</a></code> | <code>number</code> | *No description.* |
@@ -609,7 +601,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts">LbOutboundRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.allocatedOutboundPorts">allocatedOutboundPorts</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.backendAddressPoolId">backendAddressPoolId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.enableTcpReset">enableTcpReset</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | *No description.* |
@@ -801,16 +792,6 @@ public readonly backendAddressPoolIdInput: string;
 
 ---
 
-##### `enableTcpResetInput`<sup>Optional</sup> <a name="enableTcpResetInput" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.enableTcpResetInput"></a>
-
-```typescript
-public readonly enableTcpResetInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
----
-
 ##### `frontendIpConfigurationInput`<sup>Optional</sup> <a name="frontendIpConfigurationInput" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.frontendIpConfigurationInput"></a>
 
 ```typescript
@@ -908,16 +889,6 @@ public readonly backendAddressPoolId: string;
 ```
 
 - *Type:* string
-
----
-
-##### `enableTcpReset`<sup>Required</sup> <a name="enableTcpReset" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRule.property.enableTcpReset"></a>
-
-```typescript
-public readonly enableTcpReset: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1022,16 +993,15 @@ const lbOutboundRuleConfig: lbOutboundRule.LbOutboundRuleConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.backendAddressPoolId">backendAddressPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#backend_address_pool_id LbOutboundRule#backend_address_pool_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#loadbalancer_id LbOutboundRule#loadbalancer_id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#name LbOutboundRule#name}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#protocol LbOutboundRule#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.allocatedOutboundPorts">allocatedOutboundPorts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#allocated_outbound_ports LbOutboundRule#allocated_outbound_ports}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.enableTcpReset">enableTcpReset</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#enable_tcp_reset LbOutboundRule#enable_tcp_reset}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.backendAddressPoolId">backendAddressPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#backend_address_pool_id LbOutboundRule#backend_address_pool_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.loadbalancerId">loadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#loadbalancer_id LbOutboundRule#loadbalancer_id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#name LbOutboundRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#protocol LbOutboundRule#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.allocatedOutboundPorts">allocatedOutboundPorts</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#allocated_outbound_ports LbOutboundRule#allocated_outbound_ports}. |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.frontendIpConfiguration">frontendIpConfiguration</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleFrontendIpConfiguration">LbOutboundRuleFrontendIpConfiguration</a>[]</code> | frontend_ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#id LbOutboundRule#id}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#idle_timeout_in_minutes LbOutboundRule#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.tcpResetEnabled">tcpResetEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#tcp_reset_enabled LbOutboundRule#tcp_reset_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#id LbOutboundRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.idleTimeoutInMinutes">idleTimeoutInMinutes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#idle_timeout_in_minutes LbOutboundRule#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.tcpResetEnabled">tcpResetEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#tcp_reset_enabled LbOutboundRule#tcp_reset_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts">LbOutboundRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1114,7 +1084,7 @@ public readonly backendAddressPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#backend_address_pool_id LbOutboundRule#backend_address_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#backend_address_pool_id LbOutboundRule#backend_address_pool_id}.
 
 ---
 
@@ -1126,7 +1096,7 @@ public readonly loadbalancerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#loadbalancer_id LbOutboundRule#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#loadbalancer_id LbOutboundRule#loadbalancer_id}.
 
 ---
 
@@ -1138,7 +1108,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#name LbOutboundRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#name LbOutboundRule#name}.
 
 ---
 
@@ -1150,7 +1120,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#protocol LbOutboundRule#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#protocol LbOutboundRule#protocol}.
 
 ---
 
@@ -1162,19 +1132,7 @@ public readonly allocatedOutboundPorts: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#allocated_outbound_ports LbOutboundRule#allocated_outbound_ports}.
-
----
-
-##### `enableTcpReset`<sup>Optional</sup> <a name="enableTcpReset" id="@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleConfig.property.enableTcpReset"></a>
-
-```typescript
-public readonly enableTcpReset: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktn.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#enable_tcp_reset LbOutboundRule#enable_tcp_reset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#allocated_outbound_ports LbOutboundRule#allocated_outbound_ports}.
 
 ---
 
@@ -1188,7 +1146,7 @@ public readonly frontendIpConfiguration: IResolvable | LbOutboundRuleFrontendIpC
 
 frontend_ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#frontend_ip_configuration LbOutboundRule#frontend_ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#frontend_ip_configuration LbOutboundRule#frontend_ip_configuration}
 
 ---
 
@@ -1200,7 +1158,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#id LbOutboundRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#id LbOutboundRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1215,7 +1173,7 @@ public readonly idleTimeoutInMinutes: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#idle_timeout_in_minutes LbOutboundRule#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#idle_timeout_in_minutes LbOutboundRule#idle_timeout_in_minutes}.
 
 ---
 
@@ -1227,7 +1185,7 @@ public readonly tcpResetEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#tcp_reset_enabled LbOutboundRule#tcp_reset_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#tcp_reset_enabled LbOutboundRule#tcp_reset_enabled}.
 
 ---
 
@@ -1241,7 +1199,7 @@ public readonly timeouts: LbOutboundRuleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#timeouts LbOutboundRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#timeouts LbOutboundRule#timeouts}
 
 ---
 
@@ -1259,7 +1217,7 @@ const lbOutboundRuleFrontendIpConfiguration: lbOutboundRule.LbOutboundRuleFronte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleFrontendIpConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#name LbOutboundRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleFrontendIpConfiguration.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#name LbOutboundRule#name}. |
 
 ---
 
@@ -1271,7 +1229,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#name LbOutboundRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#name LbOutboundRule#name}.
 
 ---
 
@@ -1289,10 +1247,10 @@ const lbOutboundRuleTimeouts: lbOutboundRule.LbOutboundRuleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#create LbOutboundRule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#delete LbOutboundRule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#read LbOutboundRule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#update LbOutboundRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#create LbOutboundRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#delete LbOutboundRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#read LbOutboundRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.lbOutboundRule.LbOutboundRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#update LbOutboundRule#update}. |
 
 ---
 
@@ -1304,7 +1262,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#create LbOutboundRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#create LbOutboundRule#create}.
 
 ---
 
@@ -1316,7 +1274,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#delete LbOutboundRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#delete LbOutboundRule#delete}.
 
 ---
 
@@ -1328,7 +1286,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#read LbOutboundRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#read LbOutboundRule#read}.
 
 ---
 
@@ -1340,7 +1298,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/lb_outbound_rule#update LbOutboundRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/lb_outbound_rule#update LbOutboundRule#update}.
 
 ---
 

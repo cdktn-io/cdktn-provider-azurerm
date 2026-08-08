@@ -4,12 +4,12 @@
 
 ### FirewallPolicy <a name="FirewallPolicy" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy azurerm_firewall_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy azurerm_firewall_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicy(scope Construct, id *string, config FirewallPolicyConfig) FirewallPolicy
 ```
@@ -616,7 +616,7 @@ func ResetTlsCertificate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.FirewallPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.FirewallPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ firewallpolicy.FirewallPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.FirewallPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ firewallpolicy.FirewallPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.FirewallPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ The construct id used in the generated config for the FirewallPolicy to import.
 
 The id of the existing FirewallPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1356,7 +1356,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyConfig {
 	Connection: interface{},
@@ -1371,20 +1371,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 	ResourceGroupName: *string,
 	AutoLearnPrivateRangesEnabled: interface{},
 	BasePolicyId: *string,
-	Dns: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyDns,
-	ExplicitProxy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyExplicitProxy,
+	Dns: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyDns,
+	ExplicitProxy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyExplicitProxy,
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyIdentity,
-	Insights: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyInsights,
-	IntrusionDetection: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyIntrusionDetection,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyIdentity,
+	Insights: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyInsights,
+	IntrusionDetection: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyIntrusionDetection,
 	PrivateIpRanges: *[]*string,
 	Sku: *string,
 	SqlRedirectAllowed: interface{},
 	Tags: *map[string]*string,
-	ThreatIntelligenceAllowlist: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct,
+	ThreatIntelligenceAllowlist: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct,
 	ThreatIntelligenceMode: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyTimeouts,
-	TlsCertificate: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.firewallPolicy.FirewallPolicyTlsCertificate,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyTimeouts,
+	TlsCertificate: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.firewallPolicy.FirewallPolicyTlsCertificate,
 }
 ```
 
@@ -1399,23 +1399,23 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#location FirewallPolicy#location}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#resource_group_name FirewallPolicy#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.autoLearnPrivateRangesEnabled">AutoLearnPrivateRangesEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#auto_learn_private_ranges_enabled FirewallPolicy#auto_learn_private_ranges_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.basePolicyId">BasePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#base_policy_id FirewallPolicy#base_policy_id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#location FirewallPolicy#location}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#resource_group_name FirewallPolicy#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.autoLearnPrivateRangesEnabled">AutoLearnPrivateRangesEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#auto_learn_private_ranges_enabled FirewallPolicy#auto_learn_private_ranges_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.basePolicyId">BasePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#base_policy_id FirewallPolicy#base_policy_id}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.dns">Dns</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns">FirewallPolicyDns</a></code> | dns block. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.explicitProxy">ExplicitProxy</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy">FirewallPolicyExplicitProxy</a></code> | explicit_proxy block. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity">FirewallPolicyIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.insights">Insights</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights">FirewallPolicyInsights</a></code> | insights block. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.intrusionDetection">IntrusionDetection</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection">FirewallPolicyIntrusionDetection</a></code> | intrusion_detection block. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.privateIpRanges">PrivateIpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#private_ip_ranges FirewallPolicy#private_ip_ranges}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#sku FirewallPolicy#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.sqlRedirectAllowed">SqlRedirectAllowed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#sql_redirect_allowed FirewallPolicy#sql_redirect_allowed}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#tags FirewallPolicy#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.privateIpRanges">PrivateIpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#private_ip_ranges FirewallPolicy#private_ip_ranges}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.sku">Sku</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#sku FirewallPolicy#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.sqlRedirectAllowed">SqlRedirectAllowed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#sql_redirect_allowed FirewallPolicy#sql_redirect_allowed}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#tags FirewallPolicy#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.threatIntelligenceAllowlist">ThreatIntelligenceAllowlist</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct">FirewallPolicyThreatIntelligenceAllowlistStruct</a></code> | threat_intelligence_allowlist block. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.threatIntelligenceMode">ThreatIntelligenceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#threat_intelligence_mode FirewallPolicy#threat_intelligence_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.threatIntelligenceMode">ThreatIntelligenceMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#threat_intelligence_mode FirewallPolicy#threat_intelligence_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts">FirewallPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyConfig.property.tlsCertificate">TlsCertificate</a></code> | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate">FirewallPolicyTlsCertificate</a></code> | tls_certificate block. |
 
@@ -1499,7 +1499,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#location FirewallPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#location FirewallPolicy#location}.
 
 ---
 
@@ -1511,7 +1511,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}.
 
 ---
 
@@ -1523,7 +1523,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#resource_group_name FirewallPolicy#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#resource_group_name FirewallPolicy#resource_group_name}.
 
 ---
 
@@ -1535,7 +1535,7 @@ AutoLearnPrivateRangesEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#auto_learn_private_ranges_enabled FirewallPolicy#auto_learn_private_ranges_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#auto_learn_private_ranges_enabled FirewallPolicy#auto_learn_private_ranges_enabled}.
 
 ---
 
@@ -1547,7 +1547,7 @@ BasePolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#base_policy_id FirewallPolicy#base_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#base_policy_id FirewallPolicy#base_policy_id}.
 
 ---
 
@@ -1561,7 +1561,7 @@ Dns FirewallPolicyDns
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#dns FirewallPolicy#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#dns FirewallPolicy#dns}
 
 ---
 
@@ -1575,7 +1575,7 @@ ExplicitProxy FirewallPolicyExplicitProxy
 
 explicit_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#explicit_proxy FirewallPolicy#explicit_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#explicit_proxy FirewallPolicy#explicit_proxy}
 
 ---
 
@@ -1587,7 +1587,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1604,7 +1604,7 @@ Identity FirewallPolicyIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#identity FirewallPolicy#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#identity FirewallPolicy#identity}
 
 ---
 
@@ -1618,7 +1618,7 @@ Insights FirewallPolicyInsights
 
 insights block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#insights FirewallPolicy#insights}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#insights FirewallPolicy#insights}
 
 ---
 
@@ -1632,7 +1632,7 @@ IntrusionDetection FirewallPolicyIntrusionDetection
 
 intrusion_detection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#intrusion_detection FirewallPolicy#intrusion_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#intrusion_detection FirewallPolicy#intrusion_detection}
 
 ---
 
@@ -1644,7 +1644,7 @@ PrivateIpRanges *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#private_ip_ranges FirewallPolicy#private_ip_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#private_ip_ranges FirewallPolicy#private_ip_ranges}.
 
 ---
 
@@ -1656,7 +1656,7 @@ Sku *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#sku FirewallPolicy#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#sku FirewallPolicy#sku}.
 
 ---
 
@@ -1668,7 +1668,7 @@ SqlRedirectAllowed interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#sql_redirect_allowed FirewallPolicy#sql_redirect_allowed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#sql_redirect_allowed FirewallPolicy#sql_redirect_allowed}.
 
 ---
 
@@ -1680,7 +1680,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#tags FirewallPolicy#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#tags FirewallPolicy#tags}.
 
 ---
 
@@ -1694,7 +1694,7 @@ ThreatIntelligenceAllowlist FirewallPolicyThreatIntelligenceAllowlistStruct
 
 threat_intelligence_allowlist block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#threat_intelligence_allowlist FirewallPolicy#threat_intelligence_allowlist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#threat_intelligence_allowlist FirewallPolicy#threat_intelligence_allowlist}
 
 ---
 
@@ -1706,7 +1706,7 @@ ThreatIntelligenceMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#threat_intelligence_mode FirewallPolicy#threat_intelligence_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#threat_intelligence_mode FirewallPolicy#threat_intelligence_mode}.
 
 ---
 
@@ -1720,7 +1720,7 @@ Timeouts FirewallPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#timeouts FirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#timeouts FirewallPolicy#timeouts}
 
 ---
 
@@ -1734,7 +1734,7 @@ TlsCertificate FirewallPolicyTlsCertificate
 
 tls_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#tls_certificate FirewallPolicy#tls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#tls_certificate FirewallPolicy#tls_certificate}
 
 ---
 
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyDns {
 	ProxyEnabled: interface{},
@@ -1755,8 +1755,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns.property.proxyEnabled">ProxyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#proxy_enabled FirewallPolicy#proxy_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns.property.servers">Servers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#servers FirewallPolicy#servers}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns.property.proxyEnabled">ProxyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#proxy_enabled FirewallPolicy#proxy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDns.property.servers">Servers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#servers FirewallPolicy#servers}. |
 
 ---
 
@@ -1768,7 +1768,7 @@ ProxyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#proxy_enabled FirewallPolicy#proxy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#proxy_enabled FirewallPolicy#proxy_enabled}.
 
 ---
 
@@ -1780,7 +1780,7 @@ Servers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#servers FirewallPolicy#servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#servers FirewallPolicy#servers}.
 
 ---
 
@@ -1789,7 +1789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyExplicitProxy {
 	Enabled: interface{},
@@ -1805,12 +1805,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.enablePacFile">EnablePacFile</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enable_pac_file FirewallPolicy#enable_pac_file}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.httpPort">HttpPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#http_port FirewallPolicy#http_port}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.httpsPort">HttpsPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#https_port FirewallPolicy#https_port}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.pacFile">PacFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#pac_file FirewallPolicy#pac_file}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.pacFilePort">PacFilePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#pac_file_port FirewallPolicy#pac_file_port}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.enablePacFile">EnablePacFile</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enable_pac_file FirewallPolicy#enable_pac_file}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.httpPort">HttpPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#http_port FirewallPolicy#http_port}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.httpsPort">HttpsPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#https_port FirewallPolicy#https_port}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.pacFile">PacFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#pac_file FirewallPolicy#pac_file}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxy.property.pacFilePort">PacFilePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#pac_file_port FirewallPolicy#pac_file_port}. |
 
 ---
 
@@ -1822,7 +1822,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}.
 
 ---
 
@@ -1834,7 +1834,7 @@ EnablePacFile interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enable_pac_file FirewallPolicy#enable_pac_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enable_pac_file FirewallPolicy#enable_pac_file}.
 
 ---
 
@@ -1846,7 +1846,7 @@ HttpPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#http_port FirewallPolicy#http_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#http_port FirewallPolicy#http_port}.
 
 ---
 
@@ -1858,7 +1858,7 @@ HttpsPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#https_port FirewallPolicy#https_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#https_port FirewallPolicy#https_port}.
 
 ---
 
@@ -1870,7 +1870,7 @@ PacFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#pac_file FirewallPolicy#pac_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#pac_file FirewallPolicy#pac_file}.
 
 ---
 
@@ -1882,7 +1882,7 @@ PacFilePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#pac_file_port FirewallPolicy#pac_file_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#pac_file_port FirewallPolicy#pac_file_port}.
 
 ---
 
@@ -1891,7 +1891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyIdentity {
 	Type: *string,
@@ -1903,8 +1903,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#type FirewallPolicy#type}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#identity_ids FirewallPolicy#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#type FirewallPolicy#type}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#identity_ids FirewallPolicy#identity_ids}. |
 
 ---
 
@@ -1916,7 +1916,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#type FirewallPolicy#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#type FirewallPolicy#type}.
 
 ---
 
@@ -1928,7 +1928,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#identity_ids FirewallPolicy#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#identity_ids FirewallPolicy#identity_ids}.
 
 ---
 
@@ -1937,7 +1937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyInsights {
 	DefaultLogAnalyticsWorkspaceId: *string,
@@ -1951,10 +1951,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.defaultLogAnalyticsWorkspaceId">DefaultLogAnalyticsWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#default_log_analytics_workspace_id FirewallPolicy#default_log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.defaultLogAnalyticsWorkspaceId">DefaultLogAnalyticsWorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#default_log_analytics_workspace_id FirewallPolicy#default_log_analytics_workspace_id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.logAnalyticsWorkspace">LogAnalyticsWorkspace</a></code> | <code>interface{}</code> | log_analytics_workspace block. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#retention_in_days FirewallPolicy#retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsights.property.retentionInDays">RetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#retention_in_days FirewallPolicy#retention_in_days}. |
 
 ---
 
@@ -1966,7 +1966,7 @@ DefaultLogAnalyticsWorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#default_log_analytics_workspace_id FirewallPolicy#default_log_analytics_workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#default_log_analytics_workspace_id FirewallPolicy#default_log_analytics_workspace_id}.
 
 ---
 
@@ -1978,7 +1978,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#enabled FirewallPolicy#enabled}.
 
 ---
 
@@ -1992,7 +1992,7 @@ LogAnalyticsWorkspace interface{}
 
 log_analytics_workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#log_analytics_workspace FirewallPolicy#log_analytics_workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#log_analytics_workspace FirewallPolicy#log_analytics_workspace}
 
 ---
 
@@ -2004,7 +2004,7 @@ RetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#retention_in_days FirewallPolicy#retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#retention_in_days FirewallPolicy#retention_in_days}.
 
 ---
 
@@ -2013,7 +2013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyInsightsLogAnalyticsWorkspace {
 	FirewallLocation: *string,
@@ -2025,8 +2025,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspace.property.firewallLocation">FirewallLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#firewall_location FirewallPolicy#firewall_location}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspace.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspace.property.firewallLocation">FirewallLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#firewall_location FirewallPolicy#firewall_location}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspace.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}. |
 
 ---
 
@@ -2038,7 +2038,7 @@ FirewallLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#firewall_location FirewallPolicy#firewall_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#firewall_location FirewallPolicy#firewall_location}.
 
 ---
 
@@ -2050,7 +2050,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2062,7 +2062,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyIntrusionDetection {
 	Mode: *string,
@@ -2076,8 +2076,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#mode FirewallPolicy#mode}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.privateRanges">PrivateRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#private_ranges FirewallPolicy#private_ranges}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#mode FirewallPolicy#mode}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.privateRanges">PrivateRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#private_ranges FirewallPolicy#private_ranges}. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.signatureOverrides">SignatureOverrides</a></code> | <code>interface{}</code> | signature_overrides block. |
 | <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetection.property.trafficBypass">TrafficBypass</a></code> | <code>interface{}</code> | traffic_bypass block. |
 
@@ -2091,7 +2091,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#mode FirewallPolicy#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#mode FirewallPolicy#mode}.
 
 ---
 
@@ -2103,7 +2103,7 @@ PrivateRanges *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#private_ranges FirewallPolicy#private_ranges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#private_ranges FirewallPolicy#private_ranges}.
 
 ---
 
@@ -2117,7 +2117,7 @@ SignatureOverrides interface{}
 
 signature_overrides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#signature_overrides FirewallPolicy#signature_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#signature_overrides FirewallPolicy#signature_overrides}
 
 ---
 
@@ -2131,7 +2131,7 @@ TrafficBypass interface{}
 
 traffic_bypass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#traffic_bypass FirewallPolicy#traffic_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#traffic_bypass FirewallPolicy#traffic_bypass}
 
 ---
 
@@ -2140,7 +2140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyIntrusionDetectionSignatureOverrides {
 	Id: *string,
@@ -2152,8 +2152,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverrides.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverrides.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#state FirewallPolicy#state}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverrides.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverrides.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#state FirewallPolicy#state}. |
 
 ---
 
@@ -2165,7 +2165,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#id FirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#id FirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2180,7 +2180,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#state FirewallPolicy#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#state FirewallPolicy#state}.
 
 ---
 
@@ -2189,7 +2189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyIntrusionDetectionTrafficBypass {
 	Name: *string,
@@ -2207,14 +2207,14 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#protocol FirewallPolicy#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#description FirewallPolicy#description}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationAddresses">DestinationAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_addresses FirewallPolicy#destination_addresses}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationIpGroups">DestinationIpGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_ip_groups FirewallPolicy#destination_ip_groups}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationPorts">DestinationPorts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_ports FirewallPolicy#destination_ports}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.sourceAddresses">SourceAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#source_addresses FirewallPolicy#source_addresses}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.sourceIpGroups">SourceIpGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#source_ip_groups FirewallPolicy#source_ip_groups}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#protocol FirewallPolicy#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#description FirewallPolicy#description}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationAddresses">DestinationAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_addresses FirewallPolicy#destination_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationIpGroups">DestinationIpGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_ip_groups FirewallPolicy#destination_ip_groups}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.destinationPorts">DestinationPorts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_ports FirewallPolicy#destination_ports}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.sourceAddresses">SourceAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#source_addresses FirewallPolicy#source_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypass.property.sourceIpGroups">SourceIpGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#source_ip_groups FirewallPolicy#source_ip_groups}. |
 
 ---
 
@@ -2226,7 +2226,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}.
 
 ---
 
@@ -2238,7 +2238,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#protocol FirewallPolicy#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#protocol FirewallPolicy#protocol}.
 
 ---
 
@@ -2250,7 +2250,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#description FirewallPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#description FirewallPolicy#description}.
 
 ---
 
@@ -2262,7 +2262,7 @@ DestinationAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_addresses FirewallPolicy#destination_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_addresses FirewallPolicy#destination_addresses}.
 
 ---
 
@@ -2274,7 +2274,7 @@ DestinationIpGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_ip_groups FirewallPolicy#destination_ip_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_ip_groups FirewallPolicy#destination_ip_groups}.
 
 ---
 
@@ -2286,7 +2286,7 @@ DestinationPorts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#destination_ports FirewallPolicy#destination_ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#destination_ports FirewallPolicy#destination_ports}.
 
 ---
 
@@ -2298,7 +2298,7 @@ SourceAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#source_addresses FirewallPolicy#source_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#source_addresses FirewallPolicy#source_addresses}.
 
 ---
 
@@ -2310,7 +2310,7 @@ SourceIpGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#source_ip_groups FirewallPolicy#source_ip_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#source_ip_groups FirewallPolicy#source_ip_groups}.
 
 ---
 
@@ -2319,7 +2319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyThreatIntelligenceAllowlistStruct {
 	Fqdns: *[]*string,
@@ -2331,8 +2331,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStruct.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}. |
 
 ---
 
@@ -2344,7 +2344,7 @@ Fqdns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#fqdns FirewallPolicy#fqdns}.
 
 ---
 
@@ -2356,7 +2356,7 @@ IpAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#ip_addresses FirewallPolicy#ip_addresses}.
 
 ---
 
@@ -2365,7 +2365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyTimeouts {
 	Create: *string,
@@ -2379,10 +2379,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#create FirewallPolicy#create}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#delete FirewallPolicy#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#read FirewallPolicy#read}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#update FirewallPolicy#update}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#create FirewallPolicy#create}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#delete FirewallPolicy#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#read FirewallPolicy#read}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#update FirewallPolicy#update}. |
 
 ---
 
@@ -2394,7 +2394,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#create FirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#create FirewallPolicy#create}.
 
 ---
 
@@ -2406,7 +2406,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#delete FirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#delete FirewallPolicy#delete}.
 
 ---
 
@@ -2418,7 +2418,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#read FirewallPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#read FirewallPolicy#read}.
 
 ---
 
@@ -2430,7 +2430,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#update FirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#update FirewallPolicy#update}.
 
 ---
 
@@ -2439,7 +2439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 &firewallpolicy.FirewallPolicyTlsCertificate {
 	KeyVaultSecretId: *string,
@@ -2451,8 +2451,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#key_vault_secret_id FirewallPolicy#key_vault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#key_vault_secret_id FirewallPolicy#key_vault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}. |
 
 ---
 
@@ -2464,7 +2464,7 @@ KeyVaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#key_vault_secret_id FirewallPolicy#key_vault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#key_vault_secret_id FirewallPolicy#key_vault_secret_id}.
 
 ---
 
@@ -2476,7 +2476,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/firewall_policy#name FirewallPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/firewall_policy#name FirewallPolicy#name}.
 
 ---
 
@@ -2487,7 +2487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyDnsOutputReference
 ```
@@ -2794,7 +2794,7 @@ func InternalValue() FirewallPolicyDns
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyExplicitProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyExplicitProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyExplicitProxyOutputReference
 ```
@@ -3217,7 +3217,7 @@ func InternalValue() FirewallPolicyExplicitProxy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyIdentityOutputReference
 ```
@@ -3539,7 +3539,7 @@ func InternalValue() FirewallPolicyIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyInsightsLogAnalyticsWorkspaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallPolicyInsightsLogAnalyticsWorkspaceList
 ```
@@ -3699,7 +3699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsLogAnalyticsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyInsightsLogAnalyticsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallPolicyInsightsLogAnalyticsWorkspaceOutputReference
 ```
@@ -4010,7 +4010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyInsightsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyInsightsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyInsightsOutputReference
 ```
@@ -4374,7 +4374,7 @@ func InternalValue() FirewallPolicyInsights
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIntrusionDetectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyIntrusionDetectionOutputReference
 ```
@@ -4765,7 +4765,7 @@ func InternalValue() FirewallPolicyIntrusionDetection
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIntrusionDetectionSignatureOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallPolicyIntrusionDetectionSignatureOverridesList
 ```
@@ -4925,7 +4925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIntrusionDetectionSignatureOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallPolicyIntrusionDetectionSignatureOverridesOutputReference
 ```
@@ -5250,7 +5250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypassList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIntrusionDetectionTrafficBypassList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirewallPolicyIntrusionDetectionTrafficBypassList
 ```
@@ -5410,7 +5410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyIntrusionDetectionTrafficBypassOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyIntrusionDetectionTrafficBypassOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirewallPolicyIntrusionDetectionTrafficBypassOutputReference
 ```
@@ -5895,7 +5895,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyThreatIntelligenceAllowlistStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyThreatIntelligenceAllowlistStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyThreatIntelligenceAllowlistStructOutputReference
 ```
@@ -6202,7 +6202,7 @@ func InternalValue() FirewallPolicyThreatIntelligenceAllowlistStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyTimeoutsOutputReference
 ```
@@ -6567,7 +6567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.firewallPolicy.FirewallPolicyTlsCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/firewallpolicy"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/firewallpolicy"
 
 firewallpolicy.NewFirewallPolicyTlsCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallPolicyTlsCertificateOutputReference
 ```

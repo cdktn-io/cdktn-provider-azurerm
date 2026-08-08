@@ -4,12 +4,12 @@
 
 ### DataAzurermKustoCluster <a name="DataAzurermKustoCluster" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster azurerm_kusto_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster azurerm_kusto_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.NewDataAzurermKustoCluster(scope Construct, id *string, config DataAzurermKustoClusterConfig) DataAzurermKustoCluster
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.DataAzurermKustoCluster_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.DataAzurermKustoCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataazurermkustocluster.DataAzurermKustoCluster_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.DataAzurermKustoCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermkustocluster.DataAzurermKustoCluster_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.DataAzurermKustoCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermKustoCluster to
 
 The id of the existing DataAzurermKustoCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 &dataazurermkustocluster.DataAzurermKustoClusterConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkus
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts,
 }
 ```
 
@@ -763,9 +763,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkus
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#name DataAzurermKustoCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#resource_group_name DataAzurermKustoCluster#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#id DataAzurermKustoCluster#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#name DataAzurermKustoCluster#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#resource_group_name DataAzurermKustoCluster#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#id DataAzurermKustoCluster#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts">DataAzurermKustoClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -848,7 +848,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#name DataAzurermKustoCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#name DataAzurermKustoCluster#name}.
 
 ---
 
@@ -860,7 +860,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#resource_group_name DataAzurermKustoCluster#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#resource_group_name DataAzurermKustoCluster#resource_group_name}.
 
 ---
 
@@ -872,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#id DataAzurermKustoCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#id DataAzurermKustoCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ Timeouts DataAzurermKustoClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#timeouts DataAzurermKustoCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#timeouts DataAzurermKustoCluster#timeouts}
 
 ---
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 &dataazurermkustocluster.DataAzurermKustoClusterIdentity {
 
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkus
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 &dataazurermkustocluster.DataAzurermKustoClusterTimeouts {
 	Read: *string,
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#read DataAzurermKustoCluster#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#read DataAzurermKustoCluster#read}. |
 
 ---
 
@@ -934,7 +934,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/data-sources/kusto_cluster#read DataAzurermKustoCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/data-sources/kusto_cluster#read DataAzurermKustoCluster#read}.
 
 ---
 
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.NewDataAzurermKustoClusterIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermKustoClusterIdentityList
 ```
@@ -1094,7 +1094,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.NewDataAzurermKustoClusterIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermKustoClusterIdentityOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() DataAzurermKustoClusterIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermKustoCluster.DataAzurermKustoClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/dataazurermkustocluster"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/dataazurermkustocluster"
 
 dataazurermkustocluster.NewDataAzurermKustoClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermKustoClusterTimeoutsOutputReference
 ```

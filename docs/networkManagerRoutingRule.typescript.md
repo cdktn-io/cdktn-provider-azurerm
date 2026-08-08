@@ -4,7 +4,7 @@
 
 ### NetworkManagerRoutingRule <a name="NetworkManagerRoutingRule" id="@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule azurerm_network_manager_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule azurerm_network_manager_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRule.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the NetworkManagerRoutingRule 
 
 The id of the existing NetworkManagerRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -920,11 +920,11 @@ const networkManagerRoutingRuleConfig: networkManagerRoutingRule.NetworkManagerR
 | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleDestination">NetworkManagerRoutingRuleDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#name NetworkManagerRoutingRule#name}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#name NetworkManagerRoutingRule#name}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.nextHop">nextHop</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleNextHop">NetworkManagerRoutingRuleNextHop</a></code> | next_hop block. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.ruleCollectionId">ruleCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#rule_collection_id NetworkManagerRoutingRule#rule_collection_id}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#description NetworkManagerRoutingRule#description}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#id NetworkManagerRoutingRule#id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.ruleCollectionId">ruleCollectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#rule_collection_id NetworkManagerRoutingRule#rule_collection_id}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#description NetworkManagerRoutingRule#description}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#id NetworkManagerRoutingRule#id}. |
 | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts">NetworkManagerRoutingRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1009,7 +1009,7 @@ public readonly destination: NetworkManagerRoutingRuleDestination;
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#destination NetworkManagerRoutingRule#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#destination NetworkManagerRoutingRule#destination}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#name NetworkManagerRoutingRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#name NetworkManagerRoutingRule#name}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly nextHop: NetworkManagerRoutingRuleNextHop;
 
 next_hop block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#next_hop NetworkManagerRoutingRule#next_hop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#next_hop NetworkManagerRoutingRule#next_hop}
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly ruleCollectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#rule_collection_id NetworkManagerRoutingRule#rule_collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#rule_collection_id NetworkManagerRoutingRule#rule_collection_id}.
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#description NetworkManagerRoutingRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#description NetworkManagerRoutingRule#description}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#id NetworkManagerRoutingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#id NetworkManagerRoutingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ public readonly timeouts: NetworkManagerRoutingRuleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#timeouts NetworkManagerRoutingRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#timeouts NetworkManagerRoutingRule#timeouts}
 
 ---
 
@@ -1106,8 +1106,8 @@ const networkManagerRoutingRuleDestination: networkManagerRoutingRule.NetworkMan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleDestination.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleDestination.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleDestination.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleDestination.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}. |
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly address: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}.
 
 ---
 
@@ -1149,8 +1149,8 @@ const networkManagerRoutingRuleNextHop: networkManagerRoutingRule.NetworkManager
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleNextHop.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleNextHop.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleNextHop.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleNextHop.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#type NetworkManagerRoutingRule#type}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly address: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#address NetworkManagerRoutingRule#address}.
 
 ---
 
@@ -1192,10 +1192,10 @@ const networkManagerRoutingRuleTimeouts: networkManagerRoutingRule.NetworkManage
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#create NetworkManagerRoutingRule#create}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#delete NetworkManagerRoutingRule#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#read NetworkManagerRoutingRule#read}. |
-| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#update NetworkManagerRoutingRule#update}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#create NetworkManagerRoutingRule#create}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#delete NetworkManagerRoutingRule#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#read NetworkManagerRoutingRule#read}. |
+| <code><a href="#@cdktn/provider-azurerm.networkManagerRoutingRule.NetworkManagerRoutingRuleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#update NetworkManagerRoutingRule#update}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#create NetworkManagerRoutingRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#create NetworkManagerRoutingRule#create}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#delete NetworkManagerRoutingRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#delete NetworkManagerRoutingRule#delete}.
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#read NetworkManagerRoutingRule#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#read NetworkManagerRoutingRule#read}.
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/network_manager_routing_rule#update NetworkManagerRoutingRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/network_manager_routing_rule#update NetworkManagerRoutingRule#update}.
 
 ---
 

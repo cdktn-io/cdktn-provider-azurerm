@@ -4,12 +4,12 @@
 
 ### StorageAccount <a name="StorageAccount" id="@cdktn/provider-azurerm.storageAccount.StorageAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account azurerm_storage_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account azurerm_storage_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccount(scope Construct, id *string, config StorageAccountConfig) StorageAccount
 ```
@@ -81,11 +81,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putIdentity">PutIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putImmutabilityPolicy">PutImmutabilityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putNetworkRules">PutNetworkRules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties">PutQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putRouting">PutRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putSasPolicy">PutSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putShareProperties">PutShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite">PutStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetAccessTier">ResetAccessTier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetAccountKind">ResetAccountKind</a></code> | *No description.* |
@@ -113,13 +111,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetProvisionedBillingModelVersion">ResetProvisionedBillingModelVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetPublicNetworkAccessEnabled">ResetPublicNetworkAccessEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueEncryptionKeyType">ResetQueueEncryptionKeyType</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueProperties">ResetQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetRouting">ResetRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSasPolicy">ResetSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSftpEnabled">ResetSftpEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetSharedAccessKeyEnabled">ResetSharedAccessKeyEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetShareProperties">ResetShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetStaticWebsite">ResetStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTableEncryptionKeyType">ResetTableEncryptionKeyType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -519,18 +515,6 @@ func PutNetworkRules(value StorageAccountNetworkRules)
 
 ---
 
-##### `PutQueueProperties` <a name="PutQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties"></a>
-
-```go
-func PutQueueProperties(value StorageAccountQueueProperties)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putQueueProperties.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
----
-
 ##### `PutRouting` <a name="PutRouting" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putRouting"></a>
 
 ```go
@@ -564,18 +548,6 @@ func PutShareProperties(value StorageAccountShareProperties)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putShareProperties.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a>
-
----
-
-##### `PutStaticWebsite` <a name="PutStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite"></a>
-
-```go
-func PutStaticWebsite(value StorageAccountStaticWebsite)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.putStaticWebsite.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
 
 ---
 
@@ -747,12 +719,6 @@ func ResetPublicNetworkAccessEnabled()
 func ResetQueueEncryptionKeyType()
 ```
 
-##### `ResetQueueProperties` <a name="ResetQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetQueueProperties"></a>
-
-```go
-func ResetQueueProperties()
-```
-
 ##### `ResetRouting` <a name="ResetRouting" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetRouting"></a>
 
 ```go
@@ -781,12 +747,6 @@ func ResetSharedAccessKeyEnabled()
 
 ```go
 func ResetShareProperties()
-```
-
-##### `ResetStaticWebsite` <a name="ResetStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetStaticWebsite"></a>
-
-```go
-func ResetStaticWebsite()
 ```
 
 ##### `ResetTableEncryptionKeyType` <a name="ResetTableEncryptionKeyType" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.resetTableEncryptionKeyType"></a>
@@ -821,7 +781,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.StorageAccount_IsConstruct(x interface{}) *bool
 ```
@@ -853,7 +813,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.StorageAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -867,7 +827,7 @@ storageaccount.StorageAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.StorageAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -881,7 +841,7 @@ storageaccount.StorageAccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.StorageAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +870,7 @@ The construct id used in the generated config for the StorageAccount to import.
 
 The id of the existing StorageAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,7 +943,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebInternetHost">PrimaryWebInternetHost</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebMicrosoftEndpoint">PrimaryWebMicrosoftEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.primaryWebMicrosoftHost">PrimaryWebMicrosoftHost</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueProperties">QueueProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference">StorageAccountQueuePropertiesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routing">Routing</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRoutingOutputReference">StorageAccountRoutingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sasPolicy">SasPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicyOutputReference">StorageAccountSasPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryAccessKey">SecondaryAccessKey</a></code> | <code>*string</code> | *No description.* |
@@ -1023,7 +982,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryWebMicrosoftEndpoint">SecondaryWebMicrosoftEndpoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.secondaryWebMicrosoftHost">SecondaryWebMicrosoftHost</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.shareProperties">ShareProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesOutputReference">StorageAccountSharePropertiesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsite">StaticWebsite</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference">StorageAccountStaticWebsiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeoutsOutputReference">StorageAccountTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.accessTierInput">AccessTierInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.accountKindInput">AccountKindInput</a></code> | <code>*string</code> | *No description.* |
@@ -1055,14 +1013,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.provisionedBillingModelVersionInput">ProvisionedBillingModelVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.publicNetworkAccessEnabledInput">PublicNetworkAccessEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueEncryptionKeyTypeInput">QueueEncryptionKeyTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queuePropertiesInput">QueuePropertiesInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routingInput">RoutingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting">StorageAccountRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sasPolicyInput">SasPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy">StorageAccountSasPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sftpEnabledInput">SftpEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sharedAccessKeyEnabledInput">SharedAccessKeyEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.sharePropertiesInput">SharePropertiesInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsiteInput">StaticWebsiteInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.tableEncryptionKeyTypeInput">TableEncryptionKeyTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -1669,16 +1625,6 @@ func PrimaryWebMicrosoftHost() *string
 
 ---
 
-##### `QueueProperties`<sup>Required</sup> <a name="QueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queueProperties"></a>
-
-```go
-func QueueProperties() StorageAccountQueuePropertiesOutputReference
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference">StorageAccountQueuePropertiesOutputReference</a>
-
----
-
 ##### `Routing`<sup>Required</sup> <a name="Routing" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.routing"></a>
 
 ```go
@@ -2069,16 +2015,6 @@ func ShareProperties() StorageAccountSharePropertiesOutputReference
 
 ---
 
-##### `StaticWebsite`<sup>Required</sup> <a name="StaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsite"></a>
-
-```go
-func StaticWebsite() StorageAccountStaticWebsiteOutputReference
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference">StorageAccountStaticWebsiteOutputReference</a>
-
----
-
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.timeouts"></a>
 
 ```go
@@ -2389,16 +2325,6 @@ func QueueEncryptionKeyTypeInput() *string
 
 ---
 
-##### `QueuePropertiesInput`<sup>Optional</sup> <a name="QueuePropertiesInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.queuePropertiesInput"></a>
-
-```go
-func QueuePropertiesInput() StorageAccountQueueProperties
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
----
-
 ##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.resourceGroupNameInput"></a>
 
 ```go
@@ -2456,16 +2382,6 @@ func SharePropertiesInput() StorageAccountShareProperties
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a>
-
----
-
-##### `StaticWebsiteInput`<sup>Optional</sup> <a name="StaticWebsiteInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccount.property.staticWebsiteInput"></a>
-
-```go
-func StaticWebsiteInput() StorageAccountStaticWebsite
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
 
 ---
 
@@ -2804,11 +2720,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountAzureFilesAuthentication {
 	DirectoryType: *string,
-	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory,
+	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory,
 	DefaultShareLevelPermission: *string,
 }
 ```
@@ -2817,9 +2733,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.directoryType">DirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#directory_type StorageAccount#directory_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.directoryType">DirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#directory_type StorageAccount#directory_type}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.activeDirectory">ActiveDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory">StorageAccountAzureFilesAuthenticationActiveDirectory</a></code> | active_directory block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.defaultShareLevelPermission">DefaultShareLevelPermission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication.property.defaultShareLevelPermission">DefaultShareLevelPermission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}. |
 
 ---
 
@@ -2831,7 +2747,7 @@ DirectoryType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#directory_type StorageAccount#directory_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#directory_type StorageAccount#directory_type}.
 
 ---
 
@@ -2845,7 +2761,7 @@ ActiveDirectory StorageAccountAzureFilesAuthenticationActiveDirectory
 
 active_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#active_directory StorageAccount#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#active_directory StorageAccount#active_directory}
 
 ---
 
@@ -2857,7 +2773,7 @@ DefaultShareLevelPermission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_share_level_permission StorageAccount#default_share_level_permission}.
 
 ---
 
@@ -2866,7 +2782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountAzureFilesAuthenticationActiveDirectory {
 	DomainGuid: *string,
@@ -2882,12 +2798,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainGuid">DomainGuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_name StorageAccount#domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainSid">DomainSid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.forestName">ForestName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#forest_name StorageAccount#forest_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.netbiosDomainName">NetbiosDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.storageSid">StorageSid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainGuid">DomainGuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_name StorageAccount#domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.domainSid">DomainSid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.forestName">ForestName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#forest_name StorageAccount#forest_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.netbiosDomainName">NetbiosDomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectory.property.storageSid">StorageSid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}. |
 
 ---
 
@@ -2899,7 +2815,7 @@ DomainGuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_guid StorageAccount#domain_guid}.
 
 ---
 
@@ -2911,7 +2827,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_name StorageAccount#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_name StorageAccount#domain_name}.
 
 ---
 
@@ -2923,7 +2839,7 @@ DomainSid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#domain_sid StorageAccount#domain_sid}.
 
 ---
 
@@ -2935,7 +2851,7 @@ ForestName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#forest_name StorageAccount#forest_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#forest_name StorageAccount#forest_name}.
 
 ---
 
@@ -2947,7 +2863,7 @@ NetbiosDomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#netbios_domain_name StorageAccount#netbios_domain_name}.
 
 ---
 
@@ -2959,7 +2875,7 @@ StorageSid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#storage_sid StorageAccount#storage_sid}.
 
 ---
 
@@ -2968,17 +2884,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountBlobProperties {
 	ChangeFeedEnabled: interface{},
 	ChangeFeedRetentionInDays: *f64,
-	ContainerDeleteRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy,
+	ContainerDeleteRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy,
 	CorsRule: interface{},
 	DefaultServiceVersion: *string,
-	DeleteRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy,
+	DeleteRetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy,
 	LastAccessTimeEnabled: interface{},
-	RestorePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountBlobPropertiesRestorePolicy,
+	RestorePolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountBlobPropertiesRestorePolicy,
 	VersioningEnabled: interface{},
 }
 ```
@@ -2987,15 +2903,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedEnabled">ChangeFeedEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedRetentionInDays">ChangeFeedRetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedEnabled">ChangeFeedEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.changeFeedRetentionInDays">ChangeFeedRetentionInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.containerDeleteRetentionPolicy">ContainerDeleteRetentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy">StorageAccountBlobPropertiesContainerDeleteRetentionPolicy</a></code> | container_delete_retention_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.corsRule">CorsRule</a></code> | <code>interface{}</code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.defaultServiceVersion">DefaultServiceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.defaultServiceVersion">DefaultServiceVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.deleteRetentionPolicy">DeleteRetentionPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy">StorageAccountBlobPropertiesDeleteRetentionPolicy</a></code> | delete_retention_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.lastAccessTimeEnabled">LastAccessTimeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.lastAccessTimeEnabled">LastAccessTimeEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.restorePolicy">RestorePolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy">StorageAccountBlobPropertiesRestorePolicy</a></code> | restore_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.versioningEnabled">VersioningEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties.property.versioningEnabled">VersioningEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}. |
 
 ---
 
@@ -3007,7 +2923,7 @@ ChangeFeedEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_enabled StorageAccount#change_feed_enabled}.
 
 ---
 
@@ -3019,7 +2935,7 @@ ChangeFeedRetentionInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#change_feed_retention_in_days StorageAccount#change_feed_retention_in_days}.
 
 ---
 
@@ -3033,7 +2949,7 @@ ContainerDeleteRetentionPolicy StorageAccountBlobPropertiesContainerDeleteRetent
 
 container_delete_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#container_delete_retention_policy StorageAccount#container_delete_retention_policy}
 
 ---
 
@@ -3047,7 +2963,7 @@ CorsRule interface{}
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
 
 ---
 
@@ -3059,7 +2975,7 @@ DefaultServiceVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_service_version StorageAccount#default_service_version}.
 
 ---
 
@@ -3073,7 +2989,7 @@ DeleteRetentionPolicy StorageAccountBlobPropertiesDeleteRetentionPolicy
 
 delete_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete_retention_policy StorageAccount#delete_retention_policy}
 
 ---
 
@@ -3085,7 +3001,7 @@ LastAccessTimeEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#last_access_time_enabled StorageAccount#last_access_time_enabled}.
 
 ---
 
@@ -3099,7 +3015,7 @@ RestorePolicy StorageAccountBlobPropertiesRestorePolicy
 
 restore_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#restore_policy StorageAccount#restore_policy}
 
 ---
 
@@ -3111,7 +3027,7 @@ VersioningEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versioning_enabled StorageAccount#versioning_enabled}.
 
 ---
 
@@ -3120,7 +3036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy {
 	Days: *f64,
@@ -3131,7 +3047,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -3143,7 +3059,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3152,7 +3068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountBlobPropertiesCorsRule {
 	AllowedHeaders: *[]*string,
@@ -3167,11 +3083,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
 
 ---
 
@@ -3183,7 +3099,7 @@ AllowedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
 
 ---
 
@@ -3195,7 +3111,7 @@ AllowedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
 
 ---
 
@@ -3207,7 +3123,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
 
 ---
 
@@ -3219,7 +3135,7 @@ ExposedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
 
 ---
 
@@ -3231,7 +3147,7 @@ MaxAgeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
 
 ---
 
@@ -3240,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountBlobPropertiesDeleteRetentionPolicy {
 	Days: *f64,
@@ -3252,8 +3168,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.permanentDeleteEnabled">PermanentDeleteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicy.property.permanentDeleteEnabled">PermanentDeleteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}. |
 
 ---
 
@@ -3265,7 +3181,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3277,7 +3193,7 @@ PermanentDeleteEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#permanent_delete_enabled StorageAccount#permanent_delete_enabled}.
 
 ---
 
@@ -3286,7 +3202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountBlobPropertiesRestorePolicy {
 	Days: *f64,
@@ -3297,7 +3213,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -3309,7 +3225,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -3318,7 +3234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountConfig {
 	Connection: interface{},
@@ -3337,38 +3253,36 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 	AccountKind: *string,
 	AllowedCopyScope: *string,
 	AllowNestedItemsToBePublic: interface{},
-	AzureFilesAuthentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountAzureFilesAuthentication,
-	BlobProperties: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountBlobProperties,
+	AzureFilesAuthentication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountAzureFilesAuthentication,
+	BlobProperties: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountBlobProperties,
 	CrossTenantReplicationEnabled: interface{},
-	CustomDomain: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountCustomDomain,
-	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountCustomerManagedKey,
+	CustomDomain: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountCustomDomain,
+	CustomerManagedKey: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountCustomerManagedKey,
 	DefaultToOauthAuthentication: interface{},
 	DnsEndpointType: *string,
 	EdgeZone: *string,
 	HttpsTrafficOnlyEnabled: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountIdentity,
-	ImmutabilityPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountImmutabilityPolicy,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountIdentity,
+	ImmutabilityPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountImmutabilityPolicy,
 	InfrastructureEncryptionEnabled: interface{},
 	IsHnsEnabled: interface{},
 	LargeFileShareEnabled: interface{},
 	LocalUserEnabled: interface{},
 	MinTlsVersion: *string,
-	NetworkRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountNetworkRules,
+	NetworkRules: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountNetworkRules,
 	Nfsv3Enabled: interface{},
 	ProvisionedBillingModelVersion: *string,
 	PublicNetworkAccessEnabled: interface{},
 	QueueEncryptionKeyType: *string,
-	QueueProperties: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountQueueProperties,
-	Routing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountRouting,
-	SasPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountSasPolicy,
+	Routing: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountRouting,
+	SasPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountSasPolicy,
 	SftpEnabled: interface{},
 	SharedAccessKeyEnabled: interface{},
-	ShareProperties: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountShareProperties,
-	StaticWebsite: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountStaticWebsite,
+	ShareProperties: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountShareProperties,
 	TableEncryptionKeyType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountTimeouts,
 }
 ```
 
@@ -3383,46 +3297,44 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountReplicationType">AccountReplicationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountTier">AccountTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accessTier">AccessTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountKind">AccountKind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowedCopyScope">AllowedCopyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowNestedItemsToBePublic">AllowNestedItemsToBePublic</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountReplicationType">AccountReplicationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountTier">AccountTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accessTier">AccessTier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.accountKind">AccountKind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowedCopyScope">AllowedCopyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.allowNestedItemsToBePublic">AllowNestedItemsToBePublic</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.azureFilesAuthentication">AzureFilesAuthentication</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthentication">StorageAccountAzureFilesAuthentication</a></code> | azure_files_authentication block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.blobProperties">BlobProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountBlobProperties">StorageAccountBlobProperties</a></code> | blob_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.crossTenantReplicationEnabled">CrossTenantReplicationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.crossTenantReplicationEnabled">CrossTenantReplicationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.customDomain">CustomDomain</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain">StorageAccountCustomDomain</a></code> | custom_domain block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.customerManagedKey">CustomerManagedKey</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey">StorageAccountCustomerManagedKey</a></code> | customer_managed_key block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.defaultToOauthAuthentication">DefaultToOauthAuthentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.dnsEndpointType">DnsEndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.edgeZone">EdgeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.httpsTrafficOnlyEnabled">HttpsTrafficOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.defaultToOauthAuthentication">DefaultToOauthAuthentication</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.dnsEndpointType">DnsEndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.edgeZone">EdgeZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.httpsTrafficOnlyEnabled">HttpsTrafficOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity">StorageAccountIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.immutabilityPolicy">ImmutabilityPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy">StorageAccountImmutabilityPolicy</a></code> | immutability_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.infrastructureEncryptionEnabled">InfrastructureEncryptionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.isHnsEnabled">IsHnsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.largeFileShareEnabled">LargeFileShareEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.localUserEnabled">LocalUserEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.minTlsVersion">MinTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.infrastructureEncryptionEnabled">InfrastructureEncryptionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.isHnsEnabled">IsHnsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.largeFileShareEnabled">LargeFileShareEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.localUserEnabled">LocalUserEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.minTlsVersion">MinTlsVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.networkRules">NetworkRules</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules">StorageAccountNetworkRules</a></code> | network_rules block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.nfsv3Enabled">Nfsv3Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisionedBillingModelVersion">ProvisionedBillingModelVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueEncryptionKeyType">QueueEncryptionKeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueProperties">QueueProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | queue_properties block. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.nfsv3Enabled">Nfsv3Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.provisionedBillingModelVersion">ProvisionedBillingModelVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.publicNetworkAccessEnabled">PublicNetworkAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueEncryptionKeyType">QueueEncryptionKeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.routing">Routing</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting">StorageAccountRouting</a></code> | routing block. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sasPolicy">SasPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy">StorageAccountSasPolicy</a></code> | sas_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sftpEnabled">SftpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sharedAccessKeyEnabled">SharedAccessKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sftpEnabled">SftpEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.sharedAccessKeyEnabled">SharedAccessKeyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.shareProperties">ShareProperties</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties">StorageAccountShareProperties</a></code> | share_properties block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.staticWebsite">StaticWebsite</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | static_website block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tableEncryptionKeyType">TableEncryptionKeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tableEncryptionKeyType">TableEncryptionKeyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts">StorageAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -3505,7 +3417,7 @@ AccountReplicationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_replication_type StorageAccount#account_replication_type}.
 
 ---
 
@@ -3517,7 +3429,7 @@ AccountTier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_tier StorageAccount#account_tier}.
 
 ---
 
@@ -3529,7 +3441,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#location StorageAccount#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#location StorageAccount#location}.
 
 ---
 
@@ -3541,7 +3453,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}.
 
 ---
 
@@ -3553,7 +3465,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#resource_group_name StorageAccount#resource_group_name}.
 
 ---
 
@@ -3565,7 +3477,7 @@ AccessTier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#access_tier StorageAccount#access_tier}.
 
 ---
 
@@ -3577,7 +3489,7 @@ AccountKind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#account_kind StorageAccount#account_kind}.
 
 ---
 
@@ -3589,7 +3501,7 @@ AllowedCopyScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_copy_scope StorageAccount#allowed_copy_scope}.
 
 ---
 
@@ -3601,7 +3513,7 @@ AllowNestedItemsToBePublic interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_nested_items_to_be_public StorageAccount#allow_nested_items_to_be_public}.
 
 ---
 
@@ -3615,7 +3527,7 @@ AzureFilesAuthentication StorageAccountAzureFilesAuthentication
 
 azure_files_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#azure_files_authentication StorageAccount#azure_files_authentication}
 
 ---
 
@@ -3629,7 +3541,7 @@ BlobProperties StorageAccountBlobProperties
 
 blob_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#blob_properties StorageAccount#blob_properties}
 
 ---
 
@@ -3641,7 +3553,7 @@ CrossTenantReplicationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cross_tenant_replication_enabled StorageAccount#cross_tenant_replication_enabled}.
 
 ---
 
@@ -3655,7 +3567,7 @@ CustomDomain StorageAccountCustomDomain
 
 custom_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#custom_domain StorageAccount#custom_domain}
 
 ---
 
@@ -3669,7 +3581,7 @@ CustomerManagedKey StorageAccountCustomerManagedKey
 
 customer_managed_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#customer_managed_key StorageAccount#customer_managed_key}
 
 ---
 
@@ -3681,7 +3593,7 @@ DefaultToOauthAuthentication interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_to_oauth_authentication StorageAccount#default_to_oauth_authentication}.
 
 ---
 
@@ -3693,7 +3605,7 @@ DnsEndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#dns_endpoint_type StorageAccount#dns_endpoint_type}.
 
 ---
 
@@ -3705,7 +3617,7 @@ EdgeZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#edge_zone StorageAccount#edge_zone}.
 
 ---
 
@@ -3717,7 +3629,7 @@ HttpsTrafficOnlyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#https_traffic_only_enabled StorageAccount#https_traffic_only_enabled}.
 
 ---
 
@@ -3729,7 +3641,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#id StorageAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#id StorageAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3746,7 +3658,7 @@ Identity StorageAccountIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity StorageAccount#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity StorageAccount#identity}
 
 ---
 
@@ -3760,7 +3672,7 @@ ImmutabilityPolicy StorageAccountImmutabilityPolicy
 
 immutability_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#immutability_policy StorageAccount#immutability_policy}
 
 ---
 
@@ -3772,7 +3684,7 @@ InfrastructureEncryptionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#infrastructure_encryption_enabled StorageAccount#infrastructure_encryption_enabled}.
 
 ---
 
@@ -3784,7 +3696,7 @@ IsHnsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#is_hns_enabled StorageAccount#is_hns_enabled}.
 
 ---
 
@@ -3796,7 +3708,7 @@ LargeFileShareEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#large_file_share_enabled StorageAccount#large_file_share_enabled}.
 
 ---
 
@@ -3808,7 +3720,7 @@ LocalUserEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#local_user_enabled StorageAccount#local_user_enabled}.
 
 ---
 
@@ -3820,7 +3732,7 @@ MinTlsVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#min_tls_version StorageAccount#min_tls_version}.
 
 ---
 
@@ -3834,7 +3746,7 @@ NetworkRules StorageAccountNetworkRules
 
 network_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#network_rules StorageAccount#network_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#network_rules StorageAccount#network_rules}
 
 ---
 
@@ -3846,7 +3758,7 @@ Nfsv3Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#nfsv3_enabled StorageAccount#nfsv3_enabled}.
 
 ---
 
@@ -3858,7 +3770,7 @@ ProvisionedBillingModelVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#provisioned_billing_model_version StorageAccount#provisioned_billing_model_version}.
 
 ---
 
@@ -3870,7 +3782,7 @@ PublicNetworkAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#public_network_access_enabled StorageAccount#public_network_access_enabled}.
 
 ---
 
@@ -3882,21 +3794,7 @@ QueueEncryptionKeyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
-
----
-
-##### `QueueProperties`<sup>Optional</sup> <a name="QueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.queueProperties"></a>
-
-```go
-QueueProperties StorageAccountQueueProperties
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
-queue_properties block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#queue_properties StorageAccount#queue_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#queue_encryption_key_type StorageAccount#queue_encryption_key_type}.
 
 ---
 
@@ -3910,7 +3808,7 @@ Routing StorageAccountRouting
 
 routing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#routing StorageAccount#routing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#routing StorageAccount#routing}
 
 ---
 
@@ -3924,7 +3822,7 @@ SasPolicy StorageAccountSasPolicy
 
 sas_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sas_policy StorageAccount#sas_policy}
 
 ---
 
@@ -3936,7 +3834,7 @@ SftpEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#sftp_enabled StorageAccount#sftp_enabled}.
 
 ---
 
@@ -3948,7 +3846,7 @@ SharedAccessKeyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#shared_access_key_enabled StorageAccount#shared_access_key_enabled}.
 
 ---
 
@@ -3962,21 +3860,7 @@ ShareProperties StorageAccountShareProperties
 
 share_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#share_properties StorageAccount#share_properties}
-
----
-
-##### `StaticWebsite`<sup>Optional</sup> <a name="StaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccountConfig.property.staticWebsite"></a>
-
-```go
-StaticWebsite StorageAccountStaticWebsite
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
-
-static_website block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#static_website StorageAccount#static_website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#share_properties StorageAccount#share_properties}
 
 ---
 
@@ -3988,7 +3872,7 @@ TableEncryptionKeyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#table_encryption_key_type StorageAccount#table_encryption_key_type}.
 
 ---
 
@@ -4000,7 +3884,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#tags StorageAccount#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#tags StorageAccount#tags}.
 
 ---
 
@@ -4014,7 +3898,7 @@ Timeouts StorageAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#timeouts StorageAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#timeouts StorageAccount#timeouts}
 
 ---
 
@@ -4023,7 +3907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountCustomDomain {
 	Name: *string,
@@ -4035,8 +3919,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.useSubdomain">UseSubdomain</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomain.property.useSubdomain">UseSubdomain</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}. |
 
 ---
 
@@ -4048,7 +3932,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#name StorageAccount#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#name StorageAccount#name}.
 
 ---
 
@@ -4060,7 +3944,7 @@ UseSubdomain interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#use_subdomain StorageAccount#use_subdomain}.
 
 ---
 
@@ -4069,12 +3953,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountCustomerManagedKey {
-	UserAssignedIdentityId: *string,
 	KeyVaultKeyId: *string,
-	ManagedHsmKeyId: *string,
+	UserAssignedIdentityId: *string,
 }
 ```
 
@@ -4082,9 +3965,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#managed_hsm_key_id StorageAccount#managed_hsm_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}. |
+
+---
+
+##### `KeyVaultKeyId`<sup>Required</sup> <a name="KeyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId"></a>
+
+```go
+KeyVaultKeyId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}.
 
 ---
 
@@ -4096,31 +3990,7 @@ UserAssignedIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}.
-
----
-
-##### `KeyVaultKeyId`<sup>Optional</sup> <a name="KeyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.keyVaultKeyId"></a>
-
-```go
-KeyVaultKeyId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#key_vault_key_id StorageAccount#key_vault_key_id}.
-
----
-
-##### `ManagedHsmKeyId`<sup>Optional</sup> <a name="ManagedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey.property.managedHsmKeyId"></a>
-
-```go
-ManagedHsmKeyId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#managed_hsm_key_id StorageAccount#managed_hsm_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#user_assigned_identity_id StorageAccount#user_assigned_identity_id}.
 
 ---
 
@@ -4129,7 +3999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountIdentity {
 	Type: *string,
@@ -4141,8 +4011,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#type StorageAccount#type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#type StorageAccount#type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}. |
 
 ---
 
@@ -4154,7 +4024,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#type StorageAccount#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#type StorageAccount#type}.
 
 ---
 
@@ -4166,7 +4036,7 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#identity_ids StorageAccount#identity_ids}.
 
 ---
 
@@ -4175,7 +4045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountImmutabilityPolicy {
 	AllowProtectedAppendWrites: interface{},
@@ -4188,9 +4058,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.allowProtectedAppendWrites">AllowProtectedAppendWrites</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.periodSinceCreationInDays">PeriodSinceCreationInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#state StorageAccount#state}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.allowProtectedAppendWrites">AllowProtectedAppendWrites</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.periodSinceCreationInDays">PeriodSinceCreationInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicy.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#state StorageAccount#state}. |
 
 ---
 
@@ -4202,7 +4072,7 @@ AllowProtectedAppendWrites interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allow_protected_append_writes StorageAccount#allow_protected_append_writes}.
 
 ---
 
@@ -4214,7 +4084,7 @@ PeriodSinceCreationInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#period_since_creation_in_days StorageAccount#period_since_creation_in_days}.
 
 ---
 
@@ -4226,7 +4096,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#state StorageAccount#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#state StorageAccount#state}.
 
 ---
 
@@ -4235,7 +4105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountNetworkRules {
 	DefaultAction: *string,
@@ -4250,11 +4120,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.defaultAction">DefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_action StorageAccount#default_action}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.bypass">Bypass</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#bypass StorageAccount#bypass}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.ipRules">IpRules</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.defaultAction">DefaultAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_action StorageAccount#default_action}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.bypass">Bypass</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#bypass StorageAccount#bypass}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.ipRules">IpRules</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.privateLinkAccess">PrivateLinkAccess</a></code> | <code>interface{}</code> | private_link_access block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.virtualNetworkSubnetIds">VirtualNetworkSubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRules.property.virtualNetworkSubnetIds">VirtualNetworkSubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}. |
 
 ---
 
@@ -4266,7 +4136,7 @@ DefaultAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#default_action StorageAccount#default_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#default_action StorageAccount#default_action}.
 
 ---
 
@@ -4278,7 +4148,7 @@ Bypass *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#bypass StorageAccount#bypass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#bypass StorageAccount#bypass}.
 
 ---
 
@@ -4290,7 +4160,7 @@ IpRules *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#ip_rules StorageAccount#ip_rules}.
 
 ---
 
@@ -4304,7 +4174,7 @@ PrivateLinkAccess interface{}
 
 private_link_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#private_link_access StorageAccount#private_link_access}
 
 ---
 
@@ -4316,7 +4186,7 @@ VirtualNetworkSubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#virtual_network_subnet_ids StorageAccount#virtual_network_subnet_ids}.
 
 ---
 
@@ -4325,7 +4195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountNetworkRulesPrivateLinkAccess {
 	EndpointResourceId: *string,
@@ -4337,8 +4207,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointResourceId">EndpointResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointTenantId">EndpointTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointResourceId">EndpointResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccess.property.endpointTenantId">EndpointTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}. |
 
 ---
 
@@ -4350,7 +4220,7 @@ EndpointResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_resource_id StorageAccount#endpoint_resource_id}.
 
 ---
 
@@ -4362,413 +4232,7 @@ EndpointTenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}.
-
----
-
-### StorageAccountQueueProperties <a name="StorageAccountQueueProperties" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountQueueProperties {
-	CorsRule: interface{},
-	HourMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountQueuePropertiesHourMetrics,
-	Logging: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountQueuePropertiesLogging,
-	MinuteMetrics: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountQueuePropertiesMinuteMetrics,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.corsRule">CorsRule</a></code> | <code>interface{}</code> | cors_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.hourMetrics">HourMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | hour_metrics block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.logging">Logging</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | logging block. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.minuteMetrics">MinuteMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | minute_metrics block. |
-
----
-
-##### `CorsRule`<sup>Optional</sup> <a name="CorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.corsRule"></a>
-
-```go
-CorsRule interface{}
-```
-
-- *Type:* interface{}
-
-cors_rule block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
-
----
-
-##### `HourMetrics`<sup>Optional</sup> <a name="HourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.hourMetrics"></a>
-
-```go
-HourMetrics StorageAccountQueuePropertiesHourMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
-hour_metrics block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#hour_metrics StorageAccount#hour_metrics}
-
----
-
-##### `Logging`<sup>Optional</sup> <a name="Logging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.logging"></a>
-
-```go
-Logging StorageAccountQueuePropertiesLogging
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
-logging block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#logging StorageAccount#logging}
-
----
-
-##### `MinuteMetrics`<sup>Optional</sup> <a name="MinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties.property.minuteMetrics"></a>
-
-```go
-MinuteMetrics StorageAccountQueuePropertiesMinuteMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
-minute_metrics block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#minute_metrics StorageAccount#minute_metrics}
-
----
-
-### StorageAccountQueuePropertiesCorsRule <a name="StorageAccountQueuePropertiesCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountQueuePropertiesCorsRule {
-	AllowedHeaders: *[]*string,
-	AllowedMethods: *[]*string,
-	AllowedOrigins: *[]*string,
-	ExposedHeaders: *[]*string,
-	MaxAgeInSeconds: *f64,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
-
----
-
-##### `AllowedHeaders`<sup>Required</sup> <a name="AllowedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedHeaders"></a>
-
-```go
-AllowedHeaders *[]*string
-```
-
-- *Type:* *[]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
-
----
-
-##### `AllowedMethods`<sup>Required</sup> <a name="AllowedMethods" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedMethods"></a>
-
-```go
-AllowedMethods *[]*string
-```
-
-- *Type:* *[]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
-
----
-
-##### `AllowedOrigins`<sup>Required</sup> <a name="AllowedOrigins" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.allowedOrigins"></a>
-
-```go
-AllowedOrigins *[]*string
-```
-
-- *Type:* *[]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
-
----
-
-##### `ExposedHeaders`<sup>Required</sup> <a name="ExposedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.exposedHeaders"></a>
-
-```go
-ExposedHeaders *[]*string
-```
-
-- *Type:* *[]*string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
-
----
-
-##### `MaxAgeInSeconds`<sup>Required</sup> <a name="MaxAgeInSeconds" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRule.property.maxAgeInSeconds"></a>
-
-```go
-MaxAgeInSeconds *f64
-```
-
-- *Type:* *f64
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
-
----
-
-### StorageAccountQueuePropertiesHourMetrics <a name="StorageAccountQueuePropertiesHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountQueuePropertiesHourMetrics {
-	Enabled: interface{},
-	Version: *string,
-	IncludeApis: interface{},
-	RetentionPolicyDays: *f64,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.includeApis">IncludeApis</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.enabled"></a>
-
-```go
-Enabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}.
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.version"></a>
-
-```go
-Version *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `IncludeApis`<sup>Optional</sup> <a name="IncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.includeApis"></a>
-
-```go
-IncludeApis interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}.
-
----
-
-##### `RetentionPolicyDays`<sup>Optional</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics.property.retentionPolicyDays"></a>
-
-```go
-RetentionPolicyDays *f64
-```
-
-- *Type:* *f64
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
-
----
-
-### StorageAccountQueuePropertiesLogging <a name="StorageAccountQueuePropertiesLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountQueuePropertiesLogging {
-	Delete: interface{},
-	Read: interface{},
-	Version: *string,
-	Write: interface{},
-	RetentionPolicyDays: *f64,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.read">Read</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.write">Write</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#write StorageAccount#write}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.delete"></a>
-
-```go
-Delete interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}.
-
----
-
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.read"></a>
-
-```go
-Read interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}.
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.version"></a>
-
-```go
-Version *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `Write`<sup>Required</sup> <a name="Write" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.write"></a>
-
-```go
-Write interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#write StorageAccount#write}.
-
----
-
-##### `RetentionPolicyDays`<sup>Optional</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging.property.retentionPolicyDays"></a>
-
-```go
-RetentionPolicyDays *f64
-```
-
-- *Type:* *f64
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
-
----
-
-### StorageAccountQueuePropertiesMinuteMetrics <a name="StorageAccountQueuePropertiesMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountQueuePropertiesMinuteMetrics {
-	Enabled: interface{},
-	Version: *string,
-	IncludeApis: interface{},
-	RetentionPolicyDays: *f64,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.includeApis">IncludeApis</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}. |
-
----
-
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.enabled"></a>
-
-```go
-Enabled interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#enabled StorageAccount#enabled}.
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.version"></a>
-
-```go
-Version *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#version StorageAccount#version}.
-
----
-
-##### `IncludeApis`<sup>Optional</sup> <a name="IncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.includeApis"></a>
-
-```go
-IncludeApis interface{}
-```
-
-- *Type:* interface{}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#include_apis StorageAccount#include_apis}.
-
----
-
-##### `RetentionPolicyDays`<sup>Optional</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics.property.retentionPolicyDays"></a>
-
-```go
-RetentionPolicyDays *f64
-```
-
-- *Type:* *f64
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy_days StorageAccount#retention_policy_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#endpoint_tenant_id StorageAccount#endpoint_tenant_id}.
 
 ---
 
@@ -4777,7 +4241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountRouting {
 	Choice: *string,
@@ -4790,9 +4254,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.choice">Choice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#choice StorageAccount#choice}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishInternetEndpoints">PublishInternetEndpoints</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishMicrosoftEndpoints">PublishMicrosoftEndpoints</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.choice">Choice</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#choice StorageAccount#choice}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishInternetEndpoints">PublishInternetEndpoints</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountRouting.property.publishMicrosoftEndpoints">PublishMicrosoftEndpoints</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}. |
 
 ---
 
@@ -4804,7 +4268,7 @@ Choice *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#choice StorageAccount#choice}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#choice StorageAccount#choice}.
 
 ---
 
@@ -4816,7 +4280,7 @@ PublishInternetEndpoints interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_internet_endpoints StorageAccount#publish_internet_endpoints}.
 
 ---
 
@@ -4828,7 +4292,7 @@ PublishMicrosoftEndpoints interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#publish_microsoft_endpoints StorageAccount#publish_microsoft_endpoints}.
 
 ---
 
@@ -4837,7 +4301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountSasPolicy {
 	ExpirationPeriod: *string,
@@ -4849,8 +4313,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationPeriod">ExpirationPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationAction">ExpirationAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationPeriod">ExpirationPeriod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicy.property.expirationAction">ExpirationAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}. |
 
 ---
 
@@ -4862,7 +4326,7 @@ ExpirationPeriod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_period StorageAccount#expiration_period}.
 
 ---
 
@@ -4874,7 +4338,7 @@ ExpirationAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#expiration_action StorageAccount#expiration_action}.
 
 ---
 
@@ -4883,12 +4347,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountShareProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountShareProperties {
 	CorsRule: interface{},
-	RetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountSharePropertiesRetentionPolicy,
-	Smb: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17.storageAccount.StorageAccountSharePropertiesSmb,
+	RetentionPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountSharePropertiesRetentionPolicy,
+	Smb: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18.storageAccount.StorageAccountSharePropertiesSmb,
 }
 ```
 
@@ -4912,7 +4376,7 @@ CorsRule interface{}
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#cors_rule StorageAccount#cors_rule}
 
 ---
 
@@ -4926,7 +4390,7 @@ RetentionPolicy StorageAccountSharePropertiesRetentionPolicy
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#retention_policy StorageAccount#retention_policy}
 
 ---
 
@@ -4940,7 +4404,7 @@ Smb StorageAccountSharePropertiesSmb
 
 smb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#smb StorageAccount#smb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#smb StorageAccount#smb}
 
 ---
 
@@ -4949,7 +4413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountSharePropertiesCorsRule {
 	AllowedHeaders: *[]*string,
@@ -4964,11 +4428,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRule.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}. |
 
 ---
 
@@ -4980,7 +4444,7 @@ AllowedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_headers StorageAccount#allowed_headers}.
 
 ---
 
@@ -4992,7 +4456,7 @@ AllowedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_methods StorageAccount#allowed_methods}.
 
 ---
 
@@ -5004,7 +4468,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#allowed_origins StorageAccount#allowed_origins}.
 
 ---
 
@@ -5016,7 +4480,7 @@ ExposedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#exposed_headers StorageAccount#exposed_headers}.
 
 ---
 
@@ -5028,7 +4492,7 @@ MaxAgeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#max_age_in_seconds StorageAccount#max_age_in_seconds}.
 
 ---
 
@@ -5037,7 +4501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountSharePropertiesRetentionPolicy {
 	Days: *f64,
@@ -5048,7 +4512,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}. |
 
 ---
 
@@ -5060,7 +4524,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#days StorageAccount#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#days StorageAccount#days}.
 
 ---
 
@@ -5069,7 +4533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountSharePropertiesSmb {
 	AuthenticationTypes: *[]*string,
@@ -5084,11 +4548,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.authenticationTypes">AuthenticationTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.channelEncryptionType">ChannelEncryptionType</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.kerberosTicketEncryptionType">KerberosTicketEncryptionType</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.multichannelEnabled">MultichannelEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.versions">Versions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versions StorageAccount#versions}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.authenticationTypes">AuthenticationTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.channelEncryptionType">ChannelEncryptionType</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.kerberosTicketEncryptionType">KerberosTicketEncryptionType</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.multichannelEnabled">MultichannelEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmb.property.versions">Versions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versions StorageAccount#versions}. |
 
 ---
 
@@ -5100,7 +4564,7 @@ AuthenticationTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#authentication_types StorageAccount#authentication_types}.
 
 ---
 
@@ -5112,7 +4576,7 @@ ChannelEncryptionType *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#channel_encryption_type StorageAccount#channel_encryption_type}.
 
 ---
 
@@ -5124,7 +4588,7 @@ KerberosTicketEncryptionType *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#kerberos_ticket_encryption_type StorageAccount#kerberos_ticket_encryption_type}.
 
 ---
 
@@ -5136,7 +4600,7 @@ MultichannelEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#multichannel_enabled StorageAccount#multichannel_enabled}.
 
 ---
 
@@ -5148,53 +4612,7 @@ Versions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#versions StorageAccount#versions}.
-
----
-
-### StorageAccountStaticWebsite <a name="StorageAccountStaticWebsite" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite"></a>
-
-#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-&storageaccount.StorageAccountStaticWebsite {
-	Error404Document: *string,
-	IndexDocument: *string,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.error404Document">Error404Document</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#error_404_document StorageAccount#error_404_document}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#index_document StorageAccount#index_document}. |
-
----
-
-##### `Error404Document`<sup>Optional</sup> <a name="Error404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.error404Document"></a>
-
-```go
-Error404Document *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#error_404_document StorageAccount#error_404_document}.
-
----
-
-##### `IndexDocument`<sup>Optional</sup> <a name="IndexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite.property.indexDocument"></a>
-
-```go
-IndexDocument *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#index_document StorageAccount#index_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#versions StorageAccount#versions}.
 
 ---
 
@@ -5203,7 +4621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 &storageaccount.StorageAccountTimeouts {
 	Create: *string,
@@ -5217,10 +4635,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#create StorageAccount#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#update StorageAccount#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#create StorageAccount#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete StorageAccount#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#read StorageAccount#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#update StorageAccount#update}. |
 
 ---
 
@@ -5232,7 +4650,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#create StorageAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#create StorageAccount#create}.
 
 ---
 
@@ -5244,7 +4662,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#delete StorageAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#delete StorageAccount#delete}.
 
 ---
 
@@ -5256,7 +4674,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#read StorageAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#read StorageAccount#read}.
 
 ---
 
@@ -5268,7 +4686,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.81.0/docs/resources/storage_account#update StorageAccount#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/5.0.1/docs/resources/storage_account#update StorageAccount#update}.
 
 ---
 
@@ -5279,7 +4697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountAzureFilesAuthenticationActiveDirectoryOutputReference
 ```
@@ -5688,7 +5106,7 @@ func InternalValue() StorageAccountAzureFilesAuthenticationActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountAzureFilesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountAzureFilesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountAzureFilesAuthenticationOutputReference
 ```
@@ -6030,7 +5448,7 @@ func InternalValue() StorageAccountAzureFilesAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesContainerDeleteRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesContainerDeleteRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountBlobPropertiesContainerDeleteRetentionPolicyOutputReference
 ```
@@ -6308,7 +5726,7 @@ func InternalValue() StorageAccountBlobPropertiesContainerDeleteRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountBlobPropertiesCorsRuleList
 ```
@@ -6468,7 +5886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountBlobPropertiesCorsRuleOutputReference
 ```
@@ -6845,7 +6263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountBlobPropertiesDeleteRetentionPolicyOutputReference
 ```
@@ -7152,7 +6570,7 @@ func InternalValue() StorageAccountBlobPropertiesDeleteRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountBlobPropertiesOutputReference
 ```
@@ -7714,7 +7132,7 @@ func InternalValue() StorageAccountBlobProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountBlobPropertiesRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountBlobPropertiesRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountBlobPropertiesRestorePolicyOutputReference
 ```
@@ -7985,7 +7403,7 @@ func InternalValue() StorageAccountBlobPropertiesRestorePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountCustomDomainOutputReference
 ```
@@ -8285,7 +7703,7 @@ func InternalValue() StorageAccountCustomDomain
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountCustomerManagedKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountCustomerManagedKeyOutputReference
 ```
@@ -8330,8 +7748,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetKeyVaultKeyId">ResetKeyVaultKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetManagedHsmKeyId">ResetManagedHsmKeyId</a></code> | *No description.* |
 
 ---
 
@@ -8485,18 +7901,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetKeyVaultKeyId` <a name="ResetKeyVaultKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetKeyVaultKeyId"></a>
-
-```go
-func ResetKeyVaultKeyId()
-```
-
-##### `ResetManagedHsmKeyId` <a name="ResetManagedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.resetManagedHsmKeyId"></a>
-
-```go
-func ResetManagedHsmKeyId()
-```
-
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -8505,10 +7909,8 @@ func ResetManagedHsmKeyId()
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.keyVaultKeyIdInput">KeyVaultKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyIdInput">ManagedHsmKeyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityIdInput">UserAssignedIdentityIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.keyVaultKeyId">KeyVaultKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyId">ManagedHsmKeyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityId">UserAssignedIdentityId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKey">StorageAccountCustomerManagedKey</a></code> | *No description.* |
 
@@ -8548,16 +7950,6 @@ func KeyVaultKeyIdInput() *string
 
 ---
 
-##### `ManagedHsmKeyIdInput`<sup>Optional</sup> <a name="ManagedHsmKeyIdInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyIdInput"></a>
-
-```go
-func ManagedHsmKeyIdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `UserAssignedIdentityIdInput`<sup>Optional</sup> <a name="UserAssignedIdentityIdInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.userAssignedIdentityIdInput"></a>
 
 ```go
@@ -8572,16 +7964,6 @@ func UserAssignedIdentityIdInput() *string
 
 ```go
 func KeyVaultKeyId() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ManagedHsmKeyId`<sup>Required</sup> <a name="ManagedHsmKeyId" id="@cdktn/provider-azurerm.storageAccount.StorageAccountCustomerManagedKeyOutputReference.property.managedHsmKeyId"></a>
-
-```go
-func ManagedHsmKeyId() *string
 ```
 
 - *Type:* *string
@@ -8614,7 +7996,7 @@ func InternalValue() StorageAccountCustomerManagedKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountIdentityOutputReference
 ```
@@ -8936,7 +8318,7 @@ func InternalValue() StorageAccountIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountImmutabilityPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountImmutabilityPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountImmutabilityPolicyOutputReference
 ```
@@ -9251,7 +8633,7 @@ func InternalValue() StorageAccountImmutabilityPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountNetworkRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountNetworkRulesOutputReference
 ```
@@ -9651,7 +9033,7 @@ func InternalValue() StorageAccountNetworkRules
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountNetworkRulesPrivateLinkAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountNetworkRulesPrivateLinkAccessList
 ```
@@ -9811,7 +9193,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountNetworkRulesPrivateLinkAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountNetworkRulesPrivateLinkAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountNetworkRulesPrivateLinkAccessOutputReference
 ```
@@ -10124,2034 +9506,12 @@ func InternalValue() interface{}
 ---
 
 
-### StorageAccountQueuePropertiesCorsRuleList <a name="StorageAccountQueuePropertiesCorsRuleList" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountQueuePropertiesCorsRuleList
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get">Get</a></code> | *No description.* |
-
----
-
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey"></a>
-
-```go
-func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* *string
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get"></a>
-
-```go
-func Get(index *f64) StorageAccountQueuePropertiesCorsRuleOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.get.parameter.index"></a>
-
-- *Type:* *f64
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### StorageAccountQueuePropertiesCorsRuleOutputReference <a name="StorageAccountQueuePropertiesCorsRuleOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountQueuePropertiesCorsRuleOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* *f64
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeadersInput">AllowedHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethodsInput">AllowedMethodsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOriginsInput">AllowedOriginsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeadersInput">ExposedHeadersInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSecondsInput">MaxAgeInSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeaders">ExposedHeaders</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSeconds">MaxAgeInSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `AllowedHeadersInput`<sup>Optional</sup> <a name="AllowedHeadersInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeadersInput"></a>
-
-```go
-func AllowedHeadersInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `AllowedMethodsInput`<sup>Optional</sup> <a name="AllowedMethodsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethodsInput"></a>
-
-```go
-func AllowedMethodsInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `AllowedOriginsInput`<sup>Optional</sup> <a name="AllowedOriginsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOriginsInput"></a>
-
-```go
-func AllowedOriginsInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `ExposedHeadersInput`<sup>Optional</sup> <a name="ExposedHeadersInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeadersInput"></a>
-
-```go
-func ExposedHeadersInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `MaxAgeInSecondsInput`<sup>Optional</sup> <a name="MaxAgeInSecondsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSecondsInput"></a>
-
-```go
-func MaxAgeInSecondsInput() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `AllowedHeaders`<sup>Required</sup> <a name="AllowedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedHeaders"></a>
-
-```go
-func AllowedHeaders() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `AllowedMethods`<sup>Required</sup> <a name="AllowedMethods" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedMethods"></a>
-
-```go
-func AllowedMethods() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `AllowedOrigins`<sup>Required</sup> <a name="AllowedOrigins" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.allowedOrigins"></a>
-
-```go
-func AllowedOrigins() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `ExposedHeaders`<sup>Required</sup> <a name="ExposedHeaders" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.exposedHeaders"></a>
-
-```go
-func ExposedHeaders() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `MaxAgeInSeconds`<sup>Required</sup> <a name="MaxAgeInSeconds" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.maxAgeInSeconds"></a>
-
-```go
-func MaxAgeInSeconds() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### StorageAccountQueuePropertiesHourMetricsOutputReference <a name="StorageAccountQueuePropertiesHourMetricsOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesHourMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountQueuePropertiesHourMetricsOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetIncludeApis">ResetIncludeApis</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetRetentionPolicyDays">ResetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetIncludeApis` <a name="ResetIncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetIncludeApis"></a>
-
-```go
-func ResetIncludeApis()
-```
-
-##### `ResetRetentionPolicyDays` <a name="ResetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.resetRetentionPolicyDays"></a>
-
-```go
-func ResetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApisInput">IncludeApisInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDaysInput">RetentionPolicyDaysInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApis">IncludeApis</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabledInput"></a>
-
-```go
-func EnabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IncludeApisInput`<sup>Optional</sup> <a name="IncludeApisInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApisInput"></a>
-
-```go
-func IncludeApisInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDaysInput`<sup>Optional</sup> <a name="RetentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDaysInput"></a>
-
-```go
-func RetentionPolicyDaysInput() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.versionInput"></a>
-
-```go
-func VersionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.enabled"></a>
-
-```go
-func Enabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IncludeApis`<sup>Required</sup> <a name="IncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.includeApis"></a>
-
-```go
-func IncludeApis() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDays`<sup>Required</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.retentionPolicyDays"></a>
-
-```go
-func RetentionPolicyDays() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.version"></a>
-
-```go
-func Version() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() StorageAccountQueuePropertiesHourMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-
-### StorageAccountQueuePropertiesLoggingOutputReference <a name="StorageAccountQueuePropertiesLoggingOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountQueuePropertiesLoggingOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resetRetentionPolicyDays">ResetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetRetentionPolicyDays` <a name="ResetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.resetRetentionPolicyDays"></a>
-
-```go
-func ResetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.deleteInput">DeleteInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.readInput">ReadInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDaysInput">RetentionPolicyDaysInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.writeInput">WriteInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.delete">Delete</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.read">Read</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.write">Write</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.deleteInput"></a>
-
-```go
-func DeleteInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `ReadInput`<sup>Optional</sup> <a name="ReadInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.readInput"></a>
-
-```go
-func ReadInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDaysInput`<sup>Optional</sup> <a name="RetentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDaysInput"></a>
-
-```go
-func RetentionPolicyDaysInput() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.versionInput"></a>
-
-```go
-func VersionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `WriteInput`<sup>Optional</sup> <a name="WriteInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.writeInput"></a>
-
-```go
-func WriteInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.delete"></a>
-
-```go
-func Delete() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `Read`<sup>Required</sup> <a name="Read" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.read"></a>
-
-```go
-func Read() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDays`<sup>Required</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.retentionPolicyDays"></a>
-
-```go
-func RetentionPolicyDays() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.version"></a>
-
-```go
-func Version() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Write`<sup>Required</sup> <a name="Write" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.write"></a>
-
-```go
-func Write() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() StorageAccountQueuePropertiesLogging
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-
-### StorageAccountQueuePropertiesMinuteMetricsOutputReference <a name="StorageAccountQueuePropertiesMinuteMetricsOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesMinuteMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountQueuePropertiesMinuteMetricsOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetIncludeApis">ResetIncludeApis</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetRetentionPolicyDays">ResetRetentionPolicyDays</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetIncludeApis` <a name="ResetIncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetIncludeApis"></a>
-
-```go
-func ResetIncludeApis()
-```
-
-##### `ResetRetentionPolicyDays` <a name="ResetRetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.resetRetentionPolicyDays"></a>
-
-```go
-func ResetRetentionPolicyDays()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApisInput">IncludeApisInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDaysInput">RetentionPolicyDaysInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApis">IncludeApis</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDays">RetentionPolicyDays</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabledInput"></a>
-
-```go
-func EnabledInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IncludeApisInput`<sup>Optional</sup> <a name="IncludeApisInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApisInput"></a>
-
-```go
-func IncludeApisInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDaysInput`<sup>Optional</sup> <a name="RetentionPolicyDaysInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDaysInput"></a>
-
-```go
-func RetentionPolicyDaysInput() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.versionInput"></a>
-
-```go
-func VersionInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.enabled"></a>
-
-```go
-func Enabled() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `IncludeApis`<sup>Required</sup> <a name="IncludeApis" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.includeApis"></a>
-
-```go
-func IncludeApis() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `RetentionPolicyDays`<sup>Required</sup> <a name="RetentionPolicyDays" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.retentionPolicyDays"></a>
-
-```go
-func RetentionPolicyDays() *f64
-```
-
-- *Type:* *f64
-
----
-
-##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.version"></a>
-
-```go
-func Version() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() StorageAccountQueuePropertiesMinuteMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-
-### StorageAccountQueuePropertiesOutputReference <a name="StorageAccountQueuePropertiesOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountQueuePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountQueuePropertiesOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule">PutCorsRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics">PutHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging">PutLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics">PutMinuteMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetCorsRule">ResetCorsRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetHourMetrics">ResetHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetLogging">ResetLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetMinuteMetrics">ResetMinuteMetrics</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `PutCorsRule` <a name="PutCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule"></a>
-
-```go
-func PutCorsRule(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putCorsRule.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
-##### `PutHourMetrics` <a name="PutHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics"></a>
-
-```go
-func PutHourMetrics(value StorageAccountQueuePropertiesHourMetrics)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putHourMetrics.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-##### `PutLogging` <a name="PutLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging"></a>
-
-```go
-func PutLogging(value StorageAccountQueuePropertiesLogging)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putLogging.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-##### `PutMinuteMetrics` <a name="PutMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics"></a>
-
-```go
-func PutMinuteMetrics(value StorageAccountQueuePropertiesMinuteMetrics)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.putMinuteMetrics.parameter.value"></a>
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-##### `ResetCorsRule` <a name="ResetCorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetCorsRule"></a>
-
-```go
-func ResetCorsRule()
-```
-
-##### `ResetHourMetrics` <a name="ResetHourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetHourMetrics"></a>
-
-```go
-func ResetHourMetrics()
-```
-
-##### `ResetLogging` <a name="ResetLogging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetLogging"></a>
-
-```go
-func ResetLogging()
-```
-
-##### `ResetMinuteMetrics` <a name="ResetMinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.resetMinuteMetrics"></a>
-
-```go
-func ResetMinuteMetrics()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRule">CorsRule</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList">StorageAccountQueuePropertiesCorsRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetrics">HourMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference">StorageAccountQueuePropertiesHourMetricsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.logging">Logging</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference">StorageAccountQueuePropertiesLoggingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetrics">MinuteMetrics</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference">StorageAccountQueuePropertiesMinuteMetricsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRuleInput">CorsRuleInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetricsInput">HourMetricsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.loggingInput">LoggingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetricsInput">MinuteMetricsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `CorsRule`<sup>Required</sup> <a name="CorsRule" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRule"></a>
-
-```go
-func CorsRule() StorageAccountQueuePropertiesCorsRuleList
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesCorsRuleList">StorageAccountQueuePropertiesCorsRuleList</a>
-
----
-
-##### `HourMetrics`<sup>Required</sup> <a name="HourMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetrics"></a>
-
-```go
-func HourMetrics() StorageAccountQueuePropertiesHourMetricsOutputReference
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetricsOutputReference">StorageAccountQueuePropertiesHourMetricsOutputReference</a>
-
----
-
-##### `Logging`<sup>Required</sup> <a name="Logging" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.logging"></a>
-
-```go
-func Logging() StorageAccountQueuePropertiesLoggingOutputReference
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLoggingOutputReference">StorageAccountQueuePropertiesLoggingOutputReference</a>
-
----
-
-##### `MinuteMetrics`<sup>Required</sup> <a name="MinuteMetrics" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetrics"></a>
-
-```go
-func MinuteMetrics() StorageAccountQueuePropertiesMinuteMetricsOutputReference
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetricsOutputReference">StorageAccountQueuePropertiesMinuteMetricsOutputReference</a>
-
----
-
-##### `CorsRuleInput`<sup>Optional</sup> <a name="CorsRuleInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.corsRuleInput"></a>
-
-```go
-func CorsRuleInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `HourMetricsInput`<sup>Optional</sup> <a name="HourMetricsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.hourMetricsInput"></a>
-
-```go
-func HourMetricsInput() StorageAccountQueuePropertiesHourMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesHourMetrics">StorageAccountQueuePropertiesHourMetrics</a>
-
----
-
-##### `LoggingInput`<sup>Optional</sup> <a name="LoggingInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.loggingInput"></a>
-
-```go
-func LoggingInput() StorageAccountQueuePropertiesLogging
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesLogging">StorageAccountQueuePropertiesLogging</a>
-
----
-
-##### `MinuteMetricsInput`<sup>Optional</sup> <a name="MinuteMetricsInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.minuteMetricsInput"></a>
-
-```go
-func MinuteMetricsInput() StorageAccountQueuePropertiesMinuteMetrics
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesMinuteMetrics">StorageAccountQueuePropertiesMinuteMetrics</a>
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountQueuePropertiesOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() StorageAccountQueueProperties
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountQueueProperties">StorageAccountQueueProperties</a>
-
----
-
-
 ### StorageAccountRoutingOutputReference <a name="StorageAccountRoutingOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountRoutingOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountRoutingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountRoutingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountRoutingOutputReference
 ```
@@ -12487,7 +9847,7 @@ func InternalValue() StorageAccountRouting
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSasPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSasPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountSasPolicyOutputReference
 ```
@@ -12787,7 +10147,7 @@ func InternalValue() StorageAccountSasPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSharePropertiesCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageAccountSharePropertiesCorsRuleList
 ```
@@ -12947,7 +10307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSharePropertiesCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageAccountSharePropertiesCorsRuleOutputReference
 ```
@@ -13324,7 +10684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSharePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountSharePropertiesOutputReference
 ```
@@ -13699,7 +11059,7 @@ func InternalValue() StorageAccountShareProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSharePropertiesRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountSharePropertiesRetentionPolicyOutputReference
 ```
@@ -13977,7 +11337,7 @@ func InternalValue() StorageAccountSharePropertiesRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountSharePropertiesSmbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountSharePropertiesSmbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountSharePropertiesSmbOutputReference
 ```
@@ -14366,319 +11726,12 @@ func InternalValue() StorageAccountSharePropertiesSmb
 ---
 
 
-### StorageAccountStaticWebsiteOutputReference <a name="StorageAccountStaticWebsiteOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
-
-storageaccount.NewStorageAccountStaticWebsiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountStaticWebsiteOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetError404Document">ResetError404Document</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetIndexDocument">ResetIndexDocument</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetError404Document` <a name="ResetError404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetError404Document"></a>
-
-```go
-func ResetError404Document()
-```
-
-##### `ResetIndexDocument` <a name="ResetIndexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.resetIndexDocument"></a>
-
-```go
-func ResetIndexDocument()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404DocumentInput">Error404DocumentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocumentInput">IndexDocumentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404Document">Error404Document</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a></code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Error404DocumentInput`<sup>Optional</sup> <a name="Error404DocumentInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404DocumentInput"></a>
-
-```go
-func Error404DocumentInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IndexDocumentInput`<sup>Optional</sup> <a name="IndexDocumentInput" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocumentInput"></a>
-
-```go
-func IndexDocumentInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Error404Document`<sup>Required</sup> <a name="Error404Document" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.error404Document"></a>
-
-```go
-func Error404Document() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IndexDocument`<sup>Required</sup> <a name="IndexDocument" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.indexDocument"></a>
-
-```go
-func IndexDocument() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsiteOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() StorageAccountStaticWebsite
-```
-
-- *Type:* <a href="#@cdktn/provider-azurerm.storageAccount.StorageAccountStaticWebsite">StorageAccountStaticWebsite</a>
-
----
-
-
 ### StorageAccountTimeoutsOutputReference <a name="StorageAccountTimeoutsOutputReference" id="@cdktn/provider-azurerm.storageAccount.StorageAccountTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageAccount.StorageAccountTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v17/storageaccount"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18/storageaccount"
 
 storageaccount.NewStorageAccountTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageAccountTimeoutsOutputReference
 ```
